@@ -1,0 +1,18 @@
+{
+  "experiment_id": "E009",
+  "date": "2026-11-07",
+  "instrument": "EURUSD",
+  "hypothesis": "Exploratory: some UTC/NY hours, weekday x hour or month-end x hour cells carry a mean EUR/USD drift >= 1 pip/hour (dev only)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": "none",
+  "variable_changed": "new question (all-hours time-of-day drift)",
+  "decision_rule": "per cell: CANDIDATE if |mean| >= 1.0 pip AND block-bootstrap CI excludes 0 AND t-test p < 0.05/192 AND sign-test p < 0.05; NOTE if |mean| >= 1.0 and t p < 0.01; else NONE. Overall CANDIDATES if any CANDIDATE. Top <=3 candidates -> val-only 1-trial backlog items.",
+  "n_trials": 192,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "next_experiment": null
+}

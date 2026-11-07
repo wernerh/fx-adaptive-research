@@ -38,3 +38,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** research-batch run 42411061401 completed; outputs (0a4f98d) not yet recorded -> Collect step.
 - **Decision:** applied E008 rule exactly -> NOT_USEFUL on all 4 tests; B2v not queued. No lead; no notification.
 - **Next:** top `ready` backlog item is B3 (hourly return profile scan, exploratory, dev only).
+
+### 2026-11-07 R008 (unattended)
+- **State:** no research-batch run queued or in progress; last batch (42411061401) already recorded in 022a6c2.
+- **Decision:** took top `ready` backlog item B3 -> E009 hourly return profile scan, exploratory, dev only, 192 cells (all counted as trials).
+- **Rule fixed before data:** CANDIDATE needs |mean| >= 1 pip, bootstrap CI excluding 0, t p < 0.05/192 and sign p < 0.05; at most 3 candidates become val-only 1-trial backlog items. No lead can come from this scan alone.

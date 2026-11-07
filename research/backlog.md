@@ -21,7 +21,7 @@ Trial count so far on dev: **30** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4)
 - **Decision rule (draft):** USEFUL if Spearman IC > 0.10 with p < 0.01 on dev and same sign in val (val as B2v). A useful result is not a lead by itself; it becomes a filter for later strategy tests.
 - **Data:** available.
 
-### B3: Hourly return profile scan (exploratory, dev only) → E009 · `ready`
+### B3: Hourly return profile scan (exploratory, dev only) → E009 · `running` (pre-registered 2026-11-07, 192 cells)
 - **Purpose:** map the mean EUR/USD mid return by hour of day (UTC and New York), weekday x hour, and month-end x hour on **dev only**, to generate hypotheses. Label everything exploratory. Any hypothesis found must be pre-registered and confirmed on **val** before it counts. Count every hour cell as a trial in the hypothesis it spawns.
 - **Data:** available.
 
