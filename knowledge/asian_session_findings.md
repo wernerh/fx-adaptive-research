@@ -9,3 +9,6 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 
 ### 2026-11-07: repository initialised
 - No data has been analysed yet. Nothing in this file is a finding.
+
+### 2026-11-07: E001
+- **[EXP]** Asian-session return sign does not predict the US-morning direction (dev hit rate 51.5%, val 50.8%, n.s.).

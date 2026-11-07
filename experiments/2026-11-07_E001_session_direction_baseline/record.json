@@ -4,11 +4,27 @@
   "instrument": "EURUSD",
   "hypothesis": "Asian/London structure predicts sign of US-session return",
   "timeframe": "1m bars aggregated to sessions",
-  "data_range": "2015-01-01..latest",
-  "blocks_used": ["dev", "val"],
+  "data_range": "2015-01-01..2026-10-30 (dev+val used)",
+  "blocks_used": [
+    "dev",
+    "val"
+  ],
   "oos_touched": false,
   "variable_changed": null,
-  "results": null,
-  "decision": null,
-  "next_experiment": null
+  "results": {
+    "source": "backtests/validation_reports/E001_results.json",
+    "run": "github-actions 42391610826",
+    "n_days": {
+      "dev": 1556,
+      "val": 637
+    },
+    "min_unadjusted_binom_p": 0.1873,
+    "all_bonferroni_p": 1.0,
+    "unconditional_long_mean_pips": {
+      "dev": 0.593,
+      "val": 0.713
+    }
+  },
+  "decision": "NONE",
+  "next_experiment": "E004 (S001 on dev) or E006 (short outcome window)"
 }

@@ -9,3 +9,7 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 
 ### 2026-11-07: repository initialised
 - No data has been analysed yet. Nothing in this file is a finding.
+
+### 2026-11-07: E001: London structure carries no US-morning information
+- **[EXP]** London return sign, break side, held break and false-break fade showed no predictive power for the US morning (E001).
+- **[EXP]** London breaks the Asian range on about 97% of days (`lon_break_side` coverage: dev 0.966, val 0.972) and breaks both sides on a subset. A plain "break" is close to universal, so it carries little information by itself. The held-break and false-break splits were about 2/3 and 1/3 of days.

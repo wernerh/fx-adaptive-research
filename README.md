@@ -57,9 +57,9 @@ run one controlled experiment, record results, update knowledge, commit.
 | Item | Status |
 |---|---|
 | Pipeline | v0.1, tested on synthetic data |
-| Data | **Not yet ingested** |
-| E001 session-direction baseline | Designed, awaiting data |
-| Strategies | All at `research_candidate` (see `strategies/strategy_registry.csv`) |
+| Data | Dukascopy m1 bid/ask 2015-01-01 to 2026-10-30, quality gate passed (0.87% missing) |
+| E001 session-direction baseline | **NONE**: no Asian/London predictor of US-morning direction (dev+val) |
+| Strategies | All `research_candidate`; S002/S003 deprioritised after E001; S001 next (E004) |
 | Live trading | Not permitted |
 
 ## Repository map

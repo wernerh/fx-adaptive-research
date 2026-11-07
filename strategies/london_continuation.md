@@ -22,7 +22,7 @@ Order flow can be persistent across sessions as institutions execute large order
 | [PUB] | ECB fix (~08:15 NY) and London fix (11:00 NY) cause USD reversals (Krohn et al. 2024): confound | research/academic_studies.md |
 | [PUB] | 08:30 NY US data produces immediate jumps (Andersen et al. 2003): confound | research/academic_studies.md |
 | [BT] | none yet | |
-| [EXP] | none yet | |
+| [EXP] | E001 (2026-11-07): `london_ret_sign` showed no predictive power for the whole US morning (dev hit 48.3%, val 50.9%; NONE). Premise unsupported; strategy deprioritised. | experiments/2026-11-07_E001_session_direction_baseline |
 
 ## Version history
 | Date | Version | Change | Experiment |

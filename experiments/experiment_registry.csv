@@ -1,2 +1,2 @@
 experiment_id,date,slug,hypothesis,strategy_id,parent_experiment,variable_changed,data_range,blocks_used,oos_touched,status,result_summary,next_experiment
-E001,2026-11-07,session_direction_baseline,Asian/London structure predicts sign of US-session (08:00-12:00 NY) return,none,none,none (baseline),2015-01-01..latest,dev;val,no,designed_awaiting_data,,
+E001,2026-11-07,session_direction_baseline,Asian/London structure predicts sign of US-session (08:00-12:00 NY) return,none,none,none (baseline),2015-01-01..latest,dev;val,no,complete,NONE: no predictor significant (min p=0.19; all Bonferroni p=1.0; all CIs include 0),E004 or E006

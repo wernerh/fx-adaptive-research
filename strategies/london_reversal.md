@@ -20,7 +20,7 @@ A break that fails may have triggered stops beyond the range (a 'liquidity sweep
 |---|---|---|
 | [PUB] | Take-profit clustering at round numbers supports reversals at levels (Osler 2003) | research/academic_studies.md |
 | [BT] | none yet | |
-| [EXP] | none yet | |
+| [EXP] | E001 (2026-11-07): `lon_false_break_fade` NONE (dev hit 48.1%, val 47.5%). Deprioritised. | experiments/2026-11-07_E001_session_direction_baseline |
 
 ## Version history
 | Date | Version | Change | Experiment |
