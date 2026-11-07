@@ -1,0 +1,6 @@
+block                            test         predictor                 outcome    n  spearman_ic  spearman_p ic_ci95_block_boot                      tercile_mean_abs_over_atr                       tercile_mean_abs_pips  spearman_ic_raw_pips_descriptive   decision
+  dev     asia_range_pips__us_session   asia_range_pips           y_us_ret_pips 1538       0.0599    0.018758   (0.0123, 0.1126) {'low': 0.2854, 'mid': 0.3015, 'high': 0.3251} {'low': 24.03, 'mid': 25.85, 'high': 26.95}                            0.1895 NOT_USEFUL
+  dev   asia_range_pips__us_0800_0900   asia_range_pips y_us_0800_0900_ret_pips 1537       0.0516    0.043360   (0.0111, 0.1034) {'low': 0.1496, 'mid': 0.1579, 'high': 0.1559} {'low': 13.15, 'mid': 13.35, 'high': 13.35}                            0.2146 NOT_USEFUL
+  dev   london_range_pips__us_session london_range_pips           y_us_ret_pips 1540       0.0099    0.697828  (-0.0438, 0.0572) {'low': 0.2973, 'mid': 0.3065, 'high': 0.3072}  {'low': 26.4, 'mid': 25.23, 'high': 25.12}                            0.1435 NOT_USEFUL
+  dev london_range_pips__us_0800_0900 london_range_pips y_us_0800_0900_ret_pips 1539      -0.0014    0.955207   (-0.0517, 0.043) {'low': 0.1616, 'mid': 0.1461, 'high': 0.1555} {'low': 14.52, 'mid': 12.47, 'high': 12.83}                            0.1649 NOT_USEFUL
+E008 overall decision: NOT_USEFUL

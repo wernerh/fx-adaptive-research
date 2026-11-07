@@ -1,0 +1,114 @@
+{
+  "results": [
+    {
+      "block": "dev",
+      "test": "asia_range_pips__us_session",
+      "predictor": "asia_range_pips",
+      "outcome": "y_us_ret_pips",
+      "n": 1538,
+      "spearman_ic": 0.0599,
+      "spearman_p": 0.018757859577467634,
+      "ic_ci95_block_boot": [
+        0.0123,
+        0.1126
+      ],
+      "tercile_mean_abs_over_atr": {
+        "low": 0.2854,
+        "mid": 0.3015,
+        "high": 0.3251
+      },
+      "tercile_mean_abs_pips": {
+        "low": 24.03,
+        "mid": 25.85,
+        "high": 26.95
+      },
+      "spearman_ic_raw_pips_descriptive": 0.1895,
+      "decision": "NOT_USEFUL"
+    },
+    {
+      "block": "dev",
+      "test": "asia_range_pips__us_0800_0900",
+      "predictor": "asia_range_pips",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "n": 1537,
+      "spearman_ic": 0.0516,
+      "spearman_p": 0.04335976868680578,
+      "ic_ci95_block_boot": [
+        0.0111,
+        0.1034
+      ],
+      "tercile_mean_abs_over_atr": {
+        "low": 0.1496,
+        "mid": 0.1579,
+        "high": 0.1559
+      },
+      "tercile_mean_abs_pips": {
+        "low": 13.15,
+        "mid": 13.35,
+        "high": 13.35
+      },
+      "spearman_ic_raw_pips_descriptive": 0.2146,
+      "decision": "NOT_USEFUL"
+    },
+    {
+      "block": "dev",
+      "test": "london_range_pips__us_session",
+      "predictor": "london_range_pips",
+      "outcome": "y_us_ret_pips",
+      "n": 1540,
+      "spearman_ic": 0.0099,
+      "spearman_p": 0.6978278913477881,
+      "ic_ci95_block_boot": [
+        -0.0438,
+        0.0572
+      ],
+      "tercile_mean_abs_over_atr": {
+        "low": 0.2973,
+        "mid": 0.3065,
+        "high": 0.3072
+      },
+      "tercile_mean_abs_pips": {
+        "low": 26.4,
+        "mid": 25.23,
+        "high": 25.12
+      },
+      "spearman_ic_raw_pips_descriptive": 0.1435,
+      "decision": "NOT_USEFUL"
+    },
+    {
+      "block": "dev",
+      "test": "london_range_pips__us_0800_0900",
+      "predictor": "london_range_pips",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "n": 1539,
+      "spearman_ic": -0.0014,
+      "spearman_p": 0.9552071410353313,
+      "ic_ci95_block_boot": [
+        -0.0517,
+        0.043
+      ],
+      "tercile_mean_abs_over_atr": {
+        "low": 0.1616,
+        "mid": 0.1461,
+        "high": 0.1555
+      },
+      "tercile_mean_abs_pips": {
+        "low": 14.52,
+        "mid": 12.47,
+        "high": 12.83
+      },
+      "spearman_ic_raw_pips_descriptive": 0.1649,
+      "decision": "NOT_USEFUL"
+    }
+  ],
+  "overall_decision": "NOT_USEFUL",
+  "n_trials": 4,
+  "rule": {
+    "min_partial_ic": 0.1,
+    "alpha": 0.01,
+    "ci_lower_gt_0": true
+  },
+  "blocks": [
+    "dev"
+  ]
+}
