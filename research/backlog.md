@@ -8,7 +8,7 @@ Trial count so far on dev: **22** (E001: 7, E006: 14, E004: 1). Update after eve
 
 ---
 
-### B1: London 4pm fix reversal (signal test, dev) → E007 · `ready`
+### B1: London 4pm fix reversal (signal test, dev) → E007 · `running` (pre-registered 2026-11-07)
 - **Mechanism [PUB]:** USD appreciates into the WM/Reuters 4pm London fix and depreciates after (Krohn, Mueller & Whelan 2024, JF); very volatile and negatively autocorrelated around the fix, strongest at month end (Evans 2018, JBF).
 - **Test:** per trading day, EUR/USD mid return in `pre` = 15:00-16:00 Europe/London and `post` = 16:00-17:00 Europe/London (use `outcomes.window_outcome`). Predictions: pre < 0 (USD up), post > 0.
   Also report the month-end subset (last trading day of the month) separately as a pre-registered secondary.
