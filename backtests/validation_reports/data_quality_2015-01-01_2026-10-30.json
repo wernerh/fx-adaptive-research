@@ -1,0 +1,45 @@
+{
+  "first_bar": "2015-01-01 22:00:00+00:00",
+  "last_bar": "2026-10-30 20:59:00+00:00",
+  "bars": 4405240,
+  "weekend_bars": 1,
+  "missing_trading_minutes": 38601,
+  "missing_pct": 0.869,
+  "crossed_quotes": 0,
+  "zero_spread_bars": 0,
+  "spread_pips_median": 0.3,
+  "spread_pips_p95": 0.8,
+  "spread_pips_p99": 2.7,
+  "bad_ohlc": 0,
+  "source": "Dukascopy via dukascopy-node, 1-minute bid and ask",
+  "files": {
+    "bid": [
+      "eurusd-m1-bid-2015.csv",
+      "eurusd-m1-bid-2016.csv",
+      "eurusd-m1-bid-2017.csv",
+      "eurusd-m1-bid-2018.csv",
+      "eurusd-m1-bid-2019.csv",
+      "eurusd-m1-bid-2020.csv",
+      "eurusd-m1-bid-2021.csv",
+      "eurusd-m1-bid-2022.csv",
+      "eurusd-m1-bid-2023.csv",
+      "eurusd-m1-bid-2024.csv",
+      "eurusd-m1-bid-2025.csv",
+      "eurusd-m1-bid-2026.csv"
+    ],
+    "ask": [
+      "eurusd-m1-ask-2015.csv",
+      "eurusd-m1-ask-2016.csv",
+      "eurusd-m1-ask-2017.csv",
+      "eurusd-m1-ask-2018.csv",
+      "eurusd-m1-ask-2019.csv",
+      "eurusd-m1-ask-2020.csv",
+      "eurusd-m1-ask-2021.csv",
+      "eurusd-m1-ask-2022.csv",
+      "eurusd-m1-ask-2023.csv",
+      "eurusd-m1-ask-2024.csv",
+      "eurusd-m1-ask-2025.csv",
+      "eurusd-m1-ask-2026.csv"
+    ]
+  }
+}
