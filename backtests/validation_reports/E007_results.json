@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "block": "dev",
+      "test": "pre_all",
+      "window": "ldn_fix_pre",
+      "direction": -1,
+      "month_end_only": false,
+      "n_days": 1556,
+      "n_active": 1556,
+      "coverage": 1.0,
+      "hit_rate": 0.5231,
+      "hit_rate_ci95": [
+        0.4983,
+        0.5479
+      ],
+      "binom_p": 0.0718,
+      "mean_signed_pips": 0.637,
+      "mean_signed_ci95_block_boot": [
+        -0.528,
+        1.547
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "mean_abs_window_pips": 13.345,
+      "decision": "NONE"
+    },
+    {
+      "block": "dev",
+      "test": "post_all",
+      "window": "ldn_fix_post",
+      "direction": 1,
+      "month_end_only": false,
+      "n_days": 1555,
+      "n_active": 1555,
+      "coverage": 1.0,
+      "hit_rate": 0.5106,
+      "hit_rate_ci95": [
+        0.4858,
+        0.5354
+      ],
+      "binom_p": 0.4171,
+      "mean_signed_pips": 0.476,
+      "mean_signed_ci95_block_boot": [
+        -0.182,
+        1.117
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "mean_abs_window_pips": 9.529,
+      "decision": "NONE"
+    },
+    {
+      "block": "dev",
+      "test": "pre_month_end",
+      "window": "ldn_fix_pre",
+      "direction": -1,
+      "month_end_only": true,
+      "n_days": 72,
+      "n_active": 72,
+      "coverage": 1.0,
+      "hit_rate": 0.4583,
+      "hit_rate_ci95": [
+        0.3483,
+        0.5726
+      ],
+      "binom_p": 0.556,
+      "mean_signed_pips": -2.771,
+      "mean_signed_ci95_block_boot": [
+        -10.099,
+        3.895
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "mean_abs_window_pips": 19.736,
+      "decision": "NONE"
+    },
+    {
+      "block": "dev",
+      "test": "post_month_end",
+      "window": "ldn_fix_post",
+      "direction": 1,
+      "month_end_only": true,
+      "n_days": 72,
+      "n_active": 72,
+      "coverage": 1.0,
+      "hit_rate": 0.4167,
+      "hit_rate_ci95": [
+        0.3099,
+        0.5319
+      ],
+      "binom_p": 0.1945,
+      "mean_signed_pips": -4.506,
+      "mean_signed_ci95_block_boot": [
+        -7.189,
+        -1.877
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "mean_abs_window_pips": 12.596,
+      "decision": "NONE"
+    }
+  ],
+  "overall_decision": "NONE",
+  "n_trials": 4,
+  "blocks": [
+    "dev"
+  ]
+}

@@ -1,0 +1,6 @@
+block           test       window  direction  month_end_only  n_days  n_active  coverage  hit_rate    hit_rate_ci95  binom_p  mean_signed_pips mean_signed_ci95_block_boot  spearman_ic  spearman_p  mean_abs_window_pips decision
+  dev        pre_all  ldn_fix_pre         -1           False    1556      1556       1.0    0.5231 (0.4983, 0.5479)   0.0718             0.637             (-0.528, 1.547)          NaN         NaN                13.345     NONE
+  dev       post_all ldn_fix_post          1           False    1555      1555       1.0    0.5106 (0.4858, 0.5354)   0.4171             0.476             (-0.182, 1.117)          NaN         NaN                 9.529     NONE
+  dev  pre_month_end  ldn_fix_pre         -1            True      72        72       1.0    0.4583 (0.3483, 0.5726)   0.5560            -2.771            (-10.099, 3.895)          NaN         NaN                19.736     NONE
+  dev post_month_end ldn_fix_post          1            True      72        72       1.0    0.4167 (0.3099, 0.5319)   0.1945            -4.506            (-7.189, -1.877)          NaN         NaN                12.596     NONE
+E007 overall decision: NONE
