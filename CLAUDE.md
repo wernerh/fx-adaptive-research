@@ -13,6 +13,11 @@ Read docs/SPEC.md before changing any code, parameter or status.
 6. **One variable at a time.** Each experiment changes one major variable from its parent experiment.
 7. **No trade is a valid result.** Never loosen filters to produce trades.
 
+## Unattended runs
+
+Scheduled/unattended runs also follow **docs/AUTONOMOUS_PROTOCOL.md** (one step per run, lead definition, when to contact the human).
+The work queue is **research/backlog.md**.
+
 ## Start of every run
 
 1. `git pull`
