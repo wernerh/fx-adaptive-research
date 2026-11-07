@@ -1,0 +1,35 @@
+{
+  "strategy": "asian_range_breakout",
+  "experiment": "E004",
+  "block": "dev",
+  "params": "Params(min_range_atr=0.15, max_range_atr=0.6, stop_mode='range', stop_atr=0.25, max_stop_pips=25.0, target_r=1.0, max_hold_minutes=60)",
+  "costs": {
+    "slippage": 0.1,
+    "commission": 0.1
+  },
+  "metrics": {
+    "trades": 1344,
+    "win_rate": 0.4576,
+    "avg_win_pips": 10.442,
+    "avg_loss_pips": -10.07,
+    "expectancy_pips": -0.684,
+    "expectancy_r": -0.0472,
+    "t_stat": -1.96,
+    "profit_factor": 0.875,
+    "total_net_pips": -919.4,
+    "max_drawdown_pips": -1306.0,
+    "max_consecutive_losses": 10,
+    "sharpe_daily_annualised": -0.79,
+    "avg_hold_min": 51.4,
+    "median_hold_min": 60.0,
+    "pct_within_5m": 0.0126,
+    "pct_within_15m": 0.0595,
+    "pct_within_30m": 0.1414,
+    "pips_per_exposure_hour": -0.799,
+    "avg_mae_pips": 9.87,
+    "avg_mfe_pips": 9.35,
+    "avg_spread_at_entry_pips": 0.271,
+    "costs_share_of_gross": 0.0098
+  },
+  "run_at": "2026-11-07T17:13:58Z"
+}

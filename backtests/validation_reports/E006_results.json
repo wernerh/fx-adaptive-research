@@ -1,0 +1,631 @@
+{
+  "results": [
+    {
+      "block": "dev",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "unconditional_long",
+      "n_days": 1556,
+      "n_active": 1556,
+      "coverage": 1.0,
+      "hit_rate": 0.518,
+      "hit_rate_ci95": [
+        0.4932,
+        0.5427
+      ],
+      "binom_p": 0.1632,
+      "mean_signed_pips": 0.708,
+      "mean_signed_ci95_block_boot": [
+        -0.389,
+        1.717
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "london_ret_sign",
+      "n_days": 1556,
+      "n_active": 1555,
+      "coverage": 0.999,
+      "hit_rate": 0.4823,
+      "hit_rate_ci95": [
+        0.4576,
+        0.5072
+      ],
+      "binom_p": 0.1709,
+      "mean_signed_pips": -0.141,
+      "mean_signed_ci95_block_boot": [
+        -1.141,
+        0.998
+      ],
+      "spearman_ic": -0.0148,
+      "spearman_p": 0.5602,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "asia_ret_sign",
+      "n_days": 1556,
+      "n_active": 1553,
+      "coverage": 0.998,
+      "hit_rate": 0.4997,
+      "hit_rate_ci95": [
+        0.4748,
+        0.5245
+      ],
+      "binom_p": 1.0,
+      "mean_signed_pips": 0.088,
+      "mean_signed_ci95_block_boot": [
+        -0.749,
+        0.946
+      ],
+      "spearman_ic": 0.0029,
+      "spearman_p": 0.9076,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "lon_break_side",
+      "n_days": 1556,
+      "n_active": 1503,
+      "coverage": 0.966,
+      "hit_rate": 0.487,
+      "hit_rate_ci95": [
+        0.4618,
+        0.5123
+      ],
+      "binom_p": 0.327,
+      "mean_signed_pips": -0.046,
+      "mean_signed_ci95_block_boot": [
+        -1.14,
+        1.112
+      ],
+      "spearman_ic": -0.0118,
+      "spearman_p": 0.6431,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "lon_break_held",
+      "n_days": 1556,
+      "n_active": 1037,
+      "coverage": 0.666,
+      "hit_rate": 0.487,
+      "hit_rate_ci95": [
+        0.4567,
+        0.5174
+      ],
+      "binom_p": 0.4195,
+      "mean_signed_pips": 0.564,
+      "mean_signed_ci95_block_boot": [
+        -0.836,
+        1.9
+      ],
+      "spearman_ic": -0.005,
+      "spearman_p": 0.845,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "lon_false_break_fade",
+      "n_days": 1556,
+      "n_active": 466,
+      "coverage": 0.299,
+      "hit_rate": 0.5129,
+      "hit_rate_ci95": [
+        0.4676,
+        0.558
+      ],
+      "binom_p": 0.6104,
+      "mean_signed_pips": 1.404,
+      "mean_signed_ci95_block_boot": [
+        -0.057,
+        3.333
+      ],
+      "spearman_ic": 0.0138,
+      "spearman_p": 0.5853,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "asia_london_agree",
+      "n_days": 1556,
+      "n_active": 781,
+      "coverage": 0.502,
+      "hit_rate": 0.4814,
+      "hit_rate_ci95": [
+        0.4466,
+        0.5165
+      ],
+      "binom_p": 0.3164,
+      "mean_signed_pips": -0.096,
+      "mean_signed_ci95_block_boot": [
+        -1.431,
+        1.46
+      ],
+      "spearman_ic": -0.0093,
+      "spearman_p": 0.7136,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "unconditional_long",
+      "n_days": 637,
+      "n_active": 637,
+      "coverage": 1.0,
+      "hit_rate": 0.5149,
+      "hit_rate_ci95": [
+        0.4761,
+        0.5535
+      ],
+      "binom_p": 0.4758,
+      "mean_signed_pips": 1.051,
+      "mean_signed_ci95_block_boot": [
+        -0.258,
+        2.145
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "london_ret_sign",
+      "n_days": 637,
+      "n_active": 636,
+      "coverage": 0.998,
+      "hit_rate": 0.5031,
+      "hit_rate_ci95": [
+        0.4644,
+        0.5419
+      ],
+      "binom_p": 0.9053,
+      "mean_signed_pips": -1.022,
+      "mean_signed_ci95_block_boot": [
+        -2.782,
+        0.613
+      ],
+      "spearman_ic": 0.0032,
+      "spearman_p": 0.9348,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "asia_ret_sign",
+      "n_days": 637,
+      "n_active": 636,
+      "coverage": 0.998,
+      "hit_rate": 0.5016,
+      "hit_rate_ci95": [
+        0.4628,
+        0.5403
+      ],
+      "binom_p": 0.9684,
+      "mean_signed_pips": 0.305,
+      "mean_signed_ci95_block_boot": [
+        -1.7,
+        2.093
+      ],
+      "spearman_ic": -0.0151,
+      "spearman_p": 0.7033,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "lon_break_side",
+      "n_days": 637,
+      "n_active": 619,
+      "coverage": 0.972,
+      "hit_rate": 0.5073,
+      "hit_rate_ci95": [
+        0.468,
+        0.5465
+      ],
+      "binom_p": 0.7478,
+      "mean_signed_pips": -0.511,
+      "mean_signed_ci95_block_boot": [
+        -2.095,
+        0.982
+      ],
+      "spearman_ic": -0.0064,
+      "spearman_p": 0.8711,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "lon_break_held",
+      "n_days": 637,
+      "n_active": 423,
+      "coverage": 0.664,
+      "hit_rate": 0.5272,
+      "hit_rate_ci95": [
+        0.4796,
+        0.5743
+      ],
+      "binom_p": 0.2848,
+      "mean_signed_pips": -0.012,
+      "mean_signed_ci95_block_boot": [
+        -2.369,
+        2.347
+      ],
+      "spearman_ic": 0.0325,
+      "spearman_p": 0.4127,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "lon_false_break_fade",
+      "n_days": 637,
+      "n_active": 196,
+      "coverage": 0.308,
+      "hit_rate": 0.5357,
+      "hit_rate_ci95": [
+        0.4659,
+        0.6042
+      ],
+      "binom_p": 0.3531,
+      "mean_signed_pips": 1.587,
+      "mean_signed_ci95_block_boot": [
+        -0.469,
+        4.429
+      ],
+      "spearman_ic": 0.0592,
+      "spearman_p": 0.1353,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0800_0900_ret_pips",
+      "predictor": "asia_london_agree",
+      "n_days": 637,
+      "n_active": 307,
+      "coverage": 0.482,
+      "hit_rate": 0.5049,
+      "hit_rate_ci95": [
+        0.4492,
+        0.5604
+      ],
+      "binom_p": 0.9091,
+      "mean_signed_pips": -0.725,
+      "mean_signed_ci95_block_boot": [
+        -3.038,
+        0.995
+      ],
+      "spearman_ic": -0.0081,
+      "spearman_p": 0.838,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "unconditional_long",
+      "n_days": 1555,
+      "n_active": 1555,
+      "coverage": 1.0,
+      "hit_rate": 0.4842,
+      "hit_rate_ci95": [
+        0.4595,
+        0.5091
+      ],
+      "binom_p": 0.2235,
+      "mean_signed_pips": -0.229,
+      "mean_signed_ci95_block_boot": [
+        -1.034,
+        0.692
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "london_ret_sign",
+      "n_days": 1555,
+      "n_active": 1554,
+      "coverage": 0.999,
+      "hit_rate": 0.491,
+      "hit_rate_ci95": [
+        0.4662,
+        0.5158
+      ],
+      "binom_p": 0.4934,
+      "mean_signed_pips": 0.118,
+      "mean_signed_ci95_block_boot": [
+        -0.766,
+        1.035
+      ],
+      "spearman_ic": -0.0052,
+      "spearman_p": 0.8364,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "asia_ret_sign",
+      "n_days": 1555,
+      "n_active": 1552,
+      "coverage": 0.998,
+      "hit_rate": 0.5174,
+      "hit_rate_ci95": [
+        0.4925,
+        0.5422
+      ],
+      "binom_p": 0.1785,
+      "mean_signed_pips": 0.724,
+      "mean_signed_ci95_block_boot": [
+        -0.1,
+        1.457
+      ],
+      "spearman_ic": 0.0435,
+      "spearman_p": 0.0861,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "lon_break_side",
+      "n_days": 1555,
+      "n_active": 1502,
+      "coverage": 0.966,
+      "hit_rate": 0.514,
+      "hit_rate_ci95": [
+        0.4887,
+        0.5392
+      ],
+      "binom_p": 0.2901,
+      "mean_signed_pips": 0.289,
+      "mean_signed_ci95_block_boot": [
+        -0.533,
+        1.075
+      ],
+      "spearman_ic": 0.0121,
+      "spearman_p": 0.6325,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "lon_break_held",
+      "n_days": 1555,
+      "n_active": 1037,
+      "coverage": 0.667,
+      "hit_rate": 0.5111,
+      "hit_rate_ci95": [
+        0.4807,
+        0.5414
+      ],
+      "binom_p": 0.4945,
+      "mean_signed_pips": 0.478,
+      "mean_signed_ci95_block_boot": [
+        -0.519,
+        1.335
+      ],
+      "spearman_ic": 0.0091,
+      "spearman_p": 0.7201,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "lon_false_break_fade",
+      "n_days": 1555,
+      "n_active": 465,
+      "coverage": 0.299,
+      "hit_rate": 0.4796,
+      "hit_rate_ci95": [
+        0.4345,
+        0.525
+      ],
+      "binom_p": 0.4039,
+      "mean_signed_pips": 0.133,
+      "mean_signed_ci95_block_boot": [
+        -1.184,
+        1.792
+      ],
+      "spearman_ic": -0.0081,
+      "spearman_p": 0.7501,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "dev",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "asia_london_agree",
+      "n_days": 1555,
+      "n_active": 781,
+      "coverage": 0.502,
+      "hit_rate": 0.5096,
+      "hit_rate_ci95": [
+        0.4746,
+        0.5445
+      ],
+      "binom_p": 0.6164,
+      "mean_signed_pips": 0.821,
+      "mean_signed_ci95_block_boot": [
+        -0.311,
+        2.073
+      ],
+      "spearman_ic": 0.026,
+      "spearman_p": 0.3048,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "unconditional_long",
+      "n_days": 637,
+      "n_active": 637,
+      "coverage": 1.0,
+      "hit_rate": 0.5008,
+      "hit_rate_ci95": [
+        0.4621,
+        0.5395
+      ],
+      "binom_p": 1.0,
+      "mean_signed_pips": -0.087,
+      "mean_signed_ci95_block_boot": [
+        -1.293,
+        1.054
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "london_ret_sign",
+      "n_days": 637,
+      "n_active": 636,
+      "coverage": 0.998,
+      "hit_rate": 0.4748,
+      "hit_rate_ci95": [
+        0.4363,
+        0.5137
+      ],
+      "binom_p": 0.219,
+      "mean_signed_pips": -0.173,
+      "mean_signed_ci95_block_boot": [
+        -1.409,
+        1.201
+      ],
+      "spearman_ic": -0.0109,
+      "spearman_p": 0.7832,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "asia_ret_sign",
+      "n_days": 637,
+      "n_active": 636,
+      "coverage": 0.998,
+      "hit_rate": 0.4921,
+      "hit_rate_ci95": [
+        0.4534,
+        0.5309
+      ],
+      "binom_p": 0.7212,
+      "mean_signed_pips": -0.4,
+      "mean_signed_ci95_block_boot": [
+        -1.915,
+        0.974
+      ],
+      "spearman_ic": -0.0143,
+      "spearman_p": 0.7182,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "lon_break_side",
+      "n_days": 637,
+      "n_active": 619,
+      "coverage": 0.972,
+      "hit_rate": 0.4798,
+      "hit_rate_ci95": [
+        0.4407,
+        0.5192
+      ],
+      "binom_p": 0.3347,
+      "mean_signed_pips": 0.086,
+      "mean_signed_ci95_block_boot": [
+        -1.338,
+        1.644
+      ],
+      "spearman_ic": 0.0007,
+      "spearman_p": 0.9852,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "lon_break_held",
+      "n_days": 637,
+      "n_active": 423,
+      "coverage": 0.664,
+      "hit_rate": 0.4775,
+      "hit_rate_ci95": [
+        0.4304,
+        0.5251
+      ],
+      "binom_p": 0.3815,
+      "mean_signed_pips": -0.168,
+      "mean_signed_ci95_block_boot": [
+        -2.115,
+        2.05
+      ],
+      "spearman_ic": 0.0074,
+      "spearman_p": 0.8527,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "lon_false_break_fade",
+      "n_days": 637,
+      "n_active": 196,
+      "coverage": 0.308,
+      "hit_rate": 0.5153,
+      "hit_rate_ci95": [
+        0.4457,
+        0.5843
+      ],
+      "binom_p": 0.7211,
+      "mean_signed_pips": -0.634,
+      "mean_signed_ci95_block_boot": [
+        -3.247,
+        1.847
+      ],
+      "spearman_ic": 0.0094,
+      "spearman_p": 0.8119,
+      "binom_p_bonferroni": 1.0
+    },
+    {
+      "block": "val",
+      "outcome": "y_us_0835_0930_ret_pips",
+      "predictor": "asia_london_agree",
+      "n_days": 637,
+      "n_active": 307,
+      "coverage": 0.482,
+      "hit_rate": 0.4658,
+      "hit_rate_ci95": [
+        0.4108,
+        0.5217
+      ],
+      "binom_p": 0.2536,
+      "mean_signed_pips": -0.602,
+      "mean_signed_ci95_block_boot": [
+        -2.62,
+        1.903
+      ],
+      "spearman_ic": -0.0183,
+      "spearman_p": 0.6439,
+      "binom_p_bonferroni": 1.0
+    }
+  ],
+  "mean_abs_window_return_pips": {
+    "us_0800_0900": {
+      "dev": 13.341,
+      "val": 13.973
+    },
+    "us_0835_0930": {
+      "dev": 12.472,
+      "val": 12.198
+    }
+  },
+  "n_trials": 14
+}

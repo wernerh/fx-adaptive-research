@@ -1,1 +1,3 @@
 run_at,experiment,strategy,block,trades,win_rate,expectancy_pips,expectancy_r,t_stat,profit_factor,max_drawdown_pips,sharpe_daily_annualised,median_hold_min,pct_within_15m,pips_per_exposure_hour
+2026-11-07T17:13:58Z,E004,asian_range_breakout,dev,1344,0.4576,-0.684,-0.0472,-1.96,0.875,-1306.0,-0.79,60.0,0.0595,-0.799
+2026-11-07T17:14:14Z,E004diag,asian_range_breakout,dev,1344,0.4643,-0.484,-0.0362,-1.39,0.909,-1077.6,-0.56,60.0,0.0595,-0.565
