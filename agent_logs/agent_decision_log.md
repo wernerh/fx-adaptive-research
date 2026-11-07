@@ -28,3 +28,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** research-batch run 42400981266 completed; outputs (0db6d13) not yet recorded -> Collect step.
 - **Decision:** applied E007 rule exactly -> NONE on all 4 tests; B1v not queued. No lead; no notification.
 - **Decision:** logged the wrong-sign month-end post-fix result as exploratory backlog B8, `parked` (not `ready`): post hoc, n=72, binomial n.s.
+
+### 2026-11-07 R006 (unattended)
+- **State:** no research-batch run queued or in progress; last batch (42400981266) already recorded in eece61e.
+- **Decision:** took top `ready` backlog item B2 -> E008 volatility timing, dev only, 4 trials (2 predictors x 2 outcomes).
+- **Judgement call (before any data):** decision statistic changed from the draft "IC of range/ATR vs |move|" to partial Spearman given prior ATR, because the random-walk test showed a shared-denominator bias (~+0.04). Rule is stricter (adds CI lower > 0). Recorded in methodology.md.

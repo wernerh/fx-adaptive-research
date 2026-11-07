@@ -1,0 +1,15 @@
+{
+  "experiment_id": "E008",
+  "date": "2026-11-07",
+  "instrument": "EURUSD",
+  "hypothesis": "Pre-US session ranges (Asia, London) predict the absolute US-window move beyond the prior-ATR regime (partial Spearman > 0.10)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": "none",
+  "variable_changed": "new question (move size, not direction)",
+  "decision_rule": "per test: USEFUL if partial Spearman IC | prior ATR > 0.10 AND p < 0.01 AND block-bootstrap CI lower > 0; else NOT_USEFUL",
+  "n_trials": 4,
+  "status": "preregistered",
+  "results": null,
+  "decision": null
+}
