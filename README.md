@@ -59,7 +59,9 @@ run one controlled experiment, record results, update knowledge, commit.
 | Pipeline | v0.1, tested on synthetic data |
 | Data | Dukascopy m1 bid/ask 2015-01-01 to 2026-10-30, quality gate passed (0.87% missing) |
 | E001 session-direction baseline | **NONE**: no Asian/London predictor of US-morning direction (dev+val) |
-| Strategies | All `research_candidate`; S002/S003 deprioritised after E001; S001 next (E004) |
+| E004 Asian range breakout (S001) | **REJECTED** on dev: -0.68 pips/trade net, PF 0.88 |
+| E006 short US windows | **NONE**: no signal in 08:00-09:00 or 08:35-09:30 |
+| Strategies | S001 rejected; S002/S003 deprioritised; next: pivot to event / fix / volatility-timing research |
 | Live trading | Not permitted |
 
 ## Repository map

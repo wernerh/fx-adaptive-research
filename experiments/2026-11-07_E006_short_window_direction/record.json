@@ -10,7 +10,14 @@
   "oos_touched": false,
   "parent_experiment": "E001",
   "variable_changed": "outcome window",
-  "results": null,
-  "decision": null,
-  "next_experiment": null
+  "results": {
+    "source": "backtests/validation_reports/E006_results.json",
+    "run": "42395207715",
+    "n_trials": 14,
+    "min_unadjusted_binom_p": 0.1632,
+    "all_bonferroni_p": 1.0,
+    "exploratory_note": "lon_false_break_fade 08:00-09:00 +1.40 dev / +1.59 val pips, n.s."
+  },
+  "decision": "NONE",
+  "next_experiment": "pivot: see research_run_log R002"
 }

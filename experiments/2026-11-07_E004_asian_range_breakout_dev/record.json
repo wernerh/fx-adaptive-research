@@ -9,7 +9,18 @@
   ],
   "oos_touched": false,
   "variable_changed": null,
-  "results": null,
-  "decision": null,
-  "next_experiment": null
+  "results": {
+    "source": "backtests/validation_reports/E004_asian_range_breakout_dev.json",
+    "run": "42395207715",
+    "trades": 1344,
+    "win_rate": 0.4576,
+    "expectancy_pips": -0.684,
+    "t_stat": -1.96,
+    "profit_factor": 0.875,
+    "max_drawdown_pips": -1306.0,
+    "median_hold_min": 60.0,
+    "spread_only_expectancy_pips": -0.484
+  },
+  "decision": "REJECT S001 v0.1",
+  "next_experiment": "none for S001; see research_run_log"
 }

@@ -1,5 +1,5 @@
 strategy_id,name,module,status,parent_experiment,trades_tested,expectancy_pips_val,expectancy_pips_oos,median_hold_min,last_updated,notes
-S001,Asian range breakout,asian_range_breakout,research_candidate,,,,,,2026-11-07,Not affected by E001 (trades within London); next: E004
+S001,Asian range breakout,asian_range_breakout,rejected,E004,1344,,,60.0,2026-11-07,REJECTED v0.1: dev -0.684 pips/trade net; t=-1.96; PF 0.875
 S002,London false-breakout reversal,,research_candidate,,,,,,2026-11-07,Deprioritised: E001 lon_false_break_fade NONE (dev p=0.43; val p=0.52)
 S003,London-to-US continuation,london_us_continuation,research_candidate,E001,,,,,2026-11-07,Deprioritised: E001 london_ret_sign NONE
 S004,Session VWAP mean reversion,,research_candidate,,,,,,2026-11-07,Not implemented; needs tick volume caveat

@@ -12,3 +12,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** ran E001 via GitHub Actions; the workspace cannot reach Dukascopy and the user is away from their PC.
 - **Decision:** applied the pre-registered rule exactly -> NONE. Did not run unregistered variants to find a positive result.
 - **Decision:** deprioritised S002/S003 without formally rejecting them (statuses unchanged); their core premise is in rejected_hypotheses.md.
+
+### 2026-11-07 R002
+- **Decision:** ran E004 and E006 together (user request), both pre-registered and committed before the run (0a57f09).
+- **Decision:** rejected S001 v0.1 and did not run val, per the rule.
+- **Decision:** did NOT follow up the exploratory `lon_false_break_fade` 08:00-09:00 observation. It would be trial 23 on dev, chosen after seeing the data.
+- **Recommendation for R003:** pivot away from session-price predictors. Candidates: (a) US data release reaction (S005; needs a historical calendar with timestamps); (b) time-of-day volatility timing for entry windows (predicting *when* to trade, not direction); (c) London-fix reversal (published mechanism, Krohn et al. 2024).

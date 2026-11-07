@@ -14,3 +14,4 @@ Approval for live consideration needs explicit **human** sign-off, recorded here
 | Date | Strategy | From | To | Evidence | Approved by |
 |---|---|---|---|---|---|
 | 2026-11-07 | S001 to S006 | none | research_candidate | Initial research list | repo init |
+| 2026-11-07 | S001 | research_candidate | rejected | E004 (dev: -0.684 pips/trade, t=-1.96, PF 0.875) | pre-registered rule |

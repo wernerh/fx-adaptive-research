@@ -24,3 +24,14 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 ### 2026-11-07: break coverage
 - **Observation:** London breaks the Asian range on about 97% of days, so "breakout" without a filter is not a selective event.
 - **Action:** S001 relies on its Asian-range/ATR filter; test whether that filter matters (E004 vs an unfiltered variant).
+
+### 2026-11-07: the core hypothesis failed three independent ways
+- **Context:** E001, E004, E006
+- **Observation:** no cross-session directional information for the 4-hour or 1-hour US windows, and the most popular London setup loses even before slippage.
+- **Evidence label:** [EXP] [BT]
+- **Lesson:** simple price-structure features from earlier sessions carry no usable directional information for EUR/USD in 2015-2023. Further tuning of these features on dev is likely to find only noise (22 trials used so far).
+- **Action:** pivot the next research to a different information source (scheduled events / volatility timing) rather than more session-price variants. See agent_decision_log R002.
+
+### 2026-11-07: metric definition
+- **Observation:** `costs_share_of_gross` excludes the spread, because gross P&L is measured bid/ask. E004 showed 0.98% while total costs were clearly larger.
+- **Action:** add a mid-price gross metric so the full cost share is visible (pipeline backlog).
