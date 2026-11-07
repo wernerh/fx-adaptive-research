@@ -23,3 +23,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** no research-batch run queued or in progress; last batch (42395207715) already recorded in 7cc4427.
 - **Decision:** took top `ready` backlog item B1 -> E007 London 4pm fix reversal, dev only, 4 trials. Pre-registered rule in experiments/2026-11-07_E007_london_fix_reversal/methodology.md, committed before the run.
 - **Reason:** published mechanism (Krohn, Mueller & Whelan 2024; Evans 2018), a different information source from the three failed session-price tests, and data already available.
+
+### 2026-11-07 R005 (unattended)
+- **State:** research-batch run 42400981266 completed; outputs (0db6d13) not yet recorded -> Collect step.
+- **Decision:** applied E007 rule exactly -> NONE on all 4 tests; B1v not queued. No lead; no notification.
+- **Decision:** logged the wrong-sign month-end post-fix result as exploratory backlog B8, `parked` (not `ready`): post hoc, n=72, binomial n.s.

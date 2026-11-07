@@ -17,3 +17,6 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 ### 2026-11-07: E004: breakouts of the Asian range do not continue over 60 minutes (dev 2015-2020)
 - **[BT]** First London close outside the Asian range, traded in the break direction: 1,344 trades, 45.8% wins at 1R, -0.68 pips/trade net, -0.48 pips with spread only.
 - **[BT]** Average MFE 9.35 pips < average MAE 9.87 pips. Median hold = 60-minute time stop.
+
+### 2026-11-07: London 4pm fix (E007, dev)
+- NONE. 15:00-16:00 London is volatile (mean |ret| 13.3 pips; 19.7 at month end) but has no reliable direction. See experiments/2026-11-07_E007_london_fix_reversal.

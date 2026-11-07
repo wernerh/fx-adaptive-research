@@ -4,11 +4,11 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **22** (E001: 7, E006: 14, E004: 1). Update after every experiment.
+Trial count so far on dev: **26** (E001: 7, E006: 14, E004: 1, E007: 4). Update after every experiment.
 
 ---
 
-### B1: London 4pm fix reversal (signal test, dev) → E007 · `running` (pre-registered 2026-11-07)
+### B1: London 4pm fix reversal (signal test, dev) → E007 · `done` (2026-11-07: NONE, B1v not earned)
 - **Mechanism [PUB]:** USD appreciates into the WM/Reuters 4pm London fix and depreciates after (Krohn, Mueller & Whelan 2024, JF); very volatile and negatively autocorrelated around the fix, strongest at month end (Evans 2018, JBF).
 - **Test:** per trading day, EUR/USD mid return in `pre` = 15:00-16:00 Europe/London and `post` = 16:00-17:00 Europe/London (use `outcomes.window_outcome`). Predictions: pre < 0 (USD up), post > 0.
   Also report the month-end subset (last trading day of the month) separately as a pre-registered secondary.
@@ -38,3 +38,10 @@ Trial count so far on dev: **22** (E001: 7, E006: 14, E004: 1). Update after eve
 
 ### B7: London false-break fade, 08:00-09:00 NY (signal test, pre-registered) · `parked`
 - **Origin:** exploratory note in E006 (+1.4/+1.6 pips dev/val, n.s.). Already seen on val, so a fair test needs fresh data: **park** until the human decides whether OOS may be used for it.
+
+### B8: Month-end post-fix USD continuation (signal test, val only) · `parked`
+- **Origin:** post-hoc observation in E007 (dev): post-fix 16:00-17:00 London on month-end days, EUR/USD signed-long mean -4.51 pips,
+  bootstrap CI (-7.19, -1.88), but hit rate 0.417 (binom p = 0.19), n = 72; opposite to the pre-registered direction.
+- **Test if un-parked:** short EUR/USD 16:00-17:00 London on last trading day of month, **val block only**, 1 trial; SIGNAL rule as B1
+  (mean > 1.0 pip, CI lower > 0, binom p < 0.05). Val has only ~30 month ends, so power is low.
+- **Why parked:** chosen after seeing dev, wrong-sign vs published mechanism, tiny n, and val would be its only clean test. Un-park only with a reason in the decision log.

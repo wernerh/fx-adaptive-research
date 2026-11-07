@@ -35,3 +35,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 ### 2026-11-07: metric definition
 - **Observation:** `costs_share_of_gross` excludes the spread, because gross P&L is measured bid/ask. E004 showed 0.98% while total costs were clearly larger.
 - **Action:** add a mid-price gross metric so the full cost share is visible (pipeline backlog).
+
+### 2026-11-07: published fix-reversal effect not usable in EUR/USD dev (E007)
+- **Context:** E007
+- **Observation:** pre/post-fix returns had the published sign but only ~0.5-0.6 pips with CIs spanning 0; month-end subsets went the other way (post-fix ME -4.5 pips, n=72, driven by few large moves).
+- **Evidence label:** [EXP]
+- **Lesson:** a published effect (largely USD-index/earlier samples) can shrink below cost in one pair and 2015-2020. Small month-end subsets produce wide, unstable means; treat mean-only CI exclusions with n<100 as hypothesis-generating at most.
+- **Action:** B1 closed (NONE). Month-end continuation logged as exploratory backlog item B8 (val only, pre-registered).

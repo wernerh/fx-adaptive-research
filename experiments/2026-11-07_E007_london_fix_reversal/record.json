@@ -3,13 +3,61 @@
   "date": "2026-11-07",
   "instrument": "EURUSD",
   "hypothesis": "USD appreciates into the London 4pm fix (15:00-16:00 London) and reverses after (16:00-17:00), stronger at month end",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": "none",
   "variable_changed": "new information source (fixing flow)",
   "decision_rule": "per test: SIGNAL if mean signed > 1.0 pip AND block-bootstrap CI lower > 0 AND binom p < 0.0125; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
   "n_trials": 4,
-  "results": null,
-  "decision": "PREREGISTERED",
-  "next_experiment": "B1v (val) only if SIGNAL"
+  "results": {
+    "pre_all": {
+      "n_active": 1556,
+      "hit_rate": 0.5231,
+      "binom_p": 0.0718,
+      "mean_signed_pips": 0.637,
+      "mean_signed_ci95_block_boot": [
+        -0.528,
+        1.547
+      ],
+      "decision": "NONE"
+    },
+    "post_all": {
+      "n_active": 1555,
+      "hit_rate": 0.5106,
+      "binom_p": 0.4171,
+      "mean_signed_pips": 0.476,
+      "mean_signed_ci95_block_boot": [
+        -0.182,
+        1.117
+      ],
+      "decision": "NONE"
+    },
+    "pre_month_end": {
+      "n_active": 72,
+      "hit_rate": 0.4583,
+      "binom_p": 0.556,
+      "mean_signed_pips": -2.771,
+      "mean_signed_ci95_block_boot": [
+        -10.099,
+        3.895
+      ],
+      "decision": "NONE"
+    },
+    "post_month_end": {
+      "n_active": 72,
+      "hit_rate": 0.4167,
+      "binom_p": 0.1945,
+      "mean_signed_pips": -4.506,
+      "mean_signed_ci95_block_boot": [
+        -7.189,
+        -1.877
+      ],
+      "decision": "NONE"
+    },
+    "source": "backtests/validation_reports/E007_results.json (GitHub Actions run 42400981266)"
+  },
+  "decision": "NONE",
+  "next_experiment": "none on B1 line; post-hoc month-end observation -> backlog B8 (val, pre-registered)"
 }
