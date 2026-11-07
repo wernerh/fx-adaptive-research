@@ -57,17 +57,22 @@ def evaluate_predictor(signal: pd.Series, y_ret_pips: pd.Series) -> dict:
     }
 
 
-def run_baseline(feats: pd.DataFrame, split: pd.Series) -> pd.DataFrame:
+def run_baseline(feats: pd.DataFrame, split: pd.Series, outcome: str = "y_us_ret_pips",
+                 n_trials: int | None = None) -> pd.DataFrame:
+    """Evaluate every predictor against `outcome` per block.
+
+    `n_trials` is the Bonferroni multiplier; defaults to the number of predictors.
+    Pass a larger number when several outcome windows are tested together.
+    """
     rows = []
     for block in ("dev", "val", "oos"):
         f = feats[split.reindex(feats.index) == block]
         if f.empty:
             continue
         for name, fn in PREDICTORS.items():
-            res = evaluate_predictor(pd.Series(fn(f), index=f.index), f["y_us_ret_pips"])
-            rows.append({"block": block, "predictor": name, **res})
+            res = evaluate_predictor(pd.Series(fn(f), index=f.index), f[outcome])
+            rows.append({"block": block, "outcome": outcome, "predictor": name, **res})
     out = pd.DataFrame(rows)
-    # Multiple-testing guard: Bonferroni across predictors within each block.
     if "binom_p" in out:
-        out["binom_p_bonferroni"] = (out["binom_p"] * len(PREDICTORS)).clip(upper=1.0)
+        out["binom_p_bonferroni"] = (out["binom_p"] * (n_trials or len(PREDICTORS))).clip(upper=1.0)
     return out

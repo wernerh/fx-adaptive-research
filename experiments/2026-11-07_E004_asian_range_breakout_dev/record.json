@@ -1,0 +1,15 @@
+{
+  "experiment_id": "E004",
+  "date": "2026-11-07",
+  "instrument": "EURUSD",
+  "strategy_id": "S001",
+  "hypothesis": "S001 v0.1 has positive net expectancy on dev",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "variable_changed": null,
+  "results": null,
+  "decision": null,
+  "next_experiment": null
+}

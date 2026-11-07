@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E006",
+  "date": "2026-11-07",
+  "instrument": "EURUSD",
+  "hypothesis": "E001 predictors predict short early-US windows",
+  "blocks_used": [
+    "dev",
+    "val"
+  ],
+  "oos_touched": false,
+  "parent_experiment": "E001",
+  "variable_changed": "outcome window",
+  "results": null,
+  "decision": null,
+  "next_experiment": null
+}

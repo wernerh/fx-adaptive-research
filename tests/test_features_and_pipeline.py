@@ -90,3 +90,17 @@ def test_baseline_runs_and_reports_blocks(feats):
 def test_wilson_interval():
     lo, hi = wilson_interval(50, 100)
     assert lo < 0.5 < hi and hi - lo == pytest.approx(0.19, abs=0.01)
+
+
+def test_window_outcome_matches_manual(bars):
+    from datetime import time
+    from fxresearch.outcomes import window_outcome
+    from fxresearch.data import mid, PIP
+    w = window_outcome(bars, "America/New_York", time(8, 0), time(9, 0), "w")
+    d = w.index[10]
+    start = pd.Timestamp(f"{d} 08:00", tz="America/New_York").tz_convert("UTC")
+    end = pd.Timestamp(f"{d} 09:00", tz="America/New_York").tz_convert("UTC")
+    m = mid(bars)
+    sub = m[(m.index >= start) & (m.index < end)]
+    assert w.loc[d, "y_w_ret_pips"] == pytest.approx((sub["close"].iloc[-1] - sub["open"].iloc[0]) / PIP)
+    assert w.loc[d, "y_w_bars"] == 60
