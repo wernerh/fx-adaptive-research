@@ -1,0 +1,14 @@
+{
+  "experiment_id": "E001",
+  "date": "2026-11-07",
+  "instrument": "EURUSD",
+  "hypothesis": "Asian/London structure predicts sign of US-session return",
+  "timeframe": "1m bars aggregated to sessions",
+  "data_range": "2015-01-01..latest",
+  "blocks_used": ["dev", "val"],
+  "oos_touched": false,
+  "variable_changed": null,
+  "results": null,
+  "decision": null,
+  "next_experiment": null
+}
