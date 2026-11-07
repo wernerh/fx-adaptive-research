@@ -3,13 +3,62 @@
   "date": "2026-11-07",
   "instrument": "EURUSD",
   "hypothesis": "Pre-US session ranges (Asia, London) predict the absolute US-window move beyond the prior-ATR regime (partial Spearman > 0.10)",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": "none",
   "variable_changed": "new question (move size, not direction)",
   "decision_rule": "per test: USEFUL if partial Spearman IC | prior ATR > 0.10 AND p < 0.01 AND block-bootstrap CI lower > 0; else NOT_USEFUL",
   "n_trials": 4,
-  "status": "preregistered",
-  "results": null,
-  "decision": null
+  "status": "complete",
+  "results": {
+    "asia_range_pips__us_session": {
+      "n": 1538,
+      "spearman_ic": 0.0599,
+      "spearman_p": 0.018757859577467634,
+      "ic_ci95_block_boot": [
+        0.0123,
+        0.1126
+      ],
+      "spearman_ic_raw_pips_descriptive": 0.1895,
+      "decision": "NOT_USEFUL"
+    },
+    "asia_range_pips__us_0800_0900": {
+      "n": 1537,
+      "spearman_ic": 0.0516,
+      "spearman_p": 0.04335976868680578,
+      "ic_ci95_block_boot": [
+        0.0111,
+        0.1034
+      ],
+      "spearman_ic_raw_pips_descriptive": 0.2146,
+      "decision": "NOT_USEFUL"
+    },
+    "london_range_pips__us_session": {
+      "n": 1540,
+      "spearman_ic": 0.0099,
+      "spearman_p": 0.6978278913477881,
+      "ic_ci95_block_boot": [
+        -0.0438,
+        0.0572
+      ],
+      "spearman_ic_raw_pips_descriptive": 0.1435,
+      "decision": "NOT_USEFUL"
+    },
+    "london_range_pips__us_0800_0900": {
+      "n": 1539,
+      "spearman_ic": -0.0014,
+      "spearman_p": 0.9552071410353313,
+      "ic_ci95_block_boot": [
+        -0.0517,
+        0.043
+      ],
+      "spearman_ic_raw_pips_descriptive": 0.1649,
+      "decision": "NOT_USEFUL"
+    },
+    "source": "backtests/validation_reports/E008_results.json (GitHub Actions run 42411061401)"
+  },
+  "decision": "NOT_USEFUL",
+  "next_experiment": "none on B2 line (B2v not earned)"
 }

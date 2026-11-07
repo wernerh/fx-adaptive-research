@@ -42,3 +42,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** a published effect (largely USD-index/earlier samples) can shrink below cost in one pair and 2015-2020. Small month-end subsets produce wide, unstable means; treat mean-only CI exclusions with n<100 as hypothesis-generating at most.
 - **Action:** B1 closed (NONE). Month-end continuation logged as exploratory backlog item B8 (val only, pre-registered).
+
+### 2026-11-07: session ranges add ~nothing to volatility forecasts beyond prior ATR (E008)
+- **Context:** E008
+- **Observation:** raw-pips correlation of Asia/London range with |US move| was 0.14-0.21, but the partial IC given prior 14-day ATR was 0.06/0.05 (Asia, CI just above 0) and ~0 (London).
+- **Evidence label:** [EXP]
+- **Lesson:** most of the apparent "busy session -> busy US session" link is the volatility regime. Always control for prior ATR (and avoid shared-denominator ratios) before calling a magnitude predictor useful.
+- **Action:** B2 closed (NOT_USEFUL); prior ATR alone is the default volatility filter for later strategy tests.

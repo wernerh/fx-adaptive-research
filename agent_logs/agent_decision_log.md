@@ -33,3 +33,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** no research-batch run queued or in progress; last batch (42400981266) already recorded in eece61e.
 - **Decision:** took top `ready` backlog item B2 -> E008 volatility timing, dev only, 4 trials (2 predictors x 2 outcomes).
 - **Judgement call (before any data):** decision statistic changed from the draft "IC of range/ATR vs |move|" to partial Spearman given prior ATR, because the random-walk test showed a shared-denominator bias (~+0.04). Rule is stricter (adds CI lower > 0). Recorded in methodology.md.
+
+### 2026-11-07 R007 (unattended)
+- **State:** research-batch run 42411061401 completed; outputs (0a4f98d) not yet recorded -> Collect step.
+- **Decision:** applied E008 rule exactly -> NOT_USEFUL on all 4 tests; B2v not queued. No lead; no notification.
+- **Next:** top `ready` backlog item is B3 (hourly return profile scan, exploratory, dev only).

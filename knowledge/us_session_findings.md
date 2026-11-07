@@ -18,3 +18,7 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 ### 2026-11-07: E006: no early-US directional bias either
 - **[EXP]** Same 7 predictors vs 08:00-09:00 and 08:35-09:30 NY: no signal (min p 0.16, all Bonferroni 1.0).
 - **[EXP]** Typical |move| in the first US hour is about 13-14 pips; a 1-pip cost is small relative to the move. The problem is direction, not costs.
+
+### 2026-11-07: US-window move size vs pre-US ranges (E008) [EXP]
+- Mean |EUR/USD 08:00-12:00 NY| on dev ~25 pips; ~13 pips for 08:00-09:00 NY.
+- Beyond prior ATR, Asia range adds a tiny positive effect (partial IC ~0.05-0.06) and London range adds nothing. See experiments/2026-11-07_E008_vol_timing.
