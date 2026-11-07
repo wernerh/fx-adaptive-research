@@ -61,7 +61,10 @@ def _london_breakout(m: pd.DataFrame, lab: pd.DataFrame, feats: pd.DataFrame) ->
             "lon_closed_inside_asia": int(side != 0 and inside),  # false-breakout proxy
             "lon_break_time": first_up if side == 1 else (first_dn if side == -1 else pd.NaT),
         }
-    return pd.DataFrame.from_dict(rows, orient="index")
+    cols = ["lon_break_side", "lon_broke_both", "lon_closed_inside_asia", "lon_break_time"]
+    if not rows:  # keep the schema stable even when no day qualifies
+        return pd.DataFrame(columns=cols)
+    return pd.DataFrame.from_dict(rows, orient="index")[cols]
 
 
 def daily_features(bars: pd.DataFrame, sessions=DEFAULT_SESSIONS) -> pd.DataFrame:

@@ -37,6 +37,10 @@ python scripts/run_e001_baseline.py
 python scripts/run_backtest.py london_us_continuation --block dev --experiment E002
 ```
 
+**No local machine needed:** the GitHub Action `.github/workflows/e001-data-baseline.yml` downloads the data,
+runs E001 (dev + val only) and commits the raw outputs to `backtests/validation_reports/`. Start it from the
+Actions tab, or by editing `.github/run-requests/e001.txt`. The processed parquet is kept as a 90-day run artifact.
+
 Everything can be smoke-tested without data using `--synthetic` (random walk with no edge).
 
 ## Running a research cycle with Claude Code

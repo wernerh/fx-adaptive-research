@@ -36,10 +36,18 @@ def _read_side(path: Path) -> pd.DataFrame:
     return out.sort_index()
 
 
-def load_bid_ask_csv(bid_path: str | Path, ask_path: str | Path) -> pd.DataFrame:
-    """Load separate bid and ask 1-minute OHLC CSVs (e.g. exported with dukascopy-node)."""
-    bid = _read_side(Path(bid_path)).add_prefix("bid_")
-    ask = _read_side(Path(ask_path)).add_prefix("ask_")
+def _read_many(paths) -> pd.DataFrame:
+    if isinstance(paths, (str, Path)):
+        paths = [paths]
+    df = pd.concat([_read_side(Path(p)) for p in paths]).sort_index()
+    return df[~df.index.duplicated(keep="first")]
+
+
+def load_bid_ask_csv(bid_path, ask_path) -> pd.DataFrame:
+    """Load bid and ask 1-minute OHLC CSVs (e.g. exported with dukascopy-node).
+    Each argument may be one path or a list of paths (e.g. one file per year)."""
+    bid = _read_many(bid_path).add_prefix("bid_")
+    ask = _read_many(ask_path).add_prefix("ask_")
     df = bid.join(ask, how="inner")
     if "bid_volume" in df.columns:
         df["volume"] = df.pop("bid_volume")
