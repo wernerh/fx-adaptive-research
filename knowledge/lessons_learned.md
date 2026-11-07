@@ -49,3 +49,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** most of the apparent "busy session -> busy US session" link is the volatility regime. Always control for prior ATR (and avoid shared-denominator ratios) before calling a magnitude predictor useful.
 - **Action:** B2 closed (NOT_USEFUL); prior ATR alone is the default volatility filter for later strategy tests.
+
+### 2026-11-07: a 192-cell scan finds one strong hour, and it is the thinnest one (E009)
+- **Context:** E009
+- **Observation:** the only cells clearing a Bonferroni bar sit in the NY 18:00 hour, right after the 17:00 roll, where spreads are widest and quotes least representative.
+- **Evidence label:** [EXP]
+- **Lesson:** in thin, post-roll hours, mid-quote drift can come from quote/spread dynamics on one venue. Any hour-of-day effect must be checked at actual bid/ask before it counts, and weekday splits of a pooled effect are mostly noise.
+- **Action:** B9/B10 (val only, 1 trial each) report spread and net bid/ask results alongside the pre-registered rule.

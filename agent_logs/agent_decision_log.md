@@ -43,3 +43,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** no research-batch run queued or in progress; last batch (42411061401) already recorded in 022a6c2.
 - **Decision:** took top `ready` backlog item B3 -> E009 hourly return profile scan, exploratory, dev only, 192 cells (all counted as trials).
 - **Rule fixed before data:** CANDIDATE needs |mean| >= 1 pip, bootstrap CI excluding 0, t p < 0.05/192 and sign p < 0.05; at most 3 candidates become val-only 1-trial backlog items. No lead can come from this scan alone.
+
+### 2026-11-07 R009 (unattended)
+- **State:** research-batch run 42420473476 completed; outputs (89082ec) not yet recorded -> Collect step.
+- **Decision:** applied E009 rule exactly (re-checked from the JSON) -> CANDIDATES: Wed_ny_18, Thu_ny_18 (both long). Per the pre-registered follow-up rule, added B9/B10 (val only, 1 trial each) at the bottom of the backlog as `ready`; not re-ranked. Exploratory scan, so no lead; no notification.
+- **Next:** top `ready` backlog item is B4 (ECB fix, dev).
