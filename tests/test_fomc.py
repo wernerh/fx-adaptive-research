@@ -119,3 +119,34 @@ def test_no_signal_on_random_walk(seed):
     f = window_frame(bars, wednesdays)
     assert f["ret_pips"].notna().sum() >= 8
     assert decide_b11(evaluate_long(f["ret_pips"])) != "SIGNAL"
+
+
+# --- R018: parser fix after the E013 phase-1 fetch (run 42458841737) failed validation for 2017-2019 ---------------
+from pathlib import Path  # noqa: E402
+
+RAW = Path(__file__).resolve().parents[1] / "backtests" / "calendars" / "raw_html"
+
+
+def test_parse_heading_slash_cross_month():
+    m = parse_heading("Jan/Feb 31-1 Meeting", 2099)
+    assert m.start == date(2099, 1, 31) and m.statement_date == date(2099, 2, 1) and m.scheduled
+    m = parse_heading("April/May 30-1 Meeting", 2099)
+    assert m.start == date(2099, 4, 30) and m.statement_date == date(2099, 5, 1)
+    m = parse_heading("Jul/Aug 31-1 Meeting", 2099)
+    assert m.start == date(2099, 7, 31) and m.statement_date == date(2099, 8, 1)
+
+
+def test_parse_heading_cancelled_counts_as_scheduled_slot_but_flagged():
+    m = parse_heading("March 17-18 (cancelled) Meeting", 2099)
+    assert m.scheduled and m.cancelled
+    assert not parse_heading("March 14-15 Meeting", 2099).cancelled
+
+
+@pytest.mark.parametrize("year", [2017, 2018, 2019])
+def test_committed_raw_pages_now_parse_to_eight(year):
+    p = RAW / f"fomchistorical{year}.html"
+    if not p.exists():
+        pytest.skip("raw page not committed")
+    ms = parse_historical_page(p.read_text(), year)
+    ok, note = validate_year(ms)
+    assert ok, note

@@ -85,13 +85,13 @@ for y in years:
     }
     for m in chosen or []:
         rows.append({"year": y, "meeting_start": m.start.isoformat(), "statement_date": m.statement_date.isoformat(),
-                     "scheduled": m.scheduled, "source_label": m.label, "source_url": src})
+                     "scheduled": m.scheduled, "cancelled": m.cancelled, "source_label": m.label, "source_url": src})
 
 if cal_status == 200 and not all(v["valid"] for v in report["years"].values()):
     raw_dir.mkdir(parents=True, exist_ok=True)
     (raw_dir / "fomccalendars.html").write_text(cal_html)
 
-df = pd.DataFrame(rows, columns=["year", "meeting_start", "statement_date", "scheduled", "source_label", "source_url"])
+df = pd.DataFrame(rows, columns=["year", "meeting_start", "statement_date", "scheduled", "cancelled", "source_label", "source_url"])
 df.to_csv(out_dir / "fomc_dates.csv", index=False)
 report["all_years_valid"] = all(v["valid"] for v in report["years"].values())
 report["n_scheduled"] = int(df["scheduled"].sum()) if len(df) else 0

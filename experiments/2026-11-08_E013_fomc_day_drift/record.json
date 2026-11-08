@@ -3,14 +3,16 @@
   "date": "2026-11-08",
   "instrument": "EURUSD",
   "hypothesis": "Long EUR/USD from 16:00 NY on the business day before a scheduled FOMC statement to 16:00 NY on statement day earns > 10 pips mid on average (backlog B11)",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": "none",
   "variable_changed": "new information source (scheduled FOMC events)",
   "decision_rule": "SIGNAL if mean > 10.0 pips AND moving-block bootstrap (block 4) 95% CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. LEAD only after val confirmation (B11v) and SPEC4 net > 0 and costs x1.5 net > 0",
   "n_trials": 1,
   "status": "preregistered",
-  "phase": "1 of 2: FOMC date file fetch on runner (no price data); review before phase 2",
+  "phase": "1 of 2: FOMC date file fetch on runner. First fetch (run 42458841737) invalid for 2017-2019 (cross-month heading parse); parser fixed and fetch re-queued 2026-11-08 R018; cancelled meetings flagged and excluded",
   "results": null,
   "decision": null,
   "next_experiment": "phase 2 after date-file review"

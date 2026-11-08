@@ -65,10 +65,15 @@ class Meeting:
     statement_date: date  # last day of the meeting
     scheduled: bool
     label: str            # raw heading / cell text the row was parsed from
+    cancelled: bool = False  # scheduled slot that was cancelled (no statement that day); counts toward 8, excluded from tests
 
 
 _HEAD_RE = re.compile(
     rf"^{_MONTH_RE}\.?\s+(\d{{1,2}})(?:\s*-\s*(?:{_MONTH_RE}\.?\s+)?(\d{{1,2}}))?\b(.*)$", re.I)
+
+
+_SLASH_HEAD_RE = re.compile(
+    rf"^{_MONTH_RE}\.?\s*/\s*{_MONTH_RE}\.?\s+(\d{{1,2}})\s*-\s*(\d{{1,2}})\b(.*)$", re.I)
 
 
 def parse_heading(text: str, year: int) -> Meeting | None:
@@ -78,9 +83,13 @@ def parse_heading(text: str, year: int) -> Meeting | None:
     """
     t = _clean(text)
     m = _HEAD_RE.match(t)
-    if not m:
+    ms = _SLASH_HEAD_RE.match(t)
+    if ms:  # 'Jan/Feb 31-1 Meeting' style (historical pages 2017-2019)
+        m1, m2, d1, d2, rest = ms.groups()
+    elif m:
+        m1, d1, m2, d2, rest = m.groups()
+    else:
         return None
-    m1, d1, m2, d2, rest = m.groups()
     rest_l = rest.lower()
     mo1 = _month_num(m1)
     mo2 = _month_num(m2) if m2 else mo1
@@ -91,7 +100,7 @@ def parse_heading(text: str, year: int) -> Meeting | None:
     scheduled = ("meeting" in rest_l) and ("unscheduled" not in rest_l) and ("conference call" not in rest_l)
     if "meeting" not in rest_l and "conference call" not in rest_l and "unscheduled" not in rest_l:
         return None  # not a meeting heading (e.g. a minutes-release line)
-    return Meeting(year, start, end, scheduled, t)
+    return Meeting(year, start, end, scheduled, t, cancelled=scheduled and "cancel" in rest_l)
 
 
 def parse_historical_page(page: str, year: int) -> list[Meeting]:
@@ -126,7 +135,7 @@ def parse_calendar_cell(month_txt: str, date_txt: str, year: int) -> Meeting | N
     end = date(year, end_mo, int(days[-1]))
     low = dt.lower()
     scheduled = not any(w in low for w in ("unscheduled", "notation", "conference call"))
-    return Meeting(year, start, end, scheduled, f"{mt} {dt}")
+    return Meeting(year, start, end, scheduled, f"{mt} {dt}", cancelled=scheduled and "cancel" in low)
 
 
 def parse_calendars_page(page: str) -> dict[int, list[Meeting]]:

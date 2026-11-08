@@ -98,3 +98,17 @@ Why each run chose what it did, and any judgement calls.
 - **Next:** after the run, review the fetch report (8 scheduled meetings per year 2015-2023, source URLs, unscheduled actions listed).
   If valid, copy to `data/calendars/fomc_dates.csv` and queue phase 2 (`scripts/run_e013_fomc_day.py`). If not, fix the parser from
   the committed raw HTML and re-fetch (pipeline fix, not a new trial).
+
+### 2026-11-08 R018 (unattended)
+- **State:** research-batch run 42458841737 (E013 phase 1, FOMC date fetch) finished `success`; outputs in bec9c7b. No run queued.
+- **Review of `backtests/calendars/fomc_fetch_report.json`:** `all_years_valid: false`. 2015, 2016, 2020 valid (historical pages);
+  2021-2023 valid (fomccalendars.htm; historical pages 404). **2017 (6), 2018 (7), 2019 (7 scheduled) invalid.** Cause, from the
+  committed raw HTML: the historical pages write cross-month meetings as `Jan/Feb 31-1 Meeting - 2017`, `Oct/Nov 31-1`,
+  `Jul/Aug 31-1`, `April/May 30-1`; `parse_heading` only handled `April 30-May 1`. A second issue: 2020's
+  `March 17-18 (cancelled) Meeting` was parsed as a normal scheduled meeting, but no statement was issued that day.
+- **Decision (pipeline fix, no new trial, no price data seen):** fix the parser (slash cross-month headings) and add a `cancelled`
+  flag. Cancelled slots still count toward the 8-per-year check (they were scheduled) but are excluded from the E013 test and listed,
+  in the same way as unscheduled actions. This applies the methodology's intent (a statement day needs a statement); the window,
+  rule, thresholds and block are unchanged. Tests added against the committed 2017-2019 raw pages (all now parse to 8).
+- **Next:** re-queue phase 1 (re-fetch with the fixed parser). The following run reviews the new report; if every year is valid it
+  promotes the CSV to `data/calendars/fomc_dates.csv` and queues phase 2. Pipeline failures so far on this line: 1 (parse).

@@ -39,3 +39,10 @@
   (parser on synthetic HTML incl. cross-month, unscheduled, conference call and en-dash cases; 8-per-year validation;
   DST-aware 16:00 NY edges; missing quotes -> NaN; decision rule; random-walk no-SIGNAL).
 - **Trial count:** dev +1 when phase 2 runs (226 -> 227).
+
+## Addendum 2026-11-08 R018 (before phase 2; no price data touched)
+- Phase 1 fetch (run 42458841737) failed validation for 2017-2019: the parser missed `Jan/Feb 31-1`-style cross-month headings.
+  Parser fixed; phase 1 re-queued.
+- `March 17-18 (cancelled) Meeting` (2020) had no statement. New `cancelled` column in the date file: cancelled scheduled slots
+  count toward the 8-per-year validation but are **excluded from the test and listed** (like unscheduled actions) and also
+  excluded from the non-FOMC benchmark. Window, decision rule, thresholds and bootstrap block are unchanged.
