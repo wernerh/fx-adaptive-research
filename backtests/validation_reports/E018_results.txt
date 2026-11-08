@@ -1,0 +1,56 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E018 DEV round-number (00/50) crossing continuation, 60 min (pre-registered rule, 1 trial):
+n_days                                    2143
+n_active                                  2143
+coverage                                   1.0
+hit_rate                                0.4881
+hit_rate_ci95                  (0.467, 0.5093)
+binom_p                                 0.2801
+mean_signed_pips                        -0.128
+mean_signed_ci95_block_boot    (-0.989, 0.714)
+spearman_ic                            -0.0152
+spearman_p                              0.4823
+decision                                  NONE
+events: 2539 trades: 2143 skipped: {'roll': 295, 'spread': 5, 'coverage': 4, 'overlap': 92}
+
+Control levels (23/73), descriptive:
+n_active                                   2196
+hit_rate                                 0.4536
+binom_p                                     0.0
+mean_signed_pips                         -0.803
+mean_signed_ci95_block_boot    (-1.534, -0.079)
+control events: 2613 trades: 2196 skipped: {'roll': 326, 'spread': 2, 'coverage': 3, 'overlap': 86}
+round minus control mean signed (pips): 0.675
+
+Other horizons (descriptive): {'15m': {'n': 2143, 'mean_signed_pips': -0.405, 'hit_rate': 0.469}, '120m': {'n': 2140, 'mean_signed_pips': -0.777, 'hit_rate': 0.4757}}
+
+By year (descriptive):
+         n   mean    hit
+year                   
+2015  486  1.865  0.529
+2016  365 -0.458  0.501
+2017  329 -0.313  0.480
+2018  360 -0.949  0.478
+2019  228 -0.789  0.452
+2020  375 -1.037  0.461
+
+By crossing direction (descriptive):
+               n   mean    hit
+direction                    
+-1         1050  0.786  0.500
+ 1         1093 -1.006  0.477
+
+DEV cost check (descriptive):
+n                           2143.0000
+mean_signed_mid_pips          -0.1280
+mean_net_bidask_pips          -0.4280
+mean_net_spec4_pips           -0.6280
+mean_net_costs_x1_5_pips      -0.8790
+net_spec4_hit_rate             0.4722
+median_entry_spread_pips       0.3000
+median_exit_spread_pips        0.3000
+
+Calendar shares (event bar within +-15 min): {'share_within_15m_ny_0830': 0.0649, 'share_within_15m_ny_1000': 0.0499, 'share_within_15m_ny_1100': 0.0299}
+dev trading dates with bars: 1562
+E018 decision: NONE

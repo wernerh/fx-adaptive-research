@@ -1,0 +1,134 @@
+{
+  "result": {
+    "n_days": 2143,
+    "n_active": 2143,
+    "coverage": 1.0,
+    "hit_rate": 0.4881,
+    "hit_rate_ci95": [
+      0.467,
+      0.5093
+    ],
+    "binom_p": 0.2801,
+    "mean_signed_pips": -0.128,
+    "mean_signed_ci95_block_boot": [
+      -0.989,
+      0.714
+    ],
+    "spearman_ic": -0.0152,
+    "spearman_p": 0.4823,
+    "decision": "NONE"
+  },
+  "n_events": 2539,
+  "n_trades": 2143,
+  "skips": {
+    "roll": 295,
+    "spread": 5,
+    "coverage": 4,
+    "overlap": 92
+  },
+  "control": {
+    "result": {
+      "n_active": 2196,
+      "hit_rate": 0.4536,
+      "binom_p": 0.0,
+      "mean_signed_pips": -0.803,
+      "mean_signed_ci95_block_boot": [
+        -1.534,
+        -0.079
+      ]
+    },
+    "n_events": 2613,
+    "n_trades": 2196,
+    "skips": {
+      "roll": 326,
+      "spread": 2,
+      "coverage": 3,
+      "overlap": 86
+    }
+  },
+  "round_minus_control_mean_pips": 0.675,
+  "horizons": {
+    "15m": {
+      "n": 2143,
+      "mean_signed_pips": -0.405,
+      "hit_rate": 0.469
+    },
+    "120m": {
+      "n": 2140,
+      "mean_signed_pips": -0.777,
+      "hit_rate": 0.4757
+    }
+  },
+  "by_year": [
+    {
+      "year": 2015,
+      "n": 486,
+      "mean": 1.865,
+      "hit": 0.529
+    },
+    {
+      "year": 2016,
+      "n": 365,
+      "mean": -0.458,
+      "hit": 0.501
+    },
+    {
+      "year": 2017,
+      "n": 329,
+      "mean": -0.313,
+      "hit": 0.48
+    },
+    {
+      "year": 2018,
+      "n": 360,
+      "mean": -0.949,
+      "hit": 0.478
+    },
+    {
+      "year": 2019,
+      "n": 228,
+      "mean": -0.789,
+      "hit": 0.452
+    },
+    {
+      "year": 2020,
+      "n": 375,
+      "mean": -1.037,
+      "hit": 0.461
+    }
+  ],
+  "by_direction": [
+    {
+      "direction": -1,
+      "n": 1050,
+      "mean": 0.786,
+      "hit": 0.5
+    },
+    {
+      "direction": 1,
+      "n": 1093,
+      "mean": -1.006,
+      "hit": 0.477
+    }
+  ],
+  "cost_check": {
+    "n": 2143,
+    "mean_signed_mid_pips": -0.128,
+    "mean_net_bidask_pips": -0.428,
+    "mean_net_spec4_pips": -0.628,
+    "mean_net_costs_x1_5_pips": -0.879,
+    "net_spec4_hit_rate": 0.4722,
+    "median_entry_spread_pips": 0.3,
+    "median_exit_spread_pips": 0.3
+  },
+  "calendar_shares": {
+    "share_within_15m_ny_0830": 0.0649,
+    "share_within_15m_ny_1000": 0.0499,
+    "share_within_15m_ny_1100": 0.0299
+  },
+  "n_trials": 1,
+  "blocks": [
+    "dev"
+  ],
+  "n_dev_trading_dates": 1562
+}
