@@ -1,0 +1,7 @@
+https://www.cmegroup.com/market-data/files/Daily-Settlement-Time-Ranges.pdf
+  status -1 final https://www.cmegroup.com/market-data/files/Daily-Settlement-Time-Ranges.pdf type  bytes 48 windows 0
+https://www.cmegroup.com/confluence/display/EPICSANDBOX/Daily+Settlement+Time+Details
+  status -1 final https://www.cmegroup.com/confluence/display/EPICSANDBOX/Daily+Settlement+Time+Details type  bytes 48 windows 0
+https://www.cmegroup.com/confluence/display/EPICSANDBOX/Euro
+  status -1 final https://www.cmegroup.com/confluence/display/EPICSANDBOX/Euro type  bytes 48 windows 0
+valid: False | no FX settlement window found | settle_time_ct: None

@@ -1,0 +1,46 @@
+{
+  "user_agent": "fx-adaptive-research/0.1 (non-commercial research script; https://github.com/wernerh/fx-adaptive-research)",
+  "sources": [
+    {
+      "url": "https://www.cmegroup.com/market-data/files/Daily-Settlement-Time-Ranges.pdf",
+      "final_url": "https://www.cmegroup.com/market-data/files/Daily-Settlement-Time-Ranges.pdf",
+      "http_status": -1,
+      "content_type": "",
+      "bytes": 48,
+      "sha256": "ac3b53f3fdb539a7aedde03f1f454ee610becc0470f85d7d68b9f013dc683d7b",
+      "raw_file": "backtests/calendars/raw_html/cme_0_Daily_Settlement_Time_Ranges_pdf.html",
+      "error_body_head": "ERROR TimeoutError: The read operation timed out",
+      "fx_windows": [],
+      "refused": false
+    },
+    {
+      "url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Daily+Settlement+Time+Details",
+      "final_url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Daily+Settlement+Time+Details",
+      "http_status": -1,
+      "content_type": "",
+      "bytes": 48,
+      "sha256": "ac3b53f3fdb539a7aedde03f1f454ee610becc0470f85d7d68b9f013dc683d7b",
+      "raw_file": "backtests/calendars/raw_html/cme_1_Daily_Settlement_Time_Details.html",
+      "error_body_head": "ERROR TimeoutError: The read operation timed out",
+      "fx_windows": [],
+      "refused": false
+    },
+    {
+      "url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Euro",
+      "final_url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Euro",
+      "http_status": -1,
+      "content_type": "",
+      "bytes": 48,
+      "sha256": "ac3b53f3fdb539a7aedde03f1f454ee610becc0470f85d7d68b9f013dc683d7b",
+      "raw_file": "backtests/calendars/raw_html/cme_2_Euro.html",
+      "error_body_head": "ERROR TimeoutError: The read operation timed out",
+      "fx_windows": [],
+      "refused": false
+    }
+  ],
+  "note": "no price data used; review before promoting",
+  "valid": false,
+  "validation_note": "no FX settlement window found",
+  "settle_time_ct": null,
+  "n_windows": 0
+}
