@@ -1,0 +1,14 @@
+HTTP status: 403
+2015 INVALID index status 403, 0 releases parsed non-Friday: none
+2016 INVALID index status 403, 0 releases parsed non-Friday: none
+2017 INVALID index status 403, 0 releases parsed non-Friday: none
+2018 INVALID index status 403, 0 releases parsed non-Friday: none
+2019 INVALID index status 403, 0 releases parsed non-Friday: none
+2020 INVALID index status 403, 0 releases parsed non-Friday: none
+2021 INVALID index status 403, 0 releases parsed non-Friday: none
+2022 INVALID index status 403, 0 releases parsed non-Friday: none
+2023 INVALID index status 403, 0 releases parsed non-Friday: none
+all_years_valid: False rows: 0
+Empty DataFrame
+Columns: [year, release_date, release_time_ny, weekday, archive_link, source_url]
+Index: []
