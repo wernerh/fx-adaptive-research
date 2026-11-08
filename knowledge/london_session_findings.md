@@ -20,3 +20,6 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 
 ### 2026-11-07: London 4pm fix (E007, dev)
 - NONE. 15:00-16:00 London is volatile (mean |ret| 13.3 pips; 19.7 at month end) but has no reliable direction. See experiments/2026-11-07_E007_london_fix_reversal.
+
+### 2026-11-08: ECB 14:15 CET fix (E010, dev)
+- WEAK. Pre-fix hour 13:15-14:15 Berlin: USD-up drift +0.76 pips (CI excludes 0, but hit rate 0.508); post-fix hour: nothing (+0.29). Sub-cost either way. See experiments/2026-11-08_E010_ecb_fix_reversal.

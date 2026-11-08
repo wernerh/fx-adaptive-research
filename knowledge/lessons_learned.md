@@ -56,3 +56,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** in thin, post-roll hours, mid-quote drift can come from quote/spread dynamics on one venue. Any hour-of-day effect must be checked at actual bid/ask before it counts, and weekday splits of a pooled effect are mostly noise.
 - **Action:** B9/B10 (val only, 1 trial each) report spread and net bid/ask results alongside the pre-registered rule.
+
+### 2026-11-08: fix-reversal effects in EUR/USD are sub-pip at both London and ECB fixes (E007, E010)
+- **Context:** E010
+- **Observation:** ECB pre-fix hour shows a USD-up mean of +0.76 pips with a bootstrap CI above 0, yet the hit rate is 0.508; the post-fix hour shows nothing. Same pattern as E007 for London.
+- **Evidence label:** [EXP]
+- **Lesson:** the published USD-into-fix effect, if present in EUR/USD mid quotes, is a tail-driven fraction of a pip per hour, far below round-trip cost. A CI that excludes 0 with a coin-flip hit rate means a few large days, not a tradable drift.
+- **Action:** B4 closed (WEAK, not sent to val). Expect B5 (Tokyo fix) to be weaker still after Asian-hours spreads; run it as pre-registered but with a low prior.

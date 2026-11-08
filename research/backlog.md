@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **222** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells). Update after every experiment.
+Trial count so far on dev: **224** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2). Update after every experiment.
 
 ---
 
@@ -25,7 +25,7 @@ Trial count so far on dev: **222** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Purpose:** map the mean EUR/USD mid return by hour of day (UTC and New York), weekday x hour, and month-end x hour on **dev only**, to generate hypotheses. Label everything exploratory. Any hypothesis found must be pre-registered and confirmed on **val** before it counts. Count every hour cell as a trial in the hypothesis it spawns.
 - **Data:** available.
 
-### B4: ECB reference-rate reversal (signal test, dev) → E010 · `running` (pre-registered 2026-11-08)
+### B4: ECB reference-rate reversal (signal test, dev) → E010 · `done` (2026-11-08: WEAK, pre +0.76 pips; B4v not earned)
 - **Mechanism [PUB]:** as B1, for the ECB fix (14:15 CET). Windows: 13:15-14:15 and 14:15-15:15 Europe/Berlin.
 - **Decision rule (draft):** as B1, 2 trials.
 
