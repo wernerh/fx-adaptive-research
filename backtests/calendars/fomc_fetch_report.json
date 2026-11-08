@@ -1,0 +1,161 @@
+{
+  "years": {
+    "2015": {
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm",
+      "note": "ok",
+      "historical_parsed": [
+        "January 27-28 Meeting",
+        "March 17-18 Meeting",
+        "April 28-29 Meeting",
+        "June 16-17 Meeting",
+        "July 28-29 Meeting",
+        "September 16-17 Meeting",
+        "October 27-28 Meeting",
+        "December 15-16 Meeting"
+      ],
+      "calendars_parsed": []
+    },
+    "2016": {
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm",
+      "note": "ok",
+      "historical_parsed": [
+        "January 26-27 Meeting",
+        "March 15-16 Meeting",
+        "April 26-27 Meeting",
+        "June 14-15 Meeting",
+        "July 26-27 Meeting",
+        "September 20-21 Meeting",
+        "November 1-2 Meeting",
+        "December 13-14 Meeting"
+      ],
+      "calendars_parsed": []
+    },
+    "2017": {
+      "valid": false,
+      "source": null,
+      "note": "historical: 6 scheduled meetings (need 8); calendars: year not found",
+      "historical_parsed": [
+        "March 14-15 Meeting",
+        "May 2-3 Meeting",
+        "June 13-14 Meeting",
+        "July 25-26 Meeting",
+        "September 19-20 Meeting",
+        "December 12-13 Meeting"
+      ],
+      "calendars_parsed": []
+    },
+    "2018": {
+      "valid": false,
+      "source": null,
+      "note": "historical: 7 scheduled meetings (need 8); calendars: year not found",
+      "historical_parsed": [
+        "January 30-31 Meeting",
+        "March 20-21 Meeting",
+        "May 1-2 Meeting",
+        "June 12-13 Meeting",
+        "September 25-26 Meeting",
+        "November 7-8 Meeting",
+        "December 18-19 Meeting"
+      ],
+      "calendars_parsed": []
+    },
+    "2019": {
+      "valid": false,
+      "source": null,
+      "note": "historical: 7 scheduled meetings (need 8); calendars: year not found",
+      "historical_parsed": [
+        "January 29-30 Meeting",
+        "March 19-20 Meeting",
+        "June 18-19 Meeting",
+        "July 30-31 Meeting",
+        "September 17-18 Meeting",
+        "October 4 (unscheduled)",
+        "October 29-30 Meeting",
+        "December 10-11 Meeting"
+      ],
+      "calendars_parsed": []
+    },
+    "2020": {
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+      "note": "ok",
+      "historical_parsed": [
+        "January 28-29 Meeting",
+        "March 2 (unscheduled) Meeting",
+        "March 15 (unscheduled) Meeting",
+        "March 17-18 (cancelled) Meeting",
+        "April 28-29 Meeting",
+        "June 9-10 Meeting",
+        "July 28-29 Meeting",
+        "September 15-16 Meeting",
+        "November 4-5 Meeting",
+        "December 15-16 Meeting"
+      ],
+      "calendars_parsed": []
+    },
+    "2021": {
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "note": "calendars page ok (historical: historical page status 404, 0 meetings parsed)",
+      "historical_parsed": [],
+      "calendars_parsed": [
+        "January 26-27",
+        "March 16-17*",
+        "April 27-28",
+        "June 15-16*",
+        "July 27-28",
+        "September 21-22*",
+        "November 2-3",
+        "December 14-15*"
+      ]
+    },
+    "2022": {
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "note": "calendars page ok (historical: historical page status 404, 0 meetings parsed)",
+      "historical_parsed": [],
+      "calendars_parsed": [
+        "January 25-26",
+        "March 15-16*",
+        "May 3-4",
+        "June 14-15*",
+        "July 26-27",
+        "September 20-21*",
+        "November 1-2",
+        "December 13-14*"
+      ]
+    },
+    "2023": {
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "note": "calendars page ok (historical: historical page status 404, 0 meetings parsed)",
+      "historical_parsed": [],
+      "calendars_parsed": [
+        "Jan/Feb 31-1",
+        "March 21-22*",
+        "May 2-3",
+        "June 13-14*",
+        "July 25-26",
+        "September 19-20*",
+        "Oct/Nov 31-1",
+        "December 12-13*"
+      ]
+    }
+  },
+  "pages": {
+    "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm": 200,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm": 200,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm": 200,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm": 200,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm": 200,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm": 200,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm": 200,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2021.htm": 404,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2022.htm": 404,
+    "https://www.federalreserve.gov/monetarypolicy/fomchistorical2023.htm": 404
+  },
+  "all_years_valid": false,
+  "n_scheduled": 48
+}
