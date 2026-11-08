@@ -3,14 +3,72 @@
   "date": "2026-11-08",
   "instrument": "EURUSD",
   "hypothesis": "USD appreciates into the Tokyo 09:55 JST fix (08:55-09:55 Tokyo) and reverses after (09:55-10:55 Tokyo)",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": "none (sibling of E007, E010)",
   "variable_changed": "which fix (Tokyo 09:55 JST)",
   "decision_rule": "per test: SIGNAL if mean signed > 1.0 pip AND block-bootstrap CI lower > 0 AND binom p < 0.025; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
   "n_trials": 2,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
-  "next_experiment": "B5v only if SIGNAL"
+  "status": "complete",
+  "results": {
+    "tests": {
+      "tky_pre_all": {
+        "n_active": 1560,
+        "hit_rate": 0.5295,
+        "hit_rate_ci95": [
+          0.5047,
+          0.5542
+        ],
+        "binom_p": 0.0212,
+        "mean_signed_pips": 0.321,
+        "mean_signed_ci95_block_boot": [
+          -0.098,
+          0.756
+        ],
+        "mean_abs_window_pips": 6.407,
+        "decision": "WEAK"
+      },
+      "tky_post_all": {
+        "n_active": 1560,
+        "hit_rate": 0.5385,
+        "hit_rate_ci95": [
+          0.5137,
+          0.5631
+        ],
+        "binom_p": 0.0026,
+        "mean_signed_pips": 0.785,
+        "mean_signed_ci95_block_boot": [
+          0.318,
+          1.173
+        ],
+        "mean_abs_window_pips": 6.129,
+        "decision": "WEAK"
+      }
+    },
+    "cost_check_descriptive": [
+      {
+        "test": "tky_pre_all",
+        "n": 1560,
+        "mean_signed_mid_pips": 0.321,
+        "median_entry_spread_pips": 0.4,
+        "mean_roundtrip_cost_pips": 0.345,
+        "mean_net_bidask_pips": -0.024,
+        "mean_net_costs_x1_5_pips": -0.196
+      },
+      {
+        "test": "tky_post_all",
+        "n": 1560,
+        "mean_signed_mid_pips": 0.785,
+        "median_entry_spread_pips": 0.2,
+        "mean_roundtrip_cost_pips": 0.31,
+        "mean_net_bidask_pips": 0.475,
+        "mean_net_costs_x1_5_pips": 0.32
+      }
+    ],
+    "source": "backtests/validation_reports/E011_results.json (GitHub Actions run 42438344654)"
+  },
+  "decision": "WEAK",
+  "next_experiment": "none (WEAK does not go to val; B5v not earned)"
 }

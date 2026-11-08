@@ -12,3 +12,6 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 
 ### 2026-11-07: E001
 - **[EXP]** Asian-session return sign does not predict the US-morning direction (dev hit rate 51.5%, val 50.8%, n.s.).
+
+### 2026-11-08: Tokyo 09:55 JST fix (E011, dev)
+- **[EXP]** WEAK. Pre-fix hour 08:55-09:55 Tokyo: USD-up +0.32 pips signed (hit 0.530, p 0.021, CI includes 0). Post-fix hour 09:55-10:55 Tokyo: USD-down +0.79 pips signed (hit 0.539, p 0.003, CI 0.32-1.17), below the 1-pip bar. Descriptive post net at bid/ask +0.48 pips (median spread 0.2). Dev only; not sent to val. See experiments/2026-11-08_E011_tokyo_fix_reversal.

@@ -63,3 +63,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** the published USD-into-fix effect, if present in EUR/USD mid quotes, is a tail-driven fraction of a pip per hour, far below round-trip cost. A CI that excludes 0 with a coin-flip hit rate means a few large days, not a tradable drift.
 - **Action:** B4 closed (WEAK, not sent to val). Expect B5 (Tokyo fix) to be weaker still after Asian-hours spreads; run it as pre-registered but with a low prior.
+
+### 2026-11-08: Tokyo fix differs from London/ECB: small but consistent (E011)
+- **Context:** E011
+- **Observation:** both Tokyo windows move in the predicted direction with hit rates 0.53-0.54 (London/ECB were ~0.51 with tail-driven means). Post-fix hour +0.79 pips mid; descriptive net at bid/ask +0.48 pips. Still below the pre-registered 1-pip bar.
+- **Evidence label:** [EXP]
+- **Lesson:** a "fails only the size bar" WEAK is still WEAK. The 1-pip bar was set before data; a descriptive cost check that looks positive is not a reason to send it to val. Across 3 fix tests (6 trials, plus 220 others on dev) one sub-pip consistent result is within what multiple testing produces.
+- **Action:** B5 closed, B5v not queued. Fix-reversal line (B1, B4, B5) exhausted on dev. Any Tokyo-post re-test needs fresh data and a human decision, like B7.

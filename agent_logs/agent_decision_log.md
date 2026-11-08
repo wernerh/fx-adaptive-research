@@ -63,3 +63,9 @@ Why each run chose what it did, and any judgement calls.
 - **State:** no research-batch run queued or in progress; last batch (42429506649) already recorded in 03e47f7.
 - **Decision:** took top `ready` backlog item B5 -> E011 Tokyo 09:55 JST fix reversal, dev only, 2 trials (pre short, post long), E007 rule with n_trials=2.
 - **Added before data:** descriptive bid/ask cost check (median entry spread, net, net at costs x1.5), because B5 flags wider Asian-hours spreads. Not part of the decision rule. Gotobi-day subset deliberately not tested (would add trials).
+
+### 2026-11-08 R013 (unattended)
+- **State:** research-batch run 42438344654 completed; outputs (b985245) not yet recorded -> Collect step.
+- **Decision:** applied E011 rule exactly -> WEAK overall (pre WEAK: +0.32 pips, CI includes 0, p 0.021; post WEAK: +0.79 pips < 1.0 bar despite CI > 0 and p 0.003). WEAK does not go to val; B5v not queued. No lead; no notification.
+- **Judgement call:** descriptive post-window net (+0.48, x1.5 +0.32) is noted in knowledge but not used to re-rank or create a val item, because that would loosen the pre-registered size bar after seeing data.
+- **Next:** top `ready` backlog item is B9 (NY 18:00 Wednesday drift, val only).
