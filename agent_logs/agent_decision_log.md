@@ -75,3 +75,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** took top `ready` backlog item B9 and, as the backlog allows, B10 in the same run -> E012, val only, 2 trials, each with the E009 follow-up rule (mean > 1.0 pip, CI lower > 0, binom p < 0.05). Experiment ID E012 reassigned from blocked B6 (which had no registry row).
 - **Fixed before data:** a SIGNAL counts as a LEAD only if mean net at SPEC 4 costs (bid/ask + 0.1 slippage + 0.1 commission) and at costs x1.5 are both > 0 on val. Reason: E009 pooled ny_18 up-share 0.595 on all weekdays suggests a possible post-roll spread-normalisation artifact in mid quotes. E009 CANDIDATE (its pre-registered dev rule) is taken as lead criterion 1.
 - **Next:** wait for the research-batch run, then Collect.
+
+### 2026-11-08 R015 (unattended)
+- **State:** research-batch run 42446726453 completed; outputs (82c6ccd) not yet recorded -> Collect step.
+- **Decision:** dev reproduction matched E009 (n 312/313, +1.333/+1.240), so results are valid. Applied E012 rule exactly -> WEAK overall (Wed WEAK: +0.65 pips, CI includes 0, p 0.049; Thu NONE: +0.94 pips, p 0.14). Cost gate fails for both. Hypothesis rejected for these cells; no lead; no notification.
+- **Next:** no `ready` backlog items (B6 blocked, B7/B8 parked) -> next run does a refill pass (step 4).

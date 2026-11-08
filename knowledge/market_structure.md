@@ -23,3 +23,7 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 ### 2026-11-07: hourly drift map (E009, exploratory, dev) [EXP]
 - Time-of-day mean drift in EUR/USD mid is < 1 pip/hour in almost all 192 cells (UTC hour, NY hour, weekday x NY hour, month-end x NY hour).
 - Exception: the NY 18:00-19:00 hour (first full hour after the 17:00 roll) drifts up on every weekday (pooled +0.87 pips, t p 3e-7); trading-date Wed/Thu exceed 1 pip (+1.33/+1.24). Possibly a spread-normalisation artifact; val tests B9/B10 queued. See experiments/2026-11-07_E009_hourly_profile.
+
+### 2026-11-08: NY 18:00 hour drift does not confirm on val (E012) [EXP]
+- Supersedes the "val tests B9/B10 queued" note in the 2026-11-07 hourly drift map entry above.
+- Val: trading-date Wed +0.65 pips (WEAK), Thu +0.94 pips (NONE), CIs include 0. Median entry spread at 18:00 NY 1.5-1.7 pips; net negative at bid/ask, SPEC 4 and costs x1.5. Treat the post-roll mid drift as untradable. See experiments/2026-11-08_E012_ny18_drift_val.

@@ -70,3 +70,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** a "fails only the size bar" WEAK is still WEAK. The 1-pip bar was set before data; a descriptive cost check that looks positive is not a reason to send it to val. Across 3 fix tests (6 trials, plus 220 others on dev) one sub-pip consistent result is within what multiple testing produces.
 - **Action:** B5 closed, B5v not queued. Fix-reversal line (B1, B4, B5) exhausted on dev. Any Tokyo-post re-test needs fresh data and a human decision, like B7.
+
+### 2026-11-08: Hourly-scan candidates shrink on val and rollover hours cost too much (E012)
+- **Context:** E012 (val confirmation of E009 cells Wed/Thu NY 18:00)
+- **Observation:** dev means +1.33/+1.24 pips fell to +0.65/+0.94 on val with CIs including 0. Median entry spread at 18:00 NY was 1.5-1.7 pips, so net results were negative at every cost level.
+- **Evidence label:** [EXP]
+- **Lesson:** picking 2 of 192 cells gives roughly 50% shrinkage on fresh data, as expected from selection. Hours next to the 17:00 NY roll have the widest spreads of the day; any drift there must clear ~2 pips round trip before it matters. Screen hourly-scan candidates against the cost at that hour before spending val trials.
+- **Action:** B9/B10 closed. No ready backlog items left; next run does a refill pass. New items should target liquid hours (spread < 0.5 pip) or event-driven mechanisms.

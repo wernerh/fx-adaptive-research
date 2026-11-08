@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **226** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2). Update after every experiment.
+Trial count so far on dev: **226** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2). Val-only trials: **2** (E012). Total registered trials: **228**. Update after every experiment.
 
 ---
 
@@ -46,7 +46,7 @@ Trial count so far on dev: **226** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (mean > 1.0 pip, CI lower > 0, binom p < 0.05). Val has only ~30 month ends, so power is low.
 - **Why parked:** chosen after seeing dev, wrong-sign vs published mechanism, tiny n, and val would be its only clean test. Un-park only with a reason in the decision log.
 
-### B9: NY 18:00 hour drift on trading-date Wednesday (signal test, val only, dev-derived) → E012 · `running` (2026-11-08 pre-registered with B10)
+### B9: NY 18:00 hour drift on trading-date Wednesday (signal test, val only, dev-derived) → E012 · `done` (2026-11-08: WEAK on val, +0.65 pips, CI includes 0; cost gate fails)
 - **Origin:** E009 CANDIDATE (exploratory, dev): Wed_ny_18 mean +1.333 pips, block-boot CI (0.703, 2.055), t p 2e-5, n 312. Selected from 192 cells.
 - **Mechanism [hypothesis, unverified]:** post-roll (17:00 NY) liquidity rebuild / early Asia-Pacific flow; risk that it is a spread-normalisation artifact of mid quotes.
 - **Test:** long EUR/USD mid return over the 18:00-19:00 America/New_York hour on trading dates that are Wednesdays (`sessions.trading_date`, same bar/coverage rules as E009), **val block only**, 1 trial.
@@ -54,6 +54,6 @@ Trial count so far on dev: **226** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Calendar label:** rollover-adjacent hour; not London fix / ECB / NY 10:00.
 - **Data:** available.
 
-### B10: NY 18:00 hour drift on trading-date Thursday (signal test, val only, dev-derived) → E012 · `running` (shares run with B9; 2 trials)
+### B10: NY 18:00 hour drift on trading-date Thursday (signal test, val only, dev-derived) → E012 · `done` (2026-11-08: NONE on val, +0.94 pips, CI includes 0; cost gate fails)
 - **Origin:** E009 CANDIDATE (exploratory, dev): Thu_ny_18 mean +1.240 pips, CI (0.749, 2.024), t p 9e-5, up-share 0.654, n 313.
 - **Test / rule:** as B9 for trading-date Thursdays, val only, 1 trial. B9 and B10 may share one experiment run but are 2 trials.
