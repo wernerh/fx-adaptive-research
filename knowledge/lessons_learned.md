@@ -125,3 +125,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   (or after the roll has normalised) and check the spread at every fixed timestamp in pre-registration, not after. A positive mean with a
   ~0.5 hit rate is a fat-tail effect, not a steady drift.
 - **Action:** B14 closed. Backlog has no `ready` items -> next run refills.
+
+### 2026-11-08 R033: no round-number stop cascades in 2015-2020 EUR/USD (E018)
+- **Context:** E018 (B15) dev, first crossing of 00/50 levels per trading date, 60-minute continuation.
+- **Observation:** mean -0.128 pips, hit 0.488 (n 2143); no horizon (15/60/120 min) positive; only 2015 positive by year. Control
+  levels (23/73) had a mean of -0.803 with CI below 0, so after any first level crossing the mid tended to drift back slightly.
+- **Evidence label:** [EXP]
+- **Lesson:** a 1990s dealer-order mechanism (Osler) did not survive into the modern electronic EUR/USD market at the 1-pip bar. A
+  descriptive control result (mild reversal after arbitrary level crossings) is not evidence; it needs its own pre-registration and fresh data.
+- **Action:** B15 closed. Next ready item B16 (12-month TSMOM, daily hold, dev).

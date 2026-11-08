@@ -261,3 +261,10 @@ Why each run chose what it did, and any judgement calls.
   level nearest the close; "first crossing" counts either direction; entry/exit fill within 5 min; skip reasons counted in a fixed order.
   Bars outside dev are dropped before computing. Decision rule unchanged from the backlog draft.
 - **Next run:** collect E018 results from the research-batch run.
+
+### 2026-11-08 R033 (unattended)
+- **State:** research-batch run 42530297453 (E018) finished successfully; outputs committed in 2c6178c and not yet recorded -> protocol step 1 (collect).
+  pytest passed (124).
+- **Decision:** pre-registered B1 rule applied exactly: mean -0.128 (not > 0), CI (-0.989, 0.714), binomial p 0.280 -> **NONE**.
+  Cost check negative (SPEC 4 -0.628, x1.5 -0.879). Not a LEAD; no notification. Control-level reversal noted as descriptive only.
+- **Next run:** B16 (12-month TSMOM, daily hold, dev) is the top `ready` item.

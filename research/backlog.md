@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **227** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **231**. Update after every experiment. (R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **228** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **232**. Update after every experiment. (R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -98,7 +98,7 @@ Trial count so far on dev: **227** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Calendar label:** time-of-day effect; the windows avoid the ECB fix (08:15 NY) and the London 4pm fix (11:00 NY) but the 17:00 exit is the roll.
 - **Data:** available.
 
-### B15: Round-number crossing continuation, "price cascades" (signal test, dev) → E018 · `running` (2026-11-08 R032: pre-registered as E018, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-08 R031 refill)
+### B15: Round-number crossing continuation, "price cascades" (signal test, dev) → E018 · `done` (2026-11-08 R033: **NONE on dev**, -0.128 pips signed, CI (-0.989, 0.714), binom p 0.280; SPEC 4 net -0.628, x1.5 -0.879; rejected, no lead. R032: pre-registered as E018, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-08 R031 refill)
 - **Mechanism [PUB]:** stop-loss orders cluster just beyond round numbers (rates ending in 00 or 50), so crossing a round number
   triggers stops and a rapid, self-reinforcing move; "Most results are statistically significant for hours, although not for days"
   (Osler 2002, FRBNY Staff Report 150, opened 2026-11-08 R031; journal version 2005, venue UNVERIFIED). Consistent with Osler (2003, JF,
