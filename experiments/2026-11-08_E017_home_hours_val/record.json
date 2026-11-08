@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E017",
+  "date": "2026-11-08",
+  "instrument": "EURUSD",
+  "hypothesis": "Daily -(EUR/USD mid return 03:00-08:00 NY) + (mid return 12:00-17:00 NY) > 1 pip (home-hours depreciation, B14)",
+  "blocks_used": ["val"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new hypothesis (home-hours depreciation mechanism)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap CI lower > 0 AND binom p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. Val SIGNAL with SPEC4 net > 0 and costs x1.5 net > 0 -> candidate for human OOS decision (not a LEAD; dev scanned by E009)",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "next_experiment": null
+}

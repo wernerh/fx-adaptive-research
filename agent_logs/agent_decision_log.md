@@ -222,3 +222,13 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** apply the R027 stop rule exactly: E016/B13 `blocked`, 0 trials, no further fetch attempts. Not a pipeline failure
   (the workflow itself succeeded), so no human notification; B12 and B13 both await a human source decision.
 - **Next run:** top `ready` item is B14 (home-hours depreciation, val only, 1 trial, data in repo).
+
+### 2026-11-08 R029 (unattended)
+- **State:** last research-batch run 42504753112 already recorded (R028); no run queued or in progress -> protocol step 3 (next experiment).
+  pytest passed (103) before any change.
+- **Pick:** B14 (home-hours depreciation, val only, 1 trial) is the top `ready` item; B6/B12/B13 blocked, B7/B8 parked.
+- **Source check:** tried the SNB working paper 2012-04 page, its PDF and the DOI page via web-fetch; all failed (fetch-permission
+  timeout, nothing read). Paper hour definitions stay UNVERIFIED; the R025 windows (03:00-08:00 and 12:00-17:00 NY) are used unchanged.
+- **Fixed before data:** both legs required per date (>= 275/300 bars each), B1 rule, block-20 bootstrap, val only; SPEC 4 costs per leg
+  (2 round trips/day); max-spread rule reported, not applied. A val SIGNAL surviving x1.5 is a human-OOS candidate, not a LEAD.
+- **Next run:** collect E017 results from the research-batch run.
