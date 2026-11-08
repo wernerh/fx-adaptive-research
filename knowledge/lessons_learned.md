@@ -105,3 +105,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** source-access checks must be made from the runner's network, not this workspace. Fetch scripts should retry transport errors with a longer timeout (never refusals) and record per-attempt statuses.
 - **Action:** one re-fetch queued with retries; a second failure blocks B13 (stop rule written before the result).
+
+### 2026-11-08 R028: cmegroup.com does not answer the GitHub runner (E016 blocked)
+- **Context:** E016 (B13) phase-1 re-fetch, run 42504753112
+- **Observation:** with a 120 s timeout and 3 attempts per URL, all three official CME pages again gave no HTTP answer to the runner.
+  Two of the last three event/calendar items (B12 bls.gov 403, B13 cmegroup.com timeouts) are now blocked on source access, not on data.
+- **Evidence label:** [EXP]
+- **Lesson:** official US agency/exchange sites often block or silently drop cloud-runner traffic. When refilling the backlog, prefer
+  tests whose inputs are already in the repo (price data, committed calendars) or whose source has a documented API; flag any new
+  external source as an access risk before pre-registration.
+- **Action:** B13 blocked (0 trials). Next ready item B14 (home-hours depreciation, val only) needs no external source.

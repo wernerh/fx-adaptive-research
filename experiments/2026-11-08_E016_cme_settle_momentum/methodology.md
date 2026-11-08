@@ -66,3 +66,13 @@
 - **Stop rule (fixed now, before the re-fetch result):** if the re-fetch again yields no valid FX settlement window (timeouts,
   refusal, or no parsable FX row), B13/E016 becomes `blocked` with 0 trials used; persistent silent timeouts are treated like a
   refusal and not worked around further. Unblocking would need a human decision on a source (e.g. a CME notice supplied by the human).
+
+## Addendum 2026-11-08 R028: re-fetch result -> stop rule applied (B13 blocked)
+- **Re-fetch result (run 42504753112, outputs commit f543bec):** all three CME URLs failed again with
+  `TimeoutError: The read operation timed out` on every attempt (`attempt_statuses` [-1, -1, -1] each, 120 s timeout,
+  48-byte error stubs). Report `valid: false`, `settle_time_ct: null`, `n_windows: 0`.
+- **Decision (stop rule fixed in R027 before this result):** E016/B13 is `blocked`. Persistent silent timeouts are treated like a
+  refusal; no further workaround (no other networks, mirrors, proxies or header changes). Phase 2 is not queued; no price data were
+  touched; **0 trials used** (dev stays 227, total 230).
+- **Unblocking:** needs a human decision on a source for the Euro FX settlement time over 2015-2020 (e.g. an official CME notice or
+  file committed by the human, with URL). The test definition and decision rule above stay unchanged if it is ever unblocked.

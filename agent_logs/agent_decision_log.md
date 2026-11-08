@@ -214,3 +214,11 @@ Why each run chose what it did, and any judgement calls.
 - **Why not fetch in-session instead:** the E016 methodology fixes the runner copy as the record; changing that after a failed run
   would be a protocol change, not a fix.
 - **Next run:** review the re-fetch report; promote S and queue phase 2, or block B13 and move to B14.
+
+### 2026-11-08 R028 (unattended)
+- **State:** research-batch run 42504753112 (E016 phase-1 re-fetch) completed; outputs committed by github-actions[bot] (f543bec)
+  and not yet reviewed -> protocol step 1 (collect). pytest passed (103) before any change.
+- **Review:** all three CME URLs timed out on all 3 attempts (120 s each); `valid: false`, no settlement window.
+- **Decision:** apply the R027 stop rule exactly: E016/B13 `blocked`, 0 trials, no further fetch attempts. Not a pipeline failure
+  (the workflow itself succeeded), so no human notification; B12 and B13 both await a human source decision.
+- **Next run:** top `ready` item is B14 (home-hours depreciation, val only, 1 trial, data in repo).

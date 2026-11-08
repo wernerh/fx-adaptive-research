@@ -11,16 +11,21 @@
   "variable_changed": "new mechanism (futures-settlement hedging flow, Baltussen et al. 2021)",
   "decision_rule": "SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided binomial p < 0.05 (continuation share among traded days); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. |r1| < 1 pip -> signed 0, kept in n. LEAD only after val confirmation (B13v) and SPEC4 net > 0 and costs x1.5 net > 0",
   "n_trials": 1,
-  "status": "preregistered",
-  "phase": "1 of 2: first runner fetch (run 42500439921) timed out on all 3 CME URLs (no HTTP answer, not a refusal); R027 re-fetch queued with 120 s timeout and 3 transport-only retries; no price data used",
+  "status": "blocked",
+  "phase": "1 of 2: blocked (2026-11-08 R028). Re-fetch (run 42504753112) timed out again on all 3 CME URLs, 3 attempts each (120 s, no HTTP answer); stop rule from the R027 methodology addendum applied; phase 2 never queued; no price data used",
   "results": {},
-  "decision": null,
-  "next_experiment": "review backtests/calendars/cme_settlement_fetch_report.json from the re-fetch; promote S to data/calendars/cme_fx_settlement.json and queue phase 2, or block (stop rule in methodology addendum R027)",
+  "decision": "BLOCKED (data access; not a test result)",
+  "next_experiment": "blocked: needs a human-supplied official CME settlement-time source (e.g. a CME notice or file committed by the human), then phase-1 review",
   "phase_history": [
     {
       "run": "R027",
       "workflow_run": 42500439921,
       "result": "all 3 URLs TimeoutError (60 s), valid false, 0 windows; re-fetch queued"
+    },
+    {
+      "run": "R028",
+      "workflow_run": 42504753112,
+      "result": "all 3 URLs TimeoutError on 3 attempts each (120 s), valid false, 0 windows; stop rule -> blocked, 0 trials"
     }
   ]
 }
