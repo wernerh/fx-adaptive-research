@@ -1,0 +1,9 @@
+block         test       window  direction  month_end_only  n_days  n_active  coverage  hit_rate    hit_rate_ci95  binom_p  mean_signed_pips mean_signed_ci95_block_boot  spearman_ic  spearman_p  mean_abs_window_pips decision
+  dev  tky_pre_all  tky_fix_pre         -1           False    1560      1560       1.0    0.5295 (0.5047, 0.5542)   0.0212             0.321             (-0.098, 0.756)          NaN         NaN                 6.407     WEAK
+  dev tky_post_all tky_fix_post          1           False    1560      1560       1.0    0.5385 (0.5137, 0.5631)   0.0026             0.785              (0.318, 1.173)          NaN         NaN                 6.129     WEAK
+
+Descriptive cost check (not in decision rule):
+        test    n  mean_signed_mid_pips  median_entry_spread_pips  mean_roundtrip_cost_pips  mean_net_bidask_pips  mean_net_costs_x1_5_pips
+ tky_pre_all 1560                 0.321                       0.4                     0.345                -0.024                    -0.196
+tky_post_all 1560                 0.785                       0.2                     0.310                 0.475                     0.320
+E011 overall decision: WEAK
