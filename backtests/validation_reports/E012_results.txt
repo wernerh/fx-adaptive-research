@@ -1,0 +1,16 @@
+Dev reproduction of E009 cells (consistency check, not a trial):
+         test   n  mean_signed_pips
+wed_ny18_long 312             1.333
+thu_ny18_long 313             1.240
+
+VAL results (pre-registered rule, 1 trial per test):
+block          test  weekday  ny_hour  direction  n_days  n_active  coverage  hit_rate    hit_rate_ci95  binom_p  mean_signed_pips mean_signed_ci95_block_boot  spearman_ic  spearman_p decision  binom_p_bonferroni_2  lead_cost_gate
+  val wed_ny18_long        2       18          1     114       114       1.0    0.5965  (0.5047, 0.682)   0.0487             0.647             (-0.079, 2.016)          NaN         NaN     WEAK                0.0974           False
+  val thu_ny18_long        3       18          1     117       117       1.0    0.5726 (0.4821, 0.6586)   0.1388             0.938             (-0.357, 2.465)          NaN         NaN     NONE                0.2776           False
+
+VAL cost check (descriptive; gates only the LEAD label):
+         test   n  mean_signed_mid_pips  median_entry_spread_pips  mean_net_bidask_pips  mean_net_spec4_pips  mean_net_costs_x1_5_pips  net_spec4_hit_rate
+wed_ny18_long 114                 0.647                       1.7                -0.460               -0.660                    -1.313              0.4386
+thu_ny18_long 117                 0.938                       1.5                -0.116               -0.316                    -0.943              0.4444
+E012 overall decision: WEAK
+E012 tests meeting SIGNAL + cost gate (lead candidates): none
