@@ -150,3 +150,24 @@ def test_committed_raw_pages_now_parse_to_eight(year):
     ms = parse_historical_page(p.read_text(), year)
     ok, note = validate_year(ms)
     assert ok, note
+
+
+def test_promoted_fomc_date_file_is_valid():
+    """R019: the reviewed date file used by E013 phase 2 (fetched on the runner, never hand-typed)."""
+    from pathlib import Path
+
+    import pandas as pd
+
+    root = Path(__file__).resolve().parents[1]
+    p = root / "data" / "calendars" / "fomc_dates.csv"
+    cal = pd.read_csv(p, parse_dates=["meeting_start", "statement_date"])
+    # identical to the runner output it was promoted from
+    src = pd.read_csv(root / "backtests" / "calendars" / "fomc_dates.csv", parse_dates=["meeting_start", "statement_date"])
+    pd.testing.assert_frame_equal(cal, src)
+    s = cal[cal["scheduled"]]
+    assert s.groupby("year").size().to_dict() == {y: 8 for y in range(2015, 2024)}
+    assert (s["statement_date"].dt.weekday < 5).all()
+    assert ((s["statement_date"] - s["meeting_start"]).dt.days <= 2).all()
+    assert cal["source_url"].str.startswith("https://www.federalreserve.gov/monetarypolicy/").all()
+    dev = s[(~s["cancelled"]) & (s["statement_date"] < "2021-01-01")]
+    assert len(dev) == 47  # 48 scheduled 2015-2020 minus the cancelled 2020-03-18 slot

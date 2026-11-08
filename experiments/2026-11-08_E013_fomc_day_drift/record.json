@@ -12,8 +12,8 @@
   "decision_rule": "SIGNAL if mean > 10.0 pips AND moving-block bootstrap (block 4) 95% CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. LEAD only after val confirmation (B11v) and SPEC4 net > 0 and costs x1.5 net > 0",
   "n_trials": 1,
   "status": "preregistered",
-  "phase": "1 of 2: FOMC date file fetch on runner. First fetch (run 42458841737) invalid for 2017-2019 (cross-month heading parse); parser fixed and fetch re-queued 2026-11-08 R018; cancelled meetings flagged and excluded",
+  "phase": "1 of 2: FOMC date file fetch on runner. First fetch (run 42458841737) invalid for 2017-2019 (cross-month heading parse); parser fixed and fetch re-queued 2026-11-08 R018; cancelled meetings flagged and excluded; R019: re-fetch (run 42462817989) valid, 72 scheduled 2015-2023, 47 dev test days; promoted to data/calendars/fomc_dates.csv; phase 2 queued",
   "results": null,
   "decision": null,
-  "next_experiment": "phase 2 after date-file review"
+  "next_experiment": "record phase 2 results (backtests/validation_reports/E013_results.json)"
 }

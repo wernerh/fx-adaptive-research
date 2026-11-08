@@ -1,0 +1,76 @@
+year,meeting_start,statement_date,scheduled,cancelled,source_label,source_url
+2015,2015-01-27,2015-01-28,True,False,January 27-28 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2015,2015-03-17,2015-03-18,True,False,March 17-18 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2015,2015-04-28,2015-04-29,True,False,April 28-29 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2015,2015-06-16,2015-06-17,True,False,June 16-17 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2015,2015-07-28,2015-07-29,True,False,July 28-29 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2015,2015-09-16,2015-09-17,True,False,September 16-17 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2015,2015-10-27,2015-10-28,True,False,October 27-28 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2015,2015-12-15,2015-12-16,True,False,December 15-16 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2015.htm
+2016,2016-01-26,2016-01-27,True,False,January 26-27 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2016,2016-03-15,2016-03-16,True,False,March 15-16 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2016,2016-04-26,2016-04-27,True,False,April 26-27 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2016,2016-06-14,2016-06-15,True,False,June 14-15 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2016,2016-07-26,2016-07-27,True,False,July 26-27 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2016,2016-09-20,2016-09-21,True,False,September 20-21 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2016,2016-11-01,2016-11-02,True,False,November 1-2 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2016,2016-12-13,2016-12-14,True,False,December 13-14 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2016.htm
+2017,2017-01-31,2017-02-01,True,False,Jan/Feb 31-1 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2017,2017-03-14,2017-03-15,True,False,March 14-15 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2017,2017-05-02,2017-05-03,True,False,May 2-3 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2017,2017-06-13,2017-06-14,True,False,June 13-14 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2017,2017-07-25,2017-07-26,True,False,July 25-26 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2017,2017-09-19,2017-09-20,True,False,September 19-20 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2017,2017-10-31,2017-11-01,True,False,Oct/Nov 31-1 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2017,2017-12-12,2017-12-13,True,False,December 12-13 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm
+2018,2018-01-30,2018-01-31,True,False,January 30-31 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2018,2018-03-20,2018-03-21,True,False,March 20-21 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2018,2018-05-01,2018-05-02,True,False,May 1-2 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2018,2018-06-12,2018-06-13,True,False,June 12-13 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2018,2018-07-31,2018-08-01,True,False,Jul/Aug 31-1 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2018,2018-09-25,2018-09-26,True,False,September 25-26 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2018,2018-11-07,2018-11-08,True,False,November 7-8 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2018,2018-12-18,2018-12-19,True,False,December 18-19 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm
+2019,2019-01-29,2019-01-30,True,False,January 29-30 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-03-19,2019-03-20,True,False,March 19-20 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-04-30,2019-05-01,True,False,April/May 30-1 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-06-18,2019-06-19,True,False,June 18-19 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-07-30,2019-07-31,True,False,July 30-31 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-09-17,2019-09-18,True,False,September 17-18 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-10-04,2019-10-04,False,False,October 4 (unscheduled),https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-10-29,2019-10-30,True,False,October 29-30 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2019,2019-12-10,2019-12-11,True,False,December 10-11 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm
+2020,2020-01-28,2020-01-29,True,False,January 28-29 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-03-02,2020-03-02,False,False,March 2 (unscheduled) Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-03-15,2020-03-15,False,False,March 15 (unscheduled) Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-03-17,2020-03-18,True,True,March 17-18 (cancelled) Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-04-28,2020-04-29,True,False,April 28-29 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-06-09,2020-06-10,True,False,June 9-10 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-07-28,2020-07-29,True,False,July 28-29 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-09-15,2020-09-16,True,False,September 15-16 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-11-04,2020-11-05,True,False,November 4-5 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2020,2020-12-15,2020-12-16,True,False,December 15-16 Meeting,https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm
+2021,2021-01-26,2021-01-27,True,False,January 26-27,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2021,2021-03-16,2021-03-17,True,False,March 16-17*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2021,2021-04-27,2021-04-28,True,False,April 27-28,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2021,2021-06-15,2021-06-16,True,False,June 15-16*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2021,2021-07-27,2021-07-28,True,False,July 27-28,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2021,2021-09-21,2021-09-22,True,False,September 21-22*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2021,2021-11-02,2021-11-03,True,False,November 2-3,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2021,2021-12-14,2021-12-15,True,False,December 14-15*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-01-25,2022-01-26,True,False,January 25-26,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-03-15,2022-03-16,True,False,March 15-16*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-05-03,2022-05-04,True,False,May 3-4,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-06-14,2022-06-15,True,False,June 14-15*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-07-26,2022-07-27,True,False,July 26-27,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-09-20,2022-09-21,True,False,September 20-21*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-11-01,2022-11-02,True,False,November 1-2,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2022,2022-12-13,2022-12-14,True,False,December 13-14*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-01-31,2023-02-01,True,False,Jan/Feb 31-1,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-03-21,2023-03-22,True,False,March 21-22*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-05-02,2023-05-03,True,False,May 2-3,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-06-13,2023-06-14,True,False,June 13-14*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-07-25,2023-07-26,True,False,July 25-26,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-09-19,2023-09-20,True,False,September 19-20*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-10-31,2023-11-01,True,False,Oct/Nov 31-1,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm
+2023,2023-12-12,2023-12-13,True,False,December 12-13*,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm

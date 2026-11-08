@@ -46,3 +46,12 @@
 - `March 17-18 (cancelled) Meeting` (2020) had no statement. New `cancelled` column in the date file: cancelled scheduled slots
   count toward the 8-per-year validation but are **excluded from the test and listed** (like unscheduled actions) and also
   excluded from the non-FOMC benchmark. Window, decision rule, thresholds and bootstrap block are unchanged.
+
+## Addendum 2026-11-08 R019 (phase-1 review; before phase 2; no price data touched)
+- Re-fetch (run 42462817989, outputs 952a8a1): `all_years_valid: true`, 72 scheduled meetings 2015-2023, 8 per year; all scheduled
+  statement dates are weekdays; meetings span <= 2 days; every row carries a federalreserve.gov source URL and heading text.
+  Cross-month headings now parse (e.g. `Jan/Feb 31-1 Meeting` 2017 -> statement 2017-02-01; `Jul/Aug 31-1` 2018 -> 2018-08-01).
+- Excluded and listed: unscheduled 2019-10-04, 2020-03-02, 2020-03-15; cancelled scheduled slot 2020-03-18.
+- Dev test set: **47** scheduled statement days (48 minus the cancelled slot).
+- Promoted unchanged to `data/calendars/fomc_dates.csv` (test asserts it equals the runner output). Phase 2 queued.
+  Window, rule, thresholds, block unchanged.

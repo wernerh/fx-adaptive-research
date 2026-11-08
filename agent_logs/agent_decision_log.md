@@ -112,3 +112,12 @@ Why each run chose what it did, and any judgement calls.
   rule, thresholds and block are unchanged. Tests added against the committed 2017-2019 raw pages (all now parse to 8).
 - **Next:** re-queue phase 1 (re-fetch with the fixed parser). The following run reviews the new report; if every year is valid it
   promotes the CSV to `data/calendars/fomc_dates.csv` and queues phase 2. Pipeline failures so far on this line: 1 (parse).
+
+### 2026-11-08 R019 (unattended)
+- **State:** research-batch run 42462817989 (E013 phase 1 re-fetch) finished `success`; outputs in 952a8a1. No run queued.
+- **Review of `backtests/calendars/fomc_fetch_report.json`:** `all_years_valid: true`; 8 scheduled meetings each year 2015-2023 (72);
+  statement dates all weekdays; cross-month meetings correct (2017-02-01, 2017-11-01, 2018-08-01, 2019-05-01, 2023-02-01, 2023-11-01);
+  unscheduled 2019-10-04, 2020-03-02, 2020-03-15 and cancelled 2020-03-18 flagged for exclusion. Source URL on every row.
+- **Decision:** promote the file unchanged to `data/calendars/fomc_dates.csv` (test pins it to the runner output and the
+  8-per-year / weekday / 47-dev-days checks) and queue E013 phase 2 exactly as pre-registered (dev only, 1 trial). No rule change.
+- **Next:** record E013 results from `backtests/validation_reports/E013_results.json` with `fomc.decide_b11`.

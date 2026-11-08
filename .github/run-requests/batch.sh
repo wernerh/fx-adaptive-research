@@ -1,8 +1,7 @@
 # Research batch queue. Edit and push this file to run the commands below on GitHub Actions
 # (workflow: .github/workflows/research-batch.yml). Run from repo root, data already ingested.
 # Only pre-registered experiments may be queued here. Never queue --block oos without a written dev/val conclusion.
-# Request: 2026-11-08 R018 E013 phase 1 re-fetch (B11) with fixed parser (cross-month 'Jan/Feb 31-1' headings, cancelled flag);
-# NO experiment, no price data used.
-# Outputs go to backtests/calendars/ for review by the next run before E013 phase 2 is queued.
+# Request: 2026-11-08 R019 E013 phase 2 (B11): FOMC statement-day long EUR/USD, DEV ONLY, 1 trial.
+# Date file reviewed and promoted to data/calendars/fomc_dates.csv (47 dev statement days).
 set -euo pipefail
-python scripts/fetch_fomc_dates.py --years 2015-2023 | tee backtests/calendars_fetch_log.txt
+python scripts/run_e013_fomc_day.py | tee backtests/validation_reports/E013_results.txt
