@@ -48,3 +48,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** research-batch run 42420473476 completed; outputs (89082ec) not yet recorded -> Collect step.
 - **Decision:** applied E009 rule exactly (re-checked from the JSON) -> CANDIDATES: Wed_ny_18, Thu_ny_18 (both long). Per the pre-registered follow-up rule, added B9/B10 (val only, 1 trial each) at the bottom of the backlog as `ready`; not re-ranked. Exploratory scan, so no lead; no notification.
 - **Next:** top `ready` backlog item is B4 (ECB fix, dev).
+
+### 2026-11-08 R010 (unattended)
+- **State:** no research-batch run queued or in progress; last batch (42420473476) already recorded in 56295b1.
+- **Decision:** took top `ready` backlog item B4 -> E010 ECB 14:15 CET fix reversal, dev only, 2 trials (pre short, post long), E007 rule with n_trials=2.
+- **Noted before data:** post window contains 08:30 NY US releases on most days; a SIGNAL would need a release-day split at val before any lead claim.

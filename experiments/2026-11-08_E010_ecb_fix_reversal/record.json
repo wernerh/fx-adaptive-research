@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E010",
+  "date": "2026-11-08",
+  "instrument": "EURUSD",
+  "hypothesis": "USD appreciates into the ECB 14:15 CET reference rate (13:15-14:15 Berlin) and reverses after (14:15-15:15 Berlin)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": "none (sibling of E007)",
+  "variable_changed": "which fix (ECB 14:15 CET instead of London 16:00)",
+  "decision_rule": "per test: SIGNAL if mean signed > 1.0 pip AND block-bootstrap CI lower > 0 AND binom p < 0.025; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 2,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "next_experiment": "B4v (val) only if SIGNAL"
+}

@@ -44,6 +44,18 @@ E007_TESTS = (
 )
 
 
+# E010 (backlog B4): ECB euro foreign exchange reference rate, 14:15 CET/CEST, on the Europe/Berlin clock.
+ECB_FIX_WINDOWS = {
+    "ecb_fix_pre": ("Europe/Berlin", time(13, 15), time(14, 15)),
+    "ecb_fix_post": ("Europe/Berlin", time(14, 15), time(15, 15)),
+}
+
+E010_TESTS = (
+    FixTest("ecb_pre_all", "ecb_fix_pre", -1, False),
+    FixTest("ecb_post_all", "ecb_fix_post", +1, False),
+)
+
+
 def decide(res: dict, n_trials: int, min_mean_pips: float = 1.0, alpha: float = 0.05) -> str:
     """Pre-registered E007 rule for one test: SIGNAL / WEAK / NONE.
 

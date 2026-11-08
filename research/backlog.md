@@ -25,7 +25,7 @@ Trial count so far on dev: **222** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Purpose:** map the mean EUR/USD mid return by hour of day (UTC and New York), weekday x hour, and month-end x hour on **dev only**, to generate hypotheses. Label everything exploratory. Any hypothesis found must be pre-registered and confirmed on **val** before it counts. Count every hour cell as a trial in the hypothesis it spawns.
 - **Data:** available.
 
-### B4: ECB reference-rate reversal (signal test, dev) → E010 · `ready`
+### B4: ECB reference-rate reversal (signal test, dev) → E010 · `running` (pre-registered 2026-11-08)
 - **Mechanism [PUB]:** as B1, for the ECB fix (14:15 CET). Windows: 13:15-14:15 and 14:15-15:15 Europe/Berlin.
 - **Decision rule (draft):** as B1, 2 trials.
 
