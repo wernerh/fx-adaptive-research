@@ -173,3 +173,16 @@ Why each run chose what it did, and any judgement calls.
   a dated data-rule note in backlog B12 before the re-fetch.
 - **Pipeline:** the research-batch workflow itself is healthy (5/5 recent runs success); this is a single-source data block, so no
   "pipeline blocked" notification. Next run: no `ready` items remain (B6/B12 blocked, B7/B8 parked) -> refill pass (step 4).
+
+### 2026-11-08 R025 (unattended)
+- **State:** latest research-batch run 42484931936 (E015 phase 1) already recorded in R024 (042cd44). No run queued or in progress.
+  No `ready` backlog items (B6/B12 blocked, B7/B8 parked) -> Refill step (protocol step 4). pytest passed (93) before any change.
+- **Pass:** this workspace could not open any page this run (fetch permission timeout on nd.edu, cmegroup.com, snb.ch, doi.org). No new
+  citation is added to research/. Both new items rest on entries already VERIFIED (abstract) on 2026-11-07 (Baltussen et al. 2021;
+  Breedon & Ranaldo 2013); the one new factual input (CME Euro FX settlement time) is marked UNVERIFIED and must be fetched on the runner.
+- **Added:** B13 (intraday momentum into the CME FX futures settlement, dev, 1 trial; phase 1 = official settlement time on runner) and
+  B14 (home-hours depreciation: short 03:00-08:00 NY, long 12:00-17:00 NY, val only, 1 trial). Windows and draft rules fixed now, before data.
+- **Ranking:** B13 above B14. B13 has a recent multi-asset publication incl. currencies, a liquid US-afternoon window, and leaves val clean
+  for confirmation; B14 can only use val (dev scanned in E009), so it cannot reach LEAD status without an OOS decision, and E001 lowers its prior.
+- **Not added:** a 17:00 NY roll-anchored intraday-momentum variant (roll-hour spreads 1.5+ pips, E012 lesson).
+- **Next run:** pre-register B13 (E016); phase 1 fetches the CME settlement procedure page on the runner; a 403 blocks the item (no circumvention).
