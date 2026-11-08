@@ -186,3 +186,19 @@ Why each run chose what it did, and any judgement calls.
   for confirmation; B14 can only use val (dev scanned in E009), so it cannot reach LEAD status without an OOS decision, and E001 lowers its prior.
 - **Not added:** a 17:00 NY roll-anchored intraday-momentum variant (roll-hour spreads 1.5+ pips, E012 lesson).
 - **Next run:** pre-register B13 (E016); phase 1 fetches the CME settlement procedure page on the runner; a 403 blocks the item (no circumvention).
+
+### 2026-11-08 R026 (unattended)
+- **State:** latest research-batch run 42484931936 already recorded (R024). No run queued or in progress. pytest passed (93) before
+  any change. Top `ready` item: B13 (intraday momentum into the CME FX futures settlement) -> protocol step 3, pre-register as E016.
+- **Why B13 (unchanged from R025 ranking):** published multi-asset mechanism incl. currencies, liquid US-afternoon window, keeps val
+  clean for confirmation; B14 can only use val.
+- **Source check before pre-registering (R024 lesson):** a web-fetch from this workspace opened
+  https://www.cmegroup.com/market-data/files/Daily-Settlement-Time-Ranges.pdf (HTTP 200): one FX row, "FX: 13:59:30-14:00:00 CT"
+  (undated, not split by product). The two Client Systems Wiki pages redirect to cmegroupclientsite.atlassian.net and could not be
+  read here. So CME permits automated access to at least one official source. The value is NOT used yet: phase 1 fetches the pages
+  on the runner and saves them; the next run reviews and promotes S. https://www.cmegroup.com/notices/ser/2020/09/SER-8591.pdf was
+  also opened: it moved equity-index settlement (3:15 -> 3:00 pm CT, Oct 2020) and says nothing about FX.
+- **Fixed before data:** window r1 = roll -> S-30, r2 = S-30 -> S (CT), 1-pip no-trade band, B1 rule, block-20 bootstrap, dev only,
+  1 trial. Holidays/early closes not excluded (no exchange calendar). Dropped the backlog's descriptive next-day reversal reading.
+- **Risk:** the PDF is undated; if no source shows S over 2015-2020, the review records the "unchanged S" assumption as a risk.
+- **Next run:** review the phase-1 report; promote and queue phase 2, or block (no circumvention of a refusal).

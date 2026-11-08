@@ -1,0 +1,17 @@
+{
+  "experiment_id": "E016",
+  "date": "2026-11-08",
+  "instrument": "EURUSD",
+  "hypothesis": "On weekday trading dates, sign(r1: 17:00 NY roll -> S-30) x r2 (S-30 -> S) has mean > 1.0 pip, S = CME FX futures daily settlement time (CT) from official CME pages (backlog B13)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": "none",
+  "variable_changed": "new mechanism (futures-settlement hedging flow, Baltussen et al. 2021)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided binomial p < 0.05 (continuation share among traded days); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. |r1| < 1 pip -> signed 0, kept in n. LEAD only after val confirmation (B13v) and SPEC4 net > 0 and costs x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "phase": "1 of 2: official CME settlement-time fetch on research-batch runner queued (R026); no price data used",
+  "results": {},
+  "decision": null,
+  "next_experiment": "review backtests/calendars/cme_settlement_fetch_report.json; promote S to data/calendars/cme_fx_settlement.json and queue phase 2, or block"
+}
