@@ -88,3 +88,13 @@ Why each run chose what it did, and any judgement calls.
 - **Not added:** Karnaukh's signalled-meeting drift (needs fed funds futures, no source); pre-NFP drift (look-ahead).
 - **Blocker noted:** federalreserve.gov could not be opened from this workspace (fetch permission timeout). Event dates must come from official pages, fetched on the runner if needed; no dates typed from memory.
 - **Next:** top `ready` item is B11; its first step is building and checking the FOMC date file.
+
+### 2026-11-08 R017 (unattended)
+- **State:** no research-batch run queued or in progress; last batch (42446726453) recorded in ed4dc35. Top `ready` backlog item: B11.
+- **Decision:** pre-registered B11 as E013 (dev only, 1 trial; rule: mean > 10 pips AND block-bootstrap CI lower > 0 AND one-sided
+  t p < 0.05). Bootstrap block fixed at 4 meetings before any data (meetings ~6 weeks apart).
+- **Data route:** federalreserve.gov still blocked from this workspace (proxy 403), so B11 option (a): the runner fetches and parses
+  the official pages and commits `backtests/calendars/` for review **before** the test runs. This batch does no experiment.
+- **Next:** after the run, review the fetch report (8 scheduled meetings per year 2015-2023, source URLs, unscheduled actions listed).
+  If valid, copy to `data/calendars/fomc_dates.csv` and queue phase 2 (`scripts/run_e013_fomc_day.py`). If not, fix the parser from
+  the committed raw HTML and re-fetch (pipeline fix, not a new trial).
