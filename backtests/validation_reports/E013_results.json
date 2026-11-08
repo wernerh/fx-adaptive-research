@@ -1,0 +1,474 @@
+{
+  "test": {
+    "n": 47,
+    "mean_pips": 21.284,
+    "median_pips": 28.3,
+    "sd_pips": 75.131,
+    "hit_rate": 0.617,
+    "t_stat": 1.942,
+    "t_p_one_sided": 0.02913,
+    "mean_ci95_block_boot": [
+      2.747,
+      38.163
+    ],
+    "decision": "SIGNAL",
+    "lead_cost_gate": true
+  },
+  "cost_check": {
+    "n": 47,
+    "median_entry_spread_pips": 0.2,
+    "mean_net_bidask_pips": 21.011,
+    "mean_net_spec4_pips": 20.811,
+    "mean_net_costs_x1_5_pips": 20.574
+  },
+  "benchmark_non_fomc_days": {
+    "n": 1495,
+    "mean_pips": -0.39,
+    "median_pips": -0.2,
+    "sd_pips": 56.333,
+    "hit_rate": 0.499,
+    "t_stat": -0.268,
+    "t_p_one_sided": 0.60547,
+    "mean_ci95_block_boot": [
+      -3.31,
+      2.667
+    ]
+  },
+  "sub_window_13_16": {
+    "n": 47,
+    "mean_pips": 8.022,
+    "median_pips": 1.9,
+    "sd_pips": 65.662,
+    "hit_rate": 0.5319,
+    "t_stat": 0.838,
+    "t_p_one_sided": 0.20329,
+    "mean_ci95_block_boot": [
+      -4.427,
+      19.986
+    ]
+  },
+  "per_year": [
+    {
+      "date": 2015,
+      "count": 8,
+      "mean": 43.175
+    },
+    {
+      "date": 2016,
+      "count": 8,
+      "mean": 34.256
+    },
+    {
+      "date": 2017,
+      "count": 8,
+      "mean": 9.506
+    },
+    {
+      "date": 2018,
+      "count": 8,
+      "mean": -1.525
+    },
+    {
+      "date": 2019,
+      "count": 8,
+      "mean": 10.838
+    },
+    {
+      "date": 2020,
+      "count": 7,
+      "mean": 32.907
+    }
+  ],
+  "per_meeting": [
+    {
+      "date": "2015-01-28",
+      "start_date": "2015-01-27",
+      "ret_pips": -90.34999999999904,
+      "net_bidask_pips": -90.59999999999846,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": -64.69999999999753
+    },
+    {
+      "date": "2015-03-18",
+      "start_date": "2015-03-17",
+      "ret_pips": 247.99999999999932,
+      "net_bidask_pips": 247.80000000000024,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 181.24999999999946
+    },
+    {
+      "date": "2015-04-29",
+      "start_date": "2015-04-28",
+      "ret_pips": 137.5499999999996,
+      "net_bidask_pips": 137.30000000000018,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": -31.850000000002154
+    },
+    {
+      "date": "2015-06-17",
+      "start_date": "2015-06-16",
+      "ret_pips": 102.45000000000059,
+      "net_bidask_pips": 101.99999999999986,
+      "entry_spread_pips": 0.2999999999997449,
+      "sub_ret_pips": 77.70000000000054
+    },
+    {
+      "date": "2015-07-29",
+      "start_date": "2015-07-28",
+      "ret_pips": -78.14999999999905,
+      "net_bidask_pips": -78.39999999999847,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": -52.84999999999762
+    },
+    {
+      "date": "2015-09-17",
+      "start_date": "2015-09-16",
+      "ret_pips": 151.94999999999845,
+      "net_bidask_pips": 151.69999999999905,
+      "entry_spread_pips": 0.40000000000040004,
+      "sub_ret_pips": 134.30000000000052
+    },
+    {
+      "date": "2015-10-28",
+      "start_date": "2015-10-27",
+      "ret_pips": -122.44999999999617,
+      "net_bidask_pips": -122.79999999999846,
+      "entry_spread_pips": 0.40000000000040004,
+      "sub_ret_pips": -150.94999999999635
+    },
+    {
+      "date": "2015-12-16",
+      "start_date": "2015-12-15",
+      "ret_pips": -3.5999999999991594,
+      "net_bidask_pips": -3.900000000001125,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": -8.599999999998609
+    },
+    {
+      "date": "2016-01-27",
+      "start_date": "2016-01-26",
+      "ret_pips": 32.849999999999824,
+      "net_bidask_pips": 32.70000000000106,
+      "entry_spread_pips": 0.09999999999843467,
+      "sub_ret_pips": 20.75000000000049
+    },
+    {
+      "date": "2016-03-16",
+      "start_date": "2016-03-15",
+      "ret_pips": 122.39999999999806,
+      "net_bidask_pips": 121.99999999999989,
+      "entry_spread_pips": 0.40000000000040004,
+      "sub_ret_pips": 151.30000000000086
+    },
+    {
+      "date": "2016-04-27",
+      "start_date": "2016-04-26",
+      "ret_pips": 25.100000000000122,
+      "net_bidask_pips": 24.899999999998812,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": -11.499999999999844
+    },
+    {
+      "date": "2016-06-15",
+      "start_date": "2016-06-14",
+      "ret_pips": 47.80000000000006,
+      "net_bidask_pips": 47.29999999999901,
+      "entry_spread_pips": 0.5999999999994898,
+      "sub_ret_pips": 15.350000000000641
+    },
+    {
+      "date": "2016-07-27",
+      "start_date": "2016-07-26",
+      "ret_pips": 64.89999999999884,
+      "net_bidask_pips": 64.50000000000067,
+      "entry_spread_pips": 0.2999999999997449,
+      "sub_ret_pips": 61.749999999998195
+    },
+    {
+      "date": "2016-09-21",
+      "start_date": "2016-09-20",
+      "ret_pips": 28.29999999999888,
+      "net_bidask_pips": 28.099999999999792,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": 27.49999999999808
+    },
+    {
+      "date": "2016-11-02",
+      "start_date": "2016-11-01",
+      "ret_pips": 40.74999999999829,
+      "net_bidask_pips": 40.49999999999887,
+      "entry_spread_pips": 0.2999999999997449,
+      "sub_ret_pips": -25.100000000000122
+    },
+    {
+      "date": "2016-12-14",
+      "start_date": "2016-12-13",
+      "ret_pips": -88.04999999999951,
+      "net_bidask_pips": -88.30000000000115,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": -122.54999999999905
+    },
+    {
+      "date": "2017-02-01",
+      "start_date": "2017-01-31",
+      "ret_pips": -26.199999999998447,
+      "net_bidask_pips": -26.299999999999102,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": 17.100000000001003
+    },
+    {
+      "date": "2017-03-15",
+      "start_date": "2017-03-14",
+      "ret_pips": 102.44999999999837,
+      "net_bidask_pips": 102.10000000000052,
+      "entry_spread_pips": 0.09999999999843467,
+      "sub_ret_pips": 65.8499999999984
+    },
+    {
+      "date": "2017-05-03",
+      "start_date": "2017-05-02",
+      "ret_pips": -30.49999999999997,
+      "net_bidask_pips": -30.799999999999716,
+      "entry_spread_pips": 0.2999999999997449,
+      "sub_ret_pips": -21.599999999997177
+    },
+    {
+      "date": "2017-06-14",
+      "start_date": "2017-06-13",
+      "ret_pips": 11.550000000000171,
+      "net_bidask_pips": 11.299999999998533,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": -54.69999999999864
+    },
+    {
+      "date": "2017-07-26",
+      "start_date": "2017-07-25",
+      "ret_pips": 74.60000000000022,
+      "net_bidask_pips": 74.30000000000047,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": 95.10000000000129
+    },
+    {
+      "date": "2017-09-20",
+      "start_date": "2017-09-19",
+      "ret_pips": -106.19999999999851,
+      "net_bidask_pips": -106.39999999999982,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": -112.8499999999999
+    },
+    {
+      "date": "2017-11-01",
+      "start_date": "2017-10-31",
+      "ret_pips": -29.399999999999427,
+      "net_bidask_pips": -29.600000000000737,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": -5.4499999999979565
+    },
+    {
+      "date": "2017-12-13",
+      "start_date": "2017-12-12",
+      "ret_pips": 79.74999999999842,
+      "net_bidask_pips": 79.499999999999,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": 61.949999999999505
+    },
+    {
+      "date": "2018-01-31",
+      "start_date": "2018-01-30",
+      "ret_pips": 21.15000000000089,
+      "net_bidask_pips": 20.899999999999253,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": 0.14999999999876223
+    },
+    {
+      "date": "2018-03-21",
+      "start_date": "2018-03-20",
+      "ret_pips": 99.59999999999968,
+      "net_bidask_pips": 99.40000000000059,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": 83.5000000000008
+    },
+    {
+      "date": "2018-05-02",
+      "start_date": "2018-05-01",
+      "ret_pips": -53.25000000000024,
+      "net_bidask_pips": -53.600000000000314,
+      "entry_spread_pips": 0.4999999999988347,
+      "sub_ret_pips": -27.399999999999647
+    },
+    {
+      "date": "2018-06-13",
+      "start_date": "2018-06-12",
+      "ret_pips": 38.90000000000171,
+      "net_bidask_pips": 38.49999999999909,
+      "entry_spread_pips": 0.40000000000040004,
+      "sub_ret_pips": -0.4500000000007276
+    },
+    {
+      "date": "2018-08-01",
+      "start_date": "2018-07-31",
+      "ret_pips": -30.450000000001864,
+      "net_bidask_pips": -30.69999999999906,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": -5.350000000001742
+    },
+    {
+      "date": "2018-09-26",
+      "start_date": "2018-09-25",
+      "ret_pips": -19.099999999998563,
+      "net_bidask_pips": -19.299999999999873,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": -5.249999999998867
+    },
+    {
+      "date": "2018-11-08",
+      "start_date": "2018-11-07",
+      "ret_pips": -78.75000000000075,
+      "net_bidask_pips": -79.19999999999926,
+      "entry_spread_pips": 0.4999999999988347,
+      "sub_ret_pips": -32.250000000000334
+    },
+    {
+      "date": "2018-12-19",
+      "start_date": "2018-12-18",
+      "ret_pips": 9.700000000001374,
+      "net_bidask_pips": 9.40000000000163,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": -52.04999999999904
+    },
+    {
+      "date": "2019-01-30",
+      "start_date": "2019-01-29",
+      "ret_pips": 47.80000000000006,
+      "net_bidask_pips": 47.50000000000032,
+      "entry_spread_pips": 0.4999999999988347,
+      "sub_ret_pips": 61.75000000000041
+    },
+    {
+      "date": "2019-03-20",
+      "start_date": "2019-03-19",
+      "ret_pips": 75.84999999999953,
+      "net_bidask_pips": 75.60000000000011,
+      "entry_spread_pips": 0.2999999999997449,
+      "sub_ret_pips": 84.1500000000006
+    },
+    {
+      "date": "2019-05-01",
+      "start_date": "2019-04-30",
+      "ret_pips": -21.200000000001218,
+      "net_bidask_pips": -21.500000000000963,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": -46.70000000000174
+    },
+    {
+      "date": "2019-06-19",
+      "start_date": "2019-06-18",
+      "ret_pips": 34.50000000000397,
+      "net_bidask_pips": 34.20000000000201,
+      "entry_spread_pips": 0.2999999999997449,
+      "sub_ret_pips": 13.800000000001589
+    },
+    {
+      "date": "2019-07-31",
+      "start_date": "2019-07-30",
+      "ret_pips": -88.50000000000024,
+      "net_bidask_pips": -88.79999999999998,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": -58.8500000000014
+    },
+    {
+      "date": "2019-09-18",
+      "start_date": "2019-09-17",
+      "ret_pips": -38.000000000000256,
+      "net_bidask_pips": -38.19999999999934,
+      "entry_spread_pips": 0.09999999999843467,
+      "sub_ret_pips": -29.95000000000303
+    },
+    {
+      "date": "2019-10-30",
+      "start_date": "2019-10-29",
+      "ret_pips": 33.10000000000146,
+      "net_bidask_pips": 32.79999999999949,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": 23.300000000001653
+    },
+    {
+      "date": "2019-12-11",
+      "start_date": "2019-12-10",
+      "ret_pips": 43.149999999998464,
+      "net_bidask_pips": 42.9999999999997,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 46.500000000000426
+    },
+    {
+      "date": "2020-01-29",
+      "start_date": "2020-01-28",
+      "ret_pips": -14.94999999999802,
+      "net_bidask_pips": -15.099999999999003,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": 1.9000000000035655
+    },
+    {
+      "date": "2020-04-29",
+      "start_date": "2020-04-28",
+      "ret_pips": 42.50000000000087,
+      "net_bidask_pips": 42.29999999999956,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": 27.449999999999974
+    },
+    {
+      "date": "2020-06-10",
+      "start_date": "2020-06-09",
+      "ret_pips": 52.799999999999514,
+      "net_bidask_pips": 52.499999999999766,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": 37.949999999999925
+    },
+    {
+      "date": "2020-07-29",
+      "start_date": "2020-07-28",
+      "ret_pips": 63.05000000000227,
+      "net_bidask_pips": 62.80000000000063,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": 3.40000000000229
+    },
+    {
+      "date": "2020-09-16",
+      "start_date": "2020-09-15",
+      "ret_pips": -46.65000000000141,
+      "net_bidask_pips": -46.90000000000083,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": -33.50000000000186
+    },
+    {
+      "date": "2020-11-05",
+      "start_date": "2020-11-04",
+      "ret_pips": 110.60000000000069,
+      "net_bidask_pips": 110.39999999999938,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 22.799999999998377
+    },
+    {
+      "date": "2020-12-16",
+      "start_date": "2020-12-15",
+      "ret_pips": 23.000000000001908,
+      "net_bidask_pips": 22.600000000001508,
+      "entry_spread_pips": 0.3999999999981796,
+      "sub_ret_pips": 14.950000000002461
+    }
+  ],
+  "unscheduled_excluded": [
+    "2019-10-04",
+    "2020-03-02",
+    "2020-03-15"
+  ],
+  "cancelled_excluded": [
+    "2020-03-18"
+  ],
+  "dropped": [],
+  "n_trials": 1,
+  "blocks": [
+    "dev"
+  ],
+  "decision": "SIGNAL"
+}
