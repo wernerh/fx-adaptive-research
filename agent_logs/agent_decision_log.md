@@ -159,3 +159,17 @@ Why each run chose what it did, and any judgement calls.
   `empsit.htm`; dates parsed from `empsit_MMDDYYYY.htm` links, never typed. Rule, windows and thresholds fixed in the E015 methodology now.
 - **Risk:** BLS may refuse automated requests (403) from the runner too; the report records the HTTP status and the next run diagnoses.
 - **Next run:** review `backtests/calendars/nfp_fetch_report.json` (12/yr, one per month, weekdays); promote and queue phase 2, or fix and re-fetch.
+
+### 2026-11-08 R024 (unattended)
+- **State:** research-batch run 42484931936 (E015 phase 1, BLS NFP date fetch) completed `success`; outputs in b8abbd6 (github-actions[bot]),
+  not yet reviewed. No run queued or in progress. Protocol step 1 (collect). pytest passed (93) before any change.
+- **Review of `backtests/calendars/nfp_fetch_report.json`:** HTTP 403, body "Access Denied"; 0 links parsed; `all_years_valid: false`.
+  The date file is empty, so phase 2 cannot run.
+- **Decision:** the 403 is the source refusing automated access, not a parser fault. A fix that tried alternative user agents / HTTP
+  clients until one got through was drafted and then **dropped**: it would be bot-check circumvention. No workaround via mirrors or
+  web caches either. E015 stays `preregistered` (0 trials); B12 set to `blocked`. Rule, windows, thresholds unchanged.
+- **Needs human (not urgent, not a lead):** a sanctioned NFP release-date source, e.g. add a `FRED_API_KEY` Actions secret (FRED API
+  release dates for the Employment Situation) or commit an official BLS schedule file by hand-download. Changing the source requires
+  a dated data-rule note in backlog B12 before the re-fetch.
+- **Pipeline:** the research-batch workflow itself is healthy (5/5 recent runs success); this is a single-source data block, so no
+  "pipeline blocked" notification. Next run: no `ready` items remain (B6/B12 blocked, B7/B8 parked) -> refill pass (step 4).

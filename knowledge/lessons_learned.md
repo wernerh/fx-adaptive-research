@@ -91,3 +91,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** for rare events (8/yr) the dev/val split cannot confirm effects of the published size; a similar point estimate is not a confirmation. Before pre-registering an event test, check that val has enough events to confirm the dev-sized effect, or choose events that occur more often (e.g. monthly releases).
 - **Action:** B11 closed (rejected_hypotheses, "not confirmed"). Any further FOMC test would need the locked OOS block and a human decision; not requested since the LEAD definition was not met.
+
+### 2026-11-08: bls.gov refuses automated requests from the GitHub runner (E015 phase 1)
+- **Context:** E015 (B12) phase 1, run 42484931936
+- **Observation:** the BLS Employment Situation archive index returned HTTP 403 "Access Denied" to a self-identified research script.
+- **Evidence label:** [EXP]
+- **Lesson:** check before pre-registering that a data source permits automated access from the runner (or offers an official API). A 403 from the source is a stop, not something to engineer around.
+- **Action:** B12 blocked pending a sanctioned source (e.g. FRED API key secret, human-supplied official file). E015 kept preregistered, 0 trials.

@@ -25,3 +25,4 @@
 | 2026-11-08 | R021 | unattended | E014 | Pre-registered and queued (B11v: FOMC statement-day long EUR/USD, val only, 1 trial, 20 val meetings; E013 rule unchanged); awaiting research-batch run | E014 pre-reg commit |
 | 2026-11-08 | R022 | unattended | E014 | NONE on val: FOMC statement-day long EUR/USD +19.99 pips (n 20, hit 0.70, CI -9.53 to 51.02, p 0.115); E013 dev SIGNAL not confirmed; no lead. B11 closed. Val trials 3, total 230 | E014 record commit |
 | 2026-11-08 | R023 | unattended | E015 | Pre-registered (B12: NFP 15-min reaction continuation 08:45-09:45 NY, dev only, 1 trial). Phase 1 queued: fetch BLS release dates on runner (no price data); phase 2 after date-file review | E015 pre-reg commit |
+| 2026-11-08 | R024 | unattended | E015 | Phase-1 BLS date fetch (run 42484931936) refused: HTTP 403 Access Denied, 0 releases. Not circumvented; B12 blocked pending a sanctioned date source (human). No trials used | E015 phase-1 review commit |

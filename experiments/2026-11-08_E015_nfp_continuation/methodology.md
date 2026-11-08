@@ -43,3 +43,10 @@
   (index parser incl. html/pdf dedup and invalid dates; 12-per-year / one-per-month validation; DST-aware edges; no look-ahead;
   missing quotes -> NaN; no-trade days in n; bid/ask net; decision rule; random-walk no-SIGNAL).
 - **Trial count:** dev +1 when phase 2 runs (227 -> 228; total 230 -> 231).
+
+## Addendum 2026-11-08 R024 (before phase 2; no price data touched)
+- Phase 1 fetch (run 42484931936, outputs b8abbd6) failed: `https://www.bls.gov/bls/news-release/empsit.htm` returned **HTTP 403
+  "Access Denied"** to the runner (`backtests/calendars/nfp_fetch_report.json`); 0 releases parsed, every year 2015-2023 invalid.
+- This is an access refusal by the source, not a parser bug. It is **not** worked around (no rotating user agents, HTTP clients,
+  mirrors or caches to get past the block). Phase 2 is not queued. Window, rule, thresholds and block are unchanged.
+- E015 stays `preregistered` with 0 trials used. Unblocking needs a human decision on a sanctioned date source (see backlog B12).

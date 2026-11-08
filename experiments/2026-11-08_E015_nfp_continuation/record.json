@@ -3,15 +3,17 @@
   "date": "2026-11-08",
   "instrument": "EURUSD",
   "hypothesis": "On NFP release days, sign(r1 08:30-08:45 NY) x r2 08:45-09:45 NY has mean > 1.0 pip (continuation; backlog B12)",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": "none",
   "variable_changed": "new information source (scheduled US Employment Situation releases)",
   "decision_rule": "SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 4, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided binomial p < 0.05 (continuation share among traded days); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. |r1| < 1 pip -> signed 0, kept in n. LEAD only after val confirmation (B12v) and SPEC4 net > 0 and costs x1.5 net > 0",
   "n_trials": 1,
   "status": "preregistered",
-  "phase": "1 of 2: BLS release-date fetch on runner queued 2026-11-08 R023; next run reviews backtests/calendars/nfp_fetch_report.json",
+  "phase": "1 of 2: BLS release-date fetch (run 42484931936) refused with HTTP 403 Access Denied; not circumvented; phase 2 not queued; blocked pending a human-approved date source (2026-11-08 R024)",
   "results": {},
   "decision": null,
-  "next_experiment": "phase-1 review, then phase 2 dev test"
+  "next_experiment": "blocked: needs a sanctioned NFP release-date source (human decision), then phase-1 re-fetch and review"
 }
