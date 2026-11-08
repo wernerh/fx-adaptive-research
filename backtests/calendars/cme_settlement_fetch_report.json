@@ -2,6 +2,11 @@
   "user_agent": "fx-adaptive-research/0.1 (non-commercial research script; https://github.com/wernerh/fx-adaptive-research)",
   "sources": [
     {
+      "attempt_statuses": [
+        -1,
+        -1,
+        -1
+      ],
       "url": "https://www.cmegroup.com/market-data/files/Daily-Settlement-Time-Ranges.pdf",
       "final_url": "https://www.cmegroup.com/market-data/files/Daily-Settlement-Time-Ranges.pdf",
       "http_status": -1,
@@ -14,6 +19,11 @@
       "refused": false
     },
     {
+      "attempt_statuses": [
+        -1,
+        -1,
+        -1
+      ],
       "url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Daily+Settlement+Time+Details",
       "final_url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Daily+Settlement+Time+Details",
       "http_status": -1,
@@ -26,6 +36,11 @@
       "refused": false
     },
     {
+      "attempt_statuses": [
+        -1,
+        -1,
+        -1
+      ],
       "url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Euro",
       "final_url": "https://www.cmegroup.com/confluence/display/EPICSANDBOX/Euro",
       "http_status": -1,
