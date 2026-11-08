@@ -1,0 +1,4 @@
+block         test       window  direction  month_end_only  n_days  n_active  coverage  hit_rate    hit_rate_ci95  binom_p  mean_signed_pips mean_signed_ci95_block_boot  spearman_ic  spearman_p  mean_abs_window_pips decision
+  dev  ecb_pre_all  ecb_fix_pre         -1           False    1556      1556       1.0    0.5084 (0.4835, 0.5331)   0.5262             0.760              (0.124, 1.537)          NaN         NaN                 9.495     WEAK
+  dev ecb_post_all ecb_fix_post          1           False    1555      1555       1.0    0.5087 (0.4838, 0.5335)   0.5097             0.287             (-0.753, 1.356)          NaN         NaN                14.026     NONE
+E010 overall decision: WEAK

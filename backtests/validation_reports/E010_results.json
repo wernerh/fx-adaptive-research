@@ -1,0 +1,59 @@
+{
+  "results": [
+    {
+      "block": "dev",
+      "test": "ecb_pre_all",
+      "window": "ecb_fix_pre",
+      "direction": -1,
+      "month_end_only": false,
+      "n_days": 1556,
+      "n_active": 1556,
+      "coverage": 1.0,
+      "hit_rate": 0.5084,
+      "hit_rate_ci95": [
+        0.4835,
+        0.5331
+      ],
+      "binom_p": 0.5262,
+      "mean_signed_pips": 0.76,
+      "mean_signed_ci95_block_boot": [
+        0.124,
+        1.537
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "mean_abs_window_pips": 9.495,
+      "decision": "WEAK"
+    },
+    {
+      "block": "dev",
+      "test": "ecb_post_all",
+      "window": "ecb_fix_post",
+      "direction": 1,
+      "month_end_only": false,
+      "n_days": 1555,
+      "n_active": 1555,
+      "coverage": 1.0,
+      "hit_rate": 0.5087,
+      "hit_rate_ci95": [
+        0.4838,
+        0.5335
+      ],
+      "binom_p": 0.5097,
+      "mean_signed_pips": 0.287,
+      "mean_signed_ci95_block_boot": [
+        -0.753,
+        1.356
+      ],
+      "spearman_ic": NaN,
+      "spearman_p": NaN,
+      "mean_abs_window_pips": 14.026,
+      "decision": "NONE"
+    }
+  ],
+  "overall_decision": "WEAK",
+  "n_trials": 2,
+  "blocks": [
+    "dev"
+  ]
+}
