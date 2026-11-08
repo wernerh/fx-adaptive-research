@@ -148,3 +148,14 @@ Why each run chose what it did, and any judgement calls.
   -> neither SIGNAL nor WEAK -> **NONE**. LEAD criterion 2 fails; no notification, no LEADS.md.
 - **Consequence:** B11 line closed (rejected_hypotheses: not confirmed on val). OOS is not touched and not requested.
 - **Next run:** top `ready` item is B12 (NFP 15-min reaction continuation, dev, 1 trial); needs the BLS release-date file fetched on the runner first.
+
+### 2026-11-08 R023 (unattended)
+- **State:** latest research-batch run 42475560383 (E014) already recorded in R022 (75ba047). No run queued or in progress.
+  Protocol step 3 (next experiment). pytest passed before any change.
+- **Open questions:** B12 NFP continuation (`ready`, top), B6 blocked (calendar), B7/B8 parked. No other `ready` items.
+- **Decision:** pre-register **E015 = B12**, dev only, 1 trial. Reason: only `ready` item; monthly events answer the E014 lesson
+  (~72 dev / ~29 val releases, so a dev SIGNAL can be confirmed on val); 08:45-09:45 NY is a liquid hour; builds the first piece of B6's calendar.
+- **Phase 1 queued:** `scripts/fetch_nfp_dates.py` on the runner (bls.gov unreachable here: proxy 403). Source: BLS archive index
+  `empsit.htm`; dates parsed from `empsit_MMDDYYYY.htm` links, never typed. Rule, windows and thresholds fixed in the E015 methodology now.
+- **Risk:** BLS may refuse automated requests (403) from the runner too; the report records the HTTP status and the next run diagnoses.
+- **Next run:** review `backtests/calendars/nfp_fetch_report.json` (12/yr, one per month, weekdays); promote and queue phase 2, or fix and re-fetch.
