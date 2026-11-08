@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **227** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **231**. Update after every experiment. (R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **227** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **231**. Update after every experiment. (R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -97,3 +97,52 @@ Trial count so far on dev: **227** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Prior:** low. E001 found no drift 08:00-12:00 NY (`unconditional_long` +0.59 dev / +0.71 val, CIs include 0), and E007/E010/E011 found sub-pip time-of-day effects.
 - **Calendar label:** time-of-day effect; the windows avoid the ECB fix (08:15 NY) and the London 4pm fix (11:00 NY) but the 17:00 exit is the roll.
 - **Data:** available.
+
+### B15: Round-number crossing continuation, "price cascades" (signal test, dev) · `ready` (added 2026-11-08 R031 refill)
+- **Mechanism [PUB]:** stop-loss orders cluster just beyond round numbers (rates ending in 00 or 50), so crossing a round number
+  triggers stops and a rapid, self-reinforcing move; "Most results are statistically significant for hours, although not for days"
+  (Osler 2002, FRBNY Staff Report 150, opened 2026-11-08 R031; journal version 2005, venue UNVERIFIED). Consistent with Osler (2003, JF,
+  VERIFIED (abstract)): stops cluster beyond round numbers, take-profits at them. Data are 1990s/2000 dealer orders; e-trading may have
+  arbitraged the effect away (Neely, Weller & Ulrich 2009).
+- **Event (fixed now):** round levels L = every multiple of 0.0050 (00 and 50, the paper's definition). An up-crossing at bar t means
+  mid close(t-1) < L <= mid close(t); a down-crossing the reverse. Only the **first** crossing of each level per trading date
+  (`sessions.trading_date`) counts. Entry at the open of bar t+1 (SPEC 4 fill rule); exit at the open of the bar 60 minutes later.
+  Overlapping trades not allowed: an event while a trade is open is skipped and counted.
+- **Exclusions (fixed now, R030 lesson):** no entry or exit between 16:30 and 18:30 America/New_York (roll); entry skipped if spread > 2.0 pips
+  (SPEC 4); both counted and reported. Coverage: the 60-minute exit window needs >= 55 of 60 bars.
+- **Test:** signed return = crossing direction x mid return entry->exit, one value per event. **Dev only, 1 trial.**
+- **Decision rule (draft, B1 rule):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 20 events, 2000 draws,
+  seed 0) 95% CI lower > 0 AND binomial p < 0.05 (hit rate of continuation). WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE.
+  A SIGNAL earns a val confirmation (B15v) with the same rule. A significant **negative** mean (reversal at round numbers, the take-profit
+  reading) is logged as exploratory only and needs its own pre-registration.
+- **Descriptive (not in rule):** control levels offset by 23 pips (levels ending 23 and 73) run through the identical procedure; difference
+  round minus control; 15- and 120-minute horizons; by year; median spread at entry; net at bid/ask, SPEC 4 and costs x1.5.
+- **Power note:** expect roughly 1-2 events per trading day (~2,000 on dev); a 60-minute SD of ~10-12 pips gives SE ~0.3 pips, so the
+  1-pip bar binds, not the CI.
+- **Contamination note:** E009 scanned unconditional hour-of-day means; E006 tested Asian-range false breaks. No price-level-conditional
+  statistic has been computed on dev, so dev is clean for this test. Record in the methodology.
+- **Calendar label:** price-level effect, not a time-of-day, fix or release effect (events can occur at fix/release times; report the
+  share of events within +-15 min of 10:00 NY, 11:00 NY and 08:30 NY).
+- **Data:** price data in repo only; no external source (R028 lesson).
+
+### B16: Time-series momentum, 12-month lookback, daily hold (signal test, dev) · `ready` (added 2026-11-08 R031 refill)
+- **Mechanism [PUB]:** "persistence in returns for one to 12 months that partially reverses over longer horizons" across 58 futures including
+  currencies, attributed to initial under-reaction and delayed over-reaction (Moskowitz, Ooi & Pedersen 2012, JFE 104(2), 228-250,
+  DOI 10.1016/j.jfineco.2011.11.003; abstract opened 2026-11-08 R031). Evidence is portfolio-level; a single pair over 6 years has low power.
+- **Signal (fixed now):** on each trading date D, s(D) = sign(mid at 16:00 NY on D - mid at 16:00 NY on the trading date 252 trading dates
+  earlier). Position s(D) held from 16:00 NY on D to 16:00 NY on D+1 (avoids the roll and its spreads, R030 lesson). Daily signed
+  return = s(D) x mid return. The 252-day lookback is the upper end of the abstract's 1-12 month range, fixed before any data; other
+  lookbacks are new trials.
+- **Test:** **dev only, 1 trial**; first test date is the first dev date with 252 prior trading dates (early 2016), so n ~1,250.
+  Days missing either 16:00 NY bar (or the bar 252 dates back) are excluded and counted.
+- **Decision rule (draft):** SIGNAL if mean daily signed return > 1.0 pip AND moving-block bootstrap (block 20 days, 2000 draws, seed 0)
+  95% CI lower > 0 AND one-sided t-test p < 0.05. (t-test, not hit rate, because trend returns are fat-tailed: the effect lives in the
+  mean, as in E013.) WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. A SIGNAL earns a val confirmation (B16v).
+- **Descriptive (not in rule):** number of sign flips; net per actual flip at bid/ask, SPEC 4 and costs x1.5; by year; long and short days
+  separately; buy-and-hold benchmark. **Limitation:** overnight swap/carry is not in the data (EUR paid negative carry vs USD for most of
+  2015-2020, which would hurt the long days and help the short days); state this in results.
+- **Power note:** daily SD ~45 pips, n ~1,250, overlapping signals -> bootstrap SE ~1.5-2 pips; only a mean of roughly 3-4 pips/day
+  (8-10%/yr) can clear the CI bar. A NONE does not rule out a small effect.
+- **Contamination note:** no daily-horizon or multi-day trend statistic has been computed on dev (E001-E017 are intraday). Record this.
+- **Calendar label:** multi-day trend; not a time-of-day effect.
+- **Data:** price data in repo only.

@@ -239,3 +239,15 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** pre-registered B1 rule applied exactly: mean +2.179 > 1 and CI lower 0.001 > 0, but binomial p 0.451 -> **WEAK**.
   Cost gate fails (SPEC 4 -0.382, x1.5 -1.663). Not a human-OOS candidate, not a LEAD; no notification.
 - **Next run:** no `ready` backlog items (B6/B12/B13 blocked, B7/B8 parked) -> refill pass, preferring inputs already in the repo.
+
+### 2026-11-08 R031 (unattended)
+- **State:** last research-batch run 42515271388 (E017) already recorded (R030, 5df2345); no run queued or in progress. No `ready`
+  backlog items (B6/B12/B13 blocked, B7/B8 parked) -> protocol step 4 (refill). pytest passed (112) before any change.
+- **Literature pass:** opened (HTTP 200) the RePEc record for Moskowitz, Ooi & Pedersen (2012, JFE) and the FRBNY Staff Report 150 page
+  plus RePEc record for Osler (2002, price cascades). Osler's 2005 journal venue was not on the pages: marked UNVERIFIED.
+- **Selection criteria (R028/R030 lessons):** inputs already in the repo (price data only, no external source); not a time-of-day
+  window (dev was scanned by E009); no entries/exits between 16:30 and 18:30 NY.
+- **Added:** B15 round-number crossing continuation (dev, 1 trial, B1 rule) and B16 12-month time-series momentum with 16:00-16:00 NY
+  daily hold (dev, 1 trial, mean/CI/t rule). Ranked B15 above B16: higher power (~2,000 events vs ~1,250 overlapping days) and a
+  microstructure mechanism closer to the project's intraday focus. 0 trials used.
+- **Next run:** pre-register B15 as E018.

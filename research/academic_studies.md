@@ -138,6 +138,20 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Relevance:** **Medium.** Prior for B12: the NFP reaction should be mostly complete within ~15 minutes, so continuation over the next hour should be absent (efficient) unless liquidity is slow to return.
 - **Status:** VERIFIED (abstract; Cambridge page metadata lists the authors inconsistently, the LSE record lists all three)
 
+### Osler (2002 staff report; journal version 2005): Stop-loss orders and price cascades in currency markets
+- **Venue:** FRBNY Staff Report 150 (June 2002), [HTML/PDF](https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr150.html), [RePEc record](https://econpapers.repec.org/RePEc:fip:fednsr:150). RePEc lists a 2005 journal article of the same title; journal, volume and DOI **UNVERIFIED** (not on the pages opened).
+- **Finding (abstract, opened 2026-11-08 R031):** currency stop-loss orders contribute to rapid, self-reinforcing "price cascades"; trends are unusually rapid when rates reach stop-loss clusters; the response to stop-loss orders is larger and lasts longer than to take-profit orders; "Most results are statistically significant for hours, although not for days." Stop-loss sells cluster just below, buys just above, round numbers (rates ending in 00 or 50).
+- **Relevance:** **Medium.** Basis for B15 (round-number crossing continuation), a price-level test that does not reuse the dev time-of-day scan.
+- **Caveats:** 1990s/2000 dealer order data; only the first ~40% of the staff-report text was read verbatim.
+- **Status:** VERIFIED (abstract, staff report); journal version UNVERIFIED
+
+### Moskowitz, Ooi & Pedersen (2012): Time series momentum
+- **Venue:** Journal of Financial Economics 104(2), 228-250. DOI [10.1016/j.jfineco.2011.11.003](https://doi.org/10.1016/j.jfineco.2011.11.003). [RePEc record](https://econpapers.repec.org/RePEc:eee:jfinec:v:104:y:2012:i:2:p:228-250)
+- **Finding (abstract, opened 2026-11-08 R031):** time series momentum in equity index, currency, commodity and bond futures for 58 liquid instruments; "persistence in returns for one to 12 months that partially reverses over longer horizons"; a diversified portfolio earns substantial abnormal returns and performs best in extreme markets.
+- **Relevance:** **Medium.** Basis for B16 (12-month TSMOM on EUR/USD, daily hold). Evidence is portfolio-level; single-pair power is low.
+- **Caveats:** lookback and holding period of the main strategy not read (abstract only).
+- **Status:** VERIFIED (abstract)
+
 ---
 
 ## Open research questions raised by the literature
