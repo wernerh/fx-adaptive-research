@@ -115,3 +115,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   tests whose inputs are already in the repo (price data, committed calendars) or whose source has a documented API; flag any new
   external source as an access risk before pre-registration.
 - **Action:** B13 blocked (0 trials). Next ready item B14 (home-hours depreciation, val only) needs no external source.
+
+### 2026-11-08 R030: exits next to the 17:00 NY roll are expensive (E017)
+- **Context:** E017 (B14) val, US leg exit at the 16:59 NY bar.
+- **Observation:** median spread at 16:59 NY was 3.0 pips vs 0.3 at 03:00, 07:59 and 12:00 NY; a +2.18-pip mid mean became -0.38 at SPEC 4.
+  The mid mean also rested on few large days (hit 0.516, binomial p 0.45).
+- **Evidence label:** [EXP]
+- **Lesson:** do not place entries or exits within the last minutes before the 17:00 NY roll; pre-register exits at or before 16:45 NY
+  (or after the roll has normalised) and check the spread at every fixed timestamp in pre-registration, not after. A positive mean with a
+  ~0.5 hit rate is a fat-tail effect, not a steady drift.
+- **Action:** B14 closed. Backlog has no `ready` items -> next run refills.

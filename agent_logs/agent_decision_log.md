@@ -232,3 +232,10 @@ Why each run chose what it did, and any judgement calls.
 - **Fixed before data:** both legs required per date (>= 275/300 bars each), B1 rule, block-20 bootstrap, val only; SPEC 4 costs per leg
   (2 round trips/day); max-spread rule reported, not applied. A val SIGNAL surviving x1.5 is a human-OOS candidate, not a LEAD.
 - **Next run:** collect E017 results from the research-batch run.
+
+### 2026-11-08 R030 (unattended)
+- **State:** research-batch run 42515271388 (E017) finished successfully; outputs committed in 86f67f5 and not yet recorded -> protocol step 1 (collect).
+  pytest passed (112).
+- **Decision:** pre-registered B1 rule applied exactly: mean +2.179 > 1 and CI lower 0.001 > 0, but binomial p 0.451 -> **WEAK**.
+  Cost gate fails (SPEC 4 -0.382, x1.5 -1.663). Not a human-OOS candidate, not a LEAD; no notification.
+- **Next run:** no `ready` backlog items (B6/B12/B13 blocked, B7/B8 parked) -> refill pass, preferring inputs already in the repo.

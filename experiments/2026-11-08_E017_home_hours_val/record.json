@@ -3,14 +3,80 @@
   "date": "2026-11-08",
   "instrument": "EURUSD",
   "hypothesis": "Daily -(EUR/USD mid return 03:00-08:00 NY) + (mid return 12:00-17:00 NY) > 1 pip (home-hours depreciation, B14)",
-  "blocks_used": ["val"],
+  "blocks_used": [
+    "val"
+  ],
   "oos_touched": false,
   "parent_experiment": null,
   "variable_changed": "new hypothesis (home-hours depreciation mechanism)",
   "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap CI lower > 0 AND binom p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. Val SIGNAL with SPEC4 net > 0 and costs x1.5 net > 0 -> candidate for human OOS decision (not a LEAD; dev scanned by E009)",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
-  "next_experiment": null
+  "status": "complete",
+  "results": {
+    "test": {
+      "n_days": 636,
+      "n_active": 636,
+      "coverage": 1.0,
+      "hit_rate": 0.5157,
+      "hit_rate_ci95": [
+        0.4769,
+        0.5544
+      ],
+      "binom_p": 0.4512,
+      "mean_signed_pips": 2.179,
+      "mean_signed_ci95_block_boot": [
+        0.001,
+        4.265
+      ],
+      "spearman_ic": null,
+      "spearman_p": null,
+      "decision": "WEAK"
+    },
+    "legs": {
+      "eu": {
+        "n_active": 636,
+        "hit_rate": 0.511,
+        "binom_p": 0.6062,
+        "mean_signed_pips": 1.776,
+        "mean_signed_ci95_block_boot": [
+          -0.211,
+          3.83
+        ]
+      },
+      "us": {
+        "n_active": 636,
+        "hit_rate": 0.522,
+        "binom_p": 0.2843,
+        "mean_signed_pips": 0.403,
+        "mean_signed_ci95_block_boot": [
+          -1.028,
+          1.578
+        ]
+      }
+    },
+    "cost_check": {
+      "n": 636,
+      "mean_signed_mid_pips": 2.179,
+      "mean_net_bidask_pips": 0.018,
+      "mean_net_spec4_pips": -0.382,
+      "mean_net_costs_x1_5_pips": -1.663,
+      "net_spec4_hit_rate": 0.4858,
+      "eu_mean_signed_mid_pips": 1.776,
+      "eu_median_entry_spread_pips": 0.3,
+      "eu_median_exit_spread_pips": 0.3,
+      "eu_share_entry_spread_gt_2": 0.0016,
+      "us_mean_signed_mid_pips": 0.403,
+      "us_median_entry_spread_pips": 0.3,
+      "us_median_exit_spread_pips": 3.0,
+      "us_share_entry_spread_gt_2": 0.0016
+    },
+    "cost_gate": false,
+    "candidate_for_human_oos": false,
+    "n_val_trading_dates": 637,
+    "n_val_dates_dropped_coverage": 1,
+    "source": "backtests/validation_reports/E017_results.json (GitHub Actions run 42515271388, outputs 86f67f5)"
+  },
+  "decision": "WEAK",
+  "next_experiment": "none on B14 line (rejected for these windows); backlog empty of ready items -> refill pass",
+  "lead": false
 }
