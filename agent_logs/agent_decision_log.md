@@ -251,3 +251,13 @@ Why each run chose what it did, and any judgement calls.
   daily hold (dev, 1 trial, mean/CI/t rule). Ranked B15 above B16: higher power (~2,000 events vs ~1,250 overlapping days) and a
   microstructure mechanism closer to the project's intraday focus. 0 trials used.
 - **Next run:** pre-register B15 as E018.
+
+### 2026-11-08 R032 (unattended)
+- **State:** last research-batch run 42515271388 (E017) already recorded (R030); no run queued or in progress -> protocol step 3.
+  pytest passed (112) before any change.
+- **Pick:** B15 (round-number crossing continuation, dev, 1 trial) is the top `ready` item; B6/B12/B13 blocked, B7/B8 parked; B16 next.
+- **Fixed before data (beyond the backlog draft, all mechanical):** crossing price = mid close held as integer (exact levels);
+  down-crossing = mid(t-1) > L >= mid(t) (mirror of the up rule); crossings across the 17:00 NY roll ignored; multi-level bars use the
+  level nearest the close; "first crossing" counts either direction; entry/exit fill within 5 min; skip reasons counted in a fixed order.
+  Bars outside dev are dropped before computing. Decision rule unchanged from the backlog draft.
+- **Next run:** collect E018 results from the research-batch run.
