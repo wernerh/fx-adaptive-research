@@ -229,3 +229,25 @@ def cost_summary(f: pd.DataFrame) -> dict:
         "mean_net_spec4_pips": round(float(net_spec.mean()), 3),
         "mean_net_costs_x1_5_pips": round(float((gross - 1.5 * cost).mean()), 3),
     }
+
+
+def fetch_with_retries(get, url: str, attempts: int = 3, sleep=None, wait_s: float = 30.0):
+    """E016 phase-1 re-fetch (R027): call get(url) -> (status, final_url, ctype, body) up to `attempts` times.
+
+    Retries ONLY on transport failures (status -1: timeout / connection error). An HTTP answer of any code, including a
+    refusal (401/403/429), is returned at once and never retried or worked around (R024 lesson). Returns the last result
+    plus the list of per-attempt statuses for the fetch report.
+    """
+    import time as _time
+
+    sleep = sleep or _time.sleep
+    tries = []
+    res = None
+    for k in range(attempts):
+        res = get(url)
+        tries.append(res[0])
+        if res[0] != -1:
+            break
+        if k < attempts - 1:
+            sleep(wait_s * (k + 1))
+    return res, tries

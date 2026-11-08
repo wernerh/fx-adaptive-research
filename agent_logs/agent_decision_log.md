@@ -202,3 +202,15 @@ Why each run chose what it did, and any judgement calls.
   1 trial. Holidays/early closes not excluded (no exchange calendar). Dropped the backlog's descriptive next-day reversal reading.
 - **Risk:** the PDF is undated; if no source shows S over 2015-2020, the review records the "unchanged S" assumption as a risk.
 - **Next run:** review the phase-1 report; promote and queue phase 2, or block (no circumvention of a refusal).
+
+### 2026-11-08 R027 (unattended)
+- **State:** research-batch run 42500439921 (E016 phase 1) completed; outputs committed by github-actions[bot] (4942183) and not yet
+  reviewed -> protocol step 1 (collect). pytest passed (102) before any change.
+- **Review:** all three official CME URLs returned `TimeoutError` after 60 s (http_status -1, no body). Not a refusal, not valid;
+  nothing promoted, no price data touched, 0 trials used.
+- **Decision:** diagnose as a transport timeout and re-queue phase 1 once, with a 120 s timeout and up to 3 attempts on transport
+  errors only (refusals final), same honest User-Agent and URLs. A stop rule was written into the E016 methodology before the
+  re-fetch: a second failure blocks B13 (silent timeouts treated as refusal; no further workaround).
+- **Why not fetch in-session instead:** the E016 methodology fixes the runner copy as the record; changing that after a failed run
+  would be a protocol change, not a fix.
+- **Next run:** review the re-fetch report; promote S and queue phase 2, or block B13 and move to B14.

@@ -98,3 +98,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** check before pre-registering that a data source permits automated access from the runner (or offers an official API). A 403 from the source is a stop, not something to engineer around.
 - **Action:** B12 blocked pending a sanctioned source (e.g. FRED API key secret, human-supplied official file). E015 kept preregistered, 0 trials.
+
+### 2026-11-08 R027: an in-session 200 does not prove the runner can fetch
+- **Context:** E016 (B13) phase 1, run 42500439921
+- **Observation:** the CME settlement PDF opened from this workspace in R026 (HTTP 200), but all three CME URLs timed out (60 s, no HTTP answer) from the GitHub runner.
+- **Evidence label:** [EXP]
+- **Lesson:** source-access checks must be made from the runner's network, not this workspace. Fetch scripts should retry transport errors with a longer timeout (never refusals) and record per-attempt statuses.
+- **Action:** one re-fetch queued with retries; a second failure blocks B13 (stop rule written before the result).

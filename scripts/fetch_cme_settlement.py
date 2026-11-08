@@ -24,8 +24,10 @@ import urllib.error
 import urllib.request
 
 from _common import ROOT
-from fxresearch.cme_settle import SOURCE_URLS, find_fx_windows, validate_settlement
+from fxresearch.cme_settle import SOURCE_URLS, fetch_with_retries, find_fx_windows, validate_settlement
 
+TIMEOUT_S = 120  # R027: 60 s timed out on all three pages in run 42500439921 (no HTTP answer)
+ATTEMPTS = 3     # retries on transport errors only; any HTTP refusal is final (R024 lesson)
 UA = "fx-adaptive-research/0.1 (non-commercial research script; https://github.com/wernerh/fx-adaptive-research)"
 
 out_dir = ROOT / "backtests" / "calendars"
@@ -37,7 +39,7 @@ def get(url: str):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html,application/pdf",
                                                "Accept-Language": "en-US"})
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
+        with urllib.request.urlopen(req, timeout=TIMEOUT_S) as r:
             return r.status, r.geturl(), r.headers.get("Content-Type", ""), r.read()
     except urllib.error.HTTPError as e:
         try:
@@ -62,8 +64,8 @@ def html_to_text(raw: bytes) -> str:
 report = {"user_agent": UA, "sources": [], "note": "no price data used; review before promoting"}
 all_windows = []
 for i, url in enumerate(SOURCE_URLS):
-    status, final_url, ctype, body = get(url)
-    entry = {"url": url, "final_url": final_url, "http_status": status, "content_type": ctype,
+    (status, final_url, ctype, body), tries = fetch_with_retries(get, url, attempts=ATTEMPTS)
+    entry = {"attempt_statuses": tries, "url": url, "final_url": final_url, "http_status": status, "content_type": ctype,
              "bytes": len(body), "sha256": hashlib.sha256(body).hexdigest()}
     stem = f"cme_{i}_" + re.sub(r"[^A-Za-z0-9]+", "_", url.rsplit("/", 1)[-1])[:60]
     is_pdf = "pdf" in ctype.lower() or body[:4] == b"%PDF"

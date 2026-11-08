@@ -53,3 +53,16 @@
   tests `tests/test_cme_settle.py` (FX-row parser, conflicting/implausible windows, reviewed-file guard, CT edges, no look-ahead,
   missing quotes -> NaN, no-trade days in n, bid/ask net, decision rule, random-walk no-SIGNAL).
 - **Trial count:** dev +1 when phase 2 runs (227 -> 228; total 230 -> 231).
+
+## Addendum 2026-11-08 R027: phase-1 review and re-fetch (data access only; test definition and rule unchanged)
+- **Phase-1 result (run 42500439921, outputs commit 4942183):** all three CME URLs failed with
+  `TimeoutError: The read operation timed out` (60 s, `http_status -1`, 48-byte error stubs). No HTTP answer was received, so
+  this is **not** a refusal (no 401/403/429/"Access Denied") and **not** a valid settlement file. Report `valid: false`,
+  `settle_time_ct: null`. Nothing promoted; no price data touched; no trial used.
+- **Fix (one re-fetch):** `scripts/fetch_cme_settlement.py` now uses a 120 s timeout and `cme_settle.fetch_with_retries`
+  (3 attempts, 30/60 s waits) that retries **only** transport failures (status -1); any HTTP status, including a refusal, is final
+  and never retried. Same self-identifying User-Agent, same URLs; no header spoofing, proxies or mirrors. Per-attempt statuses
+  are saved in the report (`attempt_statuses`).
+- **Stop rule (fixed now, before the re-fetch result):** if the re-fetch again yields no valid FX settlement window (timeouts,
+  refusal, or no parsable FX row), B13/E016 becomes `blocked` with 0 trials used; persistent silent timeouts are treated like a
+  refusal and not worked around further. Unblocking would need a human decision on a source (e.g. a CME notice supplied by the human).

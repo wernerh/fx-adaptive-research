@@ -130,3 +130,23 @@ def test_random_walk_no_signal():
     assert decide_b13(res) != "SIGNAL"
     c = cost_summary(f)
     assert c["mean_net_spec4_pips"] < c["mean_gross_traded_pips"]
+
+
+def test_fetch_with_retries_retries_only_transport_errors():
+    from fxresearch.cme_settle import fetch_with_retries
+
+    seq = iter([(-1, "u", "", b"ERROR"), (-1, "u", "", b"ERROR"), (200, "u", "text/html", b"ok")])
+    res, tries = fetch_with_retries(lambda u: next(seq), "u", attempts=3, sleep=lambda s: None)
+    assert res[0] == 200 and tries == [-1, -1, 200]
+
+    calls = []
+
+    def refused(u):
+        calls.append(u)
+        return (403, u, "text/html", b"Access Denied")
+
+    res, tries = fetch_with_retries(refused, "u", attempts=3, sleep=lambda s: None)
+    assert res[0] == 403 and tries == [403] and len(calls) == 1  # a refusal is never retried
+
+    res, tries = fetch_with_retries(lambda u: (-1, u, "", b"ERROR"), "u", attempts=3, sleep=lambda s: None)
+    assert res[0] == -1 and tries == [-1, -1, -1]
