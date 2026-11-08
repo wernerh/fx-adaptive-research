@@ -1,0 +1,243 @@
+{
+  "test": {
+    "n": 20,
+    "mean_pips": 19.99,
+    "median_pips": 38.125,
+    "sd_pips": 72.128,
+    "hit_rate": 0.7,
+    "t_stat": 1.239,
+    "t_p_one_sided": 0.11514,
+    "mean_ci95_block_boot": [
+      -9.53,
+      51.018
+    ],
+    "decision": "NONE",
+    "lead_cost_gate": true,
+    "lead": false
+  },
+  "cost_check": {
+    "n": 20,
+    "median_entry_spread_pips": 0.25,
+    "mean_net_bidask_pips": 19.66,
+    "mean_net_spec4_pips": 19.46,
+    "mean_net_costs_x1_5_pips": 19.195
+  },
+  "benchmark_non_fomc_days": {
+    "n": 617,
+    "mean_pips": -2.563,
+    "median_pips": -2.25,
+    "sd_pips": 53.516,
+    "hit_rate": 0.4846,
+    "t_stat": -1.19,
+    "t_p_one_sided": 0.88266,
+    "mean_ci95_block_boot": [
+      -6.692,
+      1.152
+    ]
+  },
+  "sub_window_13_16": {
+    "n": 20,
+    "mean_pips": 17.47,
+    "median_pips": 27.7,
+    "sd_pips": 54.054,
+    "hit_rate": 0.65,
+    "t_stat": 1.445,
+    "t_p_one_sided": 0.08232,
+    "mean_ci95_block_boot": [
+      -2.116,
+      39.659
+    ]
+  },
+  "pooled_dev_val_descriptive": {
+    "n": 67,
+    "mean_pips": 20.898
+  },
+  "per_year": [
+    {
+      "date": 2021,
+      "count": 8,
+      "mean": -2.888
+    },
+    {
+      "date": 2022,
+      "count": 8,
+      "mean": 15.906
+    },
+    {
+      "date": 2023,
+      "count": 4,
+      "mean": 73.913
+    }
+  ],
+  "per_meeting": [
+    {
+      "date": "2021-01-27",
+      "start_date": "2021-01-26",
+      "ret_pips": -62.40000000000023,
+      "net_bidask_pips": -62.80000000000063,
+      "entry_spread_pips": 0.40000000000040004,
+      "sub_ret_pips": -12.999999999998568
+    },
+    {
+      "date": "2021-03-17",
+      "start_date": "2021-03-16",
+      "ret_pips": 72.09999999999938,
+      "net_bidask_pips": 71.89999999999807,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": 75.69999999999854
+    },
+    {
+      "date": "2021-04-28",
+      "start_date": "2021-04-27",
+      "ret_pips": 41.349999999999994,
+      "net_bidask_pips": 41.20000000000123,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": 39.54999999999931
+    },
+    {
+      "date": "2021-06-16",
+      "start_date": "2021-06-15",
+      "ret_pips": -123.40000000000018,
+      "net_bidask_pips": -123.69999999999992,
+      "entry_spread_pips": 0.2999999999997449,
+      "sub_ret_pips": -112.95000000000054
+    },
+    {
+      "date": "2021-07-28",
+      "start_date": "2021-07-27",
+      "ret_pips": 25.94999999999903,
+      "net_bidask_pips": 25.699999999999612,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 33.199999999999896
+    },
+    {
+      "date": "2021-09-22",
+      "start_date": "2021-09-21",
+      "ret_pips": -34.19999999999978,
+      "net_bidask_pips": -34.50000000000175,
+      "entry_spread_pips": 0.30000000000196536,
+      "sub_ret_pips": -40.200000000001346
+    },
+    {
+      "date": "2021-11-03",
+      "start_date": "2021-11-02",
+      "ret_pips": 24.15000000000056,
+      "net_bidask_pips": 23.900000000001143,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 24.649999999999395
+    },
+    {
+      "date": "2021-12-15",
+      "start_date": "2021-12-14",
+      "ret_pips": 33.350000000000875,
+      "net_bidask_pips": 32.999999999998586,
+      "entry_spread_pips": 0.20000000000131024,
+      "sub_ret_pips": 27.400000000001867
+    },
+    {
+      "date": "2022-01-26",
+      "start_date": "2022-01-25",
+      "ret_pips": -64.10000000000248,
+      "net_bidask_pips": -64.60000000000132,
+      "entry_spread_pips": 0.40000000000040004,
+      "sub_ret_pips": -47.600000000000975
+    },
+    {
+      "date": "2022-03-16",
+      "start_date": "2022-03-15",
+      "ret_pips": 92.20000000000006,
+      "net_bidask_pips": 91.89999999999809,
+      "entry_spread_pips": 0.30000000000196536,
+      "sub_ret_pips": 44.200000000000905
+    },
+    {
+      "date": "2022-05-04",
+      "start_date": "2022-05-03",
+      "ret_pips": 83.10000000000039,
+      "net_bidask_pips": 82.69999999999999,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 59.24999999999736
+    },
+    {
+      "date": "2022-06-15",
+      "start_date": "2022-06-14",
+      "ret_pips": 43.24999999999912,
+      "net_bidask_pips": 42.9999999999997,
+      "entry_spread_pips": 0.40000000000040004,
+      "sub_ret_pips": 72.49999999999979
+    },
+    {
+      "date": "2022-07-27",
+      "start_date": "2022-07-26",
+      "ret_pips": 94.35000000000304,
+      "net_bidask_pips": 94.1000000000014,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 97.5000000000037
+    },
+    {
+      "date": "2022-09-21",
+      "start_date": "2022-09-20",
+      "ret_pips": -124.80000000000047,
+      "net_bidask_pips": -125.2999999999993,
+      "entry_spread_pips": 0.49999999999994493,
+      "sub_ret_pips": -18.850000000000254
+    },
+    {
+      "date": "2022-11-02",
+      "start_date": "2022-11-01",
+      "ret_pips": -49.000000000001265,
+      "net_bidask_pips": -49.5000000000001,
+      "entry_spread_pips": 0.49999999999994493,
+      "sub_ret_pips": -38.750000000000725
+    },
+    {
+      "date": "2022-12-14",
+      "start_date": "2022-12-13",
+      "ret_pips": 52.25000000000035,
+      "net_bidask_pips": 51.70000000000119,
+      "entry_spread_pips": 0.4999999999988347,
+      "sub_ret_pips": 28.000000000001357
+    },
+    {
+      "date": "2023-02-01",
+      "start_date": "2023-01-31",
+      "ret_pips": 116.14999999999931,
+      "net_bidask_pips": 115.60000000000014,
+      "entry_spread_pips": 0.4999999999988347,
+      "sub_ret_pips": 80.19999999999915
+    },
+    {
+      "date": "2023-03-22",
+      "start_date": "2023-03-21",
+      "ret_pips": 95.9000000000021,
+      "net_bidask_pips": 95.70000000000078,
+      "entry_spread_pips": 0.09999999999843467,
+      "sub_ret_pips": 66.55000000000078
+    },
+    {
+      "date": "2023-05-03",
+      "start_date": "2023-05-02",
+      "ret_pips": 48.700000000001516,
+      "net_bidask_pips": 48.500000000000206,
+      "entry_spread_pips": 0.1999999999990898,
+      "sub_ret_pips": 7.650000000001267
+    },
+    {
+      "date": "2023-06-14",
+      "start_date": "2023-06-13",
+      "ret_pips": 34.89999999999993,
+      "net_bidask_pips": 34.69999999999862,
+      "entry_spread_pips": 0.10000000000065512,
+      "sub_ret_pips": -35.599999999997856
+    }
+  ],
+  "unscheduled_excluded": [],
+  "cancelled_excluded": [],
+  "dropped": [],
+  "n_trials": 1,
+  "blocks": [
+    "val"
+  ],
+  "decision": "NONE",
+  "lead": false
+}

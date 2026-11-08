@@ -1,0 +1,45 @@
+E014 VAL ONLY. Scheduled statement days in val: 20; dropped for missing quotes: none
+Unscheduled actions excluded: none
+Cancelled scheduled meetings excluded: none
+
+Pre-registered test (1 trial): long EUR/USD 16:00 NY prev business day -> 16:00 NY statement day
+{'n': 20, 'mean_pips': 19.99, 'median_pips': 38.125, 'sd_pips': 72.128, 'hit_rate': 0.7, 't_stat': 1.239, 't_p_one_sided': 0.11514, 'mean_ci95_block_boot': (-9.53, 51.018), 'decision': 'NONE', 'lead_cost_gate': True, 'lead': False}
+
+Cost check (gates the LEAD label): {'n': 20, 'median_entry_spread_pips': 0.25, 'mean_net_bidask_pips': 19.66, 'mean_net_spec4_pips': 19.46, 'mean_net_costs_x1_5_pips': 19.195}
+
+Descriptive (not trials): non-FOMC val weekdays same window: {'n': 617, 'mean_pips': -2.563, 'median_pips': -2.25, 'sd_pips': 53.516, 'hit_rate': 0.4846, 't_stat': -1.19, 't_p_one_sided': 0.88266, 'mean_ci95_block_boot': (-6.692, 1.152)}
+Descriptive: 13:00-16:00 NY sub-window on statement day: {'n': 20, 'mean_pips': 17.47, 'median_pips': 27.7, 'sd_pips': 54.054, 'hit_rate': 0.65, 't_stat': 1.445, 't_p_one_sided': 0.08232, 'mean_ci95_block_boot': (-2.116, 39.659)}
+Descriptive: pooled dev+val (information only, no rule): {'n': 67, 'mean_pips': 20.898}
+
+Per-year (descriptive):
+       count    mean
+date               
+2021      8  -2.888
+2022      8  15.906
+2023      4  73.913
+
+Per-meeting:
+             start_date  ret_pips  net_bidask_pips  entry_spread_pips  sub_ret_pips
+date                                                                              
+2021-01-27  2021-01-26    -62.40            -62.8                0.4        -13.00
+2021-03-17  2021-03-16     72.10             71.9                0.2         75.70
+2021-04-28  2021-04-27     41.35             41.2                0.1         39.55
+2021-06-16  2021-06-15   -123.40           -123.7                0.3       -112.95
+2021-07-28  2021-07-27     25.95             25.7                0.2         33.20
+2021-09-22  2021-09-21    -34.20            -34.5                0.3        -40.20
+2021-11-03  2021-11-02     24.15             23.9                0.2         24.65
+2021-12-15  2021-12-14     33.35             33.0                0.2         27.40
+2022-01-26  2022-01-25    -64.10            -64.6                0.4        -47.60
+2022-03-16  2022-03-15     92.20             91.9                0.3         44.20
+2022-05-04  2022-05-03     83.10             82.7                0.2         59.25
+2022-06-15  2022-06-14     43.25             43.0                0.4         72.50
+2022-07-27  2022-07-26     94.35             94.1                0.2         97.50
+2022-09-21  2022-09-20   -124.80           -125.3                0.5        -18.85
+2022-11-02  2022-11-01    -49.00            -49.5                0.5        -38.75
+2022-12-14  2022-12-13     52.25             51.7                0.5         28.00
+2023-02-01  2023-01-31    116.15            115.6                0.5         80.20
+2023-03-22  2023-03-21     95.90             95.7                0.1         66.55
+2023-05-03  2023-05-02     48.70             48.5                0.2          7.65
+2023-06-14  2023-06-13     34.90             34.7                0.1        -35.60
+
+E014 decision: NONE | LEAD: False
