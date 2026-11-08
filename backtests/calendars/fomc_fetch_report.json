@@ -33,28 +33,31 @@
       "calendars_parsed": []
     },
     "2017": {
-      "valid": false,
-      "source": null,
-      "note": "historical: 6 scheduled meetings (need 8); calendars: year not found",
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2017.htm",
+      "note": "ok",
       "historical_parsed": [
+        "Jan/Feb 31-1 Meeting",
         "March 14-15 Meeting",
         "May 2-3 Meeting",
         "June 13-14 Meeting",
         "July 25-26 Meeting",
         "September 19-20 Meeting",
+        "Oct/Nov 31-1 Meeting",
         "December 12-13 Meeting"
       ],
       "calendars_parsed": []
     },
     "2018": {
-      "valid": false,
-      "source": null,
-      "note": "historical: 7 scheduled meetings (need 8); calendars: year not found",
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2018.htm",
+      "note": "ok",
       "historical_parsed": [
         "January 30-31 Meeting",
         "March 20-21 Meeting",
         "May 1-2 Meeting",
         "June 12-13 Meeting",
+        "Jul/Aug 31-1 Meeting",
         "September 25-26 Meeting",
         "November 7-8 Meeting",
         "December 18-19 Meeting"
@@ -62,12 +65,13 @@
       "calendars_parsed": []
     },
     "2019": {
-      "valid": false,
-      "source": null,
-      "note": "historical: 7 scheduled meetings (need 8); calendars: year not found",
+      "valid": true,
+      "source": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm",
+      "note": "ok",
       "historical_parsed": [
         "January 29-30 Meeting",
         "March 19-20 Meeting",
+        "April/May 30-1 Meeting",
         "June 18-19 Meeting",
         "July 30-31 Meeting",
         "September 17-18 Meeting",
@@ -156,6 +160,6 @@
     "https://www.federalreserve.gov/monetarypolicy/fomchistorical2022.htm": 404,
     "https://www.federalreserve.gov/monetarypolicy/fomchistorical2023.htm": 404
   },
-  "all_years_valid": false,
-  "n_scheduled": 48
+  "all_years_valid": true,
+  "n_scheduled": 72
 }
