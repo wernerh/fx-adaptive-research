@@ -11,9 +11,100 @@
   "variable_changed": "new information source (scheduled FOMC events)",
   "decision_rule": "SIGNAL if mean > 10.0 pips AND moving-block bootstrap (block 4) 95% CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. LEAD only after val confirmation (B11v) and SPEC4 net > 0 and costs x1.5 net > 0",
   "n_trials": 1,
-  "status": "preregistered",
-  "phase": "1 of 2: FOMC date file fetch on runner. First fetch (run 42458841737) invalid for 2017-2019 (cross-month heading parse); parser fixed and fetch re-queued 2026-11-08 R018; cancelled meetings flagged and excluded; R019: re-fetch (run 42462817989) valid, 72 scheduled 2015-2023, 47 dev test days; promoted to data/calendars/fomc_dates.csv; phase 2 queued",
-  "results": null,
-  "decision": null,
-  "next_experiment": "record phase 2 results (backtests/validation_reports/E013_results.json)"
+  "status": "complete",
+  "phase": "1 of 2: FOMC date file fetch on runner. First fetch (run 42458841737) invalid for 2017-2019 (cross-month heading parse); parser fixed and fetch re-queued 2026-11-08 R018; cancelled meetings flagged and excluded; R019: re-fetch (run 42462817989) valid, 72 scheduled 2015-2023, 47 dev test days; promoted to data/calendars/fomc_dates.csv; phase 2 queued; phase 2 run 42467005834 (outputs 48d4d0e) recorded R020",
+  "results": {
+    "test": {
+      "n": 47,
+      "mean_pips": 21.284,
+      "median_pips": 28.3,
+      "sd_pips": 75.131,
+      "hit_rate": 0.617,
+      "t_stat": 1.942,
+      "t_p_one_sided": 0.02913,
+      "mean_ci95_block_boot": [
+        2.747,
+        38.163
+      ],
+      "decision": "SIGNAL",
+      "lead_cost_gate": true
+    },
+    "cost_check": {
+      "n": 47,
+      "median_entry_spread_pips": 0.2,
+      "mean_net_bidask_pips": 21.011,
+      "mean_net_spec4_pips": 20.811,
+      "mean_net_costs_x1_5_pips": 20.574
+    },
+    "benchmark_non_fomc_days": {
+      "n": 1495,
+      "mean_pips": -0.39,
+      "median_pips": -0.2,
+      "sd_pips": 56.333,
+      "hit_rate": 0.499,
+      "t_stat": -0.268,
+      "t_p_one_sided": 0.60547,
+      "mean_ci95_block_boot": [
+        -3.31,
+        2.667
+      ]
+    },
+    "sub_window_13_16": {
+      "n": 47,
+      "mean_pips": 8.022,
+      "median_pips": 1.9,
+      "sd_pips": 65.662,
+      "hit_rate": 0.5319,
+      "t_stat": 0.838,
+      "t_p_one_sided": 0.20329,
+      "mean_ci95_block_boot": [
+        -4.427,
+        19.986
+      ]
+    },
+    "per_year": [
+      {
+        "date": 2015,
+        "count": 8,
+        "mean": 43.175
+      },
+      {
+        "date": 2016,
+        "count": 8,
+        "mean": 34.256
+      },
+      {
+        "date": 2017,
+        "count": 8,
+        "mean": 9.506
+      },
+      {
+        "date": 2018,
+        "count": 8,
+        "mean": -1.525
+      },
+      {
+        "date": 2019,
+        "count": 8,
+        "mean": 10.838
+      },
+      {
+        "date": 2020,
+        "count": 7,
+        "mean": 32.907
+      }
+    ],
+    "unscheduled_excluded": [
+      "2019-10-04",
+      "2020-03-02",
+      "2020-03-15"
+    ],
+    "cancelled_excluded": [
+      "2020-03-18"
+    ],
+    "dropped": [],
+    "source": "backtests/validation_reports/E013_results.json (GitHub Actions run 42467005834)"
+  },
+  "decision": "SIGNAL",
+  "next_experiment": "B11v: val-only confirmation, same window and rule, 1 trial (E014, pre-register next run)"
 }

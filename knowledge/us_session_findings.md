@@ -22,3 +22,6 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 ### 2026-11-07: US-window move size vs pre-US ranges (E008) [EXP]
 - Mean |EUR/USD 08:00-12:00 NY| on dev ~25 pips; ~13 pips for 08:00-09:00 NY.
 - Beyond prior ATR, Asia range adds a tiny positive effect (partial IC ~0.05-0.06) and London range adds nothing. See experiments/2026-11-07_E008_vol_timing.
+
+### 2026-11-08: FOMC statement days (E013, dev) [EXP]
+- On scheduled FOMC statement days the 16:00-to-16:00 NY EUR/USD return averaged +21.28 pips on dev (SIGNAL, 1 trial); the 13:00-16:00 NY part (statement + press conference) averaged +8.02 pips (n.s., descriptive). Per-meeting SD 75 pips vs 56 on other days. Val confirmation B11v pending. See experiments/2026-11-08_E013_fomc_day_drift.

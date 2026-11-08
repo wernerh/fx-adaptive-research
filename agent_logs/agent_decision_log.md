@@ -121,3 +121,13 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** promote the file unchanged to `data/calendars/fomc_dates.csv` (test pins it to the runner output and the
   8-per-year / weekday / 47-dev-days checks) and queue E013 phase 2 exactly as pre-registered (dev only, 1 trial). No rule change.
 - **Next:** record E013 results from `backtests/validation_reports/E013_results.json` with `fomc.decide_b11`.
+
+### 2026-11-08 R020 (unattended)
+- **State:** research-batch run 42467005834 (E013 phase 2, dev test) finished `success`; outputs in 48d4d0e, not yet recorded. No run queued.
+  Protocol step 1 (collect). pytest 81 passed before recording.
+- **Decision (rule applied exactly, `fomc.decide_b11`):** n 47, mean +21.284 pips > 10, block-4 CI (2.747, 38.163) lower > 0, one-sided t p 0.029 < 0.05 -> **SIGNAL** on dev.
+  Cost gate passes on dev (SPEC 4 +20.81, x1.5 +20.57) but a LEAD needs a pre-registered val confirmation, so **no lead and no notification**.
+- **Re-rank:** B11v (val confirmation, fixed by the E013 methodology before the run) is placed above B12. Reason: it is the only line
+  that can produce a lead, its rule and window are already fixed, and the date file is validated, so it needs no new data work.
+  B12 stays `ready` behind it.
+- **Next run:** pre-register E014 = B11v (val only, 1 trial) with hypothesis/methodology/record.json/registry row before running; no OOS.

@@ -27,3 +27,7 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 ### 2026-11-08: NY 18:00 hour drift does not confirm on val (E012) [EXP]
 - Supersedes the "val tests B9/B10 queued" note in the 2026-11-07 hourly drift map entry above.
 - Val: trading-date Wed +0.65 pips (WEAK), Thu +0.94 pips (NONE), CIs include 0. Median entry spread at 18:00 NY 1.5-1.7 pips; net negative at bid/ask, SPEC 4 and costs x1.5. Treat the post-roll mid drift as untradable. See experiments/2026-11-08_E012_ny18_drift_val.
+
+### 2026-11-08: FOMC statement-day USD weakness, dev SIGNAL (E013) [EXP]
+- Long EUR/USD from 16:00 NY on the prior business day to 16:00 NY on scheduled FOMC statement days, dev 2015-2020: n 47, mean +21.28 pips, median +28.3, hit 0.617, block-boot CI (2.75, 38.16), t p 0.029 -> SIGNAL under the pre-registered rule. Same window on non-FOMC weekdays: -0.39 pips (flat).
+- Consistent with the published FOMC-day short-USD premium [PUB: Mueller, Tahbaz-Salehi & Vedolin 2017, DOI 10.1111/jofi.12499]. **Not confirmed**: val test B11v pending; not a lead and not a confirmed pattern. See experiments/2026-11-08_E013_fomc_day_drift.

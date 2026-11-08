@@ -77,3 +77,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** picking 2 of 192 cells gives roughly 50% shrinkage on fresh data, as expected from selection. Hours next to the 17:00 NY roll have the widest spreads of the day; any drift there must clear ~2 pips round trip before it matters. Screen hourly-scan candidates against the cost at that hour before spending val trials.
 - **Action:** B9/B10 closed. No ready backlog items left; next run does a refill pass. New items should target liquid hours (spread < 0.5 pip) or event-driven mechanisms.
+
+### 2026-11-08: Event-driven, literature-backed test gives the first dev SIGNAL (E013)
+- **Context:** E013 (B11, FOMC statement-day long EUR/USD, dev, 1 trial)
+- **Observation:** the first SIGNAL in 227 dev trials came from a pre-registered, published event mechanism at a liquid hour (entry spread 0.2 pips), not from time-of-day scans. The margin is thin (CI lower 2.7 pips, p 0.029) and per-meeting dispersion is high (SD 75 pips, one +248-pip meeting).
+- **Evidence label:** [EXP]
+- **Lesson:** event mechanisms with a published basis and low cost are the better line. A dev SIGNAL with ~47 events is fragile; val (~20 events) has low power, so the val rule must stay exactly as pre-registered and a val miss closes B11 on our data.
+- **Action:** B11v (val only, same rule, 1 trial) ranked next. Pipeline lesson from phase 1: fetch event calendars on the runner and validate them (counts per year, cancelled/unscheduled flags) before any price data are touched.
