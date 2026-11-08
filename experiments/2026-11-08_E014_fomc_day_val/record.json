@@ -3,14 +3,92 @@
   "date": "2026-11-08",
   "instrument": "EURUSD",
   "hypothesis": "Long EUR/USD from 16:00 NY on the business day before a scheduled FOMC statement to 16:00 NY on statement day earns > 10 pips mid on average on the val block (backlog B11v, confirmation of E013)",
-  "blocks_used": ["val"],
+  "blocks_used": [
+    "val"
+  ],
   "oos_touched": false,
   "parent_experiment": "E013",
   "variable_changed": "block (dev -> val)",
   "decision_rule": "SIGNAL if mean > 10.0 pips AND moving-block bootstrap (block 4, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. LEAD if val SIGNAL and val SPEC4 net > 0 and costs x1.5 net > 0",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
-  "next_experiment": null
+  "status": "complete",
+  "results": {
+    "test": {
+      "n": 20,
+      "mean_pips": 19.99,
+      "median_pips": 38.125,
+      "sd_pips": 72.128,
+      "hit_rate": 0.7,
+      "t_stat": 1.239,
+      "t_p_one_sided": 0.11514,
+      "mean_ci95_block_boot": [
+        -9.53,
+        51.018
+      ],
+      "decision": "NONE",
+      "lead_cost_gate": true,
+      "lead": false
+    },
+    "cost_check": {
+      "n": 20,
+      "median_entry_spread_pips": 0.25,
+      "mean_net_bidask_pips": 19.66,
+      "mean_net_spec4_pips": 19.46,
+      "mean_net_costs_x1_5_pips": 19.195
+    },
+    "benchmark_non_fomc_days": {
+      "n": 617,
+      "mean_pips": -2.563,
+      "median_pips": -2.25,
+      "sd_pips": 53.516,
+      "hit_rate": 0.4846,
+      "t_stat": -1.19,
+      "t_p_one_sided": 0.88266,
+      "mean_ci95_block_boot": [
+        -6.692,
+        1.152
+      ]
+    },
+    "sub_window_13_16": {
+      "n": 20,
+      "mean_pips": 17.47,
+      "median_pips": 27.7,
+      "sd_pips": 54.054,
+      "hit_rate": 0.65,
+      "t_stat": 1.445,
+      "t_p_one_sided": 0.08232,
+      "mean_ci95_block_boot": [
+        -2.116,
+        39.659
+      ]
+    },
+    "pooled_dev_val_descriptive": {
+      "n": 67,
+      "mean_pips": 20.898
+    },
+    "per_year": [
+      {
+        "date": 2021,
+        "count": 8,
+        "mean": -2.888
+      },
+      {
+        "date": 2022,
+        "count": 8,
+        "mean": 15.906
+      },
+      {
+        "date": 2023,
+        "count": 4,
+        "mean": 73.913
+      }
+    ],
+    "unscheduled_excluded": [],
+    "cancelled_excluded": [],
+    "dropped": [],
+    "source": "backtests/validation_reports/E014_results.json (GitHub Actions run 42475560383, outputs 671906f)"
+  },
+  "decision": "NONE",
+  "next_experiment": "none on B11 line (val did not confirm); next backlog item B12",
+  "lead": false
 }

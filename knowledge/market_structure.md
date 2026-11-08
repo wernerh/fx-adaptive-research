@@ -31,3 +31,7 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 ### 2026-11-08: FOMC statement-day USD weakness, dev SIGNAL (E013) [EXP]
 - Long EUR/USD from 16:00 NY on the prior business day to 16:00 NY on scheduled FOMC statement days, dev 2015-2020: n 47, mean +21.28 pips, median +28.3, hit 0.617, block-boot CI (2.75, 38.16), t p 0.029 -> SIGNAL under the pre-registered rule. Same window on non-FOMC weekdays: -0.39 pips (flat).
 - Consistent with the published FOMC-day short-USD premium [PUB: Mueller, Tahbaz-Salehi & Vedolin 2017, DOI 10.1111/jofi.12499]. **Not confirmed**: val test B11v pending; not a lead and not a confirmed pattern. See experiments/2026-11-08_E013_fomc_day_drift.
+
+### 2026-11-08: FOMC statement-day USD weakness not confirmed on val (E014) [EXP]
+- Supersedes the "val test B11v pending" note in the 2026-11-08 E013 entry above.
+- Val 2021-01-21..2023-06-30: n 20, mean +19.99 pips, hit 0.70, block-boot CI (-9.53, 51.02), t p 0.115 -> NONE under the unchanged E013 rule. Point estimate similar to dev but val (20 meetings) is underpowered. Not a confirmed pattern; no lead. See experiments/2026-11-08_E014_fomc_day_val.

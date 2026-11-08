@@ -25,3 +25,6 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 
 ### 2026-11-08: FOMC statement days (E013, dev) [EXP]
 - On scheduled FOMC statement days the 16:00-to-16:00 NY EUR/USD return averaged +21.28 pips on dev (SIGNAL, 1 trial); the 13:00-16:00 NY part (statement + press conference) averaged +8.02 pips (n.s., descriptive). Per-meeting SD 75 pips vs 56 on other days. Val confirmation B11v pending. See experiments/2026-11-08_E013_fomc_day_drift.
+
+### 2026-11-08: FOMC statement days on val (E014) [EXP]
+- Supersedes "Val confirmation B11v pending" in the E013 entry above. Val: 16:00-to-16:00 NY mean +19.99 pips (n 20, NONE: CI includes 0, p 0.115); 13:00-16:00 NY sub-window +17.47 (descriptive, n.s.). See experiments/2026-11-08_E014_fomc_day_val.

@@ -23,3 +23,4 @@
 | 2026-11-08 | R019 | unattended | E013 | Phase-1 re-fetch (run 42462817989) valid: 8 scheduled FOMC meetings/yr 2015-2023, 47 dev test days; promoted to data/calendars/; phase 2 (dev test, 1 trial) queued | E013 phase-2 queue commit |
 | 2026-11-08 | R020 | unattended | E013 | SIGNAL on dev: FOMC statement-day long EUR/USD +21.28 pips (n 47, hit 0.617, CI 2.75-38.16, p 0.029); net SPEC 4 +20.81; not a lead until val. B11v (val) ranked next. Dev trials 227, total 229 | E013 record commit |
 | 2026-11-08 | R021 | unattended | E014 | Pre-registered and queued (B11v: FOMC statement-day long EUR/USD, val only, 1 trial, 20 val meetings; E013 rule unchanged); awaiting research-batch run | E014 pre-reg commit |
+| 2026-11-08 | R022 | unattended | E014 | NONE on val: FOMC statement-day long EUR/USD +19.99 pips (n 20, hit 0.70, CI -9.53 to 51.02, p 0.115); E013 dev SIGNAL not confirmed; no lead. B11 closed. Val trials 3, total 230 | E014 record commit |

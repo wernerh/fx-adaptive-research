@@ -140,3 +140,11 @@ Why each run chose what it did, and any judgement calls.
   window, rule, thresholds, bootstrap block and date file are fixed by E013 and unchanged. Expected val set: 20 scheduled statement days
   (2021-01-27..2023-06-14; test pins this). Script truncates bars to 2021-01-01..2023-06-30 so OOS is never read.
 - **Next run:** record E014 from `backtests/validation_reports/E014_results.json` with `fomc.decide_b11` and the LEAD cost gate.
+
+### 2026-11-08 R022 (unattended)
+- **State:** research-batch run 42475560383 (E014, queued in R021) completed success; outputs committed by github-actions[bot] in 671906f, not yet recorded.
+  Protocol step 1 (collect). pytest passed (82) before any change.
+- **Decision (rule applied exactly, `fomc.decide_b11`):** n 20, mean +19.99 > 10 but block-4 CI (-9.53, 51.02) lower <= 0 and one-sided t p 0.115 >= 0.05
+  -> neither SIGNAL nor WEAK -> **NONE**. LEAD criterion 2 fails; no notification, no LEADS.md.
+- **Consequence:** B11 line closed (rejected_hypotheses: not confirmed on val). OOS is not touched and not requested.
+- **Next run:** top `ready` item is B12 (NFP 15-min reaction continuation, dev, 1 trial); needs the BLS release-date file fetched on the runner first.

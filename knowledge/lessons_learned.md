@@ -84,3 +84,10 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Evidence label:** [EXP]
 - **Lesson:** event mechanisms with a published basis and low cost are the better line. A dev SIGNAL with ~47 events is fragile; val (~20 events) has low power, so the val rule must stay exactly as pre-registered and a val miss closes B11 on our data.
 - **Action:** B11v (val only, same rule, 1 trial) ranked next. Pipeline lesson from phase 1: fetch event calendars on the runner and validate them (counts per year, cancelled/unscheduled flags) before any price data are touched.
+
+### 2026-11-08: A dev SIGNAL on ~47 events does not survive a 20-event val test (E014)
+- **Context:** E014 (B11v, val confirmation of E013, 1 trial)
+- **Observation:** val mean +19.99 pips (dev +21.28) but CI (-9.53, 51.02), p 0.115 -> NONE. The pre-registered power note predicted val could only confirm a mean of ~35+ pips.
+- **Evidence label:** [EXP]
+- **Lesson:** for rare events (8/yr) the dev/val split cannot confirm effects of the published size; a similar point estimate is not a confirmation. Before pre-registering an event test, check that val has enough events to confirm the dev-sized effect, or choose events that occur more often (e.g. monthly releases).
+- **Action:** B11 closed (rejected_hypotheses, "not confirmed"). Any further FOMC test would need the locked OOS block and a human decision; not requested since the LEAD definition was not met.
