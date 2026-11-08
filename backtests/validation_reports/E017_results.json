@@ -1,0 +1,67 @@
+{
+  "result": {
+    "n_days": 636,
+    "n_active": 636,
+    "coverage": 1.0,
+    "hit_rate": 0.5157,
+    "hit_rate_ci95": [
+      0.4769,
+      0.5544
+    ],
+    "binom_p": 0.4512,
+    "mean_signed_pips": 2.179,
+    "mean_signed_ci95_block_boot": [
+      0.001,
+      4.265
+    ],
+    "spearman_ic": NaN,
+    "spearman_p": NaN,
+    "decision": "WEAK"
+  },
+  "legs": {
+    "eu": {
+      "n_active": 636,
+      "hit_rate": 0.511,
+      "binom_p": 0.6062,
+      "mean_signed_pips": 1.776,
+      "mean_signed_ci95_block_boot": [
+        -0.211,
+        3.83
+      ]
+    },
+    "us": {
+      "n_active": 636,
+      "hit_rate": 0.522,
+      "binom_p": 0.2843,
+      "mean_signed_pips": 0.403,
+      "mean_signed_ci95_block_boot": [
+        -1.028,
+        1.578
+      ]
+    }
+  },
+  "cost_check": {
+    "n": 636,
+    "mean_signed_mid_pips": 2.179,
+    "mean_net_bidask_pips": 0.018,
+    "mean_net_spec4_pips": -0.382,
+    "mean_net_costs_x1_5_pips": -1.663,
+    "net_spec4_hit_rate": 0.4858,
+    "eu_mean_signed_mid_pips": 1.776,
+    "eu_median_entry_spread_pips": 0.3,
+    "eu_median_exit_spread_pips": 0.3,
+    "eu_share_entry_spread_gt_2": 0.0016,
+    "us_mean_signed_mid_pips": 0.403,
+    "us_median_entry_spread_pips": 0.3,
+    "us_median_exit_spread_pips": 3.0,
+    "us_share_entry_spread_gt_2": 0.0016
+  },
+  "cost_gate": false,
+  "candidate_for_human_oos": false,
+  "n_trials": 1,
+  "blocks": [
+    "val"
+  ],
+  "n_val_trading_dates": 637,
+  "n_val_dates_dropped_coverage": 1
+}
