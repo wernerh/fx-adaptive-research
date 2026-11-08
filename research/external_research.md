@@ -17,3 +17,9 @@ It is recorded so we know which claims are circulating and can test them. Label 
 ### 2026-11-07: "Opening range" variants
 - Practitioner versions define the range differently: the 30 minutes before London, 00:00-06:00 UTC, 00:00-08:00 GMT, candle bodies only, and so on.
 - **Our view:** each definition is a separate trial and counts towards the multiple-testing correction. Pick one in advance (SPEC 2) and test others only as one-variable experiments.
+
+### 2026-11-08: Robot Wealth, "Exploiting the Non-Farm Payrolls drift" (K. Longmore, 2020)
+- **Link:** https://robotwealth.com/exploiting-the-non-farm-payrolls-drift/
+- **Claim:** EUR/USD 5-minute bars, 2009-2018, first-Friday NFP days: on days with a bullish first-hour post-release reaction, price drifted up in the hours before 08:30 ET on average, and down before bearish reactions. The author says this uses future information to classify days, is not tradable as written, and gives no performance figures.
+- **Our view:** look-ahead by construction; not a testable strategy. It does show NFP-day intraday paths are used in practice. Not used for B12, which tests post-release continuation with information available at 08:45 NY.
+- **How to check:** n/a without an ex-ante predictor of the release surprise.

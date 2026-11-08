@@ -17,3 +17,4 @@
 | 2026-11-08 | R013 | unattended | E011 | WEAK: Tokyo pre-fix +0.32 pips (hit 0.530), post-fix +0.79 pips (hit 0.539, CI > 0, p 0.003, below 1-pip bar); B5v not earned. Dev trials 226 | E011 record commit |
 | 2026-11-08 | R014 | unattended | E012 | Pre-registered and queued (NY 18:00 hour long drift Wed/Thu, val only, 2 trials, bid/ask + SPEC 4 cost gate for LEAD label); awaiting research-batch run | E012 pre-reg commit |
 | 2026-11-08 | R015 | unattended | E012 | WEAK on val: Wed NY 18:00 +0.65 pips (p 0.049, CI incl. 0), Thu +0.94 (NONE); net negative at SPEC 4 and x1.5 (spread 1.5-1.7 pips); no lead. Val trials 2, total 228. Backlog has no ready items | E012 record commit |
+| 2026-11-08 | R016 | unattended | none (refill) | Literature pass on FOMC/NFP event effects (3 verified sources); added B11 FOMC-day long EUR/USD and B12 NFP reaction continuation, both dev, 1 trial each. No trials used | R016 refill commit |

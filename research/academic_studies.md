@@ -118,6 +118,26 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Relevance:** **Methodology.** Adopted in SPEC section 5.2. Every variant we try is counted in the experiment registry.
 - **Status:** VERIFIED (abstract)
 
+**Added 2026-11-08 (R016 refill pass): central-bank and release-day evidence.**
+
+### Mueller, Tahbaz-Salehi & Vedolin (2017): Exchange rates and monetary policy uncertainty
+- **Venue:** Journal of Finance 72(3), 1213-1252. DOI [10.1111/jofi.12499](https://doi.org/10.1111/jofi.12499). Accepted versions: [LSE eprint 77256](https://eprints.lse.ac.uk/77256/), [Warwick WRAP 94006](https://wrap.warwick.ac.uk/94006/)
+- **Finding:** a strategy short the USD and long other currencies earns significantly larger excess returns on scheduled FOMC announcement days; larger for currencies with higher rate differentials vs the US, rising with monetary-policy uncertainty and when the Fed is easing. Interpreted as compensation for policy uncertainty borne by constrained intermediaries.
+- **Relevance:** **Medium.** Gives a signed, ex-ante-definable FOMC-day prediction for EUR/USD (long EUR). EUR had a *negative* rate differential vs USD for most of 2015-2023, so the cross-sectional part predicts a weaker effect for EUR than for high-yielders. Magnitudes not in the abstract. -> backlog B11.
+- **Status:** VERIFIED (abstract, repository records opened 2026-11-08)
+
+### Karnaukh (2018, working paper): The dollar ahead of FOMC target rate changes
+- **Venue:** working paper dated 2018-07-26, Ohio State University; no journal stated in the text read. [PDF (AUT ACFR conference copy)](https://acfr.aut.ac.nz/__data/assets/pdf_file/0019/190315/DollarAheadFOMC_NinaKarnaukh.pdf)
+- **Finding (1994-2015, 176 scheduled meetings, Olsen 5-min EUR/GBP/CHF/JPY):** the USD rises from 14:00 two days before to 14:00 on announcement day ahead of raises signalled by fed funds futures (mean +20 bp, t 1.99) and falls before signalled cuts (-32 bp, t -2.06; -16 bp excl. fall 2008). Unconditionally, neutral meetings show only a 5-10 bp USD drift down. Partial, weak reversal in the two days after.
+- **Relevance:** **Medium, blocked on data.** The signal needs daily fed funds futures, which we do not have. The unconditional "neutral meeting" USD-down drift overlaps with MTV (B11). EUR-specific numbers were only in a model-extracted part of the fetch: UNVERIFIED.
+- **Status:** VERIFIED (working paper, first ~40k characters read 2026-11-08); not peer-reviewed as far as checked
+
+### Almeida, Goodhart & Payne (1998): The effects of macroeconomic news on high frequency exchange rate behavior
+- **Venue:** Journal of Financial and Quantitative Analysis 33(3), 383-408. DOI [10.2307/2331101](https://doi.org/10.2307/2331101). [Cambridge page](https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis/article/effects-of-macroeconomic-news-on-high-frequency-exchange-rate-behavior/CE5AB6783BC3486CD07ACF242A73FBB8); working paper [LSE eprint 119153](https://researchonline.lse.ac.uk/id/eprint/119153)
+- **Finding:** DEM/USD at 5-minute frequency: most announcements move the rate significantly in the 15 minutes after release; significance falls quickly as the horizon lengthens, with little effect left after three hours for most announcements. US scheduled releases are absorbed much faster than German ones.
+- **Relevance:** **Medium.** Prior for B12: the NFP reaction should be mostly complete within ~15 minutes, so continuation over the next hour should be absent (efficient) unless liquidity is slow to return.
+- **Status:** VERIFIED (abstract; Cambridge page metadata lists the authors inconsistently, the LSE record lists all three)
+
 ---
 
 ## Open research questions raised by the literature

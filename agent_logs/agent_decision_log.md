@@ -80,3 +80,11 @@ Why each run chose what it did, and any judgement calls.
 - **State:** research-batch run 42446726453 completed; outputs (82c6ccd) not yet recorded -> Collect step.
 - **Decision:** dev reproduction matched E009 (n 312/313, +1.333/+1.240), so results are valid. Applied E012 rule exactly -> WEAK overall (Wed WEAK: +0.65 pips, CI includes 0, p 0.049; Thu NONE: +0.94 pips, p 0.14). Cost gate fails for both. Hypothesis rejected for these cells; no lead; no notification.
 - **Next:** no `ready` backlog items (B6 blocked, B7/B8 parked) -> next run does a refill pass (step 4).
+
+### 2026-11-08 R016 (unattended)
+- **State:** no research-batch run queued or in progress; last batch (42446726453) already recorded in ed4dc35. No `ready` backlog items (B6 blocked, B7/B8 parked) -> Refill step (protocol step 4).
+- **Pass:** literature on event-driven USD moves, following the E012 lesson (target liquid hours or event mechanisms). Verified: Mueller, Tahbaz-Salehi & Vedolin (2017, JF); Karnaukh (2018 WP); Almeida, Goodhart & Payne (1998, JFQA). Robot Wealth NFP-drift note logged as external (look-ahead, not testable).
+- **Added:** B11 (FOMC statement-day long EUR/USD, dev, 1 trial) and B12 (NFP 15-min reaction continuation, dev, 1 trial), both with draft rules fixed now, before any data.
+- **Not added:** Karnaukh's signalled-meeting drift (needs fed funds futures, no source); pre-NFP drift (look-ahead).
+- **Blocker noted:** federalreserve.gov could not be opened from this workspace (fetch permission timeout). Event dates must come from official pages, fetched on the runner if needed; no dates typed from memory.
+- **Next:** top `ready` item is B11; its first step is building and checking the FOMC date file.
