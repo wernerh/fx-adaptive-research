@@ -56,6 +56,43 @@ E010_TESTS = (
 )
 
 
+# E011 (backlog B5): Tokyo fix (MUFG / Japanese bank TTM), 09:55 JST, Asia/Tokyo clock (no DST).
+# 08:55-10:55 JST = 23:55-01:55 UTC, inside one FX trading date (17:00 NY roll).
+TOKYO_FIX_WINDOWS = {
+    "tky_fix_pre": ("Asia/Tokyo", time(8, 55), time(9, 55)),
+    "tky_fix_post": ("Asia/Tokyo", time(9, 55), time(10, 55)),
+}
+
+E011_TESTS = (
+    FixTest("tky_pre_all", "tky_fix_pre", -1, False),
+    FixTest("tky_post_all", "tky_fix_post", +1, False),
+)
+
+
+def window_bidask_net(bars: pd.DataFrame, tz: str, start: time, end: time, direction: int, name: str) -> pd.DataFrame:
+    """Descriptive cost check for a fixed-direction window trade, per trading date.
+
+    Long: buy at ask open of first bar, sell at bid close of last bar. Short: the reverse.
+    Returns columns <name>_net_pips (bid/ask P&L) and <name>_entry_spread_pips (ask_open - bid_open of first bar).
+    """
+    from .data import PIP
+    from .sessions import Session, label_sessions
+
+    s = Session(name, tz, start, end)
+    lab = label_sessions(bars.index, (s,))
+    b = bars[lab[name].to_numpy()]
+    g = b.groupby(lab.loc[lab[name], "trading_date"].to_numpy())
+    first, last = g.first(), g.last()
+    if direction > 0:
+        net = last["bid_close"] - first["ask_open"]
+    else:
+        net = first["bid_open"] - last["ask_close"]
+    out = pd.DataFrame({f"{name}_net_pips": net / PIP,
+                        f"{name}_entry_spread_pips": (first["ask_open"] - first["bid_open"]) / PIP})
+    out.index.name = "trading_date"
+    return out
+
+
 def decide(res: dict, n_trials: int, min_mean_pips: float = 1.0, alpha: float = 0.05) -> str:
     """Pre-registered E007 rule for one test: SIGNAL / WEAK / NONE.
 

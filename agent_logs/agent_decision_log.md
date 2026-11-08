@@ -58,3 +58,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** research-batch run 42429506649 completed; outputs (cda15e9) not yet recorded -> Collect step.
 - **Decision:** applied E010 rule exactly -> WEAK overall (pre WEAK: +0.76 pips < 1.0 bar, p 0.53; post NONE). WEAK does not go to val; B4v not queued. No lead; no notification.
 - **Next:** top `ready` backlog item is B5 (Tokyo fix, E011).
+
+### 2026-11-08 R012 (unattended)
+- **State:** no research-batch run queued or in progress; last batch (42429506649) already recorded in 03e47f7.
+- **Decision:** took top `ready` backlog item B5 -> E011 Tokyo 09:55 JST fix reversal, dev only, 2 trials (pre short, post long), E007 rule with n_trials=2.
+- **Added before data:** descriptive bid/ask cost check (median entry spread, net, net at costs x1.5), because B5 flags wider Asian-hours spreads. Not part of the decision rule. Gotobi-day subset deliberately not tested (would add trials).

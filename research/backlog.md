@@ -29,7 +29,7 @@ Trial count so far on dev: **224** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Mechanism [PUB]:** as B1, for the ECB fix (14:15 CET). Windows: 13:15-14:15 and 14:15-15:15 Europe/Berlin.
 - **Decision rule (draft):** as B1, 2 trials.
 
-### B5: Tokyo fix (signal test, dev) → E011 · `ready`
+### B5: Tokyo fix (signal test, dev) → E011 · `running` (2026-11-08: pre-registered, queued)
 - **Mechanism [PUB]:** as B1, Tokyo fix 09:55 JST. Windows: 08:55-09:55 and 09:55-10:55 Asia/Tokyo. Asian-hours spreads are wider, so check costs carefully.
 
 ### B6: US data release reaction (strategy) → E012 · `blocked`

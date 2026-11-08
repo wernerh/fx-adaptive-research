@@ -13,3 +13,4 @@
 | 2026-11-07 | R009 | unattended | E009 | CANDIDATES (exploratory): Wed/Thu NY 18:00 hour +1.33/+1.24 pips (dev); B9/B10 val-only tests added. Dev trials 222 | E009 record commit |
 | 2026-11-08 | R010 | unattended | E010 | Pre-registered and queued (ECB fix reversal, dev only, 2 trials); awaiting research-batch run | E010 pre-reg commit |
 | 2026-11-08 | R011 | unattended | E010 | WEAK: ECB pre-fix +0.76 pips signed (CI > 0, hit 0.508, p 0.53), post +0.29 (NONE); B4v not earned. Dev trials 224 | E010 record commit |
+| 2026-11-08 | R012 | unattended | E011 | Pre-registered and queued (Tokyo fix reversal, dev only, 2 trials, descriptive bid/ask cost check); awaiting research-batch run | E011 pre-reg commit |
