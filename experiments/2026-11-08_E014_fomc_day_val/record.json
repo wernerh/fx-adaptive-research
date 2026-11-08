@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E014",
+  "date": "2026-11-08",
+  "instrument": "EURUSD",
+  "hypothesis": "Long EUR/USD from 16:00 NY on the business day before a scheduled FOMC statement to 16:00 NY on statement day earns > 10 pips mid on average on the val block (backlog B11v, confirmation of E013)",
+  "blocks_used": ["val"],
+  "oos_touched": false,
+  "parent_experiment": "E013",
+  "variable_changed": "block (dev -> val)",
+  "decision_rule": "SIGNAL if mean > 10.0 pips AND moving-block bootstrap (block 4, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. LEAD if val SIGNAL and val SPEC4 net > 0 and costs x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "next_experiment": null
+}

@@ -131,3 +131,12 @@ Why each run chose what it did, and any judgement calls.
   that can produce a lead, its rule and window are already fixed, and the date file is validated, so it needs no new data work.
   B12 stays `ready` behind it.
 - **Next run:** pre-register E014 = B11v (val only, 1 trial) with hypothesis/methodology/record.json/registry row before running; no OOS.
+
+### 2026-11-08 R021 (unattended)
+- **State:** latest research-batch run 42467005834 (E013 phase 2) already recorded in R020 (94dfc47). No run queued or in progress.
+  Protocol step 3 (next experiment). pytest passed before any change.
+- **Open questions:** B11v (val confirmation of E013 SIGNAL; `ready`, top), B12 NFP continuation (`ready`), B6 blocked (calendar), B7/B8 parked.
+- **Decision:** pre-register and queue **E014 = B11v**, val only, 1 trial. Reason: it is the only open line that can produce a lead;
+  window, rule, thresholds, bootstrap block and date file are fixed by E013 and unchanged. Expected val set: 20 scheduled statement days
+  (2021-01-27..2023-06-14; test pins this). Script truncates bars to 2021-01-01..2023-06-30 so OOS is never read.
+- **Next run:** record E014 from `backtests/validation_reports/E014_results.json` with `fomc.decide_b11` and the LEAD cost gate.

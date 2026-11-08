@@ -269,3 +269,24 @@ def cost_summary(df: pd.DataFrame) -> dict:
         "mean_net_spec4_pips": round(float(net_spec.mean()), 3),
         "mean_net_costs_x1_5_pips": round(float((gross - 1.5 * cost).mean()), 3),
     }
+
+
+def calendar_block_dates(cal: pd.DataFrame, plan, block: str) -> dict:
+    """E014: split a FOMC date file into scheduled / cancelled / unscheduled statement dates for one block.
+
+    Blocks are assigned by statement date (as in E013). The OOS block is refused here: it is locked (SPEC 5.1)
+    and needs explicit human approval recorded in agent_logs/agent_decision_log.md.
+    """
+    if block not in ("dev", "val"):
+        raise ValueError(f"block {block!r} not allowed (OOS is locked)")
+    c = cal.copy()
+    c["statement_date"] = pd.to_datetime(c["statement_date"]).dt.date
+    c["block"] = plan.assign(pd.Index(c["statement_date"])).to_numpy()
+    c = c[c["block"] == block]
+    is_s = c["scheduled"].astype(bool)
+    is_c = c["cancelled"].astype(bool)
+    return {
+        "scheduled": sorted(c.loc[is_s & ~is_c, "statement_date"]),
+        "cancelled": sorted(c.loc[is_s & is_c, "statement_date"]),
+        "unscheduled": sorted(c.loc[~is_s, "statement_date"]),
+    }

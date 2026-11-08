@@ -171,3 +171,23 @@ def test_promoted_fomc_date_file_is_valid():
     assert cal["source_url"].str.startswith("https://www.federalreserve.gov/monetarypolicy/").all()
     dev = s[(~s["cancelled"]) & (s["statement_date"] < "2021-01-01")]
     assert len(dev) == 47  # 48 scheduled 2015-2020 minus the cancelled 2020-03-18 slot
+
+
+def test_calendar_block_dates_val_set_e014():
+    """E014 (B11v): val statement days come from the validated date file; no dev or OOS date leaks in."""
+    from pathlib import Path
+
+    from fxresearch.fomc import calendar_block_dates
+    from fxresearch.splits import DEFAULT_PLAN
+
+    root = Path(__file__).resolve().parents[1]
+    cal = pd.read_csv(root / "data" / "calendars" / "fomc_dates.csv")
+    v = calendar_block_dates(cal, DEFAULT_PLAN, "val")
+    assert len(v["scheduled"]) == 20
+    assert v["cancelled"] == [] and v["unscheduled"] == []
+    assert min(v["scheduled"]) == date(2021, 1, 27) and max(v["scheduled"]) == date(2023, 6, 14)
+    assert all(date(2021, 1, 21) <= d <= date(2023, 6, 30) for d in v["scheduled"])
+    d = calendar_block_dates(cal, DEFAULT_PLAN, "dev")
+    assert len(d["scheduled"]) == 47 and d["cancelled"] == [date(2020, 3, 18)]
+    with pytest.raises(ValueError):
+        calendar_block_dates(cal, DEFAULT_PLAN, "oos")
