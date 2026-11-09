@@ -317,3 +317,13 @@ Why each run chose what it did, and any judgement calls.
   Cost check negative (SPEC 4 -2.108, x1.5 -2.374 per event). Not a LEAD; no notification. The descriptive gap-extension reading is
   post-hoc; not added to the backlog as a dev re-test.
 - **Next run:** pre-register B18 (next-session reversal after a large daily move, dev) as E021.
+
+### 2026-11-09 R039 (unattended)
+- **State:** last research-batch run 42556248995 (E020) recorded in R038; no run queued or in progress. Top (only) `ready` backlog
+  item is B18 (next-session reversal after a large daily move) -> protocol step 3. pytest passed (143) before any change.
+- **Choice:** B18 pre-registered as E021 with the backlog draft unchanged. Implementation choices fixed now, before data: quotes are
+  bar opens in [hh:mm, hh:mm+5) NY; previous/next trading date = adjacent dates in the dev trading-date set; Fridays stay in the
+  rolling |R| history but are not events; a large D whose next trading date is not D + 1 calendar day is excluded and counted;
+  exclusion order friday, next_not_adjacent, missing_entry, missing_exit, spread. Descriptive control = same trade on non-large,
+  non-Friday dates.
+- **Next run:** collect the research-batch outputs for E021 and apply `decide_b18`.
