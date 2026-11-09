@@ -74,3 +74,20 @@ def test_fomc_flag(tmp_path):
     assert ds == {date(2015, 1, 28)}
     df = flag_fomc(pd.DataFrame({"date": [date(2015, 1, 28), date(2015, 1, 29)]}), ds)
     assert list(df["fomc_day"]) == [True, False]
+
+
+def test_e025_val_restriction_feeds_b20_frame_with_val_dates_only():
+    """E025 (B20v): after restrict_to_block(val) the B20 frame contains only val trading dates, the first WINDOW valid val dates
+    are burn-in (no earlier-block history), and no bar at/after the cut-off is used."""
+    from fxresearch.splits import SplitPlan
+    from fxresearch.vol_state_fix import WINDOW, restrict_to_block
+    bars = synthetic_bars("2023-10-01", "2024-08-31")
+    plan = SplitPlan(date(2023, 12, 31), date(2024, 6, 30), embargo_days=0)
+    cut = pd.Timestamp("2024-07-01", tz="UTC")
+    vb = restrict_to_block(bars, plan, "val", before_utc=cut)
+    assert vb.index.max() < cut
+    rng, df = frame_from_bars(vb)
+    assert len(df) > WINDOW
+    assert min(df["date"]) > date(2023, 12, 31) and max(df["date"]) <= date(2024, 6, 30)
+    first_states = df["state"].iloc[:WINDOW].tolist()
+    assert "high" not in first_states and "normal" not in first_states

@@ -416,3 +416,12 @@ Why each run chose what it did, and any judgement calls.
 - **Cautions logged (no new numbers):** all-dates result also positive, normal-date control CI includes 0, so the conditioning is not
   shown to matter; 2018-2019 negative; E017 saw an unconditional related window on val.
 - **Next run:** pre-register B20v as E025 (val only) and queue it.
+
+### 2026-11-09 R048 (unattended)
+- **State:** last research-batch run 42617055931 (E024) completed and already recorded (a1522b7); no run queued or in progress ->
+  protocol step 3 (next experiment). pytest passed (173) before changes; local detached checkout reset to origin/main.
+- **Choice:** B20v is the only `ready` backlog item (fixed in E024's methodology before data). Pre-registered as E025: E024's rule and
+  definitions unchanged, val block only, handled exactly as E023 (bars >= 2023-07-01 UTC dropped first, val-only burn-in), 1 val trial.
+- **Prior stated before data:** low-to-moderate (sibling E022 failed val; E024 conditioning not shown to beat unconditional drift;
+  SE ~1.8 pips on val so WEAK is plausible even if the effect is real). Rule not loosened.
+- **Next run:** collect E025 outputs and apply `decide_b20` + lead cost gate.
