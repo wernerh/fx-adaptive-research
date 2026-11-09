@@ -11,6 +11,138 @@
   "variable_changed": "new mechanism (large prior-day move conditioning)",
   "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 10 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL -> val confirmation B18v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null
+  "status": "complete",
+  "results": {
+    "result": {
+      "n": 229,
+      "mean_pips": -2.55,
+      "median_pips": -0.5,
+      "sd_pips": 50.853,
+      "hit_rate": 0.4934,
+      "t_stat": -0.759,
+      "t_p_one_sided": 0.7756,
+      "mean_ci95_block_boot": [
+        -7.097,
+        4.167
+      ],
+      "decision": "NONE"
+    },
+    "counts": {
+      "trading_dates": 1562,
+      "valid_dates": 1547,
+      "burn_in": 60,
+      "large_dates": 299,
+      "events_tested": 229,
+      "no_prev": 1,
+      "missing_16_D": 7,
+      "missing_16_prev": 7,
+      "friday": 69,
+      "next_not_adjacent": 1,
+      "missing_entry": 0,
+      "missing_exit": 0,
+      "entry_skipped_spread": 0
+    },
+    "descriptive": {
+      "events_16_to_20_move_signed_reversal_already": {
+        "n": 229,
+        "mean_pips": 1.666,
+        "median_pips": 2.0,
+        "sd_pips": 13.693,
+        "hit_rate": 0.5895,
+        "t_stat": 1.841,
+        "t_p_one_sided": 0.0335,
+        "mean_ci95_block_boot": [
+          -0.88,
+          3.866
+        ]
+      },
+      "non_large_non_friday_dates_same_trade": {
+        "n": 953,
+        "mean_pips": -0.415,
+        "median_pips": -2.25,
+        "sd_pips": 47.295,
+        "hit_rate": 0.4827,
+        "t_stat": -0.271,
+        "t_p_one_sided": 0.6066,
+        "mean_ci95_block_boot": [
+          -3.308,
+          2.545
+        ]
+      },
+      "events_mean_abs_move_pips": 93.548,
+      "events_up_move_n": 117,
+      "events_up_move_mean_signed": 6.625,
+      "events_down_move_n": 112,
+      "events_down_move_mean_signed": -12.133,
+      "median_threshold_pips": 64.77,
+      "fomc_overlap": {
+        "n": 229,
+        "move_day_is_fomc": 17,
+        "exit_day_is_fomc": 7,
+        "share_either": 0.1048
+      }
+    },
+    "by_year": [
+      {
+        "year": 2015,
+        "n": 27,
+        "mean": -7.176,
+        "hit": 0.556
+      },
+      {
+        "year": 2016,
+        "n": 41,
+        "mean": -2.121,
+        "hit": 0.488
+      },
+      {
+        "year": 2017,
+        "n": 39,
+        "mean": -0.486,
+        "hit": 0.462
+      },
+      {
+        "year": 2018,
+        "n": 44,
+        "mean": 0.851,
+        "hit": 0.5
+      },
+      {
+        "year": 2019,
+        "n": 32,
+        "mean": 3.483,
+        "hit": 0.531
+      },
+      {
+        "year": 2020,
+        "n": 46,
+        "mean": -9.415,
+        "hit": 0.457
+      }
+    ],
+    "cost_check": {
+      "n": 229,
+      "mean_signed_mid_pips": -2.55,
+      "mean_net_bidask_pips": -2.841,
+      "mean_net_spec4_pips": -3.041,
+      "mean_net_costs_x1_5_pips": -3.287,
+      "median_spread_entry_pips": 0.3,
+      "median_spread_exit_pips": 0.3
+    },
+    "n_trials": 1,
+    "blocks": [
+      "dev"
+    ],
+    "window": 60,
+    "percentile": 80,
+    "first_date": "2015-01-02",
+    "last_date": "2020-12-31"
+  },
+  "decision": "NONE",
+  "lead": false,
+  "next_experiment": "none on B18 line (closed for this definition); backlog refill",
+  "run": {
+    "workflow_run_id": 42567407426,
+    "outputs_commit": "73ecba1"
+  }
 }

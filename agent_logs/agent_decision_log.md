@@ -327,3 +327,11 @@ Why each run chose what it did, and any judgement calls.
   exclusion order friday, next_not_adjacent, missing_entry, missing_exit, spread. Descriptive control = same trade on non-large,
   non-Friday dates.
 - **Next run:** collect the research-batch outputs for E021 and apply `decide_b18`.
+
+### 2026-11-09 R040 (unattended)
+- **State:** research-batch run 42567407426 (E021) finished successfully; outputs committed in 73ecba1 and not yet recorded -> protocol step 1 (collect).
+  pytest passed (154).
+- **Decision:** pre-registered `daily_reversal.decide_b18` rule applied exactly: mean -2.55 pips (not > 0), CI (-7.097, 4.167), t p 0.7756 -> **NONE**.
+  Cost check negative (SPEC 4 -3.041, x1.5 -3.287 per event). Not a LEAD; no notification. The up/down asymmetry is post-hoc
+  (dev downtrend) and is not added to the backlog as a dev re-test.
+- **Next run:** no `ready` backlog items -> refill (literature pass, verified links only).

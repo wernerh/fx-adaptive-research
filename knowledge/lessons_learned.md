@@ -153,3 +153,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Lesson:** a spot-FX weekend-overreaction result from a multi-currency study did not transfer to modern EUR/USD; with ~90 events per
   dev block, weekend-conditioned tests can only detect effects of ~10 pips. The extension reading is post-hoc and not evidence.
 - **Action:** B17 closed. Next ready item B18 (next-session reversal after a large daily move, dev).
+
+### 2026-11-09 R040: no next-session reversal after large daily moves in 2015-2020 EUR/USD (E021)
+- **Context:** E021 (B18) dev, fade non-Friday dates with |16:00 -> 16:00 NY move| > rolling p80 of 60 valid dates, 20:00 NY D -> 10:45 NY next trading date.
+- **Observation:** n 229, mean -2.55 pips, median -0.5, hit 0.493, CI (-7.097, 4.167), t p 0.776. Control (non-large dates) -0.415.
+  Up moves +6.625, down moves -12.133 signed (mirrors the dev downtrend; post-hoc). SPEC 4 net -3.041.
+- **Evidence label:** [EXP]
+- **Lesson:** the 1988-2003 currency-futures intraday reversal after large 1-day returns did not transfer to 2015-2020 EUR/USD spot.
+  Third consecutive multi-day / event-conditioned reversal or momentum idea (E019 TSMOM, E020 weekend gap, E021 large-day reversal)
+  to come back NONE; dev SEs of 2.5-5 pips per event mean only large daily-horizon effects are detectable on one pair.
+- **Action:** B18 closed. Backlog has no `ready` items -> next run refills.
