@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **233** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1). Val-only trials: **6** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1). Total registered trials: **239**. Update after every experiment. (R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **233** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1). Val-only trials: **6** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1). Total registered trials: **239**. Update after every experiment. (R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -284,3 +284,56 @@ Trial count so far on dev: **233** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - Practitioner "month-end hedge rebalancing" models (USD direction into the month-end London fix predicted by month-to-date US vs
   foreign equity performance) were found only in broker/news commentary, not in a verified academic source, and need equity index data
   not in the repo. Not added; would need a human-supplied equity series and a verified source.
+
+### B21: Post-08:30 NY release-window continuation, calendar-free (signal test, dev) · `ready` (added 2026-11-09 R050 refill)
+- **Mechanism [PUB]:** macro news reaches exchange rates partly through subsequent order flow: about two-thirds of the news effect on
+  DM/$ via order flow (Evans & Lyons 2008, JFE 88(1), 26-50) and "approximately one third of price-relevant information is incorporated
+  via the trading process" (Love & Payne 2008, JFQA 43(2), 467-488); both VERIFIED (abstract) in research/academic_studies.md R050.
+  Neither paper states a tradable post-release drift or its horizon (UNVERIFIED); the continuation hypothesis and every parameter below
+  are fixed here, not taken from the papers.
+- **Why calendar-free:** B12 (NFP) is blocked for lack of a sanctioned release-date source. Large moves in the 08:30-08:45 NY window
+  occur mostly on US release days, so the jump size itself selects the events; no calendar needed. Price data in repo only.
+- **Signal (fixed now):** J(D) = mid at 08:45 NY - mid at 08:30 NY on trading date D (quote = open of first bar in [T, T+5 min)), pips.
+  D is an event if |J(D)| is strictly above the 90th percentile of |J| over the previous 60 valid trading dates (rolling, past only; no
+  event until 60 exist). Dates with a missing 08:30 or 08:45 bar are invalid and counted.
+- **Trade:** position sign(J(D)) from 08:45 NY to 10:45 NY on D (exit before the London 4pm fix at 11:00 NY). Signed return =
+  sign(J) x (X - E) mid, pips. Missing exit excluded and counted; entry skipped (counted) if spread at 08:45 NY > 2.0 pips (SPEC 4).
+- **Test:** **dev only, 1 trial**; n ~ 0.10 x ~1,500 dates ~ 140-150 events after burn-in.
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 10 events, 2000 draws, seed 0) 95%
+  CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL earns B21v (val, same
+  rule, val-only burn-in as E023/E025).
+- **Descriptive (not in rule):** reversal reading (negative mean) logged as exploratory only; 08:45 -> 09:30 and 08:45 -> 12:00 NY
+  horizons; p80 and p95 thresholds; share of events on first-Friday-of-month dates (NFP proxy, computable from dates alone) and the
+  result on them; share on FOMC statement dates (data/calendars/fomc_dates.csv; none expected, statements at 14:00 NY); by year;
+  median spread at entry/exit; net at bid/ask, SPEC 4 and costs x1.5.
+- **Power note:** 2 h SD after a large release move ~20-25 pips -> SE ~1.8-2.1 pips; a mean of roughly 4 pips is needed to clear the
+  CI bar. A NONE does not rule out a small effect.
+- **Contamination note:** E006 tested the 08:35-09:30 NY window with E001 session predictors (not the 08:30 jump); E009 scanned
+  unconditional hour means. No return conditional on the 08:30-08:45 move has been computed on dev. Record in the methodology.
+- **Calendar label:** US 08:30 NY release window; the hold contains the 10:00 NY releases; exit before the London fix.
+- **Data:** price data in repo only.
+
+### B22: London-open intraday momentum into the pre-fix half hour (signal test, dev) · `ready` (added 2026-11-09 R050 refill)
+- **Mechanism [PUB]:** in RUB/USD (Moscow exchange) the first half-hour return predicts the last half-hour return, attributed to
+  liquidity providers' reluctance to hold positions overnight (Elaut, Frömmel & Lampaert 2018, JFM 37, 35-51); market intraday momentum in equities (Gao,
+  Han, Li & Zhou 2018, JFE) and in futures including currencies (Baltussen et al. 2021, JFE); all VERIFIED (abstract) in
+  research/academic_studies.md. EUR/USD has no exchange open/close; the London session is the analogue (the R000 entry flagged this as
+  a loose analogue). Parameters below fixed here.
+- **Signal (fixed now, London local time so DST mismatches do not shift it):** r1(D) = mid at 08:30 London - mid at 08:00 London on
+  trading date D (quote = open of first bar in [T, T+5 min)), pips. Every valid date is an event (no threshold); r1 = 0 -> no trade,
+  counted.
+- **Trade:** position sign(r1) from 15:25 London to 15:55 London on D (the last half hour before the 16:00 London fix, exiting before
+  the fix window). Signed return = sign(r1) x (X - E) mid, pips. Missing bars excluded and counted; entry skipped (counted) if spread
+  at 15:25 London > 2.0 pips.
+- **Test:** **dev only, 1 trial**; n ~ 1,500 dates.
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 20 events, 2000 draws, seed 0) 95%
+  CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL earns B22v (val).
+  The 1.0-pip bar is binding here (30-min SD ~6-8 pips -> SE ~0.2 pips): a statistically significant but sub-pip effect is WEAK at
+  best, by design (costs ~0.5 pip round trip).
+- **Descriptive (not in rule):** first-hour signal (08:00 -> 09:00 London) variant; predictive regression slope of last-half-hour
+  return on r1; |r1| terciles; month-end dates separately (E007/B8 month-end fix flows); by year; spreads; net at bid/ask, SPEC 4, x1.5.
+- **Contamination note:** E001 tested the sign of the whole London session return against 08:00-12:00 NY (NONE); E007 computed the
+  unconditional 15:00-16:00 London pre-fix return on dev (NONE). No 15:25-15:55 London return conditional on the first London
+  half-hour has been computed on dev. Record in the methodology.
+- **Calendar label:** London open -> pre-London-fix half hour; overlaps US 10:00 NY releases only when US/UK DST differ (state count).
+- **Data:** price data in repo only.

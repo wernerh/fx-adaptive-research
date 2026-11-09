@@ -432,3 +432,14 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** `decide_b20` applied exactly to the val outputs: mean +0.582 < 1.0, CI lower -1.992, t p 0.369 -> NONE. LEAD
   condition 2 fails (and cost gate fails at x1.5, -0.197); no notification. B20 line closed per the pre-registered "what follows".
 - **Next run:** no `ready` backlog item remains -> refill pass (protocol step 4).
+
+### 2026-11-09 R050 (unattended)
+- **State:** last research-batch run 42634668404 (E025) completed and already recorded (164ddd5); no run queued or in progress; no
+  `ready` backlog item (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). Local stale `main` reset to origin/main
+  (backup branch kept locally, nothing pushed from it).
+- **Choice:** two price-data-only items not yet covered by any experiment. B21 gives a calendar-free route to the release-reaction
+  question that B12 could not test (no sanctioned date source). B22 tests the intraday-momentum mechanism already in the literature file
+  (Elaut et al. 2018) with a London-session analogue, without the CME settlement time that blocked B13. Order: B21 first (stronger
+  mechanism evidence: two order-flow papers; B22 is a loose analogue, prior low after E001/E007 NONE).
+- **Sources opened this run:** Evans & Lyons (2008) and Love & Payne (2008) RePEc abstract pages; DOIs not shown there (UNVERIFIED).
+- **Next run:** pre-register B21 as E026 (dev only, 1 trial) and queue it.

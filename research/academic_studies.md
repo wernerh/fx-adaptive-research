@@ -181,6 +181,19 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Relevance:** **Low** for direction (the signal is about size, not sign) and it needs options data we do not hold. Logged only.
 - **Status:** VERIFIED (project page; paper not read)
 
+### Evans & Lyons (2008): How is macro news transmitted to exchange rates?
+- **Venue:** Journal of Financial Economics 88(1), 26-50. [RePEc record](https://econpapers.repec.org/RePEc:eee:jfinec:v:88:y:2008:i:1:p:26-50) (opened 2026-11-09 R050). NBER [w9433](https://www.nber.org/papers/w9433) (listed on the RePEc page, not opened). DOI not shown on the page opened: UNVERIFIED.
+- **Finding (abstract, opened 2026-11-09 R050):** "This paper shows that the arrival of macro news can account for more than 30% of daily price variance"; news affects prices directly and indirectly through order flow, and about two-thirds of the total news effect on DM/$ is transmitted via order flow (paraphrase of the abstract).
+- **Relevance:** **Medium.** Mechanism for B21: if part of the news effect arrives through order flow that is spread over time, a large move right after the 08:30 NY release window may continue. The paper does not state a tradable post-announcement drift; that is our hypothesis.
+- **Caveats:** abstract only; DM/$ interdealer data from the 1990s; horizon of the order-flow transmission not on the page opened (UNVERIFIED).
+- **Status:** VERIFIED (abstract)
+
+### Love & Payne (2008): Macroeconomic news, order flows, and exchange rates
+- **Venue:** Journal of Financial and Quantitative Analysis 43(2), 467-488. [RePEc record](https://econpapers.repec.org/RePEc:cup:jfinqa:v:43:y:2008:i:02:p:467-488_00) (opened 2026-11-09 R050); [Cambridge article link](https://www.cambridge.org/core/product/identifier/S0022109000003598/type/journal_article) (listed on the RePEc page, not opened).
+- **Finding (abstract, opened 2026-11-09 R050):** using transaction-level FX prices and trades around scheduled macro announcements, even public information is partly incorporated through order flow: "approximately one third of price-relevant information is incorporated via the trading process."
+- **Relevance:** **Medium.** Second mechanism source for B21 (post-release continuation). Currency pairs and the time scale of the order-flow effect not on the page opened (UNVERIFIED).
+- **Status:** VERIFIED (abstract)
+
 ## Open research questions raised by the literature
 
 | # | Question | Source of the idea | Experiment |
