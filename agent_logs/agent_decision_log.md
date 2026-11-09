@@ -361,3 +361,16 @@ Why each run chose what it did, and any judgement calls.
 - **Test note:** the random-walk check is a SIGNAL rate <= 0.10 over 40 seeds rather than "never SIGNAL" over 5 seeds (seed 0 gave a
   chance SIGNAL at alpha 0.05; 2/40 = 0.05 overall, as expected under the null).
 - **Next run:** collect the research-batch outputs for E022 and apply `decide_b19`.
+
+### 2026-11-09 R043 (unattended)
+- **State:** research-batch run 42585915012 (E022) finished successfully; outputs committed in 6b6aba6 and not yet recorded -> protocol
+  step 1 (collect). pytest passed (165).
+- **Decision:** pre-registered `vol_state_fix.decide_b19` applied exactly: mean +3.646 pips (> 1.0), CI (0.011, 7.751) lower > 0,
+  one-sided t p 0.0133 -> **SIGNAL on dev**. Cost check positive (SPEC 4 +3.139, x1.5 +2.886). Not a LEAD (no val confirmation yet);
+  no notification.
+- **Re-rank:** added B19v (val confirmation, identical rule, val only, 1 trial) and ranked it above B20. Reason: E022's methodology,
+  written before data, specified "SIGNAL -> queue val confirmation B19v"; a confirmation step on an open SIGNAL is higher value than a
+  new dev idea, and B20 does not depend on B19 (fixed in R041), so the order change does not alter B20's pre-registration.
+- **Cautions logged (no new numbers):** marginal CI; normal-date control also positive, so the conditioning is not shown to matter;
+  E017 already saw an unconditional related window on val.
+- **Next run:** pre-register B19v as E023 (val only) and queue it.

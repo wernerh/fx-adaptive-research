@@ -23,3 +23,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 
 ### 2026-11-08: ECB 14:15 CET fix (E010, dev)
 - WEAK. Pre-fix hour 13:15-14:15 Berlin: USD-up drift +0.76 pips (CI excludes 0, but hit rate 0.508); post-fix hour: nothing (+0.29). Sub-cost either way. See experiments/2026-11-08_E010_ecb_fix_reversal.
+
+### 2026-11-09 R043: pre-ECB-fix window 02:00-08:15 NY after high-range days (E022, dev) [EXP]
+- SIGNAL on dev (marginal): short EUR/USD 02:00 -> 08:15 NY on dates after a prior-date range > rolling p67, n 473, +3.646 pips,
+  CI (0.011, 7.751), t p 0.0133; normal-date control +1.731 (CI incl 0). Not confirmed; val confirmation B19v pending. See
+  experiments/2026-11-09_E022_vol_state_ecb_fix.

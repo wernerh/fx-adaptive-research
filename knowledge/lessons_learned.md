@@ -163,3 +163,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   Third consecutive multi-day / event-conditioned reversal or momentum idea (E019 TSMOM, E020 weekend gap, E021 large-day reversal)
   to come back NONE; dev SEs of 2.5-5 pips per event mean only large daily-horizon effects are detectable on one pair.
 - **Action:** B18 closed. Backlog has no `ready` items -> next run refills.
+
+### 2026-11-09 R043: pre-ECB-fix short on high-vol dates gives a marginal dev SIGNAL (E022)
+- **Context:** E022 (B19) dev, short EUR/USD 02:00 -> 08:15 NY on dates whose prior trading-date mid range > rolling p67 of 60 valid dates.
+- **Observation:** n 473, mean +3.646 pips, hit 0.535, CI (0.011, 7.751), t p 0.0133 -> SIGNAL. Control normal dates +1.731 (CI incl 0),
+  all dates +2.339 (CI excludes 0). 2015-2016 carry much of it; 2018 negative. SPEC 4 net +3.139, x1.5 +2.886.
+- **Evidence label:** [EXP]
+- **Lesson:** first dev SIGNAL after a long run of NONE/WEAK, but marginal (CI lower 0.011) after ~236 trials; the vol-state
+  conditioning is not shown to add to an unconditional European-morning USD-up drift. Treat as a hypothesis for val, not a finding.
+- **Action:** B19 done; B19v (val confirmation, rule unchanged) queued ahead of B20.
