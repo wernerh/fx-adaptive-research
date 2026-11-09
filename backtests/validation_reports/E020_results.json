@@ -1,0 +1,143 @@
+{
+  "result": {
+    "n": 90,
+    "mean_pips": -1.574,
+    "median_pips": -7.425,
+    "sd_pips": 46.074,
+    "hit_rate": 0.3778,
+    "t_stat": -0.324,
+    "t_p_one_sided": 0.6267,
+    "mean_ci95_block_boot": [
+      -12.699,
+      7.03
+    ],
+    "decision": "NONE"
+  },
+  "counts": {
+    "candidate_weekends": 313,
+    "valid_weekends": 308,
+    "burn_in": 26,
+    "events": 91,
+    "events_entry_skipped_spread": 1,
+    "events_tested": 90,
+    "missing_F": 3,
+    "missing_M": 1,
+    "missing_X": 1
+  },
+  "descriptive": {
+    "all_weekends_after_burn_in": {
+      "n": 282,
+      "mean_pips": -0.396,
+      "median_pips": -2.675,
+      "sd_pips": 43.382,
+      "hit_rate": 0.461,
+      "t_stat": -0.153,
+      "t_p_one_sided": 0.5608,
+      "mean_ci95_block_boot": [
+        -5.685,
+        5.002
+      ]
+    },
+    "events_exit_tue_16ny": {
+      "n": 88,
+      "mean_pips": -12.743,
+      "median_pips": -18.775,
+      "sd_pips": 63.068,
+      "hit_rate": 0.4205,
+      "t_stat": -1.895,
+      "t_p_one_sided": 0.9693,
+      "mean_ci95_block_boot": [
+        -24.634,
+        1.816
+      ]
+    },
+    "events_exit_fri_16ny": {
+      "n": 89,
+      "mean_pips": -7.824,
+      "median_pips": -7.05,
+      "sd_pips": 137.296,
+      "hit_rate": 0.4831,
+      "t_stat": -0.538,
+      "t_p_one_sided": 0.7039,
+      "mean_ci95_block_boot": [
+        -30.792,
+        17.066
+      ]
+    },
+    "events_sun17_to_20_reversal_already": {
+      "n": 89,
+      "mean_pips": -6.41,
+      "median_pips": -7.35,
+      "sd_pips": 16.507,
+      "hit_rate": 0.2921,
+      "t_stat": -3.663,
+      "t_p_one_sided": 0.9998,
+      "mean_ci95_block_boot": [
+        -9.077,
+        -3.351
+      ]
+    },
+    "events_mean_abs_gap_pips": 22.889,
+    "events_up_gap_n": 47,
+    "events_up_gap_mean_signed": 3.159,
+    "events_down_gap_n": 43,
+    "events_down_gap_mean_signed": -6.748,
+    "median_threshold_pips": 10.637
+  },
+  "by_year": [
+    {
+      "year": 2015,
+      "n": 6,
+      "mean": 6.75,
+      "hit": 0.5
+    },
+    {
+      "year": 2016,
+      "n": 16,
+      "mean": 9.6,
+      "hit": 0.5
+    },
+    {
+      "year": 2017,
+      "n": 18,
+      "mean": -6.022,
+      "hit": 0.333
+    },
+    {
+      "year": 2018,
+      "n": 15,
+      "mean": -3.91,
+      "hit": 0.333
+    },
+    {
+      "year": 2019,
+      "n": 17,
+      "mean": -3.138,
+      "hit": 0.294
+    },
+    {
+      "year": 2020,
+      "n": 18,
+      "mean": -6.411,
+      "hit": 0.389
+    }
+  ],
+  "cost_check": {
+    "n": 90,
+    "mean_signed_mid_pips": -1.574,
+    "mean_net_bidask_pips": -1.908,
+    "mean_net_spec4_pips": -2.108,
+    "mean_net_costs_x1_5_pips": -2.374,
+    "median_spread_F_pips": 0.3,
+    "median_spread_M_pips": 0.3,
+    "median_spread_X_pips": 0.2
+  },
+  "n_trials": 1,
+  "blocks": [
+    "dev"
+  ],
+  "window": 26,
+  "percentile": 67,
+  "first_monday": "2015-01-05",
+  "last_monday": "2020-12-28"
+}
