@@ -190,3 +190,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Lesson:** second dev SIGNAL from the same vol-state condition (after E022, which failed val in E023). Clearer than E022, but the
   conditioning is again not shown to add to an unconditional drift, and two of six years are negative. Val decides.
 - **Action:** B20 done; B20v (val confirmation, rule unchanged) added as the top `ready` item.
+
+### 2026-11-09 R049: the post-London-fix dev SIGNAL does not confirm on val either (E025)
+- **Context:** E025 (B20v), val confirmation of E024 with the rule unchanged and a val-only burn-in.
+- **Observation:** n 204, mean +0.582 pips, median 0.575, hit 0.510, CI (-1.992, 3.14), t p 0.369 -> NONE. Normal val dates -0.053,
+  all val dates +0.172, excl FOMC -0.298. x1.5 net -0.197.
+- **Evidence label:** [EXP]
+- **Lesson:** both vol-state-conditioned fix-window dev SIGNALs (E022, E024) failed val. With ~238 trials, dev SIGNALs whose own
+  normal-date control is not clearly weaker should be expected to fail val; the prior-day range condition has shown no incremental value.
+- **Action:** B20 line closed (E024 + E025 in rejected_hypotheses.md). Backlog has no `ready` item -> refill next.

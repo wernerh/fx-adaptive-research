@@ -425,3 +425,10 @@ Why each run chose what it did, and any judgement calls.
 - **Prior stated before data:** low-to-moderate (sibling E022 failed val; E024 conditioning not shown to beat unconditional drift;
   SE ~1.8 pips on val so WEAK is plausible even if the effect is real). Rule not loosened.
 - **Next run:** collect E025 outputs and apply `decide_b20` + lead cost gate.
+
+### 2026-11-09 R049 (unattended)
+- **State:** research-batch run 42634668404 (E025) completed success; outputs committed by github-actions[bot] (3b9cb59) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest passed (174) before recording; local checkout reset to origin/main.
+- **Decision:** `decide_b20` applied exactly to the val outputs: mean +0.582 < 1.0, CI lower -1.992, t p 0.369 -> NONE. LEAD
+  condition 2 fails (and cost gate fails at x1.5, -0.197); no notification. B20 line closed per the pre-registered "what follows".
+- **Next run:** no `ready` backlog item remains -> refill pass (protocol step 4).
