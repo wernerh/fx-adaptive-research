@@ -301,3 +301,11 @@ Why each run chose what it did, and any judgement calls.
   rolling past-only percentile threshold. Ranked B17 above B18: spot-FX source with a reported out-of-sample result vs 1988-2003 futures.
   0 trials used (dev 229, total 233).
 - **Next run:** pre-register B17 as E020.
+
+### 2026-11-09 R037 (unattended)
+- **State:** last research-batch run 42540081769 (E019) recorded in R035; no run queued or in progress. Top `ready` backlog item is
+  B17 (weekend-gap reversal) -> protocol step 3. pytest passed (133) before any change.
+- **Choice:** B17 ranked above B18 in R036 (spot-FX source with a reported out-of-sample result). Pre-registered as E020 with the
+  backlog draft unchanged; implementation choices fixed now, before data: weekends indexed by calendar Monday, numpy linear
+  percentile, spread-skipped events kept in the |G| history, missing-bar exclusion order F, M, X.
+- **Next run:** collect the research-batch outputs for E020 and apply `decide_b17`.

@@ -147,7 +147,7 @@ Trial count so far on dev: **229** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Calendar label:** multi-day trend; not a time-of-day effect.
 - **Data:** price data in repo only.
 
-### B17: Weekend-gap reversal (signal test, dev) · `ready` (added 2026-11-09 R036 refill)
+### B17: Weekend-gap reversal (signal test, dev) → E020 · `running` (2026-11-09 R037: pre-registered as E020, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-09 R036 refill)
 - **Mechanism [PUB]:** in spot FX (8 major, 9 emerging currencies), "after a large price difference between Friday close and subsequent
   Monday open, most markets are likely to reverse" over horizons in the following week, read as weekend overreaction; the abstract reports
   the reversal strategy survives costs and interest rates out of sample (Dao, McGroarty & Urquhart 2016, JMFM 37-38, 158-167,

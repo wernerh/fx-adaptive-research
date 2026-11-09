@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E020",
+  "date": "2026-11-09",
+  "instrument": "EURUSD",
+  "hypothesis": "-sign(weekend gap Fri 16:00 NY -> Sun 20:00 NY) x mid return Sun 20:00 NY -> Mon 16:00 NY > 1 pip on weekends with |gap| > p67 of previous 26 valid weekends (B17)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new mechanism (weekend-gap conditioning)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 4 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL -> val confirmation B17v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false
+}
