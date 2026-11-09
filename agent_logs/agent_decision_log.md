@@ -472,3 +472,17 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** `decide_b22` applied exactly to the dev outputs: mean -0.008 (not > 0), CI lower -0.553, t p 0.511 -> NONE. LEAD
   condition 1 fails (costs negative too); no notification. B22 line closed per the pre-registered "what follows".
 - **Next run:** no `ready` backlog item -> refill (literature pass, verified links only).
+
+### 2026-11-09 R055 (unattended)
+- **State:** last research-batch run 42683469479 (E027) completed and already recorded (R054, cae557d); no run queued or in progress;
+  no `ready` backlog item (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). pytest passed (192). Local stale `main`
+  reset to origin/main.
+- **Choice:** following lesson R052 (prefer sources that state a tradable horizon in spot FX), added two items from Caporale & Plastun
+  (2019, Brunel WP 19-09), which states EURUSD overreaction-day entry/exit hours. B23 (same-day continuation, dev) uses only
+  information known at entry, unlike the paper's full-day trigger. B24 (next-morning fade) is val only because E021's dev descriptive
+  already covered the 16:00 -> 20:00 NY reversal window. Order: B23 then B24.
+- **Not added:** pre-ECB drift (Quantpedia blog; equities, not FX, needs an ECB date calendar); Wiśniewska 2014 (no horizon or
+  numbers); Rif & Utz 2021 (stocks, 1-minute).
+- **Sources opened this run:** Brunel WP 19-09 PDF (partial verbatim), CEEOL record, RePEc QREF record, Quantpedia post. Data-clock
+  time zone of the paper UNVERIFIED; NY mapping is our assumption, fixed before any data.
+- **Next run:** pre-register B23 as E028 (dev only, 1 trial) and queue it.

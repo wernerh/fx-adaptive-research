@@ -194,6 +194,23 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Relevance:** **Medium.** Second mechanism source for B21 (post-release continuation). Currency pairs and the time scale of the order-flow effect not on the page opened (UNVERIFIED).
 - **Status:** VERIFIED (abstract)
 
+### Caporale & Plastun (2019 working paper): Price overreactions in the Forex and trading strategies
+- **Venue:** Brunel University London, Economics and Finance Working Paper No. 19-09, March 2019 (not a journal version; none mentioned). [PDF](https://www.brunel.ac.uk/economics-finance-and-accounting/research/pdf/1909-Mar-GMC-Overreactions-and-trading-strategies.pdf) (opened 2026-11-09 R055, first ~40k characters read verbatim). DOI: none shown.
+- **Finding (opened 2026-11-09 R055):** EURUSD, USDJPY, USDCAD, AUDUSD, EURJPY, daily and hourly MetaQuotes data 2008-2018. Overreaction days defined by a "dynamic trigger": daily open-to-close return beyond the average plus k = 2 standard deviations of daily returns over a period n (n not stated; formulas garbled in the text). Abstract: "prices tend to change in the direction of the overreaction during the overreaction day, but move in the opposite direction on the following day." EURUSD tables: overreaction becomes identifiable at 19:00 (positive days) / 17:00 (negative days) data-clock time; next-day contrarian move from the start of the day to the "start of European session" (09:00 / 08:00 data-clock). Strategy 1 (follow the overreaction from the identification hour to day end), EURUSD: positive 67 trades, 70% hit, t 5.87; negative 79 trades, 86% hit, t 8.98. Strategy 2 (fade next day to European session start): positive t 2.45, negative t 1.23 (failed). No transaction costs.
+- **Relevance:** **Medium.** States a tradable horizon in spot FX (lesson R052). Basis for B23 (intraday continuation on overreaction days) and B24 (next-morning fade, val only).
+- **Caveats:** working paper, no costs; time zone of the data clock not stated (UNVERIFIED; MetaQuotes servers commonly run GMT+2/+3 with the day rolling at 17:00 NY, so 19:00 data-clock is about 12:00 NY: our assumption, UNVERIFIED); whether the trigger is observable in real time at the identification hour is not discussed (the full-day open-to-close return is not known at 19:00); 2008-2018 overlaps our dev block.
+- **Status:** VERIFIED (working paper text, partial)
+
+### Wiśniewska (2014): EURUSD intraday price reversal
+- **Venue:** Folia Oeconomica Stetinensia 14(2), 152-162. [CEEOL record](https://ceeol.com/search/article-detail?id=525800) (opened 2026-11-09 R055). DOI not shown.
+- **Finding (abstract):** "The study reveals that the mean reversion is present in the intraday EURUSD" (1-minute data; ADF rejects a unit root in deviations from a moving mean). No numbers, horizon or sample period on the page.
+- **Relevance:** **Low.** Too vague to pre-register a test from; not used.
+- **Status:** VERIFIED (abstract)
+
+### Not used this pass (opened 2026-11-09 R055)
+- Quantpedia blog, "Uncovering the Pre-ECB Drift and Its Trading Strategy Applications" (22 Apr 2025, [link](https://quantpedia.com/uncovering-the-pre-ecb-drift-and-its-trading-strategy-applications/)): European equity indices drift up the day before ECB press conferences; equities, not FX; in-house, not peer reviewed; no underlying paper linked. A EUR/USD analogue would be loose and needs an ECB meeting-date calendar: not added.
+- Rif & Utz (2021), QREF 81, 123-133, DOI 10.1016/j.qref.2021.05.004 ([RePEc](https://econpapers.repec.org/RePEc:eee:quaeco:v:81:y:2021:i:c:p:123-133)): one-minute reversals in Nasdaq-100 stocks; not FX, horizon below our bar granularity: not added.
+
 ## Open research questions raised by the literature
 
 | # | Question | Source of the idea | Experiment |

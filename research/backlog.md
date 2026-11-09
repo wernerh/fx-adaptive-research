@@ -337,3 +337,51 @@ Trial count so far on dev: **235** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   half-hour has been computed on dev. Record in the methodology.
 - **Calendar label:** London open -> pre-London-fix half hour; overlaps US 10:00 NY releases only when US/UK DST differ (state count).
 - **Data:** price data in repo only.
+
+### B23: Intraday continuation on overreaction days (signal test, dev) · `ready` (added 2026-11-09 R055 refill)
+- **Mechanism [PUB]:** Caporale & Plastun (2019, Brunel WP 19-09; entry in research/academic_studies.md, opened R055): on EURUSD
+  overreaction days (open-to-close move beyond mean + 2 SD), "prices tend to change in the direction of the overreaction during the
+  overreaction day"; their Strategy 1 follows the move from the identification hour (19:00 / 17:00 data clock) to day end, no costs.
+  The paper's trigger uses the full-day return, not known in real time; the version below uses only information available at entry.
+  Data-clock to NY mapping (19:00 data clock ~ 12:00 NY) is our assumption (UNVERIFIED). Parameters fixed here.
+- **Signal (fixed now):** trading date D starts 17:00 NY (SPEC 2). r(D) = mid at 12:00 NY on D - mid at 17:00 NY at the start of D
+  (quote = open of first bar in [T, T+5 min)), pips. Over the previous 60 valid trading dates (rolling, past only; no event until 60
+  exist) compute mean m and SD s of r. D is an event if r(D) > m + 2s (positive) or r(D) < m - 2s (negative).
+- **Trade:** position sign(r(D) - m) from 12:00 NY to 16:30 NY on D (exit before the 17:00 roll spread widening). Signed return =
+  sign x (X - E) mid, pips. Missing bars excluded and counted; entry skipped (counted) if spread at 12:00 NY > 2.0 pips (SPEC 4).
+- **Test:** **dev only, 1 trial**; n ~ 0.03-0.05 x ~1,500 dates ~ 45-75 events (a 2-SD tail; fat tails may give more).
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 5 events, 2000 draws, seed 0) 95%
+  CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL earns B23v (val, same
+  rule, val-only burn-in as E023/E025).
+- **Descriptive (not in rule):** positive vs negative events separately (paper reports both); k = 1.5 and k = 2.5; reversal reading
+  logged as exploratory only; share of events on FOMC statement dates and first-Friday dates; by year; spreads; net at bid/ask, SPEC 4,
+  costs x1.5.
+- **Power note:** 4.5 h SD on large-move days ~20-25 pips -> SE ~3 pips at n ~60; a mean of roughly 6 pips is needed to clear the CI
+  bar. A NONE does not rule out a small effect.
+- **Contamination note:** E024/E025 computed long 11:05 -> 16:00 NY on high prior-date-range dates (unsigned by the day's own move);
+  E021 conditioned on the full 16:00 -> 16:00 move with a next-day hold. No 12:00 -> 16:30 NY return signed by the same-day
+  17:00 -> 12:00 move has been computed on dev. Record in the methodology.
+- **Calendar label:** post-London-fix afternoon (hold starts after the 11:00 NY fix; contains 14:00 NY FOMC statements on those dates).
+- **Data:** price data in repo only.
+
+### B24: Next-morning fade after an overreaction day (signal test, val only) · `ready` (added 2026-11-09 R055 refill)
+- **Mechanism [PUB]:** Caporale & Plastun (2019, as B23): after an overreaction day EURUSD "move[s] in the opposite direction on the
+  following day", from the start of the day to the start of the European session (09:00 / 08:00 data clock, ~ 02:00 / 01:00 NY under our
+  UNVERIFIED mapping); their Strategy 2 passed for positive days (t 2.45) and failed for negative days (t 1.23), no costs.
+- **Why val only:** E021 (dev) logged the 16:00 -> 20:00 NY move after large 16:00 -> 16:00 days as descriptive (+1.666 pips reversal,
+  p 0.034). That overlaps this hold (17:00 -> 20:00 NY), so dev is contaminated; the only clean test is val. Rejected relative: E021
+  (20:00 NY -> 10:45 NY next date fade, dev NONE).
+- **Signal (fixed now):** R(D) = mid at 16:55 NY on trading date D - mid at 17:00 NY at the start of D (open-to-close of the trading
+  date, as the paper's open-to-close return), pips. Mean m and SD s of R over the previous 60 valid val trading dates (val-only burn-in,
+  as E023/E025). D is an event if R(D) > m + 2s or R(D) < m - 2s. D on a Friday excluded and counted (weekend gap belongs to B17).
+- **Trade:** position -sign(R(D) - m) from 17:05 NY (start of D+1, after the roll) to 02:00 NY on D+1 (before the Frankfurt/London
+  open). Signed return = -sign x (X - E) mid, pips. Entry skipped (counted) if spread at 17:05 NY > 2.0 pips; missing bars excluded and
+  counted. Report the median entry spread (roll hour spreads are wide).
+- **Test:** **val only, 1 trial**; val 2021-01-21 to 2023-06-30 ~ 620 dates minus 60 burn-in -> n ~ 15-35 events. Low power, stated up front.
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 5 events, 2000 draws, seed 0) 95%
+  CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. A val-only SIGNAL cannot meet the
+  LEAD definition (no clean dev pass): it is logged, and any further test (OOS) needs a human decision (AUTONOMOUS_PROTOCOL).
+- **Descriptive (not in rule):** positive vs negative days separately; exit 03:00 NY; by year; spreads; net at bid/ask, SPEC 4, x1.5.
+- **Calendar label:** Asian session after a large NY day; contains the Tokyo fix (19:55 NY / 20:55 NY by DST).
+- **Data:** price data in repo only.
+- **Order:** B23 first (clean dev test, paper's stronger result); B24 second.
