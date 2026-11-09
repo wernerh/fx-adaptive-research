@@ -465,3 +465,10 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** pre-register B22 as E027 (dev only, 1 trial) with every parameter and the decision rule exactly as drafted in the backlog
   (R050), including the block-20 bootstrap; no change after seeing any data (no conditional 15:25-15:55 London return computed on dev).
 - **Next run:** collect the E027 batch outputs and apply `decide_b22`; SIGNAL -> B22v (val), else backlog refill.
+
+### 2026-11-09 R054 (unattended)
+- **State:** research-batch run 42683469479 (E027) completed success; outputs committed by github-actions[bot] (405319c) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest passed (192) before recording; local checkout reset to origin/main.
+- **Decision:** `decide_b22` applied exactly to the dev outputs: mean -0.008 (not > 0), CI lower -0.553, t p 0.511 -> NONE. LEAD
+  condition 1 fails (costs negative too); no notification. B22 line closed per the pre-registered "what follows".
+- **Next run:** no `ready` backlog item -> refill (literature pass, verified links only).

@@ -11,9 +11,251 @@
   "variable_changed": "conditioning the 15:25-15:55 London return on the first London half hour (relatives E001 London session sign, E007 unconditional pre-fix hour)",
   "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 20 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL -> val confirmation B22v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
+  "status": "complete",
+  "results": {
+    "result": {
+      "n": 1551,
+      "mean_pips": -0.008,
+      "median_pips": -0.05,
+      "sd_pips": 11.553,
+      "hit_rate": 0.4984,
+      "t_stat": -0.029,
+      "t_p_one_sided": 0.5114,
+      "mean_ci95_block_boot": [
+        -0.553,
+        0.455
+      ],
+      "decision": "NONE"
+    },
+    "counts": {
+      "trading_dates": 1562,
+      "valid_dates": 1556,
+      "invalid_missing_signal_quote": 6,
+      "zero_signal": 4,
+      "missing_entry": 0,
+      "missing_exit": 0,
+      "entry_skipped_spread": 1,
+      "events_tested": 1551,
+      "dst_mismatch_dates_tested": 105
+    },
+    "descriptive": {
+      "reversal_reading_note": "a negative mean is logged as exploratory only (not a trial)",
+      "first_hour_signal_0800_0900": {
+        "n": 1548,
+        "mean_pips": -0.07,
+        "median_pips": -0.25,
+        "sd_pips": 11.556,
+        "hit_rate": 0.4884,
+        "t_stat": -0.239,
+        "t_p_one_sided": 0.5946,
+        "mean_ci95_block_boot": [
+          -0.587,
+          0.459
+        ]
+      },
+      "slope_last_half_on_r1": {
+        "n": 1551,
+        "slope": 0.016,
+        "t_stat": 0.674,
+        "p_two_sided": 0.5001
+      },
+      "abs_r1_tercile_low": {
+        "n": 517,
+        "mean_pips": 0.062,
+        "median_pips": 0.25,
+        "sd_pips": 10.571,
+        "hit_rate": 0.5126,
+        "t_stat": 0.134,
+        "t_p_one_sided": 0.4467,
+        "mean_ci95_block_boot": [
+          -0.725,
+          0.969
+        ]
+      },
+      "abs_r1_tercile_mid": {
+        "n": 518,
+        "mean_pips": -0.257,
+        "median_pips": -0.475,
+        "sd_pips": 11.152,
+        "hit_rate": 0.4768,
+        "t_stat": -0.524,
+        "t_p_one_sided": 0.6999,
+        "mean_ci95_block_boot": [
+          -1.653,
+          0.618
+        ]
+      },
+      "abs_r1_tercile_high": {
+        "n": 516,
+        "mean_pips": 0.17,
+        "median_pips": 0.15,
+        "sd_pips": 12.838,
+        "hit_rate": 0.5058,
+        "t_stat": 0.301,
+        "t_p_one_sided": 0.3817,
+        "mean_ci95_block_boot": [
+          -0.869,
+          0.986
+        ]
+      },
+      "month_end": {
+        "n": 72,
+        "mean_pips": -1.79,
+        "median_pips": -2.325,
+        "sd_pips": 12.401,
+        "hit_rate": 0.3889,
+        "t_stat": -1.224,
+        "t_p_one_sided": 0.8876,
+        "mean_ci95_block_boot": [
+          -3.854,
+          0.482
+        ]
+      },
+      "non_month_end": {
+        "n": 1479,
+        "mean_pips": 0.078,
+        "median_pips": 0.05,
+        "sd_pips": 11.508,
+        "hit_rate": 0.5037,
+        "t_stat": 0.262,
+        "t_p_one_sided": 0.3968,
+        "mean_ci95_block_boot": [
+          -0.437,
+          0.558
+        ]
+      },
+      "dst_mismatch": {
+        "n": 105,
+        "mean_pips": -0.32,
+        "median_pips": -0.5,
+        "sd_pips": 12.448,
+        "hit_rate": 0.4571,
+        "t_stat": -0.263,
+        "t_p_one_sided": 0.6035,
+        "mean_ci95_block_boot": [
+          -1.739,
+          0.749
+        ]
+      },
+      "share_long": 0.518,
+      "mean_abs_r1_pips": 9.043,
+      "unconditional_last_half_mean_pips": -0.567
+    },
+    "by_year": [
+      {
+        "year": 2015,
+        "n": 259,
+        "mean": -0.052,
+        "hit": 0.471
+      },
+      {
+        "year": 2016,
+        "n": 259,
+        "mean": -0.569,
+        "hit": 0.459
+      },
+      {
+        "year": 2017,
+        "n": 258,
+        "mean": -0.089,
+        "hit": 0.519
+      },
+      {
+        "year": 2018,
+        "n": 259,
+        "mean": -0.428,
+        "hit": 0.502
+      },
+      {
+        "year": 2019,
+        "n": 258,
+        "mean": 1.025,
+        "hit": 0.574
+      },
+      {
+        "year": 2020,
+        "n": 258,
+        "mean": 0.066,
+        "hit": 0.465
+      }
+    ],
+    "by_weekday": [
+      {
+        "weekday": "Friday",
+        "n": 310,
+        "mean": 1.071,
+        "hit": 0.506
+      },
+      {
+        "weekday": "Monday",
+        "n": 310,
+        "mean": -0.391,
+        "hit": 0.516
+      },
+      {
+        "weekday": "Thursday",
+        "n": 312,
+        "mean": -0.679,
+        "hit": 0.503
+      },
+      {
+        "weekday": "Tuesday",
+        "n": 309,
+        "mean": -0.458,
+        "hit": 0.472
+      },
+      {
+        "weekday": "Wednesday",
+        "n": 310,
+        "mean": 0.417,
+        "hit": 0.494
+      }
+    ],
+    "cost_check": {
+      "n": 1551,
+      "mean_signed_mid_pips": -0.008,
+      "mean_net_bidask_pips": -0.26,
+      "mean_net_spec4_pips": -0.46,
+      "mean_net_costs_x1_5_pips": -0.685,
+      "median_spread_entry_pips": 0.2,
+      "median_spread_exit_pips": 0.2
+    },
+    "n_trials": 1,
+    "blocks": [
+      "dev"
+    ],
+    "boot_block": 20,
+    "signal_hm_london": [
+      [
+        8,
+        0
+      ],
+      [
+        8,
+        30
+      ]
+    ],
+    "alt_signal_end_hm": [
+      9,
+      0
+    ],
+    "entry_hm_london": [
+      15,
+      25
+    ],
+    "exit_hm_london": [
+      15,
+      55
+    ],
+    "first_date": "2015-01-02",
+    "last_date": "2020-12-31"
+  },
+  "decision": "NONE",
   "lead": false,
-  "next_experiment": "collect research-batch outputs and apply decide_b22"
+  "next_experiment": "none (B22 line closed); backlog refill next",
+  "run": {
+    "workflow_run_id": 42683469479,
+    "outputs_commit": "405319c",
+    "recorded_in": "R054"
+  }
 }

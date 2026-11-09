@@ -41,3 +41,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 ### 2026-11-09 R049: val confirmation of the post-London-fix window after high-range days (E025, val) [EXP]
 - NONE on val: n 204, +0.582 pips, CI (-1.992, 3.14), t p 0.369; normal val dates -0.053. Supersedes the R047 entry above as the
   current reading: E024's dev SIGNAL is not confirmed and the line is closed. See experiments/2026-11-09_E025_vol_state_london_fix_val.
+
+### 2026-11-09 R054: London-open intraday momentum into the pre-fix half hour (E027, dev) [EXP]
+- NONE on dev: following the sign of the first London half hour (08:00 -> 08:30) from 15:25 to 15:55 London averaged -0.008 pips
+  (n 1551, CI -0.553 to 0.455, t p 0.511). The first London half hour does not predict the pre-fix half hour. See
+  experiments/2026-11-09_E027_london_momentum.

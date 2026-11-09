@@ -209,3 +209,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   the first 15 minutes of the 08:30 NY window on 2015-2020 EUR/USD. Papers that describe a mechanism without a stated horizon have
   produced NONE repeatedly; prefer items whose source states a tradable horizon.
 - **Action:** B21 closed (rejected_hypotheses.md). B22 is the next `ready` item.
+
+### 2026-11-09 R054: no London-open intraday momentum into the pre-fix half hour (E027)
+- **Context:** E027 (B22), loose EUR/USD analogue of exchange-session intraday momentum (Elaut et al. 2018, RUB/USD), dev only.
+- **Observation:** n 1551, mean -0.008 pips, CI (-0.553, 0.455), t p 0.511 -> NONE; slope of last half hour on r1 insignificant;
+  first-hour variant and |r1| terciles (descriptive) not positive. SPEC 4 net -0.46.
+- **Evidence label:** [EXP]
+- **Lesson:** exchange open/close mechanisms (overnight inventory aversion) do not transfer to 24-hour EUR/USD via a London-session
+  proxy. With n ~1,500 the CI is tight (+/-0.5 pip), so this is a clean null, not a power problem. Prefer hypotheses whose mechanism
+  exists in the spot FX market itself.
+- **Action:** B22 closed (rejected_hypotheses.md). No `ready` item -> refill next.
