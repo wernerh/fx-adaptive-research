@@ -1,0 +1,17 @@
+{
+  "experiment_id": "E019",
+  "date": "2026-11-09",
+  "instrument": "EURUSD",
+  "hypothesis": "Daily sign(mid16 NY D - mid16 NY D-252 trading dates) x mid return 16:00 NY D -> 16:00 NY D+1 > 1 pip (12-month time-series momentum, B16)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new mechanism (multi-day time-series momentum)",
+  "decision_rule": "SIGNAL if mean daily signed > 1.0 pip AND block-bootstrap (block 20 days, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL -> val confirmation B16v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "next_experiment": "collect E019 results from research-batch",
+  "lead": false
+}

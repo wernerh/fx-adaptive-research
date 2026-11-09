@@ -268,3 +268,14 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** pre-registered B1 rule applied exactly: mean -0.128 (not > 0), CI (-0.989, 0.714), binomial p 0.280 -> **NONE**.
   Cost check negative (SPEC 4 -0.628, x1.5 -0.879). Not a LEAD; no notification. Control-level reversal noted as descriptive only.
 - **Next run:** B16 (12-month TSMOM, daily hold, dev) is the top `ready` item.
+
+### 2026-11-09 R034 (unattended)
+- **State:** last research-batch run 42530297453 (E018) already recorded (R033); no run queued or in progress -> protocol step 3.
+  pytest passed (124) before any change.
+- **Pick:** B16 (12-month time-series momentum, daily 16:00 NY hold, dev, 1 trial) is the top `ready` item; B6/B12/B13 blocked,
+  B7/B8 parked.
+- **Fixed before data (beyond the backlog draft, all mechanical):** trading-date list = unique `sessions.trading_date` of dev bars;
+  16:00 NY quote = open of first bar in [16:00, 16:05) NY; s = 0 days kept as flat (signed 0); exclusion order missing_now ->
+  missing_past -> missing_next, last date no_next; round trips = runs of the same non-zero signal on consecutive dates, costs charged
+  per round trip. Bars outside dev are dropped before computing, so lookback and hold never leave dev. Decision rule unchanged.
+- **Next run:** collect E019 results from the research-batch run.
