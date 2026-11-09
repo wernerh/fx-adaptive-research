@@ -349,3 +349,15 @@ Why each run chose what it did, and any judgement calls.
   needs equity data). Fix-pattern line has been weak across E007/E010/E011/E017, so prior expectation is low; a NONE closes the
   vol-state reading of this line.
 - **Next run:** pre-register B19 as E022.
+
+### 2026-11-09 R042 (unattended)
+- **State:** last research-batch run 42567407426 (E021) recorded in R040; no run queued or in progress (latest 5 runs all completed
+  success). Top `ready` backlog item is B19 (pre-ECB-fix short on high-vol dates) -> protocol step 3. pytest passed (154) before any
+  change.
+- **Choice:** B19 pre-registered as E022 with the backlog draft unchanged. Implementation choices fixed now, before data: range =
+  full trading-date mid high-low from 1-minute bars; coverage >= 90% of 1,440 bars, invalid dates left out of the rolling history;
+  P = adjacent date in the dev trading-date set; exclusion order missing_entry, missing_exit, spread; exit fixed at 08:15 NY (not
+  shifted in DST-mismatch weeks). Descriptive control = same short on normal (non-high-vol) dates after burn-in.
+- **Test note:** the random-walk check is a SIGNAL rate <= 0.10 over 40 seeds rather than "never SIGNAL" over 5 seeds (seed 0 gave a
+  chance SIGNAL at alpha 0.05; 2/40 = 0.05 overall, as expected under the null).
+- **Next run:** collect the research-batch outputs for E022 and apply `decide_b19`.
