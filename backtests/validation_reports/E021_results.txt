@@ -1,0 +1,44 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E021 DEV next-session reversal, |move| > p80 of previous 60 valid dates, 20:00 NY D -> 10:45 NY next trading date (pre-registered, 1 trial):
+n                                   229
+mean_pips                         -2.55
+median_pips                        -0.5
+sd_pips                          50.853
+hit_rate                         0.4934
+t_stat                           -0.759
+t_p_one_sided                    0.7756
+mean_ci95_block_boot    (-7.097, 4.167)
+decision                           NONE
+Counts: {'trading_dates': 1562, 'valid_dates': 1547, 'burn_in': 60, 'large_dates': 299, 'events_tested': 229, 'no_prev': 1, 'missing_16_D': 7, 'missing_16_prev': 7, 'friday': 69, 'next_not_adjacent': 1, 'missing_entry': 0, 'missing_exit': 0, 'entry_skipped_spread': 0}
+
+Descriptive:
+  events_16_to_20_move_signed_reversal_already : {'n': 229, 'mean_pips': 1.666, 'median_pips': 2.0, 'sd_pips': 13.693, 'hit_rate': 0.5895, 't_stat': 1.841, 't_p_one_sided': 0.0335, 'mean_ci95_block_boot': (-0.88, 3.866)}
+  non_large_non_friday_dates_same_trade : {'n': 953, 'mean_pips': -0.415, 'median_pips': -2.25, 'sd_pips': 47.295, 'hit_rate': 0.4827, 't_stat': -0.271, 't_p_one_sided': 0.6066, 'mean_ci95_block_boot': (-3.308, 2.545)}
+  events_mean_abs_move_pips : 93.548
+  events_up_move_n : 117
+  events_up_move_mean_signed : 6.625
+  events_down_move_n : 112
+  events_down_move_mean_signed : -12.133
+  median_threshold_pips : 64.77
+  fomc_overlap : {'n': 229, 'move_day_is_fomc': 17, 'exit_day_is_fomc': 7, 'share_either': 0.1048}
+
+By year (descriptive):
+        n   mean    hit
+year                  
+2015  27 -7.176  0.556
+2016  41 -2.121  0.488
+2017  39 -0.486  0.462
+2018  44  0.851  0.500
+2019  32  3.483  0.531
+2020  46 -9.415  0.457
+
+DEV cost check (descriptive):
+n                           229.000
+mean_signed_mid_pips         -2.550
+mean_net_bidask_pips         -2.841
+mean_net_spec4_pips          -3.041
+mean_net_costs_x1_5_pips     -3.287
+median_spread_entry_pips      0.300
+median_spread_exit_pips       0.300
+E021 decision: NONE
