@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E027",
+  "date": "2026-11-09",
+  "instrument": "EURUSD",
+  "hypothesis": "sign(r1) x (mid 15:55 - mid 15:25 London) on dev trading date D > 1 pip, r1 = mid 08:30 - mid 08:00 London (London-open intraday momentum into the pre-London-fix half hour, B22)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "conditioning the 15:25-15:55 London return on the first London half hour (relatives E001 London session sign, E007 unconditional pre-fix hour)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 20 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL -> val confirmation B22v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "next_experiment": "collect research-batch outputs and apply decide_b22"
+}

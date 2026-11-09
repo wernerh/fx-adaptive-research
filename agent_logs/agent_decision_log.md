@@ -457,3 +457,11 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** `decide_b21` applied exactly to the dev outputs: mean -0.42 (not > 0), CI lower -5.278, t p 0.564 -> NONE. LEAD
   condition 1 fails (costs negative too); no notification. B21 line closed per the pre-registered "what follows".
 - **Next run:** pre-register B22 (top `ready` item) as E027.
+
+### 2026-11-09 R053 (unattended)
+- **State:** last research-batch run 42664624217 (E026) completed and already recorded (R052); no run queued or in progress ->
+  protocol step 3 (next experiment). Top `ready` item: B22 (only `ready` item). pytest passed (183) before any change. Local `main`
+  had diverged from origin (stale pre-rewrite history); work done on a fresh branch from origin/main and pushed to main.
+- **Choice:** pre-register B22 as E027 (dev only, 1 trial) with every parameter and the decision rule exactly as drafted in the backlog
+  (R050), including the block-20 bootstrap; no change after seeing any data (no conditional 15:25-15:55 London return computed on dev).
+- **Next run:** collect the E027 batch outputs and apply `decide_b22`; SIGNAL -> B22v (val), else backlog refill.
