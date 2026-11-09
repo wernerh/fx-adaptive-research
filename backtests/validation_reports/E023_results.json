@@ -1,0 +1,132 @@
+{
+  "result": {
+    "n": 204,
+    "mean_pips": 1.197,
+    "median_pips": -2.875,
+    "sd_pips": 33.278,
+    "hit_rate": 0.4706,
+    "t_stat": 0.514,
+    "t_p_one_sided": 0.304,
+    "mean_ci95_block_boot": [
+      -3.144,
+      5.919
+    ],
+    "decision": "NONE",
+    "lead_cost_gate": true,
+    "lead": false
+  },
+  "counts": {
+    "trading_dates": 637,
+    "valid_dates": 637,
+    "low_coverage": 0,
+    "state_prev_invalid": 0,
+    "state_burn_in": 60,
+    "state_normal": 372,
+    "state_high": 204,
+    "missing_entry": 0,
+    "missing_exit": 0,
+    "entry_skipped_spread": 0,
+    "events_tested": 204
+  },
+  "descriptive": {
+    "control_normal_dates_same_trade": {
+      "n": 370,
+      "mean_pips": 1.15,
+      "median_pips": -0.425,
+      "sd_pips": 32.436,
+      "hit_rate": 0.4919,
+      "t_stat": 0.682,
+      "t_p_one_sided": 0.2478,
+      "mean_ci95_block_boot": [
+        -1.241,
+        4.012
+      ]
+    },
+    "all_post_burn_in_dates_same_trade": {
+      "n": 574,
+      "mean_pips": 1.167,
+      "median_pips": -0.875,
+      "sd_pips": 32.709,
+      "hit_rate": 0.4843,
+      "t_stat": 0.855,
+      "t_p_one_sided": 0.1965,
+      "mean_ci95_block_boot": [
+        -0.948,
+        3.899
+      ]
+    },
+    "median_daily_range_pips": 74.4,
+    "events_mean_prev_range_pips": 118.539,
+    "events_median_threshold_pips": 88.424,
+    "limitation": "ECB monetary-policy days not identifiable (no ECB calendar in repo); overnight carry not relevant (intraday)"
+  },
+  "by_year": [
+    {
+      "year": 2021,
+      "n": 63,
+      "mean": 0.349,
+      "hit": 0.397
+    },
+    {
+      "year": 2022,
+      "n": 103,
+      "mean": 1.823,
+      "hit": 0.495
+    },
+    {
+      "year": 2023,
+      "n": 38,
+      "mean": 0.907,
+      "hit": 0.526
+    }
+  ],
+  "by_weekday": [
+    {
+      "weekday": "Friday",
+      "n": 51,
+      "mean": 13.573,
+      "hit": 0.686
+    },
+    {
+      "weekday": "Monday",
+      "n": 42,
+      "mean": -7.095,
+      "hit": 0.333
+    },
+    {
+      "weekday": "Thursday",
+      "n": 50,
+      "mean": 6.881,
+      "hit": 0.52
+    },
+    {
+      "weekday": "Tuesday",
+      "n": 30,
+      "mean": -13.375,
+      "hit": 0.333
+    },
+    {
+      "weekday": "Wednesday",
+      "n": 31,
+      "mean": -2.994,
+      "hit": 0.355
+    }
+  ],
+  "cost_check": {
+    "n": 204,
+    "mean_signed_mid_pips": 1.197,
+    "mean_net_bidask_pips": 0.822,
+    "mean_net_spec4_pips": 0.622,
+    "mean_net_costs_x1_5_pips": 0.335,
+    "median_spread_entry_pips": 0.4,
+    "median_spread_exit_pips": 0.3
+  },
+  "n_trials": 1,
+  "blocks": [
+    "val"
+  ],
+  "window": 60,
+  "percentile": 67,
+  "first_date": "2021-01-21",
+  "last_date": "2023-06-30"
+}
