@@ -1,0 +1,56 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E027 DEV sign(r1 (8, 0)->(8, 30) London) held (15, 25) -> (15, 55) London (pre-registered, 1 trial, block 20):
+n                                  1551
+mean_pips                        -0.008
+median_pips                       -0.05
+sd_pips                          11.553
+hit_rate                         0.4984
+t_stat                           -0.029
+t_p_one_sided                    0.5114
+mean_ci95_block_boot    (-0.553, 0.455)
+decision                           NONE
+Counts: {'trading_dates': 1562, 'valid_dates': 1556, 'invalid_missing_signal_quote': 6, 'zero_signal': 4, 'missing_entry': 0, 'missing_exit': 0, 'entry_skipped_spread': 1, 'events_tested': 1551, 'dst_mismatch_dates_tested': 105}
+
+Descriptive:
+  reversal_reading_note : a negative mean is logged as exploratory only (not a trial)
+  first_hour_signal_0800_0900 : {'n': 1548, 'mean_pips': -0.07, 'median_pips': -0.25, 'sd_pips': 11.556, 'hit_rate': 0.4884, 't_stat': -0.239, 't_p_one_sided': 0.5946, 'mean_ci95_block_boot': (-0.587, 0.459)}
+  slope_last_half_on_r1 : {'n': 1551, 'slope': 0.016, 't_stat': 0.674, 'p_two_sided': 0.5001}
+  abs_r1_tercile_low : {'n': 517, 'mean_pips': 0.062, 'median_pips': 0.25, 'sd_pips': 10.571, 'hit_rate': 0.5126, 't_stat': 0.134, 't_p_one_sided': 0.4467, 'mean_ci95_block_boot': (-0.725, 0.969)}
+  abs_r1_tercile_mid : {'n': 518, 'mean_pips': -0.257, 'median_pips': -0.475, 'sd_pips': 11.152, 'hit_rate': 0.4768, 't_stat': -0.524, 't_p_one_sided': 0.6999, 'mean_ci95_block_boot': (-1.653, 0.618)}
+  abs_r1_tercile_high : {'n': 516, 'mean_pips': 0.17, 'median_pips': 0.15, 'sd_pips': 12.838, 'hit_rate': 0.5058, 't_stat': 0.301, 't_p_one_sided': 0.3817, 'mean_ci95_block_boot': (-0.869, 0.986)}
+  month_end : {'n': 72, 'mean_pips': -1.79, 'median_pips': -2.325, 'sd_pips': 12.401, 'hit_rate': 0.3889, 't_stat': -1.224, 't_p_one_sided': 0.8876, 'mean_ci95_block_boot': (-3.854, 0.482)}
+  non_month_end : {'n': 1479, 'mean_pips': 0.078, 'median_pips': 0.05, 'sd_pips': 11.508, 'hit_rate': 0.5037, 't_stat': 0.262, 't_p_one_sided': 0.3968, 'mean_ci95_block_boot': (-0.437, 0.558)}
+  dst_mismatch : {'n': 105, 'mean_pips': -0.32, 'median_pips': -0.5, 'sd_pips': 12.448, 'hit_rate': 0.4571, 't_stat': -0.263, 't_p_one_sided': 0.6035, 'mean_ci95_block_boot': (-1.739, 0.749)}
+  share_long : 0.518
+  mean_abs_r1_pips : 9.043
+  unconditional_last_half_mean_pips : -0.567
+
+By year (descriptive):
+         n   mean    hit
+year                   
+2015  259 -0.052  0.471
+2016  259 -0.569  0.459
+2017  258 -0.089  0.519
+2018  259 -0.428  0.502
+2019  258  1.025  0.574
+2020  258  0.066  0.465
+
+By weekday (descriptive):
+              n   mean    hit
+weekday                     
+Friday     310  1.071  0.506
+Monday     310 -0.391  0.516
+Thursday   312 -0.679  0.503
+Tuesday    309 -0.458  0.472
+Wednesday  310  0.417  0.494
+
+DEV cost check (descriptive):
+n                           1551.000
+mean_signed_mid_pips          -0.008
+mean_net_bidask_pips          -0.260
+mean_net_spec4_pips           -0.460
+mean_net_costs_x1_5_pips      -0.685
+median_spread_entry_pips       0.200
+median_spread_exit_pips        0.200
+E027 decision: NONE
