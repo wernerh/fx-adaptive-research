@@ -443,3 +443,10 @@ Why each run chose what it did, and any judgement calls.
   mechanism evidence: two order-flow papers; B22 is a loose analogue, prior low after E001/E007 NONE).
 - **Sources opened this run:** Evans & Lyons (2008) and Love & Payne (2008) RePEc abstract pages; DOIs not shown there (UNVERIFIED).
 - **Next run:** pre-register B21 as E026 (dev only, 1 trial) and queue it.
+
+### 2026-11-09 R051 (unattended)
+- **State:** last research-batch run 42634668404 (E025) completed and already recorded; no run queued or in progress -> protocol
+  step 3 (next experiment). Top `ready` item: B21 (ranked above B22 in R050).
+- **Choice:** pre-register B21 as E026 (dev only, 1 trial) with every parameter and the decision rule exactly as drafted in the backlog
+  (R050); no change after seeing any data (no conditional 08:30-08:45 return has been computed on dev).
+- **Next run:** collect the E026 batch outputs and apply the rule; SIGNAL -> B21v (val), else B22.

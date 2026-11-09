@@ -1,0 +1,20 @@
+{
+  "experiment_id": "E026",
+  "date": "2026-11-09",
+  "instrument": "EURUSD",
+  "hypothesis": "sign(J) x (mid 10:45 NY - mid 08:45 NY) on trading date D > 1 pip on dates where |J| = |mid 08:45 - mid 08:30 NY| > p90 of |J| over the 60 valid dates before D (post-08:30 NY release-window continuation, calendar-free, B21)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "conditioning on the 08:30-08:45 NY jump (relative E006 unconditional / session-predictor 08:35-09:30 NY)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 10 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL -> val confirmation B21v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": null,
+  "next_experiment": null,
+  "run": null
+}
