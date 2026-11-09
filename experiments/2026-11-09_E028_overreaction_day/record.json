@@ -1,0 +1,20 @@
+{
+  "experiment_id": "E028",
+  "date": "2026-11-09",
+  "instrument": "EURUSD",
+  "hypothesis": "sign(r - m) x (mid 16:30 NY - mid 12:00 NY) on trading date D > 1 pip on dates where r = mid 12:00 NY - mid 17:00 NY open of D lies outside m +/- 2 s (mean, SD of r over the 60 valid dates before D) (intraday continuation on overreaction days, B23)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "conditioning the 12:00-16:30 NY return on a same-day 17:00-12:00 NY 2-SD move (relatives E021 full-day reversal, E024/E025 prior-day range)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 5 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL -> val confirmation B23v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": null,
+  "next_experiment": null,
+  "run": null
+}

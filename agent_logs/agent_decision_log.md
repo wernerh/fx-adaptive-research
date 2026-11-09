@@ -486,3 +486,13 @@ Why each run chose what it did, and any judgement calls.
 - **Sources opened this run:** Brunel WP 19-09 PDF (partial verbatim), CEEOL record, RePEc QREF record, Quantpedia post. Data-clock
   time zone of the paper UNVERIFIED; NY mapping is our assumption, fixed before any data.
 - **Next run:** pre-register B23 as E028 (dev only, 1 trial) and queue it.
+
+### 2026-11-09 R056 (unattended)
+- **State:** last research-batch run 42683469479 (E027) completed and already recorded (R054); no run queued or in progress ->
+  protocol step 3 (next experiment). Top `ready` item: B23. pytest passed (192) before any change. Local stale `main` reset to
+  origin/main (old history kept on local branch `stale-local-main`, not pushed).
+- **Choice:** pre-register B23 as E028 (dev only, 1 trial) with every parameter and the decision rule exactly as drafted in the backlog
+  (R055), including the block-5 bootstrap. Implementation details fixed now, before data: SD is the sample SD (ddof=1); the open quote
+  is the first bar in [17:00, 17:05) NY assigned to trading date D; fewer than 10 events -> insufficient sample -> NONE.
+  No conditional 12:00-16:30 NY return has been computed on dev.
+- **Next run:** collect the E028 batch outputs and apply `decide_b23`; SIGNAL -> B23v (val), else B24.
