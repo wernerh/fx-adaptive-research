@@ -450,3 +450,10 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** pre-register B21 as E026 (dev only, 1 trial) with every parameter and the decision rule exactly as drafted in the backlog
   (R050); no change after seeing any data (no conditional 08:30-08:45 return has been computed on dev).
 - **Next run:** collect the E026 batch outputs and apply the rule; SIGNAL -> B21v (val), else B22.
+
+### 2026-11-09 R052 (unattended)
+- **State:** research-batch run 42664624217 (E026) completed success; outputs committed by github-actions[bot] (067d5aa) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest passed (183) before recording; local checkout reset to origin/main.
+- **Decision:** `decide_b21` applied exactly to the dev outputs: mean -0.42 (not > 0), CI lower -5.278, t p 0.564 -> NONE. LEAD
+  condition 1 fails (costs negative too); no notification. B21 line closed per the pre-registered "what follows".
+- **Next run:** pre-register B22 (top `ready` item) as E027.

@@ -28,3 +28,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 
 ### 2026-11-08: FOMC statement days on val (E014) [EXP]
 - Supersedes "Val confirmation B11v pending" in the E013 entry above. Val: 16:00-to-16:00 NY mean +19.99 pips (n 20, NONE: CI includes 0, p 0.115); 13:00-16:00 NY sub-window +17.47 (descriptive, n.s.). See experiments/2026-11-08_E014_fomc_day_val.
+
+### 2026-11-09 R052: post-08:30 NY release-window continuation, calendar-free (E026, dev) [EXP]
+- NONE on dev: after a large 08:30 -> 08:45 NY move (abs > rolling p90 of 60 dates), following it 08:45 -> 10:45 NY averaged -0.42 pips
+  (n 169, CI -5.278 to 2.488, t p 0.564); non-event control -0.465. No continuation at this horizon. See
+  experiments/2026-11-09_E026_release_continuation.

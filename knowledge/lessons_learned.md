@@ -199,3 +199,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Lesson:** both vol-state-conditioned fix-window dev SIGNALs (E022, E024) failed val. With ~238 trials, dev SIGNALs whose own
   normal-date control is not clearly weaker should be expected to fail val; the prior-day range condition has shown no incremental value.
 - **Action:** B20 line closed (E024 + E025 in rejected_hypotheses.md). Backlog has no `ready` item -> refill next.
+
+### 2026-11-09 R052: no continuation after large 08:30 NY moves (E026)
+- **Context:** E026 (B21), calendar-free test of the order-flow continuation mechanism after US 08:30 NY releases, dev only.
+- **Observation:** n 169, mean -0.42 pips, CI (-5.278, 2.488), t p 0.564 -> NONE; non-event control -0.465; p80/p95 and other horizons
+  (descriptive) also not positive. SPEC 4 net -0.896.
+- **Evidence label:** [EXP]
+- **Lesson:** published order-flow incorporation of news (Evans-Lyons, Love-Payne) does not translate into a tradable 2-hour drift after
+  the first 15 minutes of the 08:30 NY window on 2015-2020 EUR/USD. Papers that describe a mechanism without a stated horizon have
+  produced NONE repeatedly; prefer items whose source states a tradable horizon.
+- **Action:** B21 closed (rejected_hypotheses.md). B22 is the next `ready` item.
