@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **231** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **235**. Update after every experiment. (R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **231** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **235**. Update after every experiment. (R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -196,3 +196,54 @@ Trial count so far on dev: **231** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Calendar label:** daily-move reversal; the hold contains the ECB fix (08:15 NY) and US 08:30 releases; report the share of events
   whose hold contains an FOMC statement date (data/calendars/fomc_dates.csv).
 - **Data:** price data in repo only.
+
+### B19: Pre-ECB-fix USD appreciation on high-volatility dates (signal test, dev) · `ready` (Added 2026-11-09 R041 refill)
+- **Mechanism [PUB]:** the USD "systematically appreciates against all currencies ahead of the three major currency fixes" (Krohn,
+  Mueller & Whelan, fixings paper; JF 2024 version VERIFIED (abstract) in research/academic_studies.md; AEA 2020 draft opened
+  2026-11-09 R041). The draft's report that the fix reversals are larger in high-volatility / high-spread states, and its EUR window
+  2:00-8:15 a.m. ET, were read only via a model summary: **UNVERIFIED**. Everything below is fixed here, not taken from the paper.
+- **Variable changed (one):** vol-state conditioning. Unconditional relatives already tested: E010 (ECB fix 1 h windows, dev WEAK),
+  E017 (short 03:00-08:00 NY as one leg of home-hours, val WEAK).
+- **Signal (fixed now):** RNG(D-1) = high - low of mid over the previous trading date (17:00 NY -> 17:00 NY, pips), from 1-min bars.
+  Trading date D is "high-vol" if RNG(D-1) is strictly above the 67th percentile of RNG over the 60 valid trading dates before D-1
+  (rolling, past only; no event until 60 exist). Days with < 90% of expected bars in D-1 are invalid and counted.
+- **Trade:** short EUR/USD from 02:00 NY to 08:15 NY on high-vol trading date D (quote = open of first bar in [T, T+5 min)).
+  Signed return = -(X - E) mid, pips. Missing bars excluded and counted; entry skipped if spread at 02:00 NY > 2.0 pips (SPEC 4).
+- **Test:** **dev only, 1 trial**; n ~ 0.33 x ~1,500 dates ~ 480 events.
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 10 events, 2000 draws, seed 0)
+  95% CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL earns B19v (val).
+- **Descriptive (not in rule):** same trade on non-high-vol dates (control) and on all dates; by year; by weekday; median spread at
+  entry/exit; net at bid/ask, SPEC 4 and costs x1.5; share of events on ECB monetary-policy days is NOT computable (no ECB calendar in
+  repo) -> stated as a limitation.
+- **Power note:** ~6 h SD ~25-30 pips -> SE ~1.2-1.4 pips; a mean of roughly 2.5-3 pips is needed to clear the CI bar.
+- **Contamination note:** E009 scanned unconditional weekday x hour means on dev (the 02:00-08:00 NY hours included); E008 used ATR
+  as a control for US-window absolute moves, not for this window's signed return. No vol-conditional signed return of this window has
+  been computed on dev. Record in the methodology.
+- **Calendar label:** pre-ECB-fix window (ECB reference rate 14:15 CET ~ 08:15 NY); exit before US 08:30 releases.
+- **Data:** price data in repo only.
+
+### B20: Post-London-fix EUR appreciation on high-volatility dates (signal test, dev) · `ready` (Added 2026-11-09 R041 refill)
+- **Mechanism [PUB]:** same source family as B19 (USD depreciates after the fixes; EUR "strongly increase[s] in value against the
+  U.S. dollar between 8:00 a.m. and 5:00 p.m.", Krohn-Mueller-Whelan AEA 2019 draft, opened 2026-11-09 R041). Vol-state amplification
+  and the 11:00 a.m.-5:00 p.m. ET window: **UNVERIFIED** (model summary only).
+- **Variable changed (one):** vol-state conditioning of the post-London-fix long. Unconditional relatives: E007 (London fix 1 h
+  windows, dev NONE), E017 (long 12:00-17:00 NY leg, val WEAK; the 16:59 exit spread was 3.0 pips -> R030 lesson).
+- **Signal:** identical high-vol definition to B19 (RNG(D-1) > rolling p67 of 60 valid dates; past only).
+- **Trade:** long EUR/USD from 11:05 NY (after the 5-minute fix window) to 16:00 NY on high-vol trading date D (exit before 16:30 NY
+  per R030 lesson). Signed return = X - E mid, pips. Missing bars excluded and counted; entry skipped if spread at 11:05 NY > 2.0 pips.
+- **Test:** **dev only, 1 trial**; ~480 events.
+- **Decision rule (draft):** as B19 (mean > 1.0 pip AND block-bootstrap CI lower > 0 AND one-sided t p < 0.05 -> SIGNAL; WEAK/NONE as
+  B19). SIGNAL earns B20v (val).
+- **Descriptive (not in rule):** control on non-high-vol dates and all dates; by year; share of events on FOMC statement days
+  (data/calendars/fomc_dates.csv; 14:00 NY statement is inside the hold) and the result excluding them; spreads; net at bid/ask,
+  SPEC 4 and x1.5.
+- **Power note:** ~5 h SD ~22-28 pips -> SE ~1.1-1.3 pips.
+- **Contamination note:** E009 (unconditional hours) and E007 (1 h post-fix) on dev; no vol-conditional 11:05-16:00 NY return computed.
+- **Independence from B19:** both use the same condition; if both are run they are 2 separate trials and count separately. Run B19
+  first; B20 does not depend on B19's result (no re-ranking after B19 unless logged with a reason before B20 is pre-registered).
+- **Data:** price data in repo only.
+
+### Refill note R041 (not an item)
+- Practitioner "month-end hedge rebalancing" models (USD direction into the month-end London fix predicted by month-to-date US vs
+  foreign equity performance) were found only in broker/news commentary, not in a verified academic source, and need equity index data
+  not in the repo. Not added; would need a human-supplied equity series and a verified source.

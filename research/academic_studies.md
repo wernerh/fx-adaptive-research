@@ -168,6 +168,19 @@ US session. That is unproven, which is exactly why E001 comes first.
 
 ---
 
+### Krohn, Mueller & Whelan (2018 draft, AEA 2019 preliminary): FX premia around the clock
+- **Venue:** AEA 2019 annual meeting preliminary paper ("please do not cite or circulate without permission"; version December 2018). [AEA page](https://topcat.aeaweb.org/conference/2019/preliminary/paper/QQ73KSH8). Earlier draft of the line of work published as Krohn, Mueller & Whelan (2024, JF), listed above.
+- **Finding (opened 2026-11-09 R041, abstract and opening sections read verbatim):** splitting G10 close-to-close returns into U.S. hours (8:00 a.m.-5:00 p.m. EST) and overnight, "positive average returns for going long foreign currencies are almost entirely generated during U.S. main trading hours"; EUR, GBP and CHF "strongly increase in value against the U.S. dollar between 8:00 a.m. and 5:00 p.m."; the pattern holds on macro-announcement and non-announcement days. Sample January 1994-December 2017, 5-minute spot quotes, nine currencies vs USD.
+- **Relevance:** **Medium.** Same mechanism family as B14/E017 (val WEAK) and E010. Basis, with the 2024 paper, for B19/B20 (vol-state conditioning).
+- **Caveats:** EUR/USD table values (intraday +7.80% p.a., overnight -7.52% p.a.) were read only through a model summary of the truncated PDF: **UNVERIFIED**. The fixings working paper ([AEA 2020 page](https://topcat.aeaweb.org/conference/2020/preliminary/paper/2dedYfDH), opened 2026-11-09 R041) states verbatim that the USD "systematically appreciates against all currencies ahead of the three major currency fixes"; its report that the reversal is larger in high-volatility and high-spread states (Table 5) and its window returns (EUR pre-ECB 2:00-8:15 a.m. ET, post-London 11:00 a.m.-5:00 p.m. ET) were read only through a model summary: **UNVERIFIED**.
+- **Status:** VERIFIED (abstract)
+
+### Kostakis, McBride, Sarno & Wang (2025, SSRN 5781462): Large moves in the foreign exchange market
+- **Venue:** working paper; [Cambridge CEAM project page](https://www.jbs.cam.ac.uk/centres/ceam/research/the-cambridge-foreign-exchange-initiative/fx-initiative-research/large-moves-in-the-foreign-exchange-market/) opened 2026-11-09 R041 (the SSRN abstract itself was not opened).
+- **Finding (project page):** "three-sigma" moves in 6 major pairs incl. EUR/USD (CME options and spot, 2006-2024) are rare but carry a disproportionate share of risk; an inverted short-over-long implied-volatility term structure warns that "markets expect a big move in the exchange rate soon, although not necessarily whether it will be up or down".
+- **Relevance:** **Low** for direction (the signal is about size, not sign) and it needs options data we do not hold. Logged only.
+- **Status:** VERIFIED (project page; paper not read)
+
 ## Open research questions raised by the literature
 
 | # | Question | Source of the idea | Experiment |

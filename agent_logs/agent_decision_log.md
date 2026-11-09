@@ -335,3 +335,17 @@ Why each run chose what it did, and any judgement calls.
   Cost check negative (SPEC 4 -3.041, x1.5 -3.287 per event). Not a LEAD; no notification. The up/down asymmetry is post-hoc
   (dev downtrend) and is not added to the backlog as a dev re-test.
 - **Next run:** no `ready` backlog items -> refill (literature pass, verified links only).
+
+### 2026-11-09 R041 (unattended)
+- **State:** last research-batch run 42567407426 (E021) recorded in R040; no run queued or in progress (latest 5 runs all completed
+  success). No `ready` backlog items (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). pytest passed (154).
+- **Literature pass:** opened (HTTP 200) Krohn-Mueller-Whelan AEA 2019 "FX Premia Around the Clock" and AEA 2020 fixings draft,
+  Evans MPRA 60171 (already listed as Evans 2018), Kostakis-McBride-Sarno-Wang CEAM project page, CXO summary of Breedon-Ranaldo
+  (already listed), and a Stern 2018 SNB-event paper without title page (not used). Table values read only via model summary of
+  truncated PDFs are marked UNVERIFIED in research/academic_studies.md.
+- **Choice:** added B19 (short 02:00-08:15 NY on high-vol dates) and B20 (long 11:05-16:00 NY on high-vol dates), both dev, 1 trial
+  each, one variable (vol-state conditioning) relative to tested unconditional relatives (E010/E007/E017). Ranked B19 first: its window
+  avoids the 08:30 US releases and the FOMC 14:00 statement. Month-end hedge-rebalancing idea not added (practitioner sources only,
+  needs equity data). Fix-pattern line has been weak across E007/E010/E011/E017, so prior expectation is low; a NONE closes the
+  vol-state reading of this line.
+- **Next run:** pre-register B19 as E022.
