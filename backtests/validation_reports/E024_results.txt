@@ -1,0 +1,52 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E024 DEV long EUR/USD (11, 5) -> (16, 0) NY on dates after a range > p67 of the previous 60 valid dates (pre-registered, 1 trial):
+n                                  472
+mean_pips                        2.983
+median_pips                        1.9
+sd_pips                         25.264
+hit_rate                        0.5339
+t_stat                           2.565
+t_p_one_sided                   0.0053
+mean_ci95_block_boot    (0.566, 4.847)
+decision                        SIGNAL
+Counts: {'trading_dates': 1562, 'valid_dates': 1556, 'low_coverage': 6, 'state_prev_invalid': 6, 'state_burn_in': 60, 'state_normal': 1021, 'state_high': 474, 'missing_entry': 0, 'missing_exit': 1, 'entry_skipped_spread': 1, 'events_tested': 472}
+
+Descriptive:
+  control_normal_dates_same_trade : {'n': 1015, 'mean_pips': 0.901, 'median_pips': 0.4, 'sd_pips': 25.452, 'hit_rate': 0.5094, 't_stat': 1.128, 't_p_one_sided': 0.1299, 'mean_ci95_block_boot': (-0.669, 2.68)}
+  all_post_burn_in_dates_same_trade : {'n': 1487, 'mean_pips': 1.562, 'median_pips': 0.7, 'sd_pips': 25.402, 'hit_rate': 0.5171, 't_stat': 2.371, 't_p_one_sided': 0.0089, 'mean_ci95_block_boot': (0.397, 2.871)}
+  events_on_fomc_statement_days : 12
+  events_excluding_fomc_statement_days : {'n': 460, 'mean_pips': 3.143, 'median_pips': 1.9, 'sd_pips': 24.97, 'hit_rate': 0.5348, 't_stat': 2.7, 't_p_one_sided': 0.0036, 'mean_ci95_block_boot': (0.787, 4.991)}
+  median_daily_range_pips : 77.075
+  events_mean_prev_range_pips : 123.083
+  events_median_threshold_pips : 88.266
+  limitation : WM/R fix at 11:00 NY except DST-mismatch weeks (window not shifted); overnight carry not relevant (intraday)
+
+By year (descriptive):
+        n   mean    hit
+year                  
+2015  51  6.910  0.608
+2016  86  5.913  0.581
+2017  78  2.702  0.564
+2018  95 -1.776  0.474
+2019  70 -0.591  0.414
+2020  92  5.940  0.576
+
+By weekday (descriptive):
+              n   mean    hit
+weekday                     
+Friday     113  0.693  0.496
+Monday     104  3.357  0.529
+Thursday   100  2.350  0.560
+Tuesday     68  4.038  0.515
+Wednesday   87  5.413  0.575
+
+DEV cost check (descriptive):
+n                           472.000
+mean_signed_mid_pips          2.983
+mean_net_bidask_pips          2.715
+mean_net_spec4_pips           2.515
+mean_net_costs_x1_5_pips      2.281
+median_spread_entry_pips      0.200
+median_spread_exit_pips       0.200
+E024 decision: SIGNAL

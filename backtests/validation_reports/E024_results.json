@@ -1,0 +1,171 @@
+{
+  "result": {
+    "n": 472,
+    "mean_pips": 2.983,
+    "median_pips": 1.9,
+    "sd_pips": 25.264,
+    "hit_rate": 0.5339,
+    "t_stat": 2.565,
+    "t_p_one_sided": 0.0053,
+    "mean_ci95_block_boot": [
+      0.566,
+      4.847
+    ],
+    "decision": "SIGNAL"
+  },
+  "counts": {
+    "trading_dates": 1562,
+    "valid_dates": 1556,
+    "low_coverage": 6,
+    "state_prev_invalid": 6,
+    "state_burn_in": 60,
+    "state_normal": 1021,
+    "state_high": 474,
+    "missing_entry": 0,
+    "missing_exit": 1,
+    "entry_skipped_spread": 1,
+    "events_tested": 472
+  },
+  "descriptive": {
+    "control_normal_dates_same_trade": {
+      "n": 1015,
+      "mean_pips": 0.901,
+      "median_pips": 0.4,
+      "sd_pips": 25.452,
+      "hit_rate": 0.5094,
+      "t_stat": 1.128,
+      "t_p_one_sided": 0.1299,
+      "mean_ci95_block_boot": [
+        -0.669,
+        2.68
+      ]
+    },
+    "all_post_burn_in_dates_same_trade": {
+      "n": 1487,
+      "mean_pips": 1.562,
+      "median_pips": 0.7,
+      "sd_pips": 25.402,
+      "hit_rate": 0.5171,
+      "t_stat": 2.371,
+      "t_p_one_sided": 0.0089,
+      "mean_ci95_block_boot": [
+        0.397,
+        2.871
+      ]
+    },
+    "events_on_fomc_statement_days": 12,
+    "events_excluding_fomc_statement_days": {
+      "n": 460,
+      "mean_pips": 3.143,
+      "median_pips": 1.9,
+      "sd_pips": 24.97,
+      "hit_rate": 0.5348,
+      "t_stat": 2.7,
+      "t_p_one_sided": 0.0036,
+      "mean_ci95_block_boot": [
+        0.787,
+        4.991
+      ]
+    },
+    "median_daily_range_pips": 77.075,
+    "events_mean_prev_range_pips": 123.083,
+    "events_median_threshold_pips": 88.266,
+    "limitation": "WM/R fix at 11:00 NY except DST-mismatch weeks (window not shifted); overnight carry not relevant (intraday)"
+  },
+  "by_year": [
+    {
+      "year": 2015,
+      "n": 51,
+      "mean": 6.91,
+      "hit": 0.608
+    },
+    {
+      "year": 2016,
+      "n": 86,
+      "mean": 5.913,
+      "hit": 0.581
+    },
+    {
+      "year": 2017,
+      "n": 78,
+      "mean": 2.702,
+      "hit": 0.564
+    },
+    {
+      "year": 2018,
+      "n": 95,
+      "mean": -1.776,
+      "hit": 0.474
+    },
+    {
+      "year": 2019,
+      "n": 70,
+      "mean": -0.591,
+      "hit": 0.414
+    },
+    {
+      "year": 2020,
+      "n": 92,
+      "mean": 5.94,
+      "hit": 0.576
+    }
+  ],
+  "by_weekday": [
+    {
+      "weekday": "Friday",
+      "n": 113,
+      "mean": 0.693,
+      "hit": 0.496
+    },
+    {
+      "weekday": "Monday",
+      "n": 104,
+      "mean": 3.357,
+      "hit": 0.529
+    },
+    {
+      "weekday": "Thursday",
+      "n": 100,
+      "mean": 2.35,
+      "hit": 0.56
+    },
+    {
+      "weekday": "Tuesday",
+      "n": 68,
+      "mean": 4.038,
+      "hit": 0.515
+    },
+    {
+      "weekday": "Wednesday",
+      "n": 87,
+      "mean": 5.413,
+      "hit": 0.575
+    }
+  ],
+  "cost_check": {
+    "n": 472,
+    "mean_signed_mid_pips": 2.983,
+    "mean_net_bidask_pips": 2.715,
+    "mean_net_spec4_pips": 2.515,
+    "mean_net_costs_x1_5_pips": 2.281,
+    "median_spread_entry_pips": 0.2,
+    "median_spread_exit_pips": 0.2
+  },
+  "n_trials": 1,
+  "blocks": [
+    "dev"
+  ],
+  "window": 60,
+  "percentile": 67,
+  "entry_hm": [
+    11,
+    5
+  ],
+  "exit_hm": [
+    16,
+    0
+  ],
+  "side": "long",
+  "first_date": "2015-01-02",
+  "last_date": "2020-12-31"
+}
