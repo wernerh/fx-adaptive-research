@@ -205,3 +205,13 @@ def cost_summary(ev: pd.DataFrame) -> dict:
         "median_spread_entry_pips": round(float(ev["entry_spread_pips"].median()), 3),
         "median_spread_exit_pips": round(float(ev["exit_spread_pips"].median()), 3),
     }
+
+
+def restrict_to_block(bars: pd.DataFrame, plan, block: str, before_utc: pd.Timestamp | None = None) -> pd.DataFrame:
+    """E023 (B19v, R044): keep only bars whose trading date is labelled `block` by `plan`, after first dropping every bar at or
+    after `before_utc` (so later blocks are never read). Applied before any computation; the rolling range history is then built
+    from the kept block only (burn-in inside the block, no earlier-block history)."""
+    if before_utc is not None:
+        bars = bars[bars.index < before_utc]
+    td = pd.Index(trading_date(bars.index))
+    return bars[plan.assign(td).to_numpy() == block]

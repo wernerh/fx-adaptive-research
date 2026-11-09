@@ -374,3 +374,14 @@ Why each run chose what it did, and any judgement calls.
 - **Cautions logged (no new numbers):** marginal CI; normal-date control also positive, so the conditioning is not shown to matter;
   E017 already saw an unconditional related window on val.
 - **Next run:** pre-register B19v as E023 (val only) and queue it.
+
+### 2026-11-09 R044 (unattended)
+- **State:** last research-batch run 42585915012 (E022) recorded in R043; no run queued or in progress (latest 5 runs all completed
+  success). Top `ready` backlog item is B19v -> protocol step 3. pytest passed (165) before any change.
+- **Choice:** B19v pre-registered as E023 (val only, 1 trial) with the E022 definitions and `decide_b19` rule unchanged; the only
+  variable changed is the block. Implementation choices fixed now, before data: bars at or after 2023-07-01 UTC dropped first, then
+  non-val trading dates (`vol_state_fix.restrict_to_block`); rolling history and 60-date burn-in built from val dates only (no dev
+  history), so val is independent of dev. LEAD flag computed in the script from the pre-registered gate (SIGNAL and SPEC 4 and x1.5
+  net > 0).
+- **Expectation stated before data:** with ~190 val events the SE is ~2.2-2.6 pips; a val mean near dev's +3.6 would likely be WEAK.
+- **Next run:** collect the research-batch outputs for E023 and apply `decide_b19`.

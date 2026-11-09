@@ -163,3 +163,19 @@ def test_decide_rule_edges():
     assert decide_b19({**base, "mean_ci95_block_boot": (-0.1, 2.8), "t_p_one_sided": 0.2}) == "NONE"
     assert decide_b19({**base, "mean_pips": -0.5}) == "NONE"
     assert decide_b19({"n": 3, "note": "insufficient sample"}) == "NONE"
+
+
+def test_restrict_to_block_val_only_and_no_later_bars():
+    """E023 (B19v): only val trading dates survive; nothing at/after the cut-off is kept; dev/embargo/oos dropped."""
+    from fxresearch.splits import SplitPlan
+    from fxresearch.vol_state_fix import restrict_to_block
+    from fxresearch.sessions import trading_date
+    idx = pd.date_range("2024-01-01", "2024-03-31 23:59", freq="1h", tz="UTC")
+    bars = pd.DataFrame({"x": np.arange(len(idx))}, index=idx)
+    plan = SplitPlan(date(2024, 1, 20), date(2024, 2, 29), embargo_days=5)
+    cut = pd.Timestamp("2024-03-01", tz="UTC")
+    out = restrict_to_block(bars, plan, "val", before_utc=cut)
+    assert len(out) > 0 and out.index.max() < cut
+    td = pd.Index(trading_date(out.index))
+    assert (plan.assign(td).to_numpy() == "val").all()
+    assert min(td) > date(2024, 1, 25)

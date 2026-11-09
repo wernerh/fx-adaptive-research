@@ -1,0 +1,17 @@
+{
+  "experiment_id": "E023",
+  "date": "2026-11-09",
+  "instrument": "EURUSD",
+  "hypothesis": "-(mid 08:15 NY - mid 02:00 NY) on val trading date D > 1 pip on dates whose previous trading date's mid range (17:00 -> 17:00 NY) > p67 of the 60 valid val dates before it (B19v, val confirmation of E022)",
+  "blocks_used": ["val"],
+  "oos_touched": false,
+  "parent_experiment": "E022",
+  "variable_changed": "block (dev -> val)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 10 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. LEAD if val SIGNAL and val SPEC4 net > 0 and costs x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": null,
+  "next_experiment": null
+}
