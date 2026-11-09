@@ -93,8 +93,9 @@ def add_threshold(rng: pd.DataFrame, window: int = WINDOW, pctl: float = PCTL) -
     return rng
 
 
-def build_days(rng: pd.DataFrame, entry_q: pd.DataFrame, exit_q: pd.DataFrame) -> pd.DataFrame:
-    """One row per trading date D (from the second on): prev P, state of P, event flag, trade legs, exclusion, returns."""
+def build_days(rng: pd.DataFrame, entry_q: pd.DataFrame, exit_q: pd.DataFrame, side: int = SIDE) -> pd.DataFrame:
+    """One row per trading date D (from the second on): prev P, state of P, event flag, trade legs, exclusion, returns.
+    `side` (-1 short, +1 long EUR/USD) defaults to E022's short; E024 (B20) passes +1."""
     rng = add_threshold(rng)
     rows = []
     for i in range(1, len(rng)):
@@ -128,16 +129,18 @@ def build_days(rng: pd.DataFrame, entry_q: pd.DataFrame, exit_q: pd.DataFrame) -
     df["tradable"] = df["excluded"].isna()
     df["is_event"] = df["state"] == "high"
     df["tested"] = df["is_event"] & df["tradable"]
-    df["signed_pips"] = SIDE * (df["exit_mid"] - df["entry_mid"]) / PIP
+    df["signed_pips"] = side * (df["exit_mid"] - df["entry_mid"]) / PIP
     df["net_bidask_pips"] = df["signed_pips"] - (df["entry_spread_pips"] + df["exit_spread_pips"]) / 2
     df["net_spec4_pips"] = df["net_bidask_pips"] - SLIPPAGE_ENTRY_PIPS - COMMISSION_RT_PIPS
     df["net_x1_5_pips"] = df["signed_pips"] - 1.5 * (df["signed_pips"] - df["net_spec4_pips"])
     return df
 
 
-def frame_from_bars(bars: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def frame_from_bars(bars: pd.DataFrame, entry_hm: tuple[int, int] = ENTRY_HM, exit_hm: tuple[int, int] = EXIT_HM,
+                    side: int = SIDE) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Defaults are E022's (short 02:00 -> 08:15 NY); E024 (B20) passes its own fixed window and side."""
     rng = daily_ranges(bars)
-    return rng, build_days(rng, ny_quotes(bars, *ENTRY_HM), ny_quotes(bars, *EXIT_HM))
+    return rng, build_days(rng, ny_quotes(bars, *entry_hm), ny_quotes(bars, *exit_hm), side=side)
 
 
 def tradable_events(df: pd.DataFrame) -> pd.DataFrame:

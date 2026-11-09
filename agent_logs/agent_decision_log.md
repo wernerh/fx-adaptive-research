@@ -392,3 +392,14 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** `decide_b19` applied exactly to the val outputs: mean +1.197 > 1.0 but CI lower -3.144 and t p 0.304 -> NONE. LEAD
   condition 2 fails; no notification. B19 line closed per the pre-registered "what follows".
 - **Next run:** B20 is the top `ready` item -> pre-register and queue it (dev only).
+
+### 2026-11-09 R046 (unattended)
+- **State:** last research-batch run 42600685892 (E023) recorded in R045; no run queued or in progress (latest 5 runs all completed
+  success). Top (only) `ready` backlog item is B20 -> protocol step 3. pytest passed (166) before any change. Local clone's stale
+  `main` (old pre-rewrite hashes) was reset to origin/main; the old ref kept as local branch `stale-local-main`, nothing pushed.
+- **Choice:** B20 pre-registered as E024 (dev only, 1 trial), all parameters as fixed in R041: E022's vol-state definition, long
+  11:05 -> 16:00 NY, entry spread skip 2.0 pips, `decide_b20` = E022 rule. Implementation: `vol_state_fix.build_days` /
+  `frame_from_bars` got optional `side` and window arguments whose defaults keep E022/E023 behaviour (tested). FOMC statement days
+  (scheduled, non-cancelled) reported descriptively, not in the rule.
+- **Context stated before data:** same condition failed val in E023; prior expectation low. SE ~1.1-1.3 pips.
+- **Next run:** collect the research-batch outputs for E024 and apply `decide_b20`.

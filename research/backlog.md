@@ -240,7 +240,7 @@ Trial count so far on dev: **232** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   return has been computed on val. Record in the methodology.
 - **Data:** price data in repo only.
 
-### B20: Post-London-fix EUR appreciation on high-volatility dates (signal test, dev) · `ready` (Added 2026-11-09 R041 refill)
+### B20: Post-London-fix EUR appreciation on high-volatility dates (signal test, dev) → E024 · `running` (2026-11-09 R046: pre-registered as E024, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-09 R041 refill)
 - **Mechanism [PUB]:** same source family as B19 (USD depreciates after the fixes; EUR "strongly increase[s] in value against the
   U.S. dollar between 8:00 a.m. and 5:00 p.m.", Krohn-Mueller-Whelan AEA 2019 draft, opened 2026-11-09 R041). Vol-state amplification
   and the 11:00 a.m.-5:00 p.m. ET window: **UNVERIFIED** (model summary only).
