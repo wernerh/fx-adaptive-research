@@ -134,3 +134,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Lesson:** a 1990s dealer-order mechanism (Osler) did not survive into the modern electronic EUR/USD market at the 1-pip bar. A
   descriptive control result (mild reversal after arbitrary level crossings) is not evidence; it needs its own pre-registration and fresh data.
 - **Action:** B15 closed. Next ready item B16 (12-month TSMOM, daily hold, dev).
+
+### 2026-11-09 R035: single-pair 12-month TSMOM has no daily edge on 2016-2020 EUR/USD (E019)
+- **Context:** E019 (B16) dev, sign of the 252-trading-date 16:00 NY mid change, held 16:00 -> 16:00 NY next trading date.
+- **Observation:** mean -0.644 pips/day, CI (-3.196, 1.978), t p 0.678 (n 1292); short days -1.516, long days +0.475; buy-and-hold over
+  the same days +1.06. Only 77 round trips, so costs were small (SPEC 4 net -0.674/day); the failure is in the signal, not the costs.
+- **Evidence label:** [EXP]
+- **Lesson:** a portfolio-level published premium (58 futures, decades) does not transfer to one pair over five test years at a 1-pip/day
+  bar; the CI half-width (~2.6 pips/day) was close to the pre-registered power note. Daily-horizon tests on one pair need either a large
+  expected effect or a longer sample than dev offers.
+- **Action:** B16 closed. Backlog has no `ready` items -> next run refills.

@@ -279,3 +279,10 @@ Why each run chose what it did, and any judgement calls.
   missing_past -> missing_next, last date no_next; round trips = runs of the same non-zero signal on consecutive dates, costs charged
   per round trip. Bars outside dev are dropped before computing, so lookback and hold never leave dev. Decision rule unchanged.
 - **Next run:** collect E019 results from the research-batch run.
+
+### 2026-11-09 R035 (unattended)
+- **State:** research-batch run 42540081769 (E019) finished successfully; outputs committed in 99da3aa and not yet recorded -> protocol step 1 (collect).
+  pytest passed (133).
+- **Decision:** pre-registered `tsmom.decide_b16` rule applied exactly: mean -0.644 pips/day (not > 0), CI (-3.196, 1.978), t p 0.678 -> **NONE**.
+  Cost check negative (SPEC 4 -0.674, x1.5 -0.689 per day). Not a LEAD; no notification.
+- **Next run:** no `ready` backlog items -> refill (literature/evidence pass, verified links only).
