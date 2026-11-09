@@ -1,0 +1,57 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E028 DEV overreaction days (r = (17, 0)->(12, 0) NY beyond mean +/- 2.0 SD of 60 valid dates), follow (12, 0) -> (16, 30) NY (pre-registered, 1 trial, block 5):
+n                                    74
+mean_pips                         1.061
+median_pips                       3.825
+sd_pips                          32.491
+hit_rate                         0.5946
+t_stat                            0.281
+t_p_one_sided                    0.3897
+mean_ci95_block_boot    (-5.625, 8.569)
+decision                           NONE
+Counts: {'trading_dates': 1562, 'valid_dates': 1550, 'invalid_missing_signal_quote': 12, 'burn_in': 60, 'post_burn_in_valid': 1490, 'events': 74, 'events_positive': 36, 'events_negative': 38, 'missing_exit': 0, 'entry_skipped_spread': 0, 'events_tested': 74}
+
+Descriptive:
+  reversal_reading_note : a negative mean is logged as exploratory only (not a trial)
+  positive_events : {'n': 36, 'mean_pips': 9.457, 'median_pips': 6.15, 'sd_pips': 26.002, 'hit_rate': 0.6944, 't_stat': 2.182, 't_p_one_sided': 0.0179, 'mean_ci95_block_boot': (1.159, 20.025)}
+  negative_events : {'n': 38, 'mean_pips': -6.892, 'median_pips': -0.45, 'sd_pips': 36.19, 'hit_rate': 0.5, 't_stat': -1.174, 't_p_one_sided': 0.876, 'mean_ci95_block_boot': (-16.431, 5.496)}
+  k_1.5 : {'n': 186, 'mean_pips': -0.042, 'median_pips': 1.375, 'sd_pips': 25.922, 'hit_rate': 0.5538, 't_stat': -0.022, 't_p_one_sided': 0.5088, 'mean_ci95_block_boot': (-3.043, 2.872)}
+  k_2.5 : {'n': 35, 'mean_pips': -4.003, 'median_pips': 0.9, 'sd_pips': 37.946, 'hit_rate': 0.5714, 't_stat': -0.624, 't_p_one_sided': 0.7316, 'mean_ci95_block_boot': (-16.621, 10.179)}
+  control_non_event_long_12_1630_mean_pips : 1.108
+  events_on_fomc_statement_days : 1
+  excl_fomc : {'n': 73, 'mean_pips': 1.841, 'median_pips': 3.85, 'sd_pips': 32.011, 'hit_rate': 0.6027, 't_stat': 0.491, 't_p_one_sided': 0.3123, 'mean_ci95_block_boot': (-5.857, 8.52)}
+  events_on_first_fridays : 5
+  excl_first_fridays : {'n': 69, 'mean_pips': 1.444, 'median_pips': 4.85, 'sd_pips': 33.108, 'hit_rate': 0.6232, 't_stat': 0.362, 't_p_one_sided': 0.3591, 'mean_ci95_block_boot': (-5.102, 8.752)}
+  share_long : 0.486
+  mean_abs_r_pips_events : 118.978
+  median_hist_sd_pips_events : 42.306
+
+By year (descriptive):
+        n    mean    hit
+year                   
+2015  10  -0.140  0.700
+2016  11   7.364  0.727
+2017  11   7.336  0.727
+2018   7  18.979  0.857
+2019  17   1.112  0.588
+2020  18 -12.972  0.278
+
+By weekday (descriptive):
+             n   mean    hit
+weekday                    
+Friday     19 -0.313  0.368
+Monday     11  5.709  0.636
+Thursday   22  2.241  0.682
+Tuesday    12  0.625  0.667
+Wednesday  10 -3.510  0.700
+
+DEV cost check (descriptive):
+n                           74.000
+mean_signed_mid_pips         1.061
+mean_net_bidask_pips         0.707
+mean_net_spec4_pips          0.507
+mean_net_costs_x1_5_pips     0.229
+median_spread_entry_pips     0.250
+median_spread_exit_pips      0.400
+E028 decision: NONE
