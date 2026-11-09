@@ -496,3 +496,12 @@ Why each run chose what it did, and any judgement calls.
   is the first bar in [17:00, 17:05) NY assigned to trading date D; fewer than 10 events -> insufficient sample -> NONE.
   No conditional 12:00-16:30 NY return has been computed on dev.
 - **Next run:** collect the E028 batch outputs and apply `decide_b23`; SIGNAL -> B23v (val), else B24.
+
+### 2026-11-09 R057 (unattended)
+- **State:** research-batch run 42712247364 (E028) completed success; outputs committed by github-actions[bot] (612642d) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest passed (202) before recording; local stale `main`
+  reset to origin/main (old history kept on local branch `old-local-main`, not pushed).
+- **Decision:** `decide_b23` applied exactly to the dev outputs: mean +1.061 (> 1.0) but CI lower -5.625 and t p 0.390 -> neither
+  SIGNAL nor WEAK -> NONE. LEAD condition 1 fails; no notification. B23 line closed per the pre-registered "what follows". The
+  up-move/down-move split is post-hoc and is not queued.
+- **Next run:** pre-register B24 (val only) and queue it.

@@ -33,3 +33,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 - NONE on dev: after a large 08:30 -> 08:45 NY move (abs > rolling p90 of 60 dates), following it 08:45 -> 10:45 NY averaged -0.42 pips
   (n 169, CI -5.278 to 2.488, t p 0.564); non-event control -0.465. No continuation at this horizon. See
   experiments/2026-11-09_E026_release_continuation.
+
+### 2026-11-09 R057: intraday continuation on overreaction days, 12:00 -> 16:30 NY (E028, dev) [EXP]
+- NONE on dev: on dates whose 17:00 NY open -> 12:00 NY move lay outside the rolling mean +/- 2 SD (60 dates), following it from
+  12:00 to 16:30 NY averaged +1.061 pips (n 74, CI -5.625 to 8.569, t p 0.390); non-event long control +1.108. See
+  experiments/2026-11-09_E028_overreaction_day.

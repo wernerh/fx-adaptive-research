@@ -219,3 +219,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   proxy. With n ~1,500 the CI is tight (+/-0.5 pip), so this is a clean null, not a power problem. Prefer hypotheses whose mechanism
   exists in the spot FX market itself.
 - **Action:** B22 closed (rejected_hypotheses.md). No `ready` item -> refill next.
+
+### 2026-11-09 R057: no real-time intraday continuation on overreaction days (E028)
+- **Context:** E028 (B23), real-time version of Caporale & Plastun (2019) overreaction-day continuation, dev only.
+- **Observation:** n 74, mean +1.061 pips, CI (-5.625, 8.569), t p 0.390 -> NONE; non-event long control +1.108; k 1.5 / 2.5
+  (descriptive) not positive. SPEC 4 net +0.507.
+- **Evidence label:** [EXP]
+- **Lesson:** rare-event conditioning (2-SD days, ~12 events a year) gives SE ~4 pips on dev; only effects of ~+8 pips per event can
+  pass the rule. Tail-day hypotheses need a much larger expected effect, or a longer sample, to be worth a trial. A subset split that
+  looks good (up-moves) mirrors the unconditional afternoon drift and is not a new hypothesis.
+- **Action:** B23 closed (rejected_hypotheses.md). B24 (val only) is the next `ready` item.
