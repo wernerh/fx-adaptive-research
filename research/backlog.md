@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **229** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **233**. Update after every experiment. (R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **229** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1). Val-only trials: **4** (E012: 2, E014: 1, E017: 1). Total registered trials: **233**. Update after every experiment. (R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -145,4 +145,54 @@ Trial count so far on dev: **229** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (8-10%/yr) can clear the CI bar. A NONE does not rule out a small effect.
 - **Contamination note:** no daily-horizon or multi-day trend statistic has been computed on dev (E001-E017 are intraday). Record this.
 - **Calendar label:** multi-day trend; not a time-of-day effect.
+- **Data:** price data in repo only.
+
+### B17: Weekend-gap reversal (signal test, dev) · `ready` (added 2026-11-09 R036 refill)
+- **Mechanism [PUB]:** in spot FX (8 major, 9 emerging currencies), "after a large price difference between Friday close and subsequent
+  Monday open, most markets are likely to reverse" over horizons in the following week, read as weekend overreaction; the abstract reports
+  the reversal strategy survives costs and interest rates out of sample (Dao, McGroarty & Urquhart 2016, JMFM 37-38, 158-167,
+  DOI 10.1016/j.mulfin.2016.11.001; entry in research/academic_studies.md, VERIFIED (abstract) 2026-11-09 R036). Data period, currency
+  list, gap threshold and horizons are UNVERIFIED (not on the pages opened); everything below is fixed here, not taken from the paper.
+- **Timestamps (fixed now, R030 lesson: nothing between 16:30 and 18:30 NY):** quote at T = open of the first bar in [T, T+5 min).
+  Friday close F = mid at 16:00 NY Friday. Monday open M = mid at 20:00 NY Sunday (first bar of trading-date Monday at or after the Tokyo
+  open in either DST state, 3 h after the roll so Sunday-open spreads have time to normalise). Exit X = mid at 16:00 NY on trading-date
+  Monday. Gap G = M - F (pips).
+- **Event:** a weekend is "large" if |G| is strictly above the 67th percentile of |G| over the previous 26 valid weekends (rolling, past
+  only; no event until 26 valid weekends exist). Weekends with a missing F, M or X bar are excluded and counted (holiday weekends included).
+- **Test:** signed return = -sign(G) x (X - M) mid, one value per large weekend. **Dev only, 1 trial.** Entry skipped (counted) if the
+  ask-bid spread at 20:00 NY Sunday is > 2.0 pips (SPEC 4).
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 4 events, 2000 draws, seed 0) 95% CI
+  lower > 0 AND one-sided t-test p < 0.05 (t, not hit rate: the effect is in the mean of a fat-tailed ~20 h return, as E013/E019).
+  WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. A SIGNAL earns a val confirmation (B17v) with the same rule.
+- **Descriptive (not in rule):** all weekends (no threshold); horizons to 16:00 NY Tuesday and Friday; by year; median spread at F, M
+  and X; net at bid/ask, SPEC 4 and costs x1.5; the 17:00-20:00 NY Sunday move (gap already reversing before entry?).
+- **Power note:** ~310 dev weekends, ~95 events after burn-in; ~20 h SD ~40-50 pips -> SE ~4-5 pips; only a mean of roughly 8-10 pips
+  clears the CI bar. A NONE does not rule out a small effect.
+- **Contamination note:** E009 scanned unconditional weekday x hour means on dev; no gap-conditional statistic has been computed on dev
+  (E019 used 16:00 quotes but only a 252-day sign). Dev is clean for this test; record in the methodology.
+- **Calendar label:** weekend calendar effect; entry 20:00 NY Sunday, exit 16:00 NY Monday (avoids the roll, the London 4pm fix at 11:00
+  NY is inside the hold).
+- **Data:** price data in repo only (R028 lesson). **Spread risk:** Sunday 20:00 NY spreads are unknown until the run; reported, and the
+  2.0-pip skip rule applies.
+
+### B18: Next-session reversal after a large daily move (signal test, dev) · `ready` (added 2026-11-09 R036 refill)
+- **Mechanism [PUB]:** "Significant intraday price-reversal patterns are observed in five of the seven currency futures contracts" after
+  large 1-day returns and opening gaps, CME 1988-2003, mostly reversals after the euro's introduction (Rentzler, Tandon & Yu 2006, JFM
+  26(11), 1089-1130, DOI 10.1002/fut.20226; entry in research/academic_studies.md, VERIFIED (abstract) 2026-11-09 R036). Threshold and
+  horizon UNVERIFIED; old futures data, may be arbitraged away (Neely, Weller & Ulrich 2009).
+- **Signal (fixed now):** R(D) = mid at 16:00 NY on trading date D - mid at 16:00 NY on the previous trading date (pips). D is "large"
+  if |R(D)| is strictly above the 80th percentile of |R| over the previous 60 valid trading dates (rolling, past only).
+- **Trade:** position -sign(R(D)) from 20:00 NY (start of the next trading date, after the roll and the Tokyo open) to 10:45 NY on that
+  next trading date (before the London 4pm fix at 11:00 NY). Signed return = -sign(R(D)) x mid return. D on a Friday is excluded and
+  counted (the weekend gap belongs to B17). Missing bars excluded and counted; entry skipped if spread at 20:00 NY > 2.0 pips.
+- **Test:** **dev only, 1 trial**, n ~ 0.2 x ~1,200 non-Friday dates ~ 240 events after burn-in.
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 10 events, 2000 draws, seed 0) 95% CI
+  lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL earns B18v (val).
+- **Descriptive (not in rule):** the 16:00-20:00 NY move (reversal before entry, not tradable at our rules); continuation reading
+  (negative mean) logged as exploratory only; by year; median spread at entry/exit; net at bid/ask, SPEC 4 and costs x1.5.
+- **Power note:** ~15 h SD ~35-40 pips -> SE ~2.5 pips; a mean of roughly 5 pips is needed to clear the CI bar.
+- **Contamination note:** E009 scanned unconditional hour-of-day means; E019 computed 16:00-16:00 daily returns conditional only on the
+  252-day sign. No return conditional on a large prior-day move has been computed on dev. Record in the methodology.
+- **Calendar label:** daily-move reversal; the hold contains the ECB fix (08:15 NY) and US 08:30 releases; report the share of events
+  whose hold contains an FOMC statement date (data/calendars/fomc_dates.csv).
 - **Data:** price data in repo only.

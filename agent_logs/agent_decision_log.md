@@ -286,3 +286,18 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** pre-registered `tsmom.decide_b16` rule applied exactly: mean -0.644 pips/day (not > 0), CI (-3.196, 1.978), t p 0.678 -> **NONE**.
   Cost check negative (SPEC 4 -0.674, x1.5 -0.689 per day). Not a LEAD; no notification.
 - **Next run:** no `ready` backlog items -> refill (literature/evidence pass, verified links only).
+
+### 2026-11-09 R036 (unattended)
+- **State:** last research-batch run 42540081769 (E019) already recorded (R035, 31cb2f8); no run queued or in progress. No `ready`
+  backlog items (B6/B12/B13 blocked, B7/B8 parked) -> protocol step 4 (refill). pytest passed (133) before any change.
+- **Literature pass:** opened the RePEc, Southampton and NTU records for Dao, McGroarty & Urquhart (2016, JMFM, weekend overreaction in
+  spot FX) and the RePEc and Montclair records for Rentzler, Tandon & Yu (2006, JFM, intraday reversals in currency futures). Thresholds
+  and horizons of both papers are not in the abstracts: marked UNVERIFIED; all B17/B18 parameters fixed here before any data.
+  Bush & Stephens (2016, JBEF, Monday effect in EUR/USD) opened but its abstract has no testable definition: not used.
+  centaur.reading.ac.uk returned a bot-protection page: not circumvented.
+- **Selection criteria (R028/R030/R035 lessons):** repo price data only; conditional, not an unconditional time-of-day window; no fixed
+  timestamp between 16:30 and 18:30 NY; event-based tests with a power note stating the mean needed to clear the CI.
+- **Added:** B17 weekend-gap reversal (dev, 1 trial) and B18 next-session reversal after a large daily move (dev, 1 trial), both with a
+  rolling past-only percentile threshold. Ranked B17 above B18: spot-FX source with a reported out-of-sample result vs 1988-2003 futures.
+  0 trials used (dev 229, total 233).
+- **Next run:** pre-register B17 as E020.

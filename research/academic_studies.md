@@ -152,6 +152,20 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Caveats:** lookback and holding period of the main strategy not read (abstract only).
 - **Status:** VERIFIED (abstract)
 
+### Dao, McGroarty & Urquhart (2016): A calendar effect: weekend overreaction (and subsequent reversal) in spot FX rates
+- **Venue:** Journal of Multinational Financial Management 37-38, 158-167. DOI [10.1016/j.mulfin.2016.11.001](https://doi.org/10.1016/j.mulfin.2016.11.001). [RePEc record](https://econpapers.repec.org/RePEc:eee:mulfin:v:37-38:y:2016:i::p:158-167), [Southampton record](https://eprints.soton.ac.uk/402301), [NTU record](https://irep.ntu.ac.uk/id/eprint/35555)
+- **Finding (abstract, opened 2026-11-09 R036):** in spot FX for 8 major and 9 emerging currencies, "after a large price difference between Friday close and subsequent Monday open, most markets are likely to reverse" over multiple horizons in the following week; a reversal strategy is reported robust to transaction costs and interest rates and profitable out of sample.
+- **Relevance:** **Medium.** Basis for B17 (weekend-gap reversal on EUR/USD). A spot-FX, price-data-only test.
+- **Caveats:** abstract only. Data period, currency list, the "large" gap threshold and the holding horizons were not on the pages opened (UNVERIFIED); the post-print PDF was not read. Reading record (centaur.reading.ac.uk/79172) returned a bot-protection page.
+- **Status:** VERIFIED (abstract)
+
+### Rentzler, Tandon & Yu (2006): Intraday price-reversal patterns in the currency futures market: the impact of the introduction of GLOBEX and the euro
+- **Venue:** Journal of Futures Markets 26(11), 1089-1130. DOI [10.1002/fut.20226](https://doi.org/10.1002/fut.20226). [RePEc record](https://ideas.repec.org/a/wly/jfutmk/v26y2006i11p1089-1130.html), [Montclair record](https://researchwith.montclair.edu/en/publications/intraday-price-reversal-patterns-in-the-currency-futures-market-t/)
+- **Finding (abstract, opened 2026-11-09 R036):** in seven CME currency futures, 1988-2003, "Significant intraday price-reversal patterns are observed in five of the seven currency futures contracts" after large 1-day returns and opening gaps; GLOBEX reduced pricing errors; after the euro's introduction patterns (mostly reversals) were significant in most contracts.
+- **Relevance:** **Low to medium.** Basis for B18 (next-session reversal after a large daily move on spot EUR/USD). Old futures data; the effect may have been arbitraged away (Neely, Weller & Ulrich 2009).
+- **Caveats:** abstract only; "large" threshold and intraday horizon not on the pages opened (UNVERIFIED).
+- **Status:** VERIFIED (abstract)
+
 ---
 
 ## Open research questions raised by the literature
