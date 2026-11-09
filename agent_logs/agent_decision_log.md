@@ -309,3 +309,11 @@ Why each run chose what it did, and any judgement calls.
   backlog draft unchanged; implementation choices fixed now, before data: weekends indexed by calendar Monday, numpy linear
   percentile, spread-skipped events kept in the |G| history, missing-bar exclusion order F, M, X.
 - **Next run:** collect the research-batch outputs for E020 and apply `decide_b17`.
+
+### 2026-11-09 R038 (unattended)
+- **State:** research-batch run 42556248995 (E020) finished successfully; outputs committed in 7e24c07 and not yet recorded -> protocol step 1 (collect).
+  pytest passed (143).
+- **Decision:** pre-registered `weekend_gap.decide_b17` rule applied exactly: mean -1.574 pips (not > 0), CI (-12.699, 7.03), t p 0.6267 -> **NONE**.
+  Cost check negative (SPEC 4 -2.108, x1.5 -2.374 per event). Not a LEAD; no notification. The descriptive gap-extension reading is
+  post-hoc; not added to the backlog as a dev re-test.
+- **Next run:** pre-register B18 (next-session reversal after a large daily move, dev) as E021.

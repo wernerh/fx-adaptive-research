@@ -144,3 +144,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   bar; the CI half-width (~2.6 pips/day) was close to the pre-registered power note. Daily-horizon tests on one pair need either a large
   expected effect or a longer sample than dev offers.
 - **Action:** B16 closed. Backlog has no `ready` items -> next run refills.
+
+### 2026-11-09 R038: no weekend-gap reversal in 2015-2020 EUR/USD (E020)
+- **Context:** E020 (B17) dev, fade weekends with |Fri 16:00 -> Sun 20:00 NY gap| > rolling p67 of 26 weekends, exit Mon 16:00 NY.
+- **Observation:** n 90, mean -1.574 pips, median -7.425, hit 0.378, CI (-12.699, 7.03), t p 0.627. Descriptive: Sun 17:00-20:00 NY
+  move against the gap -6.41 (CI excludes 0), Tue exit -12.743: large gaps tended to extend, not reverse. SPEC 4 net -2.108.
+- **Evidence label:** [EXP]
+- **Lesson:** a spot-FX weekend-overreaction result from a multi-currency study did not transfer to modern EUR/USD; with ~90 events per
+  dev block, weekend-conditioned tests can only detect effects of ~10 pips. The extension reading is post-hoc and not evidence.
+- **Action:** B17 closed. Next ready item B18 (next-session reversal after a large daily move, dev).
