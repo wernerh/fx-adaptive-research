@@ -32,3 +32,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 ### 2026-11-09 R045: val confirmation of the pre-ECB-fix window after high-range days (E023, val) [EXP]
 - NONE on val: n 204, +1.197 pips, CI (-3.144, 5.919), t p 0.304; normal val dates +1.15. Supersedes the R043 entry above as the
   current reading: E022's dev SIGNAL is not confirmed and the line is closed. See experiments/2026-11-09_E023_vol_state_ecb_fix_val.
+
+### 2026-11-09 R047: post-London-fix window 11:05-16:00 NY after high-range days (E024, dev) [EXP]
+- SIGNAL on dev: long EUR/USD 11:05 -> 16:00 NY on dates after a prior-date range > rolling p67, n 472, +2.983 pips, CI (0.566, 4.847),
+  t p 0.0053; normal-date control +0.901 (CI incl 0); all dates +1.562. Not confirmed; val confirmation B20v pending. See
+  experiments/2026-11-09_E024_vol_state_london_fix.

@@ -181,3 +181,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Lesson:** a dev SIGNAL with CI lower bound near 0 after ~236 trials was chance-sized, as cautioned in R043. The val step did its
   job. Any residual European-morning USD-up drift is ~1 pip, below costs-robust size and already seen on both dev and val.
 - **Action:** B19 line closed (E022 + E023 in rejected_hypotheses.md). Next: B20 (dev).
+
+### 2026-11-09 R047: post-London-fix long on high-vol dates gives a dev SIGNAL (E024)
+- **Context:** E024 (B20) dev, long EUR/USD 11:05 -> 16:00 NY on dates whose prior trading-date mid range > rolling p67 of 60 valid dates.
+- **Observation:** n 472, mean +2.983 pips, hit 0.534, CI (0.566, 4.847), t p 0.0053 -> SIGNAL. Control normal dates +0.901 (CI incl 0),
+  all dates +1.562 (CI excludes 0). Excluding 12 FOMC days +3.143. 2018-2019 negative. SPEC 4 net +2.515, x1.5 +2.281.
+- **Evidence label:** [EXP]
+- **Lesson:** second dev SIGNAL from the same vol-state condition (after E022, which failed val in E023). Clearer than E022, but the
+  conditioning is again not shown to add to an unconditional drift, and two of six years are negative. Val decides.
+- **Action:** B20 done; B20v (val confirmation, rule unchanged) added as the top `ready` item.

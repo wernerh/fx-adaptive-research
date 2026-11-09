@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **232** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1). Val-only trials: **5** (E012: 2, E014: 1, E017: 1, E023: 1). Total registered trials: **237**. Update after every experiment. (R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **233** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1). Val-only trials: **5** (E012: 2, E014: 1, E017: 1, E023: 1). Total registered trials: **238**. Update after every experiment. (R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -240,7 +240,7 @@ Trial count so far on dev: **232** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   return has been computed on val. Record in the methodology.
 - **Data:** price data in repo only.
 
-### B20: Post-London-fix EUR appreciation on high-volatility dates (signal test, dev) → E024 · `running` (2026-11-09 R046: pre-registered as E024, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-09 R041 refill)
+### B20: Post-London-fix EUR appreciation on high-volatility dates (signal test, dev) → E024 · `done` (2026-11-09 R047: **SIGNAL on dev**, +2.983 pips per event signed (n 472), CI (0.566, 4.847), t p 0.0053; SPEC 4 net +2.515, x1.5 +2.281; earns B20v. R046: pre-registered as E024, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-09 R041 refill)
 - **Mechanism [PUB]:** same source family as B19 (USD depreciates after the fixes; EUR "strongly increase[s] in value against the
   U.S. dollar between 8:00 a.m. and 5:00 p.m.", Krohn-Mueller-Whelan AEA 2019 draft, opened 2026-11-09 R041). Vol-state amplification
   and the 11:00 a.m.-5:00 p.m. ET window: **UNVERIFIED** (model summary only).
@@ -259,6 +259,25 @@ Trial count so far on dev: **232** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Contamination note:** E009 (unconditional hours) and E007 (1 h post-fix) on dev; no vol-conditional 11:05-16:00 NY return computed.
 - **Independence from B19:** both use the same condition; if both are run they are 2 separate trials and count separately. Run B19
   first; B20 does not depend on B19's result (no re-ranking after B19 unless logged with a reason before B20 is pre-registered).
+- **Data:** price data in repo only.
+
+### B20v: Post-London-fix EUR appreciation on high-volatility dates, val confirmation (signal test, val only) · `ready` (Added 2026-11-09 R047 after E024 dev SIGNAL; E024 methodology fixed "SIGNAL -> queue val confirmation B20v" before data)
+- **Origin:** E024 (B20) dev SIGNAL: n 472, mean +2.983 pips, CI (0.566, 4.847), t p 0.0053.
+- **Test:** identical to E024 (`vol_state_fix` / `vol_state_london`: prior trading-date mid range > p67 of the 60 valid dates before it,
+  past only, 90% coverage, 60-date burn-in; long 11:05 -> 16:00 NY on D; quote = open of first bar in [T, T+5 min); exclusions
+  missing_entry, missing_exit, entry spread > 2.0 pips) on the **val block only** (2021-01-21..2023-06-30), handled exactly as E023:
+  bars at or after 2023-07-01 00:00 UTC dropped first (OOS never read), then non-val bars, before any computation; rolling history and
+  burn-in from val dates only. 1 val trial. ~640 val dates, ~200 events expected after burn-in.
+- **Decision rule (unchanged from E024):** SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 10 events, 2000 draws,
+  seed 0) 95% CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. "Val pass" = SIGNAL.
+  LEAD (AUTONOMOUS_PROTOCOL) additionally needs val mean net > 0 at SPEC 4 and at costs x1.5 (`lead_cost_gate` as in E023), and the
+  result excluding FOMC statement days stated.
+- **Descriptive (not in rule):** as E024 (control normal dates, all dates, FOMC days and excl FOMC, by year, by weekday, spreads, net at
+  bid/ask, SPEC 4, x1.5).
+- **Power note:** ~200 events x SD ~25 pips -> SE ~1.8 pips; a val mean near the dev +3.0 could give WEAK, not SIGNAL. Stated now,
+  before data; the rule is not loosened.
+- **Contamination note:** E017 computed the unconditional long 12:00-17:00 NY leg on val (WEAK). No vol-conditional 11:05-16:00 NY
+  return has been computed on val. Record in the methodology.
 - **Data:** price data in repo only.
 
 ### Refill note R041 (not an item)

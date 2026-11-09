@@ -403,3 +403,16 @@ Why each run chose what it did, and any judgement calls.
   (scheduled, non-cancelled) reported descriptively, not in the rule.
 - **Context stated before data:** same condition failed val in E023; prior expectation low. SE ~1.1-1.3 pips.
 - **Next run:** collect the research-batch outputs for E024 and apply `decide_b20`.
+
+### 2026-11-09 R047 (unattended)
+- **State:** research-batch run 42617055931 (E024) finished successfully; outputs committed in a1bfd0d by github-actions[bot] and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest passed (173) before recording. Local stale `main` (diverged,
+  pre-rewrite hashes) reset to origin/main again; nothing pushed from it.
+- **Decision:** pre-registered `vol_state_london.decide_b20` applied exactly: mean +2.983 pips (> 1.0), CI (0.566, 4.847) lower > 0,
+  one-sided t p 0.0053 -> **SIGNAL on dev**. Cost check positive (SPEC 4 +2.515, x1.5 +2.281). Not a LEAD (no val confirmation yet);
+  no notification.
+- **Backlog:** added B20v (val confirmation, identical rule, val only, 1 trial) as the only `ready` item, as fixed in E024's methodology
+  before data ("SIGNAL -> queue val confirmation B20v").
+- **Cautions logged (no new numbers):** all-dates result also positive, normal-date control CI includes 0, so the conditioning is not
+  shown to matter; 2018-2019 negative; E017 saw an unconditional related window on val.
+- **Next run:** pre-register B20v as E025 (val only) and queue it.
