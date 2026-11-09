@@ -1,0 +1,38 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E019 DEV time-series momentum, lookback 252 trading dates, 16:00 NY daily hold (pre-registered, 1 trial):
+n                                  1292
+mean_pips                        -0.644
+median_pips                       0.625
+sd_pips                          50.069
+hit_rate                         0.5031
+t_stat                           -0.462
+t_p_one_sided                     0.678
+mean_ci95_block_boot    (-3.196, 1.978)
+decision                           NONE
+trading dates: 1562 test days: 1292 excluded: {'missing_now': 6, 'missing_past': 5, 'missing_next': 6, 'no_next': 1}
+
+Descriptive: {'long_days': {'n': 566, 'mean_signed_pips': 0.475}, 'short_days': {'n': 726, 'mean_signed_pips': -1.516}, 'flat_days': 0, 'buy_and_hold_mean_pips_per_day': 1.06}
+
+By year (descriptive):
+         n    mean    hit  long_share
+year                                
+2015    7  14.407  0.714       0.000
+2016  258  -4.497  0.457       0.547
+2017  258   0.100  0.523       0.570
+2018  257  -1.523  0.494       0.553
+2019  257   0.863  0.510       0.000
+2020  255   1.456  0.525       0.533
+
+DEV cost check (descriptive; swap/carry NOT included):
+n_days                                1292.000
+n_round_trips                           77.000
+n_sign_flips                            65.000
+mean_days_per_round_trip                16.780
+mean_signed_mid_pips_per_day            -0.644
+mean_net_bidask_pips_per_day            -0.662
+mean_net_spec4_pips_per_day             -0.674
+mean_net_costs_x1_5_pips_per_day        -0.689
+mean_net_spec4_pips_per_round_trip     -11.306
+median_entry_spread_pips                 0.200
+E019 decision: NONE

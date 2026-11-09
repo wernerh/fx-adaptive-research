@@ -1,0 +1,99 @@
+{
+  "result": {
+    "n": 1292,
+    "mean_pips": -0.644,
+    "median_pips": 0.625,
+    "sd_pips": 50.069,
+    "hit_rate": 0.5031,
+    "t_stat": -0.462,
+    "t_p_one_sided": 0.678,
+    "mean_ci95_block_boot": [
+      -3.196,
+      1.978
+    ],
+    "decision": "NONE"
+  },
+  "n_trading_dates": 1562,
+  "n_test_days": 1292,
+  "skips": {
+    "missing_now": 6,
+    "missing_past": 5,
+    "missing_next": 6,
+    "no_next": 1
+  },
+  "descriptive": {
+    "long_days": {
+      "n": 566,
+      "mean_signed_pips": 0.475
+    },
+    "short_days": {
+      "n": 726,
+      "mean_signed_pips": -1.516
+    },
+    "flat_days": 0,
+    "buy_and_hold_mean_pips_per_day": 1.06
+  },
+  "by_year": [
+    {
+      "year": 2015,
+      "n": 7,
+      "mean": 14.407,
+      "hit": 0.714,
+      "long_share": 0.0
+    },
+    {
+      "year": 2016,
+      "n": 258,
+      "mean": -4.497,
+      "hit": 0.457,
+      "long_share": 0.547
+    },
+    {
+      "year": 2017,
+      "n": 258,
+      "mean": 0.1,
+      "hit": 0.523,
+      "long_share": 0.57
+    },
+    {
+      "year": 2018,
+      "n": 257,
+      "mean": -1.523,
+      "hit": 0.494,
+      "long_share": 0.553
+    },
+    {
+      "year": 2019,
+      "n": 257,
+      "mean": 0.863,
+      "hit": 0.51,
+      "long_share": 0.0
+    },
+    {
+      "year": 2020,
+      "n": 255,
+      "mean": 1.456,
+      "hit": 0.525,
+      "long_share": 0.533
+    }
+  ],
+  "cost_check": {
+    "n_days": 1292,
+    "n_round_trips": 77,
+    "n_sign_flips": 65,
+    "mean_days_per_round_trip": 16.78,
+    "mean_signed_mid_pips_per_day": -0.644,
+    "mean_net_bidask_pips_per_day": -0.662,
+    "mean_net_spec4_pips_per_day": -0.674,
+    "mean_net_costs_x1_5_pips_per_day": -0.689,
+    "mean_net_spec4_pips_per_round_trip": -11.306,
+    "median_entry_spread_pips": 0.2
+  },
+  "first_test_date": "2015-12-21",
+  "last_test_date": "2020-12-30",
+  "n_trials": 1,
+  "blocks": [
+    "dev"
+  ],
+  "lookback": 252
+}
