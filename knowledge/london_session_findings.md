@@ -28,3 +28,7 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 - SIGNAL on dev (marginal): short EUR/USD 02:00 -> 08:15 NY on dates after a prior-date range > rolling p67, n 473, +3.646 pips,
   CI (0.011, 7.751), t p 0.0133; normal-date control +1.731 (CI incl 0). Not confirmed; val confirmation B19v pending. See
   experiments/2026-11-09_E022_vol_state_ecb_fix.
+
+### 2026-11-09 R045: val confirmation of the pre-ECB-fix window after high-range days (E023, val) [EXP]
+- NONE on val: n 204, +1.197 pips, CI (-3.144, 5.919), t p 0.304; normal val dates +1.15. Supersedes the R043 entry above as the
+  current reading: E022's dev SIGNAL is not confirmed and the line is closed. See experiments/2026-11-09_E023_vol_state_ecb_fix_val.

@@ -172,3 +172,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Lesson:** first dev SIGNAL after a long run of NONE/WEAK, but marginal (CI lower 0.011) after ~236 trials; the vol-state
   conditioning is not shown to add to an unconditional European-morning USD-up drift. Treat as a hypothesis for val, not a finding.
 - **Action:** B19 done; B19v (val confirmation, rule unchanged) queued ahead of B20.
+
+### 2026-11-09 R045: the marginal pre-ECB-fix dev SIGNAL does not confirm on val (E023)
+- **Context:** E023 (B19v), val confirmation of E022 with the rule unchanged and a val-only burn-in.
+- **Observation:** n 204, mean +1.197 pips, median -2.875, hit 0.471, CI (-3.144, 5.919), t p 0.304 -> NONE. Normal val dates +1.15,
+  all val dates +1.167: the high-vol conditioning adds nothing. Dev weekday pattern did not repeat.
+- **Evidence label:** [EXP]
+- **Lesson:** a dev SIGNAL with CI lower bound near 0 after ~236 trials was chance-sized, as cautioned in R043. The val step did its
+  job. Any residual European-morning USD-up drift is ~1 pip, below costs-robust size and already seen on both dev and val.
+- **Action:** B19 line closed (E022 + E023 in rejected_hypotheses.md). Next: B20 (dev).

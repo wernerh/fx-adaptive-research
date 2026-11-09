@@ -385,3 +385,10 @@ Why each run chose what it did, and any judgement calls.
   net > 0).
 - **Expectation stated before data:** with ~190 val events the SE is ~2.2-2.6 pips; a val mean near dev's +3.6 would likely be WEAK.
 - **Next run:** collect the research-batch outputs for E023 and apply `decide_b19`.
+
+### 2026-11-09 R045 (unattended)
+- **State:** research-batch run 42600685892 (E023) completed success; outputs committed by github-actions[bot] (4ab24c6) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest passed (166) before recording.
+- **Decision:** `decide_b19` applied exactly to the val outputs: mean +1.197 > 1.0 but CI lower -3.144 and t p 0.304 -> NONE. LEAD
+  condition 2 fails; no notification. B19 line closed per the pre-registered "what follows".
+- **Next run:** B20 is the top `ready` item -> pre-register and queue it (dev only).
