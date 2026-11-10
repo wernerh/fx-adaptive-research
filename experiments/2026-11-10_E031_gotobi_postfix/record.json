@@ -1,0 +1,20 @@
+{
+  "experiment_id": "E031",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "+(mid 10:55 - mid 09:55 Asia/Tokyo) > 1 pip per event on gotobi Tokyo dates (5/10/15/20/25/30 or month-end, weekend days moved to the preceding Friday) (USD depreciation after the Tokyo fix on gotobi dates, B26)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": "E011",
+  "variable_changed": "restricting the E011 post-fix window (long 09:55 -> 10:55 Tokyo) to gotobi dates",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 20 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE; < 40 events -> NONE. SIGNAL -> val confirmation B26v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": null,
+  "command": "python scripts/run_e031_gotobi_postfix.py | tee backtests/validation_reports/E031_results.txt",
+  "preregistered_in": "R063"
+}

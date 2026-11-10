@@ -564,3 +564,13 @@ Why each run chose what it did, and any judgement calls.
 - **Post-hoc note:** month-end gotobi subset (n 72, +2.639) is descriptive only; not queued (would be a dev re-test of a subset seen
   after the result, against CLAUDE.md rule 6/7 spirit). No backlog item added for it.
 - **Next run:** B26 is the top `ready` item: pre-register as E031 (dev, 1 trial) with the backlog rule unchanged.
+
+### 2026-11-10 R063 (unattended)
+- **State:** last research-batch run 42749648254 (E030) completed and recorded in R062; no run queued or in progress -> protocol step 3
+  (next experiment). Top `ready` item: B26. pytest passed (235) before any change. Local `main` was again stale/divergent; reset to
+  origin/main (old history on local branch `stale-local-main`, not pushed).
+- **Choice:** pre-register B26 as E031 (dev only, 1 trial), parent E011 (post-fix window), with every parameter and the decision rule
+  exactly as drafted in the backlog (R060) and E030's implementation details reused unchanged (universe, quote rule, exclusion order,
+  >= 55-of-60 coverage on the post-fix hour, spread cap at the 09:55 entry, block 20, < 40 events -> NONE). The 08:55 quote is used
+  only for the descriptive pre-fix-sign split (exploratory, fixed now) and never excludes an event. Written before any data.
+- **Next run:** collect the E031 batch outputs and apply `decide_b26`; SIGNAL -> B26v (val), else B26 closed and backlog refill.
