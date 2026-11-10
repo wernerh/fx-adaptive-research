@@ -659,3 +659,19 @@ Why each run chose what it did, and any judgement calls.
   No lead. Trials: dev 240, val 8, total 248.
 - **Next run:** no `ready` item remains -> backlog refill (lesson R070: prefer intraday windows or mechanisms with a stated effect size
   that clears the power bar).
+
+### 2026-11-10 R071 (unattended)
+- **State:** last research-batch run 42808245508 completed and recorded (R070); no run queued or in progress; no `ready` backlog item
+  -> protocol step 4 (refill). pytest passed (261).
+- **Evidence pass:** Melvin & Prins (2015) abstract opened on IDEAS (DOI 10.1016/j.finmar.2014.11.001); Marsh-Panagiotou-Payne (2017)
+  WMR fix WP opened (first ~40% verbatim). Melvin-Prins slides and full text not openable: window, signal and EUR magnitude UNVERIFIED.
+  Checked dukascopy-node 1.51.1 instrument list: `eusidxeur` (from 2014-06) and `usa500idxusd` exist, so the signal is buildable on the
+  runner.
+- **Added:** B30 (`ready`): month-end pre-fix equity-hedging flow, -sign(EU minus US equity MTD return to 16:00 London D-1), two windows
+  (15:00 -> 16:00 London on D; 16:00 London D-1 -> 16:00 London D), dev only, 2 trials, p < 0.025 each, data gate first. B31 (`blocked`)
+  val confirmation, earned only by a B30 SIGNAL.
+- **Why this despite low power:** first mechanism in the queue that uses information outside EUR/USD prices (equity-driven hedge flow),
+  and the fix is a known flow concentration point. Known weaknesses recorded in the item: ~72 dev events, no verified effect size
+  (lesson R070), val ~29 events (lesson E014). Not added: Hau-Rey rebalancing (contemporaneous only), Marsh-Panagiotou-Payne
+  one-minute post-fix reversal (below tradable horizon).
+- **Next run:** pre-register B30 (hypothesis, methodology, record.json, registry row), add the index download to the workflow, then queue.

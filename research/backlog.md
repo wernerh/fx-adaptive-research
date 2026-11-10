@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **240** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1, E033: 2). Val-only trials: **8** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1). Total registered trials: **248**. Update after every experiment. (R070: E033 ran, dev +2. R069: E033/B28+B29 pre-registered, 2 dev trials counted when it runs. R068: refill added B28, B29: 0 trials until pre-registered. R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **240** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1, E033: 2). Val-only trials: **8** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1). Total registered trials: **248**. Update after every experiment. (R071: refill added B30 (2 dev trials when it runs), B31 (blocked): 0 trials. R070: E033 ran, dev +2. R069: E033/B28+B29 pre-registered, 2 dev trials counted when it runs. R068: refill added B28, B29: 0 trials until pre-registered. R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -547,3 +547,50 @@ Trial count so far on dev: **240** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Descriptive (not in rule):** as B28, including the E021 overlap (large-move days are expected to be high-UV; E021's reversal reading
   was -2.55 signed, i.e. slight continuation, published: record that this item's prior is partly contaminated by E021).
 - **Data:** as B28.
+
+### Refill note R071 (not an item)
+- Sources opened R071: Melvin & Prins (2015) IDEAS/RePEc abstract page (https://ideas.repec.org/a/eee/finmar/v22y2015icp50-72.html,
+  DOI 10.1016/j.finmar.2014.11.001); Marsh, Panagiotou & Payne (2017, "The WMR Fix and its Impact on Currency Markets", preliminary,
+  Norges Bank PDF https://www.norges-bank.no/contentassets/619c8b75e1ed4ba691e8ad6a006855e6/39-panagiotou---the-wmr-fix-and-its-impact-on-currency-markets-.pdf,
+  first ~40% read verbatim). The Melvin-Prins slides (ECB 2013 FX workshop) and the full paper could not be opened: the paper's exact
+  signal, window, index choice and EUR/USD magnitude are **UNVERIFIED**.
+- Data check R071: dukascopy-node 1.51.1 (the version the workflow installs) lists `eusidxeur` (EU Stocks 50, minute candles from
+  2014-06-01) and `usa500idxusd`; both can be downloaded on the runner. No other index data is in the repo.
+- Hau & Rey (2006) portfolio-rebalancing / uncovered equity parity: contemporaneous equity-FX correlation, no stated next-day
+  predictability; not added (search result only, abstract not opened).
+- Marsh-Panagiotou-Payne: GBP/AUD/NZD only (2010-2013), post-fix one-minute reversal below the tradable horizon; not added.
+
+### B30: Month-end pre-fix equity-hedging flow, Melvin-Prins (signal test, dev) · `ready` (added 2026-11-10 R071 refill)
+- **Mechanism [PUB]:** Melvin & Prins (2015, JFM 22, 50-72; abstract opened R071), verbatim: "equity market appreciation over the month
+  can be used to predict currency depreciation before the end-of-month fix" (hedgers of foreign equity holdings rebalance FX hedges at
+  the month-end 4pm London fix; direction identified by past equity returns). Marsh-Panagiotou-Payne (2017) describe the result as a
+  country's equity outperformance "relative to other markets" giving "a statistically significant and negative effect" on its currency
+  before the last fix (secondary description). Exact signal construction and EUR/USD magnitude: **UNVERIFIED**.
+- **Signal (fixed now):** D = last valid trading date of each calendar month (E007 definition). S(D) = log return of EUS.IDX/EUR mid
+  minus log return of USA500.IDX/USD mid, each from 16:00 London on the last trading date of the previous month to 16:00 London on D-1
+  (past only; quote = open of first bar in [T, T+5 min), E011 rule). Position = -sign(S): EU equities outperformed -> short EUR/USD;
+  US outperformed -> long EUR/USD. S = 0 skipped.
+- **Trades (2 pre-registered windows, one experiment, 2 trials):** (a) **B30-hour:** 15:00 -> 16:00 London on D (pre-fix hour, same
+  window as E007 `pre_month_end`); (b) **B30-day:** 16:00 London D-1 -> 16:00 London D. Entry skipped (counted) if spread > 2.0 pips;
+  missing bars excluded and counted.
+- **Data gate (checked first on the runner, 0 trials if it fails):** if either index series is missing at a required quote time for
+  > 5% of dev month-ends, stop as BLOCKED. Index data downloaded on GitHub Actions only (dukascopy-node `eusidxeur`, `usa500idxusd`,
+  m1 bid+ask, 2014-12..2020-12).
+- **Test:** **dev only**, n ~ 72 month-ends. Decision rule (draft), per window: SIGNAL if mean signed return > 1.0 pip AND iid bootstrap
+  (block 1, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t-test p < 0.025 (Bonferroni for 2 trials). WEAK if mean > 0 and (CI
+  lower > 0 or p < 0.025); else NONE. < 50 events -> NONE (insufficient sample). SIGNAL earns B30v (val, own experiment).
+- **Power note:** E007 month-end pre-fix hour SD 19.7 pips -> SE ~2.3 at n 72, so a mean of ~5 pips is needed; the full day has a
+  larger SD (~50 pips, estimate to be reported). Val has only ~29 month-ends, so even a dev SIGNAL is unlikely to be confirmable on val
+  (lesson 2026-11-08 E014). The published effect size is unknown here (lesson R070 asks for a stated effect size): lower priority than
+  an item that has one, but it is the only item in the queue.
+- **Contamination note:** E007 published the unconditional dev month-end pre-fix hour (`pre_month_end`, short, -2.771 pips, i.e.
+  EUR/USD rose on average) and post-fix hour (B8, parked). Conditioning on the equity signal has never been computed; report the
+  unconditional mean beside the conditional one. B8 stays parked.
+- **Descriptive (not in rule):** |S| above vs below median; EU-only and US-only legs of S; quarter-ends vs other months; by year; 16:00
+  -> 17:00 London post-fix hour under the same position (reversal check, not a trial); spreads; net at bid/ask, SPEC 4, costs x1.5.
+- **Calendar label:** month-end London 4pm fix (WMR). The fix *is* the strategy (AUTONOMOUS_PROTOCOL lead criterion 4).
+- **Data:** EUR/USD in repo + two Dukascopy index CFDs (new download step in the workflow; cache key must change).
+
+### B31: Month-end equity-hedging flow, val confirmation (signal test, val only) · `blocked` (added 2026-11-10 R071; earned only if B30 returns SIGNAL)
+- Same signal, the window(s) that returned SIGNAL on dev, val only (~29 month-ends, < 20 events -> NONE), rule unchanged. Power is low
+  by construction; a val NONE after a dev SIGNAL closes the line (precedent E014).

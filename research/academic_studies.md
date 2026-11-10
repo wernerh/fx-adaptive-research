@@ -310,3 +310,19 @@ US session. That is unproven, which is exactly why E001 comes first.
 ### Not used this pass (opened 2026-11-10 R068)
 - Stauskas & Sucarrat (2025), J. Financial Econometrics 23(3) nbaf013 (mirror page opened): zero-return periodicity, no direction results.
 - Erdemlioglu, Laurent & Neely (2012), St. Louis Fed WP 2012-008A ([PDF](https://files.stlouisfed.org/files/htdocs/wp/2012/2012-008.pdf)): volatility periodicity survey, no return-direction results.
+
+### Melvin & Prins (2015): Equity hedging and exchange rates at the London 4p.m. fix
+- **Source:** Journal of Financial Markets 22, 50-72, DOI 10.1016/j.finmar.2014.11.001. Abstract opened 2026-11-10 R071 on IDEAS
+  (https://ideas.repec.org/a/eee/finmar/v22y2015icp50-72.html). Full text (ScienceDirect) and ECB 2013 workshop slides not opened.
+- **Finding (abstract, verbatim):** "equity market appreciation over the month can be used to predict currency depreciation before the
+  end-of-month fix, providing evidence that hedging activity plays a role in exchange rate determination."
+- **UNVERIFIED:** exact signal (indices, relative vs absolute), pre-fix window, currencies, EUR/USD magnitude.
+- **Relevance:** Medium. Basis for B30/B31 (month-end, ~12 events/yr: low power).
+
+### Marsh, Panagiotou & Payne (2017 preliminary WP): The WMR Fix and its Impact on Currency Markets
+- **Source:** Norges Bank PDF (https://www.norges-bank.no/contentassets/619c8b75e1ed4ba691e8ad6a006855e6/39-panagiotou---the-wmr-fix-and-its-impact-on-currency-markets-.pdf),
+  opened R071, first ~40% read verbatim.
+- **Finding:** GBP/USD, AUD/USD, NZD/USD, 2010-2013; inter-dealer order flow "completely uninformative for spot returns at the Fix
+  window"; small reversal in the one minute after the fix. Describes Melvin-Prins as a negative effect of relative equity outperformance
+  on the currency before the last fix of the month (secondary).
+- **Relevance:** Low for direct trading (no EUR/USD, one-minute horizon); supporting description for B30.
