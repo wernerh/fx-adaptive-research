@@ -1,0 +1,63 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E030 DEV short EUR/USD (8, 55) -> (9, 55) Asia/Tokyo on gotobi dates (pre-registered, 1 trial, block 20):
+n                                   458
+mean_pips                          0.18
+median_pips                         0.2
+sd_pips                           8.356
+hit_rate                         0.5153
+t_stat                            0.461
+t_p_one_sided                    0.3224
+mean_ci95_block_boot    (-0.552, 1.245)
+decision                           NONE
+Counts: {'weekday_dates': 1561, 'gotobi_dates': 462, 'gotobi_weekend_shifted': 123, 'gotobi_month_end': 72, 'missing_entry': 0, 'missing_exit': 0, 'low_coverage': 0, 'entry_skipped_spread': 4, 'events_tested': 458}
+
+Descriptive:
+  control_non_gotobi_same_trade : {'n': 1097, 'mean_pips': 0.411, 'median_pips': 0.7, 'sd_pips': 9.576, 'hit_rate': 0.5387, 't_stat': 1.421, 't_p_one_sided': 0.0779, 'mean_ci95_block_boot': (-0.133, 0.839)}
+  gotobi_month_end : {'n': 72, 'mean_pips': 2.639, 'median_pips': 2.05, 'sd_pips': 8.983, 'hit_rate': 0.5833, 't_stat': 2.493, 't_p_one_sided': 0.0075, 'mean_ci95_block_boot': (-0.264, 4.943)}
+  gotobi_not_month_end : {'n': 386, 'mean_pips': -0.278, 'median_pips': 0.05, 'sd_pips': 8.164, 'hit_rate': 0.5026, 't_stat': -0.67, 't_p_one_sided': 0.7484, 'mean_ci95_block_boot': (-0.987, 0.677)}
+  gotobi_weekend_shifted : {'n': 122, 'mean_pips': -0.449, 'median_pips': 0.275, 'sd_pips': 7.504, 'hit_rate': 0.541, 't_stat': -0.661, 't_p_one_sided': 0.7449, 'mean_ci95_block_boot': (-2.041, 0.875)}
+  gotobi_not_weekend_shifted : {'n': 336, 'mean_pips': 0.408, 'median_pips': 0.125, 'sd_pips': 8.644, 'hit_rate': 0.506, 't_stat': 0.866, 't_p_one_sided': 0.1935, 'mean_ci95_block_boot': (-0.413, 1.721)}
+  gotobi_last_half_hour_09_25_09_55 : {'n': 458, 'mean_pips': 0.088, 'median_pips': -0.075, 'sd_pips': 5.586, 'hit_rate': 0.4913, 't_stat': 0.337, 't_p_one_sided': 0.3681, 'mean_ci95_block_boot': (-0.387, 0.713)}
+  control_last_half_hour_09_25_09_55 : {'n': 1097, 'mean_pips': 0.502, 'median_pips': 0.55, 'sd_pips': 6.437, 'hit_rate': 0.546, 't_stat': 2.584, 't_p_one_sided': 0.0049, 'mean_ci95_block_boot': (0.132, 0.852)}
+  difference_gotobi_minus_control_mean_pips : -0.231
+  limitation : Japanese public holidays not in repo: not shifted, count not computed; gotobi rule is practitioner convention, UNVERIFIED as Ito & Yamada's; EUR/USD is the USD leg of a USD/JPY effect
+  subset_raw_means : {'month_end': (72, 2.639), 'weekend_shifted': (122, -0.449)}
+
+By year (descriptive):
+        n   mean    hit
+year                  
+2015  76  0.441  0.526
+2016  75  0.698  0.547
+2017  77 -0.451  0.506
+2018  77 -1.251  0.442
+2019  77 -0.284  0.532
+2020  76  1.968  0.539
+
+By weekday (descriptive):
+              n   mean    hit
+weekday                     
+Friday     189  0.438  0.571
+Monday      66  0.539  0.515
+Thursday    68 -0.520  0.456
+Tuesday     67 -0.019  0.433
+Wednesday   68  0.011  0.500
+
+DEV cost check, events (descriptive):
+n                           458.000
+mean_signed_mid_pips          0.180
+mean_net_bidask_pips         -0.153
+mean_net_spec4_pips          -0.353
+mean_net_costs_x1_5_pips     -0.619
+median_spread_entry_pips      0.400
+median_spread_exit_pips       0.200
+
+DEV cost check, non-gotobi control (descriptive):
+n                           1097.000
+mean_signed_mid_pips           0.411
+mean_net_bidask_pips           0.086
+mean_net_spec4_pips           -0.114
+mean_net_costs_x1_5_pips      -0.376
+median_spread_entry_pips       0.400
+median_spread_exit_pips        0.200
+E030 decision: NONE
