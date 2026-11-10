@@ -737,3 +737,15 @@ Why each run chose what it did, and any judgement calls.
 - **Result:** B32 NONE, B33 SIGNAL on dev. LEAD gate: condition 1 only (val confirmation not yet run) -> no LEAD, no notification.
 - **Next run:** pre-register B34 (B33 arm unchanged on val, own experiment, 1 val trial, p < 0.05, O20 burn-in from val dates only;
   check val contamination: E017/E032 used other windows).
+
+## 2026-11-10 R077 (unattended)
+- **State:** last research-batch run 42865880407 (E035) completed and recorded (R076); no run queued or in progress; B34 is the only
+  `ready` backlog item -> protocol step 3. pytest 284 passed before any change.
+- **Choice:** pre-register B34 as E036: E035 B33 arm unchanged on the val block only (O20 burn-in from val dates, bars >= 2023-07-01 UTC
+  dropped first), 1 val trial, rule = E035 rule with p < 0.05 (`decide_b34`), exactly as fixed in backlog B34 before E035 ran.
+- **Judgement calls fixed before data:** MIN_EVENTS 500 kept from E035 (val ~610 tested dates expected); known-calendar check =
+  results excluding FOMC statement days and month-end dates (descriptive, required in any LEAD write-up); B32 daily arm reported on val
+  as descriptive only, not a trial.
+- **Outcome handling (fixed now):** SIGNAL + SPEC 4 and x1.5 net > 0 -> LEAD (LEADS.md, notify, pause line, propose OOS command, no
+  OOS run); otherwise B33/B34 line closed, refill next.
+- **Next run:** collect E036 when the research-batch run finishes.

@@ -160,6 +160,24 @@ def decide_b32(res: dict) -> str:
 
 decide_b33 = decide_b32
 
+# E036 (backlog B34, pre-registered 2026-11-10 R077): val confirmation of the B33 arm, 1 val trial. Identical rule except p < 0.05.
+ALPHA_VAL = 0.05
+
+
+def decide_b34(res: dict) -> str:
+    """Pre-registered E036 rule (B33 arm on val): < 500 tested dates -> NONE. SIGNAL if mean > 1.0 pip AND block-20 bootstrap CI
+    lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE."""
+    if "mean_pips" not in res or res.get("n", 0) < MIN_EVENTS:
+        return "NONE"
+    m, p = res["mean_pips"], res["t_p_one_sided"]
+    lo = res["mean_ci95_block_boot"][0]
+    lo_pos = lo is not None and not np.isnan(lo) and lo > 0
+    if m > MIN_MEAN_PIPS and lo_pos and p < ALPHA_VAL:
+        return "SIGNAL"
+    if m > 0 and (lo_pos or p < ALPHA_VAL):
+        return "WEAK"
+    return "NONE"
+
 
 def counts(df: pd.DataFrame) -> dict:
     if df.empty:

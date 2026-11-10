@@ -125,3 +125,44 @@ def test_arm_events_costs():
     c = cost_summary(ev)
     assert c["n"] == 2 and c["mean_net_spec4_pips"] < c["mean_signed_mid_pips"]
     assert c["mean_net_costs_x1_5_pips"] < c["mean_net_spec4_pips"]
+
+
+# --- E036 (B34): val confirmation of the B33 arm, 1 trial, p < 0.05 ---------------------------------------------------------
+
+def test_b34_rule_constants_and_thresholds():
+    from fxresearch.overnight_reversal import ALPHA_VAL, decide_b34
+    assert ALPHA_VAL == 0.05 and ALPHA == 0.025      # E035 rule untouched
+    base = {"n": 600, "mean_pips": 2.0, "t_p_one_sided": 0.04, "mean_ci95_block_boot": (0.1, 4.0)}
+    assert decide_b34(base) == "SIGNAL"
+    assert decide_b32(base) == "WEAK"                 # p 0.04 fails the dev Bonferroni bar, passes the val bar
+    assert decide_b34({**base, "t_p_one_sided": 0.06, "mean_ci95_block_boot": (-0.1, 4.0)}) == "NONE"
+    assert decide_b34({**base, "mean_pips": 0.9}) == "WEAK"
+    assert decide_b34({**base, "n": 499}) == "NONE"
+    assert decide_b34({"n": 0, "note": "no events"}) == "NONE"
+
+
+def test_b34_random_walk_signal_rate():
+    from fxresearch.overnight_reversal import decide_b34
+    sig = 0
+    for seed in range(60):
+        r = np.random.default_rng(900 + seed)
+        n = 620
+        df = build_days(*_synthetic(list(r.normal(0, 15, n)), list(r.normal(0, 45, n))))
+        sig += decide_b34(evaluate_b32(df[df["b33_tested"]]["b33_signed_pips"])) == "SIGNAL"
+    assert sig / 60 <= 0.1
+
+
+def test_e036_val_restriction_burn_in_inside_val():
+    from fxresearch.splits import SplitPlan
+    from fxresearch.sessions import trading_date
+    from fxresearch.vol_state_fix import restrict_to_block
+    bars = synthetic_bars(date(2024, 1, 1), date(2024, 3, 31))
+    plan = SplitPlan(date(2024, 1, 31), date(2024, 3, 15), embargo_days=0)
+    cut = pd.Timestamp("2024-03-16", tz="UTC")
+    vb = restrict_to_block(bars, plan, "val", before_utc=cut)
+    assert vb.index.max() < cut
+    td = pd.Index(trading_date(vb.index))
+    assert (plan.assign(td).to_numpy() == "val").all()
+    df = frame_from_bars(vb)
+    assert min(df["date"]) > date(2024, 1, 31)
+    assert df["burn_in"].iloc[:SMOOTH_N].all()          # O20 history built from val dates only

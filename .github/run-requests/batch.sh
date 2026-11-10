@@ -1,9 +1,9 @@
 # Research batch queue. Edit and push this file to run the commands below on GitHub Actions
 # (workflow: .github/workflows/research-batch.yml). Run from repo root, data already ingested.
 # Only pre-registered experiments may be queued here. Never queue --block oos without a written dev/val conclusion.
-# Request: 2026-11-10 R075 E035 (B32 + B33) overnight -> intraday reversal: position -sign(r_on) (B32) or -sign(O20) (B33),
-# r_on = 17:05 NY (evening opening D) -> 07:00 NY, hold 07:00 -> 16:55 NY on D, DEV block only, 2 trials.
-# Pre-registered in experiments/2026-11-10_E035_overnight_reversal/. No val, no OOS.
+# Request: 2026-11-10 R077 E036 (B34) val confirmation of E035/B33: position -sign(O20), O20 = sum of the 20 previous val
+# overnight returns (17:05 -> 07:00 NY), hold 07:00 -> 16:55 NY, VAL block only, 1 trial, p < 0.05.
+# Pre-registered in experiments/2026-11-10_E036_overnight_reversal_val/. No OOS.
 set -euo pipefail
 mkdir -p backtests/validation_reports
-python scripts/run_e035_overnight_reversal.py | tee backtests/validation_reports/E035_results.txt
+python scripts/run_e036_overnight_reversal_val.py | tee backtests/validation_reports/E036_results.txt
