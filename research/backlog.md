@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **244** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1, E033: 2, E034: 2, E035: 2). Val-only trials: **9** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1, E036: 1). Total registered trials: **253**. Update after every experiment. (R078: E036 ran, val +1. R077: E036/B34 pre-registered, 1 val trial counted when it runs. R076: E035 ran, dev +2; B33 SIGNAL earns B34 (1 val trial when it runs). R075: E035/B32+B33 pre-registered, 2 dev trials counted when it runs. R074: refill added B32, B33 (2 dev trials when they run), B34 (blocked): 0 trials. R073: E034 ran, dev +2. R072: E034/B30 pre-registered, 2 dev trials counted when it runs. R071: refill added B30 (2 dev trials when it runs), B31 (blocked): 0 trials. R070: E033 ran, dev +2. R069: E033/B28+B29 pre-registered, 2 dev trials counted when it runs. R068: refill added B28, B29: 0 trials until pre-registered. R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **244** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1, E033: 2, E034: 2, E035: 2). Val-only trials: **9** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1, E036: 1). Total registered trials: **253**. Update after every experiment. (R079: refill added B35, B36 (2 dev trials when they run), B37 (blocked): 0 trials. R078: E036 ran, val +1. R077: E036/B34 pre-registered, 1 val trial counted when it runs. R076: E035 ran, dev +2; B33 SIGNAL earns B34 (1 val trial when it runs). R075: E035/B32+B33 pre-registered, 2 dev trials counted when it runs. R074: refill added B32, B33 (2 dev trials when they run), B34 (blocked): 0 trials. R073: E034 ran, dev +2. R072: E034/B30 pre-registered, 2 dev trials counted when it runs. R071: refill added B30 (2 dev trials when it runs), B31 (blocked): 0 trials. R070: E033 ran, dev +2. R069: E033/B28+B29 pre-registered, 2 dev trials counted when it runs. R068: refill added B28, B29: 0 trials until pre-registered. R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -646,3 +646,59 @@ Trial count so far on dev: **244** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Test if earned:** the arm(s) that returned SIGNAL, unchanged, on val only (2021-01-21 .. 2023-06-30, ~620 dates, B33 burn-in from
   val dates only), own pre-registration, 1 trial per arm, p < 0.05 (or < 0.025 if both arms). Val has ~620 dates: enough power for a
   ~3-pip effect.
+
+### Refill note R079 (not an item)
+- Sources opened R079 (abstract pages only, via web-fetch summary with short verbatim fragments): Hau & Rey (2006, RFS 19(1)
+  273-317; RePEc + NBER WP 9398 pages) and Camanho, Hau & Rey (2022, RFS 35(11) 5228-5274; RePEc + NBER WP 24320 pages). Full texts
+  not opened. Entries in research/academic_studies.md.
+- Search hits not opened and not used: Neely-Weller-Ulrich (2009) technical-rule decay is already in academic_studies.md and B16
+  (12-month TSMOM) was NONE; a canonical moving-average rule would mostly re-test B16. FX lead-lag papers (minute horizon) are below the
+  tradable horizon after SPEC 4 costs. Not added.
+- Why this line: every price-only EUR/USD timing idea in the literature passes so far has been NONE/WEAK or failed val (lesson R078).
+  B35/B36 use a second data source (index CFDs, already proven downloadable on the runner in E034) and a published mechanism with a
+  stated sign. Prior is weak: Hau-Rey is contemporaneous; the lag is our extension.
+
+### B35: Relative equity performance -> next-day EUR/USD, daily (signal test, dev) · `ready`
+- **Mechanism [PUB, contemporaneous only]:** Hau & Rey (2006, abstract opened R079): higher home equity returns relative to foreign
+  returns go with a home-currency depreciation (portfolio rebalancing under incomplete FX hedging), at daily, monthly and quarterly
+  frequencies. Camanho-Hau-Rey (2022): funds rebalance after excess foreign returns. **Our test is a lagged extension, not a
+  replication:** if rebalancing flows are spread over the following day, yesterday's relative equity return predicts EUR/USD today in
+  the same direction. Prior: weak; effect size not published (lesson R070).
+- **Signal (fixed now):** for valid dev trading date D, S1(D) = log return of EU Stocks 50 CFD mid (`eusidxeur`) minus log return of
+  US 500 CFD mid (`usa500idxusd`), each from 16:00 Europe/London on the previous valid trading date to 16:00 London on D (quote = mid of
+  bid/ask OPEN of the first bar in [16:00, 16:05) London, E011 rule; E034 index loader). Position = -sign(S1): US outperformed ->
+  long EUR/USD; EU outperformed -> short (same sign as B30). S1 = 0 skipped. **No holiday fallback** (daily signal): a missing index
+  quote at either end skips the date (counted `missing_index_quote`).
+- **Trade:** EUR/USD from 16:05 London on D (after the WMR fix window) to 16:00 London on the next valid trading date (weekends held;
+  Friday dates included). Quotes = open of first bar in [T, T+5 min). Entry skipped (counted) if the entry spread > 2.0 pips; missing
+  bars excluded and counted.
+- **Data gate (first, on the runner, 0 trials if it fails):** either index series empty, or `missing_index_quote` on > 10% of dev
+  dates -> BLOCKED. Index download on GitHub Actions only (`scripts/download_dukascopy_index.sh`, as E034).
+- **Test:** **dev only**, every valid date (n ~ 1,400). Decision rule (draft): SIGNAL if mean signed return > 1.0 pip AND moving-block
+  bootstrap (block 20 dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t-test p < 0.025 (Bonferroni for the 2 trials
+  B35+B36). WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE. < 500 dates -> NONE (insufficient sample). SIGNAL earns B37.
+- **Power note:** 16:05 -> 16:00 next-date EUR/USD SD likely ~50 pips (report it) -> SE ~1.4 pips at n 1,400; the p < 0.025 bar
+  binds near +2.7 pips.
+- **Contamination note:** E034 reported corr(S, move) only on 71 month-ends with a month-to-date signal; the daily lagged statistic has
+  never been computed. E019 (TSMOM) and E021 use EUR/USD's own past moves, not equity data.
+- **Descriptive (not in rule):** contemporaneous check: corr(S1(D), EUR/USD 16:00 D-1 -> 16:00 D) and its sign (Hau-Rey says
+  negative in our sign convention; if it is not, say so); |S1| terciles; EU-only and US-only legs; Mondays; by year; spreads; net at
+  bid/ask, SPEC 4, costs x1.5; results excluding FOMC statement days and month-ends.
+- **Calendar label:** entry just after the London 4pm fix; holds through 08:30 NY releases and the next fix. Not a fix strategy.
+- **Data:** EUR/USD in repo + two Dukascopy index CFDs (runner download, as E034).
+
+### B36: Smoothed relative equity performance, 20-date signal (signal test, dev) · `ready` (same experiment as B35)
+- **Mechanism:** as B35; rebalancing responds to accumulated excess returns (Camanho-Hau-Rey: fund-level rebalancing after excess
+  foreign returns; horizon UNVERIFIED). A 20-date window is our choice, fixed now.
+- **Signal (fixed now):** S20(D) = EU50 minus US500 log return from 16:00 London on the valid trading date 20 dates before D to 16:00
+  London on D (both index quotes required at both ends; missing -> date skipped, counted; the first 20 dev dates are burn-in, counted).
+  Position = -sign(S20). Same trade, gate, quote and skip rules as B35.
+- **Test and rule:** as B35 (block 20, p < 0.025, mean > 1.0 pip, CI lower > 0, < 500 dates -> NONE). SIGNAL earns B37.
+- **Caution (lesson R078):** E035/B33, also a 20-date smoothed sign held one day, was SIGNAL on dev and NONE on val. A B36 SIGNAL alone
+  means little; only B37 counts.
+- **Descriptive (not in rule):** S20 terciles; share of dates where B35 and B36 positions agree.
+
+### B37: Relative equity performance -> EUR/USD, val confirmation (signal test, val only) · `blocked` (earned only if B35 or B36 returns SIGNAL on dev)
+- The arm(s) that returned SIGNAL, unchanged, on val only (2021-01-21 .. 2023-06-30, ~620 dates; index data downloaded for val dates
+  only, S20 burn-in from val dates only), own pre-registration, 1 trial per arm, p < 0.05 (or < 0.025 if both arms). If neither arm
+  is SIGNAL, B37 closes unearned with 0 trials.

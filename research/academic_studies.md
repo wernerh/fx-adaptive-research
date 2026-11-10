@@ -347,3 +347,24 @@ US session. That is unproven, which is exactly why E001 comes first.
   the former is negative, with a t-statistic of -3.98 and an R2 of 7%"; smoothing is an EWMA of monthly returns (~10-year centre of
   mass). Cites Ranaldo (2009) and Jiang (2019) for clientele-driven diurnal currency patterns (not opened; UNVERIFIED).
 - **Relevance:** Low-medium (equities, slow signal). Clientele mechanism behind B33.
+
+### Hau & Rey (2006): Exchange Rates, Equity Prices, and Capital Flows
+- **Source:** Review of Financial Studies 19(1), 273-317, DOI 10.1093/rfs/hhj008. Abstract pages opened 2026-11-10 R079:
+  https://econpapers.repec.org/RePEc:oup:rfinst:v:19:y:2006:i:1:p:273-317 and NBER WP 9398 https://nber.org/papers/w9398
+  (abstract only; full text not opened).
+- **Finding (abstract, read via fetch summary with short verbatim fragments):** in an equilibrium with incomplete FX risk trading,
+  higher home equity returns relative to foreign returns go with a home-currency depreciation, and net equity inflows into the foreign
+  market go with a foreign-currency appreciation; predictions supported at "daily, monthly and quarterly frequencies" for 17 OECD
+  countries vs the US, strongest after 1990. These are **contemporaneous correlations**; the abstract mentions no lags or forecasting.
+  Any lagged (predictive) effect on EUR/USD is our extension: **UNVERIFIED**.
+- **Relevance:** Low-medium. Mechanism behind B35/B36 (portfolio-rebalancing flows that may be spread over days after relative
+  equity performance). Sign for EUR/USD: US equities outperform EU equities -> USD depreciates -> EUR/USD up (same sign as B30).
+
+### Camanho, Hau & Rey (2022): Global Portfolio Rebalancing and Exchange Rates
+- **Source:** Review of Financial Studies 35(11), 5228-5274, DOI 10.1093/rfs/hhac023; abstract pages opened 2026-11-10 R079:
+  https://econpapers.repec.org/RePEc:oup:rfinst:v:35:y:2022:i:11:p:5228-5274. and https://www.nber.org/papers/w24320 (NBER WP 24320).
+- **Finding (abstract):** fund-level international equity allocations rebalance after excess foreign returns, more intensely when FX
+  volatility is higher; a granular IV approach identifies a "positive currency supply elasticity". The abstract does not state a
+  frequency, a sign for EUR/USD or any lag: **UNVERIFIED** for our purposes. (NBER page lists Koijen as a fourth author on the
+  published version; RePEc does not. Author list UNVERIFIED.)
+- **Relevance:** Low. Supports that rebalancing flows respond to past relative equity returns (the time-series ingredient of B36).

@@ -757,3 +757,16 @@ Why each run chose what it did, and any judgement calls.
   LEAD condition 2 fails (cost gate also fails: SPEC 4 net -0.492, x1.5 -0.834); no notification. B33/B34 line closed per the
   pre-registered "what follows". The positive high-|O20| tercile on val is descriptive only and is not turned into a new val test.
 - **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items).
+
+## 2026-11-10 R079 (unattended)
+- **State:** last research-batch run 42885844344 (E036) completed and recorded (R078); no run queued or in progress (latest 5 runs all
+  completed success). No `ready` backlog item (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). pytest 287 passed.
+- **Housekeeping:** the workspace clone's local `main` had diverged from origin (stale pre-R003 history); reset to origin/main
+  (6785a44), old local state kept as local branch `old-local-main`. No remote history touched.
+- **Choice:** relative equity performance -> next-day EUR/USD (B35 daily, B36 20-date smoothed, one experiment, 2 dev trials;
+  B37 val confirmation blocked). Reason: price-only EUR/USD timing lines keep failing (E019-E036); this uses a second data source the
+  runner already downloads (E034) and a published mechanism with a stated sign (Hau & Rey 2006, abstract opened). Weak prior stated:
+  the published relation is contemporaneous; the lag is our extension, effect size unknown.
+- **Not added:** a canonical moving-average rule (would mostly re-test B16 TSMOM, NONE); minute-scale FX lead-lag (below tradable
+  horizon after SPEC 4 costs).
+- **Next run:** pre-register B35+B36 as E037 (reuse E034 index loader/download script; data gate first).
