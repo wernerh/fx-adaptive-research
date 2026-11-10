@@ -1,0 +1,49 @@
+val bars: 910768 2021-01-20 22:00:00+00:00 -> 2023-06-30 20:59:00+00:00
+
+E032 VAL long EUR/USD (20, 55) -> (2, 0) America/New_York, every valid trading date (pre-registered, 1 trial, block 20):
+n                                   636
+mean_pips                        -0.534
+median_pips                        -0.3
+sd_pips                          14.119
+hit_rate                         0.4921
+t_stat                           -0.955
+t_p_one_sided                    0.8299
+mean_ci95_block_boot    (-1.606, 0.669)
+decision                           NONE
+Counts: {'weekday_trading_dates': 637, 'missing_entry': 0, 'missing_exit': 0, 'low_coverage': 0, 'entry_skipped_spread': 1, 'dates_tested': 636}
+
+Descriptive:
+  edt_dates : {'n': 420, 'mean_pips': -0.388, 'median_pips': -0.225, 'sd_pips': 14.034, 'hit_rate': 0.4952, 't_stat': -0.566, 't_p_one_sided': 0.7142, 'mean_ci95_block_boot': (-1.395, 0.961)}
+  est_dates : {'n': 216, 'mean_pips': -0.82, 'median_pips': -0.375, 'sd_pips': 14.31, 'hit_rate': 0.4861, 't_stat': -0.842, 't_p_one_sided': 0.7996, 'mean_ci95_block_boot': (-2.687, 1.253)}
+  first_hour_20_55_21_55 : {'n': 636, 'mean_pips': 0.033, 'median_pips': 0.0, 'sd_pips': 8.136, 'hit_rate': 0.4984, 't_stat': 0.104, 't_p_one_sided': 0.4587, 'mean_ci95_block_boot': (-0.683, 0.687)}
+  rest_21_55_02_00 : {'n': 636, 'mean_pips': -0.568, 'median_pips': -0.775, 'sd_pips': 11.85, 'hit_rate': 0.4717, 't_stat': -1.209, 't_p_one_sided': 0.8864, 'mean_ci95_block_boot': (-1.259, 0.238)}
+  monday_sunday_evening_entries : {'n': 126, 'mean_pips': -0.944, 'median_pips': -1.075, 'sd_pips': 14.825, 'hit_rate': 0.4762, 't_stat': -0.715, 't_p_one_sided': 0.762, 'mean_ci95_block_boot': (-3.175, 0.671)}
+  tuesday_to_friday : {'n': 510, 'mean_pips': -0.433, 'median_pips': -0.1, 'sd_pips': 13.952, 'hit_rate': 0.4961, 't_stat': -0.701, 't_p_one_sided': 0.7583, 'mean_ci95_block_boot': (-1.623, 1.088)}
+  raw_means : {'edt': (420, -0.388), 'est': (216, -0.82)}
+  note : clock: window fixed in NY time (paper's); starts at the Tokyo fix in EDT, one hour after it in EST. Val window 20:55 -> 02:00 NY not computed by any earlier experiment (E029 used 4 conditional events of 17:05 -> 02:00 NY).
+
+By year (descriptive):
+         n   mean    hit
+year                   
+2021  247 -0.532  0.470
+2022  260 -0.292  0.515
+2023  129 -1.029  0.488
+
+By trading-date weekday (descriptive; Monday = Sunday-evening entry):
+              n   mean    hit
+weekday                     
+Friday     128  0.295  0.531
+Monday     126 -0.944  0.476
+Thursday   128 -1.783  0.484
+Tuesday    127  0.179  0.465
+Wednesday  127 -0.419  0.504
+
+VAL cost check (descriptive):
+n                           636.000
+mean_signed_mid_pips         -0.534
+mean_net_bidask_pips         -0.906
+mean_net_spec4_pips          -1.106
+mean_net_costs_x1_5_pips     -1.392
+median_spread_entry_pips      0.300
+median_spread_exit_pips       0.400
+E032 decision: NONE
