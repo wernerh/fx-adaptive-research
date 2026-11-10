@@ -239,3 +239,14 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   pre-registering any test that enters near the roll, check the entry-spread distribution on the **dev** block (descriptive, no
   returns) and size the power note on events that pass the spread cap, not on raw events.
 - **Action:** B24 closed (rejected_hypotheses.md, as untestable at this entry, not as a rejected effect). Refill next.
+
+### 2026-11-10 R062: a USD/JPY calendar effect did not carry to EUR/USD (E030)
+- **Context:** E030 (B25), short EUR/USD into the Tokyo fix on gotobi dates, dev.
+- **Observation:** gotobi mean +0.180 pips vs non-gotobi control +0.411 (n 458 / 1097); NONE. Only the month-end gotobi subset was
+  positive (n 72, +2.639, CI includes 0), read post-hoc.
+- **Evidence label:** [EXP]
+- **Lesson:** order-flow effects documented in USD/JPY (gotobi dollar demand from Japanese importers) are not visible in the EUR/USD
+  USD leg at a size that clears costs. Treat cross-pair transfers of Tokyo-fix mechanisms as low-prior. Month-end subsets keep
+  appearing post-hoc (E007, E030); they stay exploratory unless pre-registered on fresh data with a human decision.
+- **Action:** B25 closed (rejected_hypotheses.md). B26 (post-fix, gotobi) is next; its prior is lowered by this result, but its
+  pre-registered rule is unchanged.

@@ -554,3 +554,13 @@ Why each run chose what it did, and any judgement calls.
   spread cap); quotes are the first-bar open in [hh:mm, hh:mm+5) Tokyo as written in the backlog; fewer than 40 events (2 x block)
   -> insufficient sample -> NONE. `month_end` flag = a source day is the month's last day (descriptive only).
 - **Next run:** collect the E030 batch outputs and apply `decide_b25`; SIGNAL -> B25v (val), else B26.
+
+### 2026-11-10 R062 (unattended)
+- **State:** research-batch run 42749648254 (E030) completed success; outputs committed by github-actions[bot] in 9e2c50a, not yet
+  recorded -> protocol step 1 (collect). pytest passed (235) before recording. Local `main` was again a stale divergent history;
+  reset to origin/main (old history kept on local branch `stale-local-main`, not pushed).
+- **Decision:** applied `gotobi_fix.decide_b25` exactly: mean +0.180 < 1.0, CI (-0.552, 1.245) includes 0, t p 0.3224 -> NONE. No lead.
+  Dev trial count 236 -> 237, total 243 -> 244.
+- **Post-hoc note:** month-end gotobi subset (n 72, +2.639) is descriptive only; not queued (would be a dev re-test of a subset seen
+  after the result, against CLAUDE.md rule 6/7 spirit). No backlog item added for it.
+- **Next run:** B26 is the top `ready` item: pre-register as E031 (dev, 1 trial) with the backlog rule unchanged.

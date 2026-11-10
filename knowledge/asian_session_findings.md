@@ -20,3 +20,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 - NONE (insufficient sample): 4 of 34 events tradable; the 17:05 NY entry spread exceeded 2.0 pips on 19 events (median event entry
   spread 3.6 pips). Nothing learned about the return; the roll-hour spread is the binding constraint. See
   experiments/2026-11-10_E029_overreaction_fade_val.
+
+### 2026-11-10 R062: gotobi dates and the pre-Tokyo-fix hour (E030, dev) [EXP]
+- NONE: short 08:55 -> 09:55 Tokyo on 458 gotobi dates, mean +0.180 pips, CI (-0.552, 1.245), t p 0.322; below the non-gotobi control
+  (+0.411). The E011 all-date pre-fix effect is not concentrated on gotobi dates in EUR/USD. Month-end gotobi subset (n 72, +2.639,
+  CI includes 0) is post-hoc only. See experiments/2026-11-10_E030_gotobi_tokyo_fix.
