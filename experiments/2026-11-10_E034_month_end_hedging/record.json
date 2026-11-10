@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E034",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "B30: position -sign(S(D)) on dev month-ends D earns mean signed mid return > 1 pip in (hour) 15:00 -> 16:00 London on D and (day) 16:00 London D-1 -> 16:00 London D; S = ln return of EU Stocks 50 CFD minus ln return of US 500 CFD from the previous month-end 16:00 London to 16:00 London on D-1 (Melvin-Prins month-end equity-hedging flow)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new conditioning variable: relative EU vs US equity index month-to-date return (relative E007 pre_month_end)",
+  "decision_rule": "Per window: < 50 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND i.i.d. bootstrap (block 1, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.025 (Bonferroni, 2 trials); WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE. Data gate first: index series empty or missing index quote on > 5% of anchored month-ends -> BLOCKED, 0 trials",
+  "n_trials": 2,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "bash scripts/download_dukascopy_index.sh; python scripts/run_e034_month_end_hedging.py | tee backtests/validation_reports/E034_results.txt",
+  "preregistered_in": "R072",
+  "next_experiment": "collect E034; SIGNAL window -> B31 (val, own experiment); else B30 closed"
+}

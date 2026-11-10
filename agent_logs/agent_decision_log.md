@@ -675,3 +675,19 @@ Why each run chose what it did, and any judgement calls.
   (lesson R070), val ~29 events (lesson E014). Not added: Hau-Rey rebalancing (contemporaneous only), Marsh-Panagiotou-Payne
   one-minute post-fix reversal (below tradable horizon).
 - **Next run:** pre-register B30 (hypothesis, methodology, record.json, registry row), add the index download to the workflow, then queue.
+
+### 2026-11-10 R072 (unattended)
+- **State:** last research-batch run 42808245508 (E033) completed and recorded (R070); no run queued or in progress; B30 is the top
+  `ready` item -> protocol step 3. pytest passed (261) before any change. Local main was stale/diverged; reset to origin/main.
+- **Choice:** pre-register B30 as E034 (dev only, one experiment, 2 trials: HOUR 15:00 -> 16:00 London on D, DAY 16:00 London D-1 ->
+  16:00 London D), signal and rule exactly as the backlog draft (R071): position -sign(EU50 minus US500 log return from the previous
+  month-end 16:00 London fix to 16:00 London on D-1), i.i.d. bootstrap, p < 0.025 per window, < 50 events -> NONE.
+- **Judgement calls fixed before data (written in the methodology):** (1) holiday fallback for index quotes: latest London date up to
+  5 days back with a 16:00 quote (Eurex is closed on 24/31 Dec and Good Friday, which fall on several month-ends; without it the 5%
+  data gate would likely fail for calendar reasons, not data errors); (2) the anchor is the previous month-end in the EUR/USD dev set,
+  so Jan 2015 is `no_prev_month_end` (dev bars only; expected n 71); (3) index data downloaded in batch.sh into data/raw_index/ (not
+  data/raw, which the EUR/USD ingest globs) for 2015-2020 only; the download may fail without failing the job so the gate records
+  BLOCKED; no workflow file change.
+- **Outcome handling (fixed now):** SIGNAL in a window -> B31 (val confirmation, own experiment), not a LEAD yet; WEAK/NONE in both ->
+  B30 closed and B31 closed unearned; BLOCKED -> 0 trials, one diagnosis/re-fetch if the cause is a download error.
+- **Next run:** collect E034 when the research-batch run finishes.
