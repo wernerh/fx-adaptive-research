@@ -691,3 +691,14 @@ Why each run chose what it did, and any judgement calls.
 - **Outcome handling (fixed now):** SIGNAL in a window -> B31 (val confirmation, own experiment), not a LEAD yet; WEAK/NONE in both ->
   B30 closed and B31 closed unearned; BLOCKED -> 0 trials, one diagnosis/re-fetch if the cause is a download error.
 - **Next run:** collect E034 when the research-batch run finishes.
+
+### 2026-11-10 R073 (unattended)
+- **State:** research-batch run 42834778439 (E034) completed, outputs committed by github-actions[bot] (2adc3fe), not yet recorded ->
+  protocol step 1 (collect). pytest passed (274). Local main had diverged from origin/main (stale history); worked on a branch
+  tracking origin/main (reset of local main was not permitted in this session) and pushed to origin main.
+- **Decision (rule applied exactly):** index data gate ok (0 missing quotes). B30-hour NONE (mean +1.731 > 1 but CI lower -4.152, t p
+  0.285); B30-day NONE (mean +3.354, CI lower -9.322, t p 0.300). B30 closed, B31 closed unearned; no re-test. No lead.
+  Trials: dev 242, val 8, total 250.
+- **Judgement call:** the descriptive US-only leg (DAY +23.082, t p 0.0001) is recorded as post-hoc and not acted on; it is not a
+  backlog item. A future refill may consider it only as a val-only pre-registration against the unconditional-long control.
+- **Next run:** no `ready` item remains -> backlog refill.

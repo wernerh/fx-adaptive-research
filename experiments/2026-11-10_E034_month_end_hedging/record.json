@@ -3,17 +3,439 @@
   "date": "2026-11-10",
   "instrument": "EURUSD",
   "hypothesis": "B30: position -sign(S(D)) on dev month-ends D earns mean signed mid return > 1 pip in (hour) 15:00 -> 16:00 London on D and (day) 16:00 London D-1 -> 16:00 London D; S = ln return of EU Stocks 50 CFD minus ln return of US 500 CFD from the previous month-end 16:00 London to 16:00 London on D-1 (Melvin-Prins month-end equity-hedging flow)",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": null,
   "variable_changed": "new conditioning variable: relative EU vs US equity index month-to-date return (relative E007 pre_month_end)",
   "decision_rule": "Per window: < 50 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND i.i.d. bootstrap (block 1, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.025 (Bonferroni, 2 trials); WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE. Data gate first: index series empty or missing index quote on > 5% of anchored month-ends -> BLOCKED, 0 trials",
   "n_trials": 2,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
+  "status": "complete",
+  "results": {
+    "status": "complete",
+    "data_gate": {
+      "eu_bars": 1876816,
+      "us_bars": 2247871,
+      "ok": true,
+      "anchored_month_ends": 71,
+      "missing_index_quote": 0,
+      "missing_share": 0.0,
+      "reason": null
+    },
+    "index_data": {
+      "eu": {
+        "bars": 1876816,
+        "first": "2015-01-02 00:00:00+00:00",
+        "last": "2020-12-31 20:59:00+00:00",
+        "median_mid": 3385.5
+      },
+      "us": {
+        "bars": 2247871,
+        "first": "2015-01-02 00:00:00+00:00",
+        "last": "2020-12-31 21:14:00+00:00",
+        "median_mid": 2681.7799999999997
+      }
+    },
+    "result_hour": {
+      "n": 71,
+      "mean_pips": 1.731,
+      "median_pips": 0.55,
+      "sd_pips": 25.586,
+      "hit_rate": 0.507,
+      "t_stat": 0.57,
+      "t_p_one_sided": 0.2852,
+      "mean_ci95_boot": [
+        -4.152,
+        7.559
+      ],
+      "decision": "NONE"
+    },
+    "result_day": {
+      "n": 71,
+      "mean_pips": 3.354,
+      "median_pips": 9.55,
+      "sd_pips": 53.554,
+      "hit_rate": 0.5493,
+      "t_stat": 0.528,
+      "t_p_one_sided": 0.2997,
+      "mean_ci95_boot": [
+        -9.322,
+        15.498
+      ],
+      "decision": "NONE"
+    },
+    "counts": {
+      "hour": {
+        "month_ends": 72,
+        "no_prev_month_end": 1,
+        "missing_index_quote": 0,
+        "zero_signal": 0,
+        "missing_entry": 0,
+        "missing_exit": 0,
+        "entry_skipped_spread": 0,
+        "tested": 71,
+        "fallback_quote_month_ends": 4
+      },
+      "day": {
+        "month_ends": 72,
+        "no_prev_month_end": 1,
+        "missing_index_quote": 0,
+        "zero_signal": 0,
+        "missing_entry": 0,
+        "missing_exit": 0,
+        "entry_skipped_spread": 0,
+        "tested": 71,
+        "fallback_quote_month_ends": 4
+      }
+    },
+    "cost_check": {
+      "hour": {
+        "n": 71,
+        "mean_signed_mid_pips": 1.731,
+        "mean_net_bidask_pips": 1.437,
+        "mean_net_spec4_pips": 1.237,
+        "mean_net_costs_x1_5_pips": 0.989,
+        "median_spread_entry_pips": 0.3,
+        "median_spread_exit_pips": 0.2
+      },
+      "day": {
+        "n": 71,
+        "mean_signed_mid_pips": 3.354,
+        "mean_net_bidask_pips": 3.134,
+        "mean_net_spec4_pips": 2.934,
+        "mean_net_costs_x1_5_pips": 2.724,
+        "median_spread_entry_pips": 0.2,
+        "median_spread_exit_pips": 0.2
+      }
+    },
+    "descriptive": {
+      "hour": {
+        "unconditional_long_eurusd": {
+          "n": 71,
+          "mean_pips": 3.076,
+          "median_pips": 3.5,
+          "sd_pips": 25.457,
+          "hit_rate": 0.5493,
+          "t_stat": 1.018,
+          "t_p_one_sided": 0.1561,
+          "mean_ci95_boot": [
+            -2.795,
+            8.811
+          ]
+        },
+        "abs_s_above_median": {
+          "n": 35,
+          "mean_pips": 1.647,
+          "median_pips": -1.75,
+          "sd_pips": 27.046,
+          "hit_rate": 0.4857,
+          "t_stat": 0.36,
+          "t_p_one_sided": 0.3604,
+          "mean_ci95_boot": [
+            -6.642,
+            11.209
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "abs_s_at_or_below_median": {
+          "n": 36,
+          "mean_pips": 1.813,
+          "median_pips": 2.025,
+          "sd_pips": 24.468,
+          "hit_rate": 0.5278,
+          "t_stat": 0.444,
+          "t_p_one_sided": 0.3297,
+          "mean_ci95_boot": [
+            -6.007,
+            9.808
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "eu_leg_only_position_minus_sign_s_eu": {
+          "n": 71,
+          "mean_pips": -1.61,
+          "median_pips": -1.75,
+          "sd_pips": 25.594,
+          "hit_rate": 0.4648,
+          "t_stat": -0.53,
+          "t_p_one_sided": 0.7011,
+          "mean_ci95_boot": [
+            -7.491,
+            4.365
+          ]
+        },
+        "us_leg_only_position_plus_sign_s_us": {
+          "n": 71,
+          "mean_pips": 4.962,
+          "median_pips": 5.85,
+          "sd_pips": 25.154,
+          "hit_rate": 0.5775,
+          "t_stat": 1.662,
+          "t_p_one_sided": 0.0505,
+          "mean_ci95_boot": [
+            -0.664,
+            10.801
+          ]
+        },
+        "quarter_ends": {
+          "n": 24,
+          "mean_pips": -6.427,
+          "median_pips": -1.325,
+          "sd_pips": 21.426,
+          "hit_rate": 0.4583,
+          "t_stat": -1.47,
+          "t_p_one_sided": 0.9224,
+          "mean_ci95_boot": [
+            -14.628,
+            1.858
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "other_month_ends": {
+          "n": 47,
+          "mean_pips": 5.897,
+          "median_pips": 6.45,
+          "sd_pips": 26.724,
+          "hit_rate": 0.5319,
+          "t_stat": 1.513,
+          "t_p_one_sided": 0.0686,
+          "mean_ci95_boot": [
+            -1.696,
+            13.781
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "fallback_quote_months_excluded": {
+          "n": 67,
+          "mean_pips": 2.063,
+          "median_pips": 1.4,
+          "sd_pips": 26.078,
+          "hit_rate": 0.5224,
+          "t_stat": 0.648,
+          "t_p_one_sided": 0.2597,
+          "mean_ci95_boot": [
+            -4.178,
+            8.171
+          ]
+        },
+        "share_short_eurusd": 0.408,
+        "corr_s_move": -0.041,
+        "by_year": [
+          {
+            "year": 2015,
+            "size": 11,
+            "mean": -4.486
+          },
+          {
+            "year": 2016,
+            "size": 12,
+            "mean": -7.512
+          },
+          {
+            "year": 2017,
+            "size": 12,
+            "mean": 12.408
+          },
+          {
+            "year": 2018,
+            "size": 12,
+            "mean": -1.654
+          },
+          {
+            "year": 2019,
+            "size": 12,
+            "mean": 6.063
+          },
+          {
+            "year": 2020,
+            "size": 12,
+            "mean": 5.05
+          }
+        ]
+      },
+      "day": {
+        "unconditional_long_eurusd": {
+          "n": 71,
+          "mean_pips": 12.501,
+          "median_pips": 12.25,
+          "sd_pips": 52.162,
+          "hit_rate": 0.5634,
+          "t_stat": 2.019,
+          "t_p_one_sided": 0.0236,
+          "mean_ci95_boot": [
+            1.329,
+            24.105
+          ]
+        },
+        "abs_s_above_median": {
+          "n": 35,
+          "mean_pips": 3.14,
+          "median_pips": 2.7,
+          "sd_pips": 51.804,
+          "hit_rate": 0.5143,
+          "t_stat": 0.359,
+          "t_p_one_sided": 0.3611,
+          "mean_ci95_boot": [
+            -12.652,
+            19.132
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "abs_s_at_or_below_median": {
+          "n": 36,
+          "mean_pips": 3.563,
+          "median_pips": 12.2,
+          "sd_pips": 55.937,
+          "hit_rate": 0.5833,
+          "t_stat": 0.382,
+          "t_p_one_sided": 0.3523,
+          "mean_ci95_boot": [
+            -15.082,
+            21.614
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "eu_leg_only_position_minus_sign_s_eu": {
+          "n": 71,
+          "mean_pips": -11.482,
+          "median_pips": -12.25,
+          "sd_pips": 52.399,
+          "hit_rate": 0.3662,
+          "t_stat": -1.846,
+          "t_p_one_sided": 0.9655,
+          "mean_ci95_boot": [
+            -23.458,
+            0.526
+          ]
+        },
+        "us_leg_only_position_plus_sign_s_us": {
+          "n": 71,
+          "mean_pips": 23.082,
+          "median_pips": 21.4,
+          "sd_pips": 48.363,
+          "hit_rate": 0.6761,
+          "t_stat": 4.022,
+          "t_p_one_sided": 0.0001,
+          "mean_ci95_boot": [
+            12.099,
+            34.425
+          ]
+        },
+        "quarter_ends": {
+          "n": 24,
+          "mean_pips": 7.335,
+          "median_pips": 9.35,
+          "sd_pips": 46.738,
+          "hit_rate": 0.625,
+          "t_stat": 0.769,
+          "t_p_one_sided": 0.2249,
+          "mean_ci95_boot": [
+            -10.725,
+            26.46
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "other_month_ends": {
+          "n": 47,
+          "mean_pips": 1.321,
+          "median_pips": 9.55,
+          "sd_pips": 57.093,
+          "hit_rate": 0.5106,
+          "t_stat": 0.159,
+          "t_p_one_sided": 0.4373,
+          "mean_ci95_boot": [
+            -16.042,
+            17.399
+          ],
+          "note": "insufficient sample (< 50 events)"
+        },
+        "fallback_quote_months_excluded": {
+          "n": 67,
+          "mean_pips": 3.654,
+          "median_pips": 8.85,
+          "sd_pips": 52.377,
+          "hit_rate": 0.5373,
+          "t_stat": 0.571,
+          "t_p_one_sided": 0.285,
+          "mean_ci95_boot": [
+            -8.595,
+            16.004
+          ]
+        },
+        "share_short_eurusd": 0.408,
+        "corr_s_move": 0.014,
+        "by_year": [
+          {
+            "year": 2015,
+            "size": 11,
+            "mean": -9.732
+          },
+          {
+            "year": 2016,
+            "size": 12,
+            "mean": -36.754
+          },
+          {
+            "year": 2017,
+            "size": 12,
+            "mean": 28.808
+          },
+          {
+            "year": 2018,
+            "size": 12,
+            "mean": 14.663
+          },
+          {
+            "year": 2019,
+            "size": 12,
+            "mean": 18.604
+          },
+          {
+            "year": 2020,
+            "size": 12,
+            "mean": 3.446
+          }
+        ]
+      },
+      "post_fix_hour_same_position_16_17_london": {
+        "n": 71,
+        "mean_pips": -1.355,
+        "median_pips": -1.65,
+        "sd_pips": 18.388,
+        "hit_rate": 0.493,
+        "t_stat": -0.621,
+        "t_p_one_sided": 0.7317,
+        "mean_ci95_boot": [
+          -5.543,
+          2.662
+        ]
+      },
+      "s_stats": {
+        "mean": -0.00664,
+        "sd": 0.03056,
+        "abs_median": 0.02062
+      }
+    },
+    "n_trials": 2,
+    "blocks": [
+      "dev"
+    ],
+    "first_month_end": "2015-01-30",
+    "last_month_end": "2020-12-31"
+  },
+  "decision": {
+    "B30-hour": "NONE",
+    "B30-day": "NONE",
+    "data_gate": "ok"
+  },
   "lead": false,
   "command": "bash scripts/download_dukascopy_index.sh; python scripts/run_e034_month_end_hedging.py | tee backtests/validation_reports/E034_results.txt",
   "preregistered_in": "R072",
-  "next_experiment": "collect E034; SIGNAL window -> B31 (val, own experiment); else B30 closed"
+  "next_experiment": "none (B30 closed, B31 closed unearned); backlog refill next",
+  "run": {
+    "workflow_run_id": 42834778439,
+    "outputs_commit": "2adc3fe",
+    "recorded_in": "R073"
+  }
 }

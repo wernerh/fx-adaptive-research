@@ -281,3 +281,14 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   (E019, E020, E021, E033). Future refills should prefer intraday windows (lower SD) or mechanisms with a stated effect size that
   clears the power bar.
 - **Action:** B28 and B29 closed (rejected_hypotheses.md). Refill next.
+
+### 2026-11-10 R073: month-end equity-hedging signal is NONE on dev; strong post-hoc cells are not leads (E034)
+- **Context:** E034 (B30), dev, -sign(EU50 minus US500 month-to-date return) into the month-end 16:00 London fix, 2 windows, n 71.
+- **Observation:** HOUR +1.731, DAY +3.354 pips, both NONE and both below unconditional long EUR/USD (+3.076 / +12.501). The
+  descriptive US-only leg on the DAY window is +23.082 (t p 0.0001) but it was one of ~12 descriptive cells per window and shares
+  most of its sign with the unconditional long (US equities rose in most dev months).
+- **Evidence label:** [EXP]
+- **Lesson:** with n ~70 events, descriptive cells will regularly show p < 0.01 by chance and through overlap with drift. A refill may
+  pre-register such a cell only on val (dev is used), only against the unconditional-long control, and counted as a new trial; the
+  val month-end sample (~29) makes that low power (lesson E014). Month-end/fix lines now: E007 pre/post-fix (parked/NONE), E034 NONE.
+- **Action:** B30 closed, B31 closed unearned (rejected_hypotheses.md). Refill next.

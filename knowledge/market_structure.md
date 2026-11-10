@@ -41,3 +41,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   mean |R| 32 pips on low-UV dates vs 52 on high-UV dates.
 - Next-day (20:00 -> 16:55 NY) low-UV reversal -2.034 pips, high-UV continuation -0.213, both NONE. See
   experiments/2026-11-10_E033_volume_reversal.
+
+### 2026-11-10: Relative EU/US equity month-to-date return does not predict EUR/USD into the month-end fix (E034) [EXP]
+- Dev 2015-2020, 71 month-ends, position -sign(EU50 minus US500 MTD return): pre-fix hour +1.731 pips, D-1 16:00 -> D 16:00 +3.354,
+  both NONE; corr(S, move) about 0. Unconditional long EUR/USD on the same 71 month-ends: +3.076 (hour), +12.501 (day, CI (1.329, 24.105)).
+- Descriptive only: long EUR/USD after US equities rose month-to-date, D-1 16:00 -> D 16:00, +23.082 (t p 0.0001), post-hoc and
+  overlapping the unconditional drift. See experiments/2026-11-10_E034_month_end_hedging.
