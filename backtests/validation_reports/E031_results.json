@@ -1,0 +1,274 @@
+{
+  "result": {
+    "n": 460,
+    "mean_pips": 0.799,
+    "median_pips": 0.55,
+    "sd_pips": 8.674,
+    "hit_rate": 0.5348,
+    "t_stat": 1.976,
+    "t_p_one_sided": 0.0244,
+    "mean_ci95_block_boot": [
+      -0.154,
+      1.632
+    ],
+    "decision": "WEAK"
+  },
+  "counts": {
+    "weekday_dates": 1561,
+    "gotobi_dates": 462,
+    "gotobi_weekend_shifted": 123,
+    "gotobi_month_end": 72,
+    "missing_entry": 0,
+    "missing_exit": 0,
+    "low_coverage": 0,
+    "entry_skipped_spread": 2,
+    "events_tested": 460
+  },
+  "descriptive": {
+    "control_non_gotobi_same_trade": {
+      "n": 1096,
+      "mean_pips": 0.778,
+      "median_pips": 0.7,
+      "sd_pips": 8.949,
+      "hit_rate": 0.542,
+      "t_stat": 2.879,
+      "t_p_one_sided": 0.002,
+      "mean_ci95_block_boot": [
+        0.234,
+        1.212
+      ]
+    },
+    "gotobi_month_end": {
+      "n": 72,
+      "mean_pips": 1.2,
+      "median_pips": 0.75,
+      "sd_pips": 7.907,
+      "hit_rate": 0.5694,
+      "t_stat": 1.288,
+      "t_p_one_sided": 0.101,
+      "mean_ci95_block_boot": [
+        -0.225,
+        2.195
+      ]
+    },
+    "gotobi_not_month_end": {
+      "n": 388,
+      "mean_pips": 0.725,
+      "median_pips": 0.5,
+      "sd_pips": 8.817,
+      "hit_rate": 0.5284,
+      "t_stat": 1.62,
+      "t_p_one_sided": 0.053,
+      "mean_ci95_block_boot": [
+        -0.279,
+        1.524
+      ]
+    },
+    "gotobi_weekend_shifted": {
+      "n": 123,
+      "mean_pips": -0.19,
+      "median_pips": 0.5,
+      "sd_pips": 8.114,
+      "hit_rate": 0.5203,
+      "t_stat": -0.259,
+      "t_p_one_sided": 0.6021,
+      "mean_ci95_block_boot": [
+        -2.289,
+        1.257
+      ]
+    },
+    "gotobi_not_weekend_shifted": {
+      "n": 337,
+      "mean_pips": 1.16,
+      "median_pips": 0.55,
+      "sd_pips": 8.854,
+      "hit_rate": 0.5401,
+      "t_stat": 2.406,
+      "t_p_one_sided": 0.0083,
+      "mean_ci95_block_boot": [
+        0.159,
+        2.015
+      ]
+    },
+    "gotobi_last_half_hour_10_25_10_55": {
+      "n": 460,
+      "mean_pips": 0.458,
+      "median_pips": 0.45,
+      "sd_pips": 5.821,
+      "hit_rate": 0.537,
+      "t_stat": 1.689,
+      "t_p_one_sided": 0.0459,
+      "mean_ci95_block_boot": [
+        -0.081,
+        0.899
+      ]
+    },
+    "control_last_half_hour_10_25_10_55": {
+      "n": 1096,
+      "mean_pips": 0.494,
+      "median_pips": 0.3,
+      "sd_pips": 6.007,
+      "hit_rate": 0.5356,
+      "t_stat": 2.722,
+      "t_p_one_sided": 0.0033,
+      "mean_ci95_block_boot": [
+        0.166,
+        0.855
+      ]
+    },
+    "exploratory_gotobi_after_pre_fix_down_move": {
+      "n": 238,
+      "mean_pips": 1.365,
+      "median_pips": 1.55,
+      "sd_pips": 8.487,
+      "hit_rate": 0.5756,
+      "t_stat": 2.481,
+      "t_p_one_sided": 0.0069,
+      "mean_ci95_block_boot": [
+        0.091,
+        2.336
+      ]
+    },
+    "exploratory_gotobi_after_pre_fix_up_move": {
+      "n": 221,
+      "mean_pips": 0.207,
+      "median_pips": 0.0,
+      "sd_pips": 8.867,
+      "hit_rate": 0.4932,
+      "t_stat": 0.347,
+      "t_p_one_sided": 0.3644,
+      "mean_ci95_block_boot": [
+        -1.052,
+        1.259
+      ]
+    },
+    "exploratory_control_after_pre_fix_down_move": {
+      "n": 591,
+      "mean_pips": 1.323,
+      "median_pips": 1.35,
+      "sd_pips": 8.394,
+      "hit_rate": 0.5736,
+      "t_stat": 3.831,
+      "t_p_one_sided": 0.0001,
+      "mean_ci95_block_boot": [
+        0.697,
+        1.797
+      ]
+    },
+    "difference_gotobi_minus_control_mean_pips": 0.021,
+    "limitation": "Japanese public holidays not in repo: not shifted, count not computed; gotobi rule is practitioner convention, UNVERIFIED as Ito & Yamada's; EUR/USD is the USD leg of a USD/JPY effect",
+    "subset_raw_means": {
+      "month_end": [
+        72,
+        1.2
+      ],
+      "weekend_shifted": [
+        123,
+        -0.19
+      ]
+    }
+  },
+  "by_year": [
+    {
+      "year": 2015,
+      "n": 75,
+      "mean": -1.039,
+      "hit": 0.44
+    },
+    {
+      "year": 2016,
+      "n": 76,
+      "mean": -0.032,
+      "hit": 0.526
+    },
+    {
+      "year": 2017,
+      "n": 78,
+      "mean": 1.379,
+      "hit": 0.551
+    },
+    {
+      "year": 2018,
+      "n": 77,
+      "mean": -0.09,
+      "hit": 0.481
+    },
+    {
+      "year": 2019,
+      "n": 77,
+      "mean": 0.744,
+      "hit": 0.571
+    },
+    {
+      "year": 2020,
+      "n": 77,
+      "mean": 3.768,
+      "hit": 0.636
+    }
+  ],
+  "by_weekday": [
+    {
+      "weekday": "Friday",
+      "n": 190,
+      "mean": 0.764,
+      "hit": 0.537
+    },
+    {
+      "weekday": "Monday",
+      "n": 67,
+      "mean": 0.448,
+      "hit": 0.463
+    },
+    {
+      "weekday": "Thursday",
+      "n": 68,
+      "mean": -0.048,
+      "hit": 0.515
+    },
+    {
+      "weekday": "Tuesday",
+      "n": 67,
+      "mean": 0.748,
+      "hit": 0.552
+    },
+    {
+      "weekday": "Wednesday",
+      "n": 68,
+      "mean": 2.142,
+      "hit": 0.603
+    }
+  ],
+  "cost_check": {
+    "n": 460,
+    "mean_signed_mid_pips": 0.799,
+    "mean_net_bidask_pips": 0.49,
+    "mean_net_spec4_pips": 0.29,
+    "mean_net_costs_x1_5_pips": 0.036,
+    "median_spread_entry_pips": 0.2,
+    "median_spread_exit_pips": 0.3
+  },
+  "cost_check_control": {
+    "n": 1096,
+    "mean_signed_mid_pips": 0.778,
+    "mean_net_bidask_pips": 0.487,
+    "mean_net_spec4_pips": 0.287,
+    "mean_net_costs_x1_5_pips": 0.042,
+    "median_spread_entry_pips": 0.2,
+    "median_spread_exit_pips": 0.3
+  },
+  "n_trials": 1,
+  "blocks": [
+    "dev"
+  ],
+  "entry_hm_tokyo": [
+    9,
+    55
+  ],
+  "exit_hm_tokyo": [
+    10,
+    55
+  ],
+  "side": "long",
+  "first_date": "2015-01-02",
+  "last_date": "2020-12-31"
+}
