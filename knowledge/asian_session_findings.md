@@ -30,3 +30,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 - WEAK: long 09:55 -> 10:55 Tokyo on 460 gotobi dates, mean +0.799 pips, CI (-0.154, 1.632), t p 0.024; same as the non-gotobi
   control (+0.778, difference +0.021). The post-fix USD give-back is the E011 all-date effect, not a gotobi effect; it stays below the
   1-pip bar (SPEC 4 net +0.290, x1.5 +0.036). Gotobi Tokyo-fix line closed on dev. See experiments/2026-11-10_E031_gotobi_postfix.
+
+### 2026-11-10 R067: KMW post-Tokyo window 20:55 -> 02:00 NY on val (E032) [EXP]
+- NONE: long EUR/USD 20:55 -> 02:00 NY on 636 val dates, mean -0.534 pips, CI (-1.606, 0.669), t p 0.830; negative in every year and
+  in both EDT (-0.388) and EST (-0.820). First hour +0.033 (flat, unlike dev E011 +0.785). The published post-Tokyo USD depreciation
+  (Krohn-Mueller-Whelan, 1999-2019) is not present in EUR/USD on val 2021-2023. See experiments/2026-11-10_E032_post_tokyo_kmw_val.

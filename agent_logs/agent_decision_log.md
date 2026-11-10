@@ -612,3 +612,11 @@ Why each run chose what it did, and any judgement calls.
 - **Outcome handling (fixed now):** val-only SIGNAL is not a LEAD; with SPEC 4 and x1.5 net > 0 it is logged here as an OOS candidate
   for the human, no notification. WEAK/NONE closes B27.
 - **Next run:** collect E032 when the research-batch run finishes.
+
+### 2026-11-10 R067 (unattended)
+- **State:** research-batch run 42783232861 (E032) completed success; outputs committed by github-actions[bot] in a21f2cd, not yet
+  recorded -> protocol step 1 (collect). pytest passed (252) before recording. Local main had diverged again (stale old history);
+  renamed to local branch `stale-local-main-20261110`, checked out origin/main. Nothing pushed from the old history.
+- **Decision:** applied `post_tokyo_kmw.decide_b27` exactly: n 636 >= 200; mean -0.534 not > 0 -> NONE (t p 0.830, CI (-1.606,
+  0.669)). Not an OOS candidate, no lead. Val trial count 7 -> 8, total 245 -> 246.
+- **Next run:** no `ready` backlog items -> refill (literature pass, 2-3 pre-registrable items). Tokyo-fix windows are closed.

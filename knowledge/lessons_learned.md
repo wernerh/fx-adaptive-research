@@ -260,3 +260,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   and future refills should prefer mechanisms that predict a *difference* from the control, or a new signal, over date restrictions
   of a known WEAK effect.
 - **Action:** B26 closed (rejected_hypotheses.md); gotobi Tokyo-fix line closed on dev. Refill next.
+
+### 2026-11-10 R067: dev hourly cells summed into a window did not carry over to val (E032)
+- **Context:** E032 (B27), long EUR/USD over the KMW post-Tokyo window 20:55 -> 02:00 NY, val only (dev contaminated by E009 cells).
+- **Observation:** the E009 dev cells implied about +1.2 pips; val gave -0.534 (n 636, CI (-1.606, 0.669)), NONE.
+- **Evidence label:** [EXP]
+- **Lesson:** a window built by summing small, individually insignificant dev hour cells (plus a published effect from an earlier
+  sample) is a weak prior. The post-Tokyo-fix reversal now has: dev first hour WEAK (E011), gotobi subsets NONE/WEAK (E030/E031),
+  val full window NONE (E032). Further Tokyo-fix windows on dev or val would be specification search on a closed line.
+- **Action:** B27 closed (rejected_hypotheses.md). Tokyo-fix line closed on dev and val. Refill next.

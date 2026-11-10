@@ -11,11 +11,206 @@
   "variable_changed": "new window: full KMW post-Tokyo window 20:55 -> 02:00 NY, unconditional, every val date (relatives E011, E030, E031, E009)",
   "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 20 dates, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE; < 200 tested dates -> NONE. Val-only SIGNAL is not a LEAD; if SPEC4 and x1.5 net > 0 it is logged as an OOS candidate for the human",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
+  "status": "complete",
+  "results": {
+    "result": {
+      "n": 636,
+      "mean_pips": -0.534,
+      "median_pips": -0.3,
+      "sd_pips": 14.119,
+      "hit_rate": 0.4921,
+      "t_stat": -0.955,
+      "t_p_one_sided": 0.8299,
+      "mean_ci95_block_boot": [
+        -1.606,
+        0.669
+      ],
+      "decision": "NONE"
+    },
+    "counts": {
+      "weekday_trading_dates": 637,
+      "missing_entry": 0,
+      "missing_exit": 0,
+      "low_coverage": 0,
+      "entry_skipped_spread": 1,
+      "dates_tested": 636
+    },
+    "descriptive": {
+      "edt_dates": {
+        "n": 420,
+        "mean_pips": -0.388,
+        "median_pips": -0.225,
+        "sd_pips": 14.034,
+        "hit_rate": 0.4952,
+        "t_stat": -0.566,
+        "t_p_one_sided": 0.7142,
+        "mean_ci95_block_boot": [
+          -1.395,
+          0.961
+        ]
+      },
+      "est_dates": {
+        "n": 216,
+        "mean_pips": -0.82,
+        "median_pips": -0.375,
+        "sd_pips": 14.31,
+        "hit_rate": 0.4861,
+        "t_stat": -0.842,
+        "t_p_one_sided": 0.7996,
+        "mean_ci95_block_boot": [
+          -2.687,
+          1.253
+        ]
+      },
+      "first_hour_20_55_21_55": {
+        "n": 636,
+        "mean_pips": 0.033,
+        "median_pips": 0.0,
+        "sd_pips": 8.136,
+        "hit_rate": 0.4984,
+        "t_stat": 0.104,
+        "t_p_one_sided": 0.4587,
+        "mean_ci95_block_boot": [
+          -0.683,
+          0.687
+        ]
+      },
+      "rest_21_55_02_00": {
+        "n": 636,
+        "mean_pips": -0.568,
+        "median_pips": -0.775,
+        "sd_pips": 11.85,
+        "hit_rate": 0.4717,
+        "t_stat": -1.209,
+        "t_p_one_sided": 0.8864,
+        "mean_ci95_block_boot": [
+          -1.259,
+          0.238
+        ]
+      },
+      "monday_sunday_evening_entries": {
+        "n": 126,
+        "mean_pips": -0.944,
+        "median_pips": -1.075,
+        "sd_pips": 14.825,
+        "hit_rate": 0.4762,
+        "t_stat": -0.715,
+        "t_p_one_sided": 0.762,
+        "mean_ci95_block_boot": [
+          -3.175,
+          0.671
+        ]
+      },
+      "tuesday_to_friday": {
+        "n": 510,
+        "mean_pips": -0.433,
+        "median_pips": -0.1,
+        "sd_pips": 13.952,
+        "hit_rate": 0.4961,
+        "t_stat": -0.701,
+        "t_p_one_sided": 0.7583,
+        "mean_ci95_block_boot": [
+          -1.623,
+          1.088
+        ]
+      },
+      "raw_means": {
+        "edt": [
+          420,
+          -0.388
+        ],
+        "est": [
+          216,
+          -0.82
+        ]
+      },
+      "note": "clock: window fixed in NY time (paper's); starts at the Tokyo fix in EDT, one hour after it in EST. Val window 20:55 -> 02:00 NY not computed by any earlier experiment (E029 used 4 conditional events of 17:05 -> 02:00 NY)."
+    },
+    "by_year": [
+      {
+        "year": 2021,
+        "n": 247,
+        "mean": -0.532,
+        "hit": 0.47
+      },
+      {
+        "year": 2022,
+        "n": 260,
+        "mean": -0.292,
+        "hit": 0.515
+      },
+      {
+        "year": 2023,
+        "n": 129,
+        "mean": -1.029,
+        "hit": 0.488
+      }
+    ],
+    "by_weekday": [
+      {
+        "weekday": "Friday",
+        "n": 128,
+        "mean": 0.295,
+        "hit": 0.531
+      },
+      {
+        "weekday": "Monday",
+        "n": 126,
+        "mean": -0.944,
+        "hit": 0.476
+      },
+      {
+        "weekday": "Thursday",
+        "n": 128,
+        "mean": -1.783,
+        "hit": 0.484
+      },
+      {
+        "weekday": "Tuesday",
+        "n": 127,
+        "mean": 0.179,
+        "hit": 0.465
+      },
+      {
+        "weekday": "Wednesday",
+        "n": 127,
+        "mean": -0.419,
+        "hit": 0.504
+      }
+    ],
+    "cost_check": {
+      "n": 636,
+      "mean_signed_mid_pips": -0.534,
+      "mean_net_bidask_pips": -0.906,
+      "mean_net_spec4_pips": -1.106,
+      "mean_net_costs_x1_5_pips": -1.392,
+      "median_spread_entry_pips": 0.3,
+      "median_spread_exit_pips": 0.4
+    },
+    "n_trials": 1,
+    "blocks": [
+      "val"
+    ],
+    "entry_hm_ny": [
+      20,
+      55
+    ],
+    "exit_hm_ny": [
+      2,
+      0
+    ],
+    "side": "long",
+    "first_date": "2021-01-21",
+    "last_date": "2023-06-30"
+  },
+  "decision": "NONE",
   "lead": false,
   "command": "python scripts/run_e032_post_tokyo_kmw.py | tee backtests/validation_reports/E032_results.txt",
   "preregistered_in": "R066",
-  "next_experiment": null
+  "next_experiment": "none (B27 closed); backlog refill next",
+  "run": {
+    "workflow_run_id": 42783232861,
+    "outputs_commit": "a21f2cd",
+    "recorded_in": "R067"
+  }
 }
