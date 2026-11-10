@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E037",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "B35: -sign(S1(D)) x (EUR/USD mid 16:00 London next date - mid 16:05 London D) > 1 pip per dev trading date; B36: -sign(S20(D)) x same > 1 pip. S1 = EU Stocks 50 CFD minus US 500 CFD log return 16:00 London prev date -> 16:00 London D; S20 = same from the date 20 places before D (Hau-Rey relative equity rebalancing, lagged extension)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new conditioning variable: daily (B35) and 20-date (B36) relative EU vs US equity return (relative E034)",
+  "decision_rule": "Data gate first (index empty or no 16:00 London index quote on > 10% of dev dates -> BLOCKED, 0 trials). Per arm: < 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.025 (Bonferroni, 2 trials); WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE",
+  "n_trials": 2,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "bash scripts/download_dukascopy_index.sh; python scripts/run_e037_relative_equity.py | tee backtests/validation_reports/E037_results.txt",
+  "preregistered_in": "R080",
+  "next_experiment": "collect E037; SIGNAL arm -> B37 (val, own experiment); else B35/B36 closed, B37 closed unearned"
+}

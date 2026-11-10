@@ -770,3 +770,15 @@ Why each run chose what it did, and any judgement calls.
 - **Not added:** a canonical moving-average rule (would mostly re-test B16 TSMOM, NONE); minute-scale FX lead-lag (below tradable
   horizon after SPEC 4 costs).
 - **Next run:** pre-register B35+B36 as E037 (reuse E034 index loader/download script; data gate first).
+
+## 2026-11-10 R080 (unattended)
+- **State:** last research-batch run 42885844344 (E036) completed and recorded (R078); no run queued or in progress (latest 5 runs all
+  completed success). Top `ready` backlog items: B35 + B36 (one experiment) -> protocol step 3 (next experiment). pytest passed
+  before changes (287) and after (299).
+- **Choice:** pre-register B35 + B36 as E037 (dev only, 2 trials, p < 0.025 each, block-20 bootstrap, index data gate first), rule
+  and parameters exactly as drafted in the backlog (R079). Implementation choices fixed now, before data: date list = Mon-Fri EUR/USD
+  dev trading dates; data gate counts dev dates with no 16:00 London quote in either index; FOMC exclusion (descriptive) = D is a
+  statement date; month-end exclusion (descriptive) = D or next date is a month-end.
+- **Reuse:** E034 index loader (`month_end_hedging.load_index`, `london_quotes`) and download script; E035 statistic and rule
+  (`evaluate_b32`/`decide_b32`, identical thresholds).
+- **Next run:** collect E037 when the research-batch run finishes.
