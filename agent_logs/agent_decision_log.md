@@ -620,3 +620,19 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** applied `post_tokyo_kmw.decide_b27` exactly: n 636 >= 200; mean -0.534 not > 0 -> NONE (t p 0.830, CI (-1.606,
   0.669)). Not an OOS candidate, no lead. Val trial count 7 -> 8, total 245 -> 246.
 - **Next run:** no `ready` backlog items -> refill (literature pass, 2-3 pre-registrable items). Tokyo-fix windows are closed.
+
+### 2026-11-10 R068 (unattended)
+- **State:** last research-batch run 42783232861 (E032) completed and recorded (R067, fb0d723); no run queued or in progress; no
+  `ready` backlog item -> protocol step 4 (refill). pytest passed (252) before any change. Local clone was on a detached HEAD; reset
+  main to origin/main.
+- **Literature pass (opened):** Cespa-Gargano-Riddiough-Sarno "Foreign exchange volume" (JBS summary page; paper text not opened,
+  journal details UNVERIFIED), Borisenko-Pozdeev 2017 WP (PDF), Stauskas-Sucarrat 2025 and Erdemlioglu-Laurent-Neely 2012 (not used).
+  Details in research/academic_studies.md.
+- **Choice:** added B28 (low-unexpected-volume next-day reversal) and B29 (high-unexpected-volume next-day continuation), dev, one shared
+  experiment, 2 trials, p < 0.025 each. Reason: lesson R064 asks for new signals rather than date subsets of known WEAK effects; volume is
+  a variable no experiment has used, the mechanism is published, the events are daily (n ~380 each on dev), and entry at 20:00 NY avoids
+  the roll spread (lesson R059). B28 ranked first (the stronger published claim). Risks recorded in the items: Dukascopy volume is a proxy
+  for CLS volume; high-UV days overlap E021 large-move days. A volume gate (missing/zero volume -> BLOCKED, 0 trials) is fixed now.
+- **Not added:** central-bank pre-announcement drift (needs OIS expectations, too few events), same-time-of-day persistence (no FX
+  source; E009 contamination), round-number reversals (redundant with E018). Backlog note R068.
+- **Next run:** pre-register B28+B29 as the next experiment.

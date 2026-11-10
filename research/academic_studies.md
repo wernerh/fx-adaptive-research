@@ -284,3 +284,29 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (verbatim):** EUR-USD 5-minute, 2002-2003: the reaction to US news "occurs within the first five minutes of the release with very little reaction in the following fifteen minutes".
 - **Relevance:** **Low**; consistent with E026 (post-08:30 continuation NONE). Not added.
 - **Status:** VERIFIED (text, partial)
+
+**Added 2026-11-10 (R068 refill pass).**
+
+### Cespa, Gargano, Riddiough & Sarno (RFS, "forthcoming" as of 2021): Foreign exchange volume
+- **Venue:** Review of Financial Studies (volume, issue, pages and DOI **UNVERIFIED**; the paper itself was not opened). Source opened R068:
+  [Cambridge Judge Business School insight, 9 Aug 2021](https://www.jbs.cam.ac.uk/insight/2021/voluminous-breakthrough/) (news summary of the paper).
+- **Finding (from that page, quoted):** CLS settlement volume, "31 currency pairs over six years"; daily returns depend on the
+  interaction of the previous day's return and "unexpected volume (deviation of volume from a 21-day moving average)". When volume is
+  "abnormally low" there is "a return reversal over the following day"; the reversal "weakens and moves toward a next-day continuation"
+  when volume is particularly high. Regression design (time-series vs cross-sectional), coefficients and sample dates: not stated.
+- **Relevance:** **Medium.** New predictor for this repo (volume has never been used in an experiment). Our volume field is Dukascopy's
+  single-venue quote volume, not CLS traded volume: a proxy only. Spawned B28/B29 (R068).
+- **Status:** VERIFIED (secondary summary only); paper text UNVERIFIED.
+
+### Borisenko & Pozdeev (2017 working paper): Monetary policy and currency returns: the foresight saga
+- **Venue:** working paper, "This version: July 2017" ([PDF, AUT ACFR conference](https://acfr.aut.ac.nz/__data/assets/pdf_file/0011/105500/90345-Borisenko-and-Pozdeev,-Monetary-Policy-and-Currency-Returns-the-Foresight-Saga.pdf), opened R068; first ~40k characters verbatim, rest via summary).
+- **Finding (verbatim abstract):** "Currencies tend to depreciate by 0.7 percent over ten days before policy rate cuts and appreciate by
+  0.5 percent before policy rate increases"; the drift "does not appear before the announcements at which no policy rate change was
+  implemented"; the trade needs the OIS-implied direction about twelve days ahead.
+- **Relevance:** **Low for this repo.** Needs OIS expectations (not in repo; using realised decisions is look-ahead) and has very few
+  EUR/USD-relevant rate changes on dev (ECB 2015-2020: almost none; Fed ~9 hikes, ~5 scheduled cuts). Not added (backlog note R068).
+- **Status:** VERIFIED (text, partial)
+
+### Not used this pass (opened 2026-11-10 R068)
+- Stauskas & Sucarrat (2025), J. Financial Econometrics 23(3) nbaf013 (mirror page opened): zero-return periodicity, no direction results.
+- Erdemlioglu, Laurent & Neely (2012), St. Louis Fed WP 2012-008A ([PDF](https://files.stlouisfed.org/files/htdocs/wp/2012/2012-008.pdf)): volatility periodicity survey, no return-direction results.

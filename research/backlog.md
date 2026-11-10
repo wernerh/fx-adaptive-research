@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **238** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1). Val-only trials: **8** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1). Total registered trials: **246**. Update after every experiment. (R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **238** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1). Val-only trials: **8** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1). Total registered trials: **246**. Update after every experiment. (R068: refill added B28, B29: 0 trials until pre-registered. R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -495,3 +495,55 @@ Trial count so far on dev: **238** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   gross would leave ~+0.4 at x1.5: thin.
 - **Calendar label:** post-Tokyo-fix window; Asian session. Overlaps the Tokyo fix (E011, B25/B26) by design.
 - **Data:** price data in repo only.
+
+### Refill note R068 (not an item)
+- Borisenko & Pozdeev (2017 WP, PDF opened R068): currencies drift toward the expected rate decision over the ~10 days before a policy
+  change, nothing before no-change meetings. Not added: needs OIS-implied expectations (not in repo; conditioning on the realised decision
+  is look-ahead), and dev has almost no ECB rate changes and ~14 Fed changes, too few events (lesson 2026-11-08 E014).
+- Same-time-of-day return persistence (Heston-Korajczyk-Sadka style, equities): no FX source found that tests return direction
+  (two candidate papers opened were about volatility / zero returns). E009 hour cells already describe dev; lesson R067 says summed
+  hour cells are a weak prior. Not added.
+- Osler (2003) round-number reversals: the touch events largely coincide with B15/E018 crossing events (continuation ~0 on dev), so a
+  reversal test is not new information. Not added.
+
+### B28: Next-day reversal after a low-unexpected-volume day (signal test, dev) · `ready` (added 2026-11-10 R068 refill)
+- **Mechanism [PUB, secondary source]:** Cespa, Gargano, Riddiough & Sarno, "Foreign exchange volume" (RFS; JBS summary opened R068,
+  journal details UNVERIFIED): when unexpected volume (deviation from a 21-day moving average) is "abnormally low" there is "a return
+  reversal over the following day" (liquidity-driven price pressure that is not information, cf. Campbell-Grossman-Wang). Their volume is
+  CLS traded volume; ours is Dukascopy's single-venue volume field (`volume`, mapped from `bid_volume` in data.py): a proxy, stated as a
+  limitation.
+- **Volume gate (fixed now, checked first on the runner):** if `volume` is missing, or zero/NaN on > 1% of dev bars, the experiment stops
+  as BLOCKED with 0 trials used; nothing else is computed.
+- **Signal (fixed now):** trading date D (17:00 NY roll, `sessions.trading_date`) is valid if >= 1,300 of its 1,440 one-minute bars exist.
+  V(D) = sum of `volume` over D's bars. UV(D) = V(D) / mean(V over the previous 21 valid trading dates) - 1 (past only). D is
+  "low volume" if UV(D) is strictly below the 33rd percentile of UV over the previous 60 valid trading dates (rolling, past only).
+  R(D) = mid at 16:55 NY on D - mid at the first bar of D (17:00 NY), pips (E011 quote rule: open of first bar in [T, T+5 min)).
+- **Trade:** position -sign(R(D)) from 20:00 NY (start of trading date D+1, after the roll spread normalises, lesson R059) to 16:55 NY on
+  D+1. D on a Friday excluded and counted (weekend gap, B17). R(D) = 0 skipped. Missing entry/exit bars excluded and counted; entry skipped
+  if spread at 20:00 NY > 2.0 pips.
+- **Test:** **dev only**, n ~ 0.33 x ~1,200 non-Friday valid dates after burn-in ~ 380 events. Shares one experiment with B29 (2 trials,
+  precedent E012).
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 10 events, 2000 draws, seed 0) 95%
+  CI lower > 0 AND one-sided t-test p < 0.025 (Bonferroni for 2 trials). WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE.
+  < 150 events -> NONE (insufficient sample). SIGNAL earns B28v (val, its own experiment).
+- **Descriptive (not in rule):** mid- and high-UV terciles' reversal means (high tercile is B29's statistic: compute both in the same run);
+  share of events that are also E021-type large-move events (|16:00-16:00 R| > rolling p80) and the result excluding them; correlation of
+  UV with the daily range (volume proxies volatility); by year; entry/exit spreads; net at bid/ask, SPEC 4 and costs x1.5.
+- **Power note:** ~21 h hold, SD roughly 40-45 pips -> SE ~2.2 pips at n ~380; a mean of roughly 4.5+ pips is needed for the CI bar.
+- **Contamination note:** volume has never been used by any experiment (grep R068). E021 (dev) computed next-session returns after large
+  |R| moves (NONE, -2.55 signed reversal); conditioning on volume is a different variable, but high-UV days overlap large-move days: report
+  the overlap. Record in the methodology.
+- **Calendar label:** daily-frequency volume-conditioned reversal; the hold contains Tokyo/ECB/London fixes and US releases.
+- **Data:** price + volume data in repo only (Dukascopy via the research-batch runner).
+
+### B29: Next-day continuation after a high-unexpected-volume day (signal test, dev) · `ready` (added 2026-11-10 R068 refill)
+- **Mechanism [PUB, secondary source]:** same source as B28: the reversal "weakens and moves toward a next-day continuation of the same
+  direction of returns when volume is particularly high" (informed trading revealed by volume, cf. Llorente-Michaely-Saar-Wang).
+  Weaker published claim than B28 ("moves toward"), so lower prior.
+- **Signal / trade:** as B28, but D is "high volume" if UV(D) is strictly above the rolling 67th percentile of the previous 60 valid dates,
+  and the position is +sign(R(D)) from 20:00 NY to 16:55 NY on D+1. Same volume gate, validity, Friday, spread and missing-bar rules.
+- **Test:** **dev only**, run in the same experiment as B28 (2 trials total). Rule as B28 (mean > 1.0 pip, block-10 CI lower > 0,
+  t p < 0.025; < 150 events -> NONE). SIGNAL earns B29v (val).
+- **Descriptive (not in rule):** as B28, including the E021 overlap (large-move days are expected to be high-UV; E021's reversal reading
+  was -2.55 signed, i.e. slight continuation, published: record that this item's prior is partly contaminated by E021).
+- **Data:** as B28.
