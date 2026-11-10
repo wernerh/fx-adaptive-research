@@ -1,0 +1,147 @@
+{
+  "result": {
+    "n": 4,
+    "note": "insufficient sample",
+    "decision": "NONE"
+  },
+  "counts": {
+    "trading_dates": 637,
+    "valid_dates": 635,
+    "invalid_missing_signal_quote": 2,
+    "burn_in": 60,
+    "post_burn_in_valid": 575,
+    "events": 34,
+    "events_positive": 15,
+    "events_negative": 19,
+    "friday_excluded": 9,
+    "missing_entry": 2,
+    "missing_exit": 0,
+    "entry_skipped_spread": 19,
+    "events_tested": 4
+  },
+  "descriptive": {
+    "continuation_reading_note": "a negative mean (continuation) is logged as exploratory only (not a trial)",
+    "positive_days": {
+      "n": 1,
+      "note": "insufficient sample"
+    },
+    "negative_days": {
+      "n": 3,
+      "note": "insufficient sample"
+    },
+    "exit_03_00_ny": {
+      "n": 4,
+      "note": "insufficient sample"
+    },
+    "k_1.5": {
+      "n": 12,
+      "mean_pips": 2.437,
+      "median_pips": 2.925,
+      "sd_pips": 14.625,
+      "hit_rate": 0.6667,
+      "t_stat": 0.577,
+      "t_p_one_sided": 0.2877,
+      "mean_ci95_block_boot": [
+        -7.771,
+        8.133
+      ]
+    },
+    "k_2.5": {
+      "n": 3,
+      "note": "insufficient sample"
+    },
+    "control_non_event_long_1705_0200_mean_pips": 1.474,
+    "events_on_fomc_statement_days": 1,
+    "excl_fomc": {
+      "n": 3,
+      "note": "insufficient sample"
+    },
+    "events_on_first_fridays": 0,
+    "share_short": 0.25,
+    "mean_abs_R_pips_events": 134.475,
+    "median_hist_sd_pips_events": 53.576,
+    "median_entry_spread_all_events_pips": 3.6
+  },
+  "by_year": [
+    {
+      "year": 2021,
+      "n": 1,
+      "mean": 3.9,
+      "hit": 1.0
+    },
+    {
+      "year": 2022,
+      "n": 2,
+      "mean": -1.0,
+      "hit": 0.5
+    },
+    {
+      "year": 2023,
+      "n": 1,
+      "mean": 22.3,
+      "hit": 1.0
+    }
+  ],
+  "by_weekday": [
+    {
+      "weekday": "Thursday",
+      "n": 1,
+      "mean": -16.0,
+      "hit": 0.0
+    },
+    {
+      "weekday": "Tuesday",
+      "n": 2,
+      "mean": 18.15,
+      "hit": 1.0
+    },
+    {
+      "weekday": "Wednesday",
+      "n": 1,
+      "mean": 3.9,
+      "hit": 1.0
+    }
+  ],
+  "cost_check": {
+    "n": 4,
+    "mean_signed_mid_pips": 6.05,
+    "mean_net_bidask_pips": 4.975,
+    "mean_net_spec4_pips": 4.775,
+    "mean_net_costs_x1_5_pips": 4.137,
+    "median_spread_entry_pips": 1.8,
+    "median_spread_exit_pips": 0.5
+  },
+  "n_trials": 1,
+  "blocks": [
+    "val"
+  ],
+  "boot_block": 5,
+  "window": 60,
+  "k": 2.0,
+  "alt_ks": [
+    1.5,
+    2.5
+  ],
+  "open_hm_ny": [
+    17,
+    0
+  ],
+  "close_hm_ny": [
+    16,
+    55
+  ],
+  "entry_hm_ny": [
+    17,
+    5
+  ],
+  "exit_hm_ny": [
+    2,
+    0
+  ],
+  "alt_exit_hm_ny": [
+    3,
+    0
+  ],
+  "first_date": "2021-01-21",
+  "last_date": "2023-06-30"
+}
