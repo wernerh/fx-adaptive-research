@@ -25,3 +25,8 @@ Evidence labels: **[PUB]** published research, **[BT]** our backtest, **[EXP]** 
 - NONE: short 08:55 -> 09:55 Tokyo on 458 gotobi dates, mean +0.180 pips, CI (-0.552, 1.245), t p 0.322; below the non-gotobi control
   (+0.411). The E011 all-date pre-fix effect is not concentrated on gotobi dates in EUR/USD. Month-end gotobi subset (n 72, +2.639,
   CI includes 0) is post-hoc only. See experiments/2026-11-10_E030_gotobi_tokyo_fix.
+
+### 2026-11-10 R064: gotobi dates and the post-Tokyo-fix hour (E031, dev) [EXP]
+- WEAK: long 09:55 -> 10:55 Tokyo on 460 gotobi dates, mean +0.799 pips, CI (-0.154, 1.632), t p 0.024; same as the non-gotobi
+  control (+0.778, difference +0.021). The post-fix USD give-back is the E011 all-date effect, not a gotobi effect; it stays below the
+  1-pip bar (SPEC 4 net +0.290, x1.5 +0.036). Gotobi Tokyo-fix line closed on dev. See experiments/2026-11-10_E031_gotobi_postfix.

@@ -250,3 +250,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   appearing post-hoc (E007, E030); they stay exploratory unless pre-registered on fresh data with a human decision.
 - **Action:** B25 closed (rejected_hypotheses.md). B26 (post-fix, gotobi) is next; its prior is lowered by this result, but its
   pre-registered rule is unchanged.
+
+### 2026-11-10 R064: a calendar subset that matches its control adds nothing (E031)
+- **Context:** E031 (B26), long EUR/USD in the hour after the Tokyo fix on gotobi dates, dev.
+- **Observation:** gotobi mean +0.799 pips (WEAK) vs non-gotobi control +0.778 (n 460 / 1096); difference +0.021.
+- **Evidence label:** [EXP]
+- **Lesson:** when a parent effect is already present on all dates (E011 post-fix, WEAK), a subset test mostly re-measures the parent
+  at lower power. Pre-registered subset tests should report the subset-minus-control difference as a descriptive check (done here),
+  and future refills should prefer mechanisms that predict a *difference* from the control, or a new signal, over date restrictions
+  of a known WEAK effect.
+- **Action:** B26 closed (rejected_hypotheses.md); gotobi Tokyo-fix line closed on dev. Refill next.

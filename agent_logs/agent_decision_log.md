@@ -574,3 +574,12 @@ Why each run chose what it did, and any judgement calls.
   >= 55-of-60 coverage on the post-fix hour, spread cap at the 09:55 entry, block 20, < 40 events -> NONE). The 08:55 quote is used
   only for the descriptive pre-fix-sign split (exploratory, fixed now) and never excludes an event. Written before any data.
 - **Next run:** collect the E031 batch outputs and apply `decide_b26`; SIGNAL -> B26v (val), else B26 closed and backlog refill.
+
+### 2026-11-10 R064 (unattended)
+- **State:** research-batch run 42762105863 (E031) completed success; outputs committed by github-actions[bot] in 74fae18, not yet
+  recorded -> protocol step 1 (collect). pytest passed (243) before recording. Local clone was on a detached HEAD; reset to origin/main.
+- **Decision:** applied `gotobi_postfix.decide_b26` exactly: mean +0.799 < 1.0 and CI (-0.154, 1.632) includes 0 -> not SIGNAL;
+  mean > 0 and t p 0.0244 < 0.05 -> WEAK. No lead. Dev trial count 237 -> 238, total 244 -> 245.
+- **Post-hoc note:** exploratory splits (after pre-fix down move +1.365, not weekend-shifted +1.160) are descriptive only and not
+  queued; the control shows the same pattern, so they are not gotobi-specific.
+- **Next run:** no `ready` backlog items -> refill (literature pass, 2-3 pre-registrable items).
