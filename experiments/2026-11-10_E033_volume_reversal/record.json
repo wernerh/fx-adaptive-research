@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E033",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "B28: -sign(R(D)) x (mid 16:55 NY D+1 - mid 20:00 NY D) > 1 pip on dev dates with low unexpected volume (UV < rolling p33 of 60 valid dates); B29: +sign(R(D)) x same > 1 pip on high-UV dates (UV > rolling p67). R(D) = mid 16:55 NY - mid 17:00 NY open of trading date D; UV = V / mean(V of previous 21 valid dates) - 1",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new conditioning variable: Dukascopy unexpected daily volume (relatives E021, E028, E029)",
+  "decision_rule": "Per arm: < 150 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 10 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.025 (Bonferroni, 2 trials); WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE. Volume gate first: no volume column or > 1% zero/NaN dev bars -> BLOCKED, 0 trials",
+  "n_trials": 2,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e033_volume_reversal.py | tee backtests/validation_reports/E033_results.txt",
+  "preregistered_in": "R069",
+  "next_experiment": "collect E033; SIGNAL arm -> B28v/B29v (val, own experiment); else arm closed"
+}

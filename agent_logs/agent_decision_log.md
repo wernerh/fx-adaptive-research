@@ -636,3 +636,18 @@ Why each run chose what it did, and any judgement calls.
 - **Not added:** central-bank pre-announcement drift (needs OIS expectations, too few events), same-time-of-day persistence (no FX
   source; E009 contamination), round-number reversals (redundant with E018). Backlog note R068.
 - **Next run:** pre-register B28+B29 as the next experiment.
+
+### 2026-11-10 R069 (unattended)
+- **State:** last research-batch run 42783232861 (E032) completed and recorded (R067); no run queued or in progress; B28 and B29 are
+  the top `ready` items -> protocol step 3. pytest passed (252) before any change. Local main was stale/diverged; reset to origin/main
+  (nothing pushed from the old history).
+- **Choice:** pre-register B28+B29 as E033 (dev only, one experiment, 2 trials, precedent E012), parameters and rule exactly as the
+  backlog drafts (R068): UV = V / mean(previous 21 valid dates) - 1, rolling p33/p67 of 60 past UV values, R = 16:55 NY - 17:00 NY open,
+  hold 20:00 NY D -> 16:55 NY D+1, Fridays excluded, 2.0-pip entry cap, block-10 bootstrap, p < 0.025 per arm, < 150 events -> NONE.
+  Volume gate first (no column or > 1% zero/NaN dev bars -> BLOCKED, 0 trials).
+- **Judgement calls fixed before data (written in the methodology):** a missing R quote is `missing_signal_quote` (not an event, listed
+  first in the exclusion order); low-coverage dates never enter the volume history; percentile = numpy linear; the E021 overlap uses
+  `daily_reversal.mark_events` on the same dev bars.
+- **Outcome handling (fixed now):** SIGNAL in an arm -> its val confirmation (B28v/B29v) as a separate pre-registered experiment, not a
+  LEAD yet; WEAK/NONE closes that arm; BLOCKED -> both items `blocked`, 0 trials.
+- **Next run:** collect E033 when the research-batch run finishes.
