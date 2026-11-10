@@ -782,3 +782,11 @@ Why each run chose what it did, and any judgement calls.
 - **Reuse:** E034 index loader (`month_end_hedging.load_index`, `london_quotes`) and download script; E035 statistic and rule
   (`evaluate_b32`/`decide_b32`, identical thresholds).
 - **Next run:** collect E037 when the research-batch run finishes.
+
+## 2026-11-10 R081 (unattended)
+- **State:** research-batch run 42915756793 (E037) completed success; outputs committed by github-actions[bot] (b92e783) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest 299 passed.
+- **Decision:** data gate ok (28/1561 dates missing an index quote, 1.8%). `decide_b35` applied exactly: B35 n 1509, mean +1.268,
+  CI lower -1.411, t p 0.191 -> NONE; B36 n 1482, mean -0.88 -> NONE. LEAD condition 1 fails; no notification. B35/B36 closed and
+  B37 closed unearned per the pre-registered "what follows". Descriptive terciles/years not turned into new tests.
+- **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items).

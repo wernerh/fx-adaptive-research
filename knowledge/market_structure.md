@@ -58,3 +58,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - NONE on val 2021-01-21..2023-06-30: fading the 20-date sum of 17:05 -> 07:00 NY moves, held 07:00 -> 16:55 NY, n 616, +0.193 pips,
   CI (-2.683, 3.23), t p 0.456; SPEC 4 net -0.492. Supersedes the E035 entry above as the current reading: the dev SIGNAL is not
   confirmed and the line is closed. See experiments/2026-11-10_E036_overnight_reversal_val.
+
+### 2026-11-10 R081: relative EU vs US equity returns and EUR/USD (E037, dev) [EXP]
+- Same-day: corr(EU50 minus US500 log return, EUR/USD mid 16:00 -> 16:00 London) -0.228 on 1509 dev dates (EU outperformance with
+  EUR weakness, Hau-Rey sign).
+- Next day: no predictive power. -sign(daily) +1.268 pips (CI (-1.411, 3.942)), -sign(20-date) -0.88 (CI (-3.418, 1.868)), held
+  16:05 London -> 16:00 London next date. See experiments/2026-11-10_E037_relative_equity.

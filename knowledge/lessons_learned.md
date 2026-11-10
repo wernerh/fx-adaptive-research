@@ -315,3 +315,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   fading by 2019-2020) have been a reliable warning sign of a val failure.
 - **Action:** B33/B34 line closed (E035 + E036 in rejected_hypotheses.md). A high-|O20|-only variant is not tested on val; it would
   need fresh data, its own pre-registration and a human decision. Next: backlog refill.
+
+### 2026-11-10 R081: relative equity performance does not predict next-day EUR/USD (E037)
+- **Context:** E037 (B35 daily, B36 20-date), lagged extension of Hau-Rey (2006) relative-equity rebalancing, dev only, 2 trials.
+- **Observation:** B35 n 1509, +1.268 pips, CI (-1.411, 3.942), t p 0.191 -> NONE; B36 n 1482, -0.88, CI (-3.418, 1.868) -> NONE.
+  Contemporaneous corr(S1, EUR/USD same 16:00 -> 16:00 day) -0.228, the published sign. Index data gate ok (1.8% missing).
+- **Evidence label:** [EXP]
+- **Lesson:** a published contemporaneous FX-equity relation reproduced in our data does not imply a tradable lag: the flow appears
+  to be absorbed the same day. For future "lagged extension" items, expect NONE unless the paper itself reports a lagged effect.
+- **Action:** B35/B36 closed (rejected_hypotheses.md), B37 closed unearned. Next: backlog refill.
