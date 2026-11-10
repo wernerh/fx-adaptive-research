@@ -229,3 +229,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   pass the rule. Tail-day hypotheses need a much larger expected effect, or a longer sample, to be worth a trial. A subset split that
   looks good (up-moves) mirrors the unconditional afternoon drift and is not a new hypothesis.
 - **Action:** B23 closed (rejected_hypotheses.md). B24 (val only) is the next `ready` item.
+
+### 2026-11-10 R059: a roll-hour entry can make a test untestable (E029)
+- **Context:** E029 (B24), val-only fade of the 17:05 -> 02:00 NY overnight session after a 2-SD open-to-close day.
+- **Observation:** 34 events, but 19 were skipped by the pre-registered 2.0-pip entry-spread cap at 17:05 NY (median entry spread of
+  events 3.6 pips) and 9 were Fridays -> 4 tested -> insufficient sample -> NONE.
+- **Evidence label:** [EXP]
+- **Lesson:** entries within ~10 minutes of the 17:00 NY roll hit the daily spread widening, and more so after large-move days. Before
+  pre-registering any test that enters near the roll, check the entry-spread distribution on the **dev** block (descriptive, no
+  returns) and size the power note on events that pass the spread cap, not on raw events.
+- **Action:** B24 closed (rejected_hypotheses.md, as untestable at this entry, not as a rejected effect). Refill next.

@@ -519,3 +519,13 @@ Why each run chose what it did, and any judgement calls.
   E023/E025 other windows on unsigned range).
 - **Next run:** collect the E029 batch outputs and apply `decide_b24`. Any outcome: no LEAD possible from a val-only test; WEAK/NONE
   -> B24 closed and backlog refill; SIGNAL -> logged for a human decision.
+
+### 2026-11-10 R059 (unattended)
+- **State:** research-batch run 42728790080 (E029) completed successfully; outputs (commit cf4751a) not yet recorded -> protocol step 1
+  (collect). pytest passed (213) before any change. Worked on a branch at origin/main (stale local `main` kept as
+  `stale-local-main-backup`, untouched).
+- **Decision applied exactly:** `decide_b24` -> NONE (insufficient sample, 4 tested events < 10). Thresholds, spread cap and entry time
+  unchanged after seeing results (CLAUDE.md rule 7).
+- **Why it failed:** 19 of 34 events were above the 2.0-pip spread cap at 17:05 NY. Logged as a lesson: check roll-hour entry spreads
+  on dev before pre-registering.
+- **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items). No LEAD, no notification.
