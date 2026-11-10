@@ -1,0 +1,299 @@
+{
+  "status": "complete",
+  "volume_gate": {
+    "ok": true,
+    "n_bars": 2240215,
+    "zero_or_nan_bars": 0,
+    "zero_or_nan_share": 0.0,
+    "reason": null
+  },
+  "result_b28": {
+    "n": 426,
+    "mean_pips": -2.034,
+    "median_pips": -0.2,
+    "sd_pips": 52.158,
+    "hit_rate": 0.4977,
+    "t_stat": -0.805,
+    "t_p_one_sided": 0.7893,
+    "mean_ci95_block_boot": [
+      -6.772,
+      3.013
+    ],
+    "decision": "NONE"
+  },
+  "result_b29": {
+    "n": 391,
+    "mean_pips": -0.213,
+    "median_pips": 1.4,
+    "sd_pips": 60.8,
+    "hit_rate": 0.5064,
+    "t_stat": -0.069,
+    "t_p_one_sided": 0.5276,
+    "mean_ci95_block_boot": [
+      -6.616,
+      4.78
+    ],
+    "decision": "NONE"
+  },
+  "counts": {
+    "trading_dates": 1562,
+    "valid_dates": 1556,
+    "low_coverage_dates": 6,
+    "dates_with_band": 1475,
+    "low_events": 533,
+    "low_missing_signal_quote": 4,
+    "low_friday_excluded": 97,
+    "low_zero_move": 1,
+    "low_missing_entry": 2,
+    "low_missing_exit": 3,
+    "low_entry_skipped_spread": 0,
+    "low_tested": 426,
+    "high_events": 494,
+    "high_missing_signal_quote": 2,
+    "high_friday_excluded": 99,
+    "high_zero_move": 1,
+    "high_missing_entry": 0,
+    "high_missing_exit": 1,
+    "high_entry_skipped_spread": 0,
+    "high_tested": 391,
+    "mid_events": 448,
+    "mid_missing_signal_quote": 0,
+    "mid_friday_excluded": 97,
+    "mid_zero_move": 0,
+    "mid_missing_entry": 2,
+    "mid_missing_exit": 0,
+    "mid_entry_skipped_spread": 0,
+    "mid_tested": 349
+  },
+  "descriptive": {
+    "volume_bar_stats": {
+      "bar_volume_min": 0.000137,
+      "bar_volume_median": 143.34,
+      "bar_volume_max": 138027.44
+    },
+    "low_reversal": {
+      "n": 426,
+      "mean_pips": -2.034,
+      "median_pips": -0.2,
+      "sd_pips": 52.158,
+      "hit_rate": 0.4977,
+      "t_stat": -0.805,
+      "t_p_one_sided": 0.7893,
+      "mean_ci95_block_boot": [
+        -6.772,
+        3.013
+      ],
+      "decision": "NONE"
+    },
+    "high_continuation": {
+      "n": 391,
+      "mean_pips": -0.213,
+      "median_pips": 1.4,
+      "sd_pips": 60.8,
+      "hit_rate": 0.5064,
+      "t_stat": -0.069,
+      "t_p_one_sided": 0.5276,
+      "mean_ci95_block_boot": [
+        -6.616,
+        4.78
+      ],
+      "decision": "NONE"
+    },
+    "mid_tercile_reversal": {
+      "n": 349,
+      "mean_pips": 0.852,
+      "median_pips": 2.7,
+      "sd_pips": 53.845,
+      "hit_rate": 0.5444,
+      "t_stat": 0.296,
+      "t_p_one_sided": 0.3839,
+      "mean_ci95_block_boot": [
+        -4.181,
+        6.788
+      ]
+    },
+    "high_tercile_reversal": {
+      "n": 391,
+      "mean_pips": 0.213,
+      "median_pips": -1.4,
+      "sd_pips": 60.8,
+      "hit_rate": 0.491,
+      "t_stat": 0.069,
+      "t_p_one_sided": 0.4724,
+      "mean_ci95_block_boot": [
+        -4.78,
+        6.616
+      ]
+    },
+    "low_tercile_continuation": {
+      "n": 426,
+      "mean_pips": 2.034,
+      "median_pips": 0.2,
+      "sd_pips": 52.158,
+      "hit_rate": 0.5023,
+      "t_stat": 0.805,
+      "t_p_one_sided": 0.2107,
+      "mean_ci95_block_boot": [
+        -3.013,
+        6.772
+      ]
+    },
+    "low_share_e21_large": 0.117,
+    "high_share_e21_large": 0.292,
+    "low_reversal_excl_e21_large": {
+      "n": 376,
+      "mean_pips": 0.08,
+      "median_pips": 2.375,
+      "sd_pips": 52.755,
+      "hit_rate": 0.5106,
+      "t_stat": 0.029,
+      "t_p_one_sided": 0.4883,
+      "mean_ci95_block_boot": [
+        -4.909,
+        5.346
+      ]
+    },
+    "high_continuation_excl_e21_large": {
+      "n": 277,
+      "mean_pips": 0.03,
+      "median_pips": 1.8,
+      "sd_pips": 57.774,
+      "hit_rate": 0.5126,
+      "t_stat": 0.009,
+      "t_p_one_sided": 0.4966,
+      "mean_ci95_block_boot": [
+        -6.751,
+        5.215
+      ]
+    },
+    "corr_uv_range_pips": 0.275,
+    "corr_uv_abs_r_pips": 0.185,
+    "mean_abs_r_low": 31.961,
+    "mean_abs_r_high": 51.835,
+    "control_all_tradable_banded_reversal": {
+      "n": 1166,
+      "mean_pips": -0.417,
+      "median_pips": 1.15,
+      "sd_pips": 55.656,
+      "hit_rate": 0.5094,
+      "t_stat": -0.256,
+      "t_p_one_sided": 0.6008,
+      "mean_ci95_block_boot": [
+        -3.672,
+        2.92
+      ]
+    }
+  },
+  "by_year": {
+    "low_reversal": [
+      {
+        "year": 2015,
+        "n": 47,
+        "mean": -16.777,
+        "hit": 0.447
+      },
+      {
+        "year": 2016,
+        "n": 86,
+        "mean": 1.428,
+        "hit": 0.453
+      },
+      {
+        "year": 2017,
+        "n": 68,
+        "mean": -9.687,
+        "hit": 0.426
+      },
+      {
+        "year": 2018,
+        "n": 70,
+        "mean": 2.609,
+        "hit": 0.486
+      },
+      {
+        "year": 2019,
+        "n": 74,
+        "mean": -3.123,
+        "hit": 0.486
+      },
+      {
+        "year": 2020,
+        "n": 81,
+        "mean": 6.253,
+        "hit": 0.654
+      }
+    ],
+    "high_continuation": [
+      {
+        "year": 2015,
+        "n": 49,
+        "mean": 0.149,
+        "hit": 0.449
+      },
+      {
+        "year": 2016,
+        "n": 67,
+        "mean": -3.618,
+        "hit": 0.463
+      },
+      {
+        "year": 2017,
+        "n": 73,
+        "mean": -9.56,
+        "hit": 0.466
+      },
+      {
+        "year": 2018,
+        "n": 79,
+        "mean": 8.052,
+        "hit": 0.544
+      },
+      {
+        "year": 2019,
+        "n": 65,
+        "mean": -5.033,
+        "hit": 0.477
+      },
+      {
+        "year": 2020,
+        "n": 58,
+        "mean": 9.323,
+        "hit": 0.638
+      }
+    ]
+  },
+  "cost_check": {
+    "low_reversal": {
+      "n": 426,
+      "mean_signed_mid_pips": -2.034,
+      "mean_net_bidask_pips": -2.53,
+      "mean_net_spec4_pips": -2.73,
+      "mean_net_costs_x1_5_pips": -3.078,
+      "median_spread_entry_pips": 0.3,
+      "median_spread_exit_pips": 0.5
+    },
+    "high_continuation": {
+      "n": 391,
+      "mean_signed_mid_pips": -0.213,
+      "mean_net_bidask_pips": -0.694,
+      "mean_net_spec4_pips": -0.894,
+      "mean_net_costs_x1_5_pips": -1.234,
+      "median_spread_entry_pips": 0.3,
+      "median_spread_exit_pips": 0.5
+    }
+  },
+  "n_trials": 2,
+  "blocks": [
+    "dev"
+  ],
+  "entry_hm_ny": [
+    20,
+    0
+  ],
+  "exit_hm_ny": [
+    16,
+    55
+  ],
+  "first_date": "2015-01-02",
+  "last_date": "2020-12-31"
+}
