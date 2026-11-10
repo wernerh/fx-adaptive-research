@@ -292,3 +292,14 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   pre-register such a cell only on val (dev is used), only against the unconditional-long control, and counted as a new trial; the
   val month-end sample (~29) makes that low power (lesson E014). Month-end/fix lines now: E007 pre/post-fix (parked/NONE), E034 NONE.
 - **Action:** B30 closed, B31 closed unearned (rejected_hypotheses.md). Refill next.
+
+### 2026-11-10 R076: daily overnight move does not reverse intraday; the 20-date smoothed overnight fade is a dev SIGNAL (E035)
+- **Observation:** B32 (-sign of the 17:05 -> 07:00 NY move, hold 07:00 -> 16:55 NY) -0.285 pips, NONE, slope about 0. B33
+  (-sign of the 20-date sum of overnight moves) +2.695 pips, CI (0.47, 5.027), t p 0.0093, SIGNAL; SPEC 4 net +2.047, x1.5 +1.723.
+  B33 is front-loaded (2015 +8.9; 2019-2020 below +1) and agrees with B32 on only ~half of dates.
+- **Evidence label:** [EXP]
+- **Lesson:** the fourth dev SIGNAL of the project; all three earlier ones (E013, E022, E024) returned NONE on val
+  (E014, E023, E025). With ~252 trials, a single p 0.009 is
+  expected by chance; treat val (B34) as the test and do not tune the window, tercile or hold on dev. Smoothed-signal arms can pass
+  where the raw daily signal is flat, so the pre-registered pairing of raw + smoothed arms was worth its extra trial.
+- **Action:** B32 closed (rejected_hypotheses.md). B34 now `ready`: B33 arm unchanged on val, 1 val trial, p < 0.05.

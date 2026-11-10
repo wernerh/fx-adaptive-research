@@ -730,3 +730,10 @@ Why each run chose what it did, and any judgement calls.
 - **Outcome handling (fixed now):** SIGNAL in an arm -> B34 (val confirmation, own experiment), not a LEAD yet; WEAK/NONE in both ->
   B32/B33 closed, B34 closed unearned, refill next.
 - **Next run:** collect E035 when the research-batch run finishes.
+
+## 2026-11-10 R076 (unattended)
+- **State:** research-batch run 42865880407 (E035) completed success; outputs commit cfd1951 not yet recorded. No run queued or in progress.
+- **Choice:** protocol step 1 (Collect): record E035 and apply `decide_b32` exactly. pytest 284 passed.
+- **Result:** B32 NONE, B33 SIGNAL on dev. LEAD gate: condition 1 only (val confirmation not yet run) -> no LEAD, no notification.
+- **Next run:** pre-register B34 (B33 arm unchanged on val, own experiment, 1 val trial, p < 0.05, O20 burn-in from val dates only;
+  check val contamination: E017/E032 used other windows).

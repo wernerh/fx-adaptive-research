@@ -47,3 +47,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   both NONE; corr(S, move) about 0. Unconditional long EUR/USD on the same 71 month-ends: +3.076 (hour), +12.501 (day, CI (1.329, 24.105)).
 - Descriptive only: long EUR/USD after US equities rose month-to-date, D-1 16:00 -> D 16:00, +23.082 (t p 0.0001), post-hoc and
   overlapping the unconditional drift. See experiments/2026-11-10_E034_month_end_hedging.
+
+### 2026-11-10: Overnight (17:05 -> 07:00 NY) EUR/USD moves vs the NY-day return (E035) [EXP]
+- Dev 2015-2020, 1,554 dates: a single overnight move does not predict 07:00 -> 16:55 NY (fade -0.285 pips, slope -0.005, NONE).
+  SD overnight 35.5 pips, SD 07:00 -> 16:55 NY 45.4 pips; unconditional long 07:00 -> 16:55 NY +0.56 (not significant).
+- Fading the 20-date sum of overnight moves: +2.695 pips per date (CI (0.47, 5.027), SIGNAL on dev, not yet confirmed on val; B34).
+  See experiments/2026-11-10_E035_overnight_reversal.
