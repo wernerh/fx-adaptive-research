@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E035",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "B32: -sign(r_on(D)) x r_id(D) > 1 pip per dev trading date; B33: -sign(O20(D)) x r_id(D) > 1 pip. r_on = mid 07:00 NY on D - mid 17:05 NY on the evening opening D; r_id = mid 16:55 NY - mid 07:00 NY on D; O20 = sum of r_on over the 20 previous valid dates (overnight -> intraday reversal, Krohn-Mueller-Whelan UIP in high frequency, Lou-Polk-Skouras)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new conditioning variable: sign of the 17:05 -> 07:00 NY overnight return, daily (B32) and 20-date sum (B33) (relatives E021, E027, E028)",
+  "decision_rule": "Per arm: < 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.025 (Bonferroni, 2 trials); WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE",
+  "n_trials": 2,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e035_overnight_reversal.py | tee backtests/validation_reports/E035_results.txt",
+  "preregistered_in": "R075",
+  "next_experiment": "collect E035; SIGNAL arm -> B34 (val, own experiment); else B32/B33 closed, B34 closed unearned"
+}

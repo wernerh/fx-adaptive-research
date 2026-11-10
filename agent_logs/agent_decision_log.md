@@ -717,3 +717,16 @@ Why each run chose what it did, and any judgement calls.
   whose dev and val are already largely seen (E009, E017, E001/E006); only the locked OOS block could test it cleanly. Same status as
   the R065 pre-ECB window. Needs a human decision; not queued.
 - **Next run:** pre-register B32+B33 as E035 (hypothesis, methodology, record.json, registry row), implement with tests, queue.
+
+### 2026-11-10 R075 (unattended)
+- **State:** last research-batch run 42834778439 (E034) completed and recorded (R073); no run queued or in progress; B32 and B33
+  are the top `ready` items (one experiment) -> protocol step 3. pytest passed (274) before any change. Local main was stale/diverged;
+  reset to origin/main.
+- **Choice:** pre-register B32+B33 as E035 (dev only, 2 trials), definitions and rule exactly as the backlog draft (R074):
+  B32 -sign(r_on) and B33 -sign(O20), hold 07:00 -> 16:55 NY, block-20 bootstrap, p < 0.025 per arm, < 500 dates -> NONE.
+- **Judgement calls fixed before data (in the methodology):** the 17:05 NY open quote is taken from the first bar in [17:05, 17:10) NY
+  whose trading date is D; a missing 07:00 quote counts as `missing_signal` for B32 (it is both signal end and entry); B33 burn-in is
+  the first 20 dev dates with a valid r_on (dev bars only, no pre-dev history).
+- **Outcome handling (fixed now):** SIGNAL in an arm -> B34 (val confirmation, own experiment), not a LEAD yet; WEAK/NONE in both ->
+  B32/B33 closed, B34 closed unearned, refill next.
+- **Next run:** collect E035 when the research-batch run finishes.
