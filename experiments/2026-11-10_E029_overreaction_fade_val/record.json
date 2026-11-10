@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E029",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "-sign(R - m) x (mid 02:00 NY on D+1 - mid 17:05 NY at the start of D+1) > 1 pip on val Mon-Thu dates D where R = mid 16:55 NY - mid 17:00 NY open of D lies outside m +/- 2 s (mean, SD of R over the 60 valid val dates before D) (next-morning fade after an overreaction day, B24)",
+  "blocks_used": [
+    "val"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "fading the 17:05 -> 02:00 NY overnight session after a same-day 2-SD open-to-close move (relatives E021 dev next-session reversal, E028 dev intraday continuation)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 5 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. Val-only: a SIGNAL is not a LEAD (no clean dev pass); any OOS use needs a human decision",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "next_experiment": "SIGNAL -> log, human decision needed; WEAK/NONE -> B24 closed, backlog refill"
+}

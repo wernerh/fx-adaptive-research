@@ -505,3 +505,17 @@ Why each run chose what it did, and any judgement calls.
   SIGNAL nor WEAK -> NONE. LEAD condition 1 fails; no notification. B23 line closed per the pre-registered "what follows". The
   up-move/down-move split is post-hoc and is not queued.
 - **Next run:** pre-register B24 (val only) and queue it.
+
+### 2026-11-10 R058 (unattended)
+- **State:** last research-batch run 42712247364 (E028) completed and already recorded (R057); no run queued or in progress ->
+  protocol step 3 (next experiment). Top `ready` item: B24. pytest passed (202) before any change. Worked on a detached HEAD at
+  origin/main (local stale `main` left untouched).
+- **Choice:** pre-register B24 as E029 (val only, val-only burn-in, 1 trial) with every parameter and the decision rule exactly as
+  drafted in the backlog (R055). Implementation details fixed now, before data: close quote = first bar in [16:55, 17:00) NY; entry =
+  first bar in [17:05, 17:10) NY of the next trading date (N = D + 1 calendar day); valid Fridays stay in the rolling history, only
+  their trade is excluded; exclusion order friday -> missing entry -> missing exit -> spread; SD ddof=1; fewer than 10 events ->
+  insufficient sample -> NONE. Null calibration at val size (scratch, 300 seeds): SIGNAL rate 4.3%.
+- **Why val is clean:** no val experiment has conditioned an overnight return on the previous day's move (E012/E017 unconditional,
+  E023/E025 other windows on unsigned range).
+- **Next run:** collect the E029 batch outputs and apply `decide_b24`. Any outcome: no LEAD possible from a val-only test; WEAK/NONE
+  -> B24 closed and backlog refill; SIGNAL -> logged for a human decision.
