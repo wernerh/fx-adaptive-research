@@ -1,0 +1,50 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E035 DEV overnight (17, 5)->(7, 0) NY, hold (7, 0) -> (16, 55) NY (pre-registered, 2 trials, block 20, p < 0.025)
+
+B32 -sign(r_on) x r_id:
+n                                  1554
+mean_pips                        -0.285
+median_pips                        -1.4
+sd_pips                          45.419
+hit_rate                         0.4813
+t_stat                           -0.247
+t_p_one_sided                    0.5976
+mean_ci95_block_boot    (-2.421, 1.843)
+decision                           NONE
+
+B33 -sign(O20) x r_id:
+n                                1536
+mean_pips                       2.695
+median_pips                      2.15
+sd_pips                        44.862
+hit_rate                       0.5267
+t_stat                          2.354
+t_p_one_sided                  0.0093
+mean_ci95_block_boot    (0.47, 5.027)
+decision                       SIGNAL
+
+Counts: {'trading_dates': 1562, 'valid_r_on_dates': 1554, 'b33_burn_in_valid_dates': 20, 'b32_missing_signal': 8, 'b32_zero_signal': 0, 'b32_missing_entry': 0, 'b32_missing_exit': 0, 'b32_entry_skipped_spread': 0, 'b32_tested': 1554, 'b33_missing_signal': 20, 'b33_zero_signal': 0, 'b33_missing_entry': 6, 'b33_missing_exit': 0, 'b33_entry_skipped_spread': 0, 'b33_tested': 1536}
+
+Descriptive:
+  continuation_reading_note : a negative mean (continuation) is logged as exploratory only (not a trial)
+  slope_r_id_on_r_on : {'n': 1554, 'slope': -0.0049, 't_stat': -0.151, 'p_two_sided': 0.8798}
+  b32_abs_r_on_tercile_low : {'n': 520, 'mean_pips': -0.372, 'median_pips': 2.075, 'sd_pips': 42.281, 'hit_rate': 0.5212, 't_stat': -0.201, 't_p_one_sided': 0.5795, 'mean_ci95_block_boot': (-4.331, 3.87)}
+  b32_abs_r_on_tercile_mid : {'n': 517, 'mean_pips': -1.383, 'median_pips': -4.65, 'sd_pips': 44.576, 'hit_rate': 0.4449, 't_stat': -0.705, 't_p_one_sided': 0.7596, 'mean_ci95_block_boot': (-5.063, 1.491)}
+  b32_abs_r_on_tercile_high : {'n': 517, 'mean_pips': 0.901, 'median_pips': -0.9, 'sd_pips': 49.202, 'hit_rate': 0.4778, 't_stat': 0.417, 't_p_one_sided': 0.3386, 'mean_ci95_block_boot': (-2.973, 5.606)}
+  b32_mondays : {'n': 311, 'mean_pips': 0.861, 'median_pips': 1.15, 'sd_pips': 33.804, 'hit_rate': 0.5113, 't_stat': 0.449, 't_p_one_sided': 0.3269, 'mean_ci95_block_boot': (-4.399, 3.668)}
+  b32_tue_fri : {'n': 1243, 'mean_pips': -0.571, 'median_pips': -2.25, 'sd_pips': 47.893, 'hit_rate': 0.4739, 't_stat': -0.421, 't_p_one_sided': 0.6629, 'mean_ci95_block_boot': (-3.0, 1.892)}
+  b32_share_long : 0.506
+  sd_r_on_pips : 35.512
+  sd_r_id_pips : 45.416
+  unconditional_long_r_id : {'n': 1554, 'mean_pips': 0.56, 'median_pips': 0.625, 'sd_pips': 45.416, 'hit_rate': 0.5064, 't_stat': 0.486, 't_p_one_sided': 0.3136, 'mean_ci95_block_boot': (-1.652, 2.952)}
+  b33_abs_o20_tercile_low : {'n': 512, 'mean_pips': 2.602, 'median_pips': 4.3, 'sd_pips': 46.23, 'hit_rate': 0.5332, 't_stat': 1.274, 't_p_one_sided': 0.1017, 'mean_ci95_block_boot': (-1.137, 5.826)}
+  b33_abs_o20_tercile_mid : {'n': 512, 'mean_pips': 1.18, 'median_pips': 0.875, 'sd_pips': 38.206, 'hit_rate': 0.5137, 't_stat': 0.699, 't_p_one_sided': 0.2426, 'mean_ci95_block_boot': (-1.43, 3.868)}
+  b33_abs_o20_tercile_high : {'n': 512, 'mean_pips': 4.304, 'median_pips': 2.275, 'sd_pips': 49.436, 'hit_rate': 0.5332, 't_stat': 1.97, 't_p_one_sided': 0.0247, 'mean_ci95_block_boot': (0.256, 9.656)}
+  b33_share_long : 0.482
+  b32_b33_same_side_share : 0.498
+
+By year (descriptive): {'b32': [{'year': 2015, 'n': 259, 'mean': -6.931, 'hit': 0.452}, {'year': 2016, 'n': 260, 'mean': 3.376, 'hit': 0.496}, {'year': 2017, 'n': 258, 'mean': -1.347, 'hit': 0.481}, {'year': 2018, 'n': 259, 'mean': 0.352, 'hit': 0.452}, {'year': 2019, 'n': 259, 'mean': 1.575, 'hit': 0.541}, {'year': 2020, 'n': 259, 'mean': 1.248, 'hit': 0.467}], 'b33': [{'year': 2015, 'n': 239, 'mean': 8.867, 'hit': 0.531}, {'year': 2016, 'n': 260, 'mean': 2.48, 'hit': 0.542}, {'year': 2017, 'n': 259, 'mean': 2.651, 'hit': 0.51}, {'year': 2018, 'n': 259, 'mean': 1.365, 'hit': 0.517}, {'year': 2019, 'n': 259, 'mean': 0.736, 'hit': 0.541}, {'year': 2020, 'n': 260, 'mean': 0.557, 'hit': 0.519}]}
+
+DEV cost check (descriptive): {'b32': {'n': 1554, 'mean_signed_mid_pips': -0.285, 'mean_net_bidask_pips': -0.733, 'mean_net_spec4_pips': -0.933, 'mean_net_costs_x1_5_pips': -1.258, 'median_spread_entry_pips': 0.3, 'median_spread_exit_pips': 0.5}, 'b33': {'n': 1536, 'mean_signed_mid_pips': 2.695, 'mean_net_bidask_pips': 2.247, 'mean_net_spec4_pips': 2.047, 'mean_net_costs_x1_5_pips': 1.723, 'median_spread_entry_pips': 0.3, 'median_spread_exit_pips': 0.5}}
+E035 decision: B32 NONE | B33 SIGNAL
