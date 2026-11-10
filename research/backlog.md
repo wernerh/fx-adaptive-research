@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **238** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1). Val-only trials: **7** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1). Total registered trials: **245**. Update after every experiment. (R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **238** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1). Val-only trials: **7** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1). Total registered trials: **245**. Update after every experiment. (R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -443,3 +443,55 @@ Trial count so far on dev: **238** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Calendar label:** post-Tokyo-fix hour; Asian session.
 - **Data:** price data in repo only.
 - **Order:** B25 first (paper's primary claim: dollar-buying into the fix); B26 second.
+
+### Refill note R065 (not an item)
+- FOMC pre-announcement drift (Karnaukh 2018, already in academic_studies.md: unconditional "neutral meeting" USD drift down of
+  5-10 bp from 14:00 two days before to 14:00 on announcement day; Neuhierl & Weber 2017 "Monetary Momentum", Chicago Booth page
+  opened R065, abstract says the drift is present in "the US-dollar exchange rate"): not added. Only 47 scheduled statements on dev and
+  20 on val, and lesson 2026-11-08 (E014) says val cannot confirm an effect of the published size for 8/yr events; the window also
+  overlaps the published E013 window (16:00 NY t-1 -> 13:55 NY t). Lucca & Moench (2015) could not be opened (NY Fed page timed out).
+- Turn-of-month (Kumar 2015 IJMF 11(2) 232-243, DOI 10.1108/IJMF-05-2014-0068; Kumar 2018 SEF 35(3) 441-456, DOI
+  10.1108/SEF-08-2015-0192; RePEc abstracts opened R065): INR pairs / 20 USD pairs, sign convention not stated in the abstracts, and
+  the 2018 paper says calendar anomalies "seem to have disappeared for almost all currencies during 2005 to 2014". Not added.
+- Krohn-Mueller-Whelan unconditional **pre-ECB** window (short EUR/USD 02:00 -> 08:15 NY, all dates): dev is already known in
+  aggregate (E009 ny_02..ny_07 cells) and val is contaminated by E023's descriptive split (high-vol +1.197 and normal +1.15 val dates).
+  Only the locked OOS block is clean, which needs a human decision. Not added; listed for the human in agent_decision_log R065.
+- KMW **pre-Tokyo** window (17:00 -> 20:55 NY, short EUR): entry at the 17:00 NY roll is not tradable at the SPEC 4 spread cap
+  (lesson R059, median 17:05 spread 3.6 pips) and the dev E009 cells for 17:00-20:00 NY sum to about +0.8 pips (wrong sign). Not added.
+
+### B27: Post-Tokyo-fix EUR appreciation, KMW window 20:55 -> 02:00 NY (signal test, val only) · `ready` (added 2026-11-10 R065 refill)
+- **Mechanism [PUB]:** Krohn, Mueller & Whelan (JF 2024, 79(1) 541-578; Bank of Canada SWP 2021-48 PDF opened R065, first ~40k
+  characters verbatim): "an appreciation of the U.S. dollar pre-fix and a depreciation post-fix", explained by dealers hedging an
+  unconditional dollar demand at the fixes ("Dealers hedge this demand pre-fix, driving intraday reversals"). The paper's window,
+  verbatim: post-Tokyo = 8:55 p.m. to 2:00 a.m. ET; 5-minute Refinitiv mid-quotes, 1999-2019, EUR included. The EUR post-Tokyo
+  magnitude (+5.89% p.a., t 9.29) was read only through a model summary: **UNVERIFIED**. Robustness, verbatim: "not driven by day
+  of the week or month of the year effects".
+- **Why now / why val only:** the full post-Tokyo window has never been tested as its own trial. E011 (dev) tested only the first hour
+  after the fix (09:55 -> 10:55 Tokyo, +0.785 WEAK); B25/B26 tested gotobi subsets (dev). On dev the window is effectively already
+  known: E009 published every NY-hour cell (ny_21 +0.655, ny_22 +0.591, ny_23 -0.027, ny_00 +0.197, ny_01 -0.240; sum about +1.18
+  pips), so a dev test would be contaminated. Val has not been computed for this window by any experiment (E029's val window
+  17:05 -> 02:00 NY used 4 conditional events only; record this in the methodology). Precedent: B14/E017, B24/E029 (val only).
+- **Trade:** long EUR/USD from 20:55 to 02:00 America/New_York on every valid val trading date (entry = the evening that belongs to
+  trading date D under `sessions.trading_date`; exit 02:00 NY the next calendar morning, same trading date). Quote = open of the first
+  bar in [T, T+5 min) (E011 rule). Signed return = (X - E) mid, pips. Fridays-evening entries do not exist (weekend); Sunday-evening
+  entries included. Missing bars excluded and counted; require >= 280 of the 305 one-minute bars in the window (coverage cap fixed now);
+  entry skipped (counted) if spread at 20:55 NY > 2.0 pips.
+- **Clock note (fixed now, before data):** the paper's window is used verbatim in New York clock time. 20:55 NY = 09:55 JST (the
+  Tokyo fix) in EDT but 10:55 JST in EST; the window therefore starts at the fix in summer and one hour after it in winter. Not
+  adjusted; DST split reported descriptively only.
+- **Test:** **val only (2021-01-21..2023-06-30), 1 trial**; n ~ 600 dates.
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0)
+  95% CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. < 200 valid dates ->
+  NONE (insufficient sample).
+- **What a SIGNAL means:** it cannot be a LEAD under AUTONOMOUS_PROTOCOL (no clean pre-registered dev SIGNAL exists, dev being
+  contaminated by E009). A val SIGNAL that also survives costs x1.5 is logged in agent_decision_log.md as an **OOS candidate for the
+  human** (no notification, no OOS run); nothing else is queued on it.
+- **Descriptive (not in rule):** EDT vs EST dates; first hour (20:55 -> 21:55) vs rest; by weekday; by year; Mondays-after-weekend
+  (Sunday-evening entries) separately; entry/exit spreads; net at bid/ask, SPEC 4, costs x1.5.
+- **Power note:** dev hourly SDs in this window are ~6-9 pips (E009), so a 5-hour SD of roughly 15-20 pips; SE ~0.7-0.8 pips at
+  n ~600 before block correction. The 1.0-pip bar plus CI lower > 0 needs a val mean of roughly 1.6+ pips; the dev-implied +1.2 would
+  be WEAK at best, by design.
+- **Cost note:** E011 median spread at the Tokyo fix 0.4 pips; SPEC 4 round trip ~0.5 pips (E030 gross-net gap 0.53). A +1.2-pip
+  gross would leave ~+0.4 at x1.5: thin.
+- **Calendar label:** post-Tokyo-fix window; Asian session. Overlaps the Tokyo fix (E011, B25/B26) by design.
+- **Data:** price data in repo only.

@@ -246,3 +246,41 @@ US session. That is unproven, which is exactly why E001 comes first.
 - Chaboud, Chiquoine, Hjalmarsson & Vega (2014), "Rise of the machines" (JF): algorithmic trading's effect on FX microstructure.
 - King, Osler & Rime (2013), FX microstructure survey (JIMF): broad context.
 - Menkhoff & Taylor (2007), the "obstinate passion" survey of technical analysis in FX.
+
+**Added 2026-11-10 (R065 refill pass).**
+
+### Krohn, Mueller & Whelan (2021 SWP version): window definitions (addendum to the 2024 JF entry above)
+- **Source:** [Bank of Canada SWP 2021-48](https://www.bankofcanada.ca/wp-content/uploads/2021/10/swp2021-48.pdf), opened R065; first ~40k characters read verbatim, rest via model summary.
+- **Verbatim:** windows in ET: pre-Tokyo 5:00 p.m.-8:55 p.m.; post-Tokyo 8:55 p.m.-2:00 a.m.; pre-ECB 2:00 a.m.-8:15 a.m.; ECB to London 8:15 a.m.-11:00 a.m.; post-London 11:00 a.m.-5:00 p.m. Sample 1999-2019, 5-minute Refinitiv mid-quotes, nine currencies vs USD incl. EUR. "Dealers hedge this demand pre-fix, driving intraday reversals." Results "are not driven by day of the week or month of the year effects".
+- **UNVERIFIED (summary only):** Table I annualized EUR values (pre-Tokyo -4.54, post-Tokyo +5.89, pre-ECB -8.87, post-London +6.87).
+- **Relevance:** basis for B27 (post-Tokyo window, val only).
+
+### Neuhierl & Weber (2017 working paper): Monetary momentum
+- **Venue:** working paper ([Chicago Booth page](https://www.chicagobooth.edu/research/fama-miller/finance-research/working-papers/2017/monetary-momentum), opened R065; [SSRN 3030126](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3030126) not opened). No journal on the page.
+- **Finding (abstract):** stock returns drift ahead of and after monetary policy surprises; the drift is also present in "the US-dollar exchange rate and US treasuries". No FX magnitudes on the page.
+- **Relevance:** **Low** here: the signal needs a policy-surprise measure (fed funds futures) we do not have, and FOMC events are too rare for our dev/val split (lesson E014). Not added.
+- **Status:** VERIFIED (abstract page)
+
+### Kumar (2015): Turn-of-month effect in the Indian currency market
+- **Venue:** International Journal of Managerial Finance 11(2), 232-243, DOI 10.1108/IJMF-05-2014-0068 ([RePEc](https://ideas.repec.org/a/eme/ijmfpp/v11y2015i2p232-243.html), opened R065).
+- **Finding (abstract):** 1999-2014; "USD and JPY exhibit turn-of-month effect" vs INR; post-2008 the effect "vanishes for all the currencies except for USD". No magnitudes.
+- **Relevance:** **Low** (INR pairs; not EUR/USD). Not added.
+- **Status:** VERIFIED (abstract)
+
+### Kumar (2018): On the disappearance of calendar anomalies: have the currency markets become efficient?
+- **Venue:** Studies in Economics and Finance 35(3), 441-456, DOI 10.1108/SEF-08-2015-0192 ([EconPapers](https://econpapers.repec.org/RePEc:eme:sefpps:sef-08-2015-0192), opened R065).
+- **Finding (abstract):** 20 USD pairs, 1995-2014; returns higher (lower) in January (TOM days), but the anomalies "seem to have disappeared for almost all currencies during 2005 to 2014".
+- **Relevance:** **Low**; prior against calendar-anomaly tests in our 2015+ sample. Not added.
+- **Status:** VERIFIED (abstract)
+
+### Ranaldo & Santucci de Magistris (2022): Liquidity in the global currency market
+- **Venue:** Journal of Financial Economics 146, 859-883, DOI 10.1016/j.jfineco.2022.09.004 ([accepted PDF, LUISS IRIS](https://iris.luiss.it/bitstream/11385/221438/1/JFE2022.pdf), opened R065; first ~40k characters verbatim).
+- **Finding:** CLS hourly volume 2011-2021, 29 pairs; price impact is higher "outside London hours" and on US bank holidays. No return-predictability results.
+- **Relevance:** **Methodology/costs.** Supports keeping entries out of thin hours (lesson R059). Not a signal source.
+- **Status:** VERIFIED (text, partial)
+
+### Evans & Speight (2006 working paper): Dynamic news effects in high frequency euro exchange rate returns and volatility
+- **Venue:** Cardiff Working Papers in Accounting and Finance A2006/05 ([PDF](https://orca.cardiff.ac.uk/77683/1/a2006_4.pdf), opened R065). Not peer reviewed as shown.
+- **Finding (verbatim):** EUR-USD 5-minute, 2002-2003: the reaction to US news "occurs within the first five minutes of the release with very little reaction in the following fifteen minutes".
+- **Relevance:** **Low**; consistent with E026 (post-08:30 continuation NONE). Not added.
+- **Status:** VERIFIED (text, partial)

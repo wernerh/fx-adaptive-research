@@ -583,3 +583,20 @@ Why each run chose what it did, and any judgement calls.
 - **Post-hoc note:** exploratory splits (after pre-fix down move +1.365, not weekend-shifted +1.160) are descriptive only and not
   queued; the control shows the same pattern, so they are not gotobi-specific.
 - **Next run:** no `ready` backlog items -> refill (literature pass, 2-3 pre-registrable items).
+
+### 2026-11-10 R065 (unattended)
+- **State:** last research-batch run 42762105863 (E031) completed and recorded (R064); no run queued or in progress; no `ready`
+  backlog item -> protocol step 4 (refill). pytest passed (243) before any change. Local clone was on a detached HEAD; reset to
+  origin/main.
+- **Literature pass (opened):** KMW Bank of Canada SWP 2021-48 (window definitions verbatim), Neuhierl & Weber 2017 (Booth page),
+  Kumar 2015 and 2018 (abstracts), Ranaldo & Santucci de Magistris 2022 JFE (accepted PDF), Evans & Speight 2006 (Cardiff WP).
+  Lucca & Moench (NY Fed SR512) could not be opened. Details in research/academic_studies.md.
+- **Choice:** added one item, B27 (KMW post-Tokyo window, long EUR/USD 20:55 -> 02:00 NY, **val only**, 1 trial). Reason: published,
+  unconditional, daily (n ~600 on val, lesson E014), entry away from the 17:00 roll (lesson R059), and the window's val returns have
+  never been computed; dev is contaminated by E009's published hourly cells, so val is the only clean non-OOS block. Only one item
+  was added (protocol asks for 2-3): FOMC-drift, turn-of-month, pre-Tokyo and pre-ECB candidates each failed a lesson or a
+  contamination check (backlog refill note R065). Adding weaker items to reach a count would break CLAUDE.md rule 7 in spirit.
+- **For the human (no action taken, not a lead):** the KMW unconditional pre-ECB window (short 02:00 -> 08:15 NY) is clean only on the
+  locked OOS block. Dev E009 cells for 02:00-08:00 NY sum to about -3.2 pips (EUR down, the published sign); val all-date is
+  contaminated by E023's descriptive output (~+1.2 pips signed). Testing it would need explicit OOS approval.
+- **Next run:** pre-register B27 as the next experiment.
