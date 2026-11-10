@@ -303,3 +303,15 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   expected by chance; treat val (B34) as the test and do not tune the window, tercile or hold on dev. Smoothed-signal arms can pass
   where the raw daily signal is flat, so the pre-registered pairing of raw + smoothed arms was worth its extra trial.
 - **Action:** B32 closed (rejected_hypotheses.md). B34 now `ready`: B33 arm unchanged on val, 1 val trial, p < 0.05.
+
+### 2026-11-10 R078: the smoothed overnight -> intraday fade does not confirm on val (E036)
+- **Context:** E036 (B34), val confirmation of E035/B33 with the rule unchanged (p < 0.05 for 1 trial) and a val-only O20 burn-in.
+- **Observation:** n 616, mean +0.193 pips, median -2.3, hit 0.466, CI (-2.683, 3.23), t p 0.456 -> NONE; SPEC 4 net -0.492.
+  Unconditional long -0.803; B32 daily arm on val +0.138 (not a trial). High-|O20| tercile +5.664 on val (+4.304 on dev), low and mid
+  negative: descriptive only.
+- **Evidence label:** [EXP]
+- **Lesson:** all four dev SIGNALs so far (E013, E022, E024, E035) failed val (E014, E023, E025, E036). With ~253 trials, single dev
+  SIGNALs at p ~0.01 should be treated as chance until val; the dev->val gate is doing its job. Front-loaded dev effects (2015-heavy,
+  fading by 2019-2020) have been a reliable warning sign of a val failure.
+- **Action:** B33/B34 line closed (E035 + E036 in rejected_hypotheses.md). A high-|O20|-only variant is not tested on val; it would
+  need fresh data, its own pre-registration and a human decision. Next: backlog refill.

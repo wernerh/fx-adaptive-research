@@ -53,3 +53,8 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   SD overnight 35.5 pips, SD 07:00 -> 16:55 NY 45.4 pips; unconditional long 07:00 -> 16:55 NY +0.56 (not significant).
 - Fading the 20-date sum of overnight moves: +2.695 pips per date (CI (0.47, 5.027), SIGNAL on dev, not yet confirmed on val; B34).
   See experiments/2026-11-10_E035_overnight_reversal.
+
+### 2026-11-10 R078: val confirmation of the smoothed overnight fade (E036, val) [EXP]
+- NONE on val 2021-01-21..2023-06-30: fading the 20-date sum of 17:05 -> 07:00 NY moves, held 07:00 -> 16:55 NY, n 616, +0.193 pips,
+  CI (-2.683, 3.23), t p 0.456; SPEC 4 net -0.492. Supersedes the E035 entry above as the current reading: the dev SIGNAL is not
+  confirmed and the line is closed. See experiments/2026-11-10_E036_overnight_reversal_val.

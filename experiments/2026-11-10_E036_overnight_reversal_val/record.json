@@ -3,16 +3,252 @@
   "date": "2026-11-10",
   "instrument": "EURUSD",
   "hypothesis": "B34: -sign(O20(D)) x (mid 16:55 NY - mid 07:00 NY on D) > 1 pip per val trading date; O20 = sum of r_on (mid 07:00 NY - mid 17:05 NY on the evening opening D) over the 20 previous valid val dates (val confirmation of E035/B33)",
-  "blocks_used": ["val"],
+  "blocks_used": [
+    "val"
+  ],
   "oos_touched": false,
   "parent_experiment": "E035",
   "variable_changed": "block (dev -> val)",
   "decision_rule": "< 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. LEAD if val SIGNAL and val SPEC4 net > 0 and costs x1.5 net > 0",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
-  "lead": null,
+  "status": "complete",
+  "results": {
+    "result": {
+      "n": 616,
+      "mean_pips": 0.193,
+      "median_pips": -2.3,
+      "sd_pips": 43.302,
+      "hit_rate": 0.4659,
+      "t_stat": 0.11,
+      "t_p_one_sided": 0.4561,
+      "mean_ci95_block_boot": [
+        -2.683,
+        3.23
+      ],
+      "decision": "NONE",
+      "lead_cost_gate": false,
+      "lead": false
+    },
+    "counts": {
+      "trading_dates": 637,
+      "valid_r_on_dates": 632,
+      "b33_burn_in_valid_dates": 20,
+      "b33_missing_signal": 20,
+      "b33_zero_signal": 0,
+      "b33_missing_entry": 0,
+      "b33_missing_exit": 0,
+      "b33_entry_skipped_spread": 1,
+      "b33_tested": 616
+    },
+    "descriptive": {
+      "abs_o20_tercile_low": {
+        "n": 206,
+        "mean_pips": -3.79,
+        "median_pips": -1.825,
+        "sd_pips": 43.034,
+        "hit_rate": 0.4757,
+        "t_stat": -1.264,
+        "t_p_one_sided": 0.8962,
+        "mean_ci95_block_boot": [
+          -7.542,
+          0.618
+        ]
+      },
+      "abs_o20_tercile_mid": {
+        "n": 205,
+        "mean_pips": -1.277,
+        "median_pips": -4.4,
+        "sd_pips": 43.869,
+        "hit_rate": 0.4195,
+        "t_stat": -0.417,
+        "t_p_one_sided": 0.6613,
+        "mean_ci95_block_boot": [
+          -6.119,
+          3.174
+        ]
+      },
+      "abs_o20_tercile_high": {
+        "n": 205,
+        "mean_pips": 5.664,
+        "median_pips": 0.4,
+        "sd_pips": 42.652,
+        "hit_rate": 0.5024,
+        "t_stat": 1.901,
+        "t_p_one_sided": 0.0293,
+        "mean_ci95_block_boot": [
+          1.33,
+          10.861
+        ]
+      },
+      "share_long": 0.596,
+      "long_days": {
+        "n": 367,
+        "mean_pips": -0.512,
+        "median_pips": -4.05,
+        "sd_pips": 41.198,
+        "hit_rate": 0.4414,
+        "t_stat": -0.238,
+        "t_p_one_sided": 0.594,
+        "mean_ci95_block_boot": [
+          -4.271,
+          3.843
+        ]
+      },
+      "short_days": {
+        "n": 249,
+        "mean_pips": 1.231,
+        "median_pips": 1.1,
+        "sd_pips": 46.296,
+        "hit_rate": 0.502,
+        "t_stat": 0.42,
+        "t_p_one_sided": 0.3375,
+        "mean_ci95_block_boot": [
+          -2.568,
+          5.677
+        ]
+      },
+      "unconditional_long_r_id": {
+        "n": 616,
+        "mean_pips": -0.803,
+        "median_pips": -3.3,
+        "sd_pips": 43.295,
+        "hit_rate": 0.4643,
+        "t_stat": -0.46,
+        "t_p_one_sided": 0.6772,
+        "mean_ci95_block_boot": [
+          -3.929,
+          2.415
+        ]
+      },
+      "events_on_fomc_statement_days": 19,
+      "excluding_fomc_statement_days": {
+        "n": 597,
+        "mean_pips": 0.423,
+        "median_pips": -2.25,
+        "sd_pips": 42.586,
+        "hit_rate": 0.4657,
+        "t_stat": 0.242,
+        "t_p_one_sided": 0.4043,
+        "mean_ci95_block_boot": [
+          -2.454,
+          3.826
+        ]
+      },
+      "events_on_month_end_dates": 29,
+      "excluding_month_end_dates": {
+        "n": 587,
+        "mean_pips": 0.715,
+        "median_pips": -1.65,
+        "sd_pips": 43.289,
+        "hit_rate": 0.4736,
+        "t_stat": 0.4,
+        "t_p_one_sided": 0.3446,
+        "mean_ci95_block_boot": [
+          -2.244,
+          4.063
+        ]
+      },
+      "mondays": {
+        "n": 122,
+        "mean_pips": 3.185,
+        "median_pips": -1.5,
+        "sd_pips": 33.114,
+        "hit_rate": 0.4672,
+        "t_stat": 1.062,
+        "t_p_one_sided": 0.1451,
+        "mean_ci95_block_boot": [
+          -4.685,
+          10.885
+        ]
+      },
+      "tue_fri": {
+        "n": 494,
+        "mean_pips": -0.546,
+        "median_pips": -3.125,
+        "sd_pips": 45.467,
+        "hit_rate": 0.4656,
+        "t_stat": -0.267,
+        "t_p_one_sided": 0.6052,
+        "mean_ci95_block_boot": [
+          -3.332,
+          2.613
+        ]
+      },
+      "sd_r_on_pips": 34.045,
+      "sd_r_id_pips": 43.295,
+      "b32_daily_arm_same_trade_not_a_trial": {
+        "n": 630,
+        "mean_pips": 0.138,
+        "median_pips": 1.075,
+        "sd_pips": 42.63,
+        "hit_rate": 0.519,
+        "t_stat": 0.081,
+        "t_p_one_sided": 0.4676,
+        "mean_ci95_block_boot": [
+          -3.162,
+          3.494
+        ]
+      }
+    },
+    "by_year": [
+      {
+        "year": 2021,
+        "n": 227,
+        "mean": -0.83,
+        "hit": 0.463
+      },
+      {
+        "year": 2022,
+        "n": 259,
+        "mean": 2.819,
+        "hit": 0.459
+      },
+      {
+        "year": 2023,
+        "n": 130,
+        "mean": -3.255,
+        "hit": 0.485
+      }
+    ],
+    "cost_check": {
+      "n": 616,
+      "mean_signed_mid_pips": 0.193,
+      "mean_net_bidask_pips": -0.292,
+      "mean_net_spec4_pips": -0.492,
+      "mean_net_costs_x1_5_pips": -0.834,
+      "median_spread_entry_pips": 0.3,
+      "median_spread_exit_pips": 0.6
+    },
+    "n_trials": 1,
+    "blocks": [
+      "val"
+    ],
+    "boot_block": 20,
+    "smooth_n": 20,
+    "alpha": 0.05,
+    "open_hm_ny": [
+      17,
+      5
+    ],
+    "entry_hm_ny": [
+      7,
+      0
+    ],
+    "exit_hm_ny": [
+      16,
+      55
+    ],
+    "first_date": "2021-01-21",
+    "last_date": "2023-06-30"
+  },
+  "decision": "NONE",
+  "lead": false,
   "command": "python scripts/run_e036_overnight_reversal_val.py | tee backtests/validation_reports/E036_results.txt",
-  "preregistered_in": "R077"
+  "preregistered_in": "R077",
+  "next_experiment": "none (B33/B34 line closed); backlog refill next (no other ready item)",
+  "run": {
+    "workflow_run_id": 42885844344,
+    "outputs_commit": "69cf81e"
+  },
+  "recorded_in": "R078"
 }

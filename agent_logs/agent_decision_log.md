@@ -749,3 +749,11 @@ Why each run chose what it did, and any judgement calls.
 - **Outcome handling (fixed now):** SIGNAL + SPEC 4 and x1.5 net > 0 -> LEAD (LEADS.md, notify, pause line, propose OOS command, no
   OOS run); otherwise B33/B34 line closed, refill next.
 - **Next run:** collect E036 when the research-batch run finishes.
+
+## 2026-11-10 R078 (unattended)
+- **State:** research-batch run 42885844344 (E036) completed success; outputs committed by github-actions[bot] (69cf81e) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest 287 passed.
+- **Decision:** `decide_b34` applied exactly to the val outputs: n 616, mean +0.193 (not > 1.0), CI lower -2.683, t p 0.456 -> NONE.
+  LEAD condition 2 fails (cost gate also fails: SPEC 4 net -0.492, x1.5 -0.834); no notification. B33/B34 line closed per the
+  pre-registered "what follows". The positive high-|O20| tercile on val is descriptive only and is not turned into a new val test.
+- **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items).
