@@ -600,3 +600,15 @@ Why each run chose what it did, and any judgement calls.
   locked OOS block. Dev E009 cells for 02:00-08:00 NY sum to about -3.2 pips (EUR down, the published sign); val all-date is
   contaminated by E023's descriptive output (~+1.2 pips signed). Testing it would need explicit OOS approval.
 - **Next run:** pre-register B27 as the next experiment.
+
+### 2026-11-10 R066 (unattended)
+- **State:** last research-batch run 42762105863 (E031) completed and recorded (R064); no run queued or in progress; B27 is the top
+  (only) `ready` item -> protocol step 3. pytest passed (243) before any change. Local main had diverged from origin (stale local
+  history); kept as local branch `backup-old-local-main`, reset main to origin/main. Nothing pushed from the old history.
+- **Choice:** pre-register B27 as E032 (val only, 1 trial), parameters and rule exactly as the backlog draft (R065): long EUR/USD
+  20:55 -> 02:00 NY, E011 quote rule, >= 280/305 bars, 2.0-pip entry-spread cap, block-20 bootstrap, SIGNAL/WEAK/NONE thresholds as
+  B25/B26, < 200 dates -> NONE. Val contamination check: no earlier val experiment computed this window's mean (E029 4 conditional
+  events; E014 ~20 FOMC dates; E001/E006 Asian structure as predictors only); written in the hypothesis.
+- **Outcome handling (fixed now):** val-only SIGNAL is not a LEAD; with SPEC 4 and x1.5 net > 0 it is logged here as an OOS candidate
+  for the human, no notification. WEAK/NONE closes B27.
+- **Next run:** collect E032 when the research-batch run finishes.

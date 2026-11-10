@@ -1,0 +1,21 @@
+{
+  "experiment_id": "E032",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "+(mid 02:00 NY - mid 20:55 NY previous evening) > 1 pip per val trading date (post-Tokyo-fix EUR appreciation, Krohn-Mueller-Whelan window, B27)",
+  "blocks_used": [
+    "val"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new window: full KMW post-Tokyo window 20:55 -> 02:00 NY, unconditional, every val date (relatives E011, E030, E031, E009)",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 20 dates, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE; < 200 tested dates -> NONE. Val-only SIGNAL is not a LEAD; if SPEC4 and x1.5 net > 0 it is logged as an OOS candidate for the human",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e032_post_tokyo_kmw.py | tee backtests/validation_reports/E032_results.txt",
+  "preregistered_in": "R066",
+  "next_experiment": null
+}
