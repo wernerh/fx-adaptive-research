@@ -211,6 +211,25 @@ US session. That is unproven, which is exactly why E001 comes first.
 - Quantpedia blog, "Uncovering the Pre-ECB Drift and Its Trading Strategy Applications" (22 Apr 2025, [link](https://quantpedia.com/uncovering-the-pre-ecb-drift-and-its-trading-strategy-applications/)): European equity indices drift up the day before ECB press conferences; equities, not FX; in-house, not peer reviewed; no underlying paper linked. A EUR/USD analogue would be loose and needs an ECB meeting-date calendar: not added.
 - Rif & Utz (2021), QREF 81, 123-133, DOI 10.1016/j.qref.2021.05.004 ([RePEc](https://econpapers.repec.org/RePEc:eee:quaeco:v:81:y:2021:i:c:p:123-133)): one-minute reversals in Nasdaq-100 stocks; not FX, horizon below our bar granularity: not added.
 
+### Ito & Yamada (2017): Puzzles in the Tokyo fixing in the forex market: order imbalances and bank pricing
+- **Venue:** Journal of International Economics 109, 214-234, DOI 10.1016/j.jinteco.2017.09.005 ([RePEc](https://ideas.repec.org/a/eee/inecon/v109y2017icp214-234.html), opened 2026-11-10 R060). Working paper: NBER WP 22820, DOI 10.3386/w22820 ([NBER](https://www.nber.org/papers/w22820), opened R060).
+- **Finding (abstracts):** banks announce the Tokyo fixing rate from interbank transactions at 9:55 a.m.; "spikes in prices at the fixing time occur despite a high level of liquidity"; order flow before the fixing is biased toward the dollar, giving a predictable price pattern; bank fixing rates are biased toward dollar appreciation; "The calendar effects also matter for determination of the fixing rate and the price fluctuation around fixing time." USD/JPY.
+- **Not read:** full text (NBER PDF fetch not permitted this run). The gotobi-day definition, sample period and any magnitudes are UNVERIFIED.
+- **Relevance:** **Medium.** Basis for B25/B26 (gotobi subset of the E011 Tokyo-fix test); EUR/USD is a loose transfer via the USD leg.
+- **Status:** VERIFIED (abstract)
+
+### Popović & Đurović (2014): Intraweek and intraday trade anomalies: evidence from FOREX market
+- **Venue:** Applied Economics 46(32), 3968-3979, DOI 10.1080/00036846.2014.948676 ([RePEc](https://ideas.repec.org/a/taf/applec/v46y2014i32p3968-3979.html), opened R060).
+- **Finding (abstract):** hourly EUR/USD, Swiss FOREX market, 1 Jan 2004 - 11 Jan 2014; day-by-hour anomalies present; best opportunity on Fridays buying EUR at 00:00 and selling at 03:00. Time zone, magnitudes, t-stats not on the page (UNVERIFIED).
+- **Relevance:** **Low.** Dev already scanned by E009 (weekday x NY hour) without support; not added (backlog refill note R060).
+- **Status:** VERIFIED (abstract)
+
+### Zheng (2023, job market paper): Dividend flows and the foreign exchange rate
+- **Venue:** University of Chicago Booth JMP, Nov 2023 ([PDF](https://socialsciences.uchicago.edu/sites/default/files/2023-11/JMP_Zheng_2.pdf), opened R060; introduction read).
+- **Finding:** "upon and after its large dividend payment, the local currency depreciates against USD"; G10, Jan 2001 - Jun 2023; "around 4.70 basis points" two days after the payment date. Month-end is treated as a confound only.
+- **Relevance:** **Low** for now: needs a dividend-payment calendar not in the repo. Not added.
+- **Status:** VERIFIED (introduction)
+
 ## Open research questions raised by the literature
 
 | # | Question | Source of the idea | Experiment |

@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **236** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1). Val-only trials: **7** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1). Total registered trials: **243**. Update after every experiment. (R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **236** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1). Val-only trials: **7** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1). Total registered trials: **243**. Update after every experiment. (R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -385,3 +385,61 @@ Trial count so far on dev: **236** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Calendar label:** Asian session after a large NY day; contains the Tokyo fix (19:55 NY / 20:55 NY by DST).
 - **Data:** price data in repo only.
 - **Order:** B23 first (clean dev test, paper's stronger result); B24 second.
+
+### Refill note R060 (not an item)
+- Popović & Đurović (2014, Applied Economics 46(32), 3968-3979, DOI 10.1080/00036846.2014.948676; abstract opened R060) report
+  an EUR/USD Friday anomaly: buy EUR at 00:00, sell at 03:00 (hourly Swiss-market data 2004-2014; time zone not stated, UNVERIFIED).
+  Under a Zurich-time reading this is trading-date Friday 18:00-21:00 NY, which E009 already scanned on dev (Fri_ny_18..20 means
+  +0.685, -0.471, +0.021 pips, all NONE): dev is contaminated and does not support it, the time zone is unknown, and val would be the
+  only clean test of a claim dev already fails to show. Not added.
+- Zheng (2023, UChicago Booth JMP "Dividend Flows and the Foreign Exchange Rate", PDF opened R060): local currency depreciates vs USD
+  after large dividend payment dates (G10, 2001-2023, ~4.70 bp after two days). Needs a dividend-payment calendar not in the repo; not
+  added. A year-end USD effect it cites (Fei 2023) was seen only second-hand: UNVERIFIED, not added.
+
+### B25: USD appreciation into the Tokyo fix on gotobi days (signal test, dev) · `ready` (Added 2026-11-10 R060 refill)
+- **Mechanism [PUB]:** Ito & Yamada (2017, JIE 109, 214-234, DOI 10.1016/j.jinteco.2017.09.005; NBER WP 22820, abstracts opened
+  R060): customer order flow before the Tokyo fix is biased toward buying dollars, giving a predictable price pattern, and "calendar
+  effects also matter for determination of the fixing rate and the price fluctuation around fixing time". The gotobi definition
+  and any gotobi magnitude in the paper could NOT be read (full-text PDF fetch was not permitted): the day rule below is the common
+  practitioner convention and is UNVERIFIED as the paper's. The paper studies USD/JPY; EUR/USD is the USD leg only (loose transfer,
+  stated up front).
+- **Why now:** E011 (dev) tested the Tokyo fix on all dates (pre WEAK +0.32 pips, CI incl 0) and explicitly left the gotobi subset
+  untested (E011 hypothesis.md). No gotobi split has been computed on dev or val.
+- **Gotobi dates (fixed now):** Tokyo calendar date G is gotobi if its day of month is 5, 10, 15, 20, 25 or 30, or it is the last
+  calendar day of the month; if such a day is a Saturday or Sunday, the gotobi date is the preceding Friday (if that Friday is not
+  already gotobi). Japanese public holidays are not in the repo and are not shifted (state the count of such dates as a limitation
+  where computable; none adjusted).
+- **Trade (same windows as E011):** short EUR/USD from 08:55 to 09:55 Asia/Tokyo on gotobi Tokyo dates (quote = open of first bar in
+  [T, T+5 min), as E011). Signed return = -(X - E) mid, pips. Missing bars excluded and counted; entry skipped (counted) if spread at
+  08:55 Tokyo > 2.0 pips (E011 median entry spread 0.4).
+- **Test:** **dev only, 1 trial**; n ~ 0.30 x ~1,560 Tokyo dates ~ 450-470 events.
+- **Decision rule (draft):** SIGNAL if mean signed return > 1.0 pip AND moving-block bootstrap (block 20 events, 2000 draws, seed 0)
+  95% CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. SIGNAL earns B25v
+  (val, same rule).
+- **Descriptive (not in rule):** non-gotobi control (same window); 5/10th-day subsets separately from month-end gotobi; weekend-shifted
+  dates separately; 09:25 -> 09:55 Tokyo last half hour; by year; spreads; net at bid/ask, SPEC 4, costs x1.5.
+- **Power note:** E011 pre-window mean abs move 6.4 pips -> SD ~8 pips -> SE ~0.4 pips at n ~460; the 1.0-pip bar is binding, so a
+  significant sub-pip effect is WEAK at best, by design.
+- **Contamination note:** E011 published the all-date pre-fix mean (+0.321, n 1560) on dev; gotobi dates are ~30% of those dates, so
+  the all-date number bounds but does not reveal the subset. Record in the methodology.
+- **Calendar label:** Tokyo 09:55 JST fix (= 19:55 NY in EST, 20:55 NY in EDT, previous NY calendar date; same trading date as the
+  Tokyo date); month-end gotobi dates overlap B8/E007 month-end themes (different window).
+- **Data:** price data in repo only; gotobi dates computed from the calendar.
+
+### B26: USD depreciation after the Tokyo fix on gotobi days (signal test, dev) · `ready` (Added 2026-11-10 R060 refill)
+- **Mechanism [PUB]:** as B25 (Ito & Yamada 2017): fix-time price spikes driven by predictable dollar-buying order imbalance imply a
+  partial reversal once the imbalance is filled; strongest where the imbalance is largest (gotobi, UNVERIFIED as the paper's
+  finding). E011 (dev) found the all-date post-fix reversal WEAK (+0.785 pips, CI (0.318, 1.173), below the 1-pip bar).
+- **Trade:** long EUR/USD from 09:55 to 10:55 Asia/Tokyo on gotobi Tokyo dates (definition exactly as B25). Signed return = (X - E)
+  mid, pips. Exclusions and spread cap as B25.
+- **Test:** **dev only, 1 trial** (separate trial from B25, as E011 counted pre and post separately); n ~ 450-470.
+- **Decision rule (draft):** as B25 (mean > 1.0 pip AND block-20 bootstrap CI lower > 0 AND one-sided t p < 0.05 -> SIGNAL; WEAK /
+  NONE as B25). SIGNAL earns B26v (val).
+- **Descriptive (not in rule):** non-gotobi control; subsets as B25; post-fix return conditional on the sign of the pre-fix move
+  (exploratory only); by year; spreads; net at bid/ask, SPEC 4, x1.5.
+- **Contamination note:** E011 published the all-date post-fix mean (+0.785, n 1560) on dev; the gotobi subset was not computed.
+  Because the all-date effect is already positive, a gotobi SIGNAL must also beat the non-gotobi control descriptively to be
+  interesting; this does not change the rule. Record in the methodology.
+- **Calendar label:** post-Tokyo-fix hour; Asian session.
+- **Data:** price data in repo only.
+- **Order:** B25 first (paper's primary claim: dollar-buying into the fix); B26 second.

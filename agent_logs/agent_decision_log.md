@@ -529,3 +529,17 @@ Why each run chose what it did, and any judgement calls.
 - **Why it failed:** 19 of 34 events were above the 2.0-pip spread cap at 17:05 NY. Logged as a lesson: check roll-hour entry spreads
   on dev before pre-registering.
 - **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items). No LEAD, no notification.
+
+### 2026-11-10 R060 (unattended)
+- **State:** last research-batch run 42728790080 (E029) completed and already recorded (R059); no run queued or in progress; no
+  `ready` backlog item -> protocol step 4 (refill). pytest passed (213) before any change. Worked on a branch at origin/main (stale
+  local `main` left untouched).
+- **Literature pass:** opened Ito & Yamada (JIE 2017 / NBER 22820 abstracts), Popović & Đurović (Applied Economics 2014 abstract),
+  Zheng (2023 JMP introduction), Vasileiou (2024, JSE equity TOM; not relevant). NBER full-text PDF could not be fetched (permission
+  not granted), so the gotobi definition is marked UNVERIFIED.
+- **Choice:** added B25 (short EUR/USD 08:55 -> 09:55 Tokyo on gotobi dates, dev) and B26 (long 09:55 -> 10:55 Tokyo on gotobi
+  dates, dev). Reason: the mechanism (predictable dollar-buying order flow into the Tokyo fix) exists in the spot FX market itself
+  (lesson R054), E011 deliberately left the gotobi subset untested, n ~460 on dev gives a tight CI (lesson R057), and the entry is
+  far from the 17:00 NY roll (lesson R059; E011 median entry spread 0.4). Popović-Đurović Friday 00-03 not added: E009 dev cells do
+  not support it and the time zone is unknown.
+- **Next run:** pre-register B25 as the next experiment.
