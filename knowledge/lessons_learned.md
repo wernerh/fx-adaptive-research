@@ -269,3 +269,15 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   sample) is a weak prior. The post-Tokyo-fix reversal now has: dev first hour WEAK (E011), gotobi subsets NONE/WEAK (E030/E031),
   val full window NONE (E032). Further Tokyo-fix windows on dev or val would be specification search on a closed line.
 - **Action:** B27 closed (rejected_hypotheses.md). Tokyo-fix line closed on dev and val. Refill next.
+
+### 2026-11-10 R070: Dukascopy daily volume does not condition next-day EUR/USD returns (E033)
+- **Context:** E033 (B28+B29), dev, next-day reversal after low unexpected volume and continuation after high unexpected volume,
+  20:00 NY D -> 16:55 NY D+1, 2 trials.
+- **Observation:** low-UV reversal -2.034 pips (n 426), high-UV continuation -0.213 (n 391), both NONE; all-dates reversal control
+  -0.417. UV correlates with the daily range (0.275), so it mostly re-measures volatility. Per-event SD 52-61 pips.
+- **Evidence label:** [EXP]
+- **Lesson:** daily-hold signals on EUR/USD need effects of ~4-5 pips per event to be detectable on dev (SE ~2.5-3 pips), which
+  published daily-frequency FX effects rarely reach. This is the fourth daily-frequency reversal/momentum idea to come back NONE
+  (E019, E020, E021, E033). Future refills should prefer intraday windows (lower SD) or mechanisms with a stated effect size that
+  clears the power bar.
+- **Action:** B28 and B29 closed (rejected_hypotheses.md). Refill next.

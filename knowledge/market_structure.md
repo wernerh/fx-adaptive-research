@@ -35,3 +35,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 ### 2026-11-08: FOMC statement-day USD weakness not confirmed on val (E014) [EXP]
 - Supersedes the "val test B11v pending" note in the 2026-11-08 E013 entry above.
 - Val 2021-01-21..2023-06-30: n 20, mean +19.99 pips, hit 0.70, block-boot CI (-9.53, 51.02), t p 0.115 -> NONE under the unchanged E013 rule. Point estimate similar to dev but val (20 meetings) is underpowered. Not a confirmed pattern; no lead. See experiments/2026-11-08_E014_fomc_day_val.
+
+### 2026-11-10: Unexpected daily volume does not predict next-day direction (E033) [EXP]
+- Dukascopy volume field usable on dev (0 zero/NaN bars). UV correlates with daily range (0.275) and |open-to-close move| (0.185);
+  mean |R| 32 pips on low-UV dates vs 52 on high-UV dates.
+- Next-day (20:00 -> 16:55 NY) low-UV reversal -2.034 pips, high-UV continuation -0.213, both NONE. See
+  experiments/2026-11-10_E033_volume_reversal.

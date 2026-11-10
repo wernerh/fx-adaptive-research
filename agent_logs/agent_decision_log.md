@@ -651,3 +651,11 @@ Why each run chose what it did, and any judgement calls.
 - **Outcome handling (fixed now):** SIGNAL in an arm -> its val confirmation (B28v/B29v) as a separate pre-registered experiment, not a
   LEAD yet; WEAK/NONE closes that arm; BLOCKED -> both items `blocked`, 0 trials.
 - **Next run:** collect E033 when the research-batch run finishes.
+
+### 2026-11-10 R070 (unattended)
+- **State:** research-batch run 42808245508 (E033) completed, outputs committed by github-actions[bot] (b7585fc), not yet recorded ->
+  protocol step 1 (collect). pytest passed (261).
+- **Decision (rule applied exactly):** B28 NONE (mean -2.034, not > 0), B29 NONE (mean -0.213, not > 0). Both arms closed; no re-test.
+  No lead. Trials: dev 240, val 8, total 248.
+- **Next run:** no `ready` item remains -> backlog refill (lesson R070: prefer intraday windows or mechanisms with a stated effect size
+  that clears the power bar).
