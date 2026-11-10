@@ -1,0 +1,20 @@
+{
+  "experiment_id": "E030",
+  "date": "2026-11-10",
+  "instrument": "EURUSD",
+  "hypothesis": "-(mid 09:55 - mid 08:55 Asia/Tokyo) > 1 pip per event on gotobi Tokyo dates (5/10/15/20/25/30 or month-end, weekend days moved to the preceding Friday) (USD appreciation into the Tokyo fix on gotobi dates, B25)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": "E011",
+  "variable_changed": "restricting the E011 pre-fix window (short 08:55 -> 09:55 Tokyo) to gotobi dates",
+  "decision_rule": "SIGNAL if mean signed > 1.0 pip AND block-bootstrap (block 20 events, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE; < 40 events -> NONE. SIGNAL -> val confirmation B25v; LEAD needs val pass and SPEC4 and x1.5 net > 0",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": null,
+  "next_experiment": null,
+  "run": null
+}

@@ -543,3 +543,14 @@ Why each run chose what it did, and any judgement calls.
   far from the 17:00 NY roll (lesson R059; E011 median entry spread 0.4). Popović-Đurović Friday 00-03 not added: E009 dev cells do
   not support it and the time zone is unknown.
 - **Next run:** pre-register B25 as the next experiment.
+
+### 2026-11-10 R061 (unattended)
+- **State:** last research-batch run 42728790080 (E029) completed and already recorded (R059); no run queued or in progress ->
+  protocol step 3 (next experiment). Top `ready` item: B25. pytest passed (213) before any change. Local `main` was a stale shallow
+  history; moved to origin/main with `checkout -B` (old history kept on local branch `old-local-main`, not pushed).
+- **Choice:** pre-register B25 as E030 (dev only, 1 trial), parent E011, with every parameter and the decision rule exactly as drafted
+  in the backlog (R060). Implementation details fixed now, before data: universe = Mon-Fri trading dates (= Tokyo date for this
+  window); E011's >= 55-of-60-bar coverage rule kept as an exclusion (`low_coverage`, counted, after missing quotes and before the
+  spread cap); quotes are the first-bar open in [hh:mm, hh:mm+5) Tokyo as written in the backlog; fewer than 40 events (2 x block)
+  -> insufficient sample -> NONE. `month_end` flag = a source day is the month's last day (descriptive only).
+- **Next run:** collect the E030 batch outputs and apply `decide_b25`; SIGNAL -> B25v (val), else B26.
