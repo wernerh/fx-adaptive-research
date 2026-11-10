@@ -4,7 +4,7 @@ Ordered by priority. Status: `ready` | `running` | `done` | `blocked` | `parked`
 Autonomous runs take the top `ready` item (docs/AUTONOMOUS_PROTOCOL.md). Add items at the bottom; re-rank only with a
 reason in agent_logs/agent_decision_log.md. Dev = 2015-01-01..2020-12-31, val = 2021-01-21..2023-06-30, OOS locked.
 
-Trial count so far on dev: **242** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1, E033: 2, E034: 2). Val-only trials: **8** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1). Total registered trials: **250**. Update after every experiment. (R073: E034 ran, dev +2. R072: E034/B30 pre-registered, 2 dev trials counted when it runs. R071: refill added B30 (2 dev trials when it runs), B31 (blocked): 0 trials. R070: E033 ran, dev +2. R069: E033/B28+B29 pre-registered, 2 dev trials counted when it runs. R068: refill added B28, B29: 0 trials until pre-registered. R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
+Trial count so far on dev: **242** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4, E009: 192 exploratory cells, E010: 2, E011: 2, E013: 1, E018: 1, E019: 1, E020: 1, E021: 1, E022: 1, E024: 1, E026: 1, E027: 1, E028: 1, E030: 1, E031: 1, E033: 2, E034: 2). Val-only trials: **8** (E012: 2, E014: 1, E017: 1, E023: 1, E025: 1, E029: 1, E032: 1). Total registered trials: **250**. Update after every experiment. (R074: refill added B32, B33 (2 dev trials when they run), B34 (blocked): 0 trials. R073: E034 ran, dev +2. R072: E034/B30 pre-registered, 2 dev trials counted when it runs. R071: refill added B30 (2 dev trials when it runs), B31 (blocked): 0 trials. R070: E033 ran, dev +2. R069: E033/B28+B29 pre-registered, 2 dev trials counted when it runs. R068: refill added B28, B29: 0 trials until pre-registered. R067: E032 ran, val +1. R066: E032/B27 pre-registered, 1 val trial counted when it runs. R065: refill added B27: 0 trials until pre-registered. R064: E031 ran, dev +1. R063: E031/B26 pre-registered, 1 dev trial counted when it runs. R062: E030 ran, dev +1. R061: E030/B25 pre-registered, 1 dev trial counted when it runs. R060: refill added B25, B26: 0 trials until pre-registered. R059: E029 ran, val +1. R058: E029/B24 pre-registered, 1 val trial counted when it runs. R057: E028 ran, dev +1. R056: E028/B23 pre-registered, 1 dev trial counted when it runs. R054: E027 ran, dev +1. R053: E027/B22 pre-registered, 1 dev trial counted when it runs. R052: E026 ran, dev +1. R051: E026/B21 pre-registered, 1 dev trial counted when it runs. R050: refill added B21, B22: 0 trials until pre-registered. R049: E025 ran, val +1. R048: E025/B20v pre-registered, 1 val trial counted when it runs. R047: E024 ran, dev +1; B20v added, 0 trials until pre-registered. R045: E023 ran, val +1. R044: E023/B19v pre-registered, 1 val trial counted when it runs. R043: E022 ran, dev +1; B19v added, 0 trials until pre-registered. R042: E022/B19 pre-registered, 1 dev trial counted when it runs. R041: refill added B19, B20: 0 trials until pre-registered. R040: E021 ran, dev +1. R039: E021/B18 pre-registered, 1 dev trial counted when it runs. R038: E020 ran, dev +1. R037: E020/B17 pre-registered, 1 dev trial counted when it runs. R036: refill added B17, B18: 0 trials until pre-registered. R035: E019 ran, dev +1. R034: E019/B16 pre-registered, 1 dev trial counted when it runs. R033: E018 ran, dev +1. R032: E018/B15 pre-registered, 1 dev trial counted when it runs. R031: refill added B15, B16: 0 trials until pre-registered. R030: E017 ran, val +1. R029: E017/B14 pre-registered, 1 val trial counted when it runs. R028: E016/B13 blocked after second CME fetch failure, 0 trials. R027: E016 phase-1 re-fetch queued, 0 trials. R026: E016/B13 pre-registered, 1 dev trial counted when phase 2 runs. R025: refill added B13, B14: 0 trials until pre-registered. R023: E015/B12 pre-registered, 1 dev trial counted when phase 2 runs. R022: E014 ran, val +1. R020: E013 phase 2 ran, dev +1. R016 refill added B11, B12: 0 trials until pre-registered. R017: E013/B11 pre-registered, 1 dev trial counted when phase 2 runs.)
 
 ---
 
@@ -594,3 +594,55 @@ Trial count so far on dev: **242** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 ### B31: Month-end equity-hedging flow, val confirmation (signal test, val only) · `done` (2026-11-10 R073: closed unearned, B30 returned NONE in both windows; 0 trials. Added 2026-11-10 R071; earned only if B30 returns SIGNAL)
 - Same signal, the window(s) that returned SIGNAL on dev, val only (~29 month-ends, < 20 events -> NONE), rule unchanged. Power is low
   by construction; a val NONE after a dev SIGNAL closes the line (precedent E014).
+
+### Refill note R074 (not an item)
+- Sources opened R074 (web-fetch, first ~40% of each PDF verbatim, the rest model-summarised and treated as UNVERIFIED):
+  Krohn, Mueller & Whelan, "Uncovered Interest Parity in High Frequency" (first version Nov 2024,
+  https://jbs.cam.ac.uk/wp-content/uploads/2024/11/uncovered-interest-parity-in-high-frequency.pdf); Lou, Polk & Skouras, "The Day
+  Destroys the Night, Night Extends the Day" (LSE FMG DP 961, July 2026, https://www.fmg.ac.uk/sites/default/files/2026-07/DP961.pdf).
+- Not used: Marsh & Miao (2012, EJF 18(9), City PDF opened) tests FX order flow -> equity, not equity -> FX, 25 days in 2005; Kloks,
+  Mattille & Ranaldo "Hunting for Dollars" (2024, ECB PDF opened) studies FX swaps/basis at quarter-ends, not spot; Jiang (2019)
+  "Currency Returns in Different Time Zones" could not be opened (Kellogg page served a generic listing): UNVERIFIED, not used.
+- KMW-UIP **unconditional** intraday long EUR/USD 07:00 -> 17:00 ET: per-currency EUR means (overnight -1.71 bp, intraday +2.03 bp)
+  are summary-only (UNVERIFIED). Dev is known in aggregate via E009 hour cells, and val is largely seen (E017 legs 03:00-08:00 and
+  12:00-17:00 NY, E001/E006 08:00-12:00 NY). Same situation as the R065 pre-ECB window: only the locked OOS block is clean. Not added;
+  listed for the human in agent_decision_log R074.
+- FX announcement-day carry (KMW-UIP: >60% of carry returns on FOMC/macro days) needs the release calendar (B6/B12 blocked). Not added.
+
+### B32: Overnight -> intraday reversal, daily (signal test, dev) · `ready` (Added 2026-11-10 R074 refill; one experiment with B33, 2 trials)
+- **Mechanism [PUB, partly]:** Krohn, Mueller & Whelan (UIP in High Frequency, 2024 WP, opened R074), verbatim: the Fama slope
+  "switches from a positive value of 1.32 ... during the overnight hours, to -1.28 during the intraday period"; overnight = 17:00 ET t-1
+  -> 7:00 ET t, intraday = 7:00 -> 17:00 ET; they read this as different clienteles pricing currencies at different times. Lou, Polk &
+  Skouras (2026, opened R074) find for US equities that intraday returns mean-revert past overnight returns ("t-statistic of -3.98"),
+  but with a smoothed multi-year signal. **Our test is an FX daily analogue, not a replication:** neither paper reports that a single
+  EUR/USD overnight move reverses intraday. Prior: weak; a clean NONE is informative.
+- **Definitions (fixed now):** for trading date D, r_on = EUR/USD mid return from 17:05 America/New_York on the evening that opens D
+  (Sunday 17:05 for Mondays) to 07:00 NY on D; r_id = mid return 07:00 -> 16:55 NY on D (16:55 avoids the 17:00 roll, lesson R059).
+  Quotes = open of first bar in [T, T+5 min) (E011 rule). Signed return = -sign(r_on) x r_id (fade the overnight move). r_on = 0 skipped.
+  Entry skipped (counted) if the 07:00 NY spread > 2.0 pips; missing bars excluded and counted.
+- **Test:** **dev only**, every valid trading date (n ~ 1,500). Decision rule (draft): SIGNAL if mean signed return > 1.0 pip AND
+  moving-block bootstrap (block 20 dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t-test p < 0.025 (Bonferroni for the
+  2 trials B32+B33). WEAK if mean > 0 and (CI lower > 0 or p < 0.025); else NONE. < 500 dates -> NONE (insufficient sample).
+  SIGNAL earns B34 (val confirmation, own experiment); not a lead until then.
+- **Power note:** 07:00 -> 16:55 NY SD likely ~45 pips (report it) -> SE ~1.2 pips at n 1,500; the p < 0.025 bar binds near +2.4 pips.
+- **Contamination note:** E009 published unconditional hour means on dev (no sign-agreement statistic); E021 (fade large daily moves
+  from 20:00 NY), E027 (London-open sign -> pre-fix half hour) and E028 (2-SD 17:00 -> 12:00 moves) use different predictors/windows.
+  The overnight-sign conditional statistic has never been computed. Record this in the methodology.
+- **Descriptive (not in rule):** continuation reading (sign); |r_on| terciles; OLS slope of r_id on r_on; unconditional long r_id
+  (KMW-UIP intraday direction, descriptive only); Mondays vs other days; by year; spreads; net at bid/ask, SPEC 4, costs x1.5.
+- **Calendar label:** contains the London 4pm fix (11:00 NY), the 08:30 NY releases and 10:00 NY option cut; not a fix strategy.
+- **Data:** EUR/USD price data in repo only.
+
+### B33: Smoothed overnight -> intraday reversal, 20-date signal (signal test, dev) · `ready` (Added 2026-11-10 R074 refill; same experiment as B32)
+- **Mechanism [PUB, partly]:** as B32; closer to Lou-Polk-Skouras, whose predictor is a *smoothed* history of overnight returns
+  (their EWMA has a ~10-year centre of mass on monthly data, impossible on 6 dev years; a 20-date window is our choice, fixed now).
+- **Signal (fixed now):** O20(D) = sum of r_on over the 20 previous valid trading dates D-20..D-1 (excludes D's own overnight; dates
+  with missing r_on are skipped, the window extends back to collect 20 values; first 20 dev dates are burn-in, counted). Position =
+  -sign(O20); signed return = -sign(O20) x r_id(D). Same entry/exit, spread skip and quote rules as B32.
+- **Test and rule:** as B32 (block 20, p < 0.025, mean > 1.0 pip, CI lower > 0, < 500 dates -> NONE). SIGNAL earns B34.
+- **Descriptive (not in rule):** O20 terciles; overlap of B32 and B33 positions (share of dates with the same position); net costs.
+
+### B34: Overnight -> intraday reversal, val confirmation (signal test, val only) · `blocked` (Added 2026-11-10 R074; earned only if B32 or B33 returns SIGNAL on dev)
+- **Test if earned:** the arm(s) that returned SIGNAL, unchanged, on val only (2021-01-21 .. 2023-06-30, ~620 dates, B33 burn-in from
+  val dates only), own pre-registration, 1 trial per arm, p < 0.05 (or < 0.025 if both arms). Val has ~620 dates: enough power for a
+  ~3-pip effect.

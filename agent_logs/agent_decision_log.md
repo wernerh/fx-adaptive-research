@@ -702,3 +702,18 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** the descriptive US-only leg (DAY +23.082, t p 0.0001) is recorded as post-hoc and not acted on; it is not a
   backlog item. A future refill may consider it only as a val-only pre-registration against the unconditional-long control.
 - **Next run:** no `ready` item remains -> backlog refill.
+
+### 2026-11-10 R074 (unattended)
+- **State:** last research-batch run 42834778439 (E034) completed and recorded (R073); no run queued or in progress; no `ready`
+  backlog item -> protocol step 4 (refill). pytest passed (274). Local main had stale diverged history; reset to origin/main.
+- **Literature pass:** opened KMW "UIP in High Frequency" (2024 WP), Lou-Polk-Skouras FMG DP 961 (2026), Marsh-Miao (2012),
+  Kloks-Mattille-Ranaldo (2024); Jiang (2019) not openable. Details and UNVERIFIED markings in research/academic_studies.md and the
+  backlog refill note R074.
+- **Added:** B32 (daily overnight -> intraday reversal, -sign(r_on 17:05 -> 07:00 NY) x r_id 07:00 -> 16:55 NY) and B33 (same with a
+  20-date summed overnight signal), one experiment, dev only, 2 trials, p < 0.025 each; B34 val confirmation blocked until earned.
+  Chosen because the conditional overnight-sign statistic is uncontaminated on dev, n ~1,500 gives adequate power, and only repo price
+  data are needed. Prior is weak (an FX analogue, not a published FX result).
+- **For the human (no action taken):** the KMW-UIP unconditional intraday long EUR/USD (07:00 -> 17:00 ET) is a published direction
+  whose dev and val are already largely seen (E009, E017, E001/E006); only the locked OOS block could test it cleanly. Same status as
+  the R065 pre-ECB window. Needs a human decision; not queued.
+- **Next run:** pre-register B32+B33 as E035 (hypothesis, methodology, record.json, registry row), implement with tests, queue.

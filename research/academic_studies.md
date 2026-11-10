@@ -326,3 +326,24 @@ US session. That is unproven, which is exactly why E001 comes first.
   window"; small reversal in the one minute after the fix. Describes Melvin-Prins as a negative effect of relative equity outperformance
   on the currency before the last fix of the month (secondary).
 - **Relevance:** Low for direct trading (no EUR/USD, one-minute horizon); supporting description for B30.
+
+### Krohn, Mueller & Whelan (2024 WP): Uncovered Interest Parity in High Frequency
+- **Source:** first version November 2024, Cambridge JBS PDF
+  (https://jbs.cam.ac.uk/wp-content/uploads/2024/11/uncovered-interest-parity-in-high-frequency.pdf), opened 2026-11-10 R074; first
+  ~40% read verbatim, rest model-summarised (UNVERIFIED).
+- **Data (verbatim):** nine G9 currencies vs USD incl. EUR, Refinitiv ticks resampled to 5 minutes, 1999-2023; overnight = 17:00 ET t-1
+  -> 7:00 ET t, intraday = 7:00 -> 17:00 ET (robust to 8:00 ET start).
+- **Finding (abstract, verbatim):** the Fama slope "switches from a positive value of 1.32 ... during the overnight hours, to -1.28
+  during the intraday period"; carry returns "are almost exclusively earned during the day"; over 60% of carry excess returns are
+  earned on FOMC/macro announcement days (17% of the sample).
+- **UNVERIFIED (summary only):** EUR mean spot change overnight -1.71 bp, intraday +2.03 bp; dollar portfolio overnight -1.19 bp
+  (t 2.95), intraday +1.59 bp (t 3.28).
+- **Relevance:** Medium. Basis for B32/B33 (overnight -> intraday reversal, an FX daily analogue the paper does not test).
+
+### Lou, Polk & Skouras (2026): The Day Destroys the Night, Night Extends the Day
+- **Source:** LSE FMG Discussion Paper 961, July 2026 (https://www.fmg.ac.uk/sites/default/files/2026-07/DP961.pdf), opened
+  2026-11-10 R074; first ~33% verbatim.
+- **Finding (verbatim, US equities, 1993-2023):** intraday returns regressed on past smoothed overnight returns: "the coefficient on
+  the former is negative, with a t-statistic of -3.98 and an R2 of 7%"; smoothing is an EWMA of monthly returns (~10-year centre of
+  mass). Cites Ranaldo (2009) and Jiang (2019) for clientele-driven diurnal currency patterns (not opened; UNVERIFIED).
+- **Relevance:** Low-medium (equities, slow signal). Clientele mechanism behind B33.
