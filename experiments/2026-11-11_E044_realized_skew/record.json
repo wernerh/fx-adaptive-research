@@ -1,0 +1,24 @@
+{
+  "experiment_id": "E044",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B50: sign(RS(D)) x (EUR/USD mid 16:55 NY D+1 - mid 20:00 NY D) > 1 pip per dev trading date; RS(D) = realized skewness of 5-min mid returns 18:00 -> 16:55 NY of trading date D (Jiang-Han-Yin 2019 sign, EUR/USD time-series extension)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family: daily realized skewness of intraday returns (hold window as E033)",
+  "decision_rule": "< 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e044_realized_skew.py | tee backtests/validation_reports/E044_results.txt",
+  "preregistered_in": "R100",
+  "next_experiment": "SIGNAL -> B51 val confirmation; else B50 closed, B51 closed unearned",
+  "outputs": [
+    "backtests/validation_reports/E044_results.json",
+    "backtests/validation_reports/E044_results.txt",
+    "backtests/validation_reports/E044_days.csv"
+  ]
+}

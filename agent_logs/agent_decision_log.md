@@ -987,3 +987,13 @@ Why each run chose what it did, and any judgement calls.
   trial, E041 rule) and B51 (val confirmation, blocked). Not added: vol-forecast and options-smirk papers (reasons in refill note R099).
 - **Trials:** unchanged (dev 253, val 9, total 262).
 - **Next run:** pre-register B50 as E044.
+
+## 2026-11-11 R100 (unattended)
+- **State:** latest research-batch run 43050165053 (E043) completed success and was recorded in R098; none queued or in progress.
+  Clone was on a detached HEAD; checked out `main` and pulled. Top `ready` backlog item: B50.
+- **Choice:** protocol step 3, pre-register B50 as E044 (only ready item; new family, price data only, no download).
+- **Action:** hypothesis/methodology/record.json written before any run; rule unchanged from the backlog draft (= E041 rule).
+  `realized_skew.py`, `run_e044_realized_skew.py`, 10 tests (369 pass, incl. no-look-ahead and pooled random-walk no-edge tests; a
+  single random-walk seed gave a chance SIGNAL, so the no-edge test pools 4 seeds). Synthetic smoke NONE. batch.sh queues E044 (dev
+  only). Backlog B50 `running`. Trials unchanged until it runs (dev 253, val 9, total 262).
+- **Next run:** collect E044 when the research-batch run finishes.
