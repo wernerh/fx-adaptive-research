@@ -348,3 +348,15 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   over the full dev span or skip the idea.
 - **Action:** B40/B41 closed NONE (rejected_hypotheses.md), B42 closed unearned. Long-tenor slice is post-hoc and not re-tested.
   Next: backlog refill.
+
+### 2026-11-11 R090: FOMC-event tests on ~47 dev meetings cannot detect pip-scale effects (E040)
+- **Context:** E040 (B43), post-FOMC reversal of the pre-statement drift in the 12-24 h window (Lee & Wang 2025, abstract only),
+  dev only, 1 trial.
+- **Observation:** NONE (n 47, +2.623 pips, CI (-14.684, 21.44), t p 0.3863); slope of the t+1 return on the drift is positive
+  (+0.151, p 0.49), not a reversal; the non-FOMC Wednesday control (+5.093, n 263) is no different.
+- **Evidence label:** [EXP]
+- **Lesson:** with a 12-hour target SD of ~62 pips and one event per six weeks, the CI half-width is ~18 pips; only an effect an order
+  of magnitude above the 1-pip bar is detectable. Further FOMC-window ideas on dev (E013, E040 already used) should be skipped unless
+  the expected effect is > 20 pips, and the 48-meeting sample is now used twice.
+- **Action:** B43 closed NONE (rejected_hypotheses.md), B44 closed unearned. Year and sign subsets are post-hoc and not re-tested.
+  Next: B45.

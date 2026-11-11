@@ -877,3 +877,11 @@ Why each run chose what it did, and any judgement calls.
   only). Pre-registered exactly as drafted in the backlog (rule, thresholds, windows unchanged); added a descriptive non-FOMC
   Wednesday control (same rule) that does not enter the decision. 1 dev trial.
 - **Next run:** collect the E040 batch output; B45 stays `ready`.
+
+## 2026-11-11 R090 (unattended)
+- **State:** research-batch run 42980196892 (E040) completed success; outputs committed by github-actions[bot] (e5d07ab), not yet
+  recorded. No run queued or in progress. Workspace clone was on a detached HEAD; checked out `main` and pulled. pytest 325 passed.
+- **Choice:** collect E040 (protocol priority 1). Applied `post_fomc_reversal.decide_b43` exactly as pre-registered (R089): NONE.
+  No rule or threshold changed.
+- **Action:** E040 recorded; B43 `done`, B44 closed unearned (0 trials). Trials dev 250, val 9, total 259. No lead, no notification.
+- **Next run:** pre-register B45 (top `ready` item) as E041.

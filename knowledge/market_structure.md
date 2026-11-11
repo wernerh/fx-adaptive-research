@@ -77,3 +77,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   of the time.
 - The window sign does not predict EUR/USD to 16:00 NY next trading date (+1.655 pips, CI (-3.106, 7.394)) or 10 trading dates
   later (+1.426, CI (-11.651, 11.979)). See experiments/2026-11-11_E039_treasury_auction.
+
+### 2026-11-11 R090: EUR/USD the day after FOMC statements (E040, dev) [EXP]
+- 47 scheduled statements 2015-2020. Pre-statement drift (16:00 NY t-1 -> 13:55 NY t): mean +16.905 pips, mean |P| 31.746, up 66%
+  of meetings (consistent with E013's FOMC-day USD weakness on dev).
+- 02:00 -> 14:00 NY on t+1, signed against the drift: +2.623 pips, SD 61.879, CI (-14.684, 21.44); no reversal of the drift
+  (slope +0.151, p 0.49). See experiments/2026-11-11_E040_post_fomc_reversal.
