@@ -90,3 +90,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - Daily corr(WTI return, EUR/USD 16:00 -> 16:00 London same day) 0.0405: EUR/USD is barely oil-sensitive at daily frequency on dev.
 - Next-day EUR/USD (16:05 -> 16:00 London) signed by the lagged WTI return: +2.306 pips, CI (-0.513, 5.184), NONE.
   See experiments/2026-11-11_E041_oil_lag.
+
+### 2026-11-11 R095: EUR/USD and daily gold (E042, dev) [EXP]
+- Dukascopy `xauusd`: valid 16:00 London quotes on both days for 98.97% of dev dates; daily log return SD 0.00852; no |G| > 0.10 dates.
+- Daily corr(gold return, EUR/USD 16:00 -> 16:00 London same day) 0.4026: strong same-day co-move (common USD factor), unlike WTI (0.0405).
+- Lagged corr(gold return, next-day EUR/USD 16:05 -> 16:00 London) 0.0058; signed by -sign(G): -1.407 pips, CI (-4.415, 0.939), NONE.
+  corr(gold, WTI daily returns) on common dates 0.0329. See experiments/2026-11-11_E042_gold_lag.

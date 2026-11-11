@@ -931,3 +931,11 @@ Why each run chose what it did, and any judgement calls.
   exclusion order, |x| > 0.10 guard) with renamed columns/exclusions and position -sign(G); corr(G, E041 O) uses the committed
   `E041_days.csv` with |O| <= 0.10 (descriptive only).
 - **Next run:** collect E042 when the research-batch run finishes.
+
+## 2026-11-11 R095 (unattended)
+- **State:** research-batch run 43021489775 (E042) completed success; outputs committed by github-actions[bot] (4d2b887), not yet
+  recorded. No run queued or in progress. Workspace clone was on a detached HEAD; checked out `main` and pulled. pytest 348 passed.
+- **Choice:** collect E042 (protocol priority 1). Applied `gold_lag.decide_b46` exactly as pre-registered (R094): NONE (mean -1.407
+  < 0, so neither SIGNAL nor WEAK). No rule or threshold changed; the opposite-sign continuation mean is recorded as descriptive only.
+- **Action:** E042 recorded; B46 `done`, B47 closed unearned (0 trials). Trials dev 252, val 9, total 261. No lead, no notification.
+- **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).

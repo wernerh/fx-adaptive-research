@@ -370,3 +370,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   expected noise. Check by-year concentration before reading a daily-mean near miss as "promising"; a single regime year (2015 oil
   collapse) can produce it.
 - **Action:** B45 closed NONE (rejected_hypotheses.md). No dev re-test with |O| filters, other lags or Brent. Next: backlog refill.
+
+### 2026-11-11 R095: a strong same-day co-move does not imply a next-day lag (E042)
+- **Context:** E042 (B46), lagged daily gold return -> next-day EUR/USD (Apergis 2014, EUR extension), dev only, 1 trial.
+- **Observation:** NONE (n 1533, -1.407 pips, block-20 CI (-4.415, 0.939), t p 0.8352). Same-day corr(G, EUR/USD) 0.4026 but
+  lagged corr 0.0058. With E041 (WTI, NONE) the two daily commodity-lag tests (gold-oil signal corr 0.0329) both found nothing.
+- **Evidence label:** [EXP]
+- **Lesson:** at daily frequency on dev, cross-asset information in USD-priced commodities is absorbed the same day. Lagged
+  daily cross-market signals from papers on other currencies remain weak priors (lessons R081, R092); do not queue more of this
+  family (silver, copper, other lags) without a new mechanism specific to EUR/USD.
+- **Action:** B46 closed NONE (rejected_hypotheses.md); B47 closed unearned. No dev re-test with the opposite sign. Next: refill.
