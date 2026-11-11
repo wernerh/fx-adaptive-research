@@ -368,3 +368,22 @@ US session. That is unproven, which is exactly why E001 comes first.
   frequency, a sign for EUR/USD or any lag: **UNVERIFIED** for our purposes. (NBER page lists Koijen as a fourth author on the
   published version; RePEc does not. Author list UNVERIFIED.)
 - **Relevance:** Low. Supports that rebalancing flows respond to past relative equity returns (the time-series ingredient of B36).
+
+### Klitgaard & Weir (2004): Exchange Rate Changes and Net Positions of Speculators in the Futures Market
+- **Source:** FRBNY Economic Policy Review, May 2004, 17-28 (volume 10(1) per URL). Full PDF opened 2026-11-11 R082 via web-fetch
+  summary with short verbatim quotes: https://www.newyorkfed.org/medialibrary/media/research/epr/04v10n1/0405klitpdf.pdf
+- **Finding:** CFTC COT noncommercial (+ nonreportable) net positions in CME futures, weekly Tuesday-to-Tuesday, 1993-2003, seven
+  currencies vs USD. Contemporaneous: ~75% sign agreement (euro 74%), adj. R^2 30-45% (euro .36, 1999-2003). Predictive: none, "position
+  data do not help predict exchange rate changes over the following week" (Granger, euro F 0.31, p 0.73).
+- **Relevance:** Low. Argues against a COT-positioning -> next-week EUR/USD item (not added, backlog note R082).
+- **Status:** VERIFIED (full text via summary)
+
+### Ranaldo (2007 working paper, EFMA 2008 Athens): Segmentation and Time-of-Day Patterns in Foreign Exchange Markets
+- **Source:** https://www.efmaefm.org/0efmameetings/EFMA%20ANNUAL%20MEETINGS/2008-Athens/papers/376.pdf (dated 2007-10-08; opened
+  2026-11-11 R082, first ~40% verbatim). Journal version (Ranaldo 2009, JBF) not opened: UNVERIFIED.
+- **Finding (verbatim fragments):** Reuters FXFX indicative quotes, 4-hour returns, EUR/USD 1999-2005; "the US dollar appreciates
+  significantly from 8:00 to 12:00 GMT and the euro appreciates significantly from 16:00 to 22:00 GMT"; "On Thursdays, the dollar
+  experiences an additional depreciation of 2%-4%" (US hours). Holiday "natural experiment" results seen only in an untrusted
+  extraction summary: UNVERIFIED.
+- **Relevance:** Low now. Same home-hours mechanism as Breedon-Ranaldo (B14/E017, WEAK on val, line closed).
+- **Status:** VERIFIED (partial text)

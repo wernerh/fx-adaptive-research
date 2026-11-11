@@ -790,3 +790,15 @@ Why each run chose what it did, and any judgement calls.
   CI lower -1.411, t p 0.191 -> NONE; B36 n 1482, mean -0.88 -> NONE. LEAD condition 1 fails; no notification. B35/B36 closed and
   B37 closed unearned per the pre-registered "what follows". Descriptive terciles/years not turned into new tests.
 - **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items).
+
+## 2026-11-11 R082 (unattended)
+- **State:** last research-batch run 42915756793 (E037) completed and recorded (R081, ae4a183); no run queued or in progress (latest 5
+  runs all completed success). No `ready` backlog item (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). pytest 299
+  passed. Workspace clone was on a detached HEAD; checked out `main` and pulled (no remote history touched).
+- **Choice:** B38 intraday momentum into the 17:00 NY spot roll (sign(17:00 -> 16:25 NY) x 16:25 -> 16:55 NY, dev, 1 trial, B13 rule
+  unchanged) + B39 val confirmation (blocked). Reason: lesson R081 says to prefer published *lagged* effects; Baltussen et al. (2021) is
+  one that covers currencies, and B13 is blocked only on the CME settlement time. The 17:00 NY roll needs no external source. One
+  variable changed vs B13 (anchor). Weak prior stated: convention mismatch (futures close vs spot roll) and a 1-pip bar on a 30-min hold.
+- **Not added:** COT positioning (Klitgaard-Weir 2004: no weekly predictability); Ranaldo Thursday / holiday effects (home-hours line
+  closed on val by E017; holiday numbers UNVERIFIED).
+- **Next run:** pre-register B38 as E038 (dev only).
