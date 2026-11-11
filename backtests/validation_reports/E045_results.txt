@@ -1,0 +1,68 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E045 DEV fade first rejected touch of a 00/50 level, 60 min (pre-registered rule, 1 trial):
+n                                         1000
+n_dates                                    833
+mean_pips                                -0.71
+median_pips                              0.025
+sd_pips                                 18.878
+hit_rate                                   0.5
+t_stat                                   -1.19
+t_p_one_sided                           0.8828
+mean_ci95_date_cluster_boot    (-1.878, 0.401)
+decision                                  NONE
+touch events: 1195 trades: 1000 skipped: {'roll': 167, 'spread': 7, 'coverage': 1, 'overlap': 20}
+
+Control levels (23/73), descriptive:
+n                                        1055
+n_dates                                   846
+mean_pips                               1.608
+median_pips                              1.35
+sd_pips                                21.533
+hit_rate                               0.5545
+t_stat                                  2.426
+t_p_one_sided                          0.0077
+mean_ci95_date_cluster_boot    (0.421, 2.809)
+control events: 1270 trades: 1055 skipped: {'roll': 192, 'spread': 4, 'coverage': 1, 'overlap': 18}
+round minus control mean signed (pips): -2.318
+
+Descriptive:
+  up_touches_short : {'n': 539, 'n_dates': 476, 'mean_pips': -0.023, 'median_pips': 0.35, 'sd_pips': 19.644, 'hit_rate': 0.5102, 't_stat': -0.027, 't_p_one_sided': 0.5109, 'mean_ci95_date_cluster_boot': (-1.611, 1.585)}
+  down_touches_long : {'n': 461, 'n_dates': 420, 'mean_pips': -1.514, 'median_pips': -0.3, 'sd_pips': 17.929, 'hit_rate': 0.4881, 't_stat': -1.813, 't_p_one_sided': 0.9647, 'mean_ci95_date_cluster_boot': (-3.111, 0.055)}
+  share_short : 0.539
+  share_level_crossed_by_close_within_hold : 0.831
+  crossed_within_hold : {'n': 831, 'n_dates': 708, 'mean_pips': -4.085, 'median_pips': -2.6, 'sd_pips': 17.497, 'hit_rate': 0.4019, 't_stat': -6.731, 't_p_one_sided': 1.0, 'mean_ci95_date_cluster_boot': (-5.188, -2.917)}
+  not_crossed_within_hold : {'n': 169, 'n_dates': 166, 'mean_pips': 15.885, 'median_pips': 12.8, 'sd_pips': 16.535, 'hit_rate': 0.9822, 't_stat': 12.489, 't_p_one_sided': 0.0, 'mean_ci95_date_cluster_boot': (13.54, 18.427)}
+  continuation_mean_pips_reported_only : 0.71
+  horizon_15m : {'n': 1000, 'n_dates': 833, 'mean_pips': -0.259, 'median_pips': 0.675, 'sd_pips': 12.17, 'hit_rate': 0.541, 't_stat': -0.672, 't_p_one_sided': 0.7493, 'mean_ci95_date_cluster_boot': (-1.019, 0.497)}
+  horizon_120m : {'n': 999, 'n_dates': 833, 'mean_pips': -1.429, 'median_pips': -0.6, 'sd_pips': 26.319, 'hit_rate': 0.4905, 't_stat': -1.717, 't_p_one_sided': 0.9568, 'mean_ci95_date_cluster_boot': (-3.025, 0.222)}
+  within_15m_ny_0830 : {'n': 65, 'n_dates': 65, 'mean_pips': -6.501, 'median_pips': -3.85, 'sd_pips': 26.123, 'hit_rate': 0.4308, 't_stat': -2.006, 't_p_one_sided': 0.9755, 'mean_ci95_date_cluster_boot': (-13.0, 0.076)}
+  within_15m_ny_1000 : {'n': 65, 'n_dates': 65, 'mean_pips': 2.675, 'median_pips': 3.8, 'sd_pips': 18.953, 'hit_rate': 0.6, 't_stat': 1.138, 't_p_one_sided': 0.1297, 'mean_ci95_date_cluster_boot': (-2.023, 7.246)}
+  within_15m_ny_1100 : {'n': 34, 'n_dates': 34, 'mean_pips': -2.935, 'median_pips': -1.25, 'sd_pips': 12.477, 'hit_rate': 0.5, 't_stat': -1.372, 't_p_one_sided': 0.9103, 'mean_ci95_date_cluster_boot': (-6.827, 1.141)}
+  outside_release_fix_windows : {'n': 836, 'n_dates': 716, 'mean_pips': -0.433, 'median_pips': 0.0, 'sd_pips': 18.347, 'hit_rate': 0.4976, 't_stat': -0.682, 't_p_one_sided': 0.7523, 'mean_ci95_date_cluster_boot': (-1.6, 0.781)}
+
+Events per year: {2015: 258, 2016: 217, 2017: 190, 2018: 209, 2019: 125, 2020: 196}
+
+By year (descriptive):
+         n   mean    hit
+year                   
+2015  220 -3.742  0.473
+2016  174 -1.031  0.454
+2017  160  0.104  0.519
+2018  171  1.565  0.526
+2019  107  1.281  0.542
+2020  168 -0.768  0.512
+
+DEV cost check (descriptive):
+n                           1000.000
+mean_signed_mid_pips          -0.710
+mean_net_bidask_pips          -1.008
+mean_net_spec4_pips           -1.208
+mean_net_costs_x1_5_pips      -1.457
+net_spec4_hit_rate             0.486
+median_entry_spread_pips       0.300
+median_exit_spread_pips        0.300
+
+Calendar shares (event bar within +-15 min): {'share_within_15m_ny_0830': 0.065, 'share_within_15m_ny_1000': 0.065, 'share_within_15m_ny_1100': 0.034}
+dev trading dates with bars: 1562
+E045 decision: NONE
