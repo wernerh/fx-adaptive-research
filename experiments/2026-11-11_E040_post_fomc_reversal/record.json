@@ -1,0 +1,24 @@
+{
+  "experiment_id": "E040",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B43: -sign(P) x (EUR/USD mid 14:00 NY t+1 - mid 02:00 NY t+1) > 1 pip per scheduled dev FOMC statement date t; P = mid 13:55 NY t - mid 16:00 NY previous business day (post-FOMC reversal of the pre-statement drift 12-24 h after the statement, Lee & Wang 2025)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new target window on a known event: 02:00 -> 14:00 NY on t+1 conditioned on the pre-statement drift (relatives E013/E014)",
+  "decision_rule": "< 40 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND i.i.d. bootstrap (2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05; WEAK if mean > 0 and (CI lower > 0 or t p < 0.05); else NONE. Entry skipped if spread at 02:00 NY t+1 > 2.0 pips. 1 dev trial. SIGNAL earns B44 (val).",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "commands": [
+    "python scripts/run_e040_post_fomc_reversal.py | tee backtests/validation_reports/E040_results.txt"
+  ],
+  "outputs": [
+    "backtests/validation_reports/E040_results.txt",
+    "backtests/validation_reports/E040_results.json",
+    "backtests/validation_reports/E040_events.csv"
+  ]
+}

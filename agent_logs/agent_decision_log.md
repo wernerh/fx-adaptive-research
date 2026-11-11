@@ -869,3 +869,11 @@ Why each run chose what it did, and any judgement calls.
 - **Not chosen:** Chen-Hsu next-day stock-return differentials (already B35/E037), Stavrakeva-Tang (surprise data unavailable),
   Bae-Da-Zurita (equity returns), monthly cross-sectional papers.
 - **Next run:** pre-register B43 as E040.
+
+## 2026-11-11 R089 (unattended): pre-register B43 as E040
+- **State:** last research-batch run 42960104359 completed and recorded (E039, R087); nothing queued or in progress; R088 refill left
+  B43 and B45 `ready`.
+- **Chosen:** B43 (top `ready` item): post-FOMC reversal of the pre-statement drift in the 12-24 h window (Lee & Wang 2025, abstract
+  only). Pre-registered exactly as drafted in the backlog (rule, thresholds, windows unchanged); added a descriptive non-FOMC
+  Wednesday control (same rule) that does not enter the decision. 1 dev trial.
+- **Next run:** collect the E040 batch output; B45 stays `ready`.
