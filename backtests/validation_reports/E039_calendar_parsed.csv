@@ -1,0 +1,1928 @@
+auction_date,security_type,security_term,original_security_term,cusip,reopening,closing_time_comp_raw,close_time,qualifying,reason,tenor
+2015-01-05,Bill,13-Week,26-Week,912796FC8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-05,Bill,26-Week,26-Week,912796FT1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-06,Bill,4-Week,52-Week,912796DG1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-06,Bill,52-Week,52-Week,912796FP9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-12,Bill,13-Week,26-Week,912796FD6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-12,Bill,26-Week,26-Week,912796FW4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-12,Note,3-Year,3-Year,912828H37,No,01:00 PM,13:00:00,True,ok,short
+2015-01-13,Bill,4-Week,26-Week,912796EU9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-13,Note,9-Year 10-Month,10-Year,912828G38,Yes,01:00 PM,13:00:00,True,ok,long
+2015-01-14,Bond,29-Year 10-Month,30-Year,912810RJ9,Yes,01:00 PM,13:00:00,True,ok,long
+2015-01-20,Bill,13-Week,26-Week,912796FE4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-20,Bill,26-Week,52-Week,912796EN5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-21,Bill,4-Week,26-Week,912796EV7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-22,Note,10-Year,10-Year,912828H45,No,01:00 PM,13:00:00,False,tips,long
+2015-01-26,Bill,13-Week,52-Week,912796DY2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-26,Bill,26-Week,26-Week,912796FX2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-01-26,Bill,4-Week,26-Week,912796EW5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2015-01-28,Note,2-Year,2-Year,912828H78,No,01:00 PM,13:00:00,True,ok,short
+2015-01-28,Note,2-Year,2-Year,912828H60,No,11:30 AM,11:30:00,False,frn,short
+2015-01-29,Note,5-Year,5-Year,912828H52,No,11:30 AM,11:30:00,True,ok,short
+2015-01-29,Note,7-Year,7-Year,912828H86,No,01:00 PM,13:00:00,True,ok,short
+2015-02-02,Bill,13-Week,26-Week,912796FF1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-02,Bill,26-Week,26-Week,912796FY0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-03,Bill,4-Week,52-Week,912796DP1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-03,Bill,52-Week,52-Week,912796FV6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-09,Bill,13-Week,26-Week,912796FH7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-09,Bill,26-Week,26-Week,912796GA1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-10,Note,3-Year,3-Year,912828H94,No,01:00 PM,13:00:00,True,ok,short
+2015-02-10,Bill,4-Week,26-Week,912796EY1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-11,Note,10-Year,10-Year,912828J27,No,01:00 PM,13:00:00,True,ok,long
+2015-02-12,Bond,30-Year,30-Year,912810RK6,No,01:00 PM,13:00:00,True,ok,long
+2015-02-17,Bill,13-Week,26-Week,912796FJ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-17,Bill,26-Week,52-Week,912796ET2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-18,Bill,4-Week,26-Week,912796EZ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-19,Bond,30-Year,30-Year,912810RL4,No,01:00 PM,13:00:00,False,tips,long
+2015-02-23,Bill,13-Week,52-Week,912796EC9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-23,Bill,26-Week,26-Week,912796GB9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-24,Note,2-Year,2-Year,912828J35,No,01:00 PM,13:00:00,True,ok,short
+2015-02-24,Bill,4-Week,26-Week,912796FA2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-02-25,Note,5-Year,5-Year,912828J50,No,01:00 PM,13:00:00,True,ok,short
+2015-02-25,Note,1-Year 11-Month,2-Year,912828H60,Yes,11:30 AM,11:30:00,False,frn,short
+2015-02-26,Note,7-Year,7-Year,912828J43,No,01:00 PM,13:00:00,True,ok,short
+2015-03-02,Bill,13-Week,26-Week,912796FK0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-02,Bill,26-Week,26-Week,912796GC7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-03,Bill,4-Week,52-Week,912796DU0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-03,Bill,52-Week,52-Week,912796FZ7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-09,Bill,13-Week,26-Week,912796FQ7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-09,Bill,26-Week,26-Week,912796GE3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-10,Note,3-Year,3-Year,912828J68,No,01:00 PM,13:00:00,True,ok,short
+2015-03-10,Bill,4-Week,26-Week,912796FC8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-11,Note,9-Year 11-Month,10-Year,912828J27,Yes,01:00 PM,13:00:00,True,ok,long
+2015-03-12,Bond,29-Year 11-Month,30-Year,912810RK6,Yes,01:00 PM,13:00:00,True,ok,long
+2015-03-16,Bill,13-Week,26-Week,912796FR5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-16,Bill,26-Week,52-Week,912796EX3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-17,Bill,4-Week,26-Week,912796FD6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-19,Note,9-Year 10-Month,10-Year,912828H45,Yes,01:00 PM,13:00:00,False,tips,long
+2015-03-23,Bill,13-Week,52-Week,912796EJ4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-23,Bill,26-Week,26-Week,912796GF0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-24,Note,2-Year,2-Year,912828J92,No,01:00 PM,13:00:00,True,ok,short
+2015-03-24,Bill,4-Week,26-Week,912796FE4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-25,Note,5-Year,5-Year,912828J84,No,01:00 PM,13:00:00,True,ok,short
+2015-03-25,Note,1-Year 10-Month,2-Year,912828H60,Yes,11:30 AM,11:30:00,False,frn,short
+2015-03-26,Note,7-Year,7-Year,912828J76,No,01:00 PM,13:00:00,True,ok,short
+2015-03-30,Bill,13-Week,26-Week,912796FS3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-30,Bill,26-Week,26-Week,912796GG8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-31,Bill,4-Week,52-Week,912796DY2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-03-31,Bill,52-Week,52-Week,912796GD5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-06,Bill,13-Week,26-Week,912796FT1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-06,Bill,26-Week,26-Week,912796GJ2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-07,Note,3-Year,3-Year,912828K25,No,01:00 PM,13:00:00,True,ok,short
+2015-04-07,Bill,4-Week,26-Week,912796FF1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-08,Note,9-Year 10-Month,10-Year,912828J27,Yes,01:00 PM,13:00:00,True,ok,long
+2015-04-09,Bond,29-Year 10-Month,30-Year,912810RK6,Yes,01:00 PM,13:00:00,True,ok,long
+2015-04-13,Bill,13-Week,26-Week,912796FW4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-13,Bill,26-Week,52-Week,912796FB0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-14,Bill,4-Week,26-Week,912796FH7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-20,Bill,13-Week,52-Week,912796EN5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-20,Bill,26-Week,26-Week,912796GK9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-21,Bill,4-Week,26-Week,912796FJ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-23,Note,5-Year,5-Year,912828K33,No,01:00 PM,13:00:00,False,tips,short
+2015-04-27,Bill,13-Week,26-Week,912796FX2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-27,Bill,26-Week,26-Week,912796GL7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-27,Note,2-Year,2-Year,912828K66,No,01:00 PM,13:00:00,True,ok,short
+2015-04-28,Bill,4-Week,52-Week,912796EC9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-28,Bill,52-Week,52-Week,912796GH6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-04-28,Note,5-Year,5-Year,912828K58,No,01:00 PM,13:00:00,True,ok,short
+2015-04-29,Note,2-Year,2-Year,912828K41,No,11:30 AM,11:30:00,False,frn,short
+2015-04-29,Note,7-Year,7-Year,912828WZ9,No,01:00 PM,13:00:00,True,ok,short
+2015-05-04,Bill,13-Week,26-Week,912796FY0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-04,Bill,26-Week,26-Week,912796GM5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-05,Bill,4-Week,26-Week,912796FK0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-11,Bill,13-Week,26-Week,912796GA1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-11,Bill,26-Week,52-Week,912796FG9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-12,Note,3-Year,3-Year,912828XA3,No,01:00 PM,13:00:00,True,ok,short
+2015-05-12,Bill,4-Week,26-Week,912796FQ7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-13,Note,10-Year,10-Year,912828XB1,No,01:00 PM,13:00:00,True,ok,long
+2015-05-14,Bond,30-Year,30-Year,912810RM2,No,01:00 PM,13:00:00,True,ok,long
+2015-05-18,Bill,13-Week,52-Week,912796ET2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-18,Bill,26-Week,26-Week,912796GP8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-19,Bill,4-Week,26-Week,912796FR5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-21,Note,9-Year 8-Month,10-Year,912828H45,Yes,01:00 PM,13:00:00,False,tips,long
+2015-05-26,Note,2-Year,5-Year,912828SY7,Yes,01:00 PM,13:00:00,True,ok,short
+2015-05-26,Bill,13-Week,26-Week,912796GB9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-26,Bill,26-Week,26-Week,912796GQ6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-27,Note,5-Year,5-Year,912828XE5,No,01:00 PM,13:00:00,True,ok,short
+2015-05-27,Bill,4-Week,52-Week,912796EJ4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-27,Bill,52-Week,52-Week,912796GN3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-05-28,Note,7-Year,7-Year,912828XD7,No,01:00 PM,13:00:00,True,ok,short
+2015-05-28,Note,1-Year 11-Month,2-Year,912828K41,Yes,11:30 AM,11:30:00,False,frn,short
+2015-06-01,Bill,13-Week,26-Week,912796GC7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-01,Bill,26-Week,26-Week,912796GR4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-02,Bill,4-Week,26-Week,912796FS3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-02,Bill,12-Day,12-Day,912796KK4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-08,Bill,13-Week,26-Week,912796GE3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-08,Bill,26-Week,52-Week,912796FN4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-09,Bill,4-Week,26-Week,912796FT1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-09,Note,3-Year,3-Year,912828XF2,No,01:00 PM,13:00:00,True,ok,short
+2015-06-10,Note,9-Year 11-Month,10-Year,912828XB1,Yes,01:00 PM,13:00:00,True,ok,long
+2015-06-11,Bond,29-Year 11-Month,30-Year,912810RM2,Yes,01:00 PM,13:00:00,True,ok,long
+2015-06-15,Bill,13-Week,52-Week,912796EX3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-15,Bill,26-Week,26-Week,912796GT0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-16,Bill,4-Week,26-Week,912796FW4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-18,Bond,29-Year 8-Month,30-Year,912810RL4,Yes,01:00 PM,13:00:00,False,tips,long
+2015-06-22,Bill,13-Week,26-Week,912796GF0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-22,Bill,26-Week,26-Week,912796GU7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-23,Note,2-Year,2-Year,912828XJ4,No,01:00 PM,13:00:00,True,ok,short
+2015-06-23,Bill,52-Week,52-Week,912796GS2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-23,Bill,4-Week,52-Week,912796EN5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-24,Note,5-Year,5-Year,912828XH8,No,01:00 PM,13:00:00,True,ok,short
+2015-06-24,Note,1-Year 10-Month,2-Year,912828K41,Yes,11:30 AM,11:30:00,False,frn,short
+2015-06-25,Note,7-Year,7-Year,912828XG0,No,01:00 PM,13:00:00,True,ok,short
+2015-06-29,Bill,13-Week,26-Week,912796GG8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-29,Bill,26-Week,26-Week,912796GV5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-06-30,Bill,4-Week,26-Week,912796FX2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-06,Bill,13-Week,26-Week,912796GJ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-06,Bill,26-Week,52-Week,912796FP9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-07,Note,3-Year,3-Year,912828XK1,No,01:00 PM,13:00:00,True,ok,short
+2015-07-07,Bill,4-Week,26-Week,912796FY0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-08,Note,9-Year 10-Month,10-Year,912828XB1,Yes,01:00 PM,13:00:00,True,ok,long
+2015-07-09,Bond,29-Year 10-Month,30-Year,912810RM2,Yes,01:00 PM,13:00:00,True,ok,long
+2015-07-13,Bill,13-Week,52-Week,912796FB0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-13,Bill,26-Week,26-Week,912796GX1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-14,Bill,4-Week,26-Week,912796GA1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-20,Bill,13-Week,26-Week,912796GK9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-20,Bill,26-Week,26-Week,912796GY9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-21,Bill,4-Week,52-Week,912796ET2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-21,Bill,52-Week,52-Week,912796GW3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-23,Note,10-Year,10-Year,912828XL9,No,01:00 PM,13:00:00,False,tips,long
+2015-07-27,Bill,13-Week,26-Week,912796GL7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-27,Bill,26-Week,26-Week,912796GZ6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-28,Note,2-Year,2-Year,912828XP0,No,01:00 PM,13:00:00,True,ok,short
+2015-07-28,Bill,4-Week,26-Week,912796GB9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-07-29,Note,2-Year,2-Year,912828XN5,No,11:30 AM,11:30:00,False,frn,short
+2015-07-29,Note,5-Year,5-Year,912828XM7,No,01:00 PM,13:00:00,True,ok,short
+2015-07-30,Note,7-Year,7-Year,912828XQ8,No,01:00 PM,13:00:00,True,ok,short
+2015-08-03,Bill,13-Week,26-Week,912796GM5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-03,Bill,26-Week,52-Week,912796FV6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-04,Bill,4-Week,26-Week,912796GC7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-10,Bill,13-Week,52-Week,912796FG9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-10,Bill,26-Week,26-Week,912796HB8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-11,Note,3-Year,3-Year,912828K82,No,01:00 PM,13:00:00,True,ok,short
+2015-08-11,Bill,4-Week,26-Week,912796GE3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-11,Bill,19-Day,19-Day,912796KV0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-12,Note,10-Year,10-Year,912828K74,No,01:00 PM,13:00:00,True,ok,long
+2015-08-13,Bond,30-Year,30-Year,912810RN0,No,01:00 PM,13:00:00,True,ok,long
+2015-08-17,Bill,13-Week,26-Week,912796GP8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-17,Bill,26-Week,26-Week,912796HC6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-18,Bill,4-Week,52-Week,912796EX3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-18,Bill,52-Week,52-Week,912796HA0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-20,Note,4-Year 8-Month,5-Year,912828K33,Yes,01:00 PM,13:00:00,False,tips,short
+2015-08-24,Bill,13-Week,26-Week,912796GQ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-24,Bill,26-Week,26-Week,912796HD4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-25,Note,2-Year,5-Year,912828TM2,Yes,01:00 PM,13:00:00,True,ok,short
+2015-08-25,Bill,4-Week,26-Week,912796GF0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-26,Note,1-Year 11-Month,2-Year,912828XN5,Yes,11:30 AM,11:30:00,False,frn,short
+2015-08-26,Note,5-Year,5-Year,912828L32,No,01:00 PM,13:00:00,True,ok,short
+2015-08-27,Note,7-Year,7-Year,912828L24,No,01:00 PM,13:00:00,True,ok,short
+2015-08-31,Bill,13-Week,26-Week,912796GR4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-31,Bill,26-Week,52-Week,912796FZ7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-08-31,Bill,14-Day,14-Day,912796KW8,No,01:00 PM,13:00:00,False,type_bill,unknown
+2015-09-01,Bill,4-Week,26-Week,912796GG8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-08,Note,3-Year,3-Year,912828L40,No,01:00 PM,13:00:00,True,ok,short
+2015-09-08,Bill,13-Week,52-Week,912796FN4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-08,Bill,26-Week,26-Week,912796HF9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-09,Note,9-Year 11-Month,10-Year,912828K74,Yes,01:00 PM,13:00:00,True,ok,long
+2015-09-09,Bill,21-Day,26-Week,912796GG8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-09,Bill,4-Week,26-Week,912796GJ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-10,Bond,29-Year 11-Month,30-Year,912810RN0,Yes,01:00 PM,13:00:00,True,ok,long
+2015-09-14,Bill,13-Week,26-Week,912796GT0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-14,Bill,26-Week,26-Week,912796HG7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-15,Bill,4-Week,52-Week,912796FB0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-15,Bill,52-Week,52-Week,912796HE2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-18,Note,9-Year 10-Month,10-Year,912828XL9,Yes,11:30 AM,11:30:00,False,tips,long
+2015-09-21,Bill,13-Week,26-Week,912796GU7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-21,Bill,26-Week,26-Week,912796HH5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-22,Note,2-Year,5-Year,912828TS9,Yes,01:00 PM,13:00:00,True,ok,short
+2015-09-22,Bill,4-Week,26-Week,912796GK9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-23,Note,5-Year,5-Year,912828L65,No,01:00 PM,13:00:00,True,ok,short
+2015-09-23,Note,1-Year 10-Month,2-Year,912828XN5,Yes,11:30 AM,11:30:00,False,frn,short
+2015-09-24,Note,7-Year,7-Year,912828L57,No,01:00 PM,13:00:00,True,ok,short
+2015-09-28,Bill,13-Week,26-Week,912796GV5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-28,Bill,26-Week,52-Week,912796GD5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-09-29,Bill,4-Week,26-Week,912796GL7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-05,Bill,13-Week,52-Week,912796FP9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-05,Bill,26-Week,26-Week,912796HK8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-06,Note,3-Year,3-Year,912828L81,No,01:00 PM,13:00:00,True,ok,short
+2015-10-06,Bill,25-Day,25-Day,912796LH0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-06,Bill,4-Week,26-Week,912796GM5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-07,Note,9-Year 10-Month,10-Year,912828K74,Yes,01:00 PM,13:00:00,True,ok,long
+2015-10-08,Bond,29-Year 10-Month,30-Year,912810RN0,Yes,01:00 PM,13:00:00,True,ok,long
+2015-10-13,Bill,26-Week,26-Week,912796HL6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-13,Bill,13-Week,26-Week,912796GX1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-14,Bill,4-Week,52-Week,912796FG9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-14,Bill,52-Week,52-Week,912796HJ1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-19,Bill,13-Week,26-Week,912796GY9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-19,Bill,26-Week,26-Week,912796HM4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-20,Bill,4-Week,26-Week,912796GP8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-22,Bond,29-Year 4-Month,30-Year,912810RL4,Yes,01:00 PM,13:00:00,False,tips,long
+2015-10-26,Bill,13-Week,26-Week,912796GZ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-26,Bill,26-Week,52-Week,912796GH6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-27,Bill,4-Week,26-Week,912796GQ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-28,Note,2-Year,2-Year,912828M23,No,11:30 AM,11:30:00,False,frn,short
+2015-10-28,Note,5-Year,5-Year,912828L99,No,01:00 PM,13:00:00,True,ok,short
+2015-10-29,Bill,69-Day,52-Week,912796FP9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-10-29,Note,7-Year,7-Year,912828M49,No,01:00 PM,13:00:00,True,ok,short
+2015-11-02,Bill,13-Week,52-Week,912796FV6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-02,Bill,26-Week,26-Week,912796HN2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-02,Bill,72-Day,26-Week,912796GX1,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2015-11-03,Bill,4-Week,26-Week,912796GR4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-04,Note,2-Year,5-Year,912828TW0,Yes,01:00 PM,13:00:00,True,ok,short
+2015-11-09,Note,3-Year,3-Year,912828M64,No,01:00 PM,13:00:00,True,ok,short
+2015-11-09,Bill,13-Week,26-Week,912796HB8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-09,Bill,26-Week,26-Week,912796HR3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-10,Bill,4-Week,52-Week,912796FN4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-10,Bill,52-Week,52-Week,912796HQ5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-10,Note,10-Year,10-Year,912828M56,No,01:00 PM,13:00:00,True,ok,long
+2015-11-12,Bond,30-Year,30-Year,912810RP5,No,01:00 PM,13:00:00,True,ok,long
+2015-11-16,Bill,13-Week,26-Week,912796HC6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-16,Bill,26-Week,26-Week,912796HS1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-17,Bill,4-Week,26-Week,912796GT0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-19,Note,9-Year 8-Month,10-Year,912828XL9,Yes,01:00 PM,13:00:00,False,tips,long
+2015-11-23,Bill,13-Week,26-Week,912796HD4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-23,Bill,26-Week,52-Week,912796GN3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-23,Note,2-Year,2-Year,912828M72,No,01:00 PM,13:00:00,True,ok,short
+2015-11-24,Note,5-Year,5-Year,912828M98,No,01:00 PM,13:00:00,True,ok,short
+2015-11-24,Bill,4-Week,26-Week,912796GU7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-24,Note,1-Year 11-Month,2-Year,912828M23,Yes,11:30 AM,11:30:00,False,frn,short
+2015-11-25,Note,7-Year,7-Year,912828M80,No,11:30 AM,11:30:00,True,ok,short
+2015-11-30,Bill,13-Week,52-Week,912796FZ7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-11-30,Bill,26-Week,26-Week,912796HT9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-01,Bill,4-Week,26-Week,912796GV5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-07,Bill,13-Week,26-Week,912796HF9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-07,Bill,26-Week,26-Week,912796HW2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-08,Note,3-Year,3-Year,912828N22,No,01:00 PM,13:00:00,True,ok,short
+2015-12-08,Bill,4-Week,52-Week,912796FP9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-08,Bill,52-Week,52-Week,912796HU6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-09,Note,9-Year 11-Month,10-Year,912828M56,Yes,01:00 PM,13:00:00,True,ok,long
+2015-12-10,Bond,29-Year 11-Month,30-Year,912810RP5,Yes,01:00 PM,13:00:00,True,ok,long
+2015-12-14,Bill,13-Week,26-Week,912796HG7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-14,Bill,26-Week,26-Week,912796HX0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-15,Bill,4-Week,26-Week,912796GX1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-17,Note,4-Year 4-Month,5-Year,912828K33,Yes,01:00 PM,13:00:00,False,tips,short
+2015-12-21,Bill,26-Week,52-Week,912796GS2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-21,Bill,13-Week,26-Week,912796HH5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-22,Bill,4-Week,26-Week,912796GY9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-23,Note,1-Year 10-Month,2-Year,912828M23,Yes,11:30 AM,11:30:00,False,frn,short
+2015-12-28,Note,2-Year,2-Year,912828N55,No,01:00 PM,13:00:00,True,ok,short
+2015-12-28,Bill,26-Week,26-Week,912796HY8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-28,Bill,13-Week,52-Week,912796GD5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-29,Note,5-Year,5-Year,912828N48,No,01:00 PM,13:00:00,True,ok,short
+2015-12-29,Bill,4-Week,26-Week,912796GZ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2015-12-30,Note,7-Year,7-Year,912828N30,No,01:00 PM,13:00:00,True,ok,short
+2016-01-04,Bill,13-Week,26-Week,912796HK8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-04,Bill,26-Week,26-Week,912796HZ5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-05,Bill,4-Week,52-Week,912796FV6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-05,Bill,52-Week,52-Week,912796HV4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-11,Bill,13-Week,26-Week,912796HL6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-11,Bill,26-Week,26-Week,912796JB6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-12,Note,3-Year,3-Year,912828N63,No,01:00 PM,13:00:00,True,ok,short
+2016-01-12,Bill,4-Week,26-Week,912796HB8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-13,Note,9-Year 10-Month,10-Year,912828M56,Yes,01:00 PM,13:00:00,True,ok,long
+2016-01-14,Bond,29-Year 10-Month,30-Year,912810RP5,Yes,01:00 PM,13:00:00,True,ok,long
+2016-01-19,Bill,13-Week,26-Week,912796HM4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-19,Bill,26-Week,52-Week,912796GW3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-20,Bill,4-Week,26-Week,912796HC6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-21,Note,10-Year,10-Year,912828N71,No,01:00 PM,13:00:00,False,tips,long
+2016-01-25,Bill,13-Week,52-Week,912796GH6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-25,Bill,26-Week,26-Week,912796JC4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-26,Note,2-Year,2-Year,912828P20,No,01:00 PM,13:00:00,True,ok,short
+2016-01-26,Bill,4-Week,26-Week,912796HD4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-01-27,Note,2-Year,2-Year,912828N97,No,11:30 AM,11:30:00,False,frn,short
+2016-01-27,Note,5-Year,5-Year,912828N89,No,01:00 PM,13:00:00,True,ok,short
+2016-01-28,Note,7-Year,7-Year,912828P38,No,01:00 PM,13:00:00,True,ok,short
+2016-02-01,Bill,13-Week,26-Week,912796HN2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-01,Bill,26-Week,26-Week,912796JD2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-02,Bill,4-Week,52-Week,912796FZ7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-02,Bill,52-Week,52-Week,912796JA8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-08,Bill,13-Week,26-Week,912796HR3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-08,Bill,26-Week,26-Week,912796JF7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-09,Bill,4-Week,26-Week,912796HF9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-09,Note,3-Year,3-Year,912828P53,No,01:00 PM,13:00:00,True,ok,short
+2016-02-10,Note,10-Year,10-Year,912828P46,No,01:00 PM,13:00:00,True,ok,long
+2016-02-11,Bond,30-Year,30-Year,912810RQ3,No,01:00 PM,13:00:00,True,ok,long
+2016-02-16,Bill,13-Week,26-Week,912796HS1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-16,Bill,26-Week,52-Week,912796HA0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-17,Bill,4-Week,26-Week,912796HG7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-18,Bond,30-Year,30-Year,912810RR1,No,01:00 PM,13:00:00,False,tips,long
+2016-02-22,Bill,13-Week,52-Week,912796GN3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-22,Bill,26-Week,26-Week,912796JG5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-23,Note,2-Year,5-Year,912828UR9,Yes,01:00 PM,13:00:00,True,ok,short
+2016-02-23,Bill,4-Week,26-Week,912796HH5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-24,Note,5-Year,5-Year,912828P87,No,01:00 PM,13:00:00,True,ok,short
+2016-02-24,Note,1-Year 11-Month,2-Year,912828N97,Yes,11:30 AM,11:30:00,False,frn,short
+2016-02-26,Note,7-Year,7-Year,912828P79,No,11:30 AM,11:30:00,True,ok,short
+2016-02-29,Bill,13-Week,26-Week,912796HT9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-02-29,Bill,26-Week,26-Week,912796JH3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-01,Bill,4-Week,52-Week,912796GD5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-01,Bill,52-Week,52-Week,912796JE0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-07,Bill,13-Week,26-Week,912796HW2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-07,Bill,26-Week,26-Week,912796JK6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-08,Bill,4-Week,26-Week,912796HK8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-08,Note,3-Year,3-Year,912828P95,No,01:00 PM,13:00:00,True,ok,short
+2016-03-09,Note,9-Year 11-Month,10-Year,912828P46,Yes,01:00 PM,13:00:00,True,ok,long
+2016-03-10,Bond,29-Year 11-Month,30-Year,912810RQ3,Yes,01:00 PM,13:00:00,True,ok,long
+2016-03-14,Bill,13-Week,26-Week,912796HX0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-14,Bill,26-Week,52-Week,912796HE2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-15,Bill,4-Week,26-Week,912796HL6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-17,Note,9-Year 10-Month,10-Year,912828N71,Yes,01:00 PM,13:00:00,False,tips,long
+2016-03-21,Bill,13-Week,52-Week,912796GS2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-21,Bill,26-Week,26-Week,912796JL4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-22,Bill,4-Week,26-Week,912796HM4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-23,Note,1-Year 10-Month,2-Year,912828N97,Yes,11:30 AM,11:30:00,False,frn,short
+2016-03-28,Bill,13-Week,26-Week,912796HY8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-28,Note,2-Year,2-Year,912828Q45,No,01:00 PM,13:00:00,True,ok,short
+2016-03-28,Bill,26-Week,26-Week,912796JM2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-29,Bill,4-Week,52-Week,912796GH6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-29,Bill,52-Week,52-Week,912796JJ9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-03-29,Note,5-Year,5-Year,912828Q37,No,01:00 PM,13:00:00,True,ok,short
+2016-03-30,Note,7-Year,7-Year,912828Q29,No,01:00 PM,13:00:00,True,ok,short
+2016-04-04,Bill,13-Week,26-Week,912796HZ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-04,Bill,26-Week,26-Week,912796JN0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-05,Bill,4-Week,26-Week,912796HN2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-11,Bill,13-Week,26-Week,912796JB6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-11,Bill,26-Week,52-Week,912796HJ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-12,Note,3-Year,3-Year,912828Q52,No,01:00 PM,13:00:00,True,ok,short
+2016-04-12,Bill,4-Week,26-Week,912796HR3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-13,Note,9-Year 10-Month,10-Year,912828P46,Yes,01:00 PM,13:00:00,True,ok,long
+2016-04-14,Bond,29-Year 10-Month,30-Year,912810RQ3,Yes,01:00 PM,13:00:00,True,ok,long
+2016-04-18,Bill,13-Week,52-Week,912796GW3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-18,Bill,26-Week,26-Week,912796JQ3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-19,Bill,4-Week,26-Week,912796HS1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-21,Note,5-Year,5-Year,912828Q60,No,01:00 PM,13:00:00,False,tips,short
+2016-04-25,Note,2-Year,2-Year,912828Q94,No,01:00 PM,13:00:00,True,ok,short
+2016-04-25,Bill,13-Week,26-Week,912796JC4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-25,Bill,26-Week,26-Week,912796JR1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-26,Note,5-Year,5-Year,912828Q78,No,01:00 PM,13:00:00,True,ok,short
+2016-04-26,Bill,4-Week,52-Week,912796GN3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-26,Bill,52-Week,52-Week,912796JP5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-04-28,Note,2-Year,2-Year,912828Q86,No,11:30 AM,11:30:00,False,frn,short
+2016-04-28,Note,7-Year,7-Year,912828R28,No,01:00 PM,13:00:00,True,ok,short
+2016-05-02,Bill,13-Week,26-Week,912796JD2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-02,Bill,26-Week,26-Week,912796JS9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-03,Bill,4-Week,26-Week,912796HT9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-09,Bill,13-Week,26-Week,912796JF7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-09,Bill,26-Week,52-Week,912796HQ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-10,Note,3-Year,3-Year,912828R44,No,01:00 PM,13:00:00,True,ok,short
+2016-05-10,Bill,4-Week,26-Week,912796HW2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-11,Note,10-Year,10-Year,912828R36,No,01:00 PM,13:00:00,True,ok,long
+2016-05-12,Bond,30-Year,30-Year,912810RS9,No,01:00 PM,13:00:00,True,ok,long
+2016-05-16,Bill,13-Week,52-Week,912796HA0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-16,Bill,26-Week,26-Week,912796JU4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-17,Bill,4-Week,26-Week,912796HX0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-19,Note,9-Year 8-Month,10-Year,912828N71,Yes,01:00 PM,13:00:00,False,tips,long
+2016-05-23,Bill,13-Week,26-Week,912796JG5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-23,Bill,26-Week,26-Week,912796JV2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-24,Bill,4-Week,52-Week,912796GS2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-24,Bill,52-Week,52-Week,912796JT7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-24,Note,2-Year,2-Year,912828R51,No,01:00 PM,13:00:00,True,ok,short
+2016-05-25,Note,5-Year,5-Year,912828R77,No,01:00 PM,13:00:00,True,ok,short
+2016-05-25,Note,1-Year 11-Month,2-Year,912828Q86,Yes,11:30 AM,11:30:00,False,frn,short
+2016-05-26,Note,7-Year,7-Year,912828R69,No,01:00 PM,13:00:00,True,ok,short
+2016-05-31,Bill,4-Week,26-Week,912796HY8,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2016-05-31,Bill,13-Week,26-Week,912796JH3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-05-31,Bill,26-Week,26-Week,912796JW0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-06,Bill,13-Week,26-Week,912796JK6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-06,Bill,26-Week,52-Week,912796HU6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-07,Bill,4-Week,26-Week,912796HZ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-07,Note,3-Year,3-Year,912828R85,No,01:00 PM,13:00:00,True,ok,short
+2016-06-08,Note,9-Year 11-Month,10-Year,912828R36,Yes,01:00 PM,13:00:00,True,ok,long
+2016-06-09,Bond,29-Year 11-Month,30-Year,912810RS9,Yes,01:00 PM,13:00:00,True,ok,long
+2016-06-13,Bill,13-Week,52-Week,912796HE2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-13,Bill,26-Week,26-Week,912796JY6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-14,Bill,4-Week,26-Week,912796JB6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-20,Note,2-Year,2-Year,912828R93,No,01:00 PM,13:00:00,True,ok,short
+2016-06-20,Bill,13-Week,26-Week,912796JL4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-20,Bill,26-Week,26-Week,912796JZ3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-21,Note,5-Year,5-Year,912828S27,No,01:00 PM,13:00:00,True,ok,short
+2016-06-21,Bill,4-Week,52-Week,912796GW3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-21,Bill,52-Week,52-Week,912796JX8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-22,Note,7-Year,7-Year,912828S35,No,01:00 PM,13:00:00,True,ok,short
+2016-06-22,Bond,29-Year 8-Month,30-Year,912810RR1,Yes,11:30 AM,11:30:00,False,tips,long
+2016-06-22,Note,1-Year 10-Month,2-Year,912828Q86,Yes,11:30 AM,11:30:00,False,frn,short
+2016-06-27,Bill,13-Week,26-Week,912796JM2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-27,Bill,26-Week,26-Week,912796KA6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-06-28,Bill,4-Week,26-Week,912796JC4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-05,Bill,4-Week,26-Week,912796JD2,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2016-07-05,Bill,13-Week,26-Week,912796JN0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-05,Bill,26-Week,52-Week,912796HV4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-11,Note,3-Year,3-Year,912828S43,No,01:00 PM,13:00:00,True,ok,short
+2016-07-11,Bill,13-Week,52-Week,912796HJ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-11,Bill,26-Week,26-Week,912796KC2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-12,Note,9-Year 10-Month,10-Year,912828R36,Yes,01:00 PM,13:00:00,True,ok,long
+2016-07-12,Bill,4-Week,26-Week,912796JF7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-13,Bond,29-Year 10-Month,30-Year,912810RS9,Yes,01:00 PM,13:00:00,True,ok,long
+2016-07-18,Bill,13-Week,26-Week,912796JQ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-18,Bill,26-Week,26-Week,912796KD0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-19,Bill,4-Week,52-Week,912796HA0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-19,Bill,52-Week,52-Week,912796KB4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-21,Note,10-Year,10-Year,912828S50,No,01:00 PM,13:00:00,False,tips,long
+2016-07-25,Note,2-Year,2-Year,912828S68,No,01:00 PM,13:00:00,True,ok,short
+2016-07-25,Bill,13-Week,26-Week,912796JR1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-25,Bill,26-Week,26-Week,912796KE8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-26,Bill,4-Week,26-Week,912796JG5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-07-26,Note,5-Year,5-Year,912828S76,No,01:00 PM,13:00:00,True,ok,short
+2016-07-27,Note,2-Year,2-Year,912828S84,No,11:30 AM,11:30:00,False,frn,short
+2016-07-28,Note,7-Year,7-Year,912828S92,No,01:00 PM,13:00:00,True,ok,short
+2016-08-01,Bill,13-Week,26-Week,912796JS9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-01,Bill,26-Week,52-Week,912796JA8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-02,Bill,4-Week,26-Week,912796JH3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-08,Bill,13-Week,52-Week,912796HQ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-08,Bill,26-Week,26-Week,912796KG3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-09,Bill,4-Week,26-Week,912796JK6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-09,Note,3-Year,3-Year,9128282B5,No,01:00 PM,13:00:00,True,ok,short
+2016-08-10,Note,10-Year,10-Year,9128282A7,No,01:00 PM,13:00:00,True,ok,long
+2016-08-11,Bond,30-Year,30-Year,912810RT7,No,01:00 PM,13:00:00,True,ok,long
+2016-08-15,Bill,13-Week,26-Week,912796JU4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-15,Bill,26-Week,26-Week,912796KH1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-16,Bill,4-Week,52-Week,912796HE2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-16,Bill,52-Week,52-Week,912796KF5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-17,Bill,7-Day,7-Day,912796CP2,No,11:00 AM,11:00:00,False,type_bill,unknown
+2016-08-18,Note,4-Year 8-Month,5-Year,912828Q60,Yes,01:00 PM,13:00:00,False,tips,short
+2016-08-22,Bill,13-Week,26-Week,912796JV2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-22,Bill,26-Week,26-Week,912796KJ7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-23,Bill,4-Week,26-Week,912796JL4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-23,Note,2-Year,2-Year,9128282C3,No,01:00 PM,13:00:00,True,ok,short
+2016-08-24,Note,5-Year,5-Year,9128282F6,No,01:00 PM,13:00:00,True,ok,short
+2016-08-24,Note,1-Year 11-Month,2-Year,912828S84,Yes,11:30 AM,11:30:00,False,frn,short
+2016-08-25,Note,7-Year,7-Year,9128282D1,No,01:00 PM,13:00:00,True,ok,short
+2016-08-29,Bill,13-Week,26-Week,912796JW0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-29,Bill,26-Week,52-Week,912796JE0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-08-30,Bill,4-Week,26-Week,912796JM2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-06,Bill,4-Week,26-Week,912796JN0,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2016-09-06,Bill,26-Week,26-Week,912796KM0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-06,Bill,13-Week,52-Week,912796HU6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-12,Bill,13-Week,26-Week,912796JY6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-12,Note,9-Year 11-Month,10-Year,9128282A7,Yes,01:00 PM,13:00:00,True,ok,long
+2016-09-12,Bill,26-Week,26-Week,912796KN8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-12,Note,3-Year,3-Year,9128282G4,No,01:00 PM,13:00:00,True,ok,short
+2016-09-13,Bill,52-Week,52-Week,912796KL2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-13,Bill,4-Week,52-Week,912796HJ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-13,Bond,29-Year 11-Month,30-Year,912810RT7,Yes,01:00 PM,13:00:00,True,ok,long
+2016-09-19,Bill,13-Week,26-Week,912796JZ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-19,Bill,26-Week,26-Week,912796KP3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-20,Bill,4-Week,26-Week,912796JQ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-22,Note,9-Year 10-Month,10-Year,912828S50,Yes,01:00 PM,13:00:00,False,tips,long
+2016-09-26,Note,2-Year,2-Year,912828T42,No,01:00 PM,13:00:00,True,ok,short
+2016-09-26,Bill,13-Week,26-Week,912796KA6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-26,Bill,26-Week,52-Week,912796JJ9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-27,Bill,4-Week,26-Week,912796JR1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-09-27,Note,5-Year,5-Year,912828T34,No,01:00 PM,13:00:00,True,ok,short
+2016-09-28,Note,1-Year 10-Month,2-Year,912828S84,Yes,11:30 AM,11:30:00,False,frn,short
+2016-09-28,Note,7-Year,7-Year,912828T26,No,01:00 PM,13:00:00,True,ok,short
+2016-10-03,Bill,26-Week,26-Week,912796KQ1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-03,Bill,13-Week,52-Week,912796HV4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-04,Bill,4-Week,26-Week,912796JS9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-11,Bill,4-Week,52-Week,912796HQ5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2016-10-11,Bill,13-Week,26-Week,912796KC2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-11,Bill,26-Week,26-Week,912796KS7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-11,Bill,52-Week,52-Week,912796KR9,No,01:00 PM,13:00:00,False,type_bill,unknown
+2016-10-12,Note,3-Year,3-Year,912828T59,No,11:30 AM,11:30:00,True,ok,short
+2016-10-12,Note,9-Year 10-Month,10-Year,9128282A7,Yes,01:00 PM,13:00:00,True,ok,long
+2016-10-13,Bond,29-Year 10-Month,30-Year,912810RT7,Yes,01:00 PM,13:00:00,True,ok,long
+2016-10-17,Bill,26-Week,26-Week,912796KT5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-17,Bill,13-Week,26-Week,912796KD0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-18,Bill,4-Week,26-Week,912796JU4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-20,Bond,29-Year 4-Month,30-Year,912810RR1,Yes,01:00 PM,13:00:00,False,tips,long
+2016-10-24,Bill,13-Week,26-Week,912796KE8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-24,Bill,26-Week,52-Week,912796JP5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-25,Note,2-Year,2-Year,912828T83,No,01:00 PM,13:00:00,True,ok,short
+2016-10-25,Bill,4-Week,26-Week,912796JV2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-26,Note,2-Year,2-Year,912828T75,No,11:30 AM,11:30:00,False,frn,short
+2016-10-26,Note,5-Year,5-Year,912828T67,No,01:00 PM,13:00:00,True,ok,short
+2016-10-27,Note,7-Year,7-Year,912828T91,No,01:00 PM,13:00:00,True,ok,short
+2016-10-31,Bill,13-Week,52-Week,912796JA8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-10-31,Bill,26-Week,26-Week,912796KU2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-01,Bill,4-Week,26-Week,912796JW0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-07,Bill,13-Week,26-Week,912796KG3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-07,Bill,26-Week,26-Week,912796KY4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-08,Bill,4-Week,52-Week,912796HU6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-08,Note,3-Year,3-Year,912828U32,No,01:00 PM,13:00:00,True,ok,short
+2016-11-08,Bill,52-Week,52-Week,912796KX6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-09,Note,10-Year,10-Year,912828U24,No,01:00 PM,13:00:00,True,ok,long
+2016-11-10,Bond,30-Year,30-Year,912810RU4,No,01:00 PM,13:00:00,True,ok,long
+2016-11-14,Bill,13-Week,26-Week,912796KH1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-14,Bill,26-Week,26-Week,912796KZ1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-15,Bill,4-Week,26-Week,912796JY6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-17,Note,9-Year 8-Month,10-Year,912828S50,Yes,01:00 PM,13:00:00,False,tips,long
+2016-11-21,Bill,13-Week,26-Week,912796KJ7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-21,Bill,26-Week,52-Week,912796JT7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-21,Note,2-Year,2-Year,912828U40,No,01:00 PM,13:00:00,True,ok,short
+2016-11-22,Bill,4-Week,26-Week,912796JZ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-22,Note,1-Year 11-Month,2-Year,912828T75,Yes,11:30 AM,11:30:00,False,frn,short
+2016-11-22,Note,5-Year,5-Year,912828U65,No,01:00 PM,13:00:00,True,ok,short
+2016-11-23,Note,7-Year,7-Year,912828U57,No,11:30 AM,11:30:00,True,ok,short
+2016-11-28,Bill,13-Week,52-Week,912796JE0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-28,Bill,26-Week,26-Week,912796LA5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-11-29,Bill,4-Week,26-Week,912796KA6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-05,Bill,13-Week,26-Week,912796KM0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-05,Bill,26-Week,26-Week,912796LD9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-06,Bill,4-Week,52-Week,912796HV4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-06,Bill,52-Week,52-Week,912796LB3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-12,Bill,13-Week,26-Week,912796KN8,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2016-12-12,Note,9-Year 11-Month,10-Year,912828U24,Yes,01:00 PM,13:00:00,True,ok,long
+2016-12-12,Bill,26-Week,26-Week,912796LE7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-12,Note,3-Year,3-Year,912828U73,No,11:30 AM,11:30:00,True,ok,short
+2016-12-13,Bill,4-Week,26-Week,912796KC2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-13,Bond,29-Year 11-Month,30-Year,912810RU4,Yes,01:00 PM,13:00:00,True,ok,long
+2016-12-19,Bill,13-Week,26-Week,912796KP3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-19,Bill,26-Week,52-Week,912796JX8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-20,Bill,4-Week,26-Week,912796KD0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-22,Note,4-Year 4-Month,5-Year,912828Q60,Yes,01:00 PM,13:00:00,False,tips,short
+2016-12-27,Bill,4-Week,26-Week,912796KE8,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2016-12-27,Bill,13-Week,52-Week,912796JJ9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-27,Note,2-Year,2-Year,912828U99,No,01:00 PM,13:00:00,True,ok,short
+2016-12-27,Bill,26-Week,26-Week,912796LF4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2016-12-28,Note,1-Year 10-Month,2-Year,912828T75,Yes,11:30 AM,11:30:00,False,frn,short
+2016-12-28,Note,5-Year,5-Year,912828U81,No,01:00 PM,13:00:00,True,ok,short
+2016-12-29,Note,7-Year,7-Year,912828V23,No,01:00 PM,13:00:00,True,ok,short
+2017-01-03,Bill,26-Week,26-Week,912796LG2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-03,Bill,52-Week,52-Week,912796LC1,No,01:00 PM,13:00:00,False,type_bill,unknown
+2017-01-03,Bill,4-Week,52-Week,912796JA8,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-01-03,Bill,13-Week,26-Week,912796KQ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-09,Bill,13-Week,26-Week,912796KS7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-09,Bill,26-Week,26-Week,912796LK3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-10,Bill,4-Week,26-Week,912796KG3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-10,Note,3-Year,3-Year,912828V31,No,01:00 PM,13:00:00,True,ok,short
+2017-01-11,Note,9-Year 10-Month,10-Year,912828U24,Yes,01:00 PM,13:00:00,True,ok,long
+2017-01-12,Bond,29-Year 10-Month,30-Year,912810RU4,Yes,01:00 PM,13:00:00,True,ok,long
+2017-01-17,Bill,4-Week,26-Week,912796KH1,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-01-17,Bill,13-Week,26-Week,912796KT5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-17,Bill,26-Week,52-Week,912796KB4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-19,Note,10-Year,10-Year,912828V49,No,01:00 PM,13:00:00,False,tips,long
+2017-01-23,Bill,26-Week,26-Week,912796LL1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-23,Bill,13-Week,52-Week,912796JP5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-24,Note,2-Year,2-Year,912828V56,No,01:00 PM,13:00:00,True,ok,short
+2017-01-24,Bill,4-Week,26-Week,912796KJ7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-25,Note,2-Year,2-Year,912828V64,No,11:30 AM,11:30:00,False,frn,short
+2017-01-25,Note,5-Year,5-Year,912828V72,No,01:00 PM,13:00:00,True,ok,short
+2017-01-26,Note,7-Year,7-Year,912828V80,No,01:00 PM,13:00:00,True,ok,short
+2017-01-30,Bill,13-Week,26-Week,912796KU2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-30,Bill,26-Week,26-Week,912796LM9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-31,Bill,4-Week,52-Week,912796JE0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-01-31,Bill,52-Week,52-Week,912796LJ6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-06,Bill,26-Week,26-Week,912796LP2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-06,Bill,13-Week,26-Week,912796KY4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-07,Note,3-Year,3-Year,912828W22,No,01:00 PM,13:00:00,True,ok,short
+2017-02-07,Bill,34-Day,34-Day,912796QG7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-07,Bill,4-Week,26-Week,912796KM0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-08,Note,10-Year,10-Year,912828V98,No,01:00 PM,13:00:00,True,ok,long
+2017-02-09,Bond,30-Year,30-Year,912810RV2,No,01:00 PM,13:00:00,True,ok,long
+2017-02-13,Bill,13-Week,26-Week,912796KZ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-13,Bill,26-Week,52-Week,912796KF5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-14,Bill,4-Week,26-Week,912796KN8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-16,Bond,30-Year,30-Year,912810RW0,No,01:00 PM,13:00:00,False,tips,long
+2017-02-21,Bill,4-Week,26-Week,912796KP3,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-02-21,Bill,13-Week,52-Week,912796JT7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-21,Note,2-Year,2-Year,912828W30,No,01:00 PM,13:00:00,True,ok,short
+2017-02-21,Bill,26-Week,26-Week,912796LQ0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-22,Note,1-Year 11-Month,2-Year,912828V64,Yes,11:30 AM,11:30:00,False,frn,short
+2017-02-22,Note,5-Year,5-Year,912828W55,No,01:00 PM,13:00:00,True,ok,short
+2017-02-23,Note,7-Year,7-Year,912828W48,No,01:00 PM,13:00:00,True,ok,short
+2017-02-27,Bill,13-Week,26-Week,912796LA5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-27,Bill,26-Week,26-Week,912796LR8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-28,Bill,4-Week,52-Week,912796JJ9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-02-28,Bill,52-Week,52-Week,912796LN7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-06,Bill,26-Week,26-Week,912796LT4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-06,Bill,13-Week,26-Week,912796LD9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-07,Bill,6-Day,34-Day,912796QG7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-07,Note,3-Year,3-Year,912828W63,No,01:00 PM,13:00:00,True,ok,short
+2017-03-07,Bill,4-Week,26-Week,912796KQ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-08,Note,9-Year 11-Month,10-Year,912828V98,Yes,01:00 PM,13:00:00,True,ok,long
+2017-03-09,Bond,29-Year 11-Month,30-Year,912810RV2,Yes,01:00 PM,13:00:00,True,ok,long
+2017-03-13,Bill,13-Week,26-Week,912796LE7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-13,Bill,26-Week,52-Week,912796KL2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-13,Bill,44-Day,52-Week,912796JP5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-03-14,Bill,4-Week,26-Week,912796KS7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-14,Bill,35-Day,26-Week,912796KT5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-03-20,Bill,13-Week,52-Week,912796JX8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-20,Bill,26-Week,26-Week,912796LU1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-21,Bill,4-Week,26-Week,912796KT5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-23,Note,9-Year 10-Month,10-Year,912828V49,Yes,01:00 PM,13:00:00,False,tips,long
+2017-03-27,Note,2-Year,2-Year,912828W97,No,01:00 PM,13:00:00,True,ok,short
+2017-03-27,Bill,13-Week,26-Week,912796LF4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-27,Bill,26-Week,26-Week,912796LV9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-28,Note,5-Year,5-Year,912828W89,No,01:00 PM,13:00:00,True,ok,short
+2017-03-28,Bill,4-Week,52-Week,912796JP5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-28,Bill,52-Week,52-Week,912796LS6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-03-29,Note,1-Year 10-Month,2-Year,912828V64,Yes,11:30 AM,11:30:00,False,frn,short
+2017-03-29,Note,7-Year,7-Year,912828W71,No,01:00 PM,13:00:00,True,ok,short
+2017-04-03,Bill,13-Week,26-Week,912796LG2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-03,Bill,26-Week,26-Week,912796LW7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-04,Bill,4-Week,26-Week,912796KU2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-07,Bill,37-Day,26-Week,912796KZ1,Yes,11:00 AM,11:00:00,False,type_bill,unknown
+2017-04-10,Note,3-Year,3-Year,912828X21,No,01:00 PM,13:00:00,True,ok,short
+2017-04-10,Bill,13-Week,26-Week,912796LK3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-10,Bill,26-Week,52-Week,912796KR9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-11,Note,9-Year 10-Month,10-Year,912828V98,Yes,01:00 PM,13:00:00,True,ok,long
+2017-04-11,Bill,4-Week,26-Week,912796KY4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-12,Bond,29-Year 10-Month,30-Year,912810RV2,Yes,01:00 PM,13:00:00,True,ok,long
+2017-04-17,Bill,13-Week,52-Week,912796KB4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-17,Bill,26-Week,26-Week,912796LY3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-18,Bill,4-Week,26-Week,912796KZ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-20,Note,5-Year,5-Year,912828X39,No,01:00 PM,13:00:00,False,tips,short
+2017-04-24,Bill,13-Week,26-Week,912796LL1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-24,Bill,26-Week,26-Week,912796LZ0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-25,Note,2-Year,7-Year,912828ST8,Yes,01:00 PM,13:00:00,True,ok,short
+2017-04-25,Bill,4-Week,52-Week,912796JT7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-25,Bill,52-Week,52-Week,912796LX5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-04-26,Note,2-Year,2-Year,912828X54,No,11:30 AM,11:30:00,False,frn,short
+2017-04-26,Note,5-Year,5-Year,912828X47,No,01:00 PM,13:00:00,True,ok,short
+2017-04-27,Note,7-Year,7-Year,912828X70,No,01:00 PM,13:00:00,True,ok,short
+2017-05-01,Bill,13-Week,26-Week,912796LM9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-01,Bill,26-Week,26-Week,912796MA4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-02,Bill,4-Week,26-Week,912796LA5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-08,Bill,13-Week,26-Week,912796LP2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-08,Bill,26-Week,52-Week,912796KX6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-09,Note,3-Year,3-Year,912828X96,No,01:00 PM,13:00:00,True,ok,short
+2017-05-09,Bill,4-Week,26-Week,912796LD9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-10,Note,10-Year,10-Year,912828X88,No,01:00 PM,13:00:00,True,ok,long
+2017-05-11,Bond,30-Year,30-Year,912810RX8,No,01:00 PM,13:00:00,True,ok,long
+2017-05-15,Bill,13-Week,52-Week,912796KF5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-15,Bill,26-Week,26-Week,912796MC0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-16,Bill,4-Week,26-Week,912796LE7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-18,Note,9-Year 8-Month,10-Year,912828V49,Yes,01:00 PM,13:00:00,False,tips,long
+2017-05-22,Bill,26-Week,26-Week,912796MD8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-22,Bill,13-Week,26-Week,912796LQ0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-23,Bill,52-Week,52-Week,912796MB2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-23,Note,2-Year,2-Year,912828XS4,No,01:00 PM,13:00:00,True,ok,short
+2017-05-23,Bill,4-Week,52-Week,912796JX8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-24,Note,5-Year,5-Year,912828XR6,No,01:00 PM,13:00:00,True,ok,short
+2017-05-24,Note,1-Year 11-Month,2-Year,912828X54,Yes,11:30 AM,11:30:00,False,frn,short
+2017-05-25,Note,7-Year,7-Year,912828XT2,No,01:00 PM,13:00:00,True,ok,short
+2017-05-30,Bill,14-Day,26-Week,912796LE7,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-05-30,Bill,4-Week,26-Week,912796LF4,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-05-30,Bill,13-Week,26-Week,912796LR8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-05-30,Bill,26-Week,26-Week,912796ME6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-05,Bill,13-Week,26-Week,912796LT4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-05,Bill,26-Week,52-Week,912796LB3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-06,Bill,4-Week,26-Week,912796LG2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-12,Bill,13-Week,52-Week,912796KL2,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-06-12,Bill,26-Week,26-Week,912796MG1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-12,Note,3-Year,3-Year,912828XU9,No,11:30 AM,11:30:00,True,ok,short
+2017-06-12,Note,9-Year 11-Month,10-Year,912828X88,Yes,01:00 PM,13:00:00,True,ok,long
+2017-06-13,Bill,4-Week,26-Week,912796LK3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-13,Bond,29-Year 11-Month,30-Year,912810RX8,Yes,01:00 PM,13:00:00,True,ok,long
+2017-06-19,Bill,13-Week,26-Week,912796LU1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-19,Bill,26-Week,26-Week,912796MH9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-20,Bill,4-Week,52-Week,912796KB4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-20,Bill,52-Week,52-Week,912796MF3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-22,Bond,29-Year 8-Month,30-Year,912810RW0,Yes,01:00 PM,13:00:00,False,tips,long
+2017-06-26,Note,2-Year,2-Year,912828XV7,No,01:00 PM,13:00:00,True,ok,short
+2017-06-26,Bill,13-Week,26-Week,912796LV9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-26,Bill,26-Week,26-Week,912796MJ5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-27,Note,5-Year,5-Year,912828XW5,No,01:00 PM,13:00:00,True,ok,short
+2017-06-27,Bill,4-Week,26-Week,912796LL1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-06-28,Note,1-Year 10-Month,2-Year,912828X54,Yes,11:30 AM,11:30:00,False,frn,short
+2017-06-28,Note,7-Year,7-Year,912828XX3,No,01:00 PM,13:00:00,True,ok,short
+2017-07-03,Bill,4-Week,26-Week,912796LM9,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-07-03,Bill,13-Week,26-Week,912796LW7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-03,Bill,26-Week,52-Week,912796LC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-10,Bill,13-Week,52-Week,912796KR9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-10,Bill,26-Week,26-Week,912796ML0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-11,Note,3-Year,3-Year,9128282J8,No,01:00 PM,13:00:00,True,ok,short
+2017-07-11,Bill,4-Week,26-Week,912796LP2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-12,Note,9-Year 10-Month,10-Year,912828X88,Yes,01:00 PM,13:00:00,True,ok,long
+2017-07-13,Bond,29-Year 10-Month,30-Year,912810RX8,Yes,01:00 PM,13:00:00,True,ok,long
+2017-07-17,Bill,13-Week,26-Week,912796LY3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-17,Bill,26-Week,26-Week,912796NN5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-18,Bill,4-Week,52-Week,912796KF5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-18,Bill,52-Week,52-Week,912796MK2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-20,Note,10-Year,10-Year,9128282L3,No,01:00 PM,13:00:00,False,tips,long
+2017-07-24,Bill,13-Week,26-Week,912796LZ0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-24,Bill,26-Week,26-Week,912796NP0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-25,Note,2-Year,2-Year,9128282K5,No,01:00 PM,13:00:00,True,ok,short
+2017-07-25,Bill,4-Week,26-Week,912796LQ0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-26,Note,2-Year,2-Year,9128282M1,No,11:30 AM,11:30:00,False,frn,short
+2017-07-26,Note,5-Year,5-Year,9128282P4,No,01:00 PM,13:00:00,True,ok,short
+2017-07-27,Bill,14-Day,14-Day,912796RE1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-27,Note,7-Year,7-Year,9128282N9,No,01:00 PM,13:00:00,True,ok,short
+2017-07-31,Bill,13-Week,26-Week,912796MA4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-07-31,Bill,26-Week,52-Week,912796LJ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-01,Bill,4-Week,26-Week,912796LR8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-07,Bill,13-Week,52-Week,912796KX6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-07,Bill,26-Week,26-Week,912796NR6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-08,Note,3-Year,3-Year,9128282Q2,No,01:00 PM,13:00:00,True,ok,short
+2017-08-08,Bill,4-Week,26-Week,912796LT4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-09,Note,10-Year,10-Year,9128282R0,No,01:00 PM,13:00:00,True,ok,long
+2017-08-10,Bond,30-Year,30-Year,912810RY6,No,01:00 PM,13:00:00,True,ok,long
+2017-08-14,Bill,13-Week,26-Week,912796MC0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-14,Bill,26-Week,26-Week,912796NS4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-15,Bill,4-Week,52-Week,912796KL2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-15,Bill,52-Week,52-Week,912796NQ8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-21,Bill,13-Week,26-Week,912796MD8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-21,Bill,26-Week,26-Week,912796NT2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-22,Bill,4-Week,26-Week,912796LU1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-23,Note,1-Year 11-Month,2-Year,9128282M1,Yes,11:30 AM,11:30:00,False,frn,short
+2017-08-24,Note,4-Year 8-Month,5-Year,912828X39,Yes,01:00 PM,13:00:00,False,tips,short
+2017-08-28,Bill,13-Week,26-Week,912796ME6,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-08-28,Bill,26-Week,52-Week,912796LN7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-28,Note,2-Year,2-Year,9128282T6,No,11:30 AM,11:30:00,True,ok,short
+2017-08-28,Note,5-Year,5-Year,9128282S8,No,01:00 PM,13:00:00,True,ok,short
+2017-08-29,Bill,123-Day,123-Day,912796RK7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-29,Bill,4-Week,26-Week,912796LV9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-08-29,Note,7-Year,7-Year,9128282U3,No,01:00 PM,13:00:00,True,ok,short
+2017-09-05,Bill,8-Day,8-Day,912796RL5,No,01:00 PM,13:00:00,False,type_bill,unknown
+2017-09-05,Bill,4-Week,26-Week,912796LW7,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-09-05,Bill,13-Week,52-Week,912796LB3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-05,Bill,26-Week,26-Week,912796NU9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-08,Bill,7-Day,8-Day,912796RL5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-11,Note,3-Year,3-Year,9128282V1,No,01:00 PM,13:00:00,True,ok,short
+2017-09-11,Bill,13-Week,26-Week,912796MG1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-11,Bill,26-Week,26-Week,912796NW5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-12,Note,9-Year 11-Month,10-Year,9128282R0,Yes,01:00 PM,13:00:00,True,ok,long
+2017-09-12,Bill,4-Week,52-Week,912796KR9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-12,Bill,52-Week,52-Week,912796NV7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-13,Bond,29-Year 11-Month,30-Year,912810RY6,Yes,01:00 PM,13:00:00,True,ok,long
+2017-09-18,Bill,13-Week,26-Week,912796MH9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-18,Bill,26-Week,26-Week,912796NX3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-19,Bill,4-Week,26-Week,912796LY3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-21,Note,9-Year 10-Month,10-Year,9128282L3,Yes,01:00 PM,13:00:00,False,tips,long
+2017-09-25,Bill,13-Week,26-Week,912796MJ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-25,Bill,26-Week,52-Week,912796LS6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-26,Note,2-Year,2-Year,9128282X7,No,01:00 PM,13:00:00,True,ok,short
+2017-09-26,Bill,4-Week,26-Week,912796LZ0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-09-27,Note,5-Year,5-Year,9128282W9,No,01:00 PM,13:00:00,True,ok,short
+2017-09-27,Note,1-Year 10-Month,2-Year,9128282M1,Yes,11:30 AM,11:30:00,False,frn,short
+2017-09-28,Note,7-Year,7-Year,9128282Y5,No,01:00 PM,13:00:00,True,ok,short
+2017-10-02,Bill,13-Week,52-Week,912796LC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-02,Bill,26-Week,26-Week,912796NY1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-03,Bill,4-Week,26-Week,912796MA4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-10,Bill,4-Week,52-Week,912796KX6,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-10-10,Bill,13-Week,26-Week,912796ML0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-10,Bill,52-Week,52-Week,912796NZ8,No,01:00 PM,13:00:00,False,type_bill,unknown
+2017-10-10,Bill,26-Week,26-Week,912796PA1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-11,Note,9-Year 10-Month,10-Year,9128282R0,Yes,01:00 PM,13:00:00,True,ok,long
+2017-10-11,Note,3-Year,3-Year,9128282Z2,No,11:30 AM,11:30:00,True,ok,short
+2017-10-12,Bond,29-Year 10-Month,30-Year,912810RY6,Yes,01:00 PM,13:00:00,True,ok,long
+2017-10-16,Bill,13-Week,26-Week,912796NN5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-16,Bill,26-Week,26-Week,912796PB9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-17,Bill,4-Week,26-Week,912796MC0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-19,Bond,29-Year 4-Month,30-Year,912810RW0,Yes,01:00 PM,13:00:00,False,tips,long
+2017-10-23,Bill,13-Week,26-Week,912796NP0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-23,Bill,26-Week,52-Week,912796LX5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-24,Note,2-Year,5-Year,912828F62,Yes,01:00 PM,13:00:00,True,ok,short
+2017-10-24,Bill,4-Week,26-Week,912796MD8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-25,Note,2-Year,2-Year,9128283B4,No,11:30 AM,11:30:00,False,frn,short
+2017-10-25,Note,5-Year,5-Year,9128283C2,No,01:00 PM,13:00:00,True,ok,short
+2017-10-26,Note,7-Year,7-Year,9128283D0,No,01:00 PM,13:00:00,True,ok,short
+2017-10-30,Bill,13-Week,52-Week,912796LJ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-30,Bill,26-Week,26-Week,912796PC7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-10-30,Bill,37-Day,37-Day,912796RX9,No,01:00 PM,13:00:00,False,type_bill,unknown
+2017-10-31,Bill,4-Week,26-Week,912796ME6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-06,Bill,13-Week,26-Week,912796NR6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-06,Bill,26-Week,26-Week,912796PF0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-07,Bill,4-Week,52-Week,912796LB3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-07,Bill,52-Week,52-Week,912796PD5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-07,Note,3-Year,3-Year,9128283G3,No,01:00 PM,13:00:00,True,ok,short
+2017-11-08,Note,10-Year,10-Year,9128283F5,No,01:00 PM,13:00:00,True,ok,long
+2017-11-09,Bond,30-Year,30-Year,912810RZ3,No,01:00 PM,13:00:00,True,ok,long
+2017-11-13,Bill,13-Week,26-Week,912796NS4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-13,Bill,26-Week,26-Week,912796PG8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-14,Bill,4-Week,26-Week,912796MG1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-16,Note,9-Year 8-Month,10-Year,9128282L3,Yes,01:00 PM,13:00:00,False,tips,long
+2017-11-20,Bill,13-Week,26-Week,912796NT2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-20,Bill,26-Week,52-Week,912796MB2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-21,Bill,4-Week,26-Week,912796MH9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-21,Note,1-Year 11-Month,2-Year,9128283B4,Yes,11:30 AM,11:30:00,False,frn,short
+2017-11-27,Note,2-Year,2-Year,9128283H1,No,11:30 AM,11:30:00,True,ok,short
+2017-11-27,Note,5-Year,7-Year,912828M80,Yes,01:00 PM,13:00:00,True,ok,short
+2017-11-27,Bill,13-Week,52-Week,912796LN7,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-11-27,Bill,26-Week,26-Week,912796PH6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-28,Bill,4-Week,26-Week,912796MJ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-11-28,Note,7-Year,7-Year,9128283J7,No,01:00 PM,13:00:00,True,ok,short
+2017-12-04,Bill,13-Week,26-Week,912796NU9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-04,Bill,26-Week,26-Week,912796PJ2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-05,Bill,4-Week,52-Week,912796LC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-05,Bill,52-Week,52-Week,912796PE3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-08,Bill,41-Day,26-Week,912796NN5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-11,Note,9-Year 11-Month,10-Year,9128283F5,Yes,01:00 PM,13:00:00,True,ok,long
+2017-12-11,Bill,13-Week,26-Week,912796NW5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-12-11,Bill,26-Week,26-Week,912796PL7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-11,Note,3-Year,3-Year,9128283L2,No,11:30 AM,11:30:00,True,ok,short
+2017-12-12,Bond,29-Year 11-Month,30-Year,912810RZ3,Yes,01:00 PM,13:00:00,True,ok,long
+2017-12-12,Bill,4-Week,26-Week,912796ML0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-18,Bill,13-Week,26-Week,912796NX3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-18,Bill,26-Week,52-Week,912796MF3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-19,Bill,4-Week,26-Week,912796NN5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-21,Note,4-Year 4-Month,5-Year,912828X39,Yes,01:00 PM,13:00:00,False,tips,short
+2017-12-26,Note,2-Year,2-Year,9128283N8,No,01:00 PM,13:00:00,True,ok,short
+2017-12-26,Bill,4-Week,26-Week,912796NP0,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2017-12-26,Bill,13-Week,52-Week,912796LS6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-26,Bill,26-Week,26-Week,912796PM5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2017-12-27,Note,5-Year,7-Year,912828N30,Yes,01:00 PM,13:00:00,True,ok,short
+2017-12-27,Note,1-Year 10-Month,2-Year,9128283B4,Yes,11:30 AM,11:30:00,False,frn,short
+2017-12-28,Note,7-Year,7-Year,9128283P3,No,01:00 PM,13:00:00,True,ok,short
+2018-01-02,Bill,4-Week,52-Week,912796LJ6,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-01-02,Bill,13-Week,26-Week,912796NY1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-02,Bill,52-Week,52-Week,912796PK9,No,01:00 PM,13:00:00,False,type_bill,unknown
+2018-01-02,Bill,26-Week,26-Week,912796PN3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-08,Bill,13-Week,26-Week,912796PA1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-08,Bill,26-Week,26-Week,912796PQ6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-09,Note,3-Year,3-Year,9128283Q1,No,01:00 PM,13:00:00,True,ok,short
+2018-01-09,Bill,4-Week,26-Week,912796NR6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-10,Note,9-Year 10-Month,10-Year,9128283F5,Yes,01:00 PM,13:00:00,True,ok,long
+2018-01-11,Bond,29-Year 10-Month,30-Year,912810RZ3,Yes,01:00 PM,13:00:00,True,ok,long
+2018-01-16,Bill,4-Week,26-Week,912796NS4,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-01-16,Bill,13-Week,26-Week,912796PB9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-16,Bill,26-Week,52-Week,912796MK2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-18,Note,10-Year,10-Year,9128283R9,No,01:00 PM,13:00:00,False,tips,long
+2018-01-19,Bill,6-Day,26-Week,912796NP0,Yes,11:00 AM,11:00:00,False,type_bill,unknown
+2018-01-22,Bill,26-Week,26-Week,912796PR4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-22,Bill,13-Week,52-Week,912796LX5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-23,Note,2-Year,2-Year,9128283S7,No,01:00 PM,13:00:00,True,ok,short
+2018-01-23,Bill,4-Week,26-Week,912796NT2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-24,Note,5-Year,5-Year,9128283U2,No,01:00 PM,13:00:00,True,ok,short
+2018-01-24,Note,2-Year,2-Year,9128283T5,No,11:30 AM,11:30:00,False,frn,short
+2018-01-25,Note,7-Year,7-Year,9128283V0,No,01:00 PM,13:00:00,True,ok,short
+2018-01-29,Bill,26-Week,26-Week,912796PS2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-29,Bill,13-Week,26-Week,912796PC7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-30,Bill,52-Week,52-Week,912796PP8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-01-30,Bill,4-Week,52-Week,912796LN7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-05,Bill,26-Week,26-Week,912796PU7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-05,Bill,13-Week,26-Week,912796PF0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-06,Note,3-Year,3-Year,9128283X6,No,01:00 PM,13:00:00,True,ok,short
+2018-02-06,Bill,4-Week,26-Week,912796NU9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-06,Bill,70-Day,26-Week,912796PB9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-07,Note,10-Year,10-Year,9128283W8,No,01:00 PM,13:00:00,True,ok,long
+2018-02-08,Bond,30-Year,30-Year,912810SA7,No,01:00 PM,13:00:00,True,ok,long
+2018-02-12,Bill,13-Week,26-Week,912796PG8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-12,Bill,26-Week,52-Week,912796NQ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-13,Bill,55-Day,26-Week,912796PA1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-13,Bill,4-Week,26-Week,912796NW5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-15,Bond,30-Year,30-Year,912810SB5,No,01:00 PM,13:00:00,False,tips,long
+2018-02-20,Note,2-Year,2-Year,9128283Y4,No,01:00 PM,13:00:00,True,ok,short
+2018-02-20,Bill,4-Week,26-Week,912796NX3,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-02-20,Bill,13-Week,52-Week,912796MB2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-20,Bill,26-Week,26-Week,912796PV5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-21,Note,5-Year,5-Year,9128284A5,No,01:00 PM,13:00:00,True,ok,short
+2018-02-21,Note,1-Year 11-Month,2-Year,9128283T5,Yes,11:30 AM,11:30:00,False,frn,short
+2018-02-22,Note,7-Year,7-Year,9128283Z1,No,01:00 PM,13:00:00,True,ok,short
+2018-02-26,Bill,13-Week,26-Week,912796PH6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-26,Bill,26-Week,26-Week,912796PW3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-27,Bill,4-Week,52-Week,912796LS6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-02-27,Bill,52-Week,52-Week,912796PT0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-05,Bill,13-Week,26-Week,912796PJ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-05,Bill,26-Week,26-Week,912796PY9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-06,Bill,4-Week,26-Week,912796NY1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-12,Bill,13-Week,26-Week,912796PL7,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-03-12,Note,3-Year,3-Year,9128284B3,No,11:30 AM,11:30:00,True,ok,short
+2018-03-12,Bill,26-Week,52-Week,912796NV7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-12,Note,9-Year 11-Month,10-Year,9128283W8,Yes,01:00 PM,13:00:00,True,ok,long
+2018-03-13,Bill,4-Week,26-Week,912796PA1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-13,Bond,29-Year 11-Month,30-Year,912810SA7,Yes,01:00 PM,13:00:00,True,ok,long
+2018-03-19,Bill,26-Week,26-Week,912796PZ6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-19,Bill,13-Week,52-Week,912796MF3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-20,Bill,4-Week,26-Week,912796PB9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-22,Note,9-Year 10-Month,10-Year,9128283R9,Yes,01:00 PM,13:00:00,False,tips,long
+2018-03-26,Note,2-Year,2-Year,9128284C1,No,01:00 PM,13:00:00,True,ok,short
+2018-03-26,Bill,26-Week,26-Week,912796QA0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-26,Bill,13-Week,26-Week,912796PM5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-27,Note,5-Year,5-Year,9128284D9,No,01:00 PM,13:00:00,True,ok,short
+2018-03-27,Bill,52-Week,52-Week,912796PX1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-27,Bill,4-Week,52-Week,912796LX5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-03-28,Note,7-Year,7-Year,9128284F4,No,01:00 PM,13:00:00,True,ok,short
+2018-03-28,Note,1-Year 10-Month,2-Year,9128283T5,Yes,11:30 AM,11:30:00,False,frn,short
+2018-04-02,Bill,26-Week,26-Week,912796QB8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-02,Bill,13-Week,26-Week,912796PN3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-03,Bill,4-Week,26-Week,912796PC7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-09,Bill,13-Week,26-Week,912796PQ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-09,Bill,26-Week,52-Week,912796NZ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-10,Note,3-Year,3-Year,9128284G2,No,01:00 PM,13:00:00,True,ok,short
+2018-04-10,Bill,4-Week,26-Week,912796PF0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-11,Note,9-Year 10-Month,10-Year,9128283W8,Yes,01:00 PM,13:00:00,True,ok,long
+2018-04-12,Bond,29-Year 10-Month,30-Year,912810SA7,Yes,01:00 PM,13:00:00,True,ok,long
+2018-04-16,Bill,26-Week,26-Week,912796QD4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-16,Bill,13-Week,52-Week,912796MK2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-17,Bill,4-Week,26-Week,912796PG8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-19,Note,5-Year,5-Year,9128284H0,No,01:00 PM,13:00:00,False,tips,short
+2018-04-23,Bill,26-Week,26-Week,912796QE2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-23,Bill,13-Week,26-Week,912796PR4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-24,Note,2-Year,2-Year,9128284J6,No,01:00 PM,13:00:00,True,ok,short
+2018-04-24,Bill,52-Week,52-Week,912796QC6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-24,Bill,4-Week,52-Week,912796MB2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-25,Note,2-Year,2-Year,9128284K3,No,11:30 AM,11:30:00,False,frn,short
+2018-04-25,Note,5-Year,5-Year,9128284L1,No,01:00 PM,13:00:00,True,ok,short
+2018-04-26,Note,7-Year,7-Year,9128284M9,No,01:00 PM,13:00:00,True,ok,short
+2018-04-30,Bill,13-Week,26-Week,912796PS2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-04-30,Bill,26-Week,26-Week,912796QF9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-01,Bill,4-Week,26-Week,912796PH6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-07,Bill,13-Week,26-Week,912796PU7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-07,Bill,26-Week,52-Week,912796PD5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-08,Note,3-Year,3-Year,9128284P2,No,01:00 PM,13:00:00,True,ok,short
+2018-05-08,Bill,4-Week,26-Week,912796PJ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-09,Note,10-Year,10-Year,9128284N7,No,01:00 PM,13:00:00,True,ok,long
+2018-05-10,Bond,30-Year,30-Year,912810SC3,No,01:00 PM,13:00:00,True,ok,long
+2018-05-14,Bill,26-Week,26-Week,912796QJ1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-14,Bill,13-Week,52-Week,912796NQ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-15,Bill,4-Week,26-Week,912796PL7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-17,Note,9-Year 8-Month,10-Year,9128283R9,Yes,01:00 PM,13:00:00,False,tips,long
+2018-05-21,Bill,26-Week,26-Week,912796QK8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-21,Bill,13-Week,26-Week,912796PV5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-22,Bill,52-Week,52-Week,912796QH5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-22,Note,2-Year,2-Year,9128284Q0,No,01:00 PM,13:00:00,True,ok,short
+2018-05-22,Bill,4-Week,52-Week,912796MF3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-23,Note,5-Year,5-Year,9128284S6,No,01:00 PM,13:00:00,True,ok,short
+2018-05-23,Note,1-Year 11-Month,2-Year,9128284K3,Yes,11:30 AM,11:30:00,False,frn,short
+2018-05-24,Note,7-Year,7-Year,9128284R8,No,01:00 PM,13:00:00,True,ok,short
+2018-05-29,Bill,26-Week,26-Week,912796QL6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-05-29,Bill,4-Week,26-Week,912796PM5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-05-29,Bill,13-Week,26-Week,912796PW3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-04,Bill,13-Week,26-Week,912796PY9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-04,Bill,26-Week,52-Week,912796PE3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-05,Bill,4-Week,26-Week,912796PN3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-11,Note,9-Year 11-Month,10-Year,9128284N7,Yes,01:00 PM,13:00:00,True,ok,long
+2018-06-11,Bill,13-Week,52-Week,912796NV7,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-06-11,Bill,26-Week,26-Week,912796QN2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-11,Note,3-Year,3-Year,9128284T4,No,11:30 AM,11:30:00,True,ok,short
+2018-06-12,Bond,29-Year 11-Month,30-Year,912810SC3,Yes,01:00 PM,13:00:00,True,ok,long
+2018-06-12,Bill,4-Week,26-Week,912796PQ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-18,Bill,13-Week,26-Week,912796PZ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-18,Bill,26-Week,26-Week,912796QP7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-19,Bill,4-Week,52-Week,912796MK2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-19,Bill,52-Week,52-Week,912796QM4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-21,Bond,29-Year 8-Month,30-Year,912810SB5,Yes,01:00 PM,13:00:00,False,tips,long
+2018-06-25,Bill,13-Week,26-Week,912796QA0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-25,Bill,26-Week,26-Week,912796QQ5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-26,Note,2-Year,2-Year,912828XY1,No,01:00 PM,13:00:00,True,ok,short
+2018-06-26,Bill,4-Week,26-Week,912796PR4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-06-27,Note,5-Year,5-Year,9128284U1,No,01:00 PM,13:00:00,True,ok,short
+2018-06-27,Note,1-Year 10-Month,2-Year,9128284K3,Yes,11:30 AM,11:30:00,False,frn,short
+2018-06-28,Note,7-Year,7-Year,912828XZ8,No,01:00 PM,13:00:00,True,ok,short
+2018-07-02,Bill,4-Week,26-Week,912796PS2,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-07-02,Bill,13-Week,26-Week,912796QB8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-02,Bill,26-Week,52-Week,912796PK9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-09,Bill,13-Week,52-Week,912796NZ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-09,Bill,26-Week,26-Week,912796QS1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-10,Bill,4-Week,26-Week,912796PU7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-10,Note,3-Year,3-Year,912828Y20,No,01:00 PM,13:00:00,True,ok,short
+2018-07-11,Note,9-Year 10-Month,10-Year,9128284N7,Yes,01:00 PM,13:00:00,True,ok,long
+2018-07-12,Bond,29-Year 10-Month,30-Year,912810SC3,Yes,01:00 PM,13:00:00,True,ok,long
+2018-07-16,Bill,13-Week,26-Week,912796QD4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-16,Bill,26-Week,26-Week,912796QT9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-17,Bill,4-Week,52-Week,912796NQ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-17,Bill,52-Week,52-Week,912796QR3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-19,Note,10-Year,10-Year,912828Y38,No,01:00 PM,13:00:00,False,tips,long
+2018-07-23,Bill,13-Week,26-Week,912796QE2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-23,Bill,26-Week,26-Week,912796QU6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-24,Note,2-Year,2-Year,912828Y46,No,01:00 PM,13:00:00,True,ok,short
+2018-07-24,Bill,4-Week,26-Week,912796PV5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-25,Note,2-Year,2-Year,912828Y53,No,11:30 AM,11:30:00,False,frn,short
+2018-07-25,Note,5-Year,5-Year,912828Y61,No,01:00 PM,13:00:00,True,ok,short
+2018-07-26,Note,7-Year,7-Year,912828Y79,No,01:00 PM,13:00:00,True,ok,short
+2018-07-30,Bill,13-Week,26-Week,912796QF9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-30,Bill,26-Week,52-Week,912796PP8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-07-31,Bill,4-Week,26-Week,912796PW3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-06,Bill,13-Week,52-Week,912796PD5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-06,Bill,26-Week,26-Week,912796QW2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-07,Bill,4-Week,26-Week,912796PY9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-07,Note,3-Year,3-Year,9128284W7,No,01:00 PM,13:00:00,True,ok,short
+2018-08-08,Note,10-Year,10-Year,9128284V9,No,01:00 PM,13:00:00,True,ok,long
+2018-08-09,Bond,30-Year,30-Year,912810SD1,No,01:00 PM,13:00:00,True,ok,long
+2018-08-13,Bill,26-Week,26-Week,912796QX0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-13,Bill,13-Week,26-Week,912796QJ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-14,Bill,4-Week,52-Week,912796NV7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-14,Bill,52-Week,52-Week,912796QV4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-20,Bill,13-Week,26-Week,912796QK8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-20,Bill,26-Week,26-Week,912796QY8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-21,Bill,4-Week,26-Week,912796PZ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-23,Note,4-Year 8-Month,5-Year,9128284H0,Yes,01:00 PM,13:00:00,False,tips,short
+2018-08-27,Note,2-Year,2-Year,9128284Y3,No,01:00 PM,13:00:00,True,ok,short
+2018-08-27,Bill,13-Week,26-Week,912796QL6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-27,Bill,26-Week,52-Week,912796PT0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-28,Bill,4-Week,26-Week,912796QA0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-08-28,Note,5-Year,5-Year,9128284X5,No,01:00 PM,13:00:00,True,ok,short
+2018-08-29,Note,1-Year 11-Month,2-Year,912828Y53,Yes,11:30 AM,11:30:00,False,frn,short
+2018-08-29,Note,7-Year,7-Year,9128284Z0,No,01:00 PM,13:00:00,True,ok,short
+2018-09-04,Bill,4-Week,26-Week,912796QB8,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-09-04,Bill,13-Week,52-Week,912796PE3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-04,Bill,26-Week,26-Week,912796QZ5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-10,Bill,13-Week,26-Week,912796QN2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-10,Bill,26-Week,26-Week,912796RB7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-11,Note,3-Year,3-Year,9128285A4,No,01:00 PM,13:00:00,True,ok,short
+2018-09-11,Bill,4-Week,52-Week,912796NZ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-11,Bill,52-Week,52-Week,912796RA9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-12,Note,9-Year 11-Month,10-Year,9128284V9,Yes,01:00 PM,13:00:00,True,ok,long
+2018-09-13,Bond,29-Year 11-Month,30-Year,912810SD1,Yes,01:00 PM,13:00:00,True,ok,long
+2018-09-17,Bill,13-Week,26-Week,912796QP7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-17,Bill,26-Week,26-Week,912796RC5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-18,Bill,4-Week,26-Week,912796QD4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-20,Note,9-Year 10-Month,10-Year,912828Y38,Yes,01:00 PM,13:00:00,False,tips,long
+2018-09-24,Bill,13-Week,26-Week,912796QQ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-24,Bill,26-Week,52-Week,912796PX1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-24,Note,2-Year,2-Year,9128285B2,No,01:00 PM,13:00:00,True,ok,short
+2018-09-25,Note,1-Year 10-Month,2-Year,912828Y53,Yes,11:30 AM,11:30:00,False,frn,short
+2018-09-25,Bill,4-Week,26-Week,912796QE2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-09-25,Note,5-Year,5-Year,9128285D8,No,01:00 PM,13:00:00,True,ok,short
+2018-09-27,Note,7-Year,7-Year,9128285C0,No,01:00 PM,13:00:00,True,ok,short
+2018-10-01,Bill,13-Week,52-Week,912796PK9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-01,Bill,26-Week,26-Week,912796RD3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-02,Bill,4-Week,26-Week,912796QF9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-09,Bill,4-Week,52-Week,912796PD5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-10-09,Bill,13-Week,26-Week,912796QS1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-09,Bill,26-Week,26-Week,912796RG6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-09,Bill,52-Week,52-Week,912796RF8,No,01:00 PM,13:00:00,False,type_bill,unknown
+2018-10-10,Note,3-Year,3-Year,9128285F3,No,11:30 AM,11:30:00,True,ok,short
+2018-10-10,Note,9-Year 10-Month,10-Year,9128284V9,Yes,01:00 PM,13:00:00,True,ok,long
+2018-10-11,Bond,29-Year 10-Month,30-Year,912810SD1,Yes,01:00 PM,13:00:00,True,ok,long
+2018-10-15,Bill,26-Week,26-Week,912796RH4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-15,Bill,13-Week,26-Week,912796QT9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-16,Bill,4-Week,26-Week,912796QJ1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-16,Bill,8-Week,8-Week,912796UD9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-18,Bond,29-Year 4-Month,30-Year,912810SB5,Yes,01:00 PM,13:00:00,False,tips,long
+2018-10-22,Bill,13-Week,26-Week,912796QU6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-22,Bill,26-Week,52-Week,912796QC6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-23,Bill,8-Week,8-Week,912796UE7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-23,Note,2-Year,2-Year,9128285G1,No,01:00 PM,13:00:00,True,ok,short
+2018-10-23,Bill,4-Week,26-Week,912796QK8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-24,Note,5-Year,5-Year,9128285K2,No,01:00 PM,13:00:00,True,ok,short
+2018-10-24,Note,2-Year,2-Year,9128285H9,No,11:30 AM,11:30:00,False,frn,short
+2018-10-25,Note,7-Year,7-Year,9128285J5,No,01:00 PM,13:00:00,True,ok,short
+2018-10-29,Bill,13-Week,52-Week,912796PP8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-29,Bill,26-Week,26-Week,912796RJ0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-30,Bill,4-Week,26-Week,912796QL6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-10-30,Bill,8-Week,8-Week,912796UF4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-05,Note,3-Year,3-Year,9128285L0,No,01:00 PM,13:00:00,True,ok,short
+2018-11-05,Bill,13-Week,26-Week,912796QW2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-05,Bill,26-Week,26-Week,912796RP6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-06,Note,10-Year,10-Year,9128285M8,No,01:00 PM,13:00:00,True,ok,long
+2018-11-06,Bill,4-Week,52-Week,912796PE3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-06,Bill,8-Week,8-Week,912796UG2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-06,Bill,52-Week,52-Week,912796RM3,No,01:00 PM,13:00:00,False,type_bill,unknown
+2018-11-07,Bond,30-Year,30-Year,912810SE9,No,01:00 PM,13:00:00,True,ok,long
+2018-11-13,Bill,8-Week,8-Week,912796UH0,No,01:00 PM,13:00:00,False,type_bill,unknown
+2018-11-13,Bill,4-Week,8-Week,912796UD9,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2018-11-13,Bill,13-Week,26-Week,912796QX0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-13,Bill,26-Week,26-Week,912796RQ4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-19,Bill,13-Week,26-Week,912796QY8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-19,Bill,26-Week,52-Week,912796QH5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-20,Bill,4-Week,8-Week,912796UE7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-20,Bill,8-Week,8-Week,912796UJ6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-21,Note,9-Year 8-Month,10-Year,912828Y38,Yes,11:30 AM,11:30:00,False,tips,long
+2018-11-26,Note,2-Year,2-Year,9128285Q9,No,01:00 PM,13:00:00,True,ok,short
+2018-11-26,Bill,13-Week,52-Week,912796PT0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-26,Bill,26-Week,26-Week,912796RR2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-27,Bill,4-Week,8-Week,912796UF4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-27,Bill,8-Week,8-Week,912796UK3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-11-27,Note,5-Year,5-Year,9128285P1,No,01:00 PM,13:00:00,True,ok,short
+2018-11-28,Note,1-Year 11-Month,2-Year,9128285H9,Yes,11:30 AM,11:30:00,False,frn,short
+2018-11-28,Note,7-Year,7-Year,9128285N6,No,01:00 PM,13:00:00,True,ok,short
+2018-12-03,Bill,13-Week,26-Week,912796QZ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-03,Bill,26-Week,26-Week,912796RS0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-04,Bill,4-Week,8-Week,912796UG2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-04,Bill,8-Week,8-Week,912796UL1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-04,Bill,52-Week,52-Week,912796RN1,No,01:00 PM,13:00:00,False,type_bill,unknown
+2018-12-06,Bill,4-Week,8-Week,912796UH0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-06,Bill,8-Week,8-Week,912796UM9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-10,Bill,13-Week,26-Week,912796RB7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-10,Bill,26-Week,26-Week,912796RU5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-11,Note,3-Year,3-Year,9128285R7,No,01:00 PM,13:00:00,True,ok,short
+2018-12-12,Note,9-Year 11-Month,10-Year,9128285M8,Yes,01:00 PM,13:00:00,True,ok,long
+2018-12-13,Bond,29-Year 11-Month,30-Year,912810SE9,Yes,01:00 PM,13:00:00,True,ok,long
+2018-12-13,Bill,4-Week,8-Week,912796UJ6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-13,Bill,8-Week,8-Week,912796UN7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-17,Bill,13-Week,26-Week,912796RC5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-17,Bill,26-Week,52-Week,912796QM4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-20,Bill,4-Week,8-Week,912796UK3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-20,Note,4-Year 4-Month,5-Year,9128284H0,Yes,01:00 PM,13:00:00,False,tips,short
+2018-12-20,Bill,8-Week,8-Week,912796UP2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-24,Note,2-Year,2-Year,9128285S5,No,11:30 AM,11:30:00,True,ok,short
+2018-12-24,Bill,13-Week,52-Week,912796PX1,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2018-12-24,Bill,26-Week,26-Week,912796RV3,No,10:00 AM,10:00:00,False,type_bill,unknown
+2018-12-26,Note,5-Year,5-Year,9128285U0,No,01:00 PM,13:00:00,True,ok,short
+2018-12-26,Note,1-Year 10-Month,2-Year,9128285H9,Yes,11:30 AM,11:30:00,False,frn,short
+2018-12-27,Bill,8-Week,8-Week,912796UQ0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-27,Bill,4-Week,8-Week,912796UL1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-27,Note,7-Year,7-Year,9128285T3,No,01:00 PM,13:00:00,True,ok,short
+2018-12-31,Bill,26-Week,26-Week,912796RW1,No,10:00 AM,10:00:00,False,type_bill,unknown
+2018-12-31,Bill,52-Week,52-Week,912796RT8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2018-12-31,Bill,13-Week,26-Week,912796RD3,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2019-01-03,Bill,8-Week,8-Week,912796UR8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-03,Bill,4-Week,8-Week,912796UM9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-07,Bill,13-Week,26-Week,912796RG6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-07,Bill,26-Week,26-Week,912796RZ4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-08,Note,3-Year,3-Year,9128285V8,No,01:00 PM,13:00:00,True,ok,short
+2019-01-09,Note,9-Year 10-Month,10-Year,9128285M8,Yes,01:00 PM,13:00:00,True,ok,long
+2019-01-10,Bill,8-Week,8-Week,912796US6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-10,Bill,4-Week,8-Week,912796UN7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-10,Bond,29-Year 10-Month,30-Year,912810SE9,Yes,01:00 PM,13:00:00,True,ok,long
+2019-01-14,Bill,13-Week,26-Week,912796RH4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-14,Bill,26-Week,52-Week,912796QR3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-17,Note,10-Year,10-Year,9128285W6,No,01:00 PM,13:00:00,False,tips,long
+2019-01-17,Bill,8-Week,8-Week,912796UT4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-17,Bill,4-Week,8-Week,912796UP2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-22,Bill,26-Week,26-Week,912796SA8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-22,Bill,13-Week,52-Week,912796QC6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-24,Bill,8-Week,8-Week,912796UU1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-24,Bill,4-Week,8-Week,912796UQ0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-28,Bill,26-Week,26-Week,912796SB6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-28,Note,5-Year,5-Year,9128285Z9,No,01:00 PM,13:00:00,True,ok,short
+2019-01-28,Bill,13-Week,26-Week,912796RJ0,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2019-01-28,Note,2-Year,2-Year,9128285X4,No,11:30 AM,11:30:00,True,ok,short
+2019-01-29,Bill,52-Week,52-Week,912796RY7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-29,Note,2-Year,2-Year,9128285Y2,No,11:30 AM,11:30:00,False,frn,short
+2019-01-29,Note,7-Year,7-Year,9128286A3,No,01:00 PM,13:00:00,True,ok,short
+2019-01-31,Bill,4-Week,8-Week,912796UR8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-01-31,Bill,8-Week,8-Week,912796UV9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-04,Bill,13-Week,26-Week,912796RP6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-04,Bill,26-Week,26-Week,912796SC4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-05,Note,3-Year,3-Year,9128286C9,No,01:00 PM,13:00:00,True,ok,short
+2019-02-06,Note,10-Year,10-Year,9128286B1,No,01:00 PM,13:00:00,True,ok,long
+2019-02-06,Bill,18-Day,18-Day,912796XJ3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-07,Bill,4-Week,8-Week,912796US6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-07,Bond,30-Year,30-Year,912810SF6,No,01:00 PM,13:00:00,True,ok,long
+2019-02-07,Bill,8-Week,8-Week,912796UW7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-11,Bill,13-Week,26-Week,912796RQ4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-11,Bill,26-Week,52-Week,912796QV4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-14,Bill,4-Week,8-Week,912796UT4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-14,Bill,8-Week,8-Week,912796UX5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-19,Bill,26-Week,26-Week,912796SE0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-19,Bill,13-Week,52-Week,912796QH5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-20,Note,1-Year 11-Month,2-Year,9128285Y2,Yes,11:30 AM,11:30:00,False,frn,short
+2019-02-21,Bond,30-Year,30-Year,912810SG4,No,01:00 PM,13:00:00,False,tips,long
+2019-02-21,Bill,8-Week,8-Week,912796UY3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-21,Bill,4-Week,8-Week,912796UU1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-25,Bill,26-Week,26-Week,912796SF7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-25,Bill,13-Week,26-Week,912796RR2,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2019-02-25,Note,2-Year,2-Year,9128286D7,No,11:30 AM,11:30:00,True,ok,short
+2019-02-25,Note,5-Year,5-Year,9128286G0,No,01:00 PM,13:00:00,True,ok,short
+2019-02-26,Bill,52-Week,52-Week,912796SD2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-26,Note,7-Year,7-Year,9128286F2,No,01:00 PM,13:00:00,True,ok,short
+2019-02-28,Bill,8-Week,8-Week,912796UZ0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-28,Bill,4-Week,8-Week,912796UV9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-02-28,Bill,41-Day,26-Week,912796RG6,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2019-03-04,Bill,26-Week,26-Week,912796SG5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-04,Bill,13-Week,26-Week,912796RS0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-05,Bill,42-Day,26-Week,912796RH4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-07,Bill,8-Week,8-Week,912796VA4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-07,Bill,4-Week,8-Week,912796UW7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-11,Bill,13-Week,26-Week,912796RU5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-11,Note,3-Year,3-Year,9128286H8,No,01:00 PM,13:00:00,True,ok,short
+2019-03-11,Bill,26-Week,52-Week,912796RA9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-12,Note,9-Year 11-Month,10-Year,9128286B1,Yes,01:00 PM,13:00:00,True,ok,long
+2019-03-13,Bond,29-Year 11-Month,30-Year,912810SF6,Yes,01:00 PM,13:00:00,True,ok,long
+2019-03-14,Bill,4-Week,8-Week,912796UX5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-14,Bill,8-Week,8-Week,912796VB2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-18,Bill,26-Week,26-Week,912796SJ9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-18,Bill,13-Week,52-Week,912796QM4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-21,Bill,8-Week,8-Week,912796VC0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-21,Note,9-Year 10-Month,10-Year,9128285W6,Yes,01:00 PM,13:00:00,False,tips,long
+2019-03-21,Bill,4-Week,8-Week,912796UY3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-25,Bill,26-Week,26-Week,912796SK6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-25,Bill,13-Week,26-Week,912796RV3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-26,Note,2-Year,7-Year,912828C57,Yes,01:00 PM,13:00:00,True,ok,short
+2019-03-26,Bill,52-Week,52-Week,912796SH3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-27,Note,5-Year,7-Year,912828W71,Yes,01:00 PM,13:00:00,True,ok,short
+2019-03-27,Note,1-Year 10-Month,2-Year,9128285Y2,Yes,11:30 AM,11:30:00,False,frn,short
+2019-03-28,Bill,8-Week,8-Week,912796VD8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-28,Bill,4-Week,8-Week,912796UZ0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-03-28,Note,7-Year,7-Year,9128286L9,No,01:00 PM,13:00:00,True,ok,short
+2019-04-01,Bill,26-Week,26-Week,912796SL4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-01,Bill,13-Week,26-Week,912796RW1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-04,Bill,8-Week,8-Week,912796VE6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-04,Bill,4-Week,8-Week,912796VA4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-08,Bill,13-Week,26-Week,912796RZ4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-08,Bill,26-Week,52-Week,912796RF8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-09,Note,3-Year,3-Year,9128286M7,No,01:00 PM,13:00:00,True,ok,short
+2019-04-10,Note,9-Year 10-Month,10-Year,9128286B1,Yes,01:00 PM,13:00:00,True,ok,long
+2019-04-11,Bill,8-Week,8-Week,912796VF3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-11,Bill,4-Week,8-Week,912796VB2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-11,Bond,29-Year 10-Month,30-Year,912810SF6,Yes,01:00 PM,13:00:00,True,ok,long
+2019-04-15,Bill,26-Week,26-Week,912796SN0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-15,Bill,13-Week,52-Week,912796QR3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-18,Note,5-Year,5-Year,9128286N5,No,11:30 AM,11:30:00,False,tips,short
+2019-04-18,Bill,4-Week,8-Week,912796VC0,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2019-04-18,Bill,8-Week,8-Week,912796VG1,No,10:00 AM,10:00:00,False,type_bill,unknown
+2019-04-22,Bill,13-Week,26-Week,912796SA8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-22,Bill,26-Week,26-Week,912796SP5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-23,Note,2-Year,7-Year,912828WG1,Yes,01:00 PM,13:00:00,True,ok,short
+2019-04-23,Bill,52-Week,52-Week,912796SM2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-24,Note,2-Year,2-Year,9128286Q8,No,11:30 AM,11:30:00,False,frn,short
+2019-04-24,Note,5-Year,5-Year,9128286R6,No,01:00 PM,13:00:00,True,ok,short
+2019-04-25,Bill,8-Week,8-Week,912796VH9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-25,Note,7-Year,7-Year,9128286S4,No,01:00 PM,13:00:00,True,ok,short
+2019-04-25,Bill,4-Week,8-Week,912796VD8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-29,Bill,13-Week,26-Week,912796SB6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-04-29,Bill,26-Week,26-Week,912796SQ3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-02,Bill,4-Week,8-Week,912796VE6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-02,Bill,37-Day,26-Week,912796RU5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2019-05-02,Bill,8-Week,8-Week,912796VJ5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-06,Bill,13-Week,26-Week,912796SC4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-06,Bill,26-Week,52-Week,912796RM3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-07,Note,3-Year,3-Year,9128286U9,No,01:00 PM,13:00:00,True,ok,short
+2019-05-08,Note,10-Year,10-Year,9128286T2,No,01:00 PM,13:00:00,True,ok,long
+2019-05-09,Bill,4-Week,8-Week,912796VF3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-09,Bond,30-Year,30-Year,912810SH2,No,01:00 PM,13:00:00,True,ok,long
+2019-05-09,Bill,8-Week,8-Week,912796VK2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-13,Bill,26-Week,26-Week,912796SS9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-13,Bill,13-Week,52-Week,912796QV4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-16,Bill,8-Week,8-Week,912796VL0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-16,Bill,4-Week,8-Week,912796VG1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-20,Bill,26-Week,26-Week,912796ST7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-20,Bill,13-Week,26-Week,912796SE0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-21,Bill,52-Week,52-Week,912796SR1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-23,Bill,4-Week,8-Week,912796VH9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-23,Bill,8-Week,8-Week,912796VM8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-23,Note,9-Year 8-Month,10-Year,9128285W6,Yes,01:00 PM,13:00:00,False,tips,long
+2019-05-28,Note,2-Year,2-Year,9128286V7,No,11:30 AM,11:30:00,True,ok,short
+2019-05-28,Bill,26-Week,26-Week,912796SU4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-28,Note,5-Year,7-Year,912828XT2,Yes,01:00 PM,13:00:00,True,ok,short
+2019-05-28,Bill,13-Week,26-Week,912796SF7,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2019-05-29,Note,1-Year 11-Month,2-Year,9128286Q8,Yes,11:30 AM,11:30:00,False,frn,short
+2019-05-29,Note,7-Year,7-Year,9128286X3,No,01:00 PM,13:00:00,True,ok,short
+2019-05-30,Bill,8-Week,8-Week,912796VN6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-05-30,Bill,4-Week,8-Week,912796VJ5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-03,Bill,13-Week,26-Week,912796SG5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-03,Bill,26-Week,52-Week,912796RN1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-06,Bill,8-Week,8-Week,912796VP1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-06,Bill,4-Week,8-Week,912796VK2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-10,Bill,26-Week,26-Week,912796SW0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-10,Bill,13-Week,52-Week,912796RA9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-11,Note,3-Year,3-Year,9128286Y1,No,01:00 PM,13:00:00,True,ok,short
+2019-06-12,Note,9-Year 11-Month,10-Year,9128286T2,Yes,01:00 PM,13:00:00,True,ok,long
+2019-06-13,Bill,8-Week,8-Week,912796VQ9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-13,Bill,4-Week,8-Week,912796VL0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-13,Bond,29-Year 11-Month,30-Year,912810SH2,Yes,01:00 PM,13:00:00,True,ok,long
+2019-06-17,Bill,13-Week,26-Week,912796SJ9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-17,Bill,26-Week,26-Week,912796SX8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-18,Bill,52-Week,52-Week,912796SV2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-20,Bill,8-Week,8-Week,912796VR7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-20,Note,4-Year 10-Month,5-Year,9128286N5,Yes,01:00 PM,13:00:00,False,tips,short
+2019-06-20,Bill,4-Week,8-Week,912796VM8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-21,Note,9-Year 11-Month,10-Year,9128286T2,Yes,11:00 AM,11:00:00,True,ok,long
+2019-06-24,Bill,13-Week,26-Week,912796SK6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-24,Bill,26-Week,26-Week,912796SY6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-25,Note,2-Year,2-Year,9128287A2,No,01:00 PM,13:00:00,True,ok,short
+2019-06-26,Note,5-Year,5-Year,9128286Z8,No,01:00 PM,13:00:00,True,ok,short
+2019-06-26,Note,1-Year 10-Month,2-Year,9128286Q8,Yes,11:30 AM,11:30:00,False,frn,short
+2019-06-27,Bill,4-Week,8-Week,912796VN6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-27,Bill,8-Week,8-Week,912796VS5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-06-27,Note,7-Year,7-Year,9128287B0,No,01:00 PM,13:00:00,True,ok,short
+2019-07-01,Bill,13-Week,26-Week,912796SL4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-01,Bill,26-Week,52-Week,912796RT8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-03,Bill,8-Week,8-Week,912796VT3,No,10:00 AM,10:00:00,False,type_bill,unknown
+2019-07-03,Bill,4-Week,8-Week,912796VP1,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2019-07-08,Bill,26-Week,26-Week,912796TA7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-08,Bill,13-Week,52-Week,912796RF8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-09,Note,3-Year,3-Year,9128287C8,No,01:00 PM,13:00:00,True,ok,short
+2019-07-10,Note,9-Year 10-Month,10-Year,9128286T2,Yes,01:00 PM,13:00:00,True,ok,long
+2019-07-11,Bill,8-Week,8-Week,912796VU0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-11,Bill,4-Week,8-Week,912796VQ9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-11,Bond,29-Year 10-Month,30-Year,912810SH2,Yes,01:00 PM,13:00:00,True,ok,long
+2019-07-15,Bill,13-Week,26-Week,912796SN0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-15,Bill,26-Week,26-Week,912796TB5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-16,Bill,52-Week,52-Week,912796SZ3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-18,Note,10-Year,10-Year,9128287D6,No,01:00 PM,13:00:00,False,tips,long
+2019-07-18,Bill,8-Week,8-Week,912796VV8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-18,Bill,4-Week,8-Week,912796VR7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-22,Bill,26-Week,26-Week,912796TC3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-22,Bill,13-Week,26-Week,912796SP5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-23,Note,2-Year,2-Year,9128287F1,No,01:00 PM,13:00:00,True,ok,short
+2019-07-24,Note,2-Year,2-Year,9128287G9,No,11:30 AM,11:30:00,False,frn,short
+2019-07-24,Note,5-Year,5-Year,912828Y87,No,01:00 PM,13:00:00,True,ok,short
+2019-07-25,Bill,8-Week,8-Week,912796VW6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-25,Bill,4-Week,8-Week,912796VS5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-25,Note,7-Year,7-Year,912828Y95,No,01:00 PM,13:00:00,True,ok,short
+2019-07-29,Bill,13-Week,26-Week,912796SQ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-07-29,Bill,26-Week,52-Week,912796RY7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-01,Bill,8-Week,8-Week,912796VX4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-01,Bill,45-Day,45-Day,912796XK0,No,01:00 PM,13:00:00,False,type_bill,unknown
+2019-08-01,Bill,4-Week,8-Week,912796VT3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-05,Bill,13-Week,52-Week,912796RM3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-05,Bill,26-Week,26-Week,912796TE9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-06,Note,3-Year,3-Year,912828YA2,No,01:00 PM,13:00:00,True,ok,short
+2019-08-07,Note,10-Year,10-Year,912828YB0,No,01:00 PM,13:00:00,True,ok,long
+2019-08-08,Bill,4-Week,8-Week,912796VU0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-08,Bond,30-Year,30-Year,912810SJ8,No,01:00 PM,13:00:00,True,ok,long
+2019-08-08,Bill,8-Week,8-Week,912796VY2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-12,Bill,26-Week,26-Week,912796TF6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-12,Bill,13-Week,26-Week,912796SS9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-13,Bill,52-Week,52-Week,912796TD1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-15,Bill,8-Week,8-Week,912796VZ9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-15,Bill,4-Week,8-Week,912796VV8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-19,Bill,26-Week,26-Week,912796TG4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-19,Bill,13-Week,26-Week,912796ST7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-22,Bill,8-Week,8-Week,912796WA3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-22,Bond,29-Year 6-Month,30-Year,912810SG4,Yes,01:00 PM,13:00:00,False,tips,long
+2019-08-22,Bill,4-Week,8-Week,912796VW6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-26,Bill,13-Week,26-Week,912796SU4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-26,Bill,26-Week,52-Week,912796SD2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-27,Note,2-Year,2-Year,912828YC8,No,01:00 PM,13:00:00,True,ok,short
+2019-08-28,Note,5-Year,5-Year,912828YE4,No,01:00 PM,13:00:00,True,ok,short
+2019-08-28,Note,1-Year 11-Month,2-Year,9128287G9,Yes,11:30 AM,11:30:00,False,frn,short
+2019-08-29,Bill,8-Week,8-Week,912796WB1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-08-29,Note,7-Year,7-Year,912828YD6,No,01:00 PM,13:00:00,True,ok,short
+2019-08-29,Bill,4-Week,8-Week,912796VX4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-03,Bill,26-Week,26-Week,912796TH2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-03,Bill,13-Week,52-Week,912796RN1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-05,Bill,8-Week,8-Week,912796WC9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-05,Bill,4-Week,8-Week,912796VY2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-09,Bill,26-Week,26-Week,912796TK5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-09,Bill,13-Week,26-Week,912796SW0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-10,Note,3-Year,3-Year,912828YF1,No,01:00 PM,13:00:00,True,ok,short
+2019-09-10,Bill,52-Week,52-Week,912796TJ8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-11,Note,9-Year 11-Month,10-Year,912828YB0,Yes,01:00 PM,13:00:00,True,ok,long
+2019-09-12,Bill,8-Week,8-Week,912796WD7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-12,Bill,4-Week,8-Week,912796VZ9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-12,Bond,29-Year 11-Month,30-Year,912810SJ8,Yes,01:00 PM,13:00:00,True,ok,long
+2019-09-16,Bill,26-Week,26-Week,912796TL3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-16,Bill,13-Week,26-Week,912796SX8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-19,Bill,8-Week,8-Week,912796WE5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-19,Note,9-Year 10-Month,10-Year,9128287D6,Yes,01:00 PM,13:00:00,False,tips,long
+2019-09-19,Bill,4-Week,8-Week,912796WA3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-23,Bill,13-Week,26-Week,912796SY6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-23,Bill,26-Week,52-Week,912796SH3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-24,Note,2-Year,2-Year,912828YJ3,No,01:00 PM,13:00:00,True,ok,short
+2019-09-25,Note,5-Year,5-Year,912828YH7,No,01:00 PM,13:00:00,True,ok,short
+2019-09-25,Note,1-Year 10-Month,2-Year,9128287G9,Yes,11:30 AM,11:30:00,False,frn,short
+2019-09-26,Bill,8-Week,8-Week,912796WF2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-26,Note,7-Year,7-Year,912828YG9,No,01:00 PM,13:00:00,True,ok,short
+2019-09-26,Bill,4-Week,8-Week,912796WB1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-30,Bill,26-Week,26-Week,912796TM1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-09-30,Bill,13-Week,52-Week,912796RT8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-03,Bill,8-Week,8-Week,912796WG0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-03,Bill,4-Week,8-Week,912796WC9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-07,Bill,13-Week,26-Week,912796TA7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-07,Bill,26-Week,26-Week,912796TQ2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-08,Note,3-Year,3-Year,912828YK0,No,01:00 PM,13:00:00,True,ok,short
+2019-10-08,Bill,52-Week,52-Week,912796TN9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-09,Note,9-Year 10-Month,10-Year,912828YB0,Yes,01:00 PM,13:00:00,True,ok,long
+2019-10-10,Bill,4-Week,8-Week,912796WD7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-10,Bond,29-Year 10-Month,30-Year,912810SJ8,Yes,01:00 PM,13:00:00,True,ok,long
+2019-10-10,Bill,8-Week,8-Week,912796WH8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-15,Bill,26-Week,26-Week,912796TR0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-15,Bill,13-Week,26-Week,912796TB5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-17,Note,5-Year,5-Year,912828YL8,No,01:00 PM,13:00:00,False,tips,short
+2019-10-17,Bill,8-Week,8-Week,912796WJ4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-17,Bill,4-Week,8-Week,912796WE5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-21,Bill,13-Week,26-Week,912796TC3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-21,Bill,26-Week,52-Week,912796SM2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-22,Note,2-Year,2-Year,912828YP9,No,01:00 PM,13:00:00,True,ok,short
+2019-10-23,Note,2-Year,2-Year,912828YN4,No,11:30 AM,11:30:00,False,frn,short
+2019-10-23,Note,5-Year,5-Year,912828YM6,No,01:00 PM,13:00:00,True,ok,short
+2019-10-24,Note,7-Year,7-Year,912828YQ7,No,01:00 PM,13:00:00,True,ok,short
+2019-10-24,Bill,8-Week,8-Week,912796WK1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-24,Bill,4-Week,8-Week,912796WF2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-28,Bill,26-Week,26-Week,912796TS8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-28,Bill,13-Week,52-Week,912796RY7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-31,Bill,8-Week,8-Week,912796WL9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-10-31,Bill,4-Week,8-Week,912796WG0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-04,Bill,26-Week,26-Week,912796TT6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-04,Bill,13-Week,26-Week,912796TE9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-05,Bill,52-Week,52-Week,912796TP4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-05,Note,3-Year,10-Year,912828TY6,Yes,01:00 PM,13:00:00,True,ok,long
+2019-11-06,Note,10-Year,10-Year,912828YS3,No,01:00 PM,13:00:00,True,ok,long
+2019-11-07,Bond,30-Year,30-Year,912810SK5,No,01:00 PM,13:00:00,True,ok,long
+2019-11-07,Bill,8-Week,8-Week,912796WM7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-07,Bill,4-Week,8-Week,912796WH8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-12,Bill,13-Week,26-Week,912796TF6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-12,Bill,26-Week,26-Week,912796TV1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-14,Bill,4-Week,8-Week,912796WJ4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-14,Bill,8-Week,8-Week,912796WN5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-18,Bill,13-Week,26-Week,912796TG4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-18,Bill,26-Week,52-Week,912796SR1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-20,Bill,16-Day,26-Week,912796SW0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-21,Bill,8-Week,8-Week,912796WP0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-21,Note,9-Year 8-Month,10-Year,9128287D6,Yes,01:00 PM,13:00:00,False,tips,long
+2019-11-21,Bill,4-Week,8-Week,912796WK1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-25,Note,2-Year,2-Year,912828YT1,No,01:00 PM,13:00:00,True,ok,short
+2019-11-25,Bill,26-Week,26-Week,912796TW9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-25,Bill,13-Week,52-Week,912796SD2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-11-26,Note,5-Year,5-Year,912828YV6,No,01:00 PM,13:00:00,True,ok,short
+2019-11-26,Note,1-Year 11-Month,2-Year,912828YN4,Yes,11:30 AM,11:30:00,False,frn,short
+2019-11-27,Bill,8-Week,8-Week,912796WQ8,No,10:00 AM,10:00:00,False,type_bill,unknown
+2019-11-27,Note,7-Year,7-Year,912828YU8,No,11:30 AM,11:30:00,True,ok,short
+2019-11-27,Bill,4-Week,8-Week,912796WL9,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2019-12-02,Bill,26-Week,26-Week,912796TX7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-02,Bill,13-Week,26-Week,912796TH2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-03,Bill,52-Week,52-Week,912796TU3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-05,Bill,4-Week,8-Week,912796WM7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-05,Bill,8-Week,8-Week,912796WR6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-06,Note,1-Year 11-Month,2-Year,912828YN4,Yes,11:00 AM,11:00:00,False,frn,short
+2019-12-09,Note,3-Year,3-Year,912828YW4,No,01:00 PM,13:00:00,True,ok,short
+2019-12-09,Bill,26-Week,26-Week,912796TZ2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-09,Bill,13-Week,26-Week,912796TK5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-10,Note,9-Year 11-Month,10-Year,912828YS3,Yes,01:00 PM,13:00:00,True,ok,long
+2019-12-12,Bill,4-Week,8-Week,912796WN5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-12,Bond,29-Year 11-Month,30-Year,912810SK5,Yes,01:00 PM,13:00:00,True,ok,long
+2019-12-12,Bill,8-Week,8-Week,912796WS4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-16,Bill,26-Week,52-Week,912796SV2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-16,Bill,13-Week,26-Week,912796TL3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-18,Note,1-Year 10-Month,2-Year,912828YN4,Yes,11:30 AM,11:30:00,False,frn,short
+2019-12-19,Bill,8-Week,8-Week,912796WT2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-19,Note,4-Year 10-Month,5-Year,912828YL8,Yes,01:00 PM,13:00:00,False,tips,short
+2019-12-19,Bill,4-Week,8-Week,912796WP0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-23,Note,2-Year,2-Year,912828YZ7,No,01:00 PM,13:00:00,True,ok,short
+2019-12-23,Bill,13-Week,52-Week,912796SH3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-23,Bill,26-Week,26-Week,912796UA5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-24,Note,5-Year,5-Year,912828YY0,No,10:00 AM,10:00:00,True,ok,short
+2019-12-26,Bill,8-Week,8-Week,912796WU9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-26,Note,7-Year,7-Year,912828YX2,No,01:00 PM,13:00:00,True,ok,short
+2019-12-26,Bill,4-Week,8-Week,912796WQ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-30,Bill,26-Week,26-Week,912796UB3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2019-12-30,Bill,52-Week,52-Week,912796TY5,No,01:00 PM,13:00:00,False,type_bill,unknown
+2019-12-30,Bill,13-Week,26-Week,912796TM1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-02,Bill,8-Week,8-Week,912796WV7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-02,Bill,4-Week,8-Week,912796WR6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-06,Bill,26-Week,26-Week,912796WW5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-06,Bill,13-Week,26-Week,912796TQ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-07,Note,3-Year,3-Year,912828Z29,No,01:00 PM,13:00:00,True,ok,short
+2020-01-08,Note,9-Year 10-Month,10-Year,912828YS3,Yes,01:00 PM,13:00:00,True,ok,long
+2020-01-09,Bill,8-Week,8-Week,912796XA2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-09,Bond,29-Year 10-Month,30-Year,912810SK5,Yes,01:00 PM,13:00:00,True,ok,long
+2020-01-09,Bill,4-Week,8-Week,912796WS4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-13,Bill,26-Week,52-Week,912796SZ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-13,Bill,13-Week,26-Week,912796TR0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-16,Bill,8-Week,8-Week,912796XB0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-16,Bill,4-Week,8-Week,912796WT2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-21,Bill,26-Week,26-Week,912796WX3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-21,Bill,13-Week,52-Week,912796SM2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-23,Note,10-Year,10-Year,912828Z37,No,01:00 PM,13:00:00,False,tips,long
+2020-01-23,Bill,8-Week,8-Week,912796XC8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-23,Bill,4-Week,8-Week,912796WU9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-27,Note,2-Year,2-Year,912828Z60,No,11:30 AM,11:30:00,True,ok,short
+2020-01-27,Note,5-Year,5-Year,912828Z52,No,01:00 PM,13:00:00,True,ok,short
+2020-01-27,Bill,26-Week,26-Week,912796WY1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-27,Bill,13-Week,26-Week,912796TS8,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-01-28,Bill,52-Week,52-Week,912796UC1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-28,Note,2-Year,2-Year,912828Z45,No,11:30 AM,11:30:00,False,frn,short
+2020-01-28,Note,7-Year,7-Year,912828Z78,No,01:00 PM,13:00:00,True,ok,short
+2020-01-30,Bill,8-Week,8-Week,912796XD6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-01-30,Bill,4-Week,8-Week,912796WV7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-03,Bill,26-Week,26-Week,912796WZ8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-03,Bill,13-Week,26-Week,912796TT6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-06,Bill,8-Week,8-Week,9127962A6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-06,Bill,4-Week,8-Week,912796XA2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-10,Bill,13-Week,26-Week,912796TV1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-10,Bill,26-Week,52-Week,912796TD1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-11,Note,3-Year,3-Year,912828Z86,No,01:00 PM,13:00:00,True,ok,short
+2020-02-11,Bill,56-Day,26-Week,912796TQ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-12,Note,10-Year,10-Year,912828Z94,No,01:00 PM,13:00:00,True,ok,long
+2020-02-13,Bond,30-Year,30-Year,912810SL3,No,01:00 PM,13:00:00,True,ok,long
+2020-02-13,Bill,8-Week,8-Week,9127962B4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-13,Bill,4-Week,8-Week,912796XB0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-18,Bill,26-Week,26-Week,912796XF1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-18,Bill,21-Day,26-Week,912796TK5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-02-18,Bill,13-Week,52-Week,912796SR1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-20,Bond,30-Year,30-Year,912810SM1,No,01:00 PM,13:00:00,False,tips,long
+2020-02-20,Bill,8-Week,8-Week,9127962C2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-20,Bill,4-Week,8-Week,912796XC8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-24,Bill,26-Week,26-Week,912796XG9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-24,Bill,13-Week,26-Week,912796TW9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-25,Note,2-Year,2-Year,912828ZA1,No,01:00 PM,13:00:00,True,ok,short
+2020-02-25,Bill,52-Week,52-Week,912796XE4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-26,Note,1-Year 11-Month,2-Year,912828Z45,Yes,11:30 AM,11:30:00,False,frn,short
+2020-02-26,Note,5-Year,5-Year,912828ZC7,No,01:00 PM,13:00:00,True,ok,short
+2020-02-27,Bill,8-Week,8-Week,9127962D0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-02-27,Note,7-Year,7-Year,912828ZB9,No,01:00 PM,13:00:00,True,ok,short
+2020-02-27,Bill,4-Week,8-Week,912796XD6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-02,Bill,26-Week,26-Week,912796XH7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-02,Bill,13-Week,26-Week,912796TX7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-05,Bill,8-Week,8-Week,9127962K4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-05,Bill,4-Week,8-Week,9127962A6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-09,Bill,13-Week,26-Week,912796TZ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-09,Bill,26-Week,52-Week,912796TJ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-10,Note,3-Year,3-Year,912828ZD5,No,01:00 PM,13:00:00,True,ok,short
+2020-03-11,Note,9-Year 11-Month,10-Year,912828Z94,Yes,01:00 PM,13:00:00,True,ok,long
+2020-03-12,Bill,8-Week,8-Week,9127962L2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-12,Bill,4-Week,8-Week,9127962B4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-12,Bond,29-Year 11-Month,30-Year,912810SL3,Yes,01:00 PM,13:00:00,True,ok,long
+2020-03-16,Bill,26-Week,26-Week,9127962G3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-16,Bill,13-Week,52-Week,912796SV2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-19,Bill,8-Week,8-Week,9127962M0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-19,Note,9-Year 10-Month,10-Year,912828Z37,Yes,01:00 PM,13:00:00,False,tips,long
+2020-03-19,Bill,4-Week,8-Week,9127962C2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-19,Bill,79-Day,26-Week,912796TZ2,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-03-23,Bill,26-Week,26-Week,9127962H1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-23,Bill,13-Week,26-Week,912796UA5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-24,Note,2-Year,2-Year,912828ZG8,No,01:00 PM,13:00:00,True,ok,short
+2020-03-24,Bill,52-Week,52-Week,9127962F5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-25,Note,5-Year,5-Year,912828ZF0,No,01:00 PM,13:00:00,True,ok,short
+2020-03-25,Note,1-Year 10-Month,2-Year,912828Z45,Yes,11:30 AM,11:30:00,False,frn,short
+2020-03-26,Bill,8-Week,8-Week,9127962N8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-26,Note,7-Year,7-Year,912828ZE3,No,01:00 PM,13:00:00,True,ok,short
+2020-03-26,Bill,4-Week,8-Week,9127962D0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-30,Bill,13-Week,26-Week,912796UB3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-30,Bill,26-Week,26-Week,9127962J7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-30,Bill,37-Day,26-Week,912796TT6,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-03-31,Bill,42-Day,26-Week,912796TV1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-03-31,Bill,69-Day,69-Day,9127962U2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-01,Bill,39-Day,8-Week,9127962L2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-01,Bill,119-Day,26-Week,912796WY1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-02,Bill,4-Week,8-Week,9127962K4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-02,Bill,102-Day,102-Day,9127963D9,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-02,Bill,8-Week,8-Week,9127962P3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-02,Bill,154-Day,154-Day,9127963X5,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-06,Note,3-Year,3-Year,912828ZH6,No,01:00 PM,13:00:00,True,ok,short
+2020-04-06,Bill,13-Week,26-Week,912796WW5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-06,Bill,26-Week,52-Week,912796TN9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-06,Bill,43-Day,52-Week,912796SR1,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-07,Bill,69-Day,69-Day,9127962V0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-07,Note,9-Year 10-Month,10-Year,912828Z94,Yes,01:00 PM,13:00:00,True,ok,long
+2020-04-07,Bill,119-Day,26-Week,912796WZ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-08,Bill,103-Day,103-Day,9127963F4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-08,Bill,154-Day,154-Day,9127963Y3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-08,Bond,29-Year 10-Month,30-Year,912810SL3,Yes,01:00 PM,13:00:00,True,ok,long
+2020-04-08,Bill,40-Day,8-Week,9127962M0,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-09,Bill,4-Week,8-Week,9127962L2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-09,Bill,8-Week,69-Day,9127962U2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-13,Bill,13-Week,52-Week,912796SZ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-13,Bill,26-Week,26-Week,9127962R9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-13,Bill,69-Day,69-Day,9127962W8,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-14,Bill,43-Day,26-Week,912796TW9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-14,Bill,119-Day,52-Week,912796TD1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-15,Bill,103-Day,103-Day,9127963G2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-15,Bill,154-Day,154-Day,9127963Z0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-16,Bill,4-Week,8-Week,9127962M0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-16,Bill,8-Week,69-Day,9127962V0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-20,Bill,26-Week,26-Week,9127962S7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-20,Bill,13-Week,26-Week,912796WX3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-20,Bill,43-Day,26-Week,912796TX7,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-21,Bill,52-Week,52-Week,9127962Q1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-21,Bill,119-Day,26-Week,912796XF1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-22,Bill,154-Day,154-Day,9127964A4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-22,Bill,103-Day,103-Day,9127963M9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-23,Note,5-Year,5-Year,912828ZJ2,No,01:00 PM,13:00:00,False,tips,short
+2020-04-23,Bill,4-Week,8-Week,9127962N8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-23,Bill,8-Week,69-Day,9127962W8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-27,Bill,26-Week,26-Week,9127962T5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-27,Note,2-Year,2-Year,912828ZM5,No,11:30 AM,11:30:00,True,ok,short
+2020-04-27,Note,5-Year,5-Year,912828ZL7,No,01:00 PM,13:00:00,True,ok,short
+2020-04-27,Bill,13-Week,26-Week,912796WY1,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-28,Note,2-Year,2-Year,912828ZK9,No,11:30 AM,11:30:00,False,frn,short
+2020-04-28,Note,7-Year,7-Year,912828ZN3,No,01:00 PM,13:00:00,True,ok,short
+2020-04-28,Bill,43-Day,26-Week,912796TZ2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-29,Bill,103-Day,103-Day,9127963N7,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-29,Bill,119-Day,26-Week,912796XG9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-29,Bill,273-Day,52-Week,912796UC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-30,Bill,8-Week,8-Week,9127962X6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-04-30,Bill,154-Day,154-Day,9127964G1,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-04-30,Bill,4-Week,8-Week,9127962P3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-04,Bill,105-Day,105-Day,9127963P2,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-05-04,Bill,13-Week,26-Week,912796WZ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-04,Bill,26-Week,52-Week,912796TP4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-05,Bill,119-Day,26-Week,912796XH7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-05,Bill,42-Day,52-Week,912796SV2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-06,Bill,154-Day,154-Day,9127964H9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-07,Bill,8-Week,8-Week,9127963C1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-07,Bill,105-Day,105-Day,9127963Q0,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-05-07,Bill,4-Week,69-Day,9127962U2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-11,Note,3-Year,3-Year,912828ZP8,No,01:00 PM,13:00:00,True,ok,short
+2020-05-11,Bill,26-Week,26-Week,9127962Z1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-11,Bill,13-Week,52-Week,912796TD1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-12,Note,10-Year,10-Year,912828ZQ6,No,01:00 PM,13:00:00,True,ok,long
+2020-05-12,Bill,42-Day,26-Week,912796UA5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-12,Bill,119-Day,52-Week,912796TJ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-13,Bill,105-Day,105-Day,9127963R8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-13,Bill,154-Day,154-Day,9127964J5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-13,Bond,30-Year,30-Year,912810SN9,No,01:00 PM,13:00:00,True,ok,long
+2020-05-14,Bill,4-Week,69-Day,9127962V0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-14,Bill,8-Week,102-Day,9127963D9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-18,Bill,26-Week,26-Week,9127963A5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-18,Bill,13-Week,26-Week,912796XF1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-19,Bill,52-Week,52-Week,9127962Y4,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-05-19,Bill,42-Day,26-Week,912796UB3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-19,Bill,119-Day,26-Week,9127962G3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-20,Bond,20-Year,20-Year,912810SR0,No,01:00 PM,13:00:00,True,ok,long
+2020-05-20,Bill,105-Day,154-Day,9127963X5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-20,Bill,154-Day,154-Day,9127964K2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-21,Note,9-Year 8-Month,10-Year,912828Z37,Yes,01:00 PM,13:00:00,False,tips,long
+2020-05-21,Bill,4-Week,69-Day,9127962W8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-21,Bill,8-Week,103-Day,9127963F4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-26,Bill,26-Week,26-Week,9127963B3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-26,Note,2-Year,2-Year,912828ZR4,No,01:00 PM,13:00:00,True,ok,short
+2020-05-26,Bill,13-Week,26-Week,912796XG9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-26,Bill,42-Day,26-Week,912796WW5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-05-27,Note,5-Year,5-Year,912828ZT0,No,01:00 PM,13:00:00,True,ok,short
+2020-05-27,Note,1-Year 11-Month,2-Year,912828ZK9,Yes,11:30 AM,11:30:00,False,frn,short
+2020-05-27,Bill,105-Day,154-Day,9127963Y3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-27,Bill,119-Day,26-Week,9127962H1,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-05-27,Bill,273-Day,52-Week,912796XE4,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-05-28,Bill,4-Week,8-Week,9127962X6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-28,Bill,8-Week,103-Day,9127963G2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-05-28,Bill,154-Day,154-Day,9127964Q9,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-05-28,Note,7-Year,7-Year,912828ZS2,No,01:00 PM,13:00:00,True,ok,short
+2020-06-01,Bill,13-Week,26-Week,912796XH7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-01,Bill,26-Week,52-Week,912796TU3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-02,Bill,42-Day,52-Week,912796SZ3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-02,Bill,119-Day,26-Week,9127962J7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-03,Bill,105-Day,154-Day,9127963Z0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-03,Bill,154-Day,154-Day,9127964R7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-04,Bill,4-Week,8-Week,9127963C1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-04,Bill,8-Week,103-Day,9127963M9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-08,Note,3-Year,3-Year,912828ZU7,No,01:00 PM,13:00:00,True,ok,short
+2020-06-08,Bill,13-Week,52-Week,912796TJ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-08,Bill,26-Week,26-Week,9127963J6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-09,Bill,119-Day,52-Week,912796TN9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-09,Note,9-Year 11-Month,10-Year,912828ZQ6,Yes,01:00 PM,13:00:00,True,ok,long
+2020-06-09,Bill,42-Day,26-Week,912796WX3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-10,Bill,154-Day,154-Day,9127964S5,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-10,Bill,105-Day,154-Day,9127964A4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-11,Bill,4-Week,102-Day,9127963D9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-11,Bill,8-Week,103-Day,9127963N7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-11,Bond,29-Year 11-Month,30-Year,912810SN9,Yes,01:00 PM,13:00:00,True,ok,long
+2020-06-15,Bill,13-Week,26-Week,9127962G3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-15,Bill,26-Week,26-Week,9127963K3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-16,Bill,119-Day,26-Week,9127962R9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-16,Bill,52-Week,52-Week,9127963H0,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-06-16,Bill,42-Day,26-Week,912796WY1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-17,Bill,154-Day,154-Day,9127964T3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-17,Bond,19-Year 11-Month,20-Year,912810SR0,Yes,01:00 PM,13:00:00,True,ok,long
+2020-06-17,Bill,105-Day,154-Day,9127964G1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-18,Bill,4-Week,103-Day,9127963F4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-18,Bill,8-Week,105-Day,9127963P2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-18,Note,4-Year 10-Month,5-Year,912828ZJ2,Yes,01:00 PM,13:00:00,False,tips,short
+2020-06-22,Bill,26-Week,26-Week,9127963L1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-22,Bill,13-Week,26-Week,9127962H1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-23,Bill,42-Day,26-Week,912796WZ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-23,Bill,119-Day,26-Week,9127962S7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-23,Bill,273-Day,52-Week,9127962F5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-06-23,Note,2-Year,2-Year,912828ZX1,No,01:00 PM,13:00:00,True,ok,short
+2020-06-24,Note,1-Year 10-Month,2-Year,912828ZK9,Yes,01:00 PM,13:00:00,False,frn,short
+2020-06-24,Bill,154-Day,154-Day,9127964U0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-24,Bill,105-Day,154-Day,9127964H9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-24,Note,5-Year,5-Year,912828ZW3,No,01:00 PM,13:00:00,True,ok,short
+2020-06-25,Bill,4-Week,103-Day,9127963G2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-25,Bill,8-Week,105-Day,9127963Q0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-25,Note,7-Year,7-Year,912828ZV5,No,01:00 PM,13:00:00,True,ok,short
+2020-06-29,Bill,13-Week,26-Week,9127962J7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-29,Bill,26-Week,52-Week,912796TY5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-30,Bill,42-Day,52-Week,912796TD1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-06-30,Bill,119-Day,26-Week,9127962T5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-01,Bill,154-Day,154-Day,9127965B1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-01,Bill,105-Day,154-Day,9127964J5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-02,Bill,4-Week,103-Day,9127963M9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-02,Bill,8-Week,105-Day,9127963R8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-06,Bill,13-Week,52-Week,912796TN9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-06,Bill,26-Week,26-Week,9127963T4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-07,Bill,42-Day,26-Week,912796XF1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-07,Bill,119-Day,52-Week,912796TP4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-07,Note,3-Year,3-Year,912828ZY9,No,01:00 PM,13:00:00,True,ok,short
+2020-07-08,Bill,154-Day,154-Day,9127965C9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-08,Note,9-Year 10-Month,10-Year,912828ZQ6,Yes,01:00 PM,13:00:00,True,ok,long
+2020-07-08,Bill,105-Day,154-Day,9127964K2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-09,Bond,29-Year 10-Month,30-Year,912810SN9,Yes,01:00 PM,13:00:00,True,ok,long
+2020-07-09,Bill,4-Week,103-Day,9127963N7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-09,Bill,8-Week,154-Day,9127963X5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-10,Note,4-Year 10-Month,5-Year,912828ZJ2,Yes,11:00 AM,11:00:00,False,tips,short
+2020-07-13,Bill,26-Week,26-Week,9127963U1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-13,Bill,13-Week,26-Week,9127962R9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-14,Bill,42-Day,26-Week,912796XG9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-14,Bill,52-Week,52-Week,9127963S6,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-07-14,Bill,119-Day,26-Week,9127962Z1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-15,Bill,105-Day,154-Day,9127964Q9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-15,Bill,154-Day,154-Day,9127965D7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-16,Bill,4-Week,105-Day,9127963P2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-16,Bill,8-Week,154-Day,9127963Y3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-20,Bill,13-Week,26-Week,9127962S7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-20,Bill,26-Week,26-Week,9127963V9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-21,Bill,42-Day,26-Week,912796XH7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-21,Bill,119-Day,26-Week,9127963A5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-21,Bill,273-Day,52-Week,9127962Q1,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-07-22,Bill,105-Day,154-Day,9127964R7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-22,Bond,19-Year 10-Month,20-Year,912810SR0,Yes,01:00 PM,13:00:00,True,ok,long
+2020-07-22,Bill,154-Day,154-Day,9127965F2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-23,Bill,4-Week,105-Day,9127963Q0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-23,Bill,8-Week,154-Day,9127963Z0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-23,Note,10-Year,10-Year,912828ZZ6,No,01:00 PM,13:00:00,False,tips,long
+2020-07-27,Bill,13-Week,26-Week,9127962T5,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-07-27,Bill,26-Week,52-Week,912796UC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-27,Note,2-Year,2-Year,91282CAC5,No,11:30 AM,11:30:00,True,ok,short
+2020-07-27,Note,5-Year,5-Year,91282CAB7,No,01:00 PM,13:00:00,True,ok,short
+2020-07-28,Bill,42-Day,52-Week,912796TJ8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-28,Bill,120-Day,26-Week,9127963B3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-28,Note,2-Year,2-Year,91282CAA9,No,01:00 PM,13:00:00,False,frn,short
+2020-07-28,Note,7-Year,7-Year,91282CAD3,No,01:00 PM,13:00:00,True,ok,short
+2020-07-29,Bill,105-Day,154-Day,9127964S5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-29,Bill,154-Day,154-Day,912796A58,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-30,Bill,4-Week,105-Day,9127963R8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-07-30,Bill,8-Week,154-Day,9127964A4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-03,Bill,13-Week,52-Week,912796TP4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-03,Bill,26-Week,26-Week,9127963W7,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-04,Bill,42-Day,26-Week,9127962G3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-04,Bill,119-Day,52-Week,912796TU3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-05,Bill,105-Day,154-Day,9127964T3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-05,Bill,154-Day,154-Day,912796A66,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-06,Bill,4-Week,154-Day,9127963X5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-06,Bill,8-Week,154-Day,9127964G1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-10,Bill,13-Week,26-Week,9127962Z1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-10,Bill,26-Week,26-Week,9127964C0,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-11,Note,3-Year,3-Year,91282CAF8,No,01:00 PM,13:00:00,True,ok,short
+2020-08-11,Bill,42-Day,26-Week,9127962H1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-11,Bill,52-Week,52-Week,9127964B2,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-08-11,Bill,119-Day,26-Week,9127963J6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-12,Bill,105-Day,154-Day,9127964U0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-12,Note,10-Year,10-Year,91282CAE1,No,01:00 PM,13:00:00,True,ok,long
+2020-08-12,Bill,154-Day,154-Day,912796A74,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-13,Bill,4-Week,154-Day,9127963Y3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-13,Bill,8-Week,154-Day,9127964H9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-13,Bond,30-Year,30-Year,912810SP4,No,01:00 PM,13:00:00,True,ok,long
+2020-08-17,Bill,13-Week,26-Week,9127963A5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-17,Bill,26-Week,26-Week,9127964D8,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-18,Bill,119-Day,26-Week,9127963K3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-18,Bill,42-Day,26-Week,9127962J7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-19,Bond,20-Year,20-Year,912810SQ2,No,01:00 PM,13:00:00,True,ok,long
+2020-08-19,Bill,105-Day,154-Day,9127965B1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-19,Bill,154-Day,154-Day,912796A82,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-20,Bond,29-Year 6-Month,30-Year,912810SM1,Yes,01:00 PM,13:00:00,False,tips,long
+2020-08-20,Bill,4-Week,154-Day,9127963Z0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-20,Bill,8-Week,154-Day,9127964J5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-24,Bill,13-Week,26-Week,9127963B3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-24,Bill,26-Week,52-Week,912796XE4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-25,Note,2-Year,2-Year,91282CAG6,No,01:00 PM,13:00:00,True,ok,short
+2020-08-25,Bill,42-Day,52-Week,912796TN9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-25,Bill,119-Day,26-Week,9127963L1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-26,Bill,105-Day,154-Day,9127965C9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-26,Bill,154-Day,154-Day,912796B65,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-26,Note,5-Year,5-Year,91282CAJ0,No,01:00 PM,13:00:00,True,ok,short
+2020-08-26,Note,1-Year 11-Month,2-Year,91282CAA9,Yes,01:00 PM,13:00:00,False,frn,short
+2020-08-27,Bill,4-Week,154-Day,9127964A4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-27,Bill,8-Week,154-Day,9127964K2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-27,Note,7-Year,7-Year,91282CAH4,No,01:00 PM,13:00:00,True,ok,short
+2020-08-31,Bill,13-Week,52-Week,912796TU3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-08-31,Bill,26-Week,26-Week,9127964F3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-01,Bill,42-Day,26-Week,9127962R9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-01,Bill,119-Day,52-Week,912796TY5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-02,Bill,105-Day,154-Day,9127965D7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-02,Bill,154-Day,154-Day,912796B73,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-03,Bill,4-Week,154-Day,9127964G1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-03,Bill,8-Week,154-Day,9127964Q9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-08,Note,3-Year,3-Year,91282CAK7,No,01:00 PM,13:00:00,True,ok,short
+2020-09-08,Bill,119-Day,26-Week,9127963T4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-08,Bill,42-Day,26-Week,9127962S7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-08,Bill,13-Week,26-Week,9127963J6,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-09-08,Bill,26-Week,26-Week,9127964M8,No,10:00 AM,10:00:00,False,type_bill,unknown
+2020-09-08,Bill,52-Week,52-Week,9127964L0,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-09-09,Bill,105-Day,154-Day,9127965F2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-09,Bill,154-Day,154-Day,912796B81,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-09,Note,9-Year 11-Month,10-Year,91282CAE1,Yes,01:00 PM,13:00:00,True,ok,long
+2020-09-10,Bill,8-Week,154-Day,9127964R7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-10,Bond,29-Year 11-Month,30-Year,912810SP4,Yes,01:00 PM,13:00:00,True,ok,long
+2020-09-10,Bill,4-Week,154-Day,9127964H9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-14,Bill,13-Week,26-Week,9127963K3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-14,Bill,26-Week,26-Week,9127964N6,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-15,Bond,19-Year 11-Month,20-Year,912810SQ2,Yes,01:00 PM,13:00:00,True,ok,long
+2020-09-15,Bill,119-Day,26-Week,9127963U1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-15,Bill,42-Day,26-Week,9127962T5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-16,Bill,105-Day,154-Day,912796A58,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-16,Bill,154-Day,154-Day,912796B99,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-17,Note,9-Year 10-Month,10-Year,912828ZZ6,Yes,01:00 PM,13:00:00,False,tips,long
+2020-09-17,Bill,8-Week,154-Day,9127964S5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-17,Bill,4-Week,154-Day,9127964J5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-21,Bill,13-Week,26-Week,9127963L1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-21,Bill,26-Week,52-Week,9127962F5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-22,Note,2-Year,2-Year,91282CAN1,No,01:00 PM,13:00:00,True,ok,short
+2020-09-22,Bill,42-Day,52-Week,912796TP4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-22,Bill,119-Day,26-Week,9127963V9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-23,Note,5-Year,5-Year,91282CAM3,No,01:00 PM,13:00:00,True,ok,short
+2020-09-23,Bill,105-Day,154-Day,912796A66,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-23,Note,1-Year 10-Month,2-Year,91282CAA9,Yes,01:00 PM,13:00:00,False,frn,short
+2020-09-23,Bill,154-Day,154-Day,912796C23,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-24,Note,7-Year,7-Year,91282CAL5,No,01:00 PM,13:00:00,True,ok,short
+2020-09-24,Bill,4-Week,154-Day,9127964K2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-24,Bill,8-Week,154-Day,9127964T3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-28,Bill,13-Week,52-Week,912796TY5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-28,Bill,26-Week,26-Week,9127964P1,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-29,Bill,42-Day,26-Week,9127962Z1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-29,Bill,119-Day,52-Week,912796UC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-30,Bill,105-Day,154-Day,912796A74,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-09-30,Bill,154-Day,154-Day,912796C72,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-01,Bill,4-Week,154-Day,9127964Q9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-01,Bill,8-Week,154-Day,9127964U0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-05,Bill,13-Week,26-Week,9127963T4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-05,Bill,26-Week,26-Week,9127964X4,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-06,Note,3-Year,3-Year,91282CAP6,No,01:00 PM,13:00:00,True,ok,short
+2020-10-06,Bill,42-Day,26-Week,9127963A5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-06,Bill,119-Day,26-Week,9127963W7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-06,Bill,52-Week,52-Week,9127964V8,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-10-07,Note,9-Year 10-Month,10-Year,91282CAE1,Yes,01:00 PM,13:00:00,True,ok,long
+2020-10-07,Bill,105-Day,154-Day,912796A82,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-07,Bill,154-Day,154-Day,912796C80,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-08,Bond,29-Year 10-Month,30-Year,912810SP4,Yes,01:00 PM,13:00:00,True,ok,long
+2020-10-08,Bill,4-Week,154-Day,9127964R7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-08,Bill,8-Week,154-Day,9127965B1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-13,Bill,13-Week,26-Week,9127963U1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-13,Bill,119-Day,26-Week,9127964C0,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-10-13,Bill,43-Day,26-Week,9127963B3,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-10-13,Bill,26-Week,26-Week,9127964Y2,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-14,Bill,105-Day,154-Day,912796B65,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-14,Bill,154-Day,154-Day,912796C98,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-15,Bill,8-Week,154-Day,9127965C9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-15,Bill,4-Week,154-Day,9127964S5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-19,Bill,13-Week,26-Week,9127963V9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-19,Bill,26-Week,52-Week,9127962Q1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-20,Bill,42-Day,52-Week,912796TU3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-20,Bill,119-Day,26-Week,9127964D8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-21,Bond,19-Year 10-Month,20-Year,912810SQ2,Yes,01:00 PM,13:00:00,True,ok,long
+2020-10-21,Bill,105-Day,154-Day,912796B73,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-21,Bill,154-Day,154-Day,912796D22,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-22,Bill,4-Week,154-Day,9127964T3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-22,Bill,8-Week,154-Day,9127965D7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-22,Note,5-Year,5-Year,91282CAQ4,No,01:00 PM,13:00:00,False,tips,short
+2020-10-26,Bill,13-Week,52-Week,912796UC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-26,Bill,26-Week,26-Week,9127964Z9,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-27,Note,2-Year,2-Year,91282CAR2,No,01:00 PM,13:00:00,True,ok,short
+2020-10-27,Bill,42-Day,26-Week,9127963J6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-27,Bill,119-Day,52-Week,912796XE4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-28,Bill,105-Day,154-Day,912796B81,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-28,Bill,154-Day,154-Day,912796D71,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-28,Note,2-Year,2-Year,91282CAS0,No,01:00 PM,13:00:00,False,frn,short
+2020-10-28,Note,5-Year,5-Year,91282CAT8,No,01:00 PM,13:00:00,True,ok,short
+2020-10-29,Bill,4-Week,154-Day,9127964U0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-29,Bill,8-Week,154-Day,9127965F2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-10-29,Note,7-Year,7-Year,91282CAU5,No,01:00 PM,13:00:00,True,ok,short
+2020-11-02,Bill,13-Week,26-Week,9127963W7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-02,Bill,26-Week,26-Week,9127965A3,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-03,Bill,42-Day,26-Week,9127963K3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-03,Bill,119-Day,26-Week,9127964F3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-03,Bill,52-Week,52-Week,9127964W6,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-11-04,Bill,105-Day,154-Day,912796B99,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-04,Bill,154-Day,154-Day,912796D89,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-05,Bill,4-Week,154-Day,9127965B1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-05,Bill,8-Week,154-Day,912796A58,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-09,Bill,13-Week,26-Week,9127964C0,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-11-09,Note,3-Year,3-Year,91282CAW1,No,01:00 PM,13:00:00,True,ok,short
+2020-11-09,Bill,119-Day,26-Week,9127964M8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-09,Bill,26-Week,26-Week,912796A25,No,10:00 AM,10:00:00,False,type_bill,unknown
+2020-11-09,Bill,42-Day,26-Week,9127963L1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-10,Note,10-Year,10-Year,91282CAV3,No,01:00 PM,13:00:00,True,ok,long
+2020-11-12,Bill,8-Week,154-Day,912796A66,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-11-12,Bill,4-Week,154-Day,9127965C9,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-11-12,Bill,105-Day,154-Day,912796C23,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-12,Bill,154-Day,154-Day,912796D97,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-12,Bond,30-Year,30-Year,912810SS8,No,01:00 PM,13:00:00,True,ok,long
+2020-11-16,Bill,13-Week,26-Week,9127964D8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-16,Bill,26-Week,52-Week,9127962Y4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-17,Bill,119-Day,26-Week,9127964N6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-17,Bill,42-Day,52-Week,912796TY5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-18,Bill,105-Day,154-Day,912796C72,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-18,Bill,154-Day,154-Day,912796F20,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-18,Bond,20-Year,20-Year,912810ST6,No,01:00 PM,13:00:00,True,ok,long
+2020-11-19,Note,9-Year 8-Month,10-Year,912828ZZ6,Yes,01:00 PM,13:00:00,False,tips,long
+2020-11-19,Bill,4-Week,154-Day,9127965D7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-19,Bill,8-Week,154-Day,912796A74,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-23,Note,5-Year,5-Year,91282CAZ4,No,01:00 PM,13:00:00,True,ok,short
+2020-11-23,Bill,13-Week,52-Week,912796XE4,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-11-23,Note,2-Year,2-Year,91282CAX9,No,11:30 AM,11:30:00,True,ok,short
+2020-11-23,Bill,26-Week,26-Week,912796A33,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-24,Bill,41-Day,26-Week,9127963T4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-24,Bill,118-Day,52-Week,9127962F5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-24,Note,1-Year 11-Month,2-Year,91282CAS0,Yes,01:00 PM,13:00:00,False,frn,short
+2020-11-24,Note,7-Year,7-Year,91282CAY7,No,01:00 PM,13:00:00,True,ok,short
+2020-11-25,Bill,4-Week,154-Day,9127965F2,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-11-25,Bill,8-Week,154-Day,912796A82,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-11-25,Bill,105-Day,154-Day,912796C80,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-25,Bill,154-Day,154-Day,912796F79,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-30,Bill,13-Week,26-Week,9127964F3,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-11-30,Bill,26-Week,26-Week,912796A41,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-01,Bill,42-Day,26-Week,9127963U1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-01,Bill,119-Day,26-Week,9127964P1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-01,Bill,52-Week,52-Week,9127965G0,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-12-02,Bill,105-Day,154-Day,912796C98,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-02,Bill,154-Day,154-Day,912796F87,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-03,Bill,4-Week,154-Day,912796A58,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-03,Bill,8-Week,154-Day,912796B65,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-07,Bill,13-Week,26-Week,9127964M8,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-07,Bill,26-Week,26-Week,912796B24,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-08,Bill,42-Day,26-Week,9127963V9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-08,Bill,119-Day,26-Week,9127964X4,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-08,Note,3-Year,3-Year,91282CBA8,No,01:00 PM,13:00:00,True,ok,short
+2020-12-09,Bill,105-Day,154-Day,912796D22,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-09,Bill,154-Day,154-Day,912796F95,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-09,Note,9-Year 11-Month,10-Year,91282CAV3,Yes,01:00 PM,13:00:00,True,ok,long
+2020-12-10,Bill,4-Week,154-Day,912796A66,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-10,Bill,8-Week,154-Day,912796B73,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-10,Bond,29-Year 11-Month,30-Year,912810SS8,Yes,01:00 PM,13:00:00,True,ok,long
+2020-12-14,Bill,26-Week,52-Week,9127963H0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-14,Bill,13-Week,26-Week,9127964N6,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-15,Bill,42-Day,52-Week,912796UC1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-15,Bill,119-Day,26-Week,9127964Y2,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-16,Bill,105-Day,154-Day,912796D71,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-16,Bill,154-Day,154-Day,912796G29,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-17,Bill,4-Week,154-Day,912796A74,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-17,Bill,8-Week,154-Day,912796B81,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-17,Bill,8-Day,154-Day,9127965F2,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-12-21,Bond,19-Year 11-Month,20-Year,912810ST6,Yes,01:00 PM,13:00:00,True,ok,long
+2020-12-21,Bill,13-Week,52-Week,9127962F5,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-21,Bill,26-Week,26-Week,912796B32,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-22,Bill,119-Day,52-Week,9127962Q1,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-22,Note,4-Year 10-Month,5-Year,91282CAQ4,Yes,01:00 PM,13:00:00,False,tips,short
+2020-12-22,Bill,42-Day,26-Week,9127963W7,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-23,Bill,105-Day,154-Day,912796D89,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-23,Note,1-Year 10-Month,2-Year,91282CAS0,Yes,01:00 PM,13:00:00,False,frn,short
+2020-12-23,Bill,154-Day,154-Day,912796G37,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-24,Bill,8-Week,154-Day,912796B99,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-12-24,Bill,4-Week,154-Day,912796A82,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-12-28,Bill,13-Week,26-Week,9127964P1,Yes,01:00 PM,13:00:00,False,type_bill,unknown
+2020-12-28,Bill,26-Week,26-Week,912796B40,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-28,Note,2-Year,2-Year,91282CBD2,No,11:30 AM,11:30:00,True,ok,short
+2020-12-28,Note,5-Year,5-Year,91282CBC4,No,01:00 PM,13:00:00,True,ok,short
+2020-12-29,Note,7-Year,7-Year,91282CBB6,No,01:00 PM,13:00:00,True,ok,short
+2020-12-29,Bill,52-Week,52-Week,912796A90,No,01:00 PM,13:00:00,False,type_bill,unknown
+2020-12-29,Bill,42-Day,26-Week,9127964C0,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-29,Bill,119-Day,26-Week,9127964Z9,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-30,Bill,105-Day,154-Day,912796D97,Yes,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-30,Bill,154-Day,154-Day,912796G86,No,11:30 AM,11:30:00,False,type_bill,unknown
+2020-12-31,Bill,4-Week,154-Day,912796B65,Yes,10:00 AM,10:00:00,False,type_bill,unknown
+2020-12-31,Bill,8-Week,154-Day,912796C23,Yes,10:00 AM,10:00:00,False,type_bill,unknown

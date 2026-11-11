@@ -1,0 +1,28 @@
+----------------------------------------------------
+----------------------------------------------------
+√ File saved: data/raw_ustb/ustbondtrusd-m1-bid-2019.csv (18.24 MB)
+
+Download time: 58.0s
+
+downloaded ustbondtrusd-m1-bid-2019: 420698 lines; head: 1546387200000,144.812,144.812,144.812,144.812
+----------------------------------------------------
+----------------------------------------------------
+√ File saved: data/raw_ustb/ustbondtrusd-m1-ask-2019.csv (18.31 MB)
+
+Download time: 1m 36s
+
+downloaded ustbondtrusd-m1-ask-2019: 420698 lines; head: 1546387200000,146.734,146.734,146.734,146.734
+----------------------------------------------------
+----------------------------------------------------
+√ File saved: data/raw_ustb/ustbondtrusd-m1-bid-2020.csv (19.03 MB)
+
+Download time: 57.6s
+
+downloaded ustbondtrusd-m1-bid-2020: 438462 lines; head: 1577836800000,155.656,155.656,155.656,155.656
+----------------------------------------------------
+----------------------------------------------------
+√ File saved: data/raw_ustb/ustbondtrusd-m1-ask-2020.csv (19.05 MB)
+
+Download time: 1m 19s
+
+downloaded ustbondtrusd-m1-ask-2020: 438462 lines; head: 1577836800000,155.688,155.688,155.688,155.688
