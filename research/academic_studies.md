@@ -387,3 +387,27 @@ US session. That is unproven, which is exactly why E001 comes first.
   extraction summary: UNVERIFIED.
 - **Relevance:** Low now. Same home-hours mechanism as Breedon-Ranaldo (B14/E017, WEAK on val, line closed).
 - **Status:** VERIFIED (partial text)
+
+### Krohn, Vala, Uthemann & Yang (2025): Demand-Driven Risk Premia in Foreign Exchange and Bond Markets
+- **Source:** Bank of Canada Staff Working Paper 2025-29, last updated 2025-11-03, DOI [10.34989/swp-2025-29](https://doi.org/10.34989/swp-2025-29),
+  [PDF](https://www.bankofcanada.ca/wp-content/uploads/2025/11/swp2025-29.pdf); earlier version Jan 2025
+  ([FRBSF PDF](https://www.frbsf.org/wp-content/uploads/Krohn-Paper.pdf), 2002-2018, 944 auctions). Opened 2026-11-11 R085; title page,
+  abstract, introduction and data section read verbatim (first ~35%); tables read only via a model summary (UNVERIFIED).
+- **Finding (verbatim fragments):** Treasury demand shocks are measured as Treasury futures moves "from 10 minutes before the time of
+  the auction (i.e., say at 13:00) until 10 minutes after the auction" (ET); "the U.S. dollar systematically depreciates following
+  positive Treasury demand shocks", "approximately 2 basis points" in the window (2004-2024, 1,395 auctions); "U.S. dollar depreciation
+  peaks at nearly 20 basis points around 10 days after an auction", "gradually reverting to insignificance after 14 days". Non-auction
+  placebo insignificant. EUR coefficient (2.12 bp) summary-only: UNVERIFIED. No trading rule, costs or OOS test.
+- **Relevance:** Medium. A published lagged USD response to a scheduled, frequent event -> backlog B40/B41 (EUR/USD window move as the
+  shock proxy; Dukascopy US T-Bond CFD minute data only from 2018-12).
+- **Status:** VERIFIED (partial text)
+
+### Krohn, Mueller & Whelan (2022 slides): Foreign Exchange Fixings and Returns Around the Clock
+- **Source:** BIS-Banca d'Italia-ECB 12th Workshop on Exchange Rates, Basel, 13 Dec 2022,
+  [slides](https://www.bis.org/events/221213_bis_bdi_ecb_exchange_rates/mueller.pdf) (opened in full 2026-11-11 R085). Adds to the JF
+  2024 entry above (not a replacement).
+- **Finding:** EUR vs USD mean returns by fix window, bp, 1999-2019 (ET): pre-Tokyo 17:00-20:55 -1.80, post-Tokyo 20:55-02:00 +2.34,
+  pre-ECB 02:00-08:15 -3.52, ECB-London 08:15-11:00 +0.63, post-London 11:00-17:00 +2.73, close-to-close +0.37. "Estimated transaction
+  cost-adjusted returns to liquidity provision are positive and significant" (verbatim; liquidity-demander returns are not).
+- **Relevance:** Medium, but every window is already seen on dev and val in this repo; only OOS is clean (human decision).
+- **Status:** VERIFIED (slides)

@@ -822,3 +822,18 @@ Why each run chose what it did, and any judgement calls.
   (not < 0.05) -> WEAK. LEAD condition 1 fails (and SPEC 4 net -0.425); no notification. B38 closed WEAK, B39 closed unearned per
   the pre-registered "what follows". Descriptive slices (EDT, mid |r1| tercile) not turned into new tests.
 - **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items).
+
+## 2026-11-11 R085 (unattended)
+- **State:** last research-batch run 42939744082 (E038) completed and recorded (R084, ddcd239); no run queued or in progress (latest 5
+  runs all completed success). No `ready` backlog item (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). pytest 308
+  passed. Workspace clone was on a detached HEAD; checked out `main` and pulled.
+- **Choice:** B40 (10-date hold) + B41 (next-date hold): Treasury-auction demand shock -> EUR/USD continuation, signal = sign of the
+  EUR/USD move T-10 -> T+10 min around the competitive close, dev, one experiment, 2 trials, p < 0.025 each; B42 val confirmation
+  (blocked). Reason: Krohn-Vala-Uthemann-Yang (2025) report a published *lagged* USD response (lessons R081) over a multi-day horizon
+  with a large-SD target (lesson R084), on ~70 events a year; needs only an official auction calendar (Fiscal Data API, phase 1 on the
+  runner, gate and stop rule fixed in the backlog). The paper's Treasury-futures shock cannot be measured on most of dev (Dukascopy
+  US T-Bond CFD minute data start 2018-12-18), so the EUR/USD window move is the stated proxy.
+- **Not added:** Raza et al. weekly momentum (re-tests B16 with a shorter lookback; E019 requires fresh data + human decision);
+  Valentin post-ECB drift (equities); Fanta ECB communication (no lasting EUR/USD move); Kloks et al. (swaps); EXFormer (ML model);
+  KMW EUR window means (all windows seen on dev/val; OOS only, human decision).
+- **Next run:** pre-register B40+B41 as E039 (phase 1 auction-calendar fetch on the runner first).

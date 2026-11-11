@@ -748,3 +748,68 @@ Trial count so far on dev: **247** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 ### B39: Intraday momentum into the 17:00 NY roll, val confirmation (signal test, val only) · `done` (2026-11-11 R084: closed unearned, 0 trials; B38 WEAK on dev (E038). Was: earned only if B38 returns SIGNAL on dev)
 - B38 unchanged on val only (2021-01-21 .. 2023-06-30, ~620 dates), own pre-registration, 1 trial, p < 0.05, same 1.0-pip bar and
   block-20 bootstrap. If B38 is not SIGNAL, B39 closes unearned with 0 trials.
+
+### Refill note R085 (not an item)
+- Sources opened R085 (web-fetch; first ~25-40% of each PDF verbatim, the rest model-summarised and treated as UNVERIFIED):
+  Krohn, Vala, Uthemann & Yang, "Demand-Driven Risk Premia in Foreign Exchange and Bond Markets" (Bank of Canada SWP 2025-29, last
+  updated 2025-11-03, DOI 10.34989/swp-2025-29, https://www.bankofcanada.ca/wp-content/uploads/2025/11/swp2025-29.pdf; earlier version
+  Jan 2025 https://www.frbsf.org/wp-content/uploads/Krohn-Paper.pdf); Krohn, Mueller & Whelan BIS workshop slides (13 Dec 2022,
+  https://www.bis.org/events/221213_bis_bdi_ecb_exchange_rates/mueller.pdf, full); Raza, Marshall & Visaltanachoti (2014, JIMF 45,
+  38-60, DOI 10.1016/j.jimonfin.2014.02.009, IDEAS abstract); Valentin (2022, "The Post-ECB Announcement Drift", AUT PDF, partial);
+  Fanta (2025, IES WP 2025/23, IDEAS abstract); Kloks-Mattille-Ranaldo "Hunting for Dollars" (slides + 2025 draft, Banxico PDFs);
+  Liu-Slepaczuk-Tang EXFormer (arXiv 2512.12727, partial).
+- Not added: Raza et al. weekly currency momentum (cross-sectional 63-currency portfolios, no EUR result; a single-pair version is a
+  shorter-lookback re-test of B16/E019, whose conclusion requires fresh data and a human decision). Valentin: equity (Euro Stoxx) drift,
+  no FX series. Fanta: ECB communication gives "no lasting directional moves" in EUR/USD. Kloks et al.: FX swaps/basis, not spot.
+  EXFormer: a fitted ML model with the window chosen on its own test set; not a pre-registrable mechanism. KMW slides give EUR window
+  means verbatim (bp, 1999-2019: pre-Tokyo -1.80, post-Tokyo +2.34, pre-ECB -3.52, ECB-London +0.63, post-London +2.73), but every
+  window is already seen on dev and val (refill notes R065, R074; E024/E025, E032): only OOS is clean, a human decision. Ranaldo holiday
+  section still not read verbatim (UNVERIFIED).
+- Why B40/B41: KVUY report a published *lagged* USD response (lesson R081) with a large-SD target (lesson R084): "U.S. dollar
+  depreciation peaks at nearly 20 basis points around 10 days after an auction" (verbatim), ~70 coupon auctions a year (1,395 in
+  2004-2024, verbatim), so dev has a few hundred events. Data check R085: dukascopy-node 1.51.1 lists `ustbondtrusd` (US T-Bond CFD)
+  but minute candles start 2018-12-18 (package metadata), so the paper's Treasury-futures shock cannot be measured on most of dev; the
+  primary signal is the EUR/USD move in the paper's own auction window (the FX side of the same shock; the paper reports a significant
+  same-window FX response, EUR figure summary-only). That proxy is the one variable that differs from the paper.
+
+### B40: Treasury-auction demand shock -> EUR/USD continuation, 10-date hold (signal test, dev) · `ready` (Added 2026-11-11 R085 refill; one experiment with B41, 2 trials)
+- **Mechanism [PUB, partial text]:** Krohn, Vala, Uthemann & Yang (2025, BoC SWP 2025-29): a positive Treasury demand shock at a US
+  coupon auction (Treasury futures up in a window "from 10 minutes before the time of the auction (i.e., say at 13:00) until 10 minutes
+  after", verbatim, Eastern Time) is followed by USD depreciation against G9 currencies that "peaks at nearly 20 basis points around 10
+  days after an auction", "gradually reverting to insignificance after 14 days" (verbatim, local projections). Same-window FX response
+  ~2 bp (verbatim, pooled); EUR-specific coefficient (2.12 bp) seen only in a summary: UNVERIFIED. The paper reports no trading rule,
+  costs or OOS test. Prior: weak to moderate (proxy signal is noisy; 10-date holds overlap).
+- **Phase 1 (data, on the runner):** US Treasury auction calendar from the Fiscal Data API `v1/accounting/od/auctions_query`
+  (https://api.fiscaldata.treasury.gov; field names incl. `auction_date`, `security_type`, `security_term`, `closing_time_comp` are
+  UNVERIFIED until the runner reads them). Keep nominal Note and Bond auctions (incl. reopenings; exclude Bills, TIPS, FRNs), 2015-2023.
+  Gate (fixed now): 50-110 qualifying auctions per full year and a parsed competitive close time for >= 95%; otherwise fix the parser
+  once or block. If the API refuses the runner (403/timeouts on 2 attempts), the item is `blocked` with 0 trials; no other source is
+  substituted without a human decision. Also download `ustbondtrusd` minute bid/ask (descriptive only; its failure does not block).
+- **Signal (fixed now, NY clock, DST-aware):** T = competitive close time on auction date D (America/New_York). s = sign(EUR/USD mid at
+  T+10 min - mid at T-10 min) (quotes = open of the first bar in [t, t+5 min), E011 rule). EUR up = USD down = positive demand shock;
+  position s (continuation). Two auctions with the same T on the same date form one event; distinct times on one date are separate
+  events. s = 0 skipped (counted).
+- **Hold (B40):** enter at T+10 min (spread at entry > 2.0 pips -> skipped, counted), exit at 16:00 NY on the 10th trading date after D
+  (`sessions.trading_date`, 16:00 NY quote as in E019). Signed return per event in pips. Events whose exit date leaves dev are dropped.
+- **Decision rule (draft, per arm):** SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap 95% CI lower > 0 (blocks of 20
+  consecutive events in time order, 2000 draws, seed 0) AND one-sided t p < 0.025 (2 arms in one experiment). WEAK if mean > 0 and
+  (CI lower > 0 or p < 0.025); else NONE. < 150 events -> NONE (insufficient sample). A SIGNAL in either arm earns B42.
+- **Power note:** 10-date SD ~140 pips; events overlap (~3-4 open at a time), effective n maybe ~150 -> SE ~10 pips; the published
+  peak (~20 bp ~ 22 pips per 1-SD shock) is detectable only if the EUR/USD proxy captures the shock sign well. A NONE does not rule out
+  the paper's effect measured with Treasury futures.
+- **Descriptive (not in rule):** by tenor (2/3/5/7 vs 10/20/30-year); hit rate; OLS slope on the window return; 2019-2020 sub-sample
+  with the `ustbondtrusd` window sign as the signal and the sign agreement between the two signals; non-auction control (same T on
+  the same weekday one week earlier, if not itself an auction date); SPEC 4 net and costs x1.5 per event; by year.
+- **Contamination note:** no auction-date conditioning has been computed on dev. E009 hour cells (13:00 NY) are unconditional; E026 used
+  08:30 NY windows; E019 used 16:00 -> 16:00 trend. Dev usable.
+- **Calendar label:** Treasury auction (scheduled supply event); not a fix, not a data release.
+- **Data:** auction calendar (phase 1, runner); EUR/USD 1-minute bars in repo; `ustbondtrusd` descriptive only.
+
+### B41: Treasury-auction demand shock -> EUR/USD continuation, next-date hold (signal test, dev) · `ready` (Added 2026-11-11 R085 refill; same experiment as B40)
+- Same events, signal, entry and rule as B40 (second trial, p < 0.025); exit at 16:00 NY on the first trading date after D. Tests whether
+  the response starts early (KVUY local projections build over days; per-day path seen only in a figure, not read: UNVERIFIED).
+  Lower SD (~45 pips, little overlap), so a small but real early drift is easier to see; the 1-pip bar applies.
+
+### B42: Treasury-auction demand shock -> EUR/USD, val confirmation (signal test, val only) · `blocked` (Added 2026-11-11 R085; earned only if B40 or B41 returns SIGNAL on dev)
+- The SIGNAL arm(s), unchanged, on val only (2021-01-21 .. 2023-06-30, auction calendar for val dates), own pre-registration, 1 trial
+  per arm, p < 0.05 (or < 0.025 if both arms). If neither arm is SIGNAL, B42 closes unearned with 0 trials.
