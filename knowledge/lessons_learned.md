@@ -335,3 +335,16 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   magnitude larger than published futures effects. Future refills should prefer windows whose SD is large relative to costs.
 - **Action:** B38 closed WEAK (rejected_hypotheses.md), B39 closed unearned. EDT / mid-tercile slices are post-hoc and not re-tested.
   Next: backlog refill.
+
+### 2026-11-11 R087: an EUR/USD proxy for a bond-market shock carries no lagged edge (E039)
+- **Context:** E039 (B40/B41), Krohn-Vala-Uthemann-Yang (2025) Treasury-auction demand shock, proxied by EUR/USD's own move in the
+  auction window, dev only, 2 trials.
+- **Observation:** both arms NONE (10-date +1.426 pips, CI (-11.651, 11.979); 1-date +1.655, CI (-3.106, 7.394)). Where the Treasury
+  CFD exists (2019-2020), the EUR/USD window sign agreed with the CFD sign only 59% of the time.
+- **Evidence label:** [EXP]
+- **Lesson:** a 20-minute FX move around a bond event is mostly FX noise, not the bond shock; when a paper's signal lives in another
+  market, a proxy built from EUR/USD itself dilutes it close to a coin flip. Also, a multi-day hold has an SD (~176 pips here) that
+  needs a far larger effect than a 1-pip bar to show up with ~430 events. Future refills should either get the source-market signal
+  over the full dev span or skip the idea.
+- **Action:** B40/B41 closed NONE (rejected_hypotheses.md), B42 closed unearned. Long-tenor slice is post-hoc and not re-tested.
+  Next: backlog refill.

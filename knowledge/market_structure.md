@@ -70,3 +70,10 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   16:25 NY and 0.5 / 1.0 at 16:55 NY.
 - Continuation of the rest-of-day move (17:00 NY start of D -> 16:25 NY) into 16:25 -> 16:55: +0.255 pips signed, CI (0.023, 0.501)
   (WEAK, sub-cost). See experiments/2026-11-11_E038_roll_momentum.
+
+### 2026-11-11 R087: EUR/USD around US Treasury coupon auctions (E039, dev) [EXP]
+- 440 nominal Note/Bond auction events 2015-2020 (72-80 per year; competitive close 13:00 NY for 414, 11:30 NY for 24).
+- Auction window T-10 -> T+10 min: SD 7.943 pips; share up 0.514. In 2019-2020 its sign agrees with the Treasury CFD window sign 59%
+  of the time.
+- The window sign does not predict EUR/USD to 16:00 NY next trading date (+1.655 pips, CI (-3.106, 7.394)) or 10 trading dates
+  later (+1.426, CI (-11.651, 11.979)). See experiments/2026-11-11_E039_treasury_auction.

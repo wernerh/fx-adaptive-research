@@ -847,3 +847,12 @@ Why each run chose what it did, and any judgement calls.
   Phase 1 (auction calendar from the Fiscal Data API, dev dates only) runs on the runner in the same batch; the run script reads the
   fetch status and gate and records BLOCKED (0 trials) on failure. ustbondtrusd 2019-2020 download is descriptive only.
 - **Next run:** collect the research-batch outputs for E039 (or diagnose phase 1 if BLOCKED; parser may be fixed once).
+
+## 2026-11-11 R087 (unattended)
+- **State:** research-batch run 42960104359 (E039) completed success; outputs committed by github-actions[bot] (a04cc2c), not yet
+  recorded. No run queued or in progress. Workspace clone was on a detached HEAD; checked out `main` and pulled.
+- **Choice:** collect E039 (protocol priority 1). Applied `treasury_auction.decide` exactly as pre-registered (R086): calendar gate
+  pass; B40 NONE, B41 NONE. No rule or threshold changed.
+- **Action:** E039 recorded; B40/B41 `done`, B42 closed unearned (0 trials). Trials dev 249, val 9, total 258. No lead, no
+  notification.
+- **Next run:** no `ready` backlog item -> backlog refill.

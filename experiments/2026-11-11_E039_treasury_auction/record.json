@@ -3,14 +3,579 @@
   "date": "2026-11-11",
   "instrument": "EURUSD",
   "hypothesis": "B40: s x (EUR/USD mid 16:00 NY on the 10th trading date after D - mid T+10 min) > 1 pip per dev Treasury coupon-auction event; B41: same with exit on the 1st trading date after D; s = sign(EUR/USD mid T+10 - mid T-10 min), T = competitive close time (NY) of nominal Note/Bond auctions on D (Krohn-Vala-Uthemann-Yang 2025, EUR/USD proxy for the Treasury-futures shock)",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": null,
   "variable_changed": "new conditioning event: US Treasury coupon auctions (auction calendar from Fiscal Data API, phase 1 on the runner)",
   "decision_rule": "Per arm: < 150 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 events, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.025; WEAK if mean > 0 and (CI lower > 0 or t p < 0.025); else NONE. Entry skipped if spread at T+10 > 2.0 pips. Calendar gate: 50-110 qualifying auctions per full dev year and >= 95% parsed close times, else BLOCKED (parser fix once). API refusal on 2 attempts -> BLOCKED, 0 trials. 2 dev trials. A SIGNAL in either arm earns B42 (val).",
   "n_trials": 2,
-  "status": "preregistered",
-  "results": null,
+  "status": "complete",
+  "results": {
+    "result_b40": {
+      "n": 431,
+      "mean_pips": 1.426,
+      "median_pips": 7.65,
+      "sd_pips": 176.469,
+      "n_nonzero": 431,
+      "hits": 226,
+      "hit_rate": 0.5244,
+      "binom_p_one_sided": 0.16769,
+      "t_stat": 0.168,
+      "t_p_one_sided": 0.4334,
+      "mean_ci95_block_boot": [
+        -11.651,
+        11.979
+      ],
+      "decision": "NONE",
+      "lead_cost_gate": true
+    },
+    "result_b41": {
+      "n": 437,
+      "mean_pips": 1.655,
+      "median_pips": 2.95,
+      "sd_pips": 57.337,
+      "n_nonzero": 437,
+      "hits": 227,
+      "hit_rate": 0.5195,
+      "binom_p_one_sided": 0.22204,
+      "t_stat": 0.603,
+      "t_p_one_sided": 0.2733,
+      "mean_ci95_block_boot": [
+        -3.106,
+        7.394
+      ],
+      "decision": "NONE",
+      "lead_cost_gate": true
+    },
+    "counts": {
+      "B40": {
+        "events": 440,
+        "not_trading_date": 0,
+        "missing_window": 0,
+        "zero_signal": 1,
+        "entry_skipped_spread": 0,
+        "exit_outside_dev": 4,
+        "missing_exit": 4,
+        "tested": 431
+      },
+      "B41": {
+        "events": 440,
+        "not_trading_date": 0,
+        "missing_window": 0,
+        "zero_signal": 1,
+        "entry_skipped_spread": 0,
+        "exit_outside_dev": 0,
+        "missing_exit": 2,
+        "tested": 437
+      }
+    },
+    "cost_check": {
+      "B40": {
+        "n": 431,
+        "mean_signed_mid_pips": 1.426,
+        "mean_net_bidask_pips": 1.157,
+        "mean_net_spec4_pips": 0.957,
+        "mean_net_costs_x1_5_pips": 0.722,
+        "median_spread_entry_pips": 0.3,
+        "median_spread_exit_pips": 0.2
+      },
+      "B41": {
+        "n": 437,
+        "mean_signed_mid_pips": 1.655,
+        "mean_net_bidask_pips": 1.386,
+        "mean_net_spec4_pips": 1.186,
+        "mean_net_costs_x1_5_pips": 0.952,
+        "median_spread_entry_pips": 0.3,
+        "median_spread_exit_pips": 0.2
+      }
+    },
+    "descriptive": {
+      "events_total": 440,
+      "multi_auction_events": 1,
+      "share_long": 0.514,
+      "window_pips_sd": 7.943,
+      "close_times": {
+        "13:00:00": 414,
+        "11:30:00": 24,
+        "11:00:00": 1,
+        "10:00:00": 1
+      },
+      "B40_slope_ret_on_window": {
+        "n": 431,
+        "slope": 1.0284,
+        "t_stat": 0.968,
+        "p_two_sided": 0.3337
+      },
+      "B40_tenor_short": {
+        "n": 280,
+        "mean_pips": 9.484,
+        "median_pips": 11.175,
+        "sd_pips": 177.341,
+        "n_nonzero": 280,
+        "hits": 148,
+        "hit_rate": 0.5286,
+        "binom_p_one_sided": 0.18503,
+        "t_stat": 0.895,
+        "t_p_one_sided": 0.1858,
+        "mean_ci95_block_boot": [
+          -6.377,
+          25.755
+        ]
+      },
+      "B40_tenor_long": {
+        "n": 150,
+        "mean_pips": -13.461,
+        "median_pips": 3.95,
+        "sd_pips": 175.022,
+        "n_nonzero": 150,
+        "hits": 78,
+        "hit_rate": 0.52,
+        "binom_p_one_sided": 0.34162,
+        "t_stat": -0.942,
+        "t_p_one_sided": 0.8261,
+        "mean_ci95_block_boot": [
+          -33.844,
+          -0.239
+        ]
+      },
+      "B40_tenor_mixed": {
+        "n": 1,
+        "mean_pips": -22.0
+      },
+      "B40_unconditional_long": {
+        "n": 431,
+        "mean_pips": 1.071,
+        "median_pips": -5.3,
+        "sd_pips": 176.471,
+        "n_nonzero": 431,
+        "hits": 209,
+        "hit_rate": 0.4849,
+        "binom_p_one_sided": 0.74993,
+        "t_stat": 0.126,
+        "t_p_one_sided": 0.4499,
+        "mean_ci95_block_boot": [
+          -20.567,
+          26.861
+        ]
+      },
+      "B41_slope_ret_on_window": {
+        "n": 437,
+        "slope": 0.0516,
+        "t_stat": 0.15,
+        "p_two_sided": 0.8811
+      },
+      "B41_tenor_short": {
+        "n": 284,
+        "mean_pips": 2.521,
+        "median_pips": 3.575,
+        "sd_pips": 58.027,
+        "n_nonzero": 284,
+        "hits": 147,
+        "hit_rate": 0.5176,
+        "binom_p_one_sided": 0.29669,
+        "t_stat": 0.732,
+        "t_p_one_sided": 0.2323,
+        "mean_ci95_block_boot": [
+          -2.327,
+          10.571
+        ]
+      },
+      "B41_tenor_long": {
+        "n": 152,
+        "mean_pips": -0.073,
+        "median_pips": 2.775,
+        "sd_pips": 56.353,
+        "n_nonzero": 152,
+        "hits": 79,
+        "hit_rate": 0.5197,
+        "binom_p_one_sided": 0.3426,
+        "t_stat": -0.016,
+        "t_p_one_sided": 0.5064,
+        "mean_ci95_block_boot": [
+          -8.614,
+          9.445
+        ]
+      },
+      "B41_tenor_mixed": {
+        "n": 1,
+        "mean_pips": 18.25
+      },
+      "B41_unconditional_long": {
+        "n": 437,
+        "mean_pips": 0.742,
+        "median_pips": 1.4,
+        "sd_pips": 57.356,
+        "n_nonzero": 437,
+        "hits": 222,
+        "hit_rate": 0.508,
+        "binom_p_one_sided": 0.38707,
+        "t_stat": 0.27,
+        "t_p_one_sided": 0.3935,
+        "mean_ci95_block_boot": [
+          -4.423,
+          7.05
+        ]
+      },
+      "B40_control_week_earlier": {
+        "n": 422,
+        "mean_pips": -1.249,
+        "median_pips": 3.2,
+        "sd_pips": 171.648,
+        "n_nonzero": 421,
+        "hits": 215,
+        "hit_rate": 0.5107,
+        "binom_p_one_sided": 0.34833,
+        "t_stat": -0.15,
+        "t_p_one_sided": 0.5594,
+        "mean_ci95_block_boot": [
+          -19.633,
+          15.616
+        ]
+      },
+      "B41_control_week_earlier": {
+        "n": 423,
+        "mean_pips": -3.494,
+        "median_pips": -3.9,
+        "sd_pips": 64.356,
+        "n_nonzero": 423,
+        "hits": 203,
+        "hit_rate": 0.4799,
+        "binom_p_one_sided": 0.80925,
+        "t_stat": -1.117,
+        "t_p_one_sided": 0.8676,
+        "mean_ci95_block_boot": [
+          -9.72,
+          2.151
+        ]
+      },
+      "ustbondtrusd": {
+        "status": "ok",
+        "events_with_ustb": 144,
+        "sign_agreement_with_eurusd": 0.59,
+        "B40_eurusd_signal_same_events": {
+          "n": 139,
+          "mean_pips": 1.024,
+          "median_pips": 5.3,
+          "sd_pips": 139.15,
+          "n_nonzero": 139,
+          "hits": 74,
+          "hit_rate": 0.5324,
+          "binom_p_one_sided": 0.24878,
+          "t_stat": 0.087,
+          "t_p_one_sided": 0.4655,
+          "mean_ci95_block_boot": [
+            -14.342,
+            18.816
+          ]
+        },
+        "B40_ustb_signal": {
+          "n": 139,
+          "mean_pips": -3.927,
+          "median_pips": 1.05,
+          "sd_pips": 139.098,
+          "n_nonzero": 139,
+          "hits": 71,
+          "hit_rate": 0.5108,
+          "binom_p_one_sided": 0.43269,
+          "t_stat": -0.333,
+          "t_p_one_sided": 0.6301,
+          "mean_ci95_block_boot": [
+            -12.127,
+            15.582
+          ]
+        },
+        "B41_eurusd_signal_same_events": {
+          "n": 143,
+          "mean_pips": 1.677,
+          "median_pips": -1.35,
+          "sd_pips": 45.955,
+          "n_nonzero": 143,
+          "hits": 69,
+          "hit_rate": 0.4825,
+          "binom_p_one_sided": 0.692,
+          "t_stat": 0.436,
+          "t_p_one_sided": 0.3316,
+          "mean_ci95_block_boot": [
+            -4.005,
+            9.962
+          ]
+        },
+        "B41_ustb_signal": {
+          "n": 143,
+          "mean_pips": -0.668,
+          "median_pips": 0.7,
+          "sd_pips": 45.981,
+          "n_nonzero": 143,
+          "hits": 72,
+          "hit_rate": 0.5035,
+          "binom_p_one_sided": 0.5,
+          "t_stat": -0.174,
+          "t_p_one_sided": 0.5688,
+          "mean_ci95_block_boot": [
+            -7.51,
+            6.001
+          ]
+        }
+      }
+    },
+    "by_year": {
+      "B40": [
+        {
+          "year": 2015,
+          "n": 72,
+          "mean": 16.497,
+          "hit": 0.486
+        },
+        {
+          "year": 2016,
+          "n": 71,
+          "mean": 5.561,
+          "hit": 0.521
+        },
+        {
+          "year": 2017,
+          "n": 70,
+          "mean": 12.186,
+          "hit": 0.557
+        },
+        {
+          "year": 2018,
+          "n": 71,
+          "mean": -24.525,
+          "hit": 0.535
+        },
+        {
+          "year": 2019,
+          "n": 73,
+          "mean": 3.643,
+          "hit": 0.534
+        },
+        {
+          "year": 2020,
+          "n": 74,
+          "mean": -4.672,
+          "hit": 0.514
+        }
+      ],
+      "B41": [
+        {
+          "year": 2015,
+          "n": 72,
+          "mean": -0.976,
+          "hit": 0.528
+        },
+        {
+          "year": 2016,
+          "n": 71,
+          "mean": 6.26,
+          "hit": 0.592
+        },
+        {
+          "year": 2017,
+          "n": 72,
+          "mean": 8.087,
+          "hit": 0.625
+        },
+        {
+          "year": 2018,
+          "n": 71,
+          "mean": -2.854,
+          "hit": 0.437
+        },
+        {
+          "year": 2019,
+          "n": 72,
+          "mean": -7.467,
+          "hit": 0.417
+        },
+        {
+          "year": 2020,
+          "n": 79,
+          "mean": 6.418,
+          "hit": 0.519
+        }
+      ]
+    },
+    "gate": {
+      "qualifying_per_year": {
+        "2015": 72,
+        "2016": 72,
+        "2017": 72,
+        "2018": 72,
+        "2019": 73,
+        "2020": 80
+      },
+      "parsed_close_share": 1.0,
+      "n_qualifying": 441,
+      "pass": true
+    },
+    "calendar_diag": {
+      "reasons": {
+        "type_bill": 1340,
+        "ok": 441,
+        "tips": 73,
+        "frn": 73
+      },
+      "close_time_values": {
+        "01:00 PM": 415,
+        "11:30 AM": 24,
+        "11:00 AM": 1,
+        "10:00 AM": 1
+      },
+      "unparsed_examples": [],
+      "security_types": {
+        "Bill": 1340,
+        "Note": 491,
+        "Bond": 96
+      }
+    },
+    "fetch_fields": [
+      "record_date",
+      "cusip",
+      "security_type",
+      "security_term",
+      "auction_date",
+      "issue_date",
+      "maturity_date",
+      "price_per100",
+      "accrued_int_per100",
+      "accrued_int_per1000",
+      "adj_accrued_int_per1000",
+      "adj_price",
+      "allocation_pctage",
+      "allocation_pctage_decimals",
+      "announcemtd_cusip",
+      "announcemt_date",
+      "auction_format",
+      "avg_med_discnt_rate",
+      "avg_med_investment_rate",
+      "avg_med_price",
+      "avg_med_discnt_margin",
+      "avg_med_yield",
+      "back_dated",
+      "back_dated_date",
+      "bid_to_cover_ratio",
+      "callable",
+      "call_date",
+      "called_date",
+      "cash_management_bill_cmb",
+      "closing_time_comp",
+      "closing_time_noncomp",
+      "comp_accepted",
+      "comp_bid_decimals",
+      "comp_tendered",
+      "comp_tenders_accepted",
+      "corpus_cusip",
+      "cpi_base_reference_period",
+      "currently_outstanding",
+      "dated_date",
+      "direct_bidder_accepted",
+      "direct_bidder_tendered",
+      "est_pub_held_mat_by_type_amt",
+      "fima_included",
+      "fima_noncomp_accepted",
+      "fima_noncomp_tendered",
+      "first_int_period",
+      "first_int_payment_date",
+      "floating_rate",
+      "frn_index_determination_date",
+      "frn_index_determination_rate",
+      "high_discnt_rate",
+      "high_investment_rate",
+      "high_price",
+      "high_discnt_margin",
+      "high_yield",
+      "index_ratio_on_issue_date",
+      "indirect_bidder_accepted",
+      "indirect_bidder_tendered",
+      "int_payment_frequency",
+      "int_rate",
+      "low_discnt_rate",
+      "low_investment_rate",
+      "low_price",
+      "low_discnt_margin",
+      "low_yield",
+      "mat_date",
+      "max_comp_award",
+      "max_noncomp_award",
+      "max_single_bid",
+      "min_bid_amt",
+      "min_strip_amt",
+      "min_to_issue",
+      "multiples_to_bid",
+      "multiples_to_issue",
+      "nlp_exclusion_amt",
+      "nlp_reporting_threshold",
+      "noncomp_accepted",
+      "noncomp_tenders_accepted",
+      "offering_amt",
+      "original_cusip",
+      "original_dated_date",
+      "original_issue_date",
+      "original_security_term",
+      "pdf_filenm_announcemt",
+      "pdf_filenm_comp_results",
+      "pdf_filenm_noncomp_results",
+      "primary_dealer_accepted",
+      "primary_dealer_tendered",
+      "ref_cpi_on_dated_date",
+      "ref_cpi_on_issue_date",
+      "reopening",
+      "security_term_day_month",
+      "security_term_week_year",
+      "series",
+      "soma_accepted",
+      "soma_holdings",
+      "soma_included",
+      "soma_tendered",
+      "spread",
+      "std_int_payment_per1000",
+      "strippable",
+      "tiin_conversion_factor_per1000",
+      "total_accepted",
+      "total_tendered",
+      "treas_retail_accepted",
+      "treas_retail_tenders_accepted",
+      "unadj_accrued_int_per1000",
+      "unadj_price",
+      "xml_filenm_announcemt",
+      "xml_filenm_comp_results",
+      "inflation_index_security",
+      "tint_cusip_1",
+      "tint_cusip_2",
+      "pdf_filenm_spec_announcemt"
+    ],
+    "first_event": "2015-01-12",
+    "last_event": "2020-12-29",
+    "decision": {
+      "B40": "NONE",
+      "B41": "NONE"
+    },
+    "n_trials": 2,
+    "blocks": [
+      "dev"
+    ],
+    "arms": {
+      "B40": 10,
+      "B41": 1
+    },
+    "boot_block": 20,
+    "alpha_t": 0.025
+  },
   "command": "python scripts/fetch_treasury_auctions.py; bash scripts/download_dukascopy_ustb.sh (descriptive, failure tolerated); python scripts/run_e039_treasury_auction.py | tee backtests/validation_reports/E039_results.txt",
-  "preregistered_in": "R086"
+  "preregistered_in": "R086",
+  "decision": {
+    "B40": "NONE",
+    "B41": "NONE"
+  },
+  "lead": false,
+  "next_experiment": "none (B40/B41 closed NONE, B42 closed unearned); backlog refill next (no other ready item)",
+  "run": {
+    "workflow_run_id": 42960104359,
+    "outputs_commit": "a04cc2c",
+    "conclusion": "success"
+  },
+  "recorded_in": "R087"
 }
