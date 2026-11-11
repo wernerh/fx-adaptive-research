@@ -939,3 +939,16 @@ Why each run chose what it did, and any judgement calls.
   < 0, so neither SIGNAL nor WEAK). No rule or threshold changed; the opposite-sign continuation mean is recorded as descriptive only.
 - **Action:** E042 recorded; B46 `done`, B47 closed unearned (0 trials). Trials dev 252, val 9, total 261. No lead, no notification.
 - **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).
+
+## 2026-11-11 R096 (unattended)
+- **State:** research-batch run 43021489775 (E042) recorded in R095; latest 5 runs all completed success, none queued or in progress.
+  No `ready` backlog item -> protocol step 4 (refill). pytest 348 passed.
+- **Literature pass:** opened (web-fetch) Xiao-Yin-Zhao 2020 JFR (abstract + intro), Frömmel-Han-Van Gysegem 2015 EMFT (abstract),
+  Erdemlioglu-Laurent-Neely 2012 FRB StL WP (method), Kumar 2015 IJMF, Ştefănescu-Dumitriu 2020 MPRA, Vasileiou 2024, Aydoğan-Booth
+  2003 (abstracts), Caporin-Shahzad (PDF). Entries in research/academic_studies.md.
+- **Choice:** add B48 (post-jump reversal: 5-min Lee-Mykland jumps, K 270, alpha 0.01 threshold 5.395, |r| >= 5 pips, fade
+  -sign(r) from t+10 to t+70 min, dev, 1 trial, date-cluster bootstrap, p < 0.05, < 300 events NONE) and B49 val confirmation
+  (blocked). New event-time family with a large sample and no external data; lesson R095 says no more lagged daily cross-market items.
+- **Not chosen:** turn-of-month/year (INR/RON/ZAR/TRY only; ~72 dev events; lesson R090), volatility-only jump papers.
+- **Trials:** unchanged (dev 252, val 9, total 261).
+- **Next run:** pre-register B48 as E043.

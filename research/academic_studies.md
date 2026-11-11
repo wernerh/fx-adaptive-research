@@ -469,3 +469,49 @@ US session. That is unproven, which is exactly why E001 comes first.
 - Krohn, Mueller & Whelan (BoC SWP 2021-48, [PDF](https://www.bankofcanada.ca/wp-content/uploads/2021/10/swp2021-48.pdf), ~35%
   verbatim): "The U.S. dollar systematically appreciates against all currencies ahead of the three major currency fixes" (verbatim);
   same windows as the existing KMW entries; already tested (E007, E010, E011, E022-E025, E030-E032). Not added.
+
+### Xiao, Yin & Zhao (2020): Jumps, News, and Subsequent Return Dynamics: An Intraday Study
+- **Source:** The Journal of Financial Research 43(3), 705-731, Fall 2020, DOI 10.1111/jfir.12223,
+  [vLex reproduction](https://law-journals-books.vlex.com/vid/jumps-news-and-subsequent-855590156) (abstract + introduction opened
+  2026-11-11 R096; jump-test section not read, method UNVERIFIED).
+- **Finding:** "No-news jumps are followed by significant return reversals for at least 60 minutes" and "Scheduled-news jumps are
+  followed by reversals, whereas unscheduled-news jumps are followed by momentum" (verbatim). 212,439 jumps across 205 US equity-index
+  ETFs, 2002-2016; reversal "much stronger than the reversal following a normal 15-minute interval that does not contain jumps"
+  (verbatim). Positive news jumps continue; negative jumps reverse more strongly. **Not FX.**
+- **Relevance:** Medium-low. Published post-jump reversal over ~60 min; EUR/USD is our extension -> backlog B48.
+- **Status:** VERIFIED (abstract + introduction)
+
+### Frömmel, Han & Van Gysegem (2015): Further Evidence on Foreign Exchange Jumps and News Announcements
+- **Source:** Emerging Markets Finance and Trade 51(4), 774-787, DOI 10.1080/1540496X.2015.1046348,
+  [IDEAS](https://ideas.repec.org/a/mes/emfitr/v51y2015i4p774-787.html) (abstract opened 2026-11-11 R096; full text paywalled).
+- **Finding:** "the postjump reversal patterns suggest that the realized jumps are mostly information based, whether they are
+  obviously linked with news or not"; "nearly half of the significant jumps are explained by scheduled and unscheduled news releases"
+  (verbatim). Bipower-variation jump detection. HUF/EUR only; horizon and magnitudes UNVERIFIED (abstract only).
+- **Relevance:** Low-medium. FX evidence of post-jump reversal patterns (in an EM cross) -> supports B48 prior only weakly.
+- **Status:** VERIFIED (abstract only)
+
+### Erdemlioglu, Laurent & Neely (2012): Econometric Modeling of Exchange Rate Volatility and Jumps
+- **Source:** FRB St. Louis WP 2012-008A, [PDF](https://files.stlouisfed.org/files/htdocs/wp/2012/2012-008.pdf) (opened 2026-11-11
+  R096; the later part read only via a fetch summary, marked below).
+- **Finding:** handbook chapter, "reviews the rapid advances in foreign exchange volatility modeling" (verbatim). Uses 5-minute Olsen
+  mid-quotes 1995-2009; Lee-Mykland (2008) and Lee-Hannig tests; for EUR/USD LM flags 2,105 jumps (0.20% of 5-min returns) at
+  alpha 0.0001 (fetch summary, not verbatim: UNVERIFIED). No post-jump return analysis.
+- **Relevance:** Method only (jump test on 5-min EUR/USD and the expected jump frequency) for B48.
+- **Status:** VERIFIED (document opened; jump counts UNVERIFIED)
+
+### Other sources opened 2026-11-11 R096 (not used for items)
+- Kumar (2015), "Turn-of-month effect in the Indian currency market", IJMF 11(2), 232-243, DOI 10.1108/IJMF-05-2014-0068,
+  [IDEAS](https://ideas.repec.org/a/eme/ijmfpp/v11y2015i2p232-243.html) (abstract): "the returns in turn-of-month trading days are
+  significantly lower than the returns during non-turn-of-month trading days" (verbatim) for USD-INR and JPY-INR, 1999-2014; post-2008
+  "this effect vanishes for all the currencies except for USD" (verbatim). INR pairs only; window days not in the abstract. Not added:
+  one event per month (~72 dev events) with a multi-day hold is far below the power floor (lesson R090), and month-end windows were
+  already tested (E034).
+- Ştefănescu & Dumitriu (2020), MPRA 99365, [PDF](https://mpra.ub.uni-muenchen.de/99365/1/MPRA_paper_99365.pdf): turn-of-the-year RON/USD
+  depreciation, 90 TOY observations, two-tail p 5.15%; one event per year. Not added.
+- Vasileiou (2024), DOI 10.1080/17520843.2021.1976944, [IDEAS](https://ideas.repec.org/a/taf/macfem/v17y2024i1p42-58.html) (USDZAR,
+  "non-TOM anomaly" in FX, undescribed) and Aydoğan & Booth (2003), DOI 10.1080/09603100210129457,
+  [EconPapers](https://econpapers.repec.org/RePEc:taf:apfiec:v:13:y:2003:i:5:p:353-360) (Turkish lira 1986-1994, day-of-week and
+  week-of-month effects): not EUR/USD, not added.
+- Caporin & Shahzad (2023?, [PDF](https://research.unipd.it/bitstream/11577/3492964/1/2023_CaporinShahzad_Finance.pdf)): jumps and
+  next-day realized volatility by time zone, 5-min Kibot quotes 2009-2020, Lee-Mykland after Boudt-Croux-Laurent periodicity filter; no
+  post-jump returns. Not added (volatility only; E008 already closed vol timing).
