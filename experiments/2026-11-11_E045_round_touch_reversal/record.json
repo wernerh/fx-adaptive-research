@@ -1,0 +1,24 @@
+{
+  "experiment_id": "E045",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B52: s x (EUR/USD mid open entry + 60 min - mid open entry) > 1 pip per event, entry t + 1 min after the first rejected touch of a 00/50 level per trading date (up-touch c(t-1) < L <= h(t), c(t) < L -> s = -1; down-touch mirror -> s = +1; level not crossed by close earlier that date) on dev (take-profit reversal, Osler 2003)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": "E018",
+  "variable_changed": "event: rejected touch of the level (fade) instead of close crossing (continuation); levels, fills, exclusions, horizon, controls as E018",
+  "decision_rule": "< 300 events -> NONE; SIGNAL if mean signed > 1.0 pip AND date-cluster bootstrap (trading dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e045_round_touch.py | tee backtests/validation_reports/E045_results.txt",
+  "preregistered_in": "R103",
+  "next_experiment": "SIGNAL -> B53 val confirmation; else B52 closed, B53 closed unearned",
+  "outputs": [
+    "backtests/validation_reports/E045_results.json",
+    "backtests/validation_reports/E045_results.txt",
+    "backtests/validation_reports/E045_trades.csv"
+  ]
+}

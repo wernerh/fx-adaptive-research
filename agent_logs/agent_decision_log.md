@@ -1017,3 +1017,15 @@ Why each run chose what it did, and any judgement calls.
   close crossings. Prior weak (E018 control comparison, lesson R033). B53 = val confirmation (blocked until B52 SIGNAL).
 - **Trials:** unchanged (dev 254, val 9, total 263).
 - **Next run:** pre-register B52 as E045.
+
+## 2026-11-11 R103 (unattended)
+- **State:** latest research-batch run 43078625073 (E044) completed success and was recorded in R101; none queued or in progress.
+  Clone was on a detached HEAD; checked out `main` and pulled. Top `ready` backlog item: B52.
+- **Choice:** protocol step 3, pre-register B52 as E045 (only ready item; parent E018, one variable changed: the event; price data
+  only, no download).
+- **Action:** hypothesis/methodology/record.json written before any run; rule unchanged from the backlog draft (= E043 thresholds).
+  Implementation choices fixed now: exact tie between an up- and a down-touch level on one bar -> up-touch level; "crossed by close"
+  counts every level a bar's close-to-close move crosses; trades reuse E018 `build_trades` unchanged (its skip order).
+  `round_touch.py`, `run_e045_round_touch.py`, 13 tests (incl. no-look-ahead and pooled random-walk no-edge). Synthetic smoke NONE.
+  batch.sh queues E045 (dev only). Backlog B52 `running`. Trials unchanged until it runs (dev 254, val 9, total 263).
+- **Next run:** collect E045 when the research-batch run finishes.
