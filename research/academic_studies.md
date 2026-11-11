@@ -515,3 +515,28 @@ US session. That is unproven, which is exactly why E001 comes first.
 - Caporin & Shahzad (2023?, [PDF](https://research.unipd.it/bitstream/11577/3492964/1/2023_CaporinShahzad_Finance.pdf)): jumps and
   next-day realized volatility by time zone, 5-min Kibot quotes 2009-2020, Lee-Mykland after Boudt-Croux-Laurent periodicity filter; no
   post-jump returns. Not added (volatility only; E008 already closed vol timing).
+
+### Jiang, Han & Yin (2019): Can skewness predict currency excess returns?
+- **Source:** The North American Journal of Economics and Finance 48, 628-641, DOI 10.1016/j.najef.2018.07.018,
+  [EconPapers](https://econpapers.repec.org/RePEc:eee:ecofin:v:48:y:2019:i:c:p:628-641) (abstract page opened 2026-11-11 R099; full
+  text paywalled, not opened).
+- **Finding (abstract, verbatim):** "The empirical results indicate a positive and significant relationship between skewness and future
+  currency excess returns." Paraphrase of the rest of the abstract: portfolio sorts with and without controls (volatility, liquidity,
+  global FX volatility risk), currency-level regressions; robust after excluding carry and in emerging, non-Euro and G20 subsamples.
+- **UNVERIFIED:** how skewness is measured (realized from intraday data or from daily returns), the formation and holding horizons,
+  the currency list (whether EUR/USD is in it) and the sample period. The paper is mainly cross-sectional; a single-pair time-series
+  version is our extension.
+- **Relevance:** **Low to medium.** Basis for B50 (daily realized skewness -> next-day EUR/USD, sign fixed from the abstract: positive).
+
+### Other sources opened 2026-11-11 R099 (not used for items)
+- Gkillas, Gupta & Pierdzioch (2019), "Forecasting (downside and upside) realized exchange-rate volatility: Is there a role for
+  realized skewness and kurtosis?", Physica A 532, 121867, DOI 10.1016/j.physa.2019.121867,
+  [UP repository](https://repository.up.ac.za/handle/2263/70757?show=full) and
+  [IDEAS](https://ideas.repec.org/a/eee/phsmap/v532y2019ics0378437119310957.html) (abstract): "We use intraday data to construct
+  measures of realized volatility, realized kurtosis, and realized skewness of returns of six major exchange rates vis-à-vis the
+  dollar" (verbatim; EUR included, 2003-07-01 .. 2015-08-28). The target is next-day realized volatility, not returns. Not added
+  (E008 closed vol timing). It confirms the realized-skewness construction on EUR/USD intraday data is standard.
+- Hoque, Le & Hassan (2020), "Does currency smirk predict foreign exchange return?", IMFI 17(3), 219-230, DOI
+  10.21511/imfi.17(3).2020.17, [PDF](https://www.businessperspectives.org/images/pdf/applications/publishing/templates/article/assets/14013/IMFI_2020_03_Hoque.pdf):
+  options-implied smirk predicts next-day FX returns (negative slope, EUR included, 2010-2014), "this forecast horizon is limited to
+  the next trading day" (verbatim). Not added: no options data in the repo.

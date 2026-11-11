@@ -974,3 +974,16 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** E043 recorded; B48 `done`, B49 closed unearned (0 trials). Trials dev 253, val 9, total 262. No lead, no notification.
   pytest not re-run (no code change, no experiment run this step; the full suite exceeded the 2-minute shell limit).
 - **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).
+
+## 2026-11-11 R099 (unattended)
+- **State:** latest research-batch run 43050165053 (E043) completed success and was recorded in R098; none queued or in progress.
+  Clone was on a detached HEAD; checked out `main` and reset to origin/main. pytest 359 passed. No `ready` backlog item.
+- **Choice:** protocol step 4, refill. Literature pass on a family not yet tried: higher moments of the intraday return distribution
+  (lessons R081/R095: need a published forward relation and no more lagged cross-market daily signals; R098: no hour-scale post-move
+  drift, so the signal is the distribution shape, not the move).
+- **Sources opened:** Jiang-Han-Yin 2019 (NAJEF, abstract), Gkillas-Gupta-Pierdzioch 2019 (Physica A, abstract), Hoque-Le-Hassan 2020
+  (IMFI, PDF). Only Jiang et al. relate skewness to future currency returns (positive sign); measure and horizon UNVERIFIED.
+- **Action:** added B50 (daily realized skewness from 5-min mid returns, s = sign(RS(D)), hold 20:00 NY -> 16:55 NY next date, dev, 1
+  trial, E041 rule) and B51 (val confirmation, blocked). Not added: vol-forecast and options-smirk papers (reasons in refill note R099).
+- **Trials:** unchanged (dev 253, val 9, total 262).
+- **Next run:** pre-register B50 as E044.
