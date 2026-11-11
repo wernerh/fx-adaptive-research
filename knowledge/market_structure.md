@@ -96,3 +96,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - Daily corr(gold return, EUR/USD 16:00 -> 16:00 London same day) 0.4026: strong same-day co-move (common USD factor), unlike WTI (0.0405).
 - Lagged corr(gold return, next-day EUR/USD 16:05 -> 16:00 London) 0.0058; signed by -sign(G): -1.407 pips, CI (-4.415, 0.939), NONE.
   corr(gold, WTI daily returns) on common dates 0.0329. See experiments/2026-11-11_E042_gold_lag.
+
+### 2026-11-11 R098: EUR/USD 5-minute jumps (E043, dev) [EXP]
+- Lee-Mykland (K 270, bipower, |L| > 5.395) plus |move| >= 5 pips: 2764 jumps on 445874 tested 5-min slots (2015-2020), median |jump|
+  14.85 pips; busiest NY hours 08, 10, 09, 03. Release proxy 08:25-08:50 NY holds 13.5% of tested events.
+- After a jump: t+5 -> t+10 signed by the fade +0.491 pips (CI (0.067, 0.946)); t+10 -> t+70 fade -0.693 pips, CI (-1.607, 0.251), NONE.
+  See experiments/2026-11-11_E043_post_jump_reversal.

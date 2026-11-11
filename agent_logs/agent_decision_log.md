@@ -965,3 +965,12 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** `post_jump.py`, `run_e043_post_jump.py`, 11 tests (359 pass); synthetic smoke NONE. batch.sh queues E043 (dev only).
   Backlog B48 `running`. Trials unchanged until it runs (dev 252, val 9, total 261).
 - **Next run:** collect E043 when the research-batch run finishes.
+
+## 2026-11-11 R098 (unattended)
+- **State:** research-batch run 43050165053 (E043) completed success; outputs committed by github-actions[bot] (6f57ad1), not yet
+  recorded. No run queued or in progress. Workspace clone was on a detached HEAD; checked out `main` and pulled.
+- **Choice:** collect E043 (protocol priority 1). Applied the pre-registered B48 rule exactly (R097): NONE (mean -0.693 < 0, so
+  neither SIGNAL nor WEAK). No rule or threshold changed; the skipped-bar reversal and continuation mean are descriptive only.
+- **Action:** E043 recorded; B48 `done`, B49 closed unearned (0 trials). Trials dev 253, val 9, total 262. No lead, no notification.
+  pytest not re-run (no code change, no experiment run this step; the full suite exceeded the 2-minute shell limit).
+- **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).

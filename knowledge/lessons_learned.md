@@ -380,3 +380,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   daily cross-market signals from papers on other currencies remain weak priors (lessons R081, R092); do not queue more of this
   family (silver, copper, other lags) without a new mechanism specific to EUR/USD.
 - **Action:** B46 closed NONE (rejected_hypotheses.md); B47 closed unearned. No dev re-test with the opposite sign. Next: refill.
+
+### 2026-11-11 R098: no 60-minute reversal after 5-minute EUR/USD jumps (E043)
+- **Context:** E043 (B48), fade of 5-minute Lee-Mykland jumps (|L| > 5.395, |move| >= 5 pips), entry t+10, exit t+70 min, dev only, 1 trial.
+- **Observation:** NONE (n 1896, -0.693 pips, date-cluster CI (-1.607, 0.251), t p 0.9238). The only reversal is inside the skipped
+  t+5 -> t+10 bar (+0.491 pips, below spread-adjusted relevance); largest |L| tercile drifts on (-2.315).
+- **Evidence label:** [EXP]
+- **Lesson:** EUR/USD jumps are absorbed within about 5 minutes; with E026 and E028 (no continuation after big moves) there is no
+  hour-scale post-move drift in either direction on dev. Equity-ETF jump results do not transfer to the deepest FX pair.
+- **Action:** B48 closed NONE (rejected_hypotheses.md); B49 closed unearned. No re-test with other thresholds, holds, entry lags or the
+  opposite sign. Next: refill.

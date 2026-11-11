@@ -11,16 +11,279 @@
   "variable_changed": "new family: event-time 5-min jump fade, all hours (relatives E026, E028)",
   "decision_rule": "< 300 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND date-cluster bootstrap (trading dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
+  "status": "complete",
+  "results": {
+    "result": {
+      "n": 1896,
+      "n_dates": 1160,
+      "mean_pips": -0.693,
+      "median_pips": 0.325,
+      "sd_pips": 21.066,
+      "hit_rate": 0.5053,
+      "t_stat": -1.432,
+      "t_p_one_sided": 0.9238,
+      "mean_ci95_date_cluster_boot": [
+        -1.607,
+        0.251
+      ],
+      "decision": "NONE"
+    },
+    "counts": {
+      "grid_slots": 450720,
+      "slots_with_quote": 448664,
+      "valid_returns": 448330,
+      "tested_slots": 445874,
+      "jumps": 2764,
+      "roll_hour": 30,
+      "week_open": 2,
+      "inside_hold": 825,
+      "missing_entry": 2,
+      "missing_exit": 5,
+      "entry_skipped_spread": 4,
+      "events_tested": 1896
+    },
+    "descriptive": {
+      "continuation_mean_pips_reported_only": 0.693,
+      "positive_jumps_short_eurusd": {
+        "n": 973,
+        "n_dates": 745,
+        "mean_pips": -0.035,
+        "median_pips": 0.85,
+        "sd_pips": 22.156,
+        "hit_rate": 0.52,
+        "t_stat": -0.049,
+        "t_p_one_sided": 0.5197,
+        "mean_ci95_date_cluster_boot": [
+          -1.449,
+          1.38
+        ]
+      },
+      "negative_jumps_long_eurusd": {
+        "n": 923,
+        "n_dates": 722,
+        "mean_pips": -1.386,
+        "median_pips": -0.3,
+        "sd_pips": 19.84,
+        "hit_rate": 0.4897,
+        "t_stat": -2.122,
+        "t_p_one_sided": 0.9829,
+        "mean_ci95_date_cluster_boot": [
+          -2.701,
+          -0.072
+        ]
+      },
+      "release_proxy_0825_0850_ny": {
+        "n": 256,
+        "n_dates": 256,
+        "mean_pips": -2.123,
+        "median_pips": -1.675,
+        "sd_pips": 26.287,
+        "hit_rate": 0.4297,
+        "t_stat": -1.292,
+        "t_p_one_sided": 0.9013,
+        "mean_ci95_date_cluster_boot": [
+          -5.324,
+          1.027
+        ]
+      },
+      "not_release_proxy": {
+        "n": 1640,
+        "n_dates": 1057,
+        "mean_pips": -0.469,
+        "median_pips": 0.7,
+        "sd_pips": 20.13,
+        "hit_rate": 0.5171,
+        "t_stat": -0.944,
+        "t_p_one_sided": 0.8274,
+        "mean_ci95_date_cluster_boot": [
+          -1.412,
+          0.467
+        ]
+      },
+      "release_proxy_share": 0.135,
+      "london_open_0200_0400_ny": {
+        "n": 258,
+        "n_dates": 257,
+        "mean_pips": 0.253,
+        "median_pips": 1.35,
+        "sd_pips": 17.358,
+        "hit_rate": 0.5388,
+        "t_stat": 0.234,
+        "t_p_one_sided": 0.4076,
+        "mean_ci95_date_cluster_boot": [
+          -1.842,
+          2.333
+        ]
+      },
+      "not_london_open": {
+        "n": 1638,
+        "n_dates": 1081,
+        "mean_pips": -0.841,
+        "median_pips": 0.025,
+        "sd_pips": 21.593,
+        "hit_rate": 0.5,
+        "t_stat": -1.577,
+        "t_p_one_sided": 0.9425,
+        "mean_ci95_date_cluster_boot": [
+          -1.878,
+          0.263
+        ]
+      },
+      "skipped_bar_t5_t10_signed": {
+        "n": 1896,
+        "n_dates": 1160,
+        "mean_pips": 0.491,
+        "median_pips": 0.8,
+        "sd_pips": 9.564,
+        "hit_rate": 0.557,
+        "t_stat": 2.233,
+        "t_p_one_sided": 0.0128,
+        "mean_ci95_date_cluster_boot": [
+          0.067,
+          0.946
+        ]
+      },
+      "median_abs_jump_pips": 14.85,
+      "median_abs_L": 6.706,
+      "share_events_positive_jump": 0.5132,
+      "events_by_ny_hour": {
+        "0": 5,
+        "1": 17,
+        "2": 82,
+        "3": 176,
+        "4": 112,
+        "5": 69,
+        "6": 67,
+        "7": 105,
+        "8": 339,
+        "9": 192,
+        "10": 329,
+        "11": 102,
+        "12": 40,
+        "13": 55,
+        "14": 83,
+        "15": 21,
+        "16": 8,
+        "18": 13,
+        "19": 20,
+        "20": 19,
+        "21": 22,
+        "22": 9,
+        "23": 11
+      },
+      "abs_L_tercile_low": {
+        "n": 632,
+        "n_dates": 532,
+        "mean_pips": 0.621,
+        "median_pips": 1.175,
+        "sd_pips": 16.819,
+        "hit_rate": 0.538,
+        "t_stat": 0.928,
+        "t_p_one_sided": 0.177,
+        "mean_ci95_date_cluster_boot": [
+          -0.736,
+          1.978
+        ]
+      },
+      "abs_L_tercile_mid": {
+        "n": 632,
+        "n_dates": 542,
+        "mean_pips": -0.383,
+        "median_pips": 0.05,
+        "sd_pips": 18.888,
+        "hit_rate": 0.5,
+        "t_stat": -0.51,
+        "t_p_one_sided": 0.695,
+        "mean_ci95_date_cluster_boot": [
+          -1.867,
+          1.103
+        ]
+      },
+      "abs_L_tercile_high": {
+        "n": 632,
+        "n_dates": 532,
+        "mean_pips": -2.315,
+        "median_pips": -0.825,
+        "sd_pips": 26.241,
+        "hit_rate": 0.4778,
+        "t_stat": -2.218,
+        "t_p_one_sided": 0.9865,
+        "mean_ci95_date_cluster_boot": [
+          -4.259,
+          -0.426
+        ]
+      }
+    },
+    "by_year": [
+      {
+        "year": 2015,
+        "n": 335,
+        "mean": -4.33,
+        "hit": 0.448
+      },
+      {
+        "year": 2016,
+        "n": 303,
+        "mean": -0.778,
+        "hit": 0.515
+      },
+      {
+        "year": 2017,
+        "n": 341,
+        "mean": 0.389,
+        "hit": 0.516
+      },
+      {
+        "year": 2018,
+        "n": 303,
+        "mean": 0.35,
+        "hit": 0.518
+      },
+      {
+        "year": 2019,
+        "n": 326,
+        "mean": 0.286,
+        "hit": 0.534
+      },
+      {
+        "year": 2020,
+        "n": 288,
+        "mean": 0.143,
+        "hit": 0.503
+      }
+    ],
+    "cost_check": {
+      "n": 1896,
+      "mean_signed_mid_pips": -0.693,
+      "mean_net_bidask_pips": -0.978,
+      "mean_net_spec4_pips": -1.178,
+      "mean_net_costs_x1_5_pips": -1.42,
+      "median_spread_entry_pips": 0.3,
+      "median_spread_exit_pips": 0.3
+    },
+    "n_trials": 1,
+    "blocks": [
+      "dev"
+    ],
+    "threshold": 5.395026675085253,
+    "K": 270,
+    "min_abs_move": 0.0005,
+    "first_slot": "2015-01-01 22:00:00+00:00",
+    "last_slot": "2020-12-31 21:55:00+00:00"
+  },
+  "decision": "NONE",
   "lead": false,
   "command": "python scripts/run_e043_post_jump.py | tee backtests/validation_reports/E043_results.txt",
   "preregistered_in": "R097",
-  "next_experiment": "SIGNAL -> B49 val confirmation; else B48 closed, B49 closed unearned",
+  "next_experiment": "none (B48 closed NONE, B49 closed unearned); backlog refill next",
   "outputs": [
     "backtests/validation_reports/E043_results.json",
     "backtests/validation_reports/E043_results.txt",
     "backtests/validation_reports/E043_events.csv"
-  ]
+  ],
+  "run": {
+    "workflow_run": 43050165053,
+    "outputs_commit": "6f57ad1",
+    "recorded_in": "R098"
+  }
 }
