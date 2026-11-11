@@ -1,0 +1,192 @@
+{
+  "result_b43": {
+    "n": 47,
+    "mean_pips": 2.623,
+    "median_pips": 0.1,
+    "sd_pips": 61.879,
+    "n_nonzero": 47,
+    "hits": 24,
+    "hit_rate": 0.5106,
+    "binom_p_one_sided": 0.5,
+    "t_stat": 0.291,
+    "t_p_one_sided": 0.3863,
+    "mean_ci95_boot": [
+      -14.684,
+      21.44
+    ],
+    "decision": "NONE",
+    "lead_cost_gate": true
+  },
+  "counts": {
+    "events": 47,
+    "not_trading_day": 0,
+    "missing_pre": 0,
+    "zero_signal": 0,
+    "missing_entry": 0,
+    "missing_exit": 0,
+    "entry_skipped_spread": 0,
+    "tested": 47
+  },
+  "descriptive": {
+    "unconditional_short_r": {
+      "n": 47,
+      "mean_pips": 1.657,
+      "median_pips": -1.1,
+      "sd_pips": 61.913,
+      "n_nonzero": 47,
+      "hits": 22,
+      "hit_rate": 0.4681,
+      "binom_p_one_sided": 0.71997,
+      "t_stat": 0.184,
+      "t_p_one_sided": 0.4276,
+      "mean_ci95_boot": [
+        -14.532,
+        19.472
+      ]
+    },
+    "p_pos_subset": {
+      "n": 31,
+      "mean_pips": 3.245,
+      "median_pips": -1.85,
+      "sd_pips": 67.458,
+      "n_nonzero": 31,
+      "hits": 15,
+      "hit_rate": 0.4839,
+      "binom_p_one_sided": 0.63995,
+      "t_stat": 0.268,
+      "t_p_one_sided": 0.3953,
+      "mean_ci95_boot": [
+        -18.914,
+        26.297
+      ]
+    },
+    "p_neg_subset": {
+      "n": 16,
+      "mean_pips": 1.419,
+      "median_pips": 0.6,
+      "sd_pips": 51.368,
+      "n_nonzero": 16,
+      "hits": 9,
+      "hit_rate": 0.5625,
+      "binom_p_one_sided": 0.40181,
+      "t_stat": 0.11,
+      "t_p_one_sided": 0.4567,
+      "mean_ci95_boot": [
+        -21.632,
+        25.274
+      ]
+    },
+    "window_0_12h_signed": {
+      "n": 47,
+      "mean_pips": 2.01,
+      "median_pips": -6.25,
+      "sd_pips": 66.061,
+      "n_nonzero": 46,
+      "hits": 21,
+      "hit_rate": 0.4565,
+      "binom_p_one_sided": 0.7693,
+      "t_stat": 0.209,
+      "t_p_one_sided": 0.4179,
+      "mean_ci95_boot": [
+        -15.172,
+        20.396
+      ]
+    },
+    "slope_r_on_p": {
+      "n": 47,
+      "slope": 0.15114,
+      "t_stat": 0.689,
+      "p_two_sided": 0.4942
+    },
+    "mean_p_pips": 16.905,
+    "mean_abs_p_pips": 31.746,
+    "share_short": 0.66,
+    "control_non_fomc_wednesdays": {
+      "n": 263,
+      "mean_pips": 5.093,
+      "median_pips": 1.2,
+      "sd_pips": 60.586,
+      "n_nonzero": 263,
+      "hits": 135,
+      "hit_rate": 0.5133,
+      "binom_p_one_sided": 0.35574,
+      "t_stat": 1.363,
+      "t_p_one_sided": 0.087,
+      "mean_ci95_boot": [
+        -1.595,
+        12.679
+      ]
+    },
+    "control_counts": {
+      "events": 268,
+      "not_trading_day": 0,
+      "missing_pre": 5,
+      "zero_signal": 0,
+      "missing_entry": 0,
+      "missing_exit": 0,
+      "entry_skipped_spread": 0,
+      "tested": 263
+    }
+  },
+  "by_year": [
+    {
+      "year": 2015,
+      "n": 8,
+      "mean": 8.519,
+      "hit": 0.5
+    },
+    {
+      "year": 2016,
+      "n": 8,
+      "mean": 12.244,
+      "hit": 0.375
+    },
+    {
+      "year": 2017,
+      "n": 8,
+      "mean": 8.0,
+      "hit": 0.625
+    },
+    {
+      "year": 2018,
+      "n": 8,
+      "mean": 7.031,
+      "hit": 0.5
+    },
+    {
+      "year": 2019,
+      "n": 8,
+      "mean": -4.431,
+      "hit": 0.625
+    },
+    {
+      "year": 2020,
+      "n": 7,
+      "mean": -18.229,
+      "hit": 0.429
+    }
+  ],
+  "cost_check": {
+    "n": 47,
+    "mean_signed_mid_pips": 2.623,
+    "mean_net_bidask_pips": 2.336,
+    "mean_net_spec4_pips": 2.136,
+    "mean_net_costs_x1_5_pips": 1.893,
+    "median_spread_entry_pips": 0.3,
+    "median_spread_exit_pips": 0.3
+  },
+  "n_trials": 1,
+  "blocks": [
+    "dev"
+  ],
+  "n_scheduled_dev": 47,
+  "unscheduled_excluded": [
+    "2019-10-04",
+    "2020-03-02",
+    "2020-03-15"
+  ],
+  "cancelled_excluded": [
+    "2020-03-18"
+  ],
+  "decision": "NONE"
+}
