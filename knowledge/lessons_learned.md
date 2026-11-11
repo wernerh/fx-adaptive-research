@@ -360,3 +360,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   the expected effect is > 20 pips, and the 48-meeting sample is now used twice.
 - **Action:** B43 closed NONE (rejected_hypotheses.md), B44 closed unearned. Year and sign subsets are post-hoc and not re-tested.
   Next: B45.
+
+### 2026-11-11 R092: a near-miss NONE stays NONE; one strong year can carry a daily mean (E041)
+- **Context:** E041 (B45), lagged daily WTI return -> next-day EUR/USD (Ferraro-Rogoff-Rossi, EUR extension), dev only, 1 trial.
+- **Observation:** NONE (n 1519, +2.306 pips, block-20 CI (-0.513, 5.184), t p 0.0555). 2015 alone is +11.066; the other five years
+  range -3.61 to +2.859. Contemporaneous corr(O, EUR/USD) only 0.0405. High-|O| tercile +5.949 (CI lower > 0) is a post-hoc slice.
+- **Evidence label:** [EXP]
+- **Lesson:** a result just outside both bars is not WEAK and earns no val trial. With ~260 registered trials a p of 0.0555 is
+  expected noise. Check by-year concentration before reading a daily-mean near miss as "promising"; a single regime year (2015 oil
+  collapse) can produce it.
+- **Action:** B45 closed NONE (rejected_hypotheses.md). No dev re-test with |O| filters, other lags or Brent. Next: backlog refill.

@@ -897,3 +897,12 @@ Why each run chose what it did, and any judgement calls.
 - **Reuse:** E034 `load_index` / `london_quotes`, E037 `fx_dates` / quote helpers and trade convention, E036 rule (`decide_b34`:
   identical thresholds, p < 0.05). New download script `scripts/download_dukascopy_oil.sh` (`lightcmdusd`, raw files git-ignored).
 - **Next run:** collect E041 when the research-batch run finishes.
+
+## 2026-11-11 R092 (unattended)
+- **State:** research-batch run 42996346127 (E041) completed success; outputs committed by github-actions[bot] (77c2f21), not yet
+  recorded. No run queued or in progress. Workspace clone was on a detached HEAD; checked out `main` and pulled. pytest 336 passed.
+- **Choice:** collect E041 (protocol priority 1). Applied `oil_lag.decide_b45` exactly as pre-registered (R091): NONE (mean > 1 pip
+  but CI lower -0.513 < 0 and t p 0.0555 not < 0.05, so not SIGNAL and not WEAK). No rule or threshold changed; the post-hoc
+  high-|O| tercile is recorded as descriptive only.
+- **Action:** E041 recorded; B45 `done`. Trials dev 251, val 9, total 260. No lead, no notification.
+- **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).

@@ -83,3 +83,10 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   of meetings (consistent with E013's FOMC-day USD weakness on dev).
 - 02:00 -> 14:00 NY on t+1, signed against the drift: +2.623 pips, SD 61.879, CI (-14.684, 21.44); no reversal of the drift
   (slope +0.151, p 0.49). See experiments/2026-11-11_E040_post_fomc_reversal.
+
+### 2026-11-11 R092: EUR/USD and daily WTI (E041, dev) [EXP]
+- Dukascopy `lightcmdusd` CFD: valid 16:00 London quotes on both days for 98.72% of dev dates; daily log return SD 0.02372;
+  11 dates with |O| > 0.10 (roll gaps / April 2020).
+- Daily corr(WTI return, EUR/USD 16:00 -> 16:00 London same day) 0.0405: EUR/USD is barely oil-sensitive at daily frequency on dev.
+- Next-day EUR/USD (16:05 -> 16:00 London) signed by the lagged WTI return: +2.306 pips, CI (-0.513, 5.184), NONE.
+  See experiments/2026-11-11_E041_oil_lag.
