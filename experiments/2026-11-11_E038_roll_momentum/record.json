@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E038",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B38: sign(r1) x r2 > 1 pip per dev trading date, r1 = EUR/USD mid 17:00 NY (start of trading date D) -> 16:25 NY on D, r2 = mid 16:25 -> 16:55 NY on D (intraday momentum into the 17:00 NY spot roll; Baltussen-Da-Lammers-Martens 2021 anchor variant)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": "E016",
+  "variable_changed": "anchor: 17:00 NY spot roll instead of CME FX settlement (E016/B13, blocked before any trial)",
+  "decision_rule": "< 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided binomial p < 0.05 on sign agreement (signed > 0 among signed != 0); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. Entry skipped if 16:25 NY spread > 2.0 pips. 1 dev trial. SIGNAL earns B39 (val).",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e038_roll_momentum.py | tee backtests/validation_reports/E038_results.txt",
+  "preregistered_in": "R083",
+  "next_experiment": "B39 val confirmation only if SIGNAL; otherwise B38/B39 closed and backlog refill"
+}

@@ -802,3 +802,15 @@ Why each run chose what it did, and any judgement calls.
 - **Not added:** COT positioning (Klitgaard-Weir 2004: no weekly predictability); Ranaldo Thursday / holiday effects (home-hours line
   closed on val by E017; holiday numbers UNVERIFIED).
 - **Next run:** pre-register B38 as E038 (dev only).
+
+## 2026-11-11 R083 (unattended)
+- **State:** last research-batch run 42915756793 (E037) completed and recorded in R081; no run queued or in progress. pytest 299
+  passed before changes. Top `ready` backlog item: B38 -> protocol step 3 (next experiment).
+- **Decision:** pre-register B38 as E038 (dev only, 1 trial), parameters and rule exactly as fixed in the R082 backlog entry (B13
+  rule: mean > 1.0 pip AND block-20 bootstrap CI lower > 0 AND one-sided binomial p < 0.05; < 500 dates -> NONE). Parent E016
+  (anchor changed only).
+- **Implementation:** `fxresearch.roll_momentum` (reuses `overnight_reversal.evening_quotes` for the 17:00 NY start quote of
+  trading date D and `vol_state_fix.ny_quotes` for 16:25/16:55 NY); exclusion order missing_start, missing_entry, zero_signal,
+  missing_exit, entry_skipped_spread; Mon-Fri trading dates only (weekend artefacts counted). 9 new tests (no look-ahead,
+  random-walk SIGNAL rate, quote timing incl. next-date reading, rule thresholds); synthetic smoke ok.
+- **Next run:** collect E038 when the research-batch run finishes.
