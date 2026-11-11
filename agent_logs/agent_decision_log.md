@@ -1005,3 +1005,15 @@ Why each run chose what it did, and any judgement calls.
   neither SIGNAL nor WEAK). No rule or threshold changed; tercile and 1-min results are descriptive only.
 - **Action:** E044 recorded; B50 `done`, B51 closed unearned (0 trials). Trials dev 254, val 9, total 263. No lead, no notification.
 - **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).
+
+## 2026-11-11 R102 (unattended)
+- **State:** latest research-batch run 43078625073 (E044) completed success and was recorded in R101; none queued or in progress.
+  Clone was on a detached HEAD; checked out `main` at origin/main. pytest 369 passed. No `ready` backlog item.
+- **Choice:** protocol step 4, refill. Literature pass for a family not yet tried (intraday TSMOM beyond equities, price anchors /
+  52-week high, prospect-theory value). Opened sources were cross-sectional, monthly or equity-only (refill note R102). newyorkfed.org
+  and ideas.repec.org fetches failed on a fetch-permission timeout; not retried.
+- **Action:** added B52 from the already VERIFIED Osler (2003) abstract: the take-profit arm (reversal after a rejected touch of a 00/50
+  level), which B15/E018 explicitly left for its own pre-registration; dev usable because rejected touches are disjoint from E018's
+  close crossings. Prior weak (E018 control comparison, lesson R033). B53 = val confirmation (blocked until B52 SIGNAL).
+- **Trials:** unchanged (dev 254, val 9, total 263).
+- **Next run:** pre-register B52 as E045.

@@ -540,3 +540,22 @@ US session. That is unproven, which is exactly why E001 comes first.
   10.21511/imfi.17(3).2020.17, [PDF](https://www.businessperspectives.org/images/pdf/applications/publishing/templates/article/assets/14013/IMFI_2020_03_Hoque.pdf):
   options-implied smirk predicts next-day FX returns (negative slope, EUR included, 2010-2014), "this forecast horizon is limited to
   the next trading day" (verbatim). Not added: no options data in the repo.
+
+### Other sources opened 2026-11-11 R102 (not used for items)
+- Li, Sakkas & Urquhart (2022), "Intraday time series momentum: global evidence and links to market characteristics", Journal of
+  Financial Markets 57, 100619, DOI 10.1016/j.finmar.2021.100619, [accepted manuscript](https://reading-9.eprints-hosting.org/95566/1/Accepted-Version.pdf)
+  (first ~25% verbatim): 16 MSCI developed-market equity indices, 2005-2017; "the US first half-hour return exhibits cross-country
+  intraday predictability" (verbatim). FX enters only as a USD conversion; no currency result. Not added (intraday-momentum family
+  already tested on EUR/USD: B22/E027, B38/E038).
+- Xu, Kozhan & Taylor, "Prospect Theory and Currency Returns" (AEA 2020 preliminary paper,
+  [link](https://aeaweb.org/conference/2020/preliminary/paper/RTR7eK6k)): "High prospect theory value currencies significantly
+  underperform low prospect theory value currencies" (verbatim); cross-sectional, 15 currencies, monthly rebalancing. Not added
+  (cross-sectional, monthly; lessons R081/R101).
+- Phylaktis & Yamani (2022), "Foreign currency forecasting: What can stock and bond markets tell us?", Bayes EMG WP-EMG-03-2022
+  ([PDF](https://www.bayes.citystgeorges.ac.uk/__data/assets/pdf_file/0005/652523/WP-EMG-03-2022.pdf)): monthly, 28 currencies, lagged
+  local equity/bond returns. Not added (B35/E037 family NONE; monthly n too small).
+- Raza (2015), "Essays on Foreign Exchange Rate Predictability", Massey University PhD thesis
+  ([PDF](https://mro.massey.ac.nz/bitstreams/8d7c87d0-7a19-46ab-b2ad-fa49a8176b48/download)): 52-week-high momentum across 63 currencies
+  "is not profitable in the foreign exchange market" (verbatim abstract); cross-sectional. Not added.
+- Fetch-permission timeouts (not opened, nothing used from them): Osler FRBNY Staff Report 125 PDF, Osler (2000) FRBNY EPR PDF, IDEAS
+  pages for Osler (2003) and Osler (2000). B52 relies only on the Osler (2003) abstract entry VERIFIED 2026-11-07 above.

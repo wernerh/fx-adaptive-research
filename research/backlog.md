@@ -1010,3 +1010,56 @@ Trial count so far on dev: **254** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 ### B51: Daily realized skewness -> EUR/USD, val confirmation (signal test, val only) · `done` (2026-11-11 R101: closed unearned, 0 trials; B50 NONE on dev (E044). Added 2026-11-11 R099; was: earned only if B50 returns SIGNAL on dev)
 - B50 unchanged on val (2021-01-21 .. 2023-06-30), own pre-registration, 1 val trial, < 200 dates -> NONE, p < 0.05, block-20
   bootstrap. If B50 is not SIGNAL, B51 closes unearned with 0 trials.
+
+### Refill note R102 (not an item)
+- Sources attempted R102: Li, Sakkas & Urquhart (2022, JFM 57, 100619, DOI 10.1016/j.finmar.2021.100619, accepted manuscript at
+  https://reading-9.eprints-hosting.org/95566/1/Accepted-Version.pdf, ~25% verbatim): intraday TSMOM in 16 MSCI equity indices; FX is
+  used only to convert to USD, no currency result. Xu, Kozhan & Taylor ("Prospect Theory and Currency Returns", AEA 2020 preliminary,
+  https://aeaweb.org/conference/2020/preliminary/paper/RTR7eK6k): cross-sectional, monthly. Phylaktis & Yamani (Bayes WP-EMG-03-2022):
+  monthly lagged equity/bond returns -> FX (B35/E037 family, NONE). Raza (2015 Massey PhD thesis): 52-week-high currency momentum is
+  cross-sectional and loses money. None added. The newyorkfed.org (Osler SR 125, Osler 2000 EPR) and ideas.repec.org fetches failed this
+  run on a fetch-permission timeout (not a server refusal; not retried, lesson R024).
+- Why B52: the one published *reversal* mechanism already VERIFIED in this repo that has never been tested: Osler (2003, JF 58(5),
+  1791-1819, DOI 10.1111/1540-6261.00588, abstract VERIFIED 2026-11-07) - take-profit orders cluster at round numbers, "which helps
+  explain reversals at support and resistance" (repo entry wording). B15/E018 tested only the stop-loss arm (continuation after a close
+  crosses a level, NONE) and wrote that the take-profit reversal "needs its own pre-registration". B52 uses the events E018 never
+  contained: bars that touch a round level and close back on the near side (rejected touches). Prior weak: E018 dev showed round-level
+  crossings reverse *less* than control-level crossings (-0.128 vs -0.803), the 1990s order data may not describe modern e-trading
+  (lesson R033), and E043 found no hour-scale post-move drift. Price data in repo only; no download.
+
+### B52: Take-profit reversal at round numbers, rejected touches (signal test, dev) · `ready` (Added 2026-11-11 R102 refill)
+- **Mechanism [PUB]:** Osler (2003, JF, DOI 10.1111/1540-6261.00588, VERIFIED abstract): take-profit orders cluster at round numbers
+  (00/50 definition taken from Osler 2002, VERIFIED abstract; Osler 2003's own digit definition UNVERIFIED), so rising rates meet a wall of sell orders at the level and falling rates a wall of buys; trends tend to reverse
+  there. Hour-scale persistence and the exact touch/bounce definition in the paper are UNVERIFIED (full text could not be opened R102).
+  Parent E018 (stop-loss arm, NONE on dev). **Variable changed (one):** the event - a rejected touch of the level instead of a close
+  crossing it, with the sign the take-profit arm implies (fade).
+- **Levels (fixed now, = E018):** L = every multiple of 0.0050 (00 and 50). Prices in exact 1e-5 units of 2 x mid (E018 `_to_units`).
+  Mid high h(t) = bid_high + ask_high, mid low l(t) = bid_low + ask_low, mid close c(t) = bid_close + ask_close (all in 2 x mid units).
+- **Event (fixed now):** 1-minute bar t, bars t-1 and t in the same trading date (`sessions.trading_date`).
+  Up-touch of L: c(t-1) < L, h(t) >= L, c(t) < L (reaches the level from below, closes back below). Down-touch: c(t-1) > L,
+  l(t) <= L, c(t) > L. If one bar touches several levels, the level nearest c(t) counts. Only the **first** event (either side) of each
+  level per trading date counts, and a level that was already *crossed by close* (E018 event) earlier the same trading date is no
+  longer eligible that date. Position s = -1 after an up-touch, +1 after a down-touch.
+- **Trade and exclusions (fixed now, = E018 conventions):** entry = open of the first bar at or after t + 1 min (<= t + 5 min); exit =
+  open of the first bar at or after entry + 60 min (<= + 5 min); window needs >= 55/60 bars. Skipped and counted under the first failing
+  check: coverage; entry or exit NY time in [16:30, 18:30) (roll); entry spread > 2.0 pips (SPEC 4); entry before the previous trade's
+  exit (overlap). Signed return = s x (mid open at exit - mid open at entry), pips.
+- **Decision rule (draft):** < 300 events -> NONE. SIGNAL if mean signed > 1.0 pip AND date-cluster bootstrap 95% CI lower > 0 (resample
+  trading dates with all their events, 2000 draws, seed 0) AND one-sided t p < 0.05 (1 trial). WEAK if mean > 0 and (CI lower > 0 or
+  p < 0.05); else NONE. A SIGNAL earns B53.
+- **Power note:** expected ~1-2 events per trading date (~1,500-3,000 on dev); 60-min SD ~10-12 pips -> SE ~0.3 pips; the 1-pip bar
+  binds, not the CI. ~263 registered trials: one p just under 0.05 is expected noise (lesson R092), hence the val confirmation.
+- **Descriptive (not in rule):** control levels offset 0.0023 (ending 23/73, E018 control) through the identical procedure and the
+  round-minus-control difference (the mechanism predicts round > control); 15- and 120-minute horizons; up- vs down-touches; share of
+  events whose level is crossed by close within the hold; by year (lesson R092); events per year; median entry spread; SPEC 4 net and
+  costs x1.5; events within +-15 min of 08:30, 10:00 and 11:00 NY (share and mean).
+- **Contamination note:** E018 dev results are known for close-crossing events (mean -0.128, controls -0.803, 15/120 min -0.405/-0.777);
+  rejected-touch events are disjoint from E018 events at bar t, but later crossings on the same date overlap in time. The sign is fixed
+  from Osler (2003), not from E018 (E018 controls would favour fading any level, round or not; hence the control comparison is
+  reported). No touch-based statistic has been computed on dev. Dev usable.
+- **Calendar label:** price-level effect, not a time-of-day, fix or release effect (report the release/fix-time share).
+- **Data:** EUR/USD 1-minute bid/ask bars in repo; no download. Code reuses `fxresearch.round_numbers` level arithmetic.
+
+### B53: Take-profit reversal at round numbers, val confirmation (signal test, val only) · `blocked` (Added 2026-11-11 R102; earned only if B52 returns SIGNAL on dev)
+- B52 unchanged on val (2021-01-21 .. 2023-06-30), own pre-registration, 1 val trial, < 120 events -> NONE, p < 0.05, same date-cluster
+  bootstrap. If B52 is not SIGNAL, B53 closes unearned with 0 trials.
