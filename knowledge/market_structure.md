@@ -64,3 +64,9 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   EUR weakness, Hau-Rey sign).
 - Next day: no predictive power. -sign(daily) +1.268 pips (CI (-1.411, 3.942)), -sign(20-date) -0.88 (CI (-3.418, 1.868)), held
   16:05 London -> 16:00 London next date. See experiments/2026-11-10_E037_relative_equity.
+
+### 2026-11-11 R084: EUR/USD into the 17:00 NY roll (E038, dev) [EXP]
+- 16:25 -> 16:55 NY: SD 4.774 pips; unconditional long mean -0.282 (CI (-0.552, -0.061)); spreads median / p90 0.3 / 0.5 pips at
+  16:25 NY and 0.5 / 1.0 at 16:55 NY.
+- Continuation of the rest-of-day move (17:00 NY start of D -> 16:25 NY) into 16:25 -> 16:55: +0.255 pips signed, CI (0.023, 0.501)
+  (WEAK, sub-cost). See experiments/2026-11-11_E038_roll_momentum.

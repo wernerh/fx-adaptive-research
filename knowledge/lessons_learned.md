@@ -324,3 +324,14 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
 - **Lesson:** a published contemporaneous FX-equity relation reproduced in our data does not imply a tradable lag: the flow appears
   to be absorbed the same day. For future "lagged extension" items, expect NONE unless the paper itself reports a lagged effect.
 - **Action:** B35/B36 closed (rejected_hypotheses.md), B37 closed unearned. Next: backlog refill.
+
+### 2026-11-11 R084: intraday momentum into the 17:00 NY roll is real but sub-cost on EUR/USD spot (E038)
+- **Context:** E038 (B38), Baltussen et al. (2021) intraday momentum with the 17:00 NY spot roll as the anchor, dev only, 1 trial.
+- **Observation:** n 1542, sign(17:00 -> 16:25 NY) x (16:25 -> 16:55 NY) +0.255 pips, CI (0.023, 0.501), t p 0.018, binomial p
+  0.069 -> WEAK. SD of the 30-minute target 4.776 pips; SPEC 4 net -0.425, x1.5 -0.765.
+- **Evidence label:** [EXP]
+- **Lesson:** the power note was right: with a ~5-pip SD target window, even a detectable effect is a fraction of a pip. Short
+  (<= 30 min) target windows late in the NY session cannot clear a 1-pip bar or SPEC 4 costs unless the effect is an order of
+  magnitude larger than published futures effects. Future refills should prefer windows whose SD is large relative to costs.
+- **Action:** B38 closed WEAK (rejected_hypotheses.md), B39 closed unearned. EDT / mid-tercile slices are post-hoc and not re-tested.
+  Next: backlog refill.

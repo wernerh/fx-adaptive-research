@@ -814,3 +814,11 @@ Why each run chose what it did, and any judgement calls.
   missing_exit, entry_skipped_spread; Mon-Fri trading dates only (weekend artefacts counted). 9 new tests (no look-ahead,
   random-walk SIGNAL rate, quote timing incl. next-date reading, rule thresholds); synthetic smoke ok.
 - **Next run:** collect E038 when the research-batch run finishes.
+
+## 2026-11-11 R084 (unattended)
+- **State:** research-batch run 42939744082 (E038) completed success; outputs committed by github-actions[bot] (64780e4) and not yet
+  recorded -> protocol step 1 (collect). No run queued or in progress. pytest 308 passed.
+- **Decision:** `decide_b38` applied exactly: n 1542 (>= 500), mean +0.255 (not > 1.0), CI lower 0.023 (> 0), binomial p 0.06924
+  (not < 0.05) -> WEAK. LEAD condition 1 fails (and SPEC 4 net -0.425); no notification. B38 closed WEAK, B39 closed unearned per
+  the pre-registered "what follows". Descriptive slices (EDT, mid |r1| tercile) not turned into new tests.
+- **Next run:** no `ready` backlog item -> refill (literature/evidence pass, 2-3 pre-registrable items).

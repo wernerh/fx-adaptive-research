@@ -3,17 +3,318 @@
   "date": "2026-11-11",
   "instrument": "EURUSD",
   "hypothesis": "B38: sign(r1) x r2 > 1 pip per dev trading date, r1 = EUR/USD mid 17:00 NY (start of trading date D) -> 16:25 NY on D, r2 = mid 16:25 -> 16:55 NY on D (intraday momentum into the 17:00 NY spot roll; Baltussen-Da-Lammers-Martens 2021 anchor variant)",
-  "blocks_used": ["dev"],
+  "blocks_used": [
+    "dev"
+  ],
   "oos_touched": false,
   "parent_experiment": "E016",
   "variable_changed": "anchor: 17:00 NY spot roll instead of CME FX settlement (E016/B13, blocked before any trial)",
   "decision_rule": "< 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided binomial p < 0.05 on sign agreement (signed > 0 among signed != 0); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE. Entry skipped if 16:25 NY spread > 2.0 pips. 1 dev trial. SIGNAL earns B39 (val).",
   "n_trials": 1,
-  "status": "preregistered",
-  "results": null,
-  "decision": null,
+  "status": "complete",
+  "results": {
+    "result_b38": {
+      "n": 1542,
+      "mean_pips": 0.255,
+      "median_pips": 0.175,
+      "sd_pips": 4.776,
+      "n_nonzero": 1533,
+      "hits": 796,
+      "hit_rate": 0.5192,
+      "binom_p_one_sided": 0.06924,
+      "t_stat": 2.099,
+      "t_p_one_sided": 0.018,
+      "mean_ci95_block_boot": [
+        0.023,
+        0.501
+      ],
+      "decision": "WEAK",
+      "reversal_exploratory": false,
+      "lead_cost_gate": false
+    },
+    "counts": {
+      "trading_dates": 1561,
+      "weekend_trading_dates_dropped": 1,
+      "missing_start": 9,
+      "missing_entry": 2,
+      "zero_signal": 0,
+      "missing_exit": 0,
+      "entry_skipped_spread": 8,
+      "tested": 1542
+    },
+    "descriptive": {
+      "slope_r2_on_r1": {
+        "n": 1542,
+        "slope": 0.00152,
+        "t_stat": 0.72,
+        "p_two_sided": 0.4718
+      },
+      "sd_r1_pips": 57.44,
+      "sd_r2_pips": 4.774,
+      "share_long": 0.498,
+      "unconditional_long_r2": {
+        "n": 1542,
+        "mean_pips": -0.282,
+        "median_pips": -0.35,
+        "sd_pips": 4.774,
+        "n_nonzero": 1533,
+        "hits": 698,
+        "hit_rate": 0.4553,
+        "binom_p_one_sided": 0.99979,
+        "t_stat": -2.317,
+        "t_p_one_sided": 0.9897,
+        "mean_ci95_block_boot": [
+          -0.552,
+          -0.061
+        ]
+      },
+      "abs_r1_tercile_low": {
+        "n": 515,
+        "mean_pips": -0.028,
+        "median_pips": 0.0,
+        "sd_pips": 3.579,
+        "n_nonzero": 510,
+        "hits": 259,
+        "hit_rate": 0.5078,
+        "binom_p_one_sided": 0.37831,
+        "t_stat": -0.18,
+        "t_p_one_sided": 0.5713,
+        "mean_ci95_block_boot": [
+          -0.337,
+          0.267
+        ]
+      },
+      "abs_r1_tercile_mid": {
+        "n": 513,
+        "mean_pips": 0.542,
+        "median_pips": 0.3,
+        "sd_pips": 4.709,
+        "n_nonzero": 510,
+        "hits": 272,
+        "hit_rate": 0.5333,
+        "binom_p_one_sided": 0.07193,
+        "t_stat": 2.608,
+        "t_p_one_sided": 0.0047,
+        "mean_ci95_block_boot": [
+          0.249,
+          0.885
+        ]
+      },
+      "abs_r1_tercile_high": {
+        "n": 514,
+        "mean_pips": 0.253,
+        "median_pips": 0.175,
+        "sd_pips": 5.777,
+        "n_nonzero": 513,
+        "hits": 265,
+        "hit_rate": 0.5166,
+        "binom_p_one_sided": 0.23998,
+        "t_stat": 0.992,
+        "t_p_one_sided": 0.1607,
+        "mean_ci95_block_boot": [
+          -0.21,
+          0.804
+        ]
+      },
+      "entry_spread_pips_median_p90": [
+        0.3,
+        0.5
+      ],
+      "exit_spread_pips_median_p90": [
+        0.5,
+        1.0
+      ],
+      "edt": {
+        "n": 1013,
+        "mean_pips": 0.426,
+        "median_pips": 0.3,
+        "sd_pips": 4.7,
+        "n_nonzero": 1007,
+        "hits": 540,
+        "hit_rate": 0.5362,
+        "binom_p_one_sided": 0.01161,
+        "t_stat": 2.886,
+        "t_p_one_sided": 0.002,
+        "mean_ci95_block_boot": [
+          0.202,
+          0.731
+        ]
+      },
+      "est": {
+        "n": 529,
+        "mean_pips": -0.072,
+        "median_pips": -0.1,
+        "sd_pips": 4.904,
+        "n_nonzero": 526,
+        "hits": 256,
+        "hit_rate": 0.4867,
+        "binom_p_one_sided": 0.74343,
+        "t_stat": -0.338,
+        "t_p_one_sided": 0.6323,
+        "mean_ci95_block_boot": [
+          -0.475,
+          0.354
+        ]
+      },
+      "fridays": {
+        "n": 306,
+        "mean_pips": 0.183,
+        "median_pips": 0.175,
+        "sd_pips": 5.055,
+        "n_nonzero": 306,
+        "hits": 157,
+        "hit_rate": 0.5131,
+        "binom_p_one_sided": 0.34455,
+        "t_stat": 0.634,
+        "t_p_one_sided": 0.2633,
+        "mean_ci95_block_boot": [
+          -0.427,
+          0.77
+        ]
+      },
+      "mon_thu": {
+        "n": 1236,
+        "mean_pips": 0.273,
+        "median_pips": 0.175,
+        "sd_pips": 4.706,
+        "n_nonzero": 1227,
+        "hits": 639,
+        "hit_rate": 0.5208,
+        "binom_p_one_sided": 0.07672,
+        "t_stat": 2.04,
+        "t_p_one_sided": 0.0208,
+        "mean_ci95_block_boot": [
+          -0.016,
+          0.553
+        ]
+      },
+      "next_date_reversal_reading_sign_r1_x_1705_to_1625_next": {
+        "n": 1537,
+        "mean_pips": -0.072,
+        "median_pips": -1.25,
+        "sd_pips": 57.398,
+        "n_nonzero": 1537,
+        "hits": 759,
+        "hit_rate": 0.4938,
+        "binom_p_one_sided": 0.69502,
+        "t_stat": -0.049,
+        "t_p_one_sided": 0.5197,
+        "mean_ci95_block_boot": [
+          -3.117,
+          3.066
+        ]
+      },
+      "excl_fomc_statement_dates": {
+        "n": 1495,
+        "mean_pips": 0.25,
+        "median_pips": 0.15,
+        "sd_pips": 4.561,
+        "n_nonzero": 1487,
+        "hits": 770,
+        "hit_rate": 0.5178,
+        "binom_p_one_sided": 0.08874,
+        "t_stat": 2.118,
+        "t_p_one_sided": 0.0172,
+        "mean_ci95_block_boot": [
+          0.038,
+          0.489
+        ]
+      },
+      "fomc_statement_dates_in_tested": 47,
+      "excl_month_end": {
+        "n": 1470,
+        "mean_pips": 0.201,
+        "median_pips": 0.125,
+        "sd_pips": 4.796,
+        "n_nonzero": 1462,
+        "hits": 752,
+        "hit_rate": 0.5144,
+        "binom_p_one_sided": 0.14179,
+        "t_stat": 1.607,
+        "t_p_one_sided": 0.0542,
+        "mean_ci95_block_boot": [
+          -0.046,
+          0.453
+        ]
+      }
+    },
+    "by_year": [
+      {
+        "year": 2015,
+        "n": 257,
+        "mean": 0.409,
+        "hit": 0.533
+      },
+      {
+        "year": 2016,
+        "n": 258,
+        "mean": 0.293,
+        "hit": 0.527
+      },
+      {
+        "year": 2017,
+        "n": 257,
+        "mean": 0.496,
+        "hit": 0.533
+      },
+      {
+        "year": 2018,
+        "n": 257,
+        "mean": 0.458,
+        "hit": 0.518
+      },
+      {
+        "year": 2019,
+        "n": 258,
+        "mean": -0.353,
+        "hit": 0.446
+      },
+      {
+        "year": 2020,
+        "n": 255,
+        "mean": 0.229,
+        "hit": 0.541
+      }
+    ],
+    "cost_check": {
+      "n": 1542,
+      "mean_signed_mid_pips": 0.255,
+      "mean_net_bidask_pips": -0.225,
+      "mean_net_spec4_pips": -0.425,
+      "mean_net_costs_x1_5_pips": -0.765,
+      "median_spread_entry_pips": 0.3,
+      "median_spread_exit_pips": 0.5
+    },
+    "n_trials": 1,
+    "blocks": [
+      "dev"
+    ],
+    "boot_block": 20,
+    "start_hm_ny": [
+      17,
+      0
+    ],
+    "entry_hm_ny": [
+      16,
+      25
+    ],
+    "exit_hm_ny": [
+      16,
+      55
+    ],
+    "first_date": "2015-01-02",
+    "last_date": "2020-12-31",
+    "decision": "WEAK"
+  },
+  "decision": "WEAK",
   "lead": false,
   "command": "python scripts/run_e038_roll_momentum.py | tee backtests/validation_reports/E038_results.txt",
   "preregistered_in": "R083",
-  "next_experiment": "B39 val confirmation only if SIGNAL; otherwise B38/B39 closed and backlog refill"
+  "next_experiment": "none (B38 closed WEAK, B39 closed unearned); backlog refill next (no other ready item)",
+  "run": {
+    "workflow_run_id": 42939744082,
+    "outputs_commit": "64780e4",
+    "date": "2026-11-11"
+  },
+  "recorded_in": "R084"
 }
