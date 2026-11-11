@@ -1,0 +1,33 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+oil data: {'bars': 2613666, 'first': '2015-01-02 00:00:00+00:00', 'last': '2020-12-31 21:59:00+00:00'}
+Data gate: {'oil_bars': 2613666, 'ok': True, 'dates_with_prev': 1560, 'dates_both_valid': 1540, 'both_valid_share': 0.9872, 'reason': None}
+
+E041 DEV lagged WTI -> next-day EUR/USD, position = +sign(ln WTI 16:00 London D / prev), 16:05 D -> 16:00 next
+n                                  1519
+mean_pips                         2.306
+median_pips                        0.25
+sd_pips                          56.352
+hit_rate                         0.5023
+t_stat                            1.595
+t_p_one_sided                    0.0555
+mean_ci95_block_boot    (-0.513, 5.184)
+decision                           NONE
+Costs (descriptive): {'n': 1519, 'mean_signed_mid_pips': 2.306, 'mean_net_bidask_pips': 2.069, 'mean_net_spec4_pips': 1.869, 'mean_net_costs_x1_5_pips': 1.651, 'median_spread_entry_pips': 0.2, 'median_spread_exit_pips': 0.2}
+Counts: {'dates': 1561, 'burn_in': 1, 'missing_oil_quote': 20, 'zero_signal': 1, 'oil_jump': 11, 'missing_entry': 3, 'missing_exit': 6, 'entry_skipped_spread': 0, 'tested': 1519, 'weekend_trading_dates_dropped': 1}
+
+Descriptive:
+  share_long_eurusd : 0.517
+  o_stats : {'mean': -0.0001, 'sd': 0.02372, 'abs_median': 0.01274}
+  mondays : {'n': 295, 'mean_pips': 2.316, 'median_pips': 3.5, 'sd_pips': 55.087, 'hit_rate': 0.5186, 't_stat': 0.722, 't_p_one_sided': 0.2354, 'mean_ci95_block_boot': (-5.053, 9.834)}
+  fridays_weekend_hold : {'n': 301, 'mean_pips': -0.435, 'median_pips': -1.45, 'sd_pips': 51.136, 'hit_rate': 0.485, 't_stat': -0.147, 't_p_one_sided': 0.5586, 'mean_ci95_block_boot': (-6.512, 4.53)}
+  excl_fomc_statement_dates : {'n': 1473, 'mean_pips': 1.859, 'median_pips': -0.15, 'sd_pips': 55.306, 'hit_rate': 0.4997, 't_stat': 1.29, 't_p_one_sided': 0.0986, 'mean_ci95_block_boot': (-0.745, 4.693)}
+  fomc_statement_dates_in_tested : 46
+  unconditional_long_eurusd : {'n': 1519, 'mean_pips': 0.079, 'median_pips': -1.5, 'sd_pips': 56.399, 'hit_rate': 0.4826, 't_stat': 0.055, 't_p_one_sided': 0.4782, 'mean_ci95_block_boot': (-2.193, 2.906)}
+  sd_move_pips : 56.399
+  by_year : [{'year': 2015, 'n': 254, 'mean': 11.066, 'hit': 0.563}, {'year': 2016, 'n': 255, 'mean': 2.859, 'hit': 0.498}, {'year': 2017, 'n': 254, 'mean': -0.542, 'hit': 0.504}, {'year': 2018, 'n': 255, 'mean': 2.325, 'hit': 0.49}, {'year': 2019, 'n': 256, 'mean': -3.61, 'hit': 0.441}, {'year': 2020, 'n': 245, 'mean': 1.76, 'hit': 0.518}]
+  abs_o_tercile_low : {'n': 507, 'mean_pips': -2.016, 'median_pips': -3.4, 'sd_pips': 53.731, 'hit_rate': 0.4596, 't_stat': -0.845, 't_p_one_sided': 0.8007, 'mean_ci95_block_boot': (-5.78, 3.099)}
+  abs_o_tercile_mid : {'n': 506, 'mean_pips': 2.992, 'median_pips': 2.075, 'sd_pips': 53.312, 'hit_rate': 0.5158, 't_stat': 1.263, 't_p_one_sided': 0.1037, 'mean_ci95_block_boot': (-1.563, 6.887)}
+  abs_o_tercile_high : {'n': 506, 'mean_pips': 5.949, 'median_pips': 3.7, 'sd_pips': 61.464, 'hit_rate': 0.5316, 't_stat': 2.177, 't_p_one_sided': 0.015, 'mean_ci95_block_boot': (0.702, 10.682)}
+  contemporaneous_corr_o_vs_eurusd_1600_prev_to_1600_D : {'n': 1516, 'corr': 0.0405, 'note': 'stated sign: oil up with EUR/USD up -> positive'}
+  lag_corr_o_vs_next_move : 0.0498
+E041 decision B45: NONE
