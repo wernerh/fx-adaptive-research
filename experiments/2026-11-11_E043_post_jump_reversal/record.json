@@ -1,0 +1,26 @@
+{
+  "experiment_id": "E043",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B48: -sign(r_t) x (EUR/USD mid t+70 min - mid t+10 min) > 1 pip per event after 5-min Lee-Mykland jumps (|L| > 5.395, K 270 bipower past-only, |move| >= 5 pips) on dev (post-jump reversal, Xiao-Yin-Zhao 2020, EUR extension)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family: event-time 5-min jump fade, all hours (relatives E026, E028)",
+  "decision_rule": "< 300 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND date-cluster bootstrap (trading dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e043_post_jump.py | tee backtests/validation_reports/E043_results.txt",
+  "preregistered_in": "R097",
+  "next_experiment": "SIGNAL -> B49 val confirmation; else B48 closed, B49 closed unearned",
+  "outputs": [
+    "backtests/validation_reports/E043_results.json",
+    "backtests/validation_reports/E043_results.txt",
+    "backtests/validation_reports/E043_events.csv"
+  ]
+}

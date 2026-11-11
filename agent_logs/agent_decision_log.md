@@ -952,3 +952,16 @@ Why each run chose what it did, and any judgement calls.
 - **Not chosen:** turn-of-month/year (INR/RON/ZAR/TRY only; ~72 dev events; lesson R090), volatility-only jump papers.
 - **Trials:** unchanged (dev 252, val 9, total 261).
 - **Next run:** pre-register B48 as E043.
+
+## 2026-11-11 R097 (unattended)
+- **State:** latest research-batch run 43021489775 (E042) completed success and was recorded in R095; none queued or in progress.
+  Clone was on a detached HEAD; checked out `main` and pulled. pytest 348 passed before any change.
+- **Choice:** protocol step 3, top `ready` item B48 (post-jump reversal) -> E043. Pre-registered (hypothesis.md, methodology.md,
+  record.json, registry row) before any run on real data; rule copied unchanged from the backlog draft (R096).
+- **Implementation choices fixed now, before data:** trading-time 5-min grid (weekend closure removed, holidays kept as missing);
+  sigma = mean of valid adjacent |r| products over the previous 269 returns (>= 90% valid); roll window [16:55, 17:55) NY; week open
+  = first valid quote after the weekend gap; only tested events block later jumps (`inside_hold`); date-cluster bootstrap by the
+  trading date of the jump slot.
+- **Action:** `post_jump.py`, `run_e043_post_jump.py`, 11 tests (359 pass); synthetic smoke NONE. batch.sh queues E043 (dev only).
+  Backlog B48 `running`. Trials unchanged until it runs (dev 252, val 9, total 261).
+- **Next run:** collect E043 when the research-batch run finishes.
