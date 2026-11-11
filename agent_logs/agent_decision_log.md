@@ -856,3 +856,16 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** E039 recorded; B40/B41 `done`, B42 closed unearned (0 trials). Trials dev 249, val 9, total 258. No lead, no
   notification.
 - **Next run:** no `ready` backlog item -> backlog refill.
+
+## 2026-11-11 R088 (unattended)
+- **State:** last research-batch run 42960104359 (E039) completed and recorded (R087, 868e9f4); no run queued or in progress (latest 5
+  runs all completed success). No `ready` backlog item (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). pytest 318
+  passed. Workspace clone was on a detached HEAD; checked out `main` and pulled.
+- **Choice:** B43 post-FOMC reversal of the pre-statement drift (-sign(16:00 NY t-1 -> 13:55 NY t) x 02:00 -> 14:00 NY t+1, dev, 1
+  trial, p < 0.05, < 40 events NONE) with B44 val confirmation (blocked), and B45 lagged daily WTI return -> next-day EUR/USD (sign(O) x
+  16:05 London D -> 16:00 London D+1, dev, 1 trial, block-20 bootstrap, oil gate first). Reason: both rest on a *published lagged*
+  effect (lesson R081) and B45 has a source-market signal over the full dev span (lesson R087). B43 ranked first: USD-specific
+  event, target window unseen on dev/val; it is underpowered (48 events), stated in its power note.
+- **Not chosen:** Chen-Hsu next-day stock-return differentials (already B35/E037), Stavrakeva-Tang (surprise data unavailable),
+  Bae-Da-Zurita (equity returns), monthly cross-sectional papers.
+- **Next run:** pre-register B43 as E040.

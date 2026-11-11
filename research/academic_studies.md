@@ -411,3 +411,36 @@ US session. That is unproven, which is exactly why E001 comes first.
   cost-adjusted returns to liquidity provision are positive and significant" (verbatim; liquidity-demander returns are not).
 - **Relevance:** Medium, but every window is already seen on dev and val in this repo; only OOS is clean (human decision).
 - **Status:** VERIFIED (slides)
+
+### Lee & Wang (2025): Jumps and Post-FOMC Announcement Returns in Currency Markets
+- **Source:** Review of Asset Pricing Studies 15(3-4), 247-287, [IDEAS abstract page](https://ideas.repec.org/a/oup/rasset/v15y2025i3-4p247-287..html)
+  (opened 2026-11-11 R088; abstract only, full text subscriber-restricted). DOI probably 10.1093/rapstu/raaf003 (handle seen on the
+  download link, not confirmed: UNVERIFIED).
+- **Finding (verbatim fragments):** post-FOMC currency returns are "mostly realized between 12 and 24 hours after FOMC announcements",
+  "cancelling out approximately 65% of positive pre-FOMC announcement drifts"; high-frequency exchange-rate data. Currency set, sample
+  period, the sign convention of a "positive" drift and EUR-specific magnitudes not read: UNVERIFIED.
+- **Relevance:** Medium. A published *lagged* (12-24 h) USD-event effect -> backlog B43/B44. Events are few (8 a year).
+- **Status:** VERIFIED (abstract only)
+
+### Ferraro, Rogoff & Rossi (2012/2015): Can Oil Prices Forecast Exchange Rates?
+- **Source:** NBER WP 17998 (April 2012), [PDF](https://www.nber.org/papers/w17998.pdf), opened 2026-11-11 R088, ~45% read verbatim;
+  published JIMF 54 (2015) 116-141 ([author PDF](https://crei.cat/wp-content/uploads/2016/07/COPF_pub.pdf), not opened).
+- **Finding (verbatim fragments):** "a very short-term relationship at the daily frequency"; it "holds no matter whether we use
+  contemporaneous (realized) or lagged oil prices"; "the predictive ability of the lagged realized oil prices is more ephemeral".
+  Main pair CAD/USD with WTI spot, daily 1984-12-14 to 2010-11-05; also NOK, ZAR, AUD, CLP. No EUR result. Section 4 (lagged model)
+  not read verbatim: its exact lagged results are UNVERIFIED.
+- **Relevance:** Low to medium. Lagged daily oil -> FX is published for commodity currencies only; a EUR/USD version is our extension
+  -> backlog B45 (WTI CFD minute data from 2011-09 on Dukascopy, covers dev).
+- **Status:** VERIFIED (partial text)
+
+### Other sources opened 2026-11-11 R088 (not used for items)
+- Chen & Hsu (2019, J. Forecasting 38(7) 699-713, DOI 10.1002/for.2592, [IDEAS abstract](https://ideas.repec.org/a/wly/jforec/v38y2019i7p699-713.html)):
+  "stock return differentials have in-sample and out-of-sample predictive power for nominal exchange rates", "1-day-ahead". Already
+  tested for EUR/USD as B35/E037 (NONE on dev); not re-added. Full text not read.
+- Stavrakeva & Tang (2023, CEPR DP18119, [PDF](https://repec.cepr.org/repec/cpr/ceprdp/DP18119.pdf), ~35% verbatim): "exchange rates
+  responding to past rather than contemporaneous news"; EUR/USD has the highest adjusted R2 (59% monthly, 74% quarterly, in-sample).
+  Needs macro surprise data (Bloomberg/IGM), not in the repo; not added.
+- Bae, Da & Zurita (2024, Management Science 70(3) 1943-1969, DOI 10.1287/mnsc.2023.4778, [PDF](https://academicweb.nd.edu/~zda/forex.pdf)):
+  lagged FX returns predict US *stock* returns; not an FX-return predictor; not added.
+- Chernov, Dahlquist & Lochstoer (2020, NBER WP 28260) and Filippou, Taylor & Wang (2021, CEPR DP16049): monthly cross-sectional
+  currency signals; not single-pair EUR/USD timing; not added.

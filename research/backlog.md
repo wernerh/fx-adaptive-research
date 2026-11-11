@@ -813,3 +813,62 @@ Trial count so far on dev: **249** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 ### B42: Treasury-auction demand shock -> EUR/USD, val confirmation (signal test, val only) · `done` (2026-11-11 R087: closed unearned, 0 trials; B40 and B41 NONE on dev (E039). Was: earned only if B40 or B41 returns SIGNAL on dev)
 - The SIGNAL arm(s), unchanged, on val only (2021-01-21 .. 2023-06-30, auction calendar for val dates), own pre-registration, 1 trial
   per arm, p < 0.05 (or < 0.025 if both arms). If neither arm is SIGNAL, B42 closes unearned with 0 trials.
+
+### Refill note R088 (not an item)
+- Sources opened R088 (web-fetch; entries in research/academic_studies.md): Lee & Wang (2025, RAPS, IDEAS abstract); Ferraro, Rogoff &
+  Rossi (NBER WP 17998, ~45% verbatim); Chen & Hsu (2019, J. Forecasting, abstract); Stavrakeva & Tang (CEPR DP18119, ~35% verbatim);
+  Bae, Da & Zurita (2024, Mgmt Sci, ~35% verbatim); Chernov-Dahlquist-Lochstoer (NBER WP 28260) and Filippou-Taylor-Wang (CEPR DP16049),
+  partial. Data check R088: dukascopy-node 1.51.1 metadata lists `lightcmdusd` (WTI CFD) minute candles from 2011-09-23 and
+  `brentcmdusd` from 2010-12-02, so an oil signal covers all of dev (lesson R087: source-market signal over the full dev span).
+- Not added: Chen-Hsu next-day stock-return differentials (= B35/E037, NONE); Stavrakeva-Tang lagged macro news (needs surprise data);
+  Bae-Da-Zurita (predicts equities); Chernov et al., Filippou et al. (monthly cross-sectional).
+- Why B43/B45: both have a *published lagged* effect (lesson R081): Lee-Wang a 12-24 h post-FOMC reversal in currencies; FRR a lagged
+  daily oil -> FX relation (commodity currencies; EUR is our extension, weak prior). B43 is ranked first (USD-specific event, unseen
+  target window); it is underpowered (48 dev events), stated in its power note.
+
+### B43: Post-FOMC reversal of the pre-statement EUR/USD drift, 12-24 h after the statement (signal test, dev) · `ready` (Added 2026-11-11 R088 refill)
+- **Mechanism [PUB, abstract only]:** Lee & Wang (2025, RAPS 15(3-4) 247-287): post-FOMC currency returns are "mostly realized
+  between 12 and 24 hours after FOMC announcements", "cancelling out approximately 65% of positive pre-FOMC announcement drifts"
+  (verbatim). Currency set, sign convention and EUR magnitude UNVERIFIED, so the item is symmetric in the drift sign.
+- **Events (fixed now):** scheduled, not cancelled FOMC statement dates t in data/calendars/fomc_dates.csv inside dev (2015-2020; 48
+  expected). Statement time 14:00 NY (America/New_York, DST-aware). Unscheduled meetings excluded.
+- **Signal:** P = EUR/USD mid at 13:55 NY on t minus mid at 16:00 NY on the previous trading date (the E013 window; quotes = open of
+  the first bar in [x, x+5 min), E011 rule). Position s = -sign(P) (reversal). P = 0 skipped (counted).
+- **Hold:** enter 02:00 NY on the next calendar day (t+12 h), exit 14:00 NY that day (t+24 h). Entry spread > 2.0 pips -> skipped
+  (counted); missing quote -> skipped (counted). Signed return in pips. If t+1 is not a trading day (no bars), skipped (counted).
+- **Decision rule (draft):** < 40 events -> NONE (insufficient sample). SIGNAL if mean signed > 1.0 pip AND i.i.d. bootstrap 95% CI
+  lower > 0 (2000 draws, seed 0; events do not overlap) AND one-sided t p < 0.05 (1 trial). WEAK if mean > 0 and (CI lower > 0 or
+  p < 0.05); else NONE. A SIGNAL earns B44.
+- **Power note:** 12-h EUR/USD SD roughly 30-40 pips -> SE ~5 pips with 48 events; only a reversal of ~10+ pips (E013 dev pre-drift
+  mean +21.28 pips; 65% of it ~14) can show. A NONE does not rule out the published effect.
+- **Descriptive (not in rule):** unconditional short EUR/USD over the same window; P > 0 subset only; the 14:00 -> 02:00 NY window
+  (0-12 h); OLS slope of the target on P; by year; SPEC 4 net and costs x1.5.
+- **Contamination note:** E013/E014 measured only the pre-statement window (16:00 t-1 -> 13:55 t); the 02:00 -> 14:00 NY t+1 window on
+  FOMC dates has not been computed on dev or val. E009 hour cells are unconditional. Dev usable.
+- **Calendar label:** FOMC statement (scheduled policy event); this effect *is* the strategy if it passes.
+- **Data:** FOMC calendar (in repo, validated 2015-2023); EUR/USD 1-minute bars in repo. No runner download needed beyond the usual.
+
+### B44: Post-FOMC reversal, val confirmation (signal test, val only) · `blocked` (Added 2026-11-11 R088; earned only if B43 returns SIGNAL on dev)
+- B43 unchanged on val (2021-01-21 .. 2023-06-30; ~20 statements), own pre-registration, 1 val trial, < 15 events -> NONE, p < 0.05.
+  Lesson 2026-11-08 (E014): val has low power for 8/yr events; a val NONE would close the line and leave only OOS (human decision).
+  If B43 is not SIGNAL, B44 closes unearned with 0 trials.
+
+### B45: Lagged daily oil return -> next-day EUR/USD (signal test, dev) · `ready` (Added 2026-11-11 R088 refill)
+- **Mechanism [PUB, partial text; EUR is our extension]:** Ferraro, Rogoff & Rossi (2012 NBER WP 17998 / JIMF 2015): daily oil price
+  changes forecast commodity-currency exchange rates; "the predictive ability of the lagged realized oil prices is more ephemeral"
+  (verbatim) than the contemporaneous one. Sign used here: oil up -> USD weaker -> EUR/USD up next day (stated before data; the
+  contemporaneous corr is reported descriptively). Prior weak (lesson R081: lags are often absorbed the same day).
+- **Phase 1 (data, on the runner):** dukascopy-node `lightcmdusd` 1-minute bid/ask for dev (2015-2020). Gate (fixed now): a valid WTI
+  quote at both 16:00 London points for >= 90% of dev EUR/USD trading dates; otherwise fix the download once or block (0 trials).
+- **Signal (fixed now, London clock, DST-aware):** O = log(WTI mid at 16:00 London D) - log(WTI mid at 16:00 London on the previous
+  trading date), quotes = open of the first bar in [x, x+5 min). Position s = sign(O); O = 0 or missing -> skipped (counted). |O| >
+  0.10 (e.g. a contract-roll gap or the April 2020 negative-price episode) -> skipped (counted; Dukascopy CFD roll handling UNVERIFIED).
+- **Hold:** EUR/USD 16:05 London D -> 16:00 London on the next trading date (E037 convention); entry spread > 2.0 pips -> skipped.
+- **Decision rule (draft):** < 500 dates -> NONE. SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap 95% CI lower > 0 (blocks
+  of 20 consecutive dates, 2000 draws, seed 0) AND one-sided t p < 0.05 (1 trial). WEAK if mean > 0 and (CI lower > 0 or p < 0.05);
+  else NONE. A SIGNAL earns a val confirmation item (to be added then, 1 val trial).
+- **Power note:** daily SD ~50 pips, n ~1500 -> SE ~1.3 pips; a ~3-pip edge is detectable.
+- **Descriptive (not in rule):** contemporaneous corr(O, EUR/USD same 16:00 -> 16:00 London day); by year; |O| terciles; Brent not used.
+- **Contamination note:** no oil series has been used in this repo; E037 used equity indices with the same hold window (different
+  signal). Dev usable.
+- **Data:** WTI CFD (phase 1, runner); EUR/USD 1-minute bars in repo.
