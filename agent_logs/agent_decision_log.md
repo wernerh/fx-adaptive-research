@@ -837,3 +837,13 @@ Why each run chose what it did, and any judgement calls.
   Valentin post-ECB drift (equities); Fanta ECB communication (no lasting EUR/USD move); Kloks et al. (swaps); EXFormer (ML model);
   KMW EUR window means (all windows seen on dev/val; OOS only, human decision).
 - **Next run:** pre-register B40+B41 as E039 (phase 1 auction-calendar fetch on the runner first).
+
+## 2026-11-11 R086 (unattended)
+- **State:** last research-batch run 42939744082 (E038) completed and recorded (R084); no run queued or in progress (latest 5 runs all
+  completed success). Top `ready` items: B40 + B41 (one experiment). pytest 308 passed before changes, 318 after (10 new tests).
+  Workspace clone was on a detached HEAD; checked out `main` and pulled.
+- **Choice:** pre-register B40+B41 as E039 (Treasury coupon-auction demand shock -> EUR/USD continuation, dev only, 2 trials,
+  p < 0.025 each, block-20 bootstrap, < 150 events NONE). Rule, gate and stop rule exactly as fixed in the backlog (R085); no change.
+  Phase 1 (auction calendar from the Fiscal Data API, dev dates only) runs on the runner in the same batch; the run script reads the
+  fetch status and gate and records BLOCKED (0 trials) on failure. ustbondtrusd 2019-2020 download is descriptive only.
+- **Next run:** collect the research-batch outputs for E039 (or diagnose phase 1 if BLOCKED; parser may be fixed once).

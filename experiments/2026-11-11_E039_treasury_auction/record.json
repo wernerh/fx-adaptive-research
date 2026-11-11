@@ -1,0 +1,16 @@
+{
+  "experiment_id": "E039",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B40: s x (EUR/USD mid 16:00 NY on the 10th trading date after D - mid T+10 min) > 1 pip per dev Treasury coupon-auction event; B41: same with exit on the 1st trading date after D; s = sign(EUR/USD mid T+10 - mid T-10 min), T = competitive close time (NY) of nominal Note/Bond auctions on D (Krohn-Vala-Uthemann-Yang 2025, EUR/USD proxy for the Treasury-futures shock)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new conditioning event: US Treasury coupon auctions (auction calendar from Fiscal Data API, phase 1 on the runner)",
+  "decision_rule": "Per arm: < 150 tested events -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 events, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.025; WEAK if mean > 0 and (CI lower > 0 or t p < 0.025); else NONE. Entry skipped if spread at T+10 > 2.0 pips. Calendar gate: 50-110 qualifying auctions per full dev year and >= 95% parsed close times, else BLOCKED (parser fix once). API refusal on 2 attempts -> BLOCKED, 0 trials. 2 dev trials. A SIGNAL in either arm earns B42 (val).",
+  "n_trials": 2,
+  "status": "preregistered",
+  "results": null,
+  "command": "python scripts/fetch_treasury_auctions.py; bash scripts/download_dukascopy_ustb.sh (descriptive, failure tolerated); python scripts/run_e039_treasury_auction.py | tee backtests/validation_reports/E039_results.txt",
+  "preregistered_in": "R086"
+}
