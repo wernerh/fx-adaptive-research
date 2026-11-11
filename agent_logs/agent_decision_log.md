@@ -997,3 +997,11 @@ Why each run chose what it did, and any judgement calls.
   single random-walk seed gave a chance SIGNAL, so the no-edge test pools 4 seeds). Synthetic smoke NONE. batch.sh queues E044 (dev
   only). Backlog B50 `running`. Trials unchanged until it runs (dev 253, val 9, total 262).
 - **Next run:** collect E044 when the research-batch run finishes.
+
+## 2026-11-11 R101 (unattended)
+- **State:** research-batch run 43078625073 (E044) completed success; outputs committed by github-actions[bot] (1587b7d), not yet
+  recorded. No run queued or in progress. Workspace clone was on a detached HEAD; checked out `main` and reset to origin/main.
+- **Choice:** collect E044 (protocol priority 1). Applied the pre-registered B50 rule exactly (R100): NONE (mean -0.183 < 0, so
+  neither SIGNAL nor WEAK). No rule or threshold changed; tercile and 1-min results are descriptive only.
+- **Action:** E044 recorded; B50 `done`, B51 closed unearned (0 trials). Trials dev 254, val 9, total 263. No lead, no notification.
+- **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).

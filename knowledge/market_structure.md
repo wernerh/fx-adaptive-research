@@ -102,3 +102,8 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
   14.85 pips; busiest NY hours 08, 10, 09, 03. Release proxy 08:25-08:50 NY holds 13.5% of tested events.
 - After a jump: t+5 -> t+10 signed by the fade +0.491 pips (CI (0.067, 0.946)); t+10 -> t+70 fade -0.693 pips, CI (-1.607, 0.251), NONE.
   See experiments/2026-11-11_E043_post_jump_reversal.
+
+### 2026-11-11 R101: EUR/USD daily realized skewness (E044, dev) [EXP]
+- RS of 5-min mid returns 18:00 -> 16:55 NY (median 275 returns): mean 0.0744, median 0.0226, SD 1.3169; corr with the daily return
+  0.564, sign agreement 0.7666; 1-min vs 5-min RS sign agreement 0.8037. Next-day signed mean -0.183 pips, NONE.
+  See experiments/2026-11-11_E044_realized_skew.

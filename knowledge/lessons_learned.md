@@ -390,3 +390,12 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   hour-scale post-move drift in either direction on dev. Equity-ETF jump results do not transfer to the deepest FX pair.
 - **Action:** B48 closed NONE (rejected_hypotheses.md); B49 closed unearned. No re-test with other thresholds, holds, entry lags or the
   opposite sign. Next: refill.
+
+### 2026-11-11 R101: daily realized skewness does not predict next-day EUR/USD (E044)
+- **Context:** E044 (B50), sign of 5-min realized skewness on trading date D, hold 20:00 NY D -> 16:55 NY D+1, dev only, 1 trial.
+- **Observation:** NONE (n 1238, -0.183 pips, block-20 CI (-3.845, 4.329), t p 0.5436). RS correlates 0.564 with the daily return.
+- **Evidence label:** [EXP]
+- **Lesson:** daily higher-moment signals on EUR/USD mostly re-encode the daily return sign, already null over this window (E033).
+  Cross-sectional currency-factor papers remain weak priors for single-pair time-series tests (lessons R081, R092, R095).
+- **Action:** B50 closed NONE (rejected_hypotheses.md); B51 closed unearned. No re-test with |RS| subsets, 1-min returns or the
+  opposite sign. Next: refill.
