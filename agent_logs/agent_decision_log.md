@@ -1040,3 +1040,20 @@ Why each run chose what it did, and any judgement calls.
   and contradicts the round-number mechanism rather than supporting it (lesson R076).
 - **Action:** E045 recorded; B52 `done`, B53 closed unearned (0 trials). Trials dev 255, val 9, total 264. No lead, no notification.
 - **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).
+
+## 2026-11-11 R105 (unattended)
+- **State:** origin/main at cd9b59f (E045 recorded). Last research-batch run 43103436725 completed and recorded; nothing queued or in
+  progress. No `ready` backlog item -> refill (protocol step 4).
+- **Literature pass:** Osler (2002) SR 150 full-text (partial verbatim) and Kloks-Mattille-Ranaldo (2024) opened; one extended search.
+  Details in research/backlog.md "Refill note R105" and research/academic_studies.md.
+- **Judgement call (deviation from "add 2-3 items"):** no candidate cleared the bar for a pre-registered trial. The one concrete new
+  design (Osler-faithful confirmed round-number crossing) has a published effect (~0.7 bp, relative to arbitrary levels, inside the
+  first 15 minutes) that is below the 1-pip rule and costs by construction; previous-day-high/low stops and quarter-end funding have no
+  verified spot-direction basis. Adding them would spend trials (264 so far) on tests that cannot pass, which weakens every later
+  result. Added a refill note instead; 0 trials used.
+- **For the human (no action required now; not a lead):** the price-only queue appears exhausted on dev. Remaining published
+  mechanisms need one of: (1) a sanctioned economic-release calendar with timestamps and consensus (unblocks B6/B12 and announcement-day
+  carry, KMW-UIP); (2) a FRED API key as an Actions secret or another approved release-date source; (3) fed funds futures / OIS data;
+  (4) FX options data; (5) a decision on using the locked OOS block for already-seen windows (KMW pre-ECB, B7). Until one is supplied,
+  refill runs will keep searching for free downloadable sources of these.
+- **Next run:** if still nothing `ready`, refill pass focused on a free, runner-downloadable release-date source (verified links only).

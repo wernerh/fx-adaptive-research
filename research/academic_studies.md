@@ -559,3 +559,21 @@ US session. That is unproven, which is exactly why E001 comes first.
   "is not profitable in the foreign exchange market" (verbatim abstract); cross-sectional. Not added.
 - Fetch-permission timeouts (not opened, nothing used from them): Osler FRBNY Staff Report 125 PDF, Osler (2000) FRBNY EPR PDF, IDEAS
   pages for Osler (2003) and Osler (2000). B52 relies only on the Osler (2003) abstract entry VERIFIED 2026-11-07 above.
+
+### Other sources opened 2026-11-11 R105 (not used for items)
+- Osler (2002), "Stop-loss orders and price cascades in currency markets", FRBNY Staff Report 150,
+  [PDF](https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr150.pdf) (opened R105, first ~40% verbatim; adds to the
+  R031 abstract entry above, which is not changed). Verbatim: "executed stop-loss buy orders cluster just above round numbers
+  (specifically numbers ending in 00 or 50), and executed stop-loss sell orders tend to cluster at rates just below round numbers";
+  "'reaching' a number is defined as coming within 0.01 percent of it"; "The rate is defined to have crossed a number if it is above
+  (below) the number 15 minutes after rising (falling) to the number"; "dollar-mark moves an average 0.061 percent during the 15
+  minutes after crossing a round number, but only 0.054 percent after crossing an arbitrary number". Data: minute Reuters quotes,
+  Jan 1996 - Apr 1998, DEM/JPY/GBP vs USD, 9:00-16:00 NY. Nothing on recent highs/lows or previous-day range in the verbatim text.
+  Horizon results beyond 15 minutes (dollar-yen table, "at least two hours") seen only in a summary: UNVERIFIED. RePEc lists the 2005
+  journal article; the record's link slug suggests JIMF 24(2), 219-241: UNVERIFIED (not stated on the page).
+- Kloks, Mattille & Ranaldo (2024-09-26), "Hunting for Dollars",
+  [PDF](https://ecb.europa.eu/press/conferences/shared/pdf/20241107_money_markets/Ranaldo_paper.pdf) (ECB money-markets conference
+  2024-11-07; ~60% verbatim): non-US banks "substitute dollar borrowing from US repo markets with foreign exchange (FX) swaps at the
+  quarter-end" (verbatim); swap volumes and the cross-currency basis rise at quarter-ends. No spot-rate direction, size or timing in the
+  verbatim text. Not added (no spot prediction; ~24 dev quarter-ends).
+
