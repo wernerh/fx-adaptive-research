@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E041",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B45: +sign(O(D)) x (EUR/USD mid 16:00 London next date - mid 16:05 London D) > 1 pip per dev trading date; O = ln WTI CFD mid 16:00 London D - ln same on previous date (lagged daily oil return, Ferraro-Rogoff-Rossi, EUR extension)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new conditioning variable: lagged daily WTI return (hold window as E037)",
+  "decision_rule": "Data gate first (WTI empty or valid 16:00 London quote at both points on < 90% of dev dates -> BLOCKED, 0 trials). |O| > 0.10 skipped. < 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "bash scripts/download_dukascopy_oil.sh; python scripts/run_e041_oil_lag.py | tee backtests/validation_reports/E041_results.txt",
+  "preregistered_in": "R091",
+  "next_experiment": "collect E041; SIGNAL -> add val confirmation item; else B45 closed, backlog refill"
+}

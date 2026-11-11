@@ -8,3 +8,4 @@ data/processed/*
 data/raw_index/
 !data/processed/.gitkeep
 *.egg-info/
+data/raw_oil/

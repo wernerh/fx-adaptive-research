@@ -1,9 +1,12 @@
 # Research batch queue. Edit and push this file to run the commands below on GitHub Actions
 # (workflow: .github/workflows/research-batch.yml). Run from repo root, data already ingested.
 # Only pre-registered experiments may be queued here. Never queue --block oos without a written dev/val conclusion.
-# Request: 2026-11-11 R089 E040 (B43) post-FOMC reversal of the pre-statement EUR/USD drift:
-# -sign(mid 16:00 NY t-1 -> 13:55 NY t) x (mid 02:00 -> 14:00 NY t+1), scheduled FOMC statements, DEV block only, 1 trial.
-# Pre-registered in experiments/2026-11-11_E040_post_fomc_reversal/. No val, no OOS. No external download.
+# Request: 2026-11-11 R091 E041 (B45) lagged daily WTI return -> next-day EUR/USD: position +sign(ln WTI 16:00 London D /
+# previous date), hold 16:05 London D -> 16:00 London next date, DEV block only, 1 trial, p < 0.05.
+# Pre-registered in experiments/2026-11-11_E041_oil_lag/. No val, no OOS.
+# The WTI download (dev dates only) may fail without failing the job: the E041 data gate then records BLOCKED (0 trials).
 set -euo pipefail
 mkdir -p backtests/validation_reports
-python scripts/run_e040_post_fomc_reversal.py | tee backtests/validation_reports/E040_results.txt
+bash scripts/download_dukascopy_oil.sh 2>&1 | tee backtests/validation_reports/E041_oil_download.log \
+  || echo "OIL DOWNLOAD FAILED (E041 data gate will record BLOCKED)" | tee -a backtests/validation_reports/E041_oil_download.log
+python scripts/run_e041_oil_lag.py | tee backtests/validation_reports/E041_results.txt

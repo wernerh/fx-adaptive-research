@@ -885,3 +885,15 @@ Why each run chose what it did, and any judgement calls.
   No rule or threshold changed.
 - **Action:** E040 recorded; B43 `done`, B44 closed unearned (0 trials). Trials dev 250, val 9, total 259. No lead, no notification.
 - **Next run:** pre-register B45 (top `ready` item) as E041.
+
+## 2026-11-11 R091 (unattended)
+- **State:** last research-batch run 42980196892 (E040) completed and recorded (R090); no run queued or in progress (latest 5 runs all
+  completed success). Top `ready` backlog item: B45 -> protocol step 3 (next experiment). pytest passed before changes (325) and
+  after (336).
+- **Choice:** pre-register B45 as E041 (dev only, 1 trial, p < 0.05, block-20 bootstrap, WTI data gate first), rule and parameters
+  exactly as drafted in the backlog (R088). Implementation choices fixed now, before data: date list = Mon-Fri EUR/USD dev trading
+  dates (E037); a non-positive WTI bid/ask counts as an invalid quote (`missing_oil_quote`); gate denominator = dev dates with a
+  previous date; exclusion order burn_in, missing_oil_quote, zero_signal, oil_jump, missing_entry, missing_exit, entry_skipped_spread.
+- **Reuse:** E034 `load_index` / `london_quotes`, E037 `fx_dates` / quote helpers and trade convention, E036 rule (`decide_b34`:
+  identical thresholds, p < 0.05). New download script `scripts/download_dukascopy_oil.sh` (`lightcmdusd`, raw files git-ignored).
+- **Next run:** collect E041 when the research-batch run finishes.
