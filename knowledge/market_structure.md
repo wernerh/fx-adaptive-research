@@ -107,3 +107,8 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - RS of 5-min mid returns 18:00 -> 16:55 NY (median 275 returns): mean 0.0744, median 0.0226, SD 1.3169; corr with the daily return
   0.564, sign agreement 0.7666; 1-min vs 5-min RS sign agreement 0.8037. Next-day signed mean -0.183 pips, NONE.
   See experiments/2026-11-11_E044_realized_skew.
+
+### 2026-11-11 R104: EUR/USD rejected touches of 00/50 levels (E045, dev) [EXP]
+- 1195 first rejected touches (1562 dev trading dates); 1000 tradeable. Fade 60 min -0.71 pips (NONE); 15 min -0.259,
+  120 min -1.429. In 83.1% of trades the close crosses the level within the hold. Control 23/73 fade +1.608 (descriptive).
+  See experiments/2026-11-11_E045_round_touch_reversal.

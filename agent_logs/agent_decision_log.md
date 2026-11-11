@@ -1029,3 +1029,14 @@ Why each run chose what it did, and any judgement calls.
   `round_touch.py`, `run_e045_round_touch.py`, 13 tests (incl. no-look-ahead and pooled random-walk no-edge). Synthetic smoke NONE.
   batch.sh queues E045 (dev only). Backlog B52 `running`. Trials unchanged until it runs (dev 254, val 9, total 263).
 - **Next run:** collect E045 when the research-batch run finishes.
+
+## 2026-11-11 R104 (unattended)
+- **State:** research-batch run 43103436725 (E045) completed success; outputs committed by github-actions[bot] (684336c), not yet
+  recorded. No run queued or in progress. Workspace clone was on a detached HEAD; checked out `main` and reset to origin/main.
+  pytest 382 passed.
+- **Choice:** collect E045 (protocol priority 1). Applied the pre-registered B52 rule exactly (R103): NONE (mean -0.71 < 0, so
+  neither SIGNAL nor WEAK). No rule or threshold changed; control-level, side, horizon and calendar cells are descriptive only.
+- **Judgement call:** the control-level fade (23/73) is positive with CI > 0 (+1.608). Not queued: it is a control cell, post-hoc,
+  and contradicts the round-number mechanism rather than supporting it (lesson R076).
+- **Action:** E045 recorded; B52 `done`, B53 closed unearned (0 trials). Trials dev 255, val 9, total 264. No lead, no notification.
+- **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).

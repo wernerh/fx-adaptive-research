@@ -399,3 +399,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   Cross-sectional currency-factor papers remain weak priors for single-pair time-series tests (lessons R081, R092, R095).
 - **Action:** B50 closed NONE (rejected_hypotheses.md); B51 closed unearned. No re-test with |RS| subsets, 1-min returns or the
   opposite sign. Next: refill.
+
+### 2026-11-11 R104: rejected touches of round numbers do not reverse in EUR/USD (E045)
+- **Context:** E045 (B52), fade the first rejected touch of a 00/50 level per trading date, 60-min hold, dev only, 1 trial, parent E018.
+- **Observation:** NONE (n 1000, -0.71 pips, date-cluster CI (-1.878, 0.401), t p 0.8828). Control levels 23/73 with the same fade:
+  +1.608, CI (0.421, 2.809) (descriptive).
+- **Evidence label:** [EXP]
+- **Lesson:** neither half of the Osler round-number story (E018 continuation, E045 reversal) shows on 2015-2020 1-minute mids. Round
+  levels behave, if anything, worse for a fade than arbitrary levels; a significant control cell is not a hypothesis (lesson R076).
+- **Action:** B52 closed NONE (rejected_hypotheses.md); B53 closed unearned. No re-test with other horizons, level steps, offsets or the
+  continuation sign. Next: refill.
