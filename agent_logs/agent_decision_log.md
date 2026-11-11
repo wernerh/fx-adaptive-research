@@ -906,3 +906,17 @@ Why each run chose what it did, and any judgement calls.
   high-|O| tercile is recorded as descriptive only.
 - **Action:** E041 recorded; B45 `done`. Trials dev 251, val 9, total 260. No lead, no notification.
 - **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).
+
+## 2026-11-11 R093 (unattended)
+- **State:** last research-batch run 42996346127 (E041) completed and recorded (R092); no run queued or in progress (latest 5 runs all
+  completed success). No `ready` backlog item (B6, B12, B13 blocked; B7, B8 parked) -> protocol step 4 (refill). pytest 336 passed.
+  Workspace clone was on a detached HEAD; checked out `main` and pulled.
+- **Choice:** B46 lagged daily gold return -> next-day EUR/USD (s = -sign(G), G = ln XAU/USD 16:00 London D / previous date; hold
+  16:05 London D -> 16:00 London D+1; dev, 1 trial, E041 rule: mean > 1 pip, block-20 CI lower > 0, t p < 0.05; gold gate first) with
+  B47 val confirmation (blocked). Reason: published lagged daily gold -> FX (Apergis 2014, AUD/USD) and a source series over all of
+  dev (lessons R081, R087). Sign fixed from the paper's printed short-run coefficients, not from E041 (which would favour the opposite
+  sign). Weak prior stated in the item.
+- **Not chosen:** Basnarkov et al. 1-minute cross-pair leads (absent for currencies, untradable at 1 minute), Ranaldo German-holiday
+  reversal (~35 dev events, lesson R090), KMW 2021 fix windows (already tested).
+- **Trials:** unchanged (dev 251, val 9, total 260).
+- **Next run:** pre-register B46 as E042.

@@ -444,3 +444,28 @@ US session. That is unproven, which is exactly why E001 comes first.
   lagged FX returns predict US *stock* returns; not an FX-return predictor; not added.
 - Chernov, Dahlquist & Lochstoer (2020, NBER WP 28260) and Filippou, Taylor & Wang (2021, CEPR DP16049): monthly cross-sectional
   currency signals; not single-pair EUR/USD timing; not added.
+
+### Apergis (2014): Can gold prices forecast the Australian dollar movements?
+- **Source:** International Review of Economics & Finance 29 (2014) 75-82, DOI 10.1016/j.iref.2013.04.004,
+  [EconPapers](https://econpapers.repec.org/RePEc:eee:reveco:v:29:y:2014:i:c:p:75-82) (abstract verbatim), [author manuscript](https://espace.curtin.edu.au/bitstream/handle/20.500.11937/4847/197566_197566.pdf?sequence=2)
+  (full text, opened 2026-11-11 R093). Published typeset version not opened.
+- **Finding:** "whether gold prices have a reliable out-of-sample relationship" with AUD/USD, "using daily and quarterly data,
+  respectively, spanning the period 2000–2012"; "the out-of-sample predictive ability is strong and robust across short- and long-run
+  horizons" (verbatim). ECM with 8 lags; manuscript Table 3: lagged gold returns enter the exchange-rate equation with negative
+  coefficients (lag 1 -0.328, t -4.34; lags 2-5 negative). Long-run sign reading inconsistent in the text (UNVERIFIED). Out-of-sample:
+  RMSE below random walk, no formal test. AUD/USD only; no EUR.
+- **Relevance:** Low to medium. Published lagged daily gold -> FX; EUR/USD is our extension -> backlog B46 (XAU/USD minute data from
+  2003 on Dukascopy).
+- **Status:** VERIFIED (abstract + author manuscript)
+
+### Other sources opened 2026-11-11 R093 (not used for items)
+- Basnarkov, Stojkoski, Utkovski & Kocarev (2019, arXiv [1906.10388](https://arxiv.org/abs/1906.10388), Physica A, related DOI
+  10.1016/j.physa.2019.122986 not opened; full text): histdata 1-minute bid quotes 2016-2018, 66 pairs; "for most pairs of exchange
+  rates lagged effects are absent" (verbatim); significant leads are 1-minute and come from indices/commodities; EUR/USD only as lagger
+  of USD/CZK; no costs, "we are still uncertain of the existence of arbitrage" (verbatim). Not added.
+- Ranaldo (2007) section 5.2 holidays, now read verbatim (supersedes the UNVERIFIED note in the entry above): German holidays as the
+  EU proxy; EUR/USD 36 German-holiday and 54 US-holiday days (1999-2005); EU-hours mean +10.3% (annualised, regular) vs -3.2% on
+  German holidays; Table 7 test column has no significance marks. Underpowered on dev (~35 events, lesson R090); not added.
+- Krohn, Mueller & Whelan (BoC SWP 2021-48, [PDF](https://www.bankofcanada.ca/wp-content/uploads/2021/10/swp2021-48.pdf), ~35%
+  verbatim): "The U.S. dollar systematically appreciates against all currencies ahead of the three major currency fixes" (verbatim);
+  same windows as the existing KMW entries; already tested (E007, E010, E011, E022-E025, E030-E032). Not added.

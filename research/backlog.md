@@ -872,3 +872,52 @@ Trial count so far on dev: **251** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - **Contamination note:** no oil series has been used in this repo; E037 used equity indices with the same hold window (different
   signal). Dev usable.
 - **Data:** WTI CFD (phase 1, runner); EUR/USD 1-minute bars in repo.
+
+### Refill note R093 (not an item)
+- Sources opened R093 (web-fetch; entries in research/academic_studies.md): Apergis (2014, IREF 29, 75-82, DOI
+  10.1016/j.iref.2013.04.004; EconPapers abstract verbatim + Curtin author manuscript full text); Basnarkov, Stojkoski, Utkovski &
+  Kocarev (arXiv 1906.10388, Physica A, full text); Ranaldo (2007 SNB WP / EFMA 2008) section 5.2 holidays, now read verbatim; Krohn,
+  Mueller & Whelan (BoC SWP 2021-48, ~35% verbatim). Data check R093: dukascopy-node 1.51.1 metadata lists `xauusd` (XAU/USD) minute
+  candles from 2003-05-05, so a gold signal covers all of dev (lesson R087).
+- Not added: Basnarkov et al. (lagged effects "absent" for most currency pairs; significant leads are 1-minute, bid-only, no costs;
+  EUR/USD only as a lagger of USD/CZK). Ranaldo German-holiday reversal of the EU-hours USD appreciation (Table 7: EUR/USD 36
+  holiday days in 1999-2005, no significance marks; ~35 dev events and a 4-hour target, below the power floor of lesson R090; the
+  home-hours line is closed on val, B14/E017). KMW 2021: fixes, vol state and price pressure already tested (E007, E010, E011, E022-E025,
+  E030-E032); nothing new.
+- Why B46: Apergis reports a published *lagged* daily gold -> exchange-rate relation (lesson R081) with a source-market signal over the
+  full dev span (lesson R087). EUR/USD is our extension (AUD/USD only in the paper): weak prior. Gold and WTI are both USD-priced, so
+  the signal is partly correlated with E041's (stated in the contamination note); the hold window is E041's, so the one variable
+  changed vs E041 is the source market (and with it the paper's sign).
+
+### B46: Lagged daily gold return -> next-day EUR/USD (signal test, dev) · `ready` (Added 2026-11-11 R093 refill; 1 dev trial counted when it runs)
+- **Mechanism [PUB, AUD/USD only; EUR is our extension]:** Apergis (2014, IREF 29, 75-82): "the out-of-sample predictive ability is
+  strong and robust across short- and long-run horizons" (verbatim abstract) for gold -> AUD/USD, daily 2000-2012, ECM with 8 lags.
+  Author-manuscript Table 3: lagged gold returns enter the exchange-rate equation with **negative** short-run coefficients (lag 1
+  -0.328, t -4.34; lags 2-5 also negative). The paper's long-run sign reading is internally inconsistent (UNVERIFIED which way AUD is
+  quoted). Sign used here, fixed now from the printed short-run coefficients: gold up on D -> EUR/USD down over D -> D+1 (partial
+  reversal of the same-day USD co-move). Prior weak (lesson R081; Basnarkov et al. find most daily-and-shorter FX lags absent).
+- **Phase 1 (data, on the runner):** dukascopy-node `xauusd` 1-minute bid/ask for dev (2015-2020), raw files git-ignored. Gate (fixed
+  now): a valid gold quote at both 16:00 London points for >= 90% of dev EUR/USD trading dates; otherwise fix the download once or
+  block (0 trials).
+- **Signal (fixed now, London clock, DST-aware; E041 conventions):** G = log(XAU/USD mid at 16:00 London D) - log(mid at 16:00 London
+  on the previous trading date), quotes = open of the first bar in [x, x+5 min). Position s = -sign(G); G = 0 or missing -> skipped
+  (counted). |G| > 0.10 -> skipped (counted; data-error guard, same as E041).
+- **Hold:** EUR/USD 16:05 London D -> 16:00 London on the next trading date (E037/E041 convention); entry spread > 2.0 pips -> skipped.
+- **Decision rule (draft, = E041 rule):** < 500 dates -> NONE. SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap 95% CI
+  lower > 0 (blocks of 20 consecutive dates, 2000 draws, seed 0) AND one-sided t p < 0.05 (1 trial). WEAK if mean > 0 and (CI lower >
+  0 or p < 0.05); else NONE. A SIGNAL earns B47.
+- **Power note:** daily SD ~50 pips, n ~1500 -> SE ~1.3 pips; a ~3-pip edge is detectable. ~261 registered trials: a single p just
+  under 0.05 is expected noise (lesson R092), hence the val confirmation.
+- **Descriptive (not in rule):** contemporaneous corr(G, EUR/USD same 16:00 -> 16:00 London day); corr(G, WTI O of E041) on common
+  dates; the opposite-sign (continuation) mean, reported only; by year (lesson R092: check one-year concentration); |G| terciles;
+  SPEC 4 net and costs x1.5.
+- **Contamination note:** no gold series has been used in this repo. The target window equals E041's (and E037's), whose
+  unconditional and oil-signed means on dev are known; G is correlated with E041's O (both USD-priced commodities). The sign is fixed
+  from the paper, not from E041 (E041's positive oil-continuation mean would favour the opposite sign). Record in the methodology.
+- **Calendar label:** daily cross-market signal, not a fix or release effect (the 16:00 London point is the WM/R fix: report the
+  16:00 -> 16:05 London gap excluded by the entry rule, as in E041).
+- **Data:** XAU/USD (phase 1, runner); EUR/USD 1-minute bars in repo.
+
+### B47: Lagged daily gold return -> EUR/USD, val confirmation (signal test, val only) · `blocked` (Added 2026-11-11 R093; earned only if B46 returns SIGNAL on dev)
+- B46 unchanged on val (2021-01-01 .. 2023-06-30; ~640 dates), own pre-registration, 1 val trial, < 200 dates -> NONE, p < 0.05,
+  block-20 bootstrap, gold gate on val dates. If B46 is not SIGNAL, B47 closes unearned with 0 trials.
