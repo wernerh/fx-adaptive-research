@@ -920,3 +920,14 @@ Why each run chose what it did, and any judgement calls.
   reversal (~35 dev events, lesson R090), KMW 2021 fix windows (already tested).
 - **Trials:** unchanged (dev 251, val 9, total 260).
 - **Next run:** pre-register B46 as E042.
+
+## 2026-11-11 R094 (unattended)
+- **State:** last research-batch run 42996346127 (E041) completed and recorded (R092); no run queued or in progress (latest 5 runs all
+  completed success). Top `ready` backlog item: B46 -> protocol step 3 (next experiment). pytest 336 passed before changes, 348 after.
+- **Choice:** pre-register B46 as E042 (dev only, 1 trial, p < 0.05, block-20 bootstrap, gold data gate first), rule, sign and
+  parameters exactly as drafted in the backlog (R093). Parent E041; one variable changed (source market WTI -> XAU/USD, with the
+  paper's sign). Instrument id `xauusd` checked in the dukascopy-node 1.51.1 package metadata (minute candles from 2003-05-05).
+- **Implementation choices fixed now, before data:** `gold_lag.build_days` reuses `oil_lag.build_days` (same dates, quotes,
+  exclusion order, |x| > 0.10 guard) with renamed columns/exclusions and position -sign(G); corr(G, E041 O) uses the committed
+  `E041_days.csv` with |O| <= 0.10 (descriptive only).
+- **Next run:** collect E042 when the research-batch run finishes.

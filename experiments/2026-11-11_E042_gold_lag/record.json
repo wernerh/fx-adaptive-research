@@ -1,0 +1,19 @@
+{
+  "experiment_id": "E042",
+  "date": "2026-11-11",
+  "instrument": "EURUSD",
+  "hypothesis": "B46: -sign(G(D)) x (EUR/USD mid 16:00 London next date - mid 16:05 London D) > 1 pip per dev trading date; G = ln XAU/USD mid 16:00 London D - ln same on previous date (lagged daily gold return, Apergis 2014, EUR extension)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": "E041",
+  "variable_changed": "source market: WTI CFD -> XAU/USD (sign from Apergis 2014); hold window, gate and rule as E041",
+  "decision_rule": "Data gate first (gold empty or valid 16:00 London quote at both points on < 90% of dev dates -> BLOCKED, 0 trials). |G| > 0.10 skipped. < 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "bash scripts/download_dukascopy_gold.sh; python scripts/run_e042_gold_lag.py | tee backtests/validation_reports/E042_results.txt",
+  "preregistered_in": "R094",
+  "next_experiment": "SIGNAL -> B47 (val confirmation); else B46 closed, B47 closed unearned"
+}
