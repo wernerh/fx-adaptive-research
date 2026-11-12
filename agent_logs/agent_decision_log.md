@@ -1236,3 +1236,13 @@ Why each run chose what it did, and any judgement calls.
   `run_e047_pivot_touch.py`, 14 tests (incl. no look-ahead and random-walk no-edge). Synthetic smoke NONE (34 trades). batch.sh
   queues E047 (dev only). Backlog B56 `running`. Trials unchanged until it runs (dev 256, val 9, total 265).
 - **Next run:** collect E047 when the research-batch run finishes.
+
+## 2026-11-12 R126 (unattended)
+- **State:** research-batch run 43291084015 (E047) completed success; outputs committed by github-actions[bot] (5ed400d), not yet
+  recorded. No run queued or in progress. Clone was on a detached HEAD with a stale local `main`; reset `main` to `origin/main`.
+  pytest 407 passed.
+- **Choice:** collect E047 (protocol priority 1). Applied the pre-registered B56 rule exactly (R125): NONE (mean -0.187 < 1 pip,
+  CI lower -1.588 < 0, t p 0.6078). No rule or threshold changed.
+- **Judgement call:** thesis-window subset (+2.359) and London 16:00 cell (+2.782) are descriptive, post-hoc; not queued (lesson R076).
+- **Action:** E047 recorded; B56 `done`, B57 closed unearned (0 trials). Trials dev 257, val 9, total 266. No lead, no notification.
+- **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).

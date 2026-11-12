@@ -116,3 +116,7 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 ### 2026-11-12 R111: EUR/USD daily return by FOMC-cycle week (E046, dev) [EXP]
 - 20:00 NY -> 16:55 NY long mean by cycle week: -1 -0.717, 0 +4.218, 1 -7.167, 2 +3.272, 3 -0.831, 4 -1.328, 5 +8.182 (n 111),
   6 -3.257 (n 21). Even/odd partition (week 0 excluded) +1.152, NONE. See experiments/2026-11-12_E046_fomc_cycle.
+
+### 2026-11-12 R126: EUR/USD after first touch of previous-day pivot R1/S1 (E047, dev) [EXP]
+- 1349 first touches (1565 UTC dates), 1270 tradeable. Continuation 120 min -0.187 pips (NONE); 60 min +0.165, 180 min -0.231.
+  R1 long -0.727, S1 short +0.351. Control levels at +-0.0023 behave the same. See experiments/2026-11-12_E047_pivot_touch.

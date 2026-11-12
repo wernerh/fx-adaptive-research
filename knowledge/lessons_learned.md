@@ -419,3 +419,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   ~1 pip mean is far below detectability. Extreme single-week cells are post-hoc (lesson R076).
 - **Action:** B54 closed NONE (rejected_hypotheses.md); B55 closed unearned. No re-test with single weeks, lags, holds or the
   opposite sign. Next: refill.
+
+### 2026-11-12 R126: previous-day pivot R1/S1 first touches do not continue in EUR/USD (E047)
+- **Context:** E047 (B56), long after the first R1 touch / short after the first S1 touch per UTC date, entry t+1 min, 120-min hold, dev, 1 trial.
+- **Observation:** NONE (n 1270, -0.187 pips, date-cluster CI (-1.588, 1.181), t p 0.6078). Fade direction +0.187 (reported only);
+  +-0.0023 control levels -0.212 / -0.962 (descriptive).
+- **Evidence label:** [EXP]
+- **Lesson:** a student-essay result on a short window (the thesis-period subset, +2.359, n 116) is a weak prior; across 6 dev years
+  pivot levels behave like arbitrary levels. Together with E018/E045 (round numbers) this closes the price-level touch family on dev.
+- **Action:** B56 closed NONE (rejected_hypotheses.md); B57 closed unearned. No re-test with R2/S2/P, other holds, lags or the fade
+  sign. Next: refill.
