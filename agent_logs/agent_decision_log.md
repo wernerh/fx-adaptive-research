@@ -1224,3 +1224,15 @@ Why each run chose what it did, and any judgement calls.
   Basis is weak (Lund master's essay, EUR/USD win rates only, sample Jun-Dec 2017 inside dev) but verbatim-verified, mechanical, new
   family and adequately powered; the sign is fixed from the essay before any dev pivot statistic. Not a lead; no notification.
 - **Next run:** pre-register B56 as E047.
+
+## 2026-11-12 R125 (unattended)
+- **State:** latest research-batch run 43155068137 (E046) completed success and was recorded in R111; none queued or in progress.
+  Clone was on a detached HEAD with a stale shallow `main`; reset `main` to `origin/main` (9cdf038). pytest 393 passed.
+  Top `ready` backlog item: B56.
+- **Choice:** protocol step 3, pre-register B56 as E047 (only ready item; price data in repo, no download).
+- **Action:** hypothesis/methodology/record.json written before any run; levels, touch, sign, hold and rule unchanged from the backlog
+  draft (= E045 rule, 120-min hold). Two details fixed now, before data: a first-touch bar that also meets the other level's touch
+  condition is skipped (counted), and the control is run at both +0.0023 and -0.0023 shifts. `pivot_touch.py`,
+  `run_e047_pivot_touch.py`, 14 tests (incl. no look-ahead and random-walk no-edge). Synthetic smoke NONE (34 trades). batch.sh
+  queues E047 (dev only). Backlog B56 `running`. Trials unchanged until it runs (dev 256, val 9, total 265).
+- **Next run:** collect E047 when the research-batch run finishes.

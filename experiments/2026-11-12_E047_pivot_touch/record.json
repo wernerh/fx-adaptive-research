@@ -1,0 +1,21 @@
+{
+  "experiment_id": "E047",
+  "date": "2026-11-12",
+  "instrument": "EURUSD",
+  "hypothesis": "B56: s x (EUR/USD mid open entry + 120 min - mid open entry) > 1 pip per event, entry t + 1 min after the first touch per UTC date of previous-day pivot R1 (c(t-1) < R1 <= h(t) -> s = +1) or S1 (c(t-1) > S1 >= l(t) -> s = -1), P = (H + L + C)/3, R1 = 2P - L, S1 = 2P - H, on dev (inverse pivot continuation, Johnsson-Frykmer 2019)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family: previous-day floor-trader pivot levels (R1/S1) first-touch continuation; fill/exclusion machinery from E045, 120-min hold",
+  "decision_rule": "< 300 events -> NONE; SIGNAL if mean signed > 1.0 pip AND UTC-date cluster bootstrap (2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "command": "python scripts/run_e047_pivot_touch.py | tee backtests/validation_reports/E047_results.txt",
+  "preregistered_in": "R125",
+  "next_experiment": "SIGNAL -> B57 val confirmation; else B56 closed, B57 closed unearned",
+  "outputs": [
+    "backtests/validation_reports/E047_results.json",
+    "backtests/validation_reports/E047_results.txt",
+    "backtests/validation_reports/E047_trades.csv"
+  ]
+}
