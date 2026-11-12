@@ -1133,7 +1133,7 @@ Trial count so far on dev: **255** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (option-expiry notional by strike).
 - No item added (rule 3; R105 judgement stands). 0 trials used (dev 255, val 9, total 264). Fourth consecutive refill without an item.
 
-### B54: Even- vs odd-week FOMC cycle, EUR/USD daily (signal test, dev) · `ready` (Added 2026-11-12 R109 refill)
+### B54: Even- vs odd-week FOMC cycle, EUR/USD daily (signal test, dev) → E046 · `running` (2026-11-12 R110: pre-registered as E046, rule unchanged, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-12 R109 refill)
 - **Mechanism [PUB for equities only; EUR/USD is our extension]:** Cieslak, Morse & Vissing-Jorgensen (2014 draft, VERIFIED partial,
   research/academic_studies.md): risk-asset returns are high in even FOMC-cycle weeks (0, 2, 4, 6) and flat/negative in odd weeks,
   also for non-US equities in USD; fed funds futures volatility is higher in even weeks (Fed news arrives then). Our reading: Fed news

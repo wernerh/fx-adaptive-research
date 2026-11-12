@@ -1,0 +1,26 @@
+{
+  "experiment_id": "E046",
+  "date": "2026-11-12",
+  "instrument": "EURUSD",
+  "hypothesis": "B54: s x (EUR/USD mid 16:55 NY D - mid 20:00 NY previous calendar date) > 1 pip per dev trading date; s = +1 in FOMC-cycle weeks 2/4/6, -1 in weeks -1/1/3/5, week 0 excluded (Cieslak-Morse-Vissing-Jorgensen even-week cycle, EUR/USD extension)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family: FOMC-cycle calendar partition (week 0 statement-day effect E013/E014 excluded)",
+  "decision_rule": "< 500 tested dates -> NONE; SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap (block 20 dates, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "results": null,
+  "decision": null,
+  "lead": false,
+  "command": "python scripts/run_e046_fomc_cycle.py | tee backtests/validation_reports/E046_results.txt",
+  "preregistered_in": "R110",
+  "next_experiment": "SIGNAL -> B55 val confirmation; else B54 closed, B55 closed unearned",
+  "outputs": [
+    "backtests/validation_reports/E046_results.json",
+    "backtests/validation_reports/E046_results.txt",
+    "backtests/validation_reports/E046_days.csv"
+  ]
+}

@@ -1093,3 +1093,13 @@ Why each run chose what it did, and any judgement calls.
   EUR/USD in weeks 2/4/6, short in -1/1/3/5, 20:00 -> 16:55 NY, dev, 1 trial, E041 rule) and B55 val confirmation (blocked). The
   FX sign is our extension and is stated as such. 0 trials (dev 255, val 9, total 264).
 - **Not a lead, not a pipeline failure;** no notification. Next run: pre-register B54 as E046.
+
+## 2026-11-12 R110 (unattended)
+- **State:** latest research-batch run 43103436725 (E045) completed success and was recorded in R104; none queued or in progress.
+  Clone was on a detached HEAD; checked out `main` and pulled. Top `ready` backlog item: B54.
+- **Choice:** protocol step 3, pre-register B54 as E046 (only ready item; calendar + price data in repo, no download).
+- **Action:** hypothesis/methodology/record.json written before any run; cycle, sign, hold and rule unchanged from the backlog draft
+  (= E041/E044 rule). `fomc_cycle.py`, `run_e046_fomc_cycle.py`, 11 tests (incl. price-independence of positions and pooled
+  random-walk no-edge). Synthetic smoke NONE (28 dates). batch.sh queues E046 (dev only). Backlog B54 `running`. Trials unchanged
+  until it runs (dev 255, val 9, total 264).
+- **Next run:** collect E046 when the research-batch run finishes.
