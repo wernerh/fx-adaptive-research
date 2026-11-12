@@ -654,3 +654,12 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (verbatim):** "the NFCI does not provide a strong signal about the direction of exchange rate movements"; "none of the alternative forecasts outperforms the RW benchmark in terms of the OOS point forecasts." Gains are in density forecasts only.
 - **Relevance:** Low for a directional rule. See backlog refill note R119.
 - **Status:** VERIFIED (PDF opened 2026-11-12 R119)
+
+### Tornell, Yuan (2012), "Speculation and hedging in the currency futures markets: Are they informative to the spot exchange rates", J. Futures Markets 32(2), 122-151
+- **Link:** [EconPapers journal record](https://econpapers.repec.org/RePEc:wly:jfutmk:v:32:y:2012:i:2:p:122-151) (metadata only, no abstract);
+  [EconPapers WP 09-116 record](https://econpapers.repec.org/RePEc:umb:econwp:09116) (abstract). DOI not shown on either page.
+- **Finding (abstract, verbatim fragments):** "the peaks and troughs of net positions are generally useful predictors" of spot rates;
+  speculative measures "usually forecast price-continuations in spot rates", hedging measures reversals. Currencies, frequency, horizon,
+  peak/trough definition (real-time or ex post), magnitudes and out-of-sample results are not shown.
+- **Relevance:** Low until the full text is read. WP PDF (umbc.edu) fetch-permission timeout. Not used. See backlog refill note R120.
+- **Status:** VERIFIED abstract only (opened 2026-11-12 R120); design details `UNVERIFIED`

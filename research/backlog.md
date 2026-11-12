@@ -1270,3 +1270,17 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   macro-state family NONE x3, E037/E041/E042). 0 trials used (dev 256, val 9, total 265). Twelfth refill in a row without a
   pre-registrable item; queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run
   43155068137 success, recorded as E046), so no notification.
+
+### Refill note R120 (not an item; no item added)
+- 2026-11-12 R120 refill pass, angle: CFTC COT positioning *extremes* (peaks/troughs of speculators' net positions) as a lagged
+  EUR/USD direction signal, distinct from the level/change relation Klitgaard-Weir 2004 found non-predictive (note R082). One standard
+  search; opened the EconPapers records of Tornell & Yuan (2012, JFM 32(2); WP UMBC 09-116; entry in research/academic_studies.md):
+  abstract says peaks/troughs "are generally useful predictors" with speculative measures forecasting continuation, but currencies,
+  horizon, the peak/trough definition (a real-time vs ex-post identification is the crux for look-ahead) and magnitudes are not visible.
+  WP PDF (umbc.edu) fetch-permission timeout, `UNVERIFIED`.
+- Not added: a rule cannot be pre-registered without the indicator definition, and COT is weekly: ~300 dev weeks with extremes a small
+  subset puts the CI half-width far above any plausible effect (lesson R090 power floor), and Klitgaard-Weir found no next-week
+  predictability for the euro. A trial would only inflate the count.
+- No item added (rule 3: design unverified; R090 power floor). 0 trials used (dev 256, val 9, total 265). Thirteenth refill in a row
+  without a pre-registrable item; queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run
+  43155068137 success, recorded as E046), so no notification.
