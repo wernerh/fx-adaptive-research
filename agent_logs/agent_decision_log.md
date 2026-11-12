@@ -1082,3 +1082,14 @@ Why each run chose what it did, and any judgement calls.
 - **Result:** only a 2019 KTH bachelor-thesis abstract was readable; the effect needs strike/notional expiry data the repo lacks.
   No item added, 0 trials. Details in backlog "Refill note R108". Added to the R105 human data list: option-expiry notional by strike.
 - **Not a lead, not a pipeline failure** (research-batch healthy); no notification.
+
+## 2026-11-12 R109 (unattended)
+- **State:** origin/main at 7d76fed (R108). Last research-batch run 43103436725 completed and recorded (E045); nothing queued or in
+  progress. No `ready` backlog item -> refill (protocol step 4).
+- **Why this angle:** release-date sources stay blocked, but the FOMC date file (validated in E013) is in the repo. The FOMC-cycle
+  pattern (Cieslak-Morse-Vissing-Jorgensen) partitions ~1,200 dev dates, so it clears the R090 power floor that killed event-only
+  FOMC/ECB tests, and it is distinct from the statement-day effect (week 0 excluded).
+- **Result:** paper draft opened (partial verbatim, equities only, no FX result). Added B54 (even vs odd FOMC-cycle weeks, long
+  EUR/USD in weeks 2/4/6, short in -1/1/3/5, 20:00 -> 16:55 NY, dev, 1 trial, E041 rule) and B55 val confirmation (blocked). The
+  FX sign is our extension and is stated as such. 0 trials (dev 255, val 9, total 264).
+- **Not a lead, not a pipeline failure;** no notification. Next run: pre-register B54 as E046.

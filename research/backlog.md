@@ -1132,3 +1132,42 @@ Trial count so far on dev: **255** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   would re-test the E018/E045 level family (both NONE on dev) without a verified basis. Adds to the R105 data-needs list
   (option-expiry notional by strike).
 - No item added (rule 3; R105 judgement stands). 0 trials used (dev 255, val 9, total 264). Fourth consecutive refill without an item.
+
+### B54: Even- vs odd-week FOMC cycle, EUR/USD daily (signal test, dev) · `ready` (Added 2026-11-12 R109 refill)
+- **Mechanism [PUB for equities only; EUR/USD is our extension]:** Cieslak, Morse & Vissing-Jorgensen (2014 draft, VERIFIED partial,
+  research/academic_studies.md): risk-asset returns are high in even FOMC-cycle weeks (0, 2, 4, 6) and flat/negative in odd weeks,
+  also for non-US equities in USD; fed funds futures volatility is higher in even weeks (Fed news arrives then). Our reading: Fed news
+  flow in even weeks is on average accommodative / risk-on, which weakens the USD. **Sign fixed now: long EUR/USD in weeks 2, 4, 6;
+  short in weeks -1, 1, 3, 5.** Week 0 is **excluded** (it holds the FOMC statement day, already tested as B11/E013 SIGNAL dev,
+  E014 NONE val; a known calendar effect, LEAD criterion 4). No FX evidence in the text read; pattern absent pre-1994 per the paper.
+- **Cycle (fixed now):** day 0 = `statement_date` of scheduled, non-cancelled meetings in `backtests/calendars/fomc_dates.csv`
+  (unscheduled meetings ignored). Days counted in EUR/USD trading dates Mon-Fri (`sessions.trading_date`, 17:00 NY boundary; US
+  holidays are not skipped, deviation from the paper's business days, stated as a limitation). For trading date D: k_next = -(trading
+  dates from D to the next statement date); if k_next >= -6 use it, else k = trading dates since the previous statement date. Weeks:
+  -1: k -6..-2; 0: -1..3; 1: 4..8; 2: 9..13; 3: 14..18; 4: 19..23; 5: 24..28; 6: 29..33; k > 33 -> unassigned, excluded (counted).
+  Dates before the first 2015 meeting's week -1 -> excluded (counted).
+- **Trade (fixed now, E044 convention):** entry 20:00 NY at the start of trading date D (after the roll spread normalises, lesson
+  R059), exit 16:55 NY on D. Missing entry/exit quote -> excluded (counted); entry spread > 2.0 pips -> skipped (counted). Position s =
+  +1 (weeks 2, 4, 6) or -1 (weeks -1, 1, 3, 5). Signed return = s x (mid exit - mid entry), pips.
+- **Decision rule (draft, = E041/E044 rule):** < 500 dates -> NONE. SIGNAL if mean signed > 1.0 pip AND moving-block bootstrap 95% CI
+  lower > 0 (blocks of 20 consecutive dates, 2000 draws, seed 0) AND one-sided t p < 0.05 (1 trial). WEAK if mean > 0 and (CI lower >
+  0 or p < 0.05); else NONE. A SIGNAL earns B55.
+- **Power note:** ~48 dev meetings x ~25 assigned non-week-0 dates -> n ~1,200; ~21 h hold, SD ~40-45 pips -> SE ~1.3 pips; a ~2.5-3
+  pip edge is detectable. 264 registered trials so far: a single p just under 0.05 is expected noise (lesson R092), hence B55.
+- **Descriptive (not in rule):** mean by cycle week (-1..6) incl. week 0 (reported only); even-only long and odd-only short legs
+  separately; by year (lesson R092); unconditional long mean over the same hold; same test with the cycle lagged one trading date
+  (paper's Panel B analogue, reported only); SPEC 4 net and costs x1.5.
+- **Contamination note:** the week-0 statement day was tested (E013/E014) and is excluded; E040 tested the 12-24 h post-FOMC window
+  (inside week 0, excluded). No other FOMC-cycle partition has been computed in this repo (grep R109). Daily holds 20:00 -> 16:55 NY
+  were used in E044 (unconditional mean known as descriptive only). Dev usable.
+- **Calendar label:** this *is* a calendar effect (FOMC cycle); if it ever became a lead it is the strategy itself, not a confound.
+- **Data:** EUR/USD 1-minute bid/ask bars and fomc_dates.csv (2015-2023, already validated E013) in repo; no download.
+
+### B55: FOMC-cycle even/odd weeks, val confirmation (signal test, val only) · `blocked` (Added 2026-11-12 R109; earned only if B54 returns SIGNAL on dev)
+- B54 unchanged on val (2021-01-21 .. 2023-06-30), own pre-registration, 1 val trial, < 200 dates -> NONE, p < 0.05, block-20
+  bootstrap. If B54 is not SIGNAL, B55 closes unearned with 0 trials.
+
+### Refill note R109 (not an item)
+- 2026-11-12 R109 refill pass, new angle: FOMC-cycle calendar using the FOMC date file already in the repo (avoids the blocked
+  release-date sources). Opened: Cieslak-Morse-Vissing-Jorgensen 2014 draft (NBER conference PDF, ~32% verbatim). Not opened: Stern
+  PDF (fetch-permission timeout), BIS link (agenda page only). Added B54 (dev, 1 trial) and B55 (val, blocked). 0 trials used.

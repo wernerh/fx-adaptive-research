@@ -577,3 +577,20 @@ US session. That is unproven, which is exactly why E001 comes first.
   quarter-end" (verbatim); swap volumes and the cross-currency basis rise at quarter-ends. No spot-rate direction, size or timing in the
   verbatim text. Not added (no spot prediction; ~24 dev quarter-ends).
 
+
+### Cieslak, Morse & Vissing-Jorgensen (2014 draft; JF 2019): Stock returns over the FOMC cycle
+- **Venue:** working-paper draft "Current draft: June 25, 2014", [NBER conference PDF](https://conference.nber.org/conf_papers/f74573/f74573.pdf)
+  (opened 2026-11-12 R109, ~32% verbatim, rest model summary = UNVERIFIED). Published version: Journal of Finance 74(5), 2201-2248
+  ([RePEc record](https://econpapers.repec.org/RePEc:bla:jfinan:v:74:y:2019:i:5:p:2201-2248), seen in search results only, not
+  opened: published-version details UNVERIFIED). Stern PDF and BIS link: fetch-permission timeout / agenda page only.
+- **Cycle definition (verbatim):** "Date 0 ... is the day of a scheduled FOMC meeting. For two-day meetings, date 0 refers to the second
+  day. The graph omits weekends"; week 0 = days -1 to 3; week -1 days -6 to -2; week 1 days 4-8; week 2 days 9-13; week 3 days 14-18;
+  week 4 days 19-23; week 5 days 24-28; week 6 days 29-33; days -6 or closer to the next meeting belong to the next cycle.
+- **Finding (verbatim):** US equity excess returns "13.6 basis points (bps) higher on days that fall in week 0" and "10.1 bps higher on
+  days that fall in week 2, 4, or 6" vs odd weeks (Table 1, 1994-2013); "our fact does not hold up prior to 1994". Non-US equities
+  (Table 2): developed ex-US "8.8 bps (t-stat=2.66) higher in weeks 2, 4 and 6 than in odd weeks"; EM "18 bps per day (t-stat=4.75)
+  higher during FOMC cycle weeks 2, 4 and 6". Fed funds futures yield volatility "roughly twice as high in even as in odd weeks".
+- **FX:** no exchange-rate or dollar result in the verbatim portion. EUR/USD application is our extension (B54).
+- **Relevance:** Medium. Gives a calendar-defined, ~1,250-date dev partition with a published risk-asset pattern; no FX evidence, no
+  post-2013 evidence in the text read. -> backlog B54/B55.
+- **Status:** VERIFIED (draft, partial verbatim, opened 2026-11-12 R109)
