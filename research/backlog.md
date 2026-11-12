@@ -1392,7 +1392,7 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 ### Refill note R128 (not an item; no item added)
 - 2026-11-12 R128 refill pass, angle: PBoC daily CNY central-parity fixing (09:15 Beijing) or fixing surprise -> EUR/USD / USD direction.
   One standard search. Hits: newsquawk/FXStreet/Euromoney/poundsterlinglive news pages (not evidence) and McCauley & Shu (2018),
-  "Recent RMB policy and currency co-movements", BIS WP 727, [landing page](https://www.bis.org/publ/work727.htm) opened via web-fetch
+  "Recent RMB policy and currency co-movements", BIS WP 727, [landing page](https://www.bis.org/publ/work727.pdf) (this URL served the HTML landing page) opened via web-fetch
   (abstract/summary ~100%; the 27-page PDF fetch timed out, body UNVERIFIED). It studies how the fixing responds to lagged dollar moves
   and EM-currency co-movement with the RMB in three post-2015 phases; no EUR/USD or intraday USD test on the page.
 - No item added (rule 3: no verified EUR/USD direction basis; a surprise test would also need USD/CNH data and fix expectations not in
