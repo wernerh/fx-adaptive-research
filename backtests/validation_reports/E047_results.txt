@@ -1,0 +1,77 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E047 DEV pivot R1/S1 first touch, continuation, 120 min (pre-registered rule, 1 trial):
+n                                         1270
+n_dates                                   1154
+mean_pips                               -0.187
+median_pips                               -0.5
+sd_pips                                 24.389
+hit_rate                                 0.489
+t_stat                                  -0.274
+t_p_one_sided                           0.6078
+mean_ci95_date_cluster_boot    (-1.588, 1.181)
+decision                                  NONE
+events: 1349 trades: 1270 skipped: {'roll': 55, 'spread': 2, 'coverage': 4, 'overlap': 18} counts: {'dates': 1565, 'dates_excluded_prev_bars': 10, 'both_touch': 0}
+
+Control levels plus_0023 (descriptive):
+n                                         1351
+n_dates                                   1207
+mean_pips                               -0.212
+median_pips                              -0.95
+sd_pips                                 22.041
+hit_rate                                0.4641
+t_stat                                  -0.353
+t_p_one_sided                            0.638
+mean_ci95_date_cluster_boot    (-1.378, 0.983)
+events: 1467 trades: 1351 skipped: {'roll': 101, 'spread': 2, 'coverage': 5, 'overlap': 8}
+
+Control levels minus_0023 (descriptive):
+n                                         1351
+n_dates                                   1186
+mean_pips                               -0.962
+median_pips                              -0.75
+sd_pips                                 21.298
+hit_rate                                0.4671
+t_stat                                  -1.659
+t_p_one_sided                           0.9514
+mean_ci95_date_cluster_boot    (-2.158, 0.143)
+events: 1458 trades: 1351 skipped: {'roll': 90, 'spread': 5, 'coverage': 4, 'overlap': 8}
+
+Descriptive:
+  R1_long : {'n': 634, 'n_dates': 634, 'mean_pips': -0.727, 'median_pips': -1.4, 'sd_pips': 25.794, 'hit_rate': 0.4779, 't_stat': -0.709, 't_p_one_sided': 0.7608, 'mean_ci95_date_cluster_boot': (-2.724, 1.255)}
+  S1_short : {'n': 636, 'n_dates': 636, 'mean_pips': 0.351, 'median_pips': 0.05, 'sd_pips': 22.91, 'hit_rate': 0.5, 't_stat': 0.386, 't_p_one_sided': 0.3499, 'mean_ci95_date_cluster_boot': (-1.389, 2.196)}
+  traditional_direction_mean_pips_reported_only : 0.187
+  horizon_60m : {'n': 1270, 'n_dates': 1154, 'mean_pips': 0.165, 'median_pips': -0.5, 'sd_pips': 17.983, 'hit_rate': 0.4827, 't_stat': 0.327, 't_p_one_sided': 0.3718, 'mean_ci95_date_cluster_boot': (-0.798, 1.146)}
+  horizon_180m : {'n': 1269, 'n_dates': 1153, 'mean_pips': -0.231, 'median_pips': -0.85, 'sd_pips': 28.976, 'hit_rate': 0.4791, 't_stat': -0.284, 't_p_one_sided': 0.6118, 'mean_ci95_date_cluster_boot': (-1.824, 1.352)}
+  thesis_bracket_0_15pct : {'counts': {'loss': 640, 'win': 602, 'unresolved': 26, 'both_same_bar': 2}, 'win_rate_resolved': 0.4847}
+  excluding_2017_06_01_to_2017_12_29 : {'n': 1154, 'n_dates': 1047, 'mean_pips': -0.443, 'median_pips': -0.575, 'sd_pips': 24.208, 'hit_rate': 0.4879, 't_stat': -0.622, 't_p_one_sided': 0.7329, 'mean_ci95_date_cluster_boot': (-1.766, 1.0)}
+  thesis_window_only : {'n': 116, 'n_dates': 107, 'mean_pips': 2.359, 'median_pips': 0.0, 'sd_pips': 26.095, 'hit_rate': 0.5, 't_stat': 0.974, 't_p_one_sided': 0.1661, 'mean_ci95_date_cluster_boot': (-2.102, 6.853)}
+  within_15m_ny_0830 : {'n': 102, 'n_dates': 102, 'mean_pips': -0.176, 'median_pips': 3.4, 'sd_pips': 40.334, 'hit_rate': 0.549, 't_stat': -0.044, 't_p_one_sided': 0.5175, 'mean_ci95_date_cluster_boot': (-7.919, 7.725)}
+  within_15m_ny_1000 : {'n': 60, 'n_dates': 60, 'mean_pips': -0.363, 'median_pips': -0.85, 'sd_pips': 18.826, 'hit_rate': 0.4833, 't_stat': -0.149, 't_p_one_sided': 0.559, 'mean_ci95_date_cluster_boot': (-5.029, 4.664)}
+  within_15m_london_1600 : {'n': 44, 'n_dates': 44, 'mean_pips': 2.782, 'median_pips': 1.35, 'sd_pips': 17.714, 'hit_rate': 0.5227, 't_stat': 1.042, 't_p_one_sided': 0.1517, 'mean_ci95_date_cluster_boot': (-2.18, 7.904)}
+  outside_release_fix_windows : {'n': 1064, 'n_dates': 977, 'mean_pips': -0.301, 'median_pips': -0.7, 'sd_pips': 22.864, 'hit_rate': 0.4821, 't_stat': -0.43, 't_p_one_sided': 0.6663, 'mean_ci95_date_cluster_boot': (-1.641, 1.016)}
+
+Events per year: {2015: 225, 2016: 224, 2017: 213, 2018: 229, 2019: 220, 2020: 238}
+
+By year (descriptive):
+         n   mean    hit
+year                   
+2015  216  2.563  0.509
+2016  213 -2.554  0.493
+2017  200  1.493  0.510
+2018  216 -0.447  0.491
+2019  205 -0.407  0.463
+2020  220 -1.663  0.468
+
+DEV cost check (descriptive):
+n                           1270.0000
+mean_signed_mid_pips          -0.1870
+mean_net_bidask_pips          -0.4630
+mean_net_spec4_pips           -0.6630
+mean_net_costs_x1_5_pips      -0.9000
+net_spec4_hit_rate             0.4732
+median_entry_spread_pips       0.3000
+median_exit_spread_pips        0.3000
+
+Calendar shares (event bar within +-15 min): {'share_within_15m_ny_0830': 0.0803, 'share_within_15m_ny_1000': 0.0472, 'share_within_15m_london_1600': 0.0346}
+E047 decision: NONE
