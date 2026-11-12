@@ -673,3 +673,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data:** monthly (and daily in 6.5) spot/forward vs USD, 1983-2019, 48 currencies incl. euro area; signal = news-tone score.
 - **Relevance:** Low for this repo: needs a news-sentiment dataset not available to the runner. Not used. See backlog refill note R121.
 - **Status:** VERIFIED (partial full text)
+
+### Osler (2000), "Support for Resistance: Technical Analysis and Intraday Exchange Rates", FRBNY Economic Policy Review 6(2)
+- **Link:** [HTML/PDF](https://www.newyorkfed.org/medialibrary/media/research/epr/00v06n2/0007osle.html) (opened 2026-11-12 R124, ~64% verbatim; rest summary-only, not used)
+- **Data:** USD/DEM, USD/JPY, USD/GBP Reuters indicative quotes, 1-minute, 09:00-16:00 NY, Jan 1996 - Mar 1998; S/R levels published daily by six firms.
+- **Finding (verbatim):** hit = within 0.01% of a level; bounce if price is back on the near side 15 minutes later; published levels bounced 60.8% vs 56.2% for 10,000 sets of arbitrary levels; "predictive power ... appeared to last at least five business days"; >70% of levels end in 0. Effect weaker in the higher-volatility second half.
+- **Relevance:** Background only; levels are firm-published (not available), not mechanical. Not used for any sign. See backlog refill note R124.
+- **Status:** VERIFIED (partial full text)
+
+### Johnsson, Frykmer (2019), "Pivot Point Trading in the Foreign Exchange Market - A Test for Market Efficiency", Lund University master's essay (NEKP01)
+- **Link:** [record](https://lup.lub.lu.se/student-papers/record/8979805), [PDF](https://lup.lub.lu.se/student-papers/record/8979805/file/8979814.pdf) (opened 2026-11-12 R124, ~70% verbatim: abstract, intro, method, data, EUR/USD Tables 2-3; conclusion and GBP/JPY results summary-only, `UNVERIFIED`)
+- **Data:** EUR/USD and USD/CHF level-1 tick mid, 2017-06-01 .. 2017-12-29; GBP/JPY 1-minute 2003-2017. Day starts at UTC 00:00; Sunday merged into Monday.
+- **Method (verbatim):** P = (H + L + C)/3 of the previous day; S1-S3, R1-R3 (eqs. 2-7); long at support, short at resistance; target/stop = level +- P x X, X in 0.01%-0.25% (0.15% ~ 2-3 h); one trade per level per day; binomial test vs 50%; no transaction costs.
+- **Finding (verbatim):** "we find no support for the hypothesis that pivot points reveal useful information in their traditional way"; "the technique can be profitable if it is implemented inversely for two of the pairs". EUR/USD at 0.15%: weighted win 41.4% (5%), R-only 39.0% (5%), R1 38.5% (10%), S1 45.8% (n.s.). No P&L reported.
+- **Relevance:** Medium-low (non-peer-reviewed, win rates only, short EUR/USD sample inside our dev block). Basis for B56 (continuation at R1/S1). See backlog B56.
+- **Status:** VERIFIED (partial full text)
