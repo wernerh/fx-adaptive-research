@@ -1057,3 +1057,10 @@ Why each run chose what it did, and any judgement calls.
   (4) FX options data; (5) a decision on using the locked OOS block for already-seen windows (KMW pre-ECB, B7). Until one is supplied,
   refill runs will keep searching for free downloadable sources of these.
 - **Next run:** if still nothing `ready`, refill pass focused on a free, runner-downloadable release-date source (verified links only).
+
+## 2026-11-12 R106 (unattended)
+- **State:** origin/main at 3070c18 (R105). Last research-batch run 43103436725 completed and recorded (E045); nothing queued or in
+  progress. No `ready` backlog item -> refill (protocol step 4), focused on a release-date source as R105 asked.
+- **Result:** all source fetches (ECB EA-MPD + Altavilla et al. 2019 DOI; ALFRED/FRED; BLS; DOL) failed with fetch-permission
+  timeouts; workspace proxy also 403s these hosts. Nothing verified, so no item added (rule 3). Details in backlog "Refill note R106".
+- **Not a lead, not a pipeline failure** (research-batch itself is healthy); no notification. Human-decision list from R105 unchanged.

@@ -1091,3 +1091,16 @@ Trial count so far on dev: **255** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   data (Hoque et al., Kostakis et al.), dealer order flow, or the locked OOS block (KMW pre-ECB window, R065). These are human
   decisions; listed in agent_logs/agent_decision_log.md R105. Later refill runs should look for a sanctioned free source of one of
   these (e.g. a public release-date file the runner can download) before adding further price-only items.
+
+### Refill note R106 (not an item; no item added)
+- 2026-11-12 R106 refill pass, focused (per R105) on a free, runner-downloadable release-date source. Candidates tried: ECB
+  Euro Area Monetary Policy Event-Study Database (Altavilla et al. 2019, JME, DOI 10.1016/j.jmoneco.2019.08.016; would give ECB
+  meeting dates and announcement windows), ALFRED/FRED vintage dates for PAYEMS without an API key, BLS Employment Situation
+  schedule pages, DOL weekly-claims pages. **None could be opened**: every web fetch (9 URLs) failed with a fetch-permission
+  timeout (no HTTP answer, nothing read), and the workspace proxy refuses these hosts (403 CONNECT). All of the above stay
+  `UNVERIFIED`; nothing is cited as evidence.
+- No item added: the verified-links rule (CLAUDE.md rule 3) forbids pre-registering on sources not opened, and R105's judgement
+  that price-only families are exhausted stands. 0 trials used (dev 255, val 9, total 264).
+- Next refill run: retry the ECB EA-MPD dataset page first (it would unblock an ECB-meeting event line without an API key), then
+  ALFRED. A runner-side reachability probe of these URLs is possible but was not queued: it is a data-source decision listed for
+  the human in agent_decision_log R105.
