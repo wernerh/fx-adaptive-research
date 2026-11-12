@@ -1206,3 +1206,11 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added; Kumar 2018 (already in library, R065) reports the anomalies disappeared in 2005-2014, the other hits
   are RON/USD or equity-only. Recorded as refill note R122. Not a lead, not a pipeline failure; no notification.
 - **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
+
+## 2026-11-12 R123 (unattended)
+- **State:** origin/main at 005adb2 (R122). Last research-batch run 43155068137 completed success and is recorded (E046). No run queued
+  or in progress. No `ready` backlog item. pytest not run (no experiment this run).
+- **Choice:** refill pass (protocol priority 4). Angle: US Treasury auction days -> EUR/USD intraday direction.
+- **Judgement call:** no item added; only news commentary and already-tested work (B40/B41, E039 NONE; KMW E022-E025, E032).
+  Recorded as refill note R123. Not a lead, not a pipeline failure; no notification.
+- **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
