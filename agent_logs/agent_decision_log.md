@@ -1264,3 +1264,13 @@ Why each run chose what it did, and any judgement calls.
   level and studies fix determinants and EM co-movement with the RMB, not a G10/EUR/USD direction effect; a fixing-surprise test would
   also need USD/CNH data and sell-side fix expectations that the repo lacks. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-12 R129 (unattended)
+- **State:** no `ready` backlog item; last research-batch run 43291084015 completed (success) and is recorded as E047; nothing queued.
+- **Choice:** refill pass (protocol priority 4). Angles: (a) post-announcement drift after euro-area releases / ECB announcements in
+  EUR/USD, (b) prior-day high/low breakout predictability in EUR/USD.
+- **Judgement call:** no item added. The one relevant source opened (Valentin 2022, "The Post-ECB Announcement Drift", Goethe WP) is
+  equities/rates only (Euro Stoxx, OIS, Bund), no FX; an EUR/USD transfer would need the ECB meeting calendar (unreachable, R106/R107)
+  and sits below the R090 power floor (~48 dev meetings). Prior-day-level touches are the E045/E047 family (both NONE). 0 trials used.
+  Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.

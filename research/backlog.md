@@ -1397,3 +1397,17 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   and EM-currency co-movement with the RMB in three post-2015 phases; no EUR/USD or intraday USD test on the page.
 - No item added (rule 3: no verified EUR/USD direction basis; a surprise test would also need USD/CNH data and fix expectations not in
   the repo). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R129 (not an item; no item added)
+- 2026-11-12 R129 refill pass, angles: (a) post-announcement drift after euro-area releases / ECB monetary-policy announcements in
+  EUR/USD, (b) prior-day high/low breakout predictability in EUR/USD. Two standard searches. Opened via web-fetch: Valentin (2022),
+  "The Post-ECB Announcement Drift", Goethe University Frankfurt working paper (dated 12 Sep 2022),
+  [PDF](https://acfr.aut.ac.nz/__data/assets/pdf_file/0004/691195/The_Post_ECB_Announcement_Drift_AV.pdf) (~28% verbatim, rest
+  summary-only): Euro Stoxx keeps drifting in the direction of the press-conference-window shock for up to 20 trading days
+  (verbatim: "160 (-114) basis points for positive (negative)" information shocks), 2002-2020, 190 announcements, intraday shocks from
+  the Altavilla et al. (2019) EA-MPD; **equities and rates only, no FX result**. Da EOD paper (nd.edu) redirected cross-host and could
+  not be opened (UNVERIFIED, not cited). Other hits (Cardiff/CEQURA/ICMAIF EUR/USD news-announcement papers, CESifo one-day abnormal
+  returns) not opened; the abnormal-return-day family is already tested (E028/E029) and level-touch families too (E045, E047).
+- No item added (rule 3: no verified FX drift basis; an EUR/USD transfer would need the ECB meeting calendar, unreachable in R106/R107,
+  and ~48 dev meetings sit below the R090 power floor). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run
+  43291084015 success, recorded as E047).
