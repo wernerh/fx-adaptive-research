@@ -1122,3 +1122,11 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added. Rosa gives volatility/volume only (no sign, no drift, effect declining since 2008); with ~48 dev
   events a continuation test is below the R090 power floor without a published effect. Recorded as refill note R112.
 - **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
+
+## 2026-11-12 R113 (unattended)
+- **State:** origin/main at 4835c16 (R112). Last research-batch run 43155068137 completed success and is recorded (E046). No run queued
+  or in progress. No `ready` backlog item. pytest not run (no experiment this run).
+- **Choice:** refill pass (protocol priority 4). Angle: daily dollar-factor / cross-currency predictability for EUR/USD.
+- **Judgement call:** no item added; the search returned only already-tested KMW work, an equity paper and a monthly cross-sectional
+  currency paper. Recorded as refill note R113. Not a lead, not a pipeline failure; no notification.
+- **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.

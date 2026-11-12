@@ -1186,3 +1186,12 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   08:30 continuation (B21/E026) was NONE. A trial would only inflate the count. Rosa is usable later only as a volatility filter
   (B2-type "when to trade"), not as a direction signal.
 - No item added (rule 3 + R090 power floor). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the human unchanged.
+
+### Refill note R113 (not an item; no item added)
+- 2026-11-12 R113 refill pass, angle: daily dollar-factor / cross-currency time-series predictability for EUR/USD (other USD pairs
+  are downloadable on the runner). One extended search; hits were Krohn-Mueller-Whelan (already in academic_studies.md, tested E022-E025,
+  E032), Bollerslev et al. intraday *equity* factor-zoo predictability (not FX), and a 2026 JIFMIM "Factor timing in currency markets"
+  (monthly, cross-sectional portfolios; not opened). Nothing opened that gives a single-pair EUR/USD daily or intraday direction rule;
+  FX lead-lag at minute horizons was already judged below the tradable horizon (R080 note, line ~655).
+- No item added (rule 3: nothing verified to build on). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the human
+  unchanged; this is the sixth refill in a row without a pre-registrable item.
