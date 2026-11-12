@@ -1284,3 +1284,18 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3: design unverified; R090 power floor). 0 trials used (dev 256, val 9, total 265). Thirteenth refill in a row
   without a pre-registrable item; queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run
   43155068137 success, recorded as E046), so no notification.
+
+### Refill note R121 (not an item; no item added)
+- 2026-11-12 R121 refill pass, angle: short-horizon (1-4 week) EUR/USD return momentum/reversal and sentiment-driven currency
+  reversals. One standard search; opened Filippou, Taylor & Wang (2021, "Media Sentiment and Currency Reversals", CEPR DP16049,
+  https://repec.cepr.org/repec/cpr/ceprdp/DP16049.pdf, ~39% verbatim; entry in research/academic_studies.md) and the CXO Advisory
+  summary (https://www.cxoadvisory.com/momentum-investing/short-term-currency-exchange-rate-momentum, full page, secondary) of
+  Raza-Marshall-Visaltanachoti weekly currency momentum.
+- Not added: Filippou et al. sort on a news-tone score (bag-of-words on media articles), monthly rebalanced cross-sectional and
+  time-series portfolios across 48 currencies; the signal needs a news-sentiment dataset the repo does not have and the runner cannot
+  build from a sanctioned source (adds item (6) "news-sentiment data" to the R105 human-decision list). Raza et al. weekly momentum is
+  cross-sectional over 63 currencies, gross of costs, and was already rejected for a single-pair re-test in refill note R085
+  (shorter-lookback re-test of B16/E019; non-overlapping 4-week holds give ~75 dev periods, below the R090 power floor).
+- No item added (rule 3 and R090). 0 trials used (dev 256, val 9, total 265). Fourteenth refill in a row without a pre-registrable item;
+  queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run 43155068137 success, recorded as
+  E046), so no notification.

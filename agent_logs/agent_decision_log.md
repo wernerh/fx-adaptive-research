@@ -1189,3 +1189,12 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added; only the abstract was verifiable (indicator definition and euro results unseen) and weekly COT
   extremes fall below the R090 power floor on dev. Recorded as refill note R120. Not a lead, not a pipeline failure; no notification.
 - **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
+
+## 2026-11-12 R121 (unattended)
+- **State:** origin/main at e1d8c05 (R120). Last research-batch run 43155068137 completed success and is recorded (E046). No run queued
+  or in progress. No `ready` backlog item. Local `main` was stale/diverged from origin; worked on a branch from origin/main and pushed
+  to main. pytest not run (no experiment this run).
+- **Choice:** refill pass (protocol priority 4). Angle: short-horizon (1-4 week) EUR/USD momentum/reversal and media-sentiment reversals.
+- **Judgement call:** no item added; Filippou-Taylor-Wang 2021 needs news-sentiment data (added as item 6 to the R105 human list),
+  Raza et al. weekly momentum already rejected in R085. Recorded as refill note R121. Not a lead, not a pipeline failure; no notification.
+- **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.

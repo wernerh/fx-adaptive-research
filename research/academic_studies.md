@@ -663,3 +663,13 @@ US session. That is unproven, which is exactly why E001 comes first.
   peak/trough definition (real-time or ex post), magnitudes and out-of-sample results are not shown.
 - **Relevance:** Low until the full text is read. WP PDF (umbc.edu) fetch-permission timeout. Not used. See backlog refill note R120.
 - **Status:** VERIFIED abstract only (opened 2026-11-12 R120); design details `UNVERIFIED`
+
+### Filippou, Taylor, Wang (2021), "Media Sentiment and Currency Reversals", CEPR Discussion Paper DP16049
+- **Link:** https://repec.cepr.org/repec/cpr/ceprdp/DP16049.pdf (opened 2026-11-12 R121, ~39% verbatim through the start of section 5)
+- **Finding (verbatim fragments):** strategy "buys (sells) currencies with low (high) media sentiment"; 1-month formation/holding gives
+  "annualized Sharpe ratios of 0.57 and 0.80 for the sample of all 48 countries and developed countries"; time-series version
+  "annualized returns of 2.24% ... and 3.39% for developed countries"; "mean reversion occurring between three to five months".
+  Daily-frequency results (section 6.5, Table A9) and main-table t-stats not read verbatim, `UNVERIFIED`.
+- **Data:** monthly (and daily in 6.5) spot/forward vs USD, 1983-2019, 48 currencies incl. euro area; signal = news-tone score.
+- **Relevance:** Low for this repo: needs a news-sentiment dataset not available to the runner. Not used. See backlog refill note R121.
+- **Status:** VERIFIED (partial full text)
