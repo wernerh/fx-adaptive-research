@@ -1218,3 +1218,16 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3: no verified basis; R105 judgement on exhausted price-only families stands). 0 trials used (dev 256, val 9,
   total 265). Eighth refill in a row without a pre-registrable item; the queue waits on the human-decision list in
   agent_decision_log R105. Not a pipeline failure (last run 43155068137 success, recorded as E046), so no notification.
+
+### Refill note R116 (not an item; no item added)
+- 2026-11-12 R116 refill pass, new angle: spread / liquidity-shock states as a direction signal for EUR/USD (does a spread widening
+  predict a reversal or drift?). Two standard searches; hits were FX spread-determinant and volatility papers (Kaul-Sapp Y2K 2004,
+  NBER w4737 spreads vs anticipated volatility), the KMW fixings AEA 2020 page (already in research/academic_studies.md; its
+  high-spread-state reversal claim stays `UNVERIFIED` and the vol-state version was tested E022-E025), Cespa-Gargano-Riddiough-Sarno
+  FX volume (in library; volume tested E033) and equity tick-size work. Opened: Albuquerque, Song & Yao (Nov 2017), "The Price Effects
+  of Liquidity Shocks: A Study of SEC's Tick-Size Experiment",
+  [PDF](https://www.runi.ac.il/media/sseknk1u/the-price-effects-of-liquidity-shocks-a.pdf) (~34% verbatim): US small-cap equities only,
+  permanent ~1-4% price drop after an exogenous tick-size increase; no FX content. Not evidence for an EUR/USD rule.
+- No item added (rule 3: no verified FX basis; R105 judgement on exhausted price-only families stands). 0 trials used (dev 256, val 9,
+  total 265). Ninth refill in a row without a pre-registrable item; the queue waits on the human-decision list in
+  agent_decision_log R105. Not a pipeline failure (last run 43155068137 success, recorded as E046), so no notification.
