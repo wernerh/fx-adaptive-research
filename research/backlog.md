@@ -1171,3 +1171,18 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - 2026-11-12 R109 refill pass, new angle: FOMC-cycle calendar using the FOMC date file already in the repo (avoids the blocked
   release-date sources). Opened: Cieslak-Morse-Vissing-Jorgensen 2014 draft (NBER conference PDF, ~32% verbatim). Not opened: Stern
   PDF (fetch-permission timeout), BIS link (agenda page only). Added B54 (dev, 1 trial) and B55 (val, blocked). 0 trials used.
+
+### Refill note R112 (not an item; no item added)
+- 2026-11-12 R112 refill pass, new angle: FOMC minutes releases (14:00 ET, a date set disjoint from the statement days used in
+  E013/E014/E040 and from week 0 of E046). Opened: Rosa (2013, FRBNY EPR, full extracted text; entry in research/academic_studies.md).
+  Data check: official minutes release dates ("Released <date>") are in the federalreserve.gov pages the runner already saved
+  (`backtests/calendars/raw_html/fomchistorical2017-2019.html`, `fomccalendars.html` for 2021-2026); 2017 releases are all 21 days
+  after the statement date. 2015, 2016 and 2020 pages are not saved (a phase-1 runner fetch would be needed; runner reaches
+  federalreserve.gov, E013).
+- Not added: a continuation test of the first post-release reaction (sign(13:59 -> 14:15 ET) x 14:15 -> 15:15 ET). Rosa measures
+  volatility and volume only: no direction, no tone/surprise, no drift or reversal, and the response "has declined since 2008"
+  (verbatim), so a continuation edge on dev (2015-2020) has no published basis. ~48 dev releases with a ~1-hour target put the CI
+  half-width at several pips (lesson R090 scaling); an unpublished continuation of that size is implausible, and the calendar-free
+  08:30 continuation (B21/E026) was NONE. A trial would only inflate the count. Rosa is usable later only as a volatility filter
+  (B2-type "when to trade"), not as a direction signal.
+- No item added (rule 3 + R090 power floor). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the human unchanged.

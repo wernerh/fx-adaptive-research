@@ -1112,3 +1112,13 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** week 1 long -7.167 and week 5 long +8.182 are descriptive cells, post-hoc; not queued (lesson R076).
 - **Action:** E046 recorded; B54 `done`, B55 closed unearned (0 trials). Trials dev 256, val 9, total 265. No lead, no notification.
 - **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).
+
+## 2026-11-12 R112 (unattended)
+- **State:** last research-batch run 43155068137 completed success and is recorded (E046, R111). No run queued or in progress. No
+  `ready` backlog item. Clone on detached HEAD at origin/main; checked out `main`, fast-forwarded. pytest not run (no experiment this
+  run; the install + test call hit the 2-minute tool timeout).
+- **Choice:** refill pass (protocol priority 4). Angle: FOMC minutes releases (date set not yet used; official release dates already
+  in the runner's saved Fed HTML). Opened Rosa (2013) FRBNY EPR in full.
+- **Judgement call:** no item added. Rosa gives volatility/volume only (no sign, no drift, effect declining since 2008); with ~48 dev
+  events a continuation test is below the R090 power floor without a published effect. Recorded as refill note R112.
+- **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.

@@ -594,3 +594,19 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Relevance:** Medium. Gives a calendar-defined, ~1,250-date dev partition with a published risk-asset pattern; no FX evidence, no
   post-2013 evidence in the text read. -> backlog B54/B55.
 - **Status:** VERIFIED (draft, partial verbatim, opened 2026-11-12 R109)
+
+### Rosa (2013): The Financial Market Effect of FOMC Minutes
+- **Source:** Carlo Rosa, FRBNY Economic Policy Review, December 2013, pp. 67-81 (no DOI shown; RePEc:fip:fednep:00004).
+  [PDF](https://www.newyorkfed.org/medialibrary/media/research/epr/2013/0913rosa.pdf) (opened 2026-11-12 R112 via web-fetch, full
+  extracted text; chart values not extractable), [RePEc](https://econpapers.repec.org/RePEc:fip:fednep:00004),
+  [Fed in Print](https://www.fedinprint.org/item/fednep/19802) (abstract pages).
+- **Data (verbatim):** "five-minute intervals of on-the-run two- and ten-year Treasury yields, futures prices on the S&P 500 stock
+  index, and the U.S. dollar exchange rate against the euro, Swiss franc, and Japanese yen", "January 2005 to March 2011" (EBS).
+- **Timing (verbatim):** minutes "come out three weeks after the FOMC meets", release at "2 p.m. ET".
+- **Finding (verbatim):** minutes induce "higher than normal" volatility "especially at the time of the release, and up to roughly one
+  hour after the announcement"; "Treasuries ... are the most affected asset class, closely followed by U.S. dollar exchange rates";
+  euro volume "four times as large as on nonevent days"; the response "has declined since 2008".
+- **Not in the text:** no signed FX return, no tone/surprise measure ("there are no direct measures of market expectations about the
+  information contained in the FOMC minutes", verbatim), no post-release drift, continuation or reversal analysis.
+- **Relevance:** Low for direction. A volatility-timing fact only; see backlog refill note R112.
+- **Status:** VERIFIED (full extracted text, opened 2026-11-12 R112)
