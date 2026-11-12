@@ -1154,3 +1154,13 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added; only FX spread-determinant work, already-tested families and one equity tick-size paper
   (Albuquerque-Song-Yao 2017, opened) were found. Recorded as refill note R116. Not a lead, not a pipeline failure; no notification.
 - **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
+
+## 2026-11-12 R117 (unattended)
+- **State:** origin/main at fb1c773 (R116). Last research-batch run 43155068137 completed success and is recorded (E046). No run queued
+  or in progress. No `ready` backlog item. pytest not run (no experiment this run).
+- **Choice:** refill pass (protocol priority 4). Angles: lagged VIX / risk-off changes and lagged US-German yield-differential changes
+  as next-day EUR/USD signals.
+- **Judgement call:** no item added; searches returned only a non-peer-reviewed student piece, news/blog pages, a contemporaneous
+  yield-level paper and already-tested KMW work; the lagged cross-asset family is NONE three times (E037, E041, E042). Recorded as
+  refill note R117. Not a lead, not a pipeline failure; no notification.
+- **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.

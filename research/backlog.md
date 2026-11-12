@@ -1231,3 +1231,16 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3: no verified FX basis; R105 judgement on exhausted price-only families stands). 0 trials used (dev 256, val 9,
   total 265). Ninth refill in a row without a pre-registrable item; the queue waits on the human-decision list in
   agent_decision_log R105. Not a pipeline failure (last run 43155068137 success, recorded as E046), so no notification.
+
+### Refill note R117 (not an item; no item added)
+- 2026-11-12 R117 refill pass, new angles: (a) lagged VIX / risk-off changes -> next-day EUR/USD (safe-haven USD), (b) lagged
+  US-German yield-differential changes -> next-day EUR/USD. Two standard searches. Hits for (a): a 2025 high-school journal piece
+  (NHSJS, "Predicting US Dollar Movements Using the VIX and Machine Learning"; not peer-reviewed, not opened, not evidence), news and
+  chart-blog pages (contemporaneous USD/VIX correlation only), and two Toronto Metropolitan University working papers (not opened).
+  Hits for (b): an MRU repository entry "Determining the EUR/USD exchange rate with U.S. and German government bond yields in the
+  post-crisis period" (title indicates a contemporaneous level relation, not a lagged rule; not opened), FXStreet news, the Krohn FRBSF
+  paper (KMW family, already tested E022-E025, E032) and a BIS WP 1320 (not opened). Nothing opened gives a verified lagged daily or
+  intraday EUR/USD direction rule; both cross-asset ideas also repeat the lagged cross-asset family that returned NONE three times
+  (B35/B36 equity E037, B45 oil E041, B46 gold E042), and VIX has no verified runner-downloadable minute source.
+- No item added (rule 3: no verified basis). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the human unchanged;
+  tenth refill in a row without a pre-registrable item. Not a pipeline failure (last run 43155068137 success, recorded as E046).
