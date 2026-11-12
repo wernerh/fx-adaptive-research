@@ -1299,3 +1299,17 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 and R090). 0 trials used (dev 256, val 9, total 265). Fourteenth refill in a row without a pre-registrable item;
   queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run 43155068137 success, recorded as
   E046), so no notification.
+
+### Refill note R122 (not an item; no item added)
+- 2026-11-12 R122 refill pass, angle: FX calendar anomalies (turn-of-the-month, turn-of-the-year, day-of-week) for EUR/USD daily
+  returns (no external data needed). One standard search. Opened: Kumar (2018, SEF 35(3) 441-456, DOI 10.1108/SEF-08-2015-0192,
+  [IDEAS](https://ideas.repec.org/a/eme/sefpps/sef-08-2015-0192.html), abstract only; already in research/academic_studies.md and
+  rejected in the R065 refill, line ~453): 20 USD pairs 1995-2014, Mon/Wed negative vs Thu/Fri positive, TOM/January patterns, but
+  "these calendar anomalies seem to have disappeared for almost all currencies during 2005 to 2014". Stefanescu & Dumitriu (2020,
+  MPRA 99365, https://mpra.ub.uni-muenchen.de/99365, abstract only; already cited ~line 928): RON/USD turn-of-year, no magnitudes.
+  Konttinen (2018, Aalto MSc thesis, https://core.ac.uk/download/162136978.pdf, ~20% verbatim): equity indices only, TOM effect
+  weakening/disappearing. EconBiz record of Kumar 2018 refused automated access (not retried).
+- Not added: the only FX source with a USD-pair result says the effects vanished before our dev block (2015-2020); weekday x hour
+  cells were already scanned on dev in E009; no new verified basis (rule 3). A trial would only inflate the count.
+- No item added. 0 trials used (dev 256, val 9, total 265). Fifteenth refill in a row without a pre-registrable item; the queue waits
+  on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run 43155068137 success, recorded as E046).
