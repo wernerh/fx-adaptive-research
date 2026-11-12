@@ -1376,3 +1376,15 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   [record](https://lup.lub.lu.se/student-papers/record/8979805) and [PDF](https://lup.lub.lu.se/student-papers/record/8979805/file/8979814.pdf)
   (~70% verbatim incl. method and EUR/USD Tables 2-3; conclusion and GBP/JPY results summary-only). Added B56 (dev, 1 trial when it
   runs) and B57 (val, blocked). 0 trials used (dev 256, val 9, total 265). Ends the run of 16 refills without an item.
+
+### Refill note R127 (not an item; no item added)
+- 2026-11-12 R127 refill pass, angles: (a) EUR/USD direction around the 16:00 NY US-equity close, (b) lagged realized volatility as a
+  next-day EUR/USD direction predictor. Two standard searches. Hits for (a): the Krohn fixings paper (KMW family, already tested
+  E022-E025, E032), Marsh & Miao (already rejected, note ~line 603), news pages (not evidence) and two CXO Advisory pages, opened via
+  web-fetch: [p=16673](https://www.cxoadvisory.com/calendar-effects/intraday-u-s-stock-market-behavior/) (SPY one-minute 2007-08 only,
+  no FX) and [p=21224](https://www.cxoadvisory.com/currency-trading/daily-currency-exchange-pattern/) (secondary summary of
+  Breedon & Ranaldo 2012, "currencies tend to depreciate during their respective local trading hours", EUR/USD profitable after spread
+  in 1997-2007; this is the B14/E017 line, WEAK on val and closed). Hits for (b): ML/volatility-forecasting arXiv papers and volatility
+  surveys already in research/academic_studies.md (Erdemlioglu-Laurent-Neely 2012); no verified direction result.
+- No item added (rule 3: no new verified basis; both families already tested or volatility-only). 0 trials used (dev 257, val 9,
+  total 266). First refill without an item since R124. Not a pipeline failure (last run 43291084015 success, recorded as E047).

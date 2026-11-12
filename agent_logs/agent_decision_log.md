@@ -1246,3 +1246,12 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** thesis-window subset (+2.359) and London 16:00 cell (+2.782) are descriptive, post-hoc; not queued (lesson R076).
 - **Action:** E047 recorded; B56 `done`, B57 closed unearned (0 trials). Trials dev 257, val 9, total 266. No lead, no notification.
 - **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).
+
+## 2026-11-12 R127 (unattended)
+- **State:** origin/main at 23f66be (E047 recorded). Last research-batch run 43291084015 completed success and is recorded; none
+  queued or in progress. Local `main` was stale/diverged (shallow clone); kept as branch backup-stale-main-r127, reset to origin/main.
+  pytest not run (no experiment this run). No `ready` backlog item.
+- **Choice:** refill pass (protocol priority 4). Angles: US-equity-close timing and lagged realized volatility -> direction.
+- **Judgement call:** no item added; the only FX-direction source found (Breedon-Ranaldo via CXO) is the already-closed B14/E017 line.
+  Adding a re-test would only inflate the trial count. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
