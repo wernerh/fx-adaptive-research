@@ -635,3 +635,22 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (verbatim):** "Our results suggest that scheduled U.S macroeconomic announcements cause significant jumps on all asset classes." Cross-market links are same-interval cojumps; no lead-lag result.
 - **Relevance:** Low. Contemporaneous announcement jumps only; no Bund/Treasury data, no predictive rule. See backlog refill note R118.
 - **Status:** VERIFIED (PDF text opened 2026-11-12 R118)
+
+### Bartsch (2019), "Economic policy uncertainty and dollar-pound exchange rate return volatility", JIMF 98
+- **Link:** [EconPapers](https://econpapers.repec.org/RePEc:eee:jimfin:v:98:y:2019:i:c:1), DOI 10.1016/j.jimonfin.2019.102067 (abstract only)
+- **Finding (verbatim):** "estimate a GARCH model using daily USD/British pound returns"; "EPU contributes to exchange rate volatility much more quickly than monthly data can detect." Volatility only; no direction result.
+- **Relevance:** Low (GBP, volatility). See backlog refill note R119.
+- **Status:** VERIFIED (abstract opened 2026-11-12 R119)
+
+### Christou, Gupta, Hassapis, Suleman (2018), "The role of economic uncertainty in forecasting exchange rate returns and realized volatility: Evidence from quantile predictive regressions", J. Forecasting 37(7)
+- **Link:** [KFUPM record](https://pure.kfupm.edu.sa/en/publications/the-role-of-economic-uncertainty-in-forecasting-exchange-rate-ret/), DOI 10.1002/for.2539 (abstract only)
+- **Finding (verbatim):** "EPU is useful for forecasting exchange rate returns and volatility"; 13 countries; frequency, currencies, horizon and magnitudes not shown on the page.
+- **Relevance:** Low until the full text is read (frequency likely not daily). Not used. See backlog refill note R119.
+- **Status:** VERIFIED abstract only (opened 2026-11-12 R119); design details `UNVERIFIED`
+
+### Fossati, Lu (2025), "Exchange Rate Predictability and Financial Conditions", U. Alberta WP 2025-06
+- **Link:** [PDF](https://sites.ualberta.ca/~econwps/2025/wp2025-06.pdf) (~56% verbatim)
+- **Data:** weekly (Wednesday) log returns of 9 USD pairs incl. EUR, NFCI predictor, OOS 2000-2021, rolling 520 weeks.
+- **Finding (verbatim):** "the NFCI does not provide a strong signal about the direction of exchange rate movements"; "none of the alternative forecasts outperforms the RW benchmark in terms of the OOS point forecasts." Gains are in density forecasts only.
+- **Relevance:** Low for a directional rule. See backlog refill note R119.
+- **Status:** VERIFIED (PDF opened 2026-11-12 R119)

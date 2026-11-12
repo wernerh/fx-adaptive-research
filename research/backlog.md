@@ -1258,3 +1258,15 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   lagged cross-asset family NONE x3, E037/E041/E042). 0 trials used (dev 256, val 9, total 265). Eleventh refill in a row without a
   pre-registrable item; queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run
   43155068137 success, recorded as E046), so no notification.
+
+### Refill note R119 (not an item; no item added)
+- 2026-11-12 R119 refill pass, new angle: daily uncertainty / financial-conditions indices (EPU, NFCI) as lagged predictors of
+  next-day EUR/USD direction (indices are free downloads). One standard search; opened three pages (details in
+  research/academic_studies.md): Bartsch 2019 JIMF (daily EPU, USD/GBP volatility only), Christou-Gupta-Hassapis-Suleman 2018
+  J. Forecasting (abstract claims return forecastability for 13 countries; frequency/horizon/magnitudes not shown, design `UNVERIFIED`),
+  Fossati-Lu 2025 U. Alberta WP (weekly NFCI, 9 USD pairs incl. EUR: "does not provide a strong signal about the direction", no OOS
+  point-forecast gain over the random walk).
+- No item added (rule 3: no verified daily directional basis; the one verified FX-direction study is negative; lagged cross-asset /
+  macro-state family NONE x3, E037/E041/E042). 0 trials used (dev 256, val 9, total 265). Twelfth refill in a row without a
+  pre-registrable item; queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run
+  43155068137 success, recorded as E046), so no notification.
