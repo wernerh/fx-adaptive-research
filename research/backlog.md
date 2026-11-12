@@ -1208,3 +1208,13 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   A trial would only inflate the count.
 - No item added (rule 3 satisfied, but R090 power floor). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the
   human unchanged; seventh refill in a row without a pre-registrable item.
+
+### Refill note R115 (not an item; no item added)
+- 2026-11-12 R115 refill pass, angles: (a) USD returns by region-of-trading hours, (b) same-time-of-day return persistence
+  (Heston-Korajczyk-Sadka style) for FX. Search (a) returned only work already in research/academic_studies.md and tested:
+  Krohn-Mueller-Whelan (E022-E025, E032), Breedon-Ranaldo (B14/E017, WEAK on val, closed), Ranaldo 2007/2009 (R082 note). Search (b)
+  returned only the equity paper (Heston, Korajczyk & Sadka 2010, JF) and its mirrors; no FX source testing return direction, same
+  finding as the R068 note. Nothing new opened; nothing cited as evidence.
+- No item added (rule 3: no verified basis; R105 judgement on exhausted price-only families stands). 0 trials used (dev 256, val 9,
+  total 265). Eighth refill in a row without a pre-registrable item; the queue waits on the human-decision list in
+  agent_decision_log R105. Not a pipeline failure (last run 43155068137 success, recorded as E046), so no notification.
