@@ -1,0 +1,43 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E046 DEV FOMC cycle s x EUR/USD (20, 0) NY (D-1) -> (16, 55) NY D (pre-registered, 1 trial):
+n                                  1281
+mean_pips                         1.152
+median_pips                        1.75
+sd_pips                          54.926
+hit_rate                         0.5129
+t_stat                             0.75
+t_p_one_sided                    0.2265
+mean_ci95_block_boot    (-2.517, 4.226)
+decision                           NONE
+Counts: {'trading_dates': 1561, 'pre_cycle': 12, 'unassigned': 25, 'week0_excluded': 235, 'missing_entry': 0, 'missing_exit': 5, 'entry_skipped_spread': 3, 'tested': 1281}
+
+Descriptive:
+  long_mean_by_cycle_week_incl_week0 : {-1: {'n': 235, 'mean_long_pips': -0.717, 'hit_long': 0.5106}, 0: {'n': 235, 'mean_long_pips': 4.218, 'hit_long': 0.5277}, 1: {'n': 230, 'mean_long_pips': -7.167, 'hit_long': 0.4348}, 2: {'n': 228, 'mean_long_pips': 3.272, 'hit_long': 0.5044}, 3: {'n': 229, 'mean_long_pips': -0.831, 'hit_long': 0.4629}, 4: {'n': 227, 'mean_long_pips': -1.328, 'hit_long': 0.489}, 5: {'n': 111, 'mean_long_pips': 8.182, 'hit_long': 0.5135}, 6: {'n': 21, 'mean_long_pips': -3.257, 'hit_long': 0.4762}}
+  even_long_leg : {'n': 476, 'mean_pips': 0.79, 'median_pips': -0.475, 'sd_pips': 50.869, 'hit_rate': 0.4958, 't_stat': 0.339, 't_p_one_sided': 0.3674, 'mean_ci95_block_boot': (-3.786, 5.823)}
+  odd_short_leg : {'n': 805, 'mean_pips': 1.365, 'median_pips': 2.55, 'sd_pips': 57.219, 'hit_rate': 0.523, 't_stat': 0.677, 't_p_one_sided': 0.2493, 'mean_ci95_block_boot': (-3.167, 5.234)}
+  share_long : 0.3716
+  unconditional_long_same_hold : {'n': 1281, 'mean_pips': -0.564, 'median_pips': -1.5, 'sd_pips': 54.935, 'hit_rate': 0.4832, 't_stat': -0.368, 't_p_one_sided': 0.6434, 'mean_ci95_block_boot': (-3.314, 2.482)}
+  cycle_lagged_one_date_reported_only : {'n': 1281, 'mean_pips': 0.414, 'median_pips': 0.0, 'sd_pips': 54.923, 'hit_rate': 0.4988, 't_stat': 0.27, 't_p_one_sided': 0.3937, 'mean_ci95_block_boot': (-2.79, 3.301)}
+  opposite_sign_mean_pips_reported_only : -1.152
+  n_statement_dates_used : 47
+
+By year (descriptive):
+         n   mean    hit
+year                   
+2015  207 -3.920  0.478
+2016  219  1.186  0.525
+2017  218  2.228  0.495
+2018  219  3.037  0.530
+2019  219  2.641  0.507
+2020  199  1.498  0.543
+
+DEV cost check (descriptive):
+n                           1281.000
+mean_signed_mid_pips           1.152
+mean_net_bidask_pips           0.681
+mean_net_spec4_pips            0.481
+mean_net_costs_x1_5_pips       0.146
+median_spread_entry_pips       0.300
+median_spread_exit_pips        0.500
+E046 decision: NONE
