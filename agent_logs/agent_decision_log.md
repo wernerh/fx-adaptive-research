@@ -1103,3 +1103,12 @@ Why each run chose what it did, and any judgement calls.
   random-walk no-edge). Synthetic smoke NONE (28 dates). batch.sh queues E046 (dev only). Backlog B54 `running`. Trials unchanged
   until it runs (dev 255, val 9, total 264).
 - **Next run:** collect E046 when the research-batch run finishes.
+
+## 2026-11-12 R111 (unattended)
+- **State:** research-batch run 43155068137 (E046) completed success; outputs committed by github-actions[bot] (2d401c7), not yet
+  recorded. No run queued or in progress. Clone was on a detached HEAD; checked out `main` and pulled. pytest 393 passed.
+- **Choice:** collect E046 (protocol priority 1). Applied the pre-registered B54 rule exactly (R110): NONE (mean +1.152 > 1 pip, but
+  CI lower -2.517 < 0 and t p 0.2265 > 0.05, so neither SIGNAL nor WEAK). No rule or threshold changed.
+- **Judgement call:** week 1 long -7.167 and week 5 long +8.182 are descriptive cells, post-hoc; not queued (lesson R076).
+- **Action:** E046 recorded; B54 `done`, B55 closed unearned (0 trials). Trials dev 256, val 9, total 265. No lead, no notification.
+- **Next run:** no `ready` item -> backlog refill (literature pass, 2-3 new items).

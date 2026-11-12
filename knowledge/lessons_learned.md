@@ -409,3 +409,13 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   levels behave, if anything, worse for a fade than arbitrary levels; a significant control cell is not a hypothesis (lesson R076).
 - **Action:** B52 closed NONE (rejected_hypotheses.md); B53 closed unearned. No re-test with other horizons, level steps, offsets or the
   continuation sign. Next: refill.
+
+### 2026-11-12 R111: the FOMC even/odd-week cycle does not carry into daily EUR/USD (E046)
+- **Context:** E046 (B54), long EUR/USD in FOMC-cycle weeks 2/4/6, short in -1/1/3/5, week 0 excluded, 20:00 NY -> 16:55 NY, dev, 1 trial.
+- **Observation:** NONE (n 1281, +1.152 pips, block-20 CI (-2.517, 4.226), t p 0.2265). Week 0 long +4.218 (excluded, known
+  statement-day effect); week 1 long -7.167 (descriptive).
+- **Evidence label:** [EXP]
+- **Lesson:** an equity calendar anomaly mapped to a single FX pair with an assumed sign is a weak prior; with daily SD ~55 pips a
+  ~1 pip mean is far below detectability. Extreme single-week cells are post-hoc (lesson R076).
+- **Action:** B54 closed NONE (rejected_hypotheses.md); B55 closed unearned. No re-test with single weeks, lags, holds or the
+  opposite sign. Next: refill.

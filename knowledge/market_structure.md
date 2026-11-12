@@ -112,3 +112,7 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - 1195 first rejected touches (1562 dev trading dates); 1000 tradeable. Fade 60 min -0.71 pips (NONE); 15 min -0.259,
   120 min -1.429. In 83.1% of trades the close crosses the level within the hold. Control 23/73 fade +1.608 (descriptive).
   See experiments/2026-11-11_E045_round_touch_reversal.
+
+### 2026-11-12 R111: EUR/USD daily return by FOMC-cycle week (E046, dev) [EXP]
+- 20:00 NY -> 16:55 NY long mean by cycle week: -1 -0.717, 0 +4.218, 1 -7.167, 2 +3.272, 3 -0.831, 4 -1.328, 5 +8.182 (n 111),
+  6 -3.257 (n 21). Even/odd partition (week 0 excluded) +1.152, NONE. See experiments/2026-11-12_E046_fomc_cycle.
