@@ -1255,3 +1255,12 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added; the only FX-direction source found (Breedon-Ranaldo via CXO) is the already-closed B14/E017 line.
   Adding a re-test would only inflate the trial count. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-12 R128 (unattended)
+- **State:** origin/main at c64dc9c (R127 refill note). Last research-batch run 43291084015 completed success and is recorded (E047);
+  none queued or in progress. No `ready` backlog item. pytest not run (no experiment this run).
+- **Choice:** refill pass (protocol priority 4). Angle: PBoC daily CNY central-parity fixing (or fixing surprise) -> EUR/USD / USD direction.
+- **Judgement call:** no item added. The one research source found (McCauley & Shu 2018, BIS WP 727) was readable only at landing-page
+  level and studies fix determinants and EM co-movement with the RMB, not a G10/EUR/USD direction effect; a fixing-surprise test would
+  also need USD/CNH data and sell-side fix expectations that the repo lacks. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
