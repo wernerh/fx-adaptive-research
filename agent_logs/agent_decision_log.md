@@ -1064,3 +1064,12 @@ Why each run chose what it did, and any judgement calls.
 - **Result:** all source fetches (ECB EA-MPD + Altavilla et al. 2019 DOI; ALFRED/FRED; BLS; DOL) failed with fetch-permission
   timeouts; workspace proxy also 403s these hosts. Nothing verified, so no item added (rule 3). Details in backlog "Refill note R106".
 - **Not a lead, not a pipeline failure** (research-batch itself is healthy); no notification. Human-decision list from R105 unchanged.
+
+## 2026-11-12 R107 (unattended)
+- **State:** origin/main at dceeace (R106). Last research-batch run 43103436725 completed and recorded (E045); nothing queued or in
+  progress. No `ready` backlog item -> refill (protocol step 4).
+- **Result:** retried ECB EA-MPD file, ECB meeting calendar, ECB press-conference index and FOMC 2016 page: all fetch-permission
+  timeouts, nothing verified. Repo check: runner reached federalreserve.gov (FOMC dates) but bls.gov 403 and cmegroup.com timed out;
+  an ECB-meeting test would be below the R090 power floor anyway. No item added, 0 trials. Details in backlog "Refill note R107".
+- **Not a lead, not a pipeline failure;** no notification. Third refill run in a row without an item: further hourly refills are
+  unlikely to add anything until the human answers the R105 decision list.
