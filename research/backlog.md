@@ -1244,3 +1244,17 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (B35/B36 equity E037, B45 oil E041, B46 gold E042), and VIX has no verified runner-downloadable minute source.
 - No item added (rule 3: no verified basis). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the human unchanged;
   tenth refill in a row without a pre-registrable item. Not a pipeline failure (last run 43155068137 success, recorded as E046).
+
+### Refill note R118 (not an item; no item added)
+- 2026-11-12 R118 refill pass, new angle: intraday lead-lag from rates (Bund / US Treasury futures, yields) to EUR/USD (does a lagged
+  5-60 min rates move predict the next EUR/USD move?). Two standard searches; hits were a Treasury co-jump arXiv paper, FX news and
+  chart pages (contemporaneous yield/FX commentary only), an AEA 2019 page and a PhD dissertation (not opened). Opened: "Information
+  arrival, jumps and cojumps in European financial markets: Evidence using tick by tick data" (June 2013, EFMA 2013 Reading,
+  [PDF](https://www.efmaefm.org/0efmameetings/EFMA%20ANNUAL%20MEETINGS/2013-Reading/papers/Paper_June_2013.pdf), ~52% verbatim incl.
+  abstract, data, method, results; authors not shown): 5-min EUR/USD, EURIBOR and index futures 2003-2010, same-interval cojumps at
+  US releases only; no lead-lag, no Bund/Treasury data. Fuess-Mager-Stein-Zhao "A High-Frequency Perspective" (NTNU repository) not
+  openable (fetch-permission timeout), `UNVERIFIED`, not used.
+- No item added (rule 3: no verified lagged basis; minute-horizon FX lead-lag already judged below the tradable horizon, note ~line 655;
+  lagged cross-asset family NONE x3, E037/E041/E042). 0 trials used (dev 256, val 9, total 265). Eleventh refill in a row without a
+  pre-registrable item; queue waits on the human-decision list in agent_decision_log R105. Not a pipeline failure (last run
+  43155068137 success, recorded as E046), so no notification.

@@ -628,3 +628,10 @@ US session. That is unproven, which is exactly why E001 comes first.
   (not a time-series return), insignificant without those FEs, and weakest for the USD. Euro area and US switch on different dates,
   so EUR/USD has ~4 events per year: ~24 on dev (2015-2020). See backlog refill note R114.
 - **Status:** VERIFIED (repository PDF text + press release, opened 2026-11-12 R114)
+
+### Anonymous (June 2013), "Information arrival, jumps and cojumps in European financial markets: Evidence using tick by tick data", EFMA 2013 Reading
+- **Link:** [PDF](https://www.efmaefm.org/0efmameetings/EFMA%20ANNUAL%20MEETINGS/2013-Reading/papers/Paper_June_2013.pdf) (~52% verbatim; authors not shown in the text)
+- **Data:** tick-by-tick level-1 quotes, FESX, FCE, FDAX, 3-month EURIBOR and EUR/USD futures, 26 May 2003 - 31 Jan 2010, 5-min mid-quotes; 23 scheduled US releases.
+- **Finding (verbatim):** "Our results suggest that scheduled U.S macroeconomic announcements cause significant jumps on all asset classes." Cross-market links are same-interval cojumps; no lead-lag result.
+- **Relevance:** Low. Contemporaneous announcement jumps only; no Bund/Treasury data, no predictive rule. See backlog refill note R118.
+- **Status:** VERIFIED (PDF text opened 2026-11-12 R118)

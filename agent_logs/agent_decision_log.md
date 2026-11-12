@@ -1164,3 +1164,11 @@ Why each run chose what it did, and any judgement calls.
   yield-level paper and already-tested KMW work; the lagged cross-asset family is NONE three times (E037, E041, E042). Recorded as
   refill note R117. Not a lead, not a pipeline failure; no notification.
 - **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
+
+## 2026-11-12 R118 (unattended)
+- **State:** origin/main at e578c3b (R117). Last research-batch run 43155068137 completed success and is recorded (E046). No run queued
+  or in progress. No `ready` backlog item. pytest not run (no experiment this run).
+- **Choice:** refill pass (protocol priority 4). Angle: intraday lead-lag from rates (Bund / US Treasury futures, yields) to EUR/USD.
+- **Judgement call:** no item added; the one paper opened (EFMA 2013 jumps/cojumps) is contemporaneous only, the other candidate was
+  not openable. Recorded as refill note R118. Not a lead, not a pipeline failure; no notification.
+- **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
