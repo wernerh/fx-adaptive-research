@@ -1118,3 +1118,17 @@ Trial count so far on dev: **255** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - Third consecutive refill run without a new item (R105, R106, R107). The queue now waits on the human-decision list in
   agent_decision_log R105 (sanctioned release calendar / FRED API key secret, OIS or options data, OOS use for seen windows). This is
   not a pipeline failure (research-batch healthy, last run 43103436725 success), so no notification under the protocol.
+
+### Refill note R108 (not an item; no item added)
+- 2026-11-12 R108 refill pass, new angle: FX option-expiry pinning at the 10:00 NY cut (spot attracted to large strikes, delta-hedge
+  mechanism known from equity options). Searches returned only broker/news expiry lists (vtmarkets.com, newsquawk.com,
+  investinglive.com; not evidence) and one academic record: Mozayyan Esfahani (2019), "Algorithmic Trading and Prediction of Foreign
+  Exchange Rates Based on the Option Expiration Effect", KTH bachelor thesis 2019:068,
+  [record](https://openaccess.library.uitm.edu.my/Record/ndltd-UPSALLA1-oai-DiVA.org-kth-252297/Details) (opened: metadata + abstract
+  only). Abstract: an "option relevance coefficient" built from expiring options, used in a GARCH-X model; "more scientific research
+  is required to be able to draw significant conclusions" (verbatim). Full text (urn.kb.se resolver) failed with a fetch-permission
+  timeout; pairs, period, windows and effect sizes stay `UNVERIFIED`.
+- Not added: the mechanism needs per-date strike/notional expiry data (DTCC/broker lists), which the repo lacks; a round-number proxy
+  would re-test the E018/E045 level family (both NONE on dev) without a verified basis. Adds to the R105 data-needs list
+  (option-expiry notional by strike).
+- No item added (rule 3; R105 judgement stands). 0 trials used (dev 255, val 9, total 264). Fourth consecutive refill without an item.

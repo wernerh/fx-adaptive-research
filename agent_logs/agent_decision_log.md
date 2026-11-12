@@ -1073,3 +1073,12 @@ Why each run chose what it did, and any judgement calls.
   an ECB-meeting test would be below the R090 power floor anyway. No item added, 0 trials. Details in backlog "Refill note R107".
 - **Not a lead, not a pipeline failure;** no notification. Third refill run in a row without an item: further hourly refills are
   unlikely to add anything until the human answers the R105 decision list.
+
+## 2026-11-12 R108 (unattended)
+- **State:** origin/main at 0bc2baf (R107). Last research-batch run 43103436725 completed and recorded (E045); nothing queued or in
+  progress. No `ready` backlog item -> refill (protocol step 4).
+- **Why this angle:** R105-R107 exhausted price-only families and release-date sources; FX option-expiry pinning is a published-style
+  mechanism not yet considered in the repo.
+- **Result:** only a 2019 KTH bachelor-thesis abstract was readable; the effect needs strike/notional expiry data the repo lacks.
+  No item added, 0 trials. Details in backlog "Refill note R108". Added to the R105 human data list: option-expiry notional by strike.
+- **Not a lead, not a pipeline failure** (research-batch healthy); no notification.
