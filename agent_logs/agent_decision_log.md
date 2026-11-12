@@ -1130,3 +1130,11 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added; the search returned only already-tested KMW work, an equity paper and a monthly cross-sectional
   currency paper. Recorded as refill note R113. Not a lead, not a pipeline failure; no notification.
 - **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.
+
+## 2026-11-12 R114 (unattended)
+- **State:** origin/main at cd6310f (R113). Last research-batch run 43155068137 completed success and is recorded (E046). No run queued
+  or in progress. No `ready` backlog item. pytest not run (no experiment this run).
+- **Choice:** refill pass (protocol priority 4). Angle: DST transition calendar (EUR/USD has asynchronous US/EA switch dates).
+- **Judgement call:** no item added; Nower (2024) verified, but the effect (~10 bp on weekly averages vs month-year FE, weakest for USD)
+  is far below what ~24 dev events can detect (R090). Recorded as refill note R114. Not a lead, not a pipeline failure; no notification.
+- **Next run:** if still no `ready` item, refill again; the human-decision list (R105) remains the main unblocker.

@@ -1195,3 +1195,16 @@ Trial count so far on dev: **256** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   FX lead-lag at minute horizons was already judged below the tradable horizon (R080 note, line ~655).
 - No item added (rule 3: nothing verified to build on). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the human
   unchanged; this is the sixth refill in a row without a pre-registrable item.
+
+### Refill note R114 (not an item; no item added)
+- 2026-11-12 R114 refill pass, new angle: daylight-saving-time transitions (US and euro area switch on different Sundays in March and
+  Oct/Nov, so EUR/USD gets 4 dated events per year with no external data needed). Opened: Nower (2024, Economics Letters, DOI
+  10.1016/j.econlet.2024.111813; repository PDF ~95% + Durham press release; entry in research/academic_studies.md). Pre-holiday
+  search returned only a trading-blog concept page and fix papers already in the library (not evidence; nothing opened).
+- Not added: a "short the currency entering DST / long the one leaving" weekly test on EUR/USD. Published effect is ~10 bp (~11 pips)
+  on weekly *averages* relative to currency-month-year fixed effects, not a signed return from a tradable entry; it is insignificant
+  with currency FE only (Table 1 col 1), and weakest for the USD (press release; paper drops the US to sharpen it). ~24 dev events
+  with a one-week target (weekly SD order 100+ pips) give a CI half-width of ~50 pips, far above the effect (lesson R090 power floor).
+  A trial would only inflate the count.
+- No item added (rule 3 satisfied, but R090 power floor). 0 trials used (dev 256, val 9, total 265). R105 data-needs list for the
+  human unchanged; seventh refill in a row without a pre-registrable item.

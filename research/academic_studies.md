@@ -610,3 +610,21 @@ US session. That is unproven, which is exactly why E001 comes first.
   information contained in the FOMC minutes", verbatim), no post-release drift, continuation or reversal analysis.
 - **Relevance:** Low for direction. A volatility-timing fact only; see backlog refill note R112.
 - **Status:** VERIFIED (full extracted text, opened 2026-11-12 R112)
+
+### Nower (2024): Losing sleep at the international market: Daylight Saving Time and exchange rates
+- **Source:** Michael Nower (Durham University), Economics Letters 241 (2024) 111813, DOI 10.1016/j.econlet.2024.111813 (open access).
+  [Repository PDF](https://durham-repository.worktribe.com/OutputFile/2485572) (opened 2026-11-12 R114 via web-fetch, ~95% of the
+  extracted text incl. Tables 1-2), [Durham press release](https://www.durham.ac.uk/business/news-and-events/news/2024/october/daylight-saving-time-weakens-the-pound-and-other-currencies)
+  (opened, full body). DOI landing page not opened.
+- **Data:** FRED daily noon rates, 12 currency areas (10 DST-observing incl. Eurozone and US), "4th January 1971 to 3rd January 2020"
+  (verbatim); regressions on weekly averages (log mean noon rate over week t), indicators for weeks after DST start/end in base or
+  quoted area, currency-pair fixed effects (currency, currency-year, currency-month-year); SEs clustered by currency.
+- **Finding (verbatim):** "When a country starts DST, the value of its currency depreciates, which is reversed when the country exits
+  DST." Table 1: DST Start (Base) +0.0156 (n.s.) with currency FE only; -0.00101 (***) with currency-month-year FE incl. US; -0.00134
+  (***) excluding the US; "Once this is excluded, the significance increases and the coefficients increase in size" (verbatim).
+  With an equity-market control the effect is "approximately 0.1%" (verbatim). Press release: the US dollar "saw minimal negative
+  impact" on entering DST.
+- **Relevance:** Low for EUR/USD trading. The effect is a ~10 bp level shift in weekly averages relative to month-year fixed effects
+  (not a time-series return), insignificant without those FEs, and weakest for the USD. Euro area and US switch on different dates,
+  so EUR/USD has ~4 events per year: ~24 on dev (2015-2020). See backlog refill note R114.
+- **Status:** VERIFIED (repository PDF text + press release, opened 2026-11-12 R114)
