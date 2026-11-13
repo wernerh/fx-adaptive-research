@@ -1683,3 +1683,14 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   the 1-pip bar and about the SPEC 4 round-trip cost; would need a human-supplied euro-area dividend calendar (a candidate for the
   R105 human-decision data list; not acted on). (b) no verified basis and USD/JPY-focused. 0 trials used (dev 257, val 9, total
   266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R150 (not an item; no item added)
+- 2026-11-13 R150 refill pass, angles (no "Beige", "jobless" or "claims" entry in research/ or knowledge/ before this run):
+  (a) weekly US initial jobless claims (Thu 08:30 NY, fixed schedule, no calendar download needed) -> later EUR/USD drift;
+  (b) Fed Beige Book release (Wed 14:00 NY) -> EUR/USD direction. Two standard searches. (a) returned only news/broker/blog
+  pages (MQL5 blog, Dukascopy news, FXStreet, XTB, ActionForex; not evidence, not opened). (b) Zavodny-Ginther 2005 SEJ opened
+  via web-fetch (~78% verbatim; entry in research/academic_studies.md): same-day US yields rise with a hand-scored Beige Book
+  index, equities n.s., no FX and no drift; other hits news/calendar pages (not evidence, not opened).
+- No item added (rule 3 / R090 standard: no verified EUR/USD directional or drift basis for either angle; (b) also needs a
+  hand-scored text index and gives ~8 events per year, below the R090 power floor). 0 trials used (dev 257, val 9, total 266).
+  Not a pipeline failure (last run 43291084015 success, recorded as E047).

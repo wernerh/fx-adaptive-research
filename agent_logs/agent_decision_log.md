@@ -1405,3 +1405,14 @@ Why each run chose what it did, and any judgement calls.
   SPEC 4 costs; the Japanese angle returned only news pages. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands (a euro-area
   dividend payment calendar would be the only route to test Zheng 2023 on EUR/USD).
+
+## 2026-11-13 R150 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  weekly US initial jobless claims -> later EUR/USD drift; Fed Beige Book release -> EUR/USD direction.
+- **Judgement call:** no item added. Claims angle returned only news/broker pages; Zavodny-Ginther 2005 covers US rates and
+  equities same-day only (no FX, no drift). 0 trials used. Not a lead; no notification.
+- **Housekeeping note:** the local clone's `main` had diverged from origin/main (origin history differs; local stale commits
+  E035/E036/R079 are not on origin by hash). Local `main` was left untouched (no destructive reset); this run worked on a branch
+  tracking origin/main and pushed to origin main.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands. 30+
+  consecutive refill passes with no item added suggest the free-data, verified-basis idea pool is close to exhausted.
