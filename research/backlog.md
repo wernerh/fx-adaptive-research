@@ -1582,3 +1582,18 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3: no verified published basis for either angle; (b) also needs a euro-area release calendar, which earlier
   runs could not source). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success,
   recorded as E047).
+
+### Refill note R142 (not an item; no item added)
+- 2026-11-13 R142 refill pass, angles: (a) daily candlestick patterns (engulfing / inside day) on EUR/USD, (b) Fibonacci retracement
+  levels in FX. Two standard searches; opened via web-fetch (entries in research/academic_studies.md): Alanazi (2020, EJF 26(15),
+  [IDEAS](https://ideas.repec.org/a/taf/eurjfi/v26y2020i15p1484-1505.html), abstract only): engulfing patterns "profitable" for "the
+  seven majors", 24 pairs 2000-2018; pattern definition, horizon, cost treatment and EUR/USD result not in the abstract (UNVERIFIED).
+  Neely & Weller (2011, St. Louis Fed WP 2011-001, [PDF](https://fraser.stlouisfed.org/docs/publications/frbsl_wp/2011-001.pdf),
+  ~42% verbatim): survey, rule profits extinguished after the 1980s. Gupta (2011, Macalester honors project,
+  [PDF](https://core.ac.uk/download/46721086.pdf), ~59% verbatim): Fibonacci bounce frequencies, no trading test, EUR/USD values
+  unreadable. CXO page on Breedon-Ranaldo (closed B14/E017 line). Two hits not openable (BUiD thesis, CAS catalogue: bot-protection
+  access denied; not circumvented).
+- No item added (rule 3: the only directional source is abstract-only with an unverified pattern definition and horizon, same
+  standard as R120 Tornell-Yuan; minute-horizon candlesticks already judged in R134). Possible future item if the human can supply
+  the Alanazi 2020 full text (definition + horizon) -> daily engulfing continuation on dev, 1 trial. 0 trials used (dev 257, val 9,
+  total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

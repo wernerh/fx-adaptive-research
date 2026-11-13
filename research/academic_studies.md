@@ -745,3 +745,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** arXiv preprint 1504.06235, [PDF](https://arxiv.org/pdf/1504.06235) (opened 2026-11-13 R140, full text)
 - **Finding:** timing of local extrema on 60-minute candles (FX 2009-2014): GBP-USD and CHF-USD extrema tend to precede EUR-USD extrema by roughly 20-30 minutes (confirmed-extrema table, as extracted). Authors (verbatim): "we cannot view the value ℓ(w) as an absolute value but more as a tendency of the lead or lag"; extrema only known to about +-30 minutes.
 - **Relevance:** Low (not peer-reviewed; extrema timing, not lagged returns; resolution below the claimed lag). **Status:** VERIFIED (full text)
+
+### Alanazi (2020): The bullish and the bearish engulfing patterns: beating the forex market or being beaten?
+- **Source:** The European Journal of Finance 26(15), 1484-1505, DOI 10.1080/1351847X.2020.1748679, [IDEAS](https://ideas.repec.org/a/taf/eurjfi/v26y2020i15p1484-1505.html) (opened 2026-11-13 R142, abstract only; full text paywalled)
+- **Finding (abstract, verbatim):** "we document the significance of profitability of technical analysis in the forex market, particularly for the seven majors." 24 pairs, daily in-sample and 4-hour out-of-sample candles, 2000-2018. Pattern definition, holding horizon, cost treatment and any EUR/USD-specific sign/magnitude: UNVERIFIED (not in abstract).
+- **Relevance:** Potential basis for a daily engulfing-pattern test on EUR/USD, but design unverified. **Status:** VERIFIED (abstract only); design UNVERIFIED
+
+### Neely & Weller (2011): Technical Analysis in the Foreign Exchange Market
+- **Source:** Federal Reserve Bank of St. Louis WP 2011-001B, [PDF](https://fraser.stlouisfed.org/docs/publications/frbsl_wp/2011-001.pdf) (opened 2026-11-13 R142, ~42% verbatim); survey chapter, Wiley Handbook of Exchange Rates ch. 12
+- **Finding (abstract, verbatim):** "simple technical trading rules on dollar exchange rates provided 15 years of positive, risk-adjusted returns" (1970s-80s), returns later extinguished. Filter / MA / channel rule definitions; no verified EUR/USD figure in the part read.
+- **Relevance:** Background (consistent with Neely-Weller-Ulrich 2009 decay). **Status:** VERIFIED (partial full text)
+
+### Gupta (2011): Fibonacci Retracements and Self-Fulfilling Prophecy
+- **Source:** Macalester College Economics Honors Project 41, [PDF](https://core.ac.uk/download/46721086.pdf) (opened 2026-11-13 R142, ~59% verbatim; not peer-reviewed)
+- **Finding:** "bounce" frequency at Fibonacci retracement levels (0.236-0.764) vs other levels, GAIN Capital ticks 2003-2008 (AUD, EUR, CAD, CHF, JPY vs USD), 1/5/15-min data; gross, no trading test. EUR/USD table values garbled in the fetch; conclusion that retracements "cannot meaningfully predict short-term exchange rates" seen only in a model summary (UNVERIFIED verbatim).
+- **Relevance:** None (no verified directional result). **Status:** VERIFIED (partial full text)

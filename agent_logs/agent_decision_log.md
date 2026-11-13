@@ -1344,3 +1344,11 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added. Searches returned only data pages and news previews, no study with a direction. 0 trials used.
   Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R142 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43291084015 recorded as E047).
+- **Choice:** refill pass (protocol priority 4). Angles: daily candlestick (engulfing / inside-day) patterns; Fibonacci retracements in FX.
+- **Judgement call:** no item added. Alanazi 2020 (EJF) claims engulfing-pattern profits for majors but only the abstract was
+  readable (definition, horizon, EUR/USD result UNVERIFIED); Fibonacci source is a non-peer-reviewed bounce-frequency study with no
+  trading result. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands (add: Alanazi 2020 full text).
