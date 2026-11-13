@@ -705,3 +705,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** Aalto University MSc thesis, [record](https://epub.lib.aalto.fi/en/ethesis/id/12297) (opened 2026-11-13 R137, abstract only)
 - **Finding (verbatim):** "the intraday returns before expiration are significantly higher and the returns after expiration significantly lower on expiration days" (equity index, 2000-2009).
 - **Relevance:** None for FX directly (equity analogue only). **Status:** VERIFIED (abstract only)
+
+### Volta & Aste (2022): Causal coupling between European and UK markets triggered by announcements of monetary policy decisions
+- **Source:** Royal Society Open Science 9(3); LSE Research Online 114947, [EconPapers](https://econpapers.repec.org/paper/ehllserod/114947.htm) (opened 2026-11-13 R138, abstract only)
+- **Finding (verbatim):** "there is a significant information flow between the markets with prevalent direction going from the market where the announcement is made towards the other" (Euro Stoxx 50 / FTSE 100, 1-minute, ECB and BoE decisions).
+- **Relevance:** None for FX directly (equities, same-window). **Status:** VERIFIED (abstract only)
+
+### Vanhanen (2024): ECB's Monetary Policy Spillovers to Financial Markets: Evidence from Small Open Economies
+- **Source:** Helsinki GSE Discussion Papers 25, [PDF](https://www.helsinkigse.fi/media/pages/discussion-papers/discussion-paper-25/be9c359dc4-1731573877/dp25re.pdf) (opened 2026-11-13 R138, full text)
+- **Finding (verbatim):** "The target surprise on euro US dollar rate does not demonstrate statistical significance"; path surprise positive in a same-window validation regression (168 ECB meetings 2006-2022). No post-announcement horizon.
+- **Relevance:** Low (same-window reaction, not a predictable drift). **Status:** VERIFIED (full text)

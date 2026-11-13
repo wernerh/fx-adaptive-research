@@ -1312,3 +1312,11 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added. The only EUR/USD source (de Palacio 2016) is volatility-only and sign-neutral; the directional
   expiry evidence found is for EURO STOXX 50, not FX. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R138 (unattended)
+- **State:** origin/main at 8ea7cd9 (R137). No `ready` backlog item; last research-batch run 43291084015 completed (success) and is
+  recorded as E047; nothing queued or in progress.
+- **Choice:** refill pass (protocol priority 4). Angles: quarter-end USD funding (re-check), lagged US-DE 2y differential, post-BoE/SNB/ECB drift.
+- **Judgement call:** no item added. Quarter-end already closed (swaps/basis only); yield-differential search gave only commentary;
+  the policy-spillover papers opened are same-window event studies with no EUR/USD drift. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.

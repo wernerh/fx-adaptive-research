@@ -1537,3 +1537,18 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3): no verified directional basis for spot EUR/USD around expiry; the only FX source is volatility-only and
   sign-neutral, and ~24-72 dev events put a signed test below the R090 power floor unless the effect is large. 0 trials used (dev 257,
   val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R138 (not an item; no item added)
+- 2026-11-13 R138 refill pass, angles: (a) quarter-end USD funding demand -> spot EUR/USD (re-checked: already closed in refill note
+  ~line 1082 and academic_studies.md ~line 577, swaps/basis only, ~24 dev quarter-ends), (b) lagged daily change in the US-German 2-year
+  yield differential -> next-day EUR/USD, (c) post-announcement EUR/USD drift after BoE / SNB / ECB policy decisions. Three standard
+  searches. Search (b) returned only charting and news pages (TradingView, FXStreet, BabyPips; not evidence, not opened). Search (c)
+  opened via web-fetch (entries in research/academic_studies.md): Volta & Aste (2022), Royal Society Open Science 9(3),
+  [EconPapers](https://econpapers.repec.org/paper/ehllserod/114947.htm) (abstract only): Euro Stoxx 50 / FTSE 100 information flow
+  around ECB/BoE decisions, no FX. Vanhanen (2024), Helsinki GSE DP 25,
+  [PDF](https://www.helsinkigse.fi/media/pages/discussion-papers/discussion-paper-25/be9c359dc4-1731573877/dp25re.pdf) (full text):
+  same-window ECB event study (SEK/DKK); EUR/USD only as a validation regression, "The target surprise on euro US dollar rate does not
+  demonstrate statistical significance" (verbatim); no post-window horizon.
+- No item added (rule 3): no verified lagged/post-announcement EUR/USD direction; (c) also needs BoE/SNB/ECB decision calendars, and
+  the ECB calendar was unreachable from the runner (R129); ~48 ECB meetings on dev is below the R090 power floor. 0 trials used (dev 257,
+  val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
