@@ -1573,3 +1573,12 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   resolution (+-30 min) is coarser than the claimed lead; minute-horizon FX lead-lag already judged below the tradable horizon, note
   ~line 655; GBP/USD/CHF data not yet downloaded). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run
   43291084015 success, recorded as E047).
+
+### Refill note R141 (not an item; no item added)
+- 2026-11-13 R141 refill pass, angles: (a) weekly Fed H.4.1 balance-sheet release (Thursday 16:30 ET) as a USD direction event,
+  (b) euro-area flash HICP release -> later EUR/USD drift. Two standard searches. (a) returned only the H.4.1 data release itself
+  (federalreserve.gov PDF, FRED/ALFRED series pages) and a MarketNews data headline: data, not evidence of an FX effect; not opened.
+  (b) returned only FXStreet/Newsquawk news previews and headlines (not evidence, not opened).
+- No item added (rule 3: no verified published basis for either angle; (b) also needs a euro-area release calendar, which earlier
+  runs could not source). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success,
+  recorded as E047).

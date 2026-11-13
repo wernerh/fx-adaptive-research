@@ -1337,3 +1337,10 @@ Why each run chose what it did, and any judgement calls.
   claim (Maier-Paape-Platen 2015 preprint) is extrema timing on hourly candles, not a lagged-return result. Bollinger hits were vendor
   pages only. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R141 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43291084015 recorded as E047).
+- **Choice:** refill pass (protocol priority 4). Angles: weekly Fed H.4.1 release as a USD event; euro-area flash HICP -> later EUR/USD drift.
+- **Judgement call:** no item added. Searches returned only data pages and news previews, no study with a direction. 0 trials used.
+  Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
