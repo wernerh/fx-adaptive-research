@@ -1647,3 +1647,14 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090 standard: the only directional sources are abstract-level and the one explicit developed-market
   statement is negative; (b) no verified basis and no data). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure
   (last run 43291084015 success, recorded as E047).
+
+### Refill note R147 (not an item; no item added)
+- 2026-11-13 R147 refill pass, angles (no "tax date" or "mid-quarter" entry in research/ before this run): (a) US corporate tax
+  payment dates (15th of Mar/Jun/Sep/Dec) / TGA reserve drains -> USD funding -> EUR/USD spot direction; (b) Asian-session range
+  breakout at the London open. Two standard searches. (a) opened via web-fetch (entries in research/academic_studies.md):
+  Kubitza-Sigaux-Vandeweyer ECB WP 3017 (~26% verbatim; CIP basis and hedging flows, no spot direction) and Abbassi-Bräuning Boston
+  Fed WP 18-6 (~29% verbatim; quarter-end forward premia, no spot); other hits news/seasonality vendor pages (not evidence, not
+  opened). (b) returned only trading-education/vendor backtest pages (not evidence, not opened); the Asian-range breakout family is
+  already tested and rejected (E004 S001 REJECT).
+- No item added (rule 3 / R090 standard: no verified spot EUR/USD directional basis; (b) family already rejected). 0 trials used
+  (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

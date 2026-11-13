@@ -799,3 +799,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** Applied Economics 50(23), 2525-2551, DOI [10.1080/00036846.2017.1403556](https://doi.org/10.1080/00036846.2017.1403556); [EconPapers abstract](https://econpapers.repec.org/RePEc:taf:applec:v:50:y:2018:i:23:p:2525-2551) (opened 2026-11-13 R146, abstract only)
 - **Finding (abstract, verbatim):** attention predicts "emerging currency performance in the out-of-sample analysis. By contrast, statistical predictability and economic value do not exist in the currencies from developed markets."
 - **Relevance:** Negative evidence for a EUR/USD attention rule. **Status:** abstract only
+
+### Kubitza, Sigaux & Vandeweyer (ECB WP 3017): The implications of CIP deviations for international capital flows
+- **Source:** [ECB Working Paper 3017 PDF](https://www.ecb.europa.eu//pub/pdf/scpwps/ecb.wp3017~2c077fb436.en.pdf) (opened 2026-11-13 R147, ~26% verbatim; year not seen in text read, data to 2024Q1)
+- **Finding:** cross-currency basis widening leads euro-area investors to cut hedging and USD bond holdings. No spot EUR/USD direction result around tax dates, mid-quarter dates or reserve drains in the text read.
+- **Relevance:** Background only (basis/flows, not spot direction). **Status:** partial text
+
+### Abbassi & Bräuning (Boston Fed WP 18-6, revised July 2020): Demand Effects in the FX Forward Market
+- **Source:** [Boston Fed WP 18-6 revised PDF](https://www.bostonfed.org/-/media/Documents/Workingpapers/PDF/2018/wp1806-revised.pdf) (opened 2026-11-13 R147, ~29% verbatim)
+- **Finding (verbatim):** German banks make "cross-quarter dollar forward sales at higher prices (15 basis points higher) and higher volumes (20 percent higher)" around quarter-ends. Forward premia only; no spot direction.
+- **Relevance:** Background only; quarter-end funding line already closed (refill note R138). **Status:** partial text

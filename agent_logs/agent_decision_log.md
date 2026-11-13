@@ -1382,3 +1382,10 @@ Why each run chose what it did, and any judgement calls.
   predictability for developed-market currencies; risk reversals have no verified basis and no runner-downloadable data. 0 trials.
   Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R147 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  US corporate tax dates / mid-quarter reserve drains -> EUR/USD spot direction; Asian-session range breakout at the London open.
+- **Judgement call:** no item added. The two papers opened (ECB WP 3017, Boston Fed WP 18-6) concern the basis and forward premia,
+  not spot direction; the Asian-range breakout family was already rejected in E004. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
