@@ -1,0 +1,21 @@
+{
+  "experiment_id": "E048",
+  "date": "2026-11-13",
+  "instrument": "EURUSD",
+  "hypothesis": "B58: direction x (EUR/USD mid open entry + 60 min - mid open entry) > 1 pip per trade; long (short) after a UTC 1h bar with close time in [07:00 London, 12:00 NY) closes above the max high (below the min low) of the previous 24 clock hours (>= 20 valid) and a later 5m bar within 120 min has low <= L + 1 pip and close > L (mirror) before any 5m close back through L; entry at the retest 5m close; first long/short setup per FX trading date; dev",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family (human-directed): 24-hour swing-level 1h breakout with 5m break-and-retest entry; fill/exclusion machinery from E045/E047, 60-min hold",
+  "decision_rule": "< 300 trades -> NONE; SIGNAL if mean signed > 1.0 pip AND FX-trading-date cluster bootstrap (2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "command": "python scripts/run_e048_breakout_retest.py | tee backtests/validation_reports/E048_results.txt",
+  "preregistered_in": "R154",
+  "next_experiment": "SIGNAL -> B58v val confirmation; else B58 closed, B58v closed unearned; B59 next either way",
+  "outputs": [
+    "backtests/validation_reports/E048_results.json",
+    "backtests/validation_reports/E048_results.txt",
+    "backtests/validation_reports/E048_trades.csv"
+  ]
+}

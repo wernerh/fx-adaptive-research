@@ -1442,3 +1442,16 @@ Why each run chose what it did, and any judgement calls.
   1h/30m/15m, 5m EMA20 cross trigger, 60-min hold), each with a blocked val confirmation. Both use the E045/E047 decision rule
   unchanged. Ranked as the only `ready` items, B58 first (human named it first). Practitioner basis only (no published EUR/USD
   evidence); prior stated as low. 0 trials until they run (each +1 dev). Scheduled runs will pre-register and run them in order.
+
+## 2026-11-13 R154 (unattended)
+- **State:** latest research-batch run 43291084015 (E047) completed success and is recorded (R126); none queued or in progress.
+  Worked on a detached checkout of origin/main (d9a528b; local `main` still holds stale pre-R080 commits, untouched). pytest 407
+  passed before changes. Top `ready` backlog item: B58 (human-directed, R153).
+- **Choice:** protocol step 3, pre-register B58 as E048 (price data in repo, no download).
+- **Action:** hypothesis/methodology/record.json written before any run; level, breakout window, retest, hold and rule unchanged from
+  the backlog draft (= E045/E047 rule, 60-min hold). Details fixed now, before data: "previous 24 bars" = 24 clock hours with >= 20
+  valid; first long/first short setup per FX trading date (17:00 NY roll); a 5m bar that dips within 1 pip but closes through L
+  cancels; retest signal stamped bucket start + 4 min (fill at the 5m close). `breakout_retest.py`, `run_e048_breakout_retest.py`,
+  14 tests (incl. no look-ahead by truncation and random-walk no-edge). Synthetic smoke NONE (14 trades). batch.sh queues E048
+  (dev only). Backlog B58 `running`. Trials unchanged until it runs (dev 257, val 9, total 266).
+- **Next run:** collect E048 when the research-batch run finishes; then B59.

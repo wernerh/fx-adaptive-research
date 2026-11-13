@@ -1720,7 +1720,7 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   release calendar, same blocker as B6). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015
   success, recorded as E047).
 
-### B58: 1-hour swing-level breakout, 5-minute break-and-retest entry (signal test, dev) · `ready` (Added 2026-11-13 R153, human-directed pivot; ranked first, reason in agent_decision_log R153)
+### B58: 1-hour swing-level breakout, 5-minute break-and-retest entry (signal test, dev) → E048 · `running` (2026-11-13 R154: pre-registered as E048, rule unchanged, "24 bars" = 24 clock hours with >= 20 valid, queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-13 R153, human-directed pivot; ranked first, reason in agent_decision_log R153)
 - **Origin [HUMAN / PRACTITIONER]:** the human asked (2026-11-13) to test "the one hour breakout strategy with a set resistance ... start
   there and then drop down to lower time frame for the trade", and left the level, entry and exit definitions to the agent. No
   published EUR/USD evidence is claimed; prior is low (technical-rule profits in developed FX largely gone: Neely-Weller 2011,
