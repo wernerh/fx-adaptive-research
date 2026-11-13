@@ -1523,3 +1523,17 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3): option-expiry pinning has no verified evidence or data; Adelman's business-hours effect is the
   Ranaldo time-of-day family already covered (E009 hour cells, E024/E025, E032), and no verified pre-/post-holiday EUR/USD direction
   exists. 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R137 (not an item; no item added)
+- 2026-11-13 R137 refill pass, angle: CME FX futures expiry / IMM-date and contract-roll effects on spot EUR/USD direction (untried in
+  the backlog; ~24 quarterly or ~72 monthly expiries on dev). Two standard searches; opened via web-fetch (entries in
+  research/academic_studies.md): de Palacio (2016), "Is there a maturity effect on the eur/usd foreign exchange market?", Banque &
+  Stratégie 348, [page](https://www.revue-banque.fr/archive/there-maturity-effect-eurusd-foreign-exchange-m-NQRB00807) and full-text
+  PDF (read in full): daily EUR/USD 2003-2014, GARCH volatility vs days since last CME expiry; 4-/5-day volatility rises nearer expiry,
+  described as "an upward or downward trend" (verbatim), no return sign tested; "These results are not definitive" (verbatim).
+  Han, Kling & Sell (1999, JFM 19(6) 665-693, [IDEAS](https://ideas.repec.org/a/wly/jfutmk/v19y1999i6p665-693.html), abstract only):
+  currency-futures volatility, days-to-expiry as a control, no direction. Joensuu (2010, Aalto MSc,
+  [record](https://epub.lib.aalto.fi/en/ethesis/id/12297), abstract only): directional expiry-day effect in EURO STOXX 50, not FX.
+- No item added (rule 3): no verified directional basis for spot EUR/USD around expiry; the only FX source is volatility-only and
+  sign-neutral, and ~24-72 dev events put a signed test below the R090 power floor unless the effect is large. 0 trials used (dev 257,
+  val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

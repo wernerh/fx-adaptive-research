@@ -688,3 +688,20 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (verbatim):** "we find no support for the hypothesis that pivot points reveal useful information in their traditional way"; "the technique can be profitable if it is implemented inversely for two of the pairs". EUR/USD at 0.15%: weighted win 41.4% (5%), R-only 39.0% (5%), R1 38.5% (10%), S1 45.8% (n.s.). No P&L reported.
 - **Relevance:** Medium-low (non-peer-reviewed, win rates only, short EUR/USD sample inside our dev block). Basis for B56 (continuation at R1/S1). See backlog B56.
 - **Status:** VERIFIED (partial full text)
+
+### de Palacio (2016): Is there a maturity effect on the EUR/USD foreign exchange market?
+- **Source:** Banque & Stratégie n° 348 (Revue Banque, ESCP Europe applied research), [page](https://www.revue-banque.fr/archive/there-maturity-effect-eurusd-foreign-exchange-m-NQRB00807), [PDF](https://www.revue-banque.fr/binrepository/0000000000000000000_RB00807_MG108084818.pdf) (opened 2026-11-13 R137, full text via web-fetch)
+- **Data/method:** daily EUR/USD spot (Bloomberg) 2003-01-01 .. 2014-12-31; GARCH(1,1) 1-5-day volatility regressed on J = days since last CME futures expiry (0-32).
+- **Finding (verbatim):** "the weekly rolling volatility increases when approaching the expiration date of future contracts, which creates an upward or downward trend closer to this date"; "These results are not definitive". J significant only for 4-day (10%) and 5-day (5%) volatility; R2 ~0.06; coefficient units unclear.
+- **Relevance:** Low. Volatility only, no return sign; not a basis for a direction test (R137).
+- **Status:** VERIFIED (full text)
+
+### Han, Kling & Sell (1999): Foreign exchange futures volatility: day-of-the-week, intraday, and maturity patterns
+- **Source:** Journal of Futures Markets 19(6) 665-693, [IDEAS](https://ideas.repec.org/a/wly/jfutmk/v19y1999i6p665-693.html) (opened 2026-11-13 R137, abstract only)
+- **Finding:** volatility patterns in DEM/JPY/GBP/CAD futures with days-to-expiry as a control; no directional claim in the abstract.
+- **Relevance:** Low (volatility, futures). **Status:** VERIFIED (abstract only)
+
+### Joensuu (2010): Expiration day effects of the EURO STOXX 50 index futures and options
+- **Source:** Aalto University MSc thesis, [record](https://epub.lib.aalto.fi/en/ethesis/id/12297) (opened 2026-11-13 R137, abstract only)
+- **Finding (verbatim):** "the intraday returns before expiration are significantly higher and the returns after expiration significantly lower on expiration days" (equity index, 2000-2009).
+- **Relevance:** None for FX directly (equity analogue only). **Status:** VERIFIED (abstract only)
