@@ -1425,3 +1425,20 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Marsh & Miao (City) hit already rejected (note ~line 603).
 - No item added (rule 3: no verified directional EUR/USD basis; the one rule-based source is negative after costs). 0 trials used (dev
   257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R131 (not an item; no item added)
+- 2026-11-13 R131 refill pass, angle: volatility-conditioned return autocorrelation / feedback trading (Sentana-Wadhwani, LeBaron style)
+  in FX as a next-day EUR/USD direction rule. Two standard searches. Opened via web-fetch: Laopodis (2005), Economic Modelling 22(5),
+  811-827, [IDEAS](https://ideas.repec.org/a/eee/ecmode/v22y2005i5p811-827.html) (bibliographic only, "No abstract is available";
+  content UNVERIFIED, not used); Aguirre & Saidi (1999), J. Economics and Finance 23(1), 1-14,
+  [IDEAS](https://ideas.repec.org/a/spr/jecfin/v23y1999i1p1-14.html) (abstract ~100% verbatim: "no feedback trading within blocks among
+  developed financial markets' currencies"; feedback trading "takes place during rising volatility" only for less developed markets);
+  Laopodis (2008), J. Economics and Finance 32(3), [Springer](https://link.springer.com/article/10.1007/s12197-007-9018-y) (abstract only;
+  "both positive and negative feedback trading", currencies and regimes UNVERIFIED); Chen & Kao, EFMA 2009,
+  [PDF](https://efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2009-Milan/papers/EFMA2009_0102_fullpaper.pdf) (~100% verbatim; CME
+  Euro FX futures 1999-2005, weekly: no unconditional autocorrelation, AR(1) -0.405 in the lowest-10% signed-imbalance weeks). Saadi et al.
+  EFMA 2007 PDF opened but is a CAD/USD day-of-week paper (not relevant).
+- No item added (rule 3): the only verified FX statement for developed-market currencies is a null (Aguirre-Saidi); Chen-Kao needs signed
+  trade imbalance (not in our bid/ask bars) and gives ~30 extreme dev weeks, below the R090 power floor; unconditional daily reversal and
+  volume-conditioned reversal already tested (E021, E033). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run
+  43291084015 success, recorded as E047).
