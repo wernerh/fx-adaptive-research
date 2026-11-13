@@ -1561,3 +1561,15 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Memo 5/2026 (repricing "within the first few minutes", no drift test). Bank/broker commentary hits (BCA, Macrosynergy) not evidence.
 - No item added (rule 3: no verified directional basis; surprise data proprietary and B6 calendar block still stands). 0 trials used
   (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R140 (not an item; no item added)
+- 2026-11-13 R140 refill pass, angles: (a) intraday cross-pair lead-lag (GBP/USD, USD/JPY, USD/CHF lagged returns -> later EUR/USD
+  returns, lag >= 1 minute), (b) Bollinger-band mean reversion on intraday EUR/USD. Two standard searches. (b) returned only vendor,
+  forum and tutorial pages (cTrader, ProRealCode, NautilusTrader; not evidence, not opened). (a) opened via web-fetch (entries in
+  research/academic_studies.md): Danielsson-Luo-Payne 2012 EJF (abstract + WP ~69% verbatim; contemporaneous order flow, EUR/USD ->
+  GBP direction), Cai-Zhang (Durham repository; own-pair tick-quote prediction), Maier-Paape-Platen 2015 arXiv (full text; extrema
+  timing on hourly candles, GBP-USD / CHF-USD extrema ~20-30 min before EUR-USD, authors call it only "a tendency").
+- No item added (rule 3: no verified lagged-return basis; the only lead claim is a non-peer-reviewed extrema-timing preprint whose
+  resolution (+-30 min) is coarser than the claimed lead; minute-horizon FX lead-lag already judged below the tradable horizon, note
+  ~line 655; GBP/USD/CHF data not yet downloaded). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run
+  43291084015 success, recorded as E047).

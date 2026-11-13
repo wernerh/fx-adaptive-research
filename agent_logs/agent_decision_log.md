@@ -1328,3 +1328,12 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added. Lunar evidence is equity-only and null; the macro-news papers opened are same-window/impulse
   studies with no predictable EUR/USD drift, and surprise data is proprietary. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R140 (unattended)
+- **State:** origin/main at f683a76 (R139). No `ready` backlog item; last research-batch run 43291084015 completed (success) and is
+  recorded as E047; nothing queued or in progress.
+- **Choice:** refill pass (protocol priority 4). Angles: intraday cross-pair lead-lag into EUR/USD, Bollinger-band mean reversion.
+- **Judgement call:** no item added. Cross-pair papers opened are contemporaneous order-flow or own-pair tick studies; the only lead
+  claim (Maier-Paape-Platen 2015 preprint) is extrema timing on hourly candles, not a lagged-return result. Bollinger hits were vendor
+  pages only. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.

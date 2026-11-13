@@ -730,3 +730,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** Norges Bank Staff Memo 5/2026, [PDF](https://www.norges-bank.no/contentassets/1da9f16a950d4dba9e5b1f32865cacd5/staff-memo-5-2026-macroeconomic-news.pdf) (opened 2026-11-13 R139, intro verbatim)
 - **Finding (verbatim):** "exchange rates adjust sharply at the time of the announcements, with much of the immediate repricing occurring within the first few minutes." No post-announcement drift test; monthly SVAR level responses only.
 - **Relevance:** Low (supports no post-release drift; consistent with B12 efficient-market prior). **Status:** VERIFIED (partial full text)
+
+### Danielsson, Luo & Payne (2012): Exchange rate determination and inter-market order flow effects
+- **Source:** The European Journal of Finance 18(9), 823-840, DOI 10.1080/1351847X.2011.601655, [IDEAS](https://ideas.repec.org/a/taf/eurjfi/v18y2012i9p823-840.html) (opened 2026-11-13 R140, abstract only); working paper (2011) [PDF](https://www.riskresearch.org/files/DanielssonLuoPayne2012.pdf) (opened R140, ~69% verbatim)
+- **Finding (verbatim):** "GBP exchange rates are very strongly influenced by EUR/USD order flow." Cross-pair effects are contemporaneous order flow (Reuters D2000-2, 1999-2000); the one-step-ahead test uses own-pair flow only: "Only at the highest frequencies is the relationship between order flow at t and the one-period price change to t+1 positive and significant."
+- **Relevance:** None for a lagged cross-pair EUR/USD return rule (direction runs EUR/USD -> GBP; order-flow data not available). **Status:** VERIFIED (abstract + partial full text)
+
+### Cai & Zhang (year UNVERIFIED): High-Frequency Exchange Rate Forecasting
+- **Source:** [Durham repository](https://durham-repository.worktribe.com/OutputFile/1394665) (opened 2026-11-13 R140, ~half verbatim; venue and year not seen)
+- **Finding (verbatim):** "Studying three pairs of currencies, we find strong predictability in the high-frequency quote change data" (EUR/USD, GBP/USD, USD/JPY tick quotes, 2010; own-pair next-quote-change direction, seconds horizon). No cross-pair lead-lag.
+- **Relevance:** None (tick horizon, below tradable horizon after SPEC 4 costs). **Status:** VERIFIED (partial full text)
+
+### Maier-Paape & Platen (2015): Lead-Lag Relationship using a Stop-and-Reverse-MinMax Process
+- **Source:** arXiv preprint 1504.06235, [PDF](https://arxiv.org/pdf/1504.06235) (opened 2026-11-13 R140, full text)
+- **Finding:** timing of local extrema on 60-minute candles (FX 2009-2014): GBP-USD and CHF-USD extrema tend to precede EUR-USD extrema by roughly 20-30 minutes (confirmed-extrema table, as extracted). Authors (verbatim): "we cannot view the value ℓ(w) as an absolute value but more as a tendency of the lead or lag"; extrema only known to about +-30 minutes.
+- **Relevance:** Low (not peer-reviewed; extrema timing, not lagged returns; resolution below the claimed lag). **Status:** VERIFIED (full text)
