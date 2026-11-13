@@ -1670,3 +1670,16 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090 standard: no verified EUR/USD drift or holiday direction basis; US-only holidays give ~8-9 dev events
   per year, below the R090 power floor). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015
   success, recorded as E047).
+
+### Refill note R149 (not an item; no item added)
+- 2026-11-13 R149 refill pass, angles (no "dividend repatriation", "fiscal year" or "repatriat" entry in research/ before this run):
+  (a) cross-border dividend payment flows -> EUR/USD direction; (b) Japanese fiscal-year-end (March) repatriation -> EUR/USD.
+  Two standard searches. (a) Zheng 2023 UChicago JMP opened via web-fetch, both versions (~27-30% verbatim; entry in
+  research/academic_studies.md): paying currency depreciates vs USD after large dividend payment dates, ~4.70 bp at t+2 and
+  6.48 bp at t+8, G10 pooled incl. EUR; other hits news/vendor pages (not evidence, not opened). (b) returned only news/broker
+  pages on USD/JPY seasonality (FXStreet/Nomura, forexlive, MUFG via poundsterlinglive; not evidence, not opened).
+- No item added. (a) has a verified direction but no runner-downloadable dividend payment calendar (Compustat is commercial; a
+  calendar-month proxy would be a month scan, refill note R135), and the pooled size (~0.5 pip on EUR/USD over 2 days) is below
+  the 1-pip bar and about the SPEC 4 round-trip cost; would need a human-supplied euro-area dividend calendar (a candidate for the
+  R105 human-decision data list; not acted on). (b) no verified basis and USD/JPY-focused. 0 trials used (dev 257, val 9, total
+  266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

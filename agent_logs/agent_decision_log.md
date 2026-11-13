@@ -1396,3 +1396,12 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added. Bank of Canada SAN 2025-10 measures only the immediate 20-25 min reaction (CAD/USD); the holiday
   angle returned only vendor pages and already-logged sources. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R149 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  cross-border dividend payment flows -> EUR/USD; Japanese fiscal-year-end repatriation -> EUR/USD.
+- **Judgement call:** no item added. Zheng 2023 (UChicago JMP) gives a verified direction (paying currency depreciates after
+  large payment dates) but needs a commercial dividend calendar and the pooled effect (~4.7 bp at t+2) is below the 1-pip bar /
+  SPEC 4 costs; the Japanese angle returned only news pages. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands (a euro-area
+  dividend payment calendar would be the only route to test Zheng 2023 on EUR/USD).
