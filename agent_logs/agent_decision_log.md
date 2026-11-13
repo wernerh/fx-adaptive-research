@@ -1374,3 +1374,11 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added. PMI search found news pages only; rollover search found only the already-tested KMW line and
   Boyarchenko-Larsen-Whelan (NY Fed SR 917), which is ES-futures-only. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R146 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  Google search volume / investor attention -> EUR/USD direction; FX option risk reversals -> EUR/USD direction.
+- **Judgement call:** no item added. Attention literature read is volatility-only or abstract-level, and Han-Wu-Yin 2018 states no
+  predictability for developed-market currencies; risk reversals have no verified basis and no runner-downloadable data. 0 trials.
+  Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.

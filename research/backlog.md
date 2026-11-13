@@ -1634,3 +1634,16 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   ES-futures-only overnight drift at the European open from US-close order imbalance; no FX result.
 - No item added (rule 3 / R090 standard: no verified EUR/USD directional basis; European-open hour cells already covered by E009).
   0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R146 (not an item; no item added)
+- 2026-11-13 R146 refill pass, angles (no "Google", "attention" or "risk reversal" entry in research/ before this run): (a) Google
+  search volume / investor attention -> later EUR/USD direction, (b) FX option risk reversals (25-delta skew) -> later EUR/USD
+  direction. Two standard searches; opened via web-fetch (entries in research/academic_studies.md): Goddard-Kita-Wang (Cardiff PDF,
+  ~51% verbatim): attention predicts FX *volatility*, weekly 2004-2011 incl. EUR/USD, no direction result; Han-Xu-Yin 2018 (Econ.
+  Modelling, abstract only): lagged attention affects currency returns at first lag, nonlinear, horizon/EUR/sign UNVERIFIED;
+  Han-Wu-Yin 2018 (Applied Economics, abstract only): predictability "do[es] not exist in the currencies from developed markets".
+  BUAA mirror not opened (redirect, permission prompt; not circumvented). (b) returned only practitioner/news pages and a CME
+  education report (not evidence, not opened); risk-reversal history also needs a vendor feed the runner cannot download.
+- No item added (rule 3 / R090 standard: the only directional sources are abstract-level and the one explicit developed-market
+  statement is negative; (b) no verified basis and no data). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure
+  (last run 43291084015 success, recorded as E047).

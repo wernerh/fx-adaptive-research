@@ -784,3 +784,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** Federal Reserve Bank of New York Staff Report 917, [PDF](https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr917.pdf) (opened 2026-11-13 R145; cover and pp. 1-13 plus appendix tables A.1-A.12, A.14-A.15 read verbatim; middle appendix text model-summarised only, UNVERIFIED)
 - **Finding:** S&P 500 e-mini futures returns are large and positive around the European open (~2:00-3:00 ET), linked to order imbalance at the preceding US close (dealer inventory risk); selloffs produce larger overnight reversals than rallies. Data are ES futures only; no euro, EUR/USD or FX result found in the pages read.
 - **Relevance:** None for a EUR/USD direction rule (equity-only mechanism; dealer-inventory channel not shown for FX). **Status:** VERIFIED (partial full text)
+
+### Goddard, Kita & Wang: Investor Attention and FX Market Volatility
+- **Source:** [PDF](https://orca.cardiff.ac.uk/73438/1/Attetion_FX.pdf) (Cardiff ORCA; opened 2026-11-13 R146, ~51% verbatim incl. abstract, data, methods, results 4.1-4.3; rest model-summarised, UNVERIFIED; journal/year not in the text read: UNVERIFIED)
+- **Finding (verbatim):** "Investor attention comoves with contemporaneous FX market volatility and predicts subsequent FX market volatility"; Google search volume, weekly, Jan 2004-Sep 2011, seven pairs incl. EUR/USD. Returns enter only as controls; no return-direction prediction.
+- **Relevance:** None for a direction rule (volatility only). **Status:** VERIFIED (partial full text)
+
+### Han, Xu & Yin (2018): Does investor attention matter? The attention-return relationships in FX markets
+- **Source:** Economic Modelling 68, 644-660, DOI [10.1016/j.econmod.2017.06.015](https://doi.org/10.1016/j.econmod.2017.06.015); [EconPapers abstract](https://econpapers.repec.org/RePEc:eee:ecmode:v:68:y:2018:i:c:p:644-660) (opened 2026-11-13 R146, abstract only; body UNVERIFIED)
+- **Finding (abstract, verbatim):** "Lagged investor attention significantly influences currency returns at present, and this effect is short-lived (usually at first lag)"; nonlinear, depends on sign of past returns; nine countries. Frequency, sample, sign, EUR coverage and costs: UNVERIFIED.
+- **Relevance:** Background only (abstract-level, no EUR/USD direction or horizon). **Status:** abstract only
+
+### Han, Wu & Yin (2018): Investor attention and currency performance: international evidence
+- **Source:** Applied Economics 50(23), 2525-2551, DOI [10.1080/00036846.2017.1403556](https://doi.org/10.1080/00036846.2017.1403556); [EconPapers abstract](https://econpapers.repec.org/RePEc:taf:applec:v:50:y:2018:i:23:p:2525-2551) (opened 2026-11-13 R146, abstract only)
+- **Finding (abstract, verbatim):** attention predicts "emerging currency performance in the out-of-sample analysis. By contrast, statistical predictability and economic value do not exist in the currencies from developed markets."
+- **Relevance:** Negative evidence for a EUR/USD attention rule. **Status:** abstract only
