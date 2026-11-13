@@ -1473,3 +1473,24 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3): the runs evidence is tick-level on EBS deal prices and explicitly absent in quote prices, while the repo holds
   1-minute bid/ask quote bars, so the mechanism is below our tradable horizon and not observable in our data; NR breakout evidence is
   non-academic. 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R134 (not an item; no item added)
+- 2026-11-13 R134 refill pass, angles: (a) lagged euro-area sovereign-spread (BTP-Bund) changes -> next-day EUR/USD, (b) recent
+  EUR/USD intraday return-predictability / technical-pattern studies net of costs, (c) lagged Bitcoin returns -> USD (search only).
+  Three standard searches. Search (a) returned only bank/broker commentary (ING Think, FXStreet, Equals, VT Markets; not evidence, not
+  opened). Search (c) returned crypto-network and Granger papers on crypto prices, none on EUR/USD direction (not opened; Bitcoin is
+  thin for early dev). Search for 52-week-high anchoring returned only sources already logged (Raza 2015 Massey thesis, Phylaktis &
+  Yamani WP-EMG-03-2022; academic_studies.md ~line 554). Opened via web-fetch: Pombo (2022), "Technical Analysis for Profitable Trading",
+  MSc dissertation, Universidade Católica Portuguesa,
+  [repository](https://repositorio.ucp.pt/server/api/core/bitstreams/7af09180-483d-4568-a5cb-df0ff4aeab3a/content) (~34% verbatim):
+  Dukascopy minute bars, EUR/USD, USD/JPY, GBP/CHF 2003-2022, candlestick-pattern logistic regression; "substantial minute holding period
+  return predictability ... during some periods in the first decade of the 21st century" but "The confidence, predictability and
+  profitability capacity of the models appears to be declining and may no longer exist" (verbatim). Sokolovski (2011), "Analysis of the
+  predictive ability and profitability of an analytically derived trading algorithm in the intra-day spot foreign exchange market",
+  MSc thesis, University of Cape Town, [repository](https://open.uct.ac.za/bitstreams/1ca4b008-7ebc-4b87-8804-c8674358c228/download)
+  (~14% verbatim): hourly reservation-price contrarian rule, "does not capture any incremental information above what is accounted for
+  by the seasonal GARCH(1,1)-MA(1) model" and "cannot generate positive profits in the presence of realistic transaction costs"
+  (verbatim). Per-pair numbers in both seen only as tool summaries (UNVERIFIED, not used).
+- No item added (rule 3): no verified directional EUR/USD basis; both opened studies are minute/hourly pattern rules whose own text
+  reports the edge declining before our dev block (Pombo) or absent after costs (Sokolovski); sovereign-spread evidence is commentary
+  only. 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
