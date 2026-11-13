@@ -1294,3 +1294,13 @@ Why each run chose what it did, and any judgement calls.
   months or signs; the "Sell in May" review covers stocks/commodities only. A pre-registered direction would have to come from dev data,
   i.e. a scan. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R136 (unattended)
+- **State:** origin/main at e4f1569 (R135). No `ready` backlog item; last research-batch run 43291084015 completed (success) and is
+  recorded as E047; nothing queued or in progress. pytest 407 passed.
+- **Choice:** refill pass (protocol priority 4). Angles: (a) FX option-expiry pinning at the 10:00 NY cut, (b) pre-/post-holiday
+  effects in EUR/USD (both untried as items).
+- **Judgement call:** no item added. (a) has no study and no downloadable historical expiry data; (b) Adelman 2017 reports a
+  business-hours effect (already-tested Ranaldo family) and no holiday test; Ranaldo's holiday experiment is already logged and
+  underpowered. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.

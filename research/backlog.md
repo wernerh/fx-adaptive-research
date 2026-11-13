@@ -1509,3 +1509,17 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3): no verified month, sign or size for EUR/USD, so any month or winter/summer direction would have to be chosen
   from data (a dev scan = many trials, and E009 already scanned calendar cells), not from a published prior. 0 trials used (dev 257,
   val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R136 (not an item; no item added)
+- 2026-11-13 R136 refill pass, angles: (a) FX option-expiry pinning at the 10:00 NY cut, (b) pre-/post-holiday effects in EUR/USD.
+  Two standard searches. Search (a) returned only daily expiry listings (Newsquawk, investingLive, VT Markets; not evidence, not opened):
+  no study found, and no historical strike/notional expiry data the runner can download, so not testable. Search (b) opened via
+  web-fetch: Adelman (2017), "Business Hours and the Foreign Exchange Market", MA thesis, University of Georgia,
+  [repository](https://openscholar.uga.edu/record/20713/files/adelman_jonathan_p_201705_ma.pdf) (partly verbatim): BFIX G10 mids
+  2010-2016, "the US dollar on average appreciated during US business hours" (verbatim); holidays only cited via Ranaldo, who "finds
+  weak evidence that holidays have much of an effect" (verbatim); no pre-/post-holiday test. Ranaldo (2007/EFMA 2008)
+  [paper](https://www.efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2008-Athens/papers/376.pdf) reopened: same-day holiday
+  natural experiment only, already logged (refill notes ~line 716 and ~line 883; academic_studies.md ~line 466; below R090 power floor).
+- No item added (rule 3): option-expiry pinning has no verified evidence or data; Adelman's business-hours effect is the
+  Ranaldo time-of-day family already covered (E009 hour cells, E024/E025, E032), and no verified pre-/post-holiday EUR/USD direction
+  exists. 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
