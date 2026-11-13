@@ -760,3 +760,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** Macalester College Economics Honors Project 41, [PDF](https://core.ac.uk/download/46721086.pdf) (opened 2026-11-13 R142, ~59% verbatim; not peer-reviewed)
 - **Finding:** "bounce" frequency at Fibonacci retracement levels (0.236-0.764) vs other levels, GAIN Capital ticks 2003-2008 (AUD, EUR, CAD, CHF, JPY vs USD), 1/5/15-min data; gross, no trading test. EUR/USD table values garbled in the fetch; conclusion that retracements "cannot meaningfully predict short-term exchange rates" seen only in a model summary (UNVERIFIED verbatim).
 - **Relevance:** None (no verified directional result). **Status:** VERIFIED (partial full text)
+
+### Coakley, Marzano & Nankervis (2016): How profitable are FX technical trading rules?
+- **Source:** International Review of Financial Analysis (2016), DOI [10.1016/j.irfa.2016.03.010](https://doi.org/10.1016/j.irfa.2016.03.010); accepted manuscript [PDF](https://core.ac.uk/download/74373954.pdf) (opened 2026-11-13 R143, ~73% verbatim; appendix parameter ranges and part of Table 4 model-summarised)
+- **Finding:** 113,148 daily rules (MA, channel breakout, trading-range break, filter, Bollinger, RSI, MACD) on 22 USD pairs incl. EUR, 1997-2015, no transaction costs, interest-differential-adjusted. Abstract (verbatim): "Virtually no traditional rule is significant in the 2006-2015 sub-sample". Under Step-SPA, traditional rules are "robustly significant only in a few cases" (MA/filter for HKD, INR). Channel breakout has the lowest share of nominally significant rules (~12% mean; EUR 9.85% before data-snooping control). Best EUR rules (in-sample, Bollinger/RSI/MACD) are best-of-many selections.
+- **Relevance:** Low (no data-snooping-robust EUR/USD rule; channel breakout weakest family; no costs). **Status:** VERIFIED (partial full text)
+
+### Hsu & Taylor (2013) / Hsu, Taylor & Wang (2016): large-scale technical-rule tests in FX (secondary summaries only)
+- **Source:** CXO Advisory write-ups ([2014](https://www.cxoadvisory.com/technical-trading/comprehensive-long-term-test-of-technical-currency-trading/), [2016](https://www.cxoadvisory.com/technical-trading/updated-comprehensive-long-term-test-of-technical-currency-trading/)) of SSRN 2517125 and SSRN 2765673 (opened 2026-11-13 R143, CXO pages full text; underlying papers not opened: UNVERIFIED)
+- **Finding (per CXO):** 21,195 daily rules (incl. 3,000 channel breakout), 30 USD pairs 1971-2015; developed-market predictability "gradually disappears since the early 1990s"; no EUR/USD or channel-specific result reported.
+- **Relevance:** Background (decay in developed pairs). **Status:** secondary summary only; papers UNVERIFIED

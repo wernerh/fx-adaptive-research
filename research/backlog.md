@@ -1597,3 +1597,17 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   standard as R120 Tornell-Yuan; minute-horizon candlesticks already judged in R134). Possible future item if the human can supply
   the Alanazi 2020 full text (definition + horizon) -> daily engulfing continuation on dev, 1 trial. 0 trials used (dev 257, val 9,
   total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+
+### Refill note R143 (not an item; no item added)
+- 2026-11-13 R143 refill pass, angles: (a) daily channel (Donchian / N-day high-low) breakout rules on EUR/USD (no "Donchian" or
+  channel-breakout entry in research/ before this run), (b) Friday-afternoon / end-of-week position squaring in FX. Two standard
+  searches; opened via web-fetch (entries in research/academic_studies.md): Coakley, Marzano & Nankervis (2016, IRFA,
+  DOI 10.1016/j.irfa.2016.03.010, [PDF](https://core.ac.uk/download/74373954.pdf), ~73% verbatim): channel breakout is the weakest rule
+  family, "Virtually no traditional rule is significant in the 2006-2015 sub-sample", no costs, no data-snooping-robust EUR rule;
+  CXO Advisory summaries of Hsu-Taylor (2013) and Hsu-Taylor-Wang (2016) (papers themselves UNVERIFIED): developed-pair predictability
+  gone since the early 1990s, no EUR/USD or channel-specific result. (b) returned only already-logged sources (Krohn-Mueller-Whelan,
+  Breedon-Ranaldo SNB WP 2011-04 / time-of-day family) and no end-of-week study; nothing new opened.
+- No item added (rule 3 / R090 standard: no published directional basis for a specific channel rule on EUR/USD; the only full-text
+  evidence says such rules stopped working after 2006, which overlaps our whole dev block). 0 trials used (dev 257, val 9,
+  total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

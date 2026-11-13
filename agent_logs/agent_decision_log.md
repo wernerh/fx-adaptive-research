@@ -1352,3 +1352,11 @@ Why each run chose what it did, and any judgement calls.
   readable (definition, horizon, EUR/USD result UNVERIFIED); Fibonacci source is a non-peer-reviewed bounce-frequency study with no
   trading result. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands (add: Alanazi 2020 full text).
+
+## 2026-11-13 R143 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43291084015 recorded as E047).
+- **Choice:** refill pass (protocol priority 4). Angles: daily channel (Donchian) breakout rules on EUR/USD; Friday-afternoon / end-of-week position squaring.
+- **Judgement call:** no item added. The only full-text source (Coakley et al. 2016 IRFA) finds channel breakout the weakest family and
+  virtually no traditional rule significant in 2006-2015 (our dev period), with no data-snooping-robust EUR rule; Hsu-Taylor(-Wang) seen
+  only via CXO summaries. End-of-week search found nothing new. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
