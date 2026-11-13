@@ -1442,3 +1442,16 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   trade imbalance (not in our bid/ask bars) and gives ~30 extreme dev weeks, below the R090 power floor; unconditional daily reversal and
   volume-conditioned reversal already tested (E021, E033). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run
   43291084015 success, recorded as E047).
+
+### Refill note R132 (not an item; no item added)
+- 2026-11-13 R132 refill pass, angles: (a) opening-range breakout rules in FX / EUR/USD, (b) recent (2023-2025) hour-of-day EUR/USD
+  return predictability. Two standard searches. Opened via web-fetch: Holmberg, Lönnbark & Lundström (2013), "Assessing the
+  profitability of intraday opening range breakout strategies", Finance Research Letters 10(1), 27-33, DOI 10.1016/j.frl.2012.09.001,
+  [EconPapers](https://econpapers.repec.org/RePEc:eee:finlet:v:10:y:2013:i:1:p:27-33) (abstract page in full; ORB returns "significantly
+  above zero" per abstract paraphrase; instrument not named in the abstract, keywords list crude oil futures; full text not opened, FX
+  applicability UNVERIFIED). Zhang & Hua (2024), "Market Predictability Before the Closing Bell Rings", Risks 12(11) 180,
+  DOI 10.3390/risks12110180, [MDPI](https://www.mdpi.com/2227-9091/12/11/180) (~12% verbatim): SPY/QQQ last-30-minute predictability
+  2007-2018, intraday momentum "diminished over time"; equities only, no FX result. Other hits were the already-logged Krohn-Mueller-
+  Whelan fix-window line (academic_studies.md), CXO p=21224 (B14/E017 line, R127), news/how-to pages (not evidence).
+- No item added (rule 3: no verified EUR/USD directional basis; ORB evidence is non-FX and abstract-only). 0 trials used (dev 257, val 9,
+  total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
