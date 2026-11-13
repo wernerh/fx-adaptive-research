@@ -1552,3 +1552,12 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3): no verified lagged/post-announcement EUR/USD direction; (c) also needs BoE/SNB/ECB decision calendars, and
   the ECB calendar was unreachable from the runner (R129); ~48 ECB meetings on dev is below the R090 power floor. 0 trials used (dev 257,
   val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R139 (not an item; no item added)
+- 2026-11-13 R139 refill pass, angles: (a) lunar-cycle effects on currency returns, (b) economic-surprise indices / macro news predicting
+  next-day or later EUR/USD returns. Two standard searches. (a) returned trading-forum/blog pages (MQL5, EarnForex April-fool post; not
+  evidence, not opened) and Herbst (2007, J Bioeconomics, abstract only, DJIA only, null). (b) opened via web-fetch (entries in
+  research/academic_studies.md): DNB WP 850 (Worms 2025; same-window EUR/USD reaction only, Bloomberg surprises) and Norges Bank Staff
+  Memo 5/2026 (repricing "within the first few minutes", no drift test). Bank/broker commentary hits (BCA, Macrosynergy) not evidence.
+- No item added (rule 3: no verified directional basis; surprise data proprietary and B6 calendar block still stands). 0 trials used
+  (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

@@ -715,3 +715,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** Helsinki GSE Discussion Papers 25, [PDF](https://www.helsinkigse.fi/media/pages/discussion-papers/discussion-paper-25/be9c359dc4-1731573877/dp25re.pdf) (opened 2026-11-13 R138, full text)
 - **Finding (verbatim):** "The target surprise on euro US dollar rate does not demonstrate statistical significance"; path surprise positive in a same-window validation regression (168 ECB meetings 2006-2022). No post-announcement horizon.
 - **Relevance:** Low (same-window reaction, not a predictable drift). **Status:** VERIFIED (full text)
+
+### Herbst (2007): Lunacy in the Stock Market - What is the Evidence?
+- **Source:** Journal of Bioeconomics 9(1), 1-18, DOI 10.1007/s10818-007-9016-3, [IDEAS](https://ideas.repec.org/a/kap/jbioec/v9y2007i1p1-18.html) (opened 2026-11-13 R139, abstract only)
+- **Finding (verbatim):** "no consistent, predictable lunar influence is found on either daily returns or daily price volatility" (DJIA).
+- **Relevance:** None (equities; null result; no FX test). **Status:** VERIFIED (abstract only)
+
+### Worms (2025): Predictability of Monetary Policy Surprises and Euro Area Macroeconomic Dynamics
+- **Source:** DNB Working Paper 850, [PDF](https://www.dnb.nl/media/tbkmwen4/working_paper_no-850.pdf) (opened 2026-11-13 R139, ~half verbatim)
+- **Finding:** ECB OIS surprises are predictable from pre-dated macro/financial data; EUR/USD appears only as a same-window reaction and impulse responses, no test of predictable EUR/USD returns. Macro surprises Bloomberg-based (proprietary).
+- **Relevance:** Low (no EUR/USD return predictability). **Status:** VERIFIED (partial full text)
+
+### Gerdrup, Hallerud & Maffei-Faccioli (2026): Macroeconomic News and Exchange Rate Dynamics
+- **Source:** Norges Bank Staff Memo 5/2026, [PDF](https://www.norges-bank.no/contentassets/1da9f16a950d4dba9e5b1f32865cacd5/staff-memo-5-2026-macroeconomic-news.pdf) (opened 2026-11-13 R139, intro verbatim)
+- **Finding (verbatim):** "exchange rates adjust sharply at the time of the announcements, with much of the immediate repricing occurring within the first few minutes." No post-announcement drift test; monthly SVAR level responses only.
+- **Relevance:** Low (supports no post-release drift; consistent with B12 efficient-market prior). **Status:** VERIFIED (partial full text)
