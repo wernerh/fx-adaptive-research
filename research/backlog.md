@@ -1411,3 +1411,17 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3: no verified FX drift basis; an EUR/USD transfer would need the ECB meeting calendar, unreachable in R106/R107,
   and ~48 dev meetings sit below the R090 power floor). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run
   43291084015 success, recorded as E047).
+
+### Refill note R130 (not an item; no item added)
+- 2026-11-13 R130 refill pass, angles: (a) US equity cash-open / intraday equity -> EUR/USD direction spillover, (b) intraday mechanical
+  technical trading rules (moving-average / optimized rules) in FX. Two standard searches. Opened via web-fetch: Boehm & Kroner (2023),
+  "The US, Economic News, and the Global Financial Cycle", Fed IFDP 1371,
+  [PDF](https://www.federalreserve.gov/econres/ifdp/files/ifdp1371.pdf) (~14% verbatim, rest summary-only): high-frequency event study of
+  US macro-news surprises on foreign equities/VIX/commodities; exchange-rate responses only as event-study reactions in an appendix
+  (summary-only, UNVERIFIED), no forecasting rule. Neely & Weller (2003, JIMF 22(2)), "Intraday technical trading in the foreign exchange
+  market", [Fed in Print abstract](https://www.fedinprint.org/item/fedlwp/10388/original) (abstract ~100% verbatim): "When realistic
+  transaction costs and trading hours are taken into account, we find no evidence of excess returns to the trading rules"; full text
+  (pairs, windows) not opened. Fuess-Mager-Stein-Zhao NTNU PDF redirected cross-host and could not be opened (UNVERIFIED, not cited).
+  Marsh & Miao (City) hit already rejected (note ~line 603).
+- No item added (rule 3: no verified directional EUR/USD basis; the one rule-based source is negative after costs). 0 trials used (dev
+  257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

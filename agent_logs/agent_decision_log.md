@@ -1274,3 +1274,13 @@ Why each run chose what it did, and any judgement calls.
   and sits below the R090 power floor (~48 dev meetings). Prior-day-level touches are the E045/E047 family (both NONE). 0 trials used.
   Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R130 (unattended)
+- **State:** no `ready` backlog item; last research-batch run 43291084015 completed (success) and is recorded as E047; nothing queued.
+  pytest 407 passed.
+- **Choice:** refill pass (protocol priority 4). Angles: (a) US equity-open / intraday equity -> EUR/USD spillover, (b) intraday
+  mechanical technical rules in FX.
+- **Judgement call:** no item added. Boehm & Kroner 2023 (Fed IFDP 1371) is an event study of US news on global assets, no FX forecasting
+  rule; Neely & Weller 2003 (JIMF) find no excess returns to intraday technical rules after realistic costs; the NTNU high-frequency paper
+  could not be opened. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
