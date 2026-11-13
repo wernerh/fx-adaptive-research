@@ -1611,3 +1611,16 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090 standard: no published directional basis for a specific channel rule on EUR/USD; the only full-text
   evidence says such rules stopped working after 2006, which overlaps our whole dev block). 0 trials used (dev 257, val 9,
   total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R144 (not an item; no item added)
+- 2026-11-13 R144 refill pass, angles: (a) safe-haven channel: does a US equity fall (or vol rise) PREDICT later EUR/USD appreciation
+  (lagged, not contemporaneous)? (Ranaldo-Söderlind not in research/ before this run); (b) intraday equity -> EUR/USD lead-lag.
+  Two standard searches; opened via web-fetch (entries in research/academic_studies.md): Ranaldo & Söderlind (2007, SNB WP 2007-17)
+  abstract only (euro appreciates vs USD "when" S&P falls, "from a few hours to several days"; lag structure UNVERIFIED; PDF fetch
+  blocked by a permission prompt, not circumvented); Marsh & Miao (2012, EJF, ~35% verbatim): FX order flow -> later equity returns,
+  equity -> EUR/USD not tested, in-sample, 25 days. Hits not opened: Fuess et al. NTNU (not openable in R118), CXO, vlex, others.
+- No item added (rule 3 / R090 standard: no verified lagged equity -> EUR/USD direction; the only directional source is an abstract
+  whose "when" reads as contemporaneous co-movement). Possible future item if the human can supply the Ranaldo-Söderlind PDF and it
+  shows a lagged S&P -> EUR/USD coefficient: US500 15:00-16:00 NY return sign -> EUR/USD next hours, dev, 1 trial (US500 CFD already
+  downloadable, E034). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as
+  E047).

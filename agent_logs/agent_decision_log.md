@@ -1360,3 +1360,10 @@ Why each run chose what it did, and any judgement calls.
   virtually no traditional rule significant in 2006-2015 (our dev period), with no data-snooping-robust EUR rule; Hsu-Taylor(-Wang) seen
   only via CXO summaries. End-of-week search found nothing new. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R144 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  lagged safe-haven channel (US equity fall -> later EUR/USD appreciation); intraday equity -> EUR/USD lead-lag.
+- **Judgement call:** no item added. Ranaldo-Söderlind 2007 seen at abstract level only (PDF blocked, lag structure UNVERIFIED);
+  Marsh-Miao 2012 tests the opposite direction with proprietary flow. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
