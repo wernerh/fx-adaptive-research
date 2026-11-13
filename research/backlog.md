@@ -1719,3 +1719,51 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090 standard: no verified EUR/USD direction or drift basis; (a) would also need an official ZEW/Ifo
   release calendar, same blocker as B6). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015
   success, recorded as E047).
+
+### B58: 1-hour swing-level breakout, 5-minute break-and-retest entry (signal test, dev) · `ready` (Added 2026-11-13 R153, human-directed pivot; ranked first, reason in agent_decision_log R153)
+- **Origin [HUMAN / PRACTITIONER]:** the human asked (2026-11-13) to test "the one hour breakout strategy with a set resistance ... start
+  there and then drop down to lower time frame for the trade", and left the level, entry and exit definitions to the agent. No
+  published EUR/USD evidence is claimed; prior is low (technical-rule profits in developed FX largely gone: Neely-Weller 2011,
+  Coakley-Marzano-Nankervis 2016, both in research/academic_studies.md; Asian-range breakout rejected E004). Run because the human
+  asked, not because of a literature basis.
+- **Level (fixed now):** 1-hour bars = UTC clock hours built from 1-minute mid (mid = (bid+ask)/2), bar valid with >= 50/60 minutes.
+  At the close of 1h bar k: R = max mid high and S = min mid low over the previous 24 valid 1h bars k-24..k-1 (needs >= 20 valid).
+- **Breakout (fixed now):** 1h bar k closes above R -> long setup at level L = R; closes below S -> short setup at L = S. Only
+  breakout bars whose close falls in [07:00 Europe/London, 12:00 America/New_York) (London open to US midday, liquid hours).
+- **Lower-timeframe entry = break-and-retest (fixed now):** 5-minute bars (UTC-aligned) in the 120 minutes after bar k closes. Long:
+  the first 5m bar with low <= L + 1.0 pip AND close > L is the retest; signal at its close, entry = open of the first 1m bar at or
+  after close + 1 min (SPEC 4 fill rule). If a 5m bar closes <= L before a valid retest, the setup is cancelled (failed break,
+  counted). Shorts mirror. No retest within 120 min -> no trade (counted). At most one long and one short setup per trading date
+  (the first of each); no overlapping trades.
+- **Exit for this signal test (fixed now):** fixed 60-minute hold (exit = open of first bar at or after entry + 60 min); a stop/target
+  version is a later strategy test only if this earns it. Exclusions, counted under the first failing check: window coverage
+  < 55/60 bars; entry or exit NY time in [16:30, 18:30); entry spread > 2.0 pips; overlap.
+- **Decision rule (= E045/E047 rule):** < 300 trades -> NONE. SIGNAL if mean signed mid return > 1.0 pip AND date-cluster bootstrap
+  95% CI lower > 0 (resample trading dates with all their trades, 2000 draws, seed 0) AND one-sided t p < 0.05 (1 trial). WEAK if
+  mean > 0 and (CI lower > 0 or p < 0.05); else NONE. A SIGNAL earns B58v.
+- **Descriptive (not in rule):** long/short legs; 30- and 120-min holds; "enter on the breakout 1h close" (no retest) variant;
+  failed-break and no-retest counts; by year; SPEC 4 net and costs x1.5; share within +-15 min of 08:30/10:00 NY and 16:00 London.
+- **Data:** EUR/USD 1-minute bid/ask in repo. No download.
+
+### B58v: B58 val confirmation (signal test, val only) · `blocked` (earned only if B58 returns SIGNAL on dev)
+- B58 unchanged on val (2021-01-21 .. 2023-06-30), own pre-registration, 1 val trial, < 120 trades -> NONE, p < 0.05.
+
+### B59: Multi-timeframe trend alignment (1h + 30m + 15m agree), 5-minute trigger (signal test, dev) · `ready` (Added 2026-11-13 R153, human-directed; runs after B58)
+- **Origin [HUMAN / PRACTITIONER]:** the human described establishing bull/bear on 1h, 30m and 15m and trading the 5m/10m in the same
+  direction when all agree; definitions left to the agent. Same low prior as B58. Separate strategy from B58 (could later be a
+  filter on it, as its own experiment).
+- **Trend state (fixed now):** for each of 1h, 30m, 15m (UTC-aligned bars from 1-minute mid), EMA20 of bar closes (span 20,
+  adjust=False, seeded after 20 bars). A timeframe is bull if its last **completed** bar closed above its EMA20, bear if below. State
+  = BULL if all three bull, BEAR if all three bear, else NONE. Only completed bars are used at any time (no look-ahead test required).
+- **Trigger (fixed now):** 5-minute bar whose close crosses its own EMA20 in the state's direction (prev close <= EMA, this close >
+  EMA for BULL; mirror for BEAR) while the state is BULL/BEAR at that bar's close -> signal; entry = open of first 1m bar at or after
+  close + 1 min. Signals only with 5m close in [07:00 Europe/London, 12:00 America/New_York). No overlapping trades (signals during
+  an open trade are skipped and counted).
+- **Exit and exclusions:** fixed 60-minute hold; same exclusions as B58.
+- **Decision rule:** identical to B58 (< 300 trades NONE; > 1.0 pip, date-cluster CI lower > 0, t p < 0.05; 1 trial). SIGNAL earns B59v.
+- **Descriptive (not in rule):** control = same 5m EMA20 cross with no alignment filter (does alignment add anything?); 10-minute
+  trigger variant; long/short legs; 30/120-min holds; by year; SPEC 4 net and costs x1.5.
+- **Data:** EUR/USD 1-minute bid/ask in repo. No download.
+
+### B59v: B59 val confirmation (signal test, val only) · `blocked` (earned only if B59 returns SIGNAL on dev)
+- B59 unchanged on val, own pre-registration, 1 val trial, < 120 trades -> NONE, p < 0.05.

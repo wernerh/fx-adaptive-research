@@ -1433,3 +1433,12 @@ Why each run chose what it did, and any judgement calls.
   circumvented), so nothing is recorded from them; (b) Beetsma et al. 2018 JMCB is yields-only. 0 trials used. Not a lead; no notification.
 - **Housekeeping:** worked on a detached checkout of origin/main (local `main` still holds the stale pre-R080 commits); pushed to origin main.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R153 (interactive, human-directed)
+- **Human request:** pivot to (1) a 1-hour breakout of a set resistance level with entry on a lower timeframe, and (2) a
+  multi-timeframe alignment strategy (1h, 30m, 15m agree -> trade 5m/10m). Asked for definitions; human answered "what do you
+  recommend" / "not sure", so the agent fixed them before any data was seen.
+- **Choice:** added B58 (1h 24-bar swing-high/low breakout, 5m break-and-retest entry, 60-min hold) and B59 (EMA20 state on
+  1h/30m/15m, 5m EMA20 cross trigger, 60-min hold), each with a blocked val confirmation. Both use the E045/E047 decision rule
+  unchanged. Ranked as the only `ready` items, B58 first (human named it first). Practitioner basis only (no published EUR/USD
+  evidence); prior stated as low. 0 trials until they run (each +1 dev). Scheduled runs will pre-register and run them in order.
