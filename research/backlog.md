@@ -1658,3 +1658,15 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   already tested and rejected (E004 S001 REJECT).
 - No item added (rule 3 / R090 standard: no verified spot EUR/USD directional basis; (b) family already rejected). 0 trials used
   (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R148 (not an item; no item added)
+- 2026-11-13 R148 refill pass, angles (no "CPI" or "US-only holiday" entry in research/backlog.md before this run): (a) delayed drift in
+  EUR/USD hours/days after US CPI releases; (b) EUR/USD direction on US-only holidays (US closed, Europe open). Two standard searches
+  plus one follow-up. (a) Bank of Canada SAN 2025-10 opened via web-fetch (~95% of text; entry in research/academic_studies.md):
+  same-window CAD/USD reaction only, explicitly no drift test; Fed IFDP 823 web-archive link returned only the viewer shell (0% read,
+  nothing recorded from it); other hits (CEPR DP18119, Cardiff A2006/05, Norges Bank memo 5/2026) already in the library. (b) returned
+  only broker/news seasonality pages (forex.com/StoneX Thanksgiving, JFD, FXStreet; not evidence, not opened) and sources already
+  logged (Adelman 2017, EFMA 2008 paper 376 holiday section, KMW fixings).
+- No item added (rule 3 / R090 standard: no verified EUR/USD drift or holiday direction basis; US-only holidays give ~8-9 dev events
+  per year, below the R090 power floor). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015
+  success, recorded as E047).

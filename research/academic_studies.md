@@ -809,3 +809,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** [Boston Fed WP 18-6 revised PDF](https://www.bostonfed.org/-/media/Documents/Workingpapers/PDF/2018/wp1806-revised.pdf) (opened 2026-11-13 R147, ~29% verbatim)
 - **Finding (verbatim):** German banks make "cross-quarter dollar forward sales at higher prices (15 basis points higher) and higher volumes (20 percent higher)" around quarter-ends. Forward premia only; no spot direction.
 - **Relevance:** Background only; quarter-end funding line already closed (refill note R138). **Status:** partial text
+
+### DeBruin Martos, Sekkel, Stern & Zhang (2025, Bank of Canada SAN 2025-10): Is anyone surprised? The high-frequency impact of US and domestic macroeconomic data announcements on Canadian asset prices
+- **Source:** [Bank of Canada Staff Analytical Note 2025-10 PDF](https://bankofcanada.ca/wp-content/uploads/2025/03/san2025-10.pdf) (opened 2026-11-13 R148, ~95% of text; chart values not read)
+- **Data:** CAD/USD spot, BAX futures, GoC bonds, TSX 60 futures; US and Canadian CPI, employment, production, retail sales; Jan 2002 - Dec 2023 excl. Mar-Jun 2020; window 10-15 min before to 20-25 min after each release.
+- **Finding (verbatim):** "our analysis focuses on their immediate impact using high-frequency data"; "the CAD/USD exchange rate moves more around domestic macroeconomic announcements than around US ones". No delayed / post-announcement drift test.
+- **Relevance:** Background only (same-window reaction, CAD/USD, no EUR/USD, no drift). **Status:** near-full text
