@@ -827,3 +827,20 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data:** 149 Beige Book releases May 1983 - Dec 2001; daily close-to-close changes in US Treasury yields (3m-10y) and CRSP value-weighted US equity index; authors' own -2..2 score of the national summary.
 - **Finding (verbatim):** "the Beige Book index is positively associated with changes in most measures of interest rates"; "We do not find a significant relationship between the Beige Book index and stock returns". Same-day effect only; no exchange rate studied; no delayed drift test.
 - **Relevance:** Background only (US rates/equities, same-day, needs a hand-scored text index; no FX, no drift). Not added (refill note R150). **Status:** most of text
+
+### Evans (2020, MPRA Paper 102702): Exchange Rates and Liquidity Risk
+- **Source:** [MPRA_paper_102702.pdf](https://mpra.ub.uni-muenchen.de/102702/1/MPRA_paper_102702.pdf) (opened 2026-11-13 R151 via web-fetch, ~38% verbatim; rest model-summary only, UNVERIFIED)
+- **Data:** Hotspot FX limit order book, 17 USD pairs, 2006-2015, 30-second snapshots aggregated to monthly; liquidity measures depth, spread, trend, volatility.
+- **Finding:** cross-sectional monthly portfolio sorts (depth HML ~3.5% p.a., p = 0.076; trend 3.9%, p = 0.018; spread 0.9%, p = 0.401); verbatim rationale "if a reduction in depth is a precursor of a future fall in the price of foreign currency". EUR/USD-specific results are contemporaneous betas only.
+- **Relevance:** Background only (cross-section of 17 pairs, monthly, commercial order-book data; no EUR/USD time-series direction test). Not added (refill note R151). **Status:** partly read
+
+### Osler, Mende & Menkhoff (2010, Brandeis working paper, UNVERIFIED venue): Price Discovery in Currency Markets
+- **Source:** [Brandeis_WP03.pdf](https://www.brandeis.edu/economics/RePEc/brd/doc/Brandeis_WP03.pdf) (opened 2026-11-13 R151 via web-fetch, ~38% verbatim)
+- **Data:** one German bank's complete USD/EUR transaction record, 87 trading days Jul-Nov 2001, transaction time.
+- **Finding:** trade-level adverse-selection / spread decomposition models; order-flow -> return links cited from Lyons/Payne, not tested as a later-return predictor in the text read.
+- **Relevance:** Background only (trade-level, proprietary dealer data, no direction forecast). Not added (refill note R151). **Status:** partly read
+
+### Aliyev, Aquilina, Rzayev & Zhu (2024, BIS Working Paper 1229): Through stormy seas: how fragile is liquidity across asset classes and time?
+- **Source:** [BIS landing page / work1229.pdf](https://www.bis.org/publ/work1229.pdf) (landing page and abstract opened 2026-11-13 R151; PDF body blocked by proxy, 0% of body read, body UNVERIFIED)
+- **Finding (abstract level):** distribution of bid-ask spreads for stocks, FX and government bonds over 25 years; no return-direction test described.
+- **Relevance:** Background only. Not added (refill note R151). **Status:** abstract only

@@ -1694,3 +1694,15 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090 standard: no verified EUR/USD directional or drift basis for either angle; (b) also needs a
   hand-scored text index and gives ~8 events per year, below the R090 power floor). 0 trials used (dev 257, val 9, total 266).
   Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R151 (not an item; no item added)
+- 2026-11-13 R151 refill pass, angles (no "Nikkei", "Japan equit" or "Corwin" entry in research/ or knowledge/ before this run):
+  (a) Asian (Tokyo) equity overnight return -> European-session EUR/USD direction; (b) bid-ask spread widening / liquidity
+  shocks -> later EUR/USD direction. Two standard searches. (a) returned only sources already in research/academic_studies.md
+  (KMW fixings, Bank of Canada SWP 2021-48, AEA 2019/2020 papers) and news/broker pages (City Index, forex.com, FXStreet,
+  ActionForex; not evidence, not opened). (b) opened via web-fetch (entries in research/academic_studies.md): Evans 2020 MPRA
+  102702 (~38% verbatim; monthly cross-sectional liquidity sorts on 17 pairs, EUR/USD contemporaneous only), Osler-Mende-Menkhoff
+  2010 (~38% verbatim; trade-level dealer data), BIS WP 1229 (abstract only; PDF blocked); GFJ DOI 10.1016/j.gfj.2006.06.004 not
+  openable (proxy block, not circumvented, nothing recorded from it).
+- No item added (rule 3 / R090 standard: no verified EUR/USD time-series direction basis for either angle). 0 trials used (dev 257,
+  val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

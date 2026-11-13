@@ -1416,3 +1416,12 @@ Why each run chose what it did, and any judgement calls.
   tracking origin/main and pushed to origin main.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands. 30+
   consecutive refill passes with no item added suggest the free-data, verified-basis idea pool is close to exhausted.
+
+## 2026-11-13 R151 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  Asian equity overnight return -> European-session EUR/USD; bid-ask spread / liquidity shocks -> later EUR/USD direction.
+- **Judgement call:** no item added. (a) only already-logged sources and news pages; (b) Evans 2020 is cross-sectional/monthly with
+  EUR/USD contemporaneous only, Osler et al. trade-level, BIS WP 1229 abstract only. 0 trials used. Not a lead; no notification.
+- **Housekeeping note:** local `main` had diverged (stale E035/E036/R079 commits); it was saved as local branch
+  `stale-local-main` and `main` reset to origin/main before work. Nothing on origin changed.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
