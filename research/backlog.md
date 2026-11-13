@@ -1624,3 +1624,13 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   shows a lagged S&P -> EUR/USD coefficient: US500 15:00-16:00 NY return sign -> EUR/USD next hours, dev, 1 trial (US500 CFD already
   downloadable, E034). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as
   E047).
+
+### Refill note R145 (not an item; no item added)
+- 2026-11-13 R145 refill pass, angles: (a) euro-area flash PMI release (09:00-10:00 CET) -> later EUR/USD drift; (b) 17:00 NY rollover /
+  end-of-day dealer-inventory effects on EUR/USD. Two standard searches. (a) returned only news/preview pages (Newsquawk, FXStreet,
+  BabyPips; not evidence, not opened) and no study; release dates would also need a calendar source not reachable from the runner.
+  (b) returned FXCM help pages (not evidence), the already-tested Krohn-Mueller-Whelan fixings paper (BoC SWP 2021-48; E022-E025,
+  E032) and NY Fed SR 917, Boyarchenko-Larsen-Whelan "The Overnight Drift" (opened; entry in research/academic_studies.md):
+  ES-futures-only overnight drift at the European open from US-close order imbalance; no FX result.
+- No item added (rule 3 / R090 standard: no verified EUR/USD directional basis; European-open hour cells already covered by E009).
+  0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).

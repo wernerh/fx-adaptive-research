@@ -1367,3 +1367,10 @@ Why each run chose what it did, and any judgement calls.
 - **Judgement call:** no item added. Ranaldo-Söderlind 2007 seen at abstract level only (PDF blocked, lag structure UNVERIFIED);
   Marsh-Miao 2012 tests the opposite direction with proprietary flow. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R145 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  euro-area flash PMI release drift; 17:00 NY rollover / end-of-day dealer-inventory effects.
+- **Judgement call:** no item added. PMI search found news pages only; rollover search found only the already-tested KMW line and
+  Boyarchenko-Larsen-Whelan (NY Fed SR 917), which is ES-futures-only. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
