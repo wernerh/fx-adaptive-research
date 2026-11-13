@@ -1284,3 +1284,13 @@ Why each run chose what it did, and any judgement calls.
   rule; Neely & Weller 2003 (JIMF) find no excess returns to intraday technical rules after realistic costs; the NTNU high-frequency paper
   could not be opened. 0 trials used. Not a lead; no notification.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R135 (unattended)
+- **State:** origin/main at e05f69b (R134). No `ready` backlog item; last research-batch run 43291084015 completed (success) and is
+  recorded as E047; nothing queued or in progress.
+- **Choice:** refill pass (protocol priority 4). Angle: month-of-year / Halloween seasonality in EUR/USD (untried in backlog; a
+  whole-sample partition would clear the R090 power floor).
+- **Judgement call:** no item added. Cellini & Cuccia (2014) report significant EUR/USD month effects but the readable abstract gives no
+  months or signs; the "Sell in May" review covers stocks/commodities only. A pre-registered direction would have to come from dev data,
+  i.e. a scan. 0 trials used. Not a lead; no notification.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.

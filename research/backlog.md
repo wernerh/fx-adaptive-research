@@ -1494,3 +1494,18 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3): no verified directional EUR/USD basis; both opened studies are minute/hourly pattern rules whose own text
   reports the edge declining before our dev block (Pombo) or absent after costs (Sokolovski); sovereign-spread evidence is commentary
   only. 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R135 (not an item; no item added)
+- 2026-11-13 R135 refill pass, angle: month-of-year / Halloween ("Sell in May") seasonality in EUR/USD daily returns (partitions all dev
+  dates, so it would clear the R090 power floor like B54). Two standard searches. Opened via web-fetch: Cellini & Cuccia (2014),
+  "Seasonal processes in the Euro--US Dollar daily exchange rate", Applied Financial Economics 24(3), 161-174, DOI
+  10.1080/09603107.2013.870651, [EconPapers](https://econpapers.repec.org/RePEc:taf:apfiec:v:24:y:2014:i:3:p:161-174) (abstract only;
+  full text subscriber-only): EUR/USD daily 1999-2012, "we find statistical significance of some month effects in the first-differences
+  of exchange rate" (verbatim) but the abstract names no month, sign or size. Degenhardt & Auer (2018), "The 'Sell in May' effect: A
+  review and new empirical evidence", NAJEF 43, 169-205, DOI 10.1016/j.najef.2017.09.003,
+  [IDEAS](https://ideas.repec.org/a/eee/ecofin/v43y2018icp169-205.html) (abstract): stocks and commodity futures only, no FX. CXO
+  Advisory page "U.S. Dollar Seasonal Strength/Weakness and Stock Market Returns" (2022, not evidence; paywalled, descriptive). EconBiz
+  record blocked by bot protection (not opened).
+- No item added (rule 3): no verified month, sign or size for EUR/USD, so any month or winter/summer direction would have to be chosen
+  from data (a dev scan = many trials, and E009 already scanned calendar cells), not from a published prior. 0 trials used (dev 257,
+  val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
