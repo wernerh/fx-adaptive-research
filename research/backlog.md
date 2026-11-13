@@ -1455,3 +1455,21 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Whelan fix-window line (academic_studies.md), CXO p=21224 (B14/E017 line, R127), news/how-to pages (not evidence).
 - No item added (rule 3: no verified EUR/USD directional basis; ORB evidence is non-FX and abstract-only). 0 trials used (dev 257, val 9,
   total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R133 (not an item; no item added)
+- 2026-11-13 R133 refill pass, angles: (a) consecutive-return runs / streaks as a continuation or reversal signal for EUR/USD,
+  (b) narrow-range / volatility-contraction (NR4/NR7) breakouts in FX. Two standard searches. Opened via web-fetch: Hashimoto, Ito,
+  Ohnishi, Takayasu, Takayasu & Watanabe (2008), "Random Walk or A Run: Market Microstructure Analysis of the Foreign Exchange Rate
+  Movements based on Conditional Probability", NBER WP 14160, DOI 10.3386/w14160 (published Quantitative Finance 12(6), 893-905, 2012),
+  [NBER](https://www.nber.org/papers/w14160) (abstract page verbatim): EBS tick-by-tick USD/JPY and EUR/USD; a run in *deal* prices
+  "does have some predictable information on the direction of the next price movement", but "quote prices do not show such tendency of a
+  run"; horizon is "the past several ticks"; no net-of-cost result; sample period not stated. Cespa, Gargano, Riddiough & Sarno (2021),
+  "Foreign Exchange Volume", WP-EMG-01-2021 (RFS forthcoming),
+  [PDF](https://www.bayes.citystgeorges.ac.uk/__data/assets/pdf_file/0006/660435/WP-EMG-01-2021.pdf) (~22% verbatim): volume predicts
+  next-day reversal ("stronger currency return reversal for currency pairs with abnormally low volume today"), CLS hourly volume; the
+  volume-conditioned reversal family is already tested (B28/B29, E033 NONE/NONE). Search (b) returned only trading-education pages
+  (LuxAlgo, FXStreet, TradingView, Chartmill; not evidence, not opened) and Erdemlioglu-Laurent-Neely 2012 (already in
+  research/academic_studies.md, volatility only).
+- No item added (rule 3): the runs evidence is tick-level on EBS deal prices and explicitly absent in quote prices, while the repo holds
+  1-minute bid/ask quote bars, so the mechanism is below our tradable horizon and not observable in our data; NR breakout evidence is
+  non-academic. 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
