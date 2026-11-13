@@ -1425,3 +1425,11 @@ Why each run chose what it did, and any judgement calls.
 - **Housekeeping note:** local `main` had diverged (stale E035/E036/R079 commits); it was saved as local branch
   `stale-local-main` and `main` reset to origin/main before work. Nothing on origin changed.
 - **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.
+
+## 2026-11-13 R152 (unattended)
+- **Choice:** refill pass (protocol priority 4; no `ready` item, no run queued, last run 43291084015 recorded as E047). Angles:
+  German ZEW / Ifo sentiment releases -> post-release EUR/USD drift; euro-area sovereign bond auction days -> EUR/USD.
+- **Judgement call:** no item added. (a) the two academic PDFs found could not be opened (permission timeout, bot challenge; not
+  circumvented), so nothing is recorded from them; (b) Beetsma et al. 2018 JMCB is yields-only. 0 trials used. Not a lead; no notification.
+- **Housekeeping:** worked on a detached checkout of origin/main (local `main` still holds the stale pre-R080 commits); pushed to origin main.
+- **Next run:** if still nothing `ready`, refill on an untried angle; the R105 human-decision data list still stands.

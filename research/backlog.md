@@ -1706,3 +1706,16 @@ Trial count so far on dev: **257** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   openable (proxy block, not circumvented, nothing recorded from it).
 - No item added (rule 3 / R090 standard: no verified EUR/USD time-series direction basis for either angle). 0 trials used (dev 257,
   val 9, total 266). Not a pipeline failure (last run 43291084015 success, recorded as E047).
+
+### Refill note R152 (not an item; no item added)
+- 2026-11-13 R152 refill pass, angles (no "ZEW" entry and no euro-area sovereign-auction FX entry in research/ or knowledge/ before
+  this run): (a) German ZEW / Ifo sentiment releases -> post-release EUR/USD drift; (b) euro-area sovereign bond auction days ->
+  EUR/USD direction. Two standard searches. (a) returned two academic PDFs, neither readable: CEQURA (LMU) WP 8 (redirect to
+  cequra.uni-muenchen.de; fetch permission timed out, not retried) and Mannheim madoc dp09010 (bot-challenge page, not
+  circumvented); the rest were news/broker pages (FXStreet, babypips, aggregator feeds; not evidence, not opened). Nothing is
+  recorded from the two unread PDFs. (b) Beetsma-Giuliodori-Hanson-de Jong, JMCB 50(7) 1401-1440, DOI 10.1111/jmcb.12510
+  (IDEAS and UvA DARE pages opened, abstract/metadata only): auction cycles in euro-area sovereign yields; no exchange-rate content
+  in the abstract.
+- No item added (rule 3 / R090 standard: no verified EUR/USD direction or drift basis; (a) would also need an official ZEW/Ifo
+  release calendar, same blocker as B6). 0 trials used (dev 257, val 9, total 266). Not a pipeline failure (last run 43291084015
+  success, recorded as E047).

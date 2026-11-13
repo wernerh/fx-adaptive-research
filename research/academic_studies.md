@@ -844,3 +844,11 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Source:** [BIS landing page / work1229.pdf](https://www.bis.org/publ/work1229.pdf) (landing page and abstract opened 2026-11-13 R151; PDF body blocked by proxy, 0% of body read, body UNVERIFIED)
 - **Finding (abstract level):** distribution of bid-ask spreads for stocks, FX and government bonds over 25 years; no return-direction test described.
 - **Relevance:** Background only. Not added (refill note R151). **Status:** abstract only
+
+### Beetsma, Giuliodori, Hanson & de Jong (2018): Cross-border auction cycle effects of sovereign bond issuance in the euro area
+- **Source:** Journal of Money, Credit and Banking 50(7), 1401-1440, DOI 10.1111/jmcb.12510
+  ([IDEAS](https://ideas.repec.org/a/wly/jmoncb/v50y2018i7p1401-1440.html), [UvA DARE](https://dare.uva.nl/id/e17a86bf-e8f1-4cdc-9685-3e6935b4ec0d));
+  opened 2026-11-13 R152, abstract and metadata only (body not read; DARE gives 2017, IDEAS 2018).
+- **Finding (abstract):** foreign euro-area debt auctions spill over into domestic secondary-market yield auction cycles; domestic
+  cycles stronger in the crisis period, cross-border effects stronger pre-crisis. No exchange-rate result in the abstract.
+- **Relevance:** Low. No EUR/USD basis for an auction-day item (R152 refill note).
