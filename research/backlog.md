@@ -1748,7 +1748,7 @@ Trial count so far on dev: **258** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 ### B58v: B58 val confirmation (signal test, val only) · `done` (2026-11-14 R155: closed unearned, 0 trials; B58 NONE on dev (E048). Was: earned only if B58 returns SIGNAL on dev)
 - B58 unchanged on val (2021-01-21 .. 2023-06-30), own pre-registration, 1 val trial, < 120 trades -> NONE, p < 0.05.
 
-### B59: Multi-timeframe trend alignment (1h + 30m + 15m agree), 5-minute trigger (signal test, dev) · `ready` (Added 2026-11-13 R153, human-directed; runs after B58)
+### B59: Multi-timeframe trend alignment (1h + 30m + 15m agree), 5-minute trigger (signal test, dev) → E049 · `running` (2026-11-14 R156: pre-registered as E049, rule unchanged; details fixed before data: bar exists with >= 1 minute, EMA ewm(span 20, adjust=False, min_periods 20), state from the bucket ending at floor(T, m), previous 5m bucket must be contiguous, no per-day cap; queued on research-batch; 1 dev trial counted when it runs. Added 2026-11-13 R153, human-directed; runs after B58)
 - **Origin [HUMAN / PRACTITIONER]:** the human described establishing bull/bear on 1h, 30m and 15m and trading the 5m/10m in the same
   direction when all agree; definitions left to the agent. Same low prior as B58. Separate strategy from B58 (could later be a
   filter on it, as its own experiment).

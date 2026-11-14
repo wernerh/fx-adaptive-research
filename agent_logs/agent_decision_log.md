@@ -1466,3 +1466,17 @@ Why each run chose what it did, and any judgement calls.
   (lesson R076).
 - **Action:** E048 recorded; B58 `done`, B58v closed unearned (0 trials). Trials dev 258, val 9, total 267. No lead, no notification.
 - **Next run:** top `ready` item B59 (multi-timeframe alignment, human-directed) -> pre-register as E049.
+
+## 2026-11-14 R156 (unattended)
+- **State:** last research-batch run 43528337777 (E048) completed and recorded in R155; nothing queued or in progress. Local clone
+  was a stale shallow `main`; work done on a branch checked out from `origin/main` (994ea0c) and pushed to `main`. pytest 421 passed
+  before changes.
+- **Choice:** top `ready` backlog item B59 (human-directed multi-timeframe alignment; protocol priority 3). No other ready item.
+- **Action:** hypothesis/methodology/record.json written before any run; state, trigger, window, hold and rule unchanged from the
+  backlog draft (= E048 rule). Details fixed now, before data: a bar exists with >= 1 minute in its UTC bucket; EMA20 =
+  ewm(span 20, adjust=False, min_periods 20) over existing bars; higher-timeframe state from the bucket ending exactly at floor(T, m)
+  (missing -> NONE); previous 5m bucket must be contiguous for a cross; no per-day cap (non-overlap only). `mtf_alignment.py`,
+  `run_e049_mtf_alignment.py`, 13 tests (incl. state invariance to data at/after T, no look-ahead by truncation, random-walk no-edge).
+  Synthetic smoke NONE (145 trades). batch.sh queues E049 (dev only). Backlog B59 `running`. Trials unchanged until it runs (dev 258,
+  val 9, total 267).
+- **Next run:** collect E049 when the research-batch run finishes.

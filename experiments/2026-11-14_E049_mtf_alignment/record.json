@@ -1,0 +1,23 @@
+{
+  "experiment_id": "E049",
+  "date": "2026-11-14",
+  "instrument": "EURUSD",
+  "hypothesis": "B59: direction x (EUR/USD mid open entry + 60 min - mid open entry) > 1 pip per trade; long (short) when the last completed UTC 1h, 30m and 15m bars all closed above (below) their EMA20 and a 5m bar with close time in [07:00 London, 12:00 NY) crosses up (down) through its EMA20; entry at the 5m close; non-overlapping; dev",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family (human-directed): 1h/30m/15m EMA20 trend alignment with 5m EMA20-cross trigger; fill/exclusion machinery, window, 60-min hold and rule from E048",
+  "decision_rule": "< 300 trades -> NONE; SIGNAL if mean signed > 1.0 pip AND FX-trading-date cluster bootstrap (2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "command": "python scripts/run_e049_mtf_alignment.py | tee backtests/validation_reports/E049_results.txt",
+  "preregistered_in": "R156",
+  "next_experiment": "SIGNAL -> B59v val confirmation; WEAK/NONE -> B59 closed, B59v closed unearned",
+  "outputs": [
+    "backtests/validation_reports/E049_results.json",
+    "backtests/validation_reports/E049_results.txt",
+    "backtests/validation_reports/E049_trades.csv"
+  ]
+}
