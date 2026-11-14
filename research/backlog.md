@@ -1917,3 +1917,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   NY Fed FX quarterly reports and Treasury reporting-rate tables (not studies).
 - No item added (rule 3 / R090: (a) already tested; (b) no verified EUR/USD direction basis, TGA series not in repo). pytest 434 passed.
   0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R171 (not an item; no item added)
+- 2026-11-14 R171 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Treasury yield" or
+  "Taylor rule" entry in research/backlog.md before this run): (a) lagged US Treasury yield changes -> later EUR/USD (intraday lead);
+  (b) Taylor-rule fundamentals -> EUR/USD direction. Two standard searches. (a) Returned only news/broker commentary (FXStreet, City
+  Index, Forex.com; not studies, not opened); the closest tested relative is the 2-year differential angle closed in R138, and bond-yield
+  intraday data are not in the repo. (b) Opened the EconPapers record of Molodtsova-Nikolsko-Rzhevskyy-Papell (2011, JMCB,
+  doi:10.1111/j.1538-4616.2011.00384.x; abstract): out-of-sample predictability for USD/EUR 1999-2007 at one quarter ahead and longer
+  only. Entry in research/academic_studies.md.
+- No item added (rule 3 / R090: (a) no study; (b) quarterly horizon, ~24 dev quarters, below power floor, real-time macro data not in
+  repo). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

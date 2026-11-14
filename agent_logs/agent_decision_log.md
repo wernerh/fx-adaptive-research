@@ -1564,3 +1564,11 @@ Why each run chose what it did, and any judgement calls.
   No new verified, pre-registrable basis -> no item added (refill note R170). No lead, no notification.
 - **Next run:** another refill unless the human adds items (R105 data-needs list unchanged). Refill yield has been zero for R158-R170;
   the human may want to add items or redirect the line.
+
+## 2026-11-14 R171 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43541310326 completed, recorded as E049); no `ready` backlog item.
+  Local main was stale/diverged; left untouched, work done on a local branch from origin/main and pushed to main.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on lagged US Treasury yield changes and Taylor-rule fundamentals -> EUR/USD.
+  No new verified, pre-registrable basis -> no item added (refill note R171). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R171; the human may want to add items
+  or redirect the line.

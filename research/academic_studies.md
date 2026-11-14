@@ -1007,3 +1007,12 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (abstract):** describes the TGA as the government's deposits at the Fed providing payment services; no exchange-rate
   variable in the abstract. Any USD or EUR/USD effect: UNVERIFIED.
 - **Relevance:** None for now (no verified EUR/USD direction; daily TGA series not in repo). **Status:** abstract only
+
+### Molodtsova, Nikolsko-Rzhevskyy & Papell (2011), "Taylor Rules and the Euro", JMCB 43(2-3), 535-552 (doi:10.1111/j.1538-4616.2011.00384.x) (added 2026-11-14 R171)
+- [EconPapers record](https://econpapers.repec.org/RePEc:wly:jmoncb:v:43:y:2011:i:2-3:p:535-552) opened via web-fetch (abstract only;
+  full text not opened, data frequency UNVERIFIED).
+- **Finding (abstract):** real-time Taylor-rule fundamentals (inflation plus output gap or unemployment) give "evidence of out-of-sample
+  predictability for the U.S. dollar/euro exchange rate from 1999 to 2007", with "both one-quarter-ahead and longer-horizon forecasts";
+  strongest with symmetric coefficients, no smoothing, no real exchange rate.
+- **Relevance:** None for the intraday/daily programme: quarterly horizon (~24 non-overlapping quarters on dev, below the R090 power
+  floor), sample ends before dev, real-time macro vintages not in repo. **Status:** abstract only
