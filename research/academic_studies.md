@@ -976,3 +976,14 @@ US session. That is unproven, which is exactly why E001 comes first.
 - Also opened: Samadi (2017), Erasmus bachelor thesis, [PDF](https://thesis.eur.nl/pub/39256/Samadi-H.-416255-.pdf) (~80% verbatim):
   German national team results vs next-day DAX, 79 matches 1990-2016: "no statistical significant relationship was found". No FX.
 - **Relevance:** None (no EUR/USD basis; major-tournament match days ~10-20 in dev, far below the R090 power floor). **Status:** abstract / partial text
+
+### Chortareas, Jiang & Nankervis (2013), "Volatility and Spillover Effects of Yen Interventions", Review of International Economics 21(4), 671-689 (added 2026-11-14 R168)
+- [RePEc record](https://ideas.repec.org/a/bla/reviec/v21y2013i4p671-689.html) opened via web-fetch: no abstract, full text restricted
+  (doi:10.1111/roie.12063, not opened). Findings, frequency, sample and any EUR/USD effect: UNVERIFIED.
+- **Relevance:** None for now (no verified EUR/USD direction; no MoF yen intervention in dev 2015-2020). **Status:** record only
+
+### Caporale & Plastun (2019), "The day of the week effect in the cryptocurrency market", Finance Research Letters (doi:10.1016/j.frl.2018.11.012) (added 2026-11-14 R168)
+- [Brunel full text](https://bura.brunel.ac.uk/bitstream/2438/17208/3/FullText.pdf) opened via web-fetch.
+- **Finding:** daily BTC/LTC/XRP/DASH 2013-2017; "The only exception is BitCoin, for which returns on Mondays are significantly higher";
+  authors: "no conclusive evidence that the cryptocurrency market is inefficient". No fiat FX variable.
+- **Relevance:** None (no crypto -> EUR/USD test). **Status:** full text

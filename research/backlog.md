@@ -1884,3 +1884,15 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   research/academic_studies.md.
 - No item added (rule 3 / R090: no verified EUR/USD effect; weather series not in repo; euro-area tournament match days far below the
   power floor). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R168 (not an item; no item added)
+- 2026-11-14 R168 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "intervention" entry and
+  "bitcoin"/"crypto" only in the backlog before this run): (a) Japanese MoF yen interventions -> spillover to EUR/USD direction;
+  (b) bitcoin weekend returns -> Monday EUR/USD. Two standard searches. (a) Opened the RePEc record of Chortareas-Jiang-Nankervis (2013,
+  Review of International Economics 21(4), 671-689, doi:10.1111/roie.12063): "No abstract is available", full text restricted; whether
+  any EUR/USD return effect is reported is UNVERIFIED (title: volatility and spillovers). Intervention dates in dev are few (2011 episodes
+  precede dev; no MoF yen intervention 2015-2020), so far below the R090 power floor. (b) Returned quantpedia/medium pages (not evidence,
+  not opened); opened Caporale-Plastun (2019, FRL, doi:10.1016/j.frl.2018.11.012, Brunel full text): crypto-only day-of-week test
+  (bitcoin Monday returns higher, 2013-2017), no fiat FX variable. Entries in research/academic_studies.md.
+- No item added (rule 3 / R090: no verified EUR/USD direction basis; no dev intervention events; crypto data not in repo). pytest 434
+  passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
