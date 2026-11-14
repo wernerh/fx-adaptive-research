@@ -1584,3 +1584,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on EIA weekly crude-inventory releases and the Jackson Hole symposium -> EUR/USD.
   No new verified, pre-registrable basis -> no item added (refill note R173). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R173.
+
+## 2026-11-14 R174 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43541310326 completed, recorded as E049); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on weekly time-series return reversal and NR7/inside-day range contraction ->
+  EUR/USD. No new verified, pre-registrable basis -> no item added (refill note R174). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R174.

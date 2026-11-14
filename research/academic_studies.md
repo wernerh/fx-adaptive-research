@@ -1038,3 +1038,12 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding:** WTI intraday momentum on EIA days: third half-hour return "can significantly and positively predict the returns in the
   last half-hour". No exchange-rate variable.
 - **Relevance:** None directly: crude only; the oil -> EUR/USD lag family was already tested (E041). **Status:** exec summary only (no FX)
+
+### Caporale, Plastun & Oliinyk, "The Frequency of One-Day Abnormal Returns and Price Fluctuations in the Forex", Brunel Economics and Finance WP 2005 (cover dated March 2020) (added 2026-11-14 R174)
+- [Brunel PDF](https://www.brunel.ac.uk/economics-finance-and-accounting/research/pdf/2005-Mar-GMC-FOREX-frequency.pdf) opened via
+  web-fetch (~65% verbatim, abstract through Table C.6; remainder not verified).
+- **Data:** daily and monthly closes, EURUSD, GBPUSD, USDJPY, EURJPY, GBPCHF, AUDUSD, USDCAD, 1994-01-03 .. 2019-05-28 (Yahoo! Finance).
+- **Finding:** monthly returns regressed on the count of same-month "abnormal" daily returns (> 1 SD); "the highest coefficient corresponds
+  to lag length zero" (contemporaneous, not a forecast). EUR/USD monthly correlation 0.76 (Table 4), in-sample. "the results suggest that
+  the latter is an important driver of price dynamics in the FOREX". No trading rule backtested, no costs, no out-of-sample test.
+- **Relevance:** None: contemporaneous monthly relation, no lagged direction basis; monthly horizon below the R090 power floor. **Status:** read (partial)

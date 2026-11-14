@@ -1950,3 +1950,15 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   the R090 power floor. Entries in research/academic_studies.md.
 - No item added (rule 3 / R090: no verified EUR/USD basis; (b) below power floor). pytest 434 passed. 0 trials used (dev 259, val 9,
   total 268). Not a pipeline failure.
+
+### Refill note R174 (not an item; no item added)
+- 2026-11-14 R174 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "time-series reversal"
+  or "NR7"/"inside bar" test in research/ or knowledge/ before this run): (a) short-term (weekly) time-series return reversal in EUR/USD;
+  (b) narrow-range (NR7 / inside-day) volatility contraction -> next-day breakout direction. Two standard searches. (a) Opened
+  Caporale-Plastun-Oliinyk (Brunel WP 2005, 2020; ~65% verbatim): abnormal-day frequency explains same-month returns only (lag 0, no
+  rule, no costs); and Dao-McGroarty-Urquhart (NTU repository, full text; already in research/academic_studies.md and tested as E020/B17,
+  weekend-gap reversal NONE on dev): EUR/USD out-of-sample alpha 0.04 (SE 0.03), not significant. Other hits were broker/news pages
+  (City Index, FXStreet) and equity papers (not opened). (b) Returned only vendor/indicator pages (LuxAlgo, TradingView, chartmill; not
+  studies, not opened).
+- No item added (rule 3 / R090: (a) no lagged EUR/USD direction basis beyond the already-rejected weekend-gap line; (b) no study).
+  pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
