@@ -1928,3 +1928,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   only. Entry in research/academic_studies.md.
 - No item added (rule 3 / R090: (a) no study; (b) quarterly horizon, ~24 dev quarters, below power floor, real-time macro data not in
   repo). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R172 (not an item; no item added)
+- 2026-11-14 R172 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Hurst" or "Christmas"
+  entry in research/ or knowledge/ before this run): (a) Hurst-exponent / long-memory regime -> EUR/USD intraday trend vs reversal;
+  (b) Christmas / year-end holiday-season low liquidity -> EUR/USD drift. Two standard searches. (a) Opened Caporale-Plastun (2022, Brunel
+  WP 2215, full text): EuroStoxx 50 futures only, intraday H 0.37, profitability inferred not tested; other hits were an AUD/USD arXiv
+  paper, an arXiv Q-learning paper and vendor/MQL5 pages (not opened). (b) Returned only broker/news commentary (FXStreet, VT Markets,
+  GO Markets; not studies, not opened); one holiday week per year gives ~3 dev events, far below the R090 power floor.
+- No item added (rule 3 / R090: (a) no verified EUR/USD basis, no tested rule; (b) no study, below power floor). pytest 434 passed.
+  0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

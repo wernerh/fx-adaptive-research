@@ -1016,3 +1016,11 @@ US session. That is unproven, which is exactly why E001 comes first.
   strongest with symmetric coefficients, no smoothing, no real exchange rate.
 - **Relevance:** None for the intraday/daily programme: quarterly horizon (~24 non-overlapping quarters on dev, below the R090 power
   floor), sample ends before dev, real-time macro vintages not in repo. **Status:** abstract only
+
+### Caporale & Plastun (2022), "Persistence in High Frequency Financial Data", Brunel Economics and Finance WP 2215 (added 2026-11-14 R172)
+- [Brunel WP PDF](https://www.brunel.ac.uk/economics-finance-and-accounting/research/pdf/2215-Oct-GMC-High-Frequency-persistence.pdf)
+  opened via web-fetch (~100% of text; figures unreadable).
+- **Finding:** EuroStoxx 50 futures only (Eurex, 2002-2018); R/S Hurst exponent: monthly H 0.72, daily 0.54, intraday 0.37
+  ("intraday ones are anti-persistent"). Profitability of intraday reversal strategies is inferred from H values, not tested; no trading
+  rule, no out-of-sample or direction test.
+- **Relevance:** None directly: no FX data. Intraday mean-reversion families on EUR/USD are already tested in this repo. **Status:** verified (no FX)
