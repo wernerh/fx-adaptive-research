@@ -1781,3 +1781,15 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   R090 power floor (~4-5 pip daily effect, ~70 dev events, UNVERIFIED count); R152 already found no FX basis for plain auction days.
 - No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure (last run
   43541310326 success, recorded as E049).
+
+### Refill note R159 (not an item; no item added)
+- 2026-11-14 R159 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles: (a) realized skewness /
+  higher realized moments as a next-day or next-week EUR/USD direction predictor; (b) US Treasury quarterly refunding announcements ->
+  EUR/USD. (a) Opened: Gkillas-Gupta-Pierdzioch (2019, Physica A 532, 121867, doi:10.1016/j.physa.2019.121867; UP repository record
+  https://repository.up.ac.za/handle/2263/70757, abstract only): EUR/USD among six USD pairs, but the target is one-day-ahead realized
+  **volatility**, not returns ("mainly realized kurtosis" helps out of sample). Sim (2016, JDQS 24(1), 119-152,
+  doi:10.1108/JDQS-01-2016-B0005, abstract only): negative realized skewness -> next-week return relation for **US stocks**, no FX.
+  Cespa-Gargano-Riddiough-Sarno (2021, EMG WP-EMG-01-2021) re-opened: volume-conditioned reversal, family already tested (E033).
+  No verified FX direction result for realized skewness. (b) Search returned only news/commentary pages (Newsquawk, FXStreet,
+  MarketPulse, Marc to Market; not evidence, not opened); ~4 refunding events per year is also far below the R090 power floor.
+- No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
