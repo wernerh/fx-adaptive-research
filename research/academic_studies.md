@@ -873,3 +873,21 @@ US session. That is unproven, which is exactly why E001 comes first.
   do not reliably predict FX once Benjamini-Hochberg/Bonferroni corrections are applied ("the evidence does not support a leading
   indicator role in the other direction").
 - **Relevance:** Low. Weekly COT positioning is not a usable EUR/USD direction signal per this paper; no bond lead-lag. **Status:** read (summary)
+
+### Comazzi, Domenech Palacios, Ehrmann, Ferrari Minesso & Mehl (2026), CEPR DP 21606 "ECB exchange rate communication" (added 2026-11-14 R161)
+- Read via the VoxEU column ([page](https://cepr.org/voxeu/columns/exchange-rate-communication-practice-evidence-two-decades-ecb-press-conferences));
+  paper itself not opened; quotes as relayed by a fetch summary.
+- **Finding:** ECB press conferences 2002 - mid-2023, ~100 exchange-rate statements in opening statements plus Q&A references: "little
+  evidence that statements expressing a preference for appreciation or depreciation systematically move the euro in the desired
+  direction"; effects "fade within days", not significant after about one week; weaker after the crisis / at the lower bound. No pip
+  magnitudes in the column; no published list of mention dates/times.
+- **Relevance:** Low. Null-ish published result, ~100 events over 21 years (~30 in dev, UNVERIFIED) is below the lesson R090 power floor,
+  and no event list is available. **Status:** read (column summary)
+
+### Babiak & Baruník, "Volatility Shocks and Currency Returns", arXiv:2101.09738 v3 (added 2026-11-14 R161)
+- [abstract](https://arxiv.org/abs/2101.09738); HTML v3 opened (first part verbatim, rest via summary).
+- **Finding:** 20 USD-based currencies incl. euro, daily Bloomberg OTC 1-month implied vols, monthly portfolio sorts: "Currencies that
+  transmit more volatility shocks ... earn lower excess returns". Cross-sectional, one-month horizon; plain IVOL / risk-reversal sorts
+  reported insignificant (UNVERIFIED figures from summary).
+- **Relevance:** Low. Cross-sectional result, not a single-pair time-series signal; Bloomberg implied-vol history not in repo and no free
+  source verified. **Status:** partial text

@@ -1806,3 +1806,12 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   [page](https://icbe-hou.eap.gr/2026/presentations/?abs_id=254); spot/futures currency lead-lag unstable over time, no sign, horizon or
   bond series). No verified Bund -> EUR/USD or copper -> EUR/USD direction result; Bund futures data also not in the repo.
 - No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R161 (not an item; no item added)
+- 2026-11-14 R161 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "speech", "Lagarde" or
+  "implied vol" entry in research/ before this run): (a) ECB exchange-rate communication / speeches -> EUR/USD direction; (b) option-
+  implied volatility / risk reversals -> later EUR/USD returns. Two standard searches. (a) Opened the VoxEU column on Comazzi et al.
+  (2026, CEPR DP 21606): little evidence that ECB FX statements move the euro in the intended direction, effects fade within days;
+  ~100 opening-statement events 2002-2023 and no published event list. (b) Opened Babiak-Baruník (arXiv:2101.09738): cross-sectional
+  monthly sorts over 20 currencies, not a single-pair signal; implied-vol data not in repo. Entries in research/academic_studies.md.
+- No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
