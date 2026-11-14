@@ -908,3 +908,12 @@ US session. That is unproven, which is exactly why E001 comes first.
   "I do not find a significant reaction of the nominal effective EUR exchange rate" to information shocks; EUR-USD the only pair with
   some delayed overshooting.
 - **Relevance:** Low. Monthly macro horizon, no intraday or daily post-event EUR/USD drift; surprise series not in repo. **Status:** partial text
+
+### Iyke, Phan & Narayan (2022), "Exchange rate return predictability in times of geopolitical risk", IRFA 81, 102099 (added 2026-11-14 R164)
+- [Repository record](https://research.monash.edu/en/publications/exchange-rate-return-predictability-in-times-of-geopolitical-risk/)
+  opened via web-fetch (abstract and metadata only); DOI [10.1016/j.irfa.2022.102099](https://doi.org/10.1016/j.irfa.2022.102099) not opened.
+- **Finding (abstract):** "geopolitical risk predicts 10 out of 17 (59%) exchange rate returns in in-sample tests"; out-of-sample
+  predictability for 88% of currencies; model beats the historical-average benchmark in 11 of 17 currencies.
+- **Not on the page (UNVERIFIED):** data frequency, currency list (EUR/USD inclusion), GPR index definition, forecast horizon, sign of
+  the effect, costs.
+- **Relevance:** Low until full text is read. No verified EUR/USD sign or horizon; GPR series not in repo. **Status:** abstract only

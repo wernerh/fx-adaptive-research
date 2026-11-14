@@ -1842,3 +1842,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - Not added: monthly horizon, no verified tradable post-event EUR/USD direction; ECB-meeting events (~48 dev) below the R090 power floor
   and the post-ECB drift angle already closed by R129. No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9,
   total 268). Not a pipeline failure.
+
+### Refill note R164 (not an item; no item added)
+- 2026-11-14 R164 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "option expiry" or
+  "geopolitical"/"GPR" entry in research/ before this run): (a) FX option-expiry pinning around the 10:00 NY cut; (b) geopolitical-risk
+  index -> later EUR/USD returns. Two standard searches. (a) returned only daily expiry-notice pages (investingLive, VT Markets,
+  Newsquawk; not evidence, not opened); no empirical FX pinning study; historical expiry sizes/strikes not in repo. (b) Opened the Monash
+  repository record of Iyke-Phan-Narayan (2022, IRFA 81, 102099): abstract says GPR predicts 10/17 currency returns in-sample, but
+  frequency, currency list, horizon and sign are not stated; GPR data not in repo. Entry in research/academic_studies.md.
+- No item added (rule 3 / R090: no verified EUR/USD sign, horizon or data). pytest 434 passed. 0 trials used (dev 259, val 9,
+  total 268). Not a pipeline failure.
