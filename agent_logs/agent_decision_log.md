@@ -1455,3 +1455,14 @@ Why each run chose what it did, and any judgement calls.
   14 tests (incl. no look-ahead by truncation and random-walk no-edge). Synthetic smoke NONE (14 trades). batch.sh queues E048
   (dev only). Backlog B58 `running`. Trials unchanged until it runs (dev 257, val 9, total 266).
 - **Next run:** collect E048 when the research-batch run finishes; then B59.
+
+## 2026-11-14 R155 (unattended)
+- **State:** research-batch run 43528337777 (E048) completed success; outputs committed by github-actions[bot] (c3259d5), not yet
+  recorded. No run queued or in progress. Clone was on a detached HEAD; reset local `main` to `origin/main` (the stale pre-R080 local
+  commits were never on origin and are superseded there). pytest 421 passed.
+- **Choice:** collect E048 (protocol priority 1). Applied the pre-registered B58 rule exactly (R154): NONE (mean -0.744 < 1 pip,
+  CI lower -2.614 < 0, t p 0.7897). No rule or threshold changed.
+- **Judgement call:** the long leg (+0.594) and the no-retest breakout-close entry (+0.312) are descriptive and below 1 pip; not queued
+  (lesson R076).
+- **Action:** E048 recorded; B58 `done`, B58v closed unearned (0 trials). Trials dev 258, val 9, total 267. No lead, no notification.
+- **Next run:** top `ready` item B59 (multi-timeframe alignment, human-directed) -> pre-register as E049.

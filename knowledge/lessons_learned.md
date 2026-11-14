@@ -429,3 +429,15 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   pivot levels behave like arbitrary levels. Together with E018/E045 (round numbers) this closes the price-level touch family on dev.
 - **Action:** B56 closed NONE (rejected_hypotheses.md); B57 closed unearned. No re-test with R2/S2/P, other holds, lags or the fade
   sign. Next: refill.
+
+### 2026-11-14 R155: 1h swing-level breakouts with a 5m retest entry do not continue in EUR/USD (E048)
+- **Context:** E048 (B58, human-directed), 1h close beyond the previous-24-clock-hour high/low (07:00 London - 12:00 NY), entry at the
+  first 5m break-and-retest within 120 min, 60-min hold, dev, 1 trial.
+- **Observation:** NONE (n 372, -0.744 pips, date-cluster CI (-2.614, 1.137), t p 0.7897). Entering at the breakout close without a
+  retest +0.312 (descriptive, n 906); SPEC 4 net -1.201 for the tested rule.
+- **Evidence label:** [EXP]
+- **Lesson:** consistent with the low prior (Neely-Weller 2011, Asian-range breakout E004): the practitioner break-and-retest filter
+  selects fewer trades but no better ones. Together with E018/E045/E047 (price-level touches), level-based continuation on EUR/USD
+  1m data shows nothing on dev.
+- **Action:** B58 closed NONE (rejected_hypotheses.md); B58v closed unearned. No re-test with other look-backs, retest tolerances,
+  windows, holds or the no-retest variant. Next: B59.

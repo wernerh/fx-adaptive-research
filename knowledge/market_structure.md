@@ -120,3 +120,8 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 ### 2026-11-12 R126: EUR/USD after first touch of previous-day pivot R1/S1 (E047, dev) [EXP]
 - 1349 first touches (1565 UTC dates), 1270 tradeable. Continuation 120 min -0.187 pips (NONE); 60 min +0.165, 180 min -0.231.
   R1 long -0.727, S1 short +0.351. Control levels at +-0.0023 behave the same. See experiments/2026-11-12_E047_pivot_touch.
+
+### 2026-11-14 R155: EUR/USD after a 1h close beyond the previous-24-hour high/low (E048, dev) [EXP]
+- 1735 in-window breakouts, 907 first-per-date setups: 372 retest within 1 pip and hold, 235 failed breaks (close back
+  through the level), 300 no retest in 120 min. Retest entry 60 min -0.744 pips (NONE); breakout-close entry 60 min +0.312.
+  See experiments/2026-11-13_E048_breakout_retest.
