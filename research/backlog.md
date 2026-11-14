@@ -1987,3 +1987,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   single-pair direction studies, not opened); FX volume/illiquidity history beyond tick counts is not in the repo.
 - No item added (rule 3 / R090: (a) dev already scanned and sub-pip, val family already used; (b) no study). pytest 434 passed. 0 trials
   used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R177 (not an item; no item added)
+- 2026-11-14 R177 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "summit"/"Eurogroup" or
+  "Michigan"/"consumer confidence" entry in research/ or knowledge/ before this run): (a) European Council / EU summit meetings ->
+  EUR/USD; (b) University of Michigan consumer sentiment release (10:00 NY) -> later EUR/USD drift. Two standard searches. (a) Opened
+  the author's LSE EUROPP summary of Smeets (JCMS, doi:10.1111/jcms.12062; entry in research/academic_studies.md): daily EUR/USD
+  2008-2012, "no significant effects could be detected". Other hits (Konstanz repository, Banque de France WP859, FXEmpire Ecofin page)
+  not opened. (b) Returned only broker/news pages (VT Markets, FXStreet, XTB; not evidence, not opened) and Fed IFDP 823 (web-archive
+  viewer shell, already unreadable in R148); no study.
+- No item added (rule 3 / R090: (a) published null and below the power floor; (b) no study). pytest 434 passed. 0 trials used
+  (dev 259, val 9, total 268). Not a pipeline failure.

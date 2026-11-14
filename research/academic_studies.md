@@ -1053,3 +1053,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data:** hourly EUR/USD, "Swiss FOREX market", 2004-01-01 .. 2014-01-11; ANOVA, t-tests and Tukey HSD on day, hour and day-by-hour mean returns.
 - **Finding (abstract):** "The best arbitrage opportunity is evidenced on Fridays, when selling USD and buying EUR at 00:00", reversed at 03:00 the same day. No magnitude, significance figures or costs in the abstract; the clock time zone of "00:00" is UNVERIFIED (server time not stated).
 - **Relevance:** Low. If 00:00 is CET/CEST, the window is 18:00-21:00 America/New_York on trading-date Friday, which E009 already scanned on dev (Fri_ny_18 +0.685, Fri_ny_19 -0.471, Fri_ny_20 +0.021 pips, all NONE; sum ~+0.2 pips, below the 1-pip bar) and which sits in the post-roll 18:00 NY family tested on val as B9/B10 (E012, WEAK/NONE). **Status:** read (abstract)
+
+### Smeets, EU summit meetings and financial markets during the Eurozone crisis, Journal of Common Market Studies, doi:10.1111/jcms.12062 (added 2026-11-14 R177)
+- **Opened:** LSE EUROPP blog summary by the author, LSE Research Online PDF https://researchonline.lse.ac.uk/id/eprint/72262/1/blogs.lse.ac.uk-EU%20summit%20meetings%20have%20had%20little%20effect%20on%20financial%20markets%20during%20the%20Eurozone%20crisis.pdf (full blog text read via web-fetch; the JCMS article itself not opened, its title UNVERIFIED; SSRN abstract_id=2340272 linked, not opened).
+- **Data:** daily data, 10-year sovereign yields, stock indices (FR, DE, GR, IE, IT, PT, ES) and EUR/USD, autumn 2008 .. April 2012; event window not stated in the blog.
+- **Finding:** "for the euro-US dollar exchange rate, no significant effects could be detected"; no direction or magnitude given.
+- **Relevance:** None: null for EUR/USD; ~4-8 summits per year, below the R090 power floor. **Status:** read (author summary only)
