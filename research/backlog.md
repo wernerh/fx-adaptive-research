@@ -1998,3 +1998,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   viewer shell, already unreadable in R148); no study.
 - No item added (rule 3 / R090: (a) published null and below the power floor; (b) no study). pytest 434 passed. 0 trials used
   (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R178 (not an item; no item added)
+- 2026-11-14 R178 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Golden Week",
+  "Chinese New Year"/"Lunar New Year" holiday or "Bank of Japan"/"BoJ" entry in research/ or knowledge/ before this run): (a) Asian
+  holidays (Chinese New Year, Golden Week) liquidity -> EUR/USD; (b) Bank of Japan policy announcements -> later EUR/USD drift. Two
+  standard searches. (a) Opened Krivosheev 2019 Erasmus thesis (Bitcoin only; no robust CNY effect); other hits broker/news pages
+  (GO Markets, investinglive, MEXC; not evidence, not opened). (b) Opened IMF WP/25/227 (Carrière-Swallow et al. 2025; ~48% verbatim):
+  USD/JPY 35-minute window only, no EUR/USD, no drift test; other hits FXStreet/Newsquawk/MUFG news pages. Entries in
+  research/academic_studies.md.
+- No item added (rule 3 / R090: (a) no FX study; (b) no EUR/USD evidence and ~8 events/year, below the power floor). pytest 434 passed.
+  0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

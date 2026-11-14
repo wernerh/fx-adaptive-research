@@ -1059,3 +1059,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data:** daily data, 10-year sovereign yields, stock indices (FR, DE, GR, IE, IT, PT, ES) and EUR/USD, autumn 2008 .. April 2012; event window not stated in the blog.
 - **Finding:** "for the euro-US dollar exchange rate, no significant effects could be detected"; no direction or magnitude given.
 - **Relevance:** None: null for EUR/USD; ~4-8 summits per year, below the R090 power floor. **Status:** read (author summary only)
+
+### Krivosheev, "The seasonal effect of Chinese New Year in cryptocurrency market", B.Sc. thesis, Erasmus University Rotterdam, 2019 (added 2026-11-14 R178)
+- **Opened:** https://thesis.eur.nl/pub/48070/Thesis_Krivosheev_453271.pdf (full text via web-fetch; some regression tables garbled).
+- **Data:** daily BTC/USD (Bitfinex), 2013-03-10 .. 2019-05-08; dummies for 1 month before / after Chinese New Year; OLS and ARDL.
+- **Finding (abstract, verbatim):** "we did not observe any seasonal effect except small negative movement of price (return)"; ARDL makes the CNY dummies insignificant; author notes the effect is too small to profit after costs.
+- **Relevance:** None: Bitcoin only, no fiat FX, no EUR/USD. **Status:** read
+
+### Carrière-Swallow, Kindberg-Hanlon & Smirnov, "Macroeconomic Effects and Spillovers from Bank of Japan Unconventional Monetary Policy", IMF WP/25/227, 2025 (added 2026-11-14 R178)
+- **Opened:** https://www.imf.org/-/media/files/publications/wp/2025/english/wpiea2025227-source-pdf.pdf (~48% verbatim via web-fetch; remainder, incl. Table 4, only as model summary = UNVERIFIED).
+- **Data:** 151 BoJ meetings 2010-01 .. 2023-12; intraday window "starting 5 minutes before the announcement and ending 30 minutes after the announcement"; FG and LSAP shocks.
+- **Finding:** expansionary shocks "depreciate the yen" (USD/JPY only); spillovers measured on foreign 10y yields at h = 0..5 days (UNVERIFIED part). No EUR/USD result and no hour-scale post-announcement drift analysis.
+- **Relevance:** None for a pre-registrable EUR/USD item: no EUR/USD evidence, no drift; BoJ meetings ~8/year, below the R090 power floor. **Status:** read (partial)
