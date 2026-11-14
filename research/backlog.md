@@ -1793,3 +1793,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   No verified FX direction result for realized skewness. (b) Search returned only news/commentary pages (Newsquawk, FXStreet,
   MarketPulse, Marc to Market; not evidence, not opened); ~4 refunding events per year is also far below the R090 power floor.
 - No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R160 (not an item; no item added)
+- 2026-11-14 R160 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles: (a) lagged copper /
+  industrial-metal returns -> later EUR/USD; (b) Bund futures / euro bond prices leading EUR/USD spot (intraday lead-lag). Two
+  standard searches. (a) returned news/vendor pages (FXStreet, FXEmpire, convextrade; not evidence, not opened) and commodity-currency
+  papers on exchange rates forecasting commodity prices (Chen-Rogoff-Rossi family, opposite direction, commodity currencies only; not
+  opened again). (b) Opened: Hossfeld-Röthig (2015, Bundesbank DP 41/2015,
+  [PDF](https://bundesbank.de/resource/blob/703976/fcd518354ae96703103d929dfea7582e/472B63F073F071307366337C94F8C870/2015-11-30-dkp-41-data.pdf);
+  weekly CFTC speculator positions vs USD/EUR, positions do not lead FX after multiple-test correction - "the evidence does not support a
+  leading indicator role in the other direction"; no bonds) and Kenourgios-Tsioutsios (ICBE-HOU 2026 abstract only,
+  [page](https://icbe-hou.eap.gr/2026/presentations/?abs_id=254); spot/futures currency lead-lag unstable over time, no sign, horizon or
+  bond series). No verified Bund -> EUR/USD or copper -> EUR/USD direction result; Bund futures data also not in the repo.
+- No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

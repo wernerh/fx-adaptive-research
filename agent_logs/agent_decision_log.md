@@ -1499,3 +1499,10 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** refill (protocol priority 4). Three new angles (retail positioning, cross-border payment-date flows) plus a DST
   re-check; no verified, adequately powered EUR/USD basis found -> no item added (refill note R158). No lead, no notification.
 - **Next run:** backlog still has no `ready` item -> another refill unless the human adds items (R105 data-needs list unchanged).
+
+## 2026-11-14 R160 (unattended)
+- **State:** last research-batch run 43541310326 completed and recorded (E049). No run queued or in progress. No `ready` backlog item.
+  Worked from `origin/main` (local `main` stale/diverged, not used). pytest 434 passed.
+- **Choice:** refill (protocol priority 4): copper -> EUR/USD and Bund futures -> EUR/USD lead-lag. No verified, adequately powered
+  EUR/USD direction basis -> no item added (refill note R160). No lead, no notification.
+- **Next run:** another refill unless the human adds items (R105 data-needs list unchanged).

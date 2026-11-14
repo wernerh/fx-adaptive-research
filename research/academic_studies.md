@@ -865,3 +865,11 @@ US session. That is unproven, which is exactly why E001 comes first.
   Bund auction-results history (not in repo; download source not verified) and the effect (~4 bp per SD, ~4-5 pips) on roughly
   monthly 10y Bund auctions (~70 dev events, UNVERIFIED count) is below the lesson R090 power floor at a daily horizon. Not added
   (refill note R158). **Status:** partial text
+
+### Hossfeld & Röthig (2015), Bundesbank Discussion Paper 41/2015 (added 2026-11-14 R160)
+- "Do speculative traders anticipate or follow USD/EUR exchange rate movements?" ([PDF](https://bundesbank.de/resource/blob/703976/fcd518354ae96703103d929dfea7582e/472B63F073F071307366337C94F8C870/2015-11-30-dkp-41-data.pdf));
+  opened 2026-11-14 R160 via a fetch summary (quotes below as relayed; treat numbers as UNVERIFIED until read directly).
+- **Finding:** weekly CFTC net positions in EUR futures vs USD/EUR (ECB fixing), 1999-2015; FX changes lead position changes; positions
+  do not reliably predict FX once Benjamini-Hochberg/Bonferroni corrections are applied ("the evidence does not support a leading
+  indicator role in the other direction").
+- **Relevance:** Low. Weekly COT positioning is not a usable EUR/USD direction signal per this paper; no bond lead-lag. **Status:** read (summary)
