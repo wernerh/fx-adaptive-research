@@ -987,3 +987,16 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding:** daily BTC/LTC/XRP/DASH 2013-2017; "The only exception is BitCoin, for which returns on Mondays are significantly higher";
   authors: "no conclusive evidence that the cryptocurrency market is inefficient". No fiat FX variable.
 - **Relevance:** None (no crypto -> EUR/USD test). **Status:** full text
+
+### Baum, Schäfer & Stephan (2016), "Credit rating agency downgrades and the Eurozone sovereign debt crises", Journal of Financial Stability 24, 117-131 (doi:10.1016/j.jfs.2016.05.001) (added 2026-11-14 R169)
+- [EconPapers record](https://econpapers.repec.org/article/eeefinsta/v_3a24_3ay_3a2016_3ai_3ac_3ap_3a117-131.htm) opened via web-fetch
+  (abstract only; full text subscriber-only, not opened).
+- **Finding (abstract):** Moody's/S&P/Fitch euro-area sovereign downgrades, watchlist and outlook changes 2010-2012 "had no impact on
+  the value of the Euro currency" "but increased exchange rate volatility" (event study + GARCH). Event count and window: UNVERIFIED.
+- **Relevance:** None for direction (null level effect; sample precedes dev). **Status:** abstract only
+
+### Yang & Zhang (2011), "The Impacts of Sovereign Credit Ratings on Exchange Rates - Evidence from Eurozone Sovereign Debt Crisis", Lund University master's thesis (added 2026-11-14 R169)
+- [LUP record](https://lup.lub.lu.se/student-papers/search/publication/1973880) opened via web-fetch (abstract only; not peer-reviewed).
+- **Finding (abstract):** 2009-01-01 to 2011-03-31; rating announcements "greatly affect the volatility rather than the mean of USD/EUR".
+  Sign, window, event count: UNVERIFIED.
+- **Relevance:** None for direction. **Status:** abstract only

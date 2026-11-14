@@ -1896,3 +1896,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (bitcoin Monday returns higher, 2013-2017), no fiat FX variable. Entries in research/academic_studies.md.
 - No item added (rule 3 / R090: no verified EUR/USD direction basis; no dev intervention events; crypto data not in repo). pytest 434
   passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R169 (not an item; no item added)
+- 2026-11-14 R169 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "rating"/"TLTRO" entry
+  in the backlog before this run): (a) euro-area sovereign credit-rating announcements -> EUR/USD drift; (b) ECB TLTRO repayment /
+  excess-liquidity dates -> EUR/USD. Two standard searches. (a) Opened Baum-Schäfer-Stephan (2016, JFS, doi:10.1016/j.jfs.2016.05.001;
+  abstract): downgrades "had no impact on the value of the Euro currency", only on volatility (2010-2012, before dev); Yang-Zhang (2011,
+  Lund master's thesis, abstract): effect on "volatility rather than the mean of USD/EUR". No verified direction effect; a ratings
+  history is also not in the repo. (b) Returned only ECB Economic Bulletin boxes and an ECB MMCG money-market slide deck plus a broker
+  commentary page (not opened; no FX return study); TLTRO repayment dates are ~quarterly, far below the R090 power floor.
+- No item added (rule 3 / R090: null or no EUR/USD direction basis). pytest 434 passed. 0 trials used (dev 259, val 9, total 268).
+  Not a pipeline failure.
