@@ -1556,3 +1556,11 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on euro-area sovereign rating announcements and ECB TLTRO repayment dates ->
   EUR/USD. Published evidence is null for direction (volatility only) -> no item added (refill note R169). No lead, no notification.
 - **Next run:** another refill unless the human adds items (R105 data-needs list unchanged).
+
+## 2026-11-14 R170 (unattended)
+- **State:** no research-batch run queued or in progress; last run 43541310326 already recorded (E049); no `ready` backlog item.
+  Local main was stale/diverged; left untouched, work done on local branch run-r170 from origin/main and pushed to main.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on index/portfolio rebalancing flows and TGA swings -> EUR/USD.
+  No new verified, pre-registrable basis -> no item added (refill note R170). No lead, no notification.
+- **Next run:** another refill unless the human adds items (R105 data-needs list unchanged). Refill yield has been zero for R158-R170;
+  the human may want to add items or redirect the line.

@@ -1000,3 +1000,10 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (abstract):** 2009-01-01 to 2011-03-31; rating announcements "greatly affect the volatility rather than the mean of USD/EUR".
   Sign, window, event count: UNVERIFIED.
 - **Relevance:** None for direction. **Status:** abstract only
+
+### Vissing-Jorgensen (2025), "Fluctuations in the Treasury General Account and their effect on the Fed's balance sheet", FEDS Notes 2025-08-06 (doi:10.17016/2380-7172.3873) (added 2026-11-14 R170)
+- [IDEAS record](https://ideas.repec.org/p/fip/fedgfn/2025-08-06.html) opened via web-fetch (abstract only). The full note on
+  federalreserve.gov could not be opened this run (fetch permission timed out); its contents are UNVERIFIED.
+- **Finding (abstract):** describes the TGA as the government's deposits at the Fed providing payment services; no exchange-rate
+  variable in the abstract. Any USD or EUR/USD effect: UNVERIFIED.
+- **Relevance:** None for now (no verified EUR/USD direction; daily TGA series not in repo). **Status:** abstract only

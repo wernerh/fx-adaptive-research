@@ -1907,3 +1907,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   commentary page (not opened; no FX return study); TLTRO repayment dates are ~quarterly, far below the R090 power floor.
 - No item added (rule 3 / R090: null or no EUR/USD direction basis). pytest 434 passed. 0 trials used (dev 259, val 9, total 268).
   Not a pipeline failure.
+
+### Refill note R170 (not an item; no item added)
+- 2026-11-14 R170 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "index rebalancing" or
+  "TGA" entry in research/ before this run): (a) equity-index rebalancing / global portfolio rebalancing flows -> EUR/USD; (b) US Treasury
+  General Account (TGA) swings -> USD. Two standard searches. (a) Returned only the Camanho-Hau-Rey global-rebalancing family (already
+  logged R079 and tested as B35/B36, E037) and unrelated MPRA/blog PDFs (not opened). (b) Opened the IDEAS record of Vissing-Jorgensen
+  (2025, FEDS Notes, abstract): TGA and Fed balance sheet, no exchange-rate result; full note not opened (UNVERIFIED). Other results were
+  NY Fed FX quarterly reports and Treasury reporting-rate tables (not studies).
+- No item added (rule 3 / R090: (a) already tested; (b) no verified EUR/USD direction basis, TGA series not in repo). pytest 434 passed.
+  0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
