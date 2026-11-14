@@ -852,3 +852,16 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (abstract):** foreign euro-area debt auctions spill over into domestic secondary-market yield auction cycles; domestic
   cycles stronger in the crisis period, cross-border effects stronger pre-crisis. No exchange-rate result in the abstract.
 - **Relevance:** Low. No EUR/USD basis for an auction-day item (R152 refill note).
+
+### Zou (2025, working paper, UNVERIFIED venue): Bond Demand and the Yield-Exchange Rate Nexus: Risk Premium vs. Convenience Yield
+- **Source:** Dongchen Zou (Indiana University, Kelley), draft July 2025, no DOI
+  ([PDF](https://fbe.unimelb.edu.au/__data/assets/pdf_file/0003/5462940/paper_128.pdf)); opened 2026-11-14 R158, ~26% read verbatim,
+  rest only via a fetch summary (summary-only details below are marked UNVERIFIED).
+- **Finding (verbatim):** "I focus on 10-year government bond auctions"; "a unit increase in the bid-to-cover ratio appreciates the
+  domestic currency by approximately 16 basis points"; "domestic currency begins appreciating on the auction day as the bid-to-cover
+  ratio rises". G10 incl. the euro (Bund as euro benchmark, UNVERIFIED); daily, ~2002-2022, window k = -4..+5 days, ~4 bp per 1 SD,
+  p < 0.05 (all UNVERIFIED, summary only). Auction data from commercial vendors (UNVERIFIED).
+- **Relevance:** Low for us. Signal is the auction *outcome* (bid-to-cover), released at auction time, so a tradable version needs a
+  Bund auction-results history (not in repo; download source not verified) and the effect (~4 bp per SD, ~4-5 pips) on roughly
+  monthly 10y Bund auctions (~70 dev events, UNVERIFIED count) is below the lesson R090 power floor at a daily horizon. Not added
+  (refill note R158). **Status:** partial text

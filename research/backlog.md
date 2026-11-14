@@ -1767,3 +1767,17 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 
 ### B59v: B59 val confirmation (signal test, val only) · `done` (2026-11-14 R157: closed unearned, 0 trials; B59 NONE on dev (E049). Was: earned only if B59 returns SIGNAL on dev)
 - B59 unchanged on val, own pre-registration, 1 val trial, < 120 trades -> NONE, p < 0.05.
+
+### Refill note R158 (not an item; no item added)
+- 2026-11-14 R158 refill pass after E049 (B59 NONE). Angles: (a) retail FX positioning as a contrarian EUR/USD signal; (b) daylight-
+  saving-time transitions; (c) predictable cross-border payment flows (coupons/redemptions/rebalancing) around payment dates.
+  (a) search returned DailyFX/TradingView commentary (not evidence, not opened) and one academic record (UCLan clok 55052, "News and
+  intraday retail investor order flow in foreign exchange markets"): redirect to knowledge.lancashire.ac.uk not answered in time, not
+  retried; nothing recorded from it. Retail-positioning history is also not in the repo. (b) Nower (2024) opened again; it was
+  already in the library and closed by refill note R114 (R090 power floor) - no change. (c) Three hits opened: Zou (2025) WP
+  (Bund/G10 10y auction bid-to-cover -> domestic currency appreciation; entry in research/academic_studies.md) and two versions of
+  Jansen-Shin-von Peter (2024; quarterly euro-investor EME bond holdings, no event study, not recorded as a source). No payment-date study.
+- Not added: a Bund-auction bid-to-cover item needs an auction-results history (no verified downloadable source) and is below the
+  R090 power floor (~4-5 pip daily effect, ~70 dev events, UNVERIFIED count); R152 already found no FX basis for plain auction days.
+- No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure (last run
+  43541310326 success, recorded as E049).

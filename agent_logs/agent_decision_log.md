@@ -1491,3 +1491,11 @@ Why each run chose what it did, and any judgement calls.
   1 pip; not queued (lesson R076).
 - **Action:** E049 recorded; B59 `done`, B59v closed unearned (0 trials). Trials dev 259, val 9, total 268. No lead, no notification.
 - **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).
+
+## 2026-11-14 R158 (unattended)
+- **State:** last research-batch run 43541310326 completed and recorded (E049). No run queued or in progress. No `ready` backlog item.
+  Local `main` had diverged from `origin/main` (stale clone); kept as `backup-stale-main` locally and reset `main` to `origin/main`.
+  pytest 434 passed.
+- **Choice:** refill (protocol priority 4). Three new angles (retail positioning, cross-border payment-date flows) plus a DST
+  re-check; no verified, adequately powered EUR/USD basis found -> no item added (refill note R158). No lead, no notification.
+- **Next run:** backlog still has no `ready` item -> another refill unless the human adds items (R105 data-needs list unchanged).
