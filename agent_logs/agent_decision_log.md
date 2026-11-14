@@ -1596,3 +1596,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on FOMC blackout period and US Treasury coupon payment dates -> EUR/USD.
   No new verified, pre-registrable basis -> no item added (refill note R175). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R175.
+
+## 2026-11-14 R176 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43541310326 completed, recorded as E049); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on Friday/pre-weekend intraday EUR/USD pattern and illiquidity shocks ->
+  EUR/USD. No new verified, pre-registrable basis -> no item added (refill note R176). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R176.

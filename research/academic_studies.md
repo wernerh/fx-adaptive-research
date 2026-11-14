@@ -1047,3 +1047,9 @@ US session. That is unproven, which is exactly why E001 comes first.
   to lag length zero" (contemporaneous, not a forecast). EUR/USD monthly correlation 0.76 (Table 4), in-sample. "the results suggest that
   the latter is an important driver of price dynamics in the FOREX". No trading rule backtested, no costs, no out-of-sample test.
 - **Relevance:** None: contemporaneous monthly relation, no lagged direction basis; monthly horizon below the R090 power floor. **Status:** read (partial)
+
+### Popović & Đurović, "Intraweek and intraday trade anomalies: evidence from FOREX market", Applied Economics 46(32), 3968-3979, 2014, doi:10.1080/00036846.2014.948676 (added 2026-11-14 R176)
+- **Opened:** IDEAS/RePEc record https://ideas.repec.org/a/taf/applec/v46y2014i32p3968-3979.html (abstract only; full text paywalled; econbiz record returned a bot-block page, not retried).
+- **Data:** hourly EUR/USD, "Swiss FOREX market", 2004-01-01 .. 2014-01-11; ANOVA, t-tests and Tukey HSD on day, hour and day-by-hour mean returns.
+- **Finding (abstract):** "The best arbitrage opportunity is evidenced on Fridays, when selling USD and buying EUR at 00:00", reversed at 03:00 the same day. No magnitude, significance figures or costs in the abstract; the clock time zone of "00:00" is UNVERIFIED (server time not stated).
+- **Relevance:** Low. If 00:00 is CET/CEST, the window is 18:00-21:00 America/New_York on trading-date Friday, which E009 already scanned on dev (Fri_ny_18 +0.685, Fri_ny_19 -0.471, Fri_ny_20 +0.021 pips, all NONE; sum ~+0.2 pips, below the 1-pip bar) and which sits in the post-roll 18:00 NY family tested on val as B9/B10 (E012, WEAK/NONE). **Status:** read (abstract)

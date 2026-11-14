@@ -1975,3 +1975,15 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Treasury-demand papers and market news (not event studies of coupon dates; not opened); no study.
 - No item added (rule 3 / R090: (a) already covered, needs futures data; (b) no study). pytest 434 passed. 0 trials used (dev 259,
   val 9, total 268). Not a pipeline failure.
+
+### Refill note R176 (not an item; no item added)
+- 2026-11-14 R176 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Friday afternoon",
+  "pre-weekend" or "Amihud"/"illiquidity" entry in research/ or knowledge/ before this run): (a) Friday / pre-weekend intraday EUR/USD
+  return pattern; (b) Amihud-type illiquidity shocks -> later EUR/USD returns. Two standard searches. (a) Opened the IDEAS record of
+  Popović-Đurović (2014, Applied Economics 46(32), doi:10.1080/00036846.2014.948676; abstract only): EUR/USD 2004-2014, long Friday
+  00:00 -> 03:00 (time zone UNVERIFIED), no magnitude or costs. If CET, that is 18:00-21:00 NY trading-date Friday, already scanned on
+  dev by E009 (Fri_ny_18/19/20 all NONE, sum ~+0.2 pips) and part of the post-roll 18:00 NY family (B9/B10, E012). Entry in
+  research/academic_studies.md. (b) Returned cross-sectional / equity liquidity papers (arXiv:2609.00943, AEA/NBER/JFE PDFs; not
+  single-pair direction studies, not opened); FX volume/illiquidity history beyond tick counts is not in the repo.
+- No item added (rule 3 / R090: (a) dev already scanned and sub-pip, val family already used; (b) no study). pytest 434 passed. 0 trials
+  used (dev 259, val 9, total 268). Not a pipeline failure.
