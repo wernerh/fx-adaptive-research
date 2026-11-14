@@ -1873,3 +1873,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   signed or delayed FX direction. Entries in research/academic_studies.md.
 - No item added (rule 3 / R090: (a) no single fixed rule to pre-register, look-ahead unverified, GDELT history too large for the runner;
   (b) no verified direction basis). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R167 (not an item; no item added)
+- 2026-11-14 R167 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "weather"/"sunshine" or
+  "football"/"soccer"/"World Cup" entry in research/ or knowledge/ before this run): (a) financial-centre weather (mood) -> daily EUR/USD
+  returns; (b) international football results -> next-day currency returns. Two standard searches. (a) Opened Andrikopoulos-Wang-Zheng
+  (2019, FRL 30, accepted manuscript, full text): New York weather vs daily EUR/USD 2002-2018, only 10%-level coefficients, authors
+  conclude no effect ("may have dissipated after discovery"). (b) Opened Demir-Lau-Fung (2014, JASF) abstract (Turkish lira only, win
+  effect for the national team) and Samadi (2017, Erasmus thesis, ~80%: German team results vs DAX, null). Entries in
+  research/academic_studies.md.
+- No item added (rule 3 / R090: no verified EUR/USD effect; weather series not in repo; euro-area tournament match days far below the
+  power floor). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

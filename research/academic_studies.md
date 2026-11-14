@@ -957,3 +957,22 @@ US session. That is unproven, which is exactly why E001 comes first.
   drift)"; no post-speech continuation/drift test for FX in the text read. OIS: IMC events before tightening decisions shift the short
   end "in the same direction as the subsequent policy move" (rates, not FX).
 - **Relevance:** Low. No signed or delayed EUR/USD direction; the speech tone is known only after the event. **Status:** partial text
+
+### Andrikopoulos, Wang & Zheng (2019), "Is There Still A Weather Anomaly? An Investigation of Stock and Foreign Exchange Markets", Finance Research Letters 30, 51-59, DOI 10.1016/j.frl.2019.03.026 (added 2026-11-14 R167)
+- [Accepted manuscript](https://hull-repository.worktribe.com/OutputFile/1571292) opened via web-fetch (essentially full text; some table
+  cells garbled); [record](https://hull-repository.worktribe.com/output/1562223) opened for metadata.
+- **Data/design:** daily, 02/01/2002 - 29/06/2018 (N 4,077); seven weather variables (wind, temperatures, humidity, precipitation,
+  temperature range dummy); New York weather for USD pairs (incl. EUR/USD), London for GBP pairs; OLS (Newey-West) and logit.
+- **Finding:** "the weather has no effect during 2002–2018, suggesting that any effect may have dissipated after discovery"; "only nine
+  out of 294 ... coefficients are significant." EUR/USD: low temperature -0.0002 (t -1.91), average temperature +0.0002 (t 1.67), 10% only;
+  logit nothing significant. No trading or cost test.
+- **Relevance:** None (null for EUR/USD; weather data not in repo). **Status:** full text
+
+### Demir, Lau & Fung (2014), "The Effect of International Soccer Games on Exchange Rates Using Evidence from Turkey", Journal of Advanced Studies in Finance 5(2), 145-156 (added 2026-11-14 R167)
+- [Huddersfield record](https://pure.hud.ac.uk/en/publications/the-effect-of-international-soccer-games-on-exchange-rates-using-/)
+  opened via web-fetch (abstract only; frequency, size, significance UNVERIFIED).
+- **Finding (abstract):** TRY vs USD/EUR, 2003-2010: "draws and losses do not affect the exchange rates"; win effect "exists only for the
+  Turkish national team" (lira appreciates). No EUR/USD, no euro-area team.
+- Also opened: Samadi (2017), Erasmus bachelor thesis, [PDF](https://thesis.eur.nl/pub/39256/Samadi-H.-416255-.pdf) (~80% verbatim):
+  German national team results vs next-day DAX, 79 matches 1990-2016: "no statistical significant relationship was found". No FX.
+- **Relevance:** None (no EUR/USD basis; major-tournament match days ~10-20 in dev, far below the R090 power floor). **Status:** abstract / partial text
