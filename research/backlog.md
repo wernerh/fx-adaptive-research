@@ -1863,3 +1863,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   predicted by pre-fix order flow (2.5-3.5 bp, data not in repo). Entries in research/academic_studies.md.
 - No item added (rule 3 / R090: effect ~0.05 pips, far below the 1-pip bar and costs; tweet series and order flow not in repo; fix family
   closed). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R166 (not an item; no item added)
+- 2026-11-14 R166 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "GDELT" and only two
+  "speech" mentions in research/ and knowledge/ before this run): (a) daily news tone (GDELT) -> next-day EUR/USD direction;
+  (b) ECB Executive Board speeches -> post-speech EUR/USD drift. Two standard searches. (a) Opened Zhang (2025, arXiv:2505.16136v1,
+  full text): fitted XGBoost on GDELT-linked headline sentiment + technicals, EUR/USD next-day Sharpe 5.87 (logistic 0.83), timestamp
+  handling not explained, no CIs. (b) Opened Istrefi-Odendahl-Sestieri (2025, CEMLA, ~30% verbatim): absolute 90-min impacts only, no
+  signed or delayed FX direction. Entries in research/academic_studies.md.
+- No item added (rule 3 / R090: (a) no single fixed rule to pre-register, look-ahead unverified, GDELT history too large for the runner;
+  (b) no verified direction basis). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

@@ -1535,3 +1535,10 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on FX option-expiry pinning (10:00 NY cut) and geopolitical-risk index ->
   EUR/USD. No verified EUR/USD direction basis or data -> no item added (refill note R164). No lead, no notification.
 - **Next run:** another refill unless the human adds items (R105 data-needs list unchanged).
+
+## 2026-11-14 R166 (unattended)
+- **State:** no research-batch run queued or in progress; last run 43541310326 already recorded (E049); no `ready` backlog item.
+  Local clone was stale/diverged; kept as branch backup-stale-main-20261114 locally (not pushed) and reset to origin/main.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on GDELT news tone -> next-day EUR/USD and ECB speeches -> EUR/USD drift.
+  No pre-registrable verified basis or runner-feasible data -> no item added (refill note R166). No lead, no notification.
+- **Next run:** another refill unless the human adds items (R105 data-needs list unchanged).

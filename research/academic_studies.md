@@ -935,3 +935,25 @@ US session. That is unproven, which is exactly why E001 comes first.
   Matching order imbalance is followed by "a post-fix reversal of around 2.5 to 3.5 basis points" (AUD/GBP regressions shown; EUR not
   confirmed); "most of the trading profits disappear when transaction costs are incorporated". Order-flow data not in repo.
 - **Relevance:** None new (family closed; order flow unavailable). **Status:** partial text
+
+### Zhang (2025), "Interpretable Machine Learning for Macro Alpha: A News Sentiment Case Study", arXiv:2505.16136v1 (added 2026-11-14 R166)
+- [arXiv HTML](https://arxiv.org/html/2505.16136v1) opened via web-fetch (full text read); single author, personal capacity, not peer reviewed.
+- **Data/design:** GDELT v2 event records (EventCode 100-199, top 100 events/day by num_articles), headlines re-fetched from stored URLs
+  and scored for sentiment, plus technical features; daily, Jan 2015 - Apr 2025; target = sign of next-day close-to-close log return
+  for EUR/USD, USD/JPY and ZN futures; always long/short; expanding TimeSeriesSplit (5 folds), OOS ~2017 - Apr 2025.
+- **Finding (Table 1, authors' figures):** EUR/USD XGBoost CAGR 55.4%, Sharpe 5.87, "Win (%)" 72.7, 1158 trades; logistic baseline
+  CAGR 6.6%, Sharpe 0.83, win 53.1%. Costs "0.02% of the traded value per round-trip"; block-bootstrap CIs "not explicitly detailed".
+- **Concerns:** Sharpe ~5.9 at ~7% vol is implausible for a daily FX rule; how GDELT/headline timestamps map to the day-t close is not
+  explained (headlines fetched later from URLs: look-ahead risk UNVERIFIED either way); signal is a fitted ML model, not a fixed rule.
+- **Relevance:** Low. Not reproducible as one pre-registered rule; GDELT event/headline history for 2015-2023 is not in repo and is too
+  large for the runner (daily event files plus headline scraping). **Status:** full text
+
+### Istrefi, Odendahl & Sestieri (2025-04-15), "ECB communication and its impact on financial markets", CEMLA 2025 meeting paper (added 2026-11-14 R166)
+- [PDF](https://www.cemla.org/actividades/2025/2025-11-xxx-meeting-central-bank-researchers/papers/ECB%20communication%20and%20its%20impact%20on%20financial%20markets.pdf)
+  opened via web-fetch (~30% verbatim, rest model summary, untrusted).
+- **Data/design:** EA-CED database, 304 Governing Council meetings and ~5,100 inter-meeting communication events, Jan 1999 - Feb 2024;
+  47 variables incl. EUR/USD; speeches/interviews use a 90-min window, 15-min medians before vs after; database "publicly available".
+- **Finding (verbatim part):** reported impacts are **absolute** (no signed direction); variance model assumes Brownian motion "(without
+  drift)"; no post-speech continuation/drift test for FX in the text read. OIS: IMC events before tightening decisions shift the short
+  end "in the same direction as the subsequent policy move" (rates, not FX).
+- **Relevance:** Low. No signed or delayed EUR/USD direction; the speech tone is known only after the event. **Status:** partial text
