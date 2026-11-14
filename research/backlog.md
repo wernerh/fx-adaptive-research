@@ -1962,3 +1962,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   studies, not opened).
 - No item added (rule 3 / R090: (a) no lagged EUR/USD direction basis beyond the already-rejected weekend-gap line; (b) no study).
   pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R175 (not an item; no item added)
+- 2026-11-14 R175 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "blackout" or "coupon
+  payment" entry in research/ or knowledge/ before this run): (a) FOMC communication blackout (quiet) period -> USD / EUR/USD drift;
+  (b) US Treasury coupon payment dates (15th / month-end) -> foreign-holder USD selling -> EUR/USD. Two standard searches.
+  (a) Opened the AEA 2017 conference copy of Karnaukh, "The Dollar Ahead of FOMC Target Rate Changes"
+  (https://topcat.aeaweb.org/conference/2017/preliminary/paper/RAK7GsSa, job-market version dated 2016-11-25; ~40% verbatim): tests the
+  two-day pre-FOMC window conditional on fed funds futures signals ("The week before FOMC meetings is known as the blackout period"),
+  dollar index, 1994-2015; already in research/academic_studies.md and closed as the pre-FOMC family (backlog line 448; futures data not
+  in repo). Other hits (Borisenko-Pozdeev, Mueller-Tahbaz-Salehi-Vedolin, RAPS 2025) already logged. (b) Returned NBER convenience-yield /
+  Treasury-demand papers and market news (not event studies of coupon dates; not opened); no study.
+- No item added (rule 3 / R090: (a) already covered, needs futures data; (b) no study). pytest 434 passed. 0 trials used (dev 259,
+  val 9, total 268). Not a pipeline failure.
