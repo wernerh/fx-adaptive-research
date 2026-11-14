@@ -1938,3 +1938,15 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   GO Markets; not studies, not opened); one holiday week per year gives ~3 dev events, far below the R090 power floor.
 - No item added (rule 3 / R090: (a) no verified EUR/USD basis, no tested rule; (b) no study, below power floor). pytest 434 passed.
   0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R173 (not an item; no item added)
+- 2026-11-14 R173 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "EIA inventory" or
+  "Jackson Hole" entry in research/ or knowledge/ before this run; EIA appears only as a calendar label in E041 methodology):
+  (a) EIA weekly crude-inventory release (Wed 10:30 NY) -> EUR/USD drift; (b) Jackson Hole symposium -> EUR/USD. Two standard searches.
+  (a) Opened Geman-Li (2018, J. Energy Markets 11(2), doi:10.21314/JEM.2018.174; abstract only, paywalled): WTI response lasts ~25 min,
+  no FX variable; and the Wen-Indriawan-Lien-Xu Energy Journal 44(5) executive summary: WTI intraday momentum on EIA days, no FX. The
+  oil -> EUR/USD lag family is already tested (E041); inventory consensus/surprise data not in repo. (b) Returned only broker/news
+  commentary (FXStreet, Convera, Forex.com, Euronext news; not studies, not opened); one event per year gives ~6 dev events, far below
+  the R090 power floor. Entries in research/academic_studies.md.
+- No item added (rule 3 / R090: no verified EUR/USD basis; (b) below power floor). pytest 434 passed. 0 trials used (dev 259, val 9,
+  total 268). Not a pipeline failure.

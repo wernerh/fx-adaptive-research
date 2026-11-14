@@ -1024,3 +1024,17 @@ US session. That is unproven, which is exactly why E001 comes first.
   ("intraday ones are anti-persistent"). Profitability of intraday reversal strategies is inferred from H values, not tested; no trading
   rule, no out-of-sample or direction test.
 - **Relevance:** None directly: no FX data. Intraday mean-reversion families on EUR/USD are already tested in this repo. **Status:** verified (no FX)
+
+### Geman & Li (2018), "An analysis of intraday market response to crude oil inventory shocks", Journal of Energy Markets 11(2), 1-35 (added 2026-11-14 R173)
+- [Risk.net abstract page](https://www.risk.net/node/5728636), doi:10.21314/JEM.2018.174, opened via web-fetch (~10%: abstract and
+  "need to know" bullets; full text paywalled).
+- **Finding:** WTI crude futures only: "a positive (negative) inventory shock will result in an immediate price decline (rise)", effects
+  "lasting for about twenty-five minutes". No exchange-rate variable in the readable text (any FX result UNVERIFIED).
+- **Relevance:** None directly: no FX test; EIA consensus/surprise series not in repo. **Status:** abstract only (no FX)
+
+### Wen, Indriawan, Lien & Xu, "Intraday Return Predictability in the Crude Oil Market: The Role of EIA Inventory Announcements", The Energy Journal 44(5) (added 2026-11-14 R173)
+- [IAEE executive summary PDF](https://www.iaee.org/ej/ejexec/ej44-5-Xu-exsum.pdf) opened via web-fetch (executive summary only, <5% of
+  the paper; year/DOI not shown in fetched text).
+- **Finding:** WTI intraday momentum on EIA days: third half-hour return "can significantly and positively predict the returns in the
+  last half-hour". No exchange-rate variable.
+- **Relevance:** None directly: crude only; the oil -> EUR/USD lag family was already tested (E041). **Status:** exec summary only (no FX)
