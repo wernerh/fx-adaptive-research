@@ -891,3 +891,11 @@ US session. That is unproven, which is exactly why E001 comes first.
   reported insignificant (UNVERIFIED figures from summary).
 - **Relevance:** Low. Cross-sectional result, not a single-pair time-series signal; Bloomberg implied-vol history not in repo and no free
   source verified. **Status:** partial text
+
+### Hashemi (2025), "Intraday Stock Return Prediction: A Comparative Study of Econometrics and Machine Learning Models" (added 2026-11-14 R162)
+- M.Sc. thesis, HEC Montréal, August 2025 (supervisor V. Grégoire); [PDF](https://biblos.hec.ca/biblio/memoires/hashemi_zahrasadat_m2025.pdf)
+  opened via web-fetch (cover-p. 12 and appendices/tables verbatim; middle chapters incl. the backtest only via summary, UNVERIFIED).
+- **Finding:** US stocks/ETFs (TAQ), predictors from open to 13:00 incl. relative VWAP (log vwap_1pm/open) and morning momentum, target
+  13:00 -> close return; Lasso / random-forest out-of-sample R^2 about 0.07-0.21 for returns (Table 1, verbatim); "order-flow measures
+  are substantially more predictable than returns". Backtest figures and any VWAP-reversion sign are summary-only and gross of costs.
+- **Relevance:** Low. Equity-only, no FX; no verified VWAP-deviation direction result for any currency pair. **Status:** partial text

@@ -1815,3 +1815,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   ~100 opening-statement events 2002-2023 and no published event list. (b) Opened Babiak-Baruník (arXiv:2101.09738): cross-sectional
   monthly sorts over 20 currencies, not a single-pair signal; implied-vol data not in repo. Entries in research/academic_studies.md.
 - No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R162 (not an item; no item added)
+- 2026-11-14 R162 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles: (a) session-VWAP deviation
+  mean reversion (strategy S004 "Session VWAP mean reversion" has been `research_candidate` since 2026-11-07 with no evidence basis; no
+  VWAP entry in research/ before this run); (b) intraday time-series momentum (first-period return -> last-period return) in FX. Two
+  standard searches. (a) returned TradingView/FXStreet/NexusFi/blog pages (not evidence, not opened), arXiv:1609.04640 (minute-horizon
+  lead-lag networks, family already judged below the tradable horizon, note ~line 655) and Cespa et al. 2021 (already tested, E033).
+  Opened: Hashemi (2025, HEC Montréal M.Sc. thesis; entry in research/academic_studies.md): US equities only, VWAP used as an ML feature,
+  no FX and no verified reversion sign. (b) returned only Elaut-Frömmel-Lampaert 2018 (RUB/USD, already in academic_studies.md and the
+  backlog), Gao et al. (equities) and the Reading intraday-TSMOM manuscript (already logged, R-note ~line 1016); E027 already tested the
+  London-close momentum variant. No verified FX direction basis for S004.
+- No item added (rule 3). S004 stays `research_candidate` (no evidence to pre-register against). pytest 434 passed. 0 trials used
+  (dev 259, val 9, total 268). Not a pipeline failure.
