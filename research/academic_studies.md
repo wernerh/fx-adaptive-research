@@ -899,3 +899,12 @@ US session. That is unproven, which is exactly why E001 comes first.
   13:00 -> close return; Lasso / random-forest out-of-sample R^2 about 0.07-0.21 for returns (Table 1, verbatim); "order-flow measures
   are substantially more predictable than returns". Backtest figures and any VWAP-reversion sign are summary-only and gross of costs.
 - **Relevance:** Low. Equity-only, no FX; no verified VWAP-deviation direction result for any currency pair. **Status:** partial text
+
+### Franz (2020), "Central bank information shocks and exchange rates", Deutsche Bundesbank DP 13/2020 (added 2026-11-14 R163)
+- [PDF](https://bundesbank.de/resource/blob/828896/2d2e88314163a04e1eb8af798401a1e4/mL/2020-03-20-dkp-13-data.pdf) opened via
+  web-fetch (~40% verbatim, rest summary-only; event count and impulse-response magnitudes UNVERIFIED).
+- **Finding:** ECB Governing Council meetings 2002-2018, high-frequency 2y Bund / Euro STOXX 50 surprises as proxies, monthly BVAR:
+  EUR "appreciates strongest directly on impact following a monetary policy shock", fading to insignificance after about two years;
+  "I do not find a significant reaction of the nominal effective EUR exchange rate" to information shocks; EUR-USD the only pair with
+  some delayed overshooting.
+- **Relevance:** Low. Monthly macro horizon, no intraday or daily post-event EUR/USD drift; surprise series not in repo. **Status:** partial text

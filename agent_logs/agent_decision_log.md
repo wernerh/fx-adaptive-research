@@ -1521,3 +1521,10 @@ Why each run chose what it did, and any judgement calls.
   never-tested S004 candidate) and intraday time-series momentum in FX. No verified EUR/USD direction basis -> no item added (refill
   note R162). No lead, no notification.
 - **Next run:** another refill unless the human adds items (R105 data-needs list unchanged).
+
+## 2026-11-14 R163 (unattended)
+- **State:** no research-batch run queued or in progress; last run 43541310326 already recorded (E049); no `ready` backlog item.
+  Local clone had stale divergent history; reset to origin/main before work (no local-only work lost; tree was clean).
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on lagged BTP-Bund spread -> EUR/USD and ECB accounts / information shocks
+  -> EUR/USD drift. No verified tradable EUR/USD direction basis -> no item added (refill note R163). No lead, no notification.
+- **Next run:** another refill unless the human adds items (R105 data-needs list unchanged).

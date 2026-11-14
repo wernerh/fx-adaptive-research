@@ -1828,3 +1828,17 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   London-close momentum variant. No verified FX direction basis for S004.
 - No item added (rule 3). S004 stays `research_candidate` (no evidence to pre-register against). pytest 434 passed. 0 trials used
   (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R163 (not an item; no item added)
+- 2026-11-14 R163 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles: (a) lagged euro-area
+  sovereign-spread (BTP-Bund) changes -> later EUR/USD direction; (b) ECB monetary-policy accounts / central-bank information shocks ->
+  EUR/USD post-event drift. Two standard searches. (a) returned only commentary on the contemporaneous spread/euro correlation (ING Think,
+  FXStreet, Seeking Alpha, investireoggi; not evidence, not opened); no lagged FX study; spread history not in repo. (b) Opened via
+  web-fetch: Franz (2020), "Central bank information shocks and exchange rates", Deutsche Bundesbank DP 13/2020,
+  [PDF](https://bundesbank.de/resource/blob/828896/2d2e88314163a04e1eb8af798401a1e4/mL/2020-03-20-dkp-13-data.pdf) (~40% verbatim):
+  monthly Bayesian proxy VAR, 36-month responses; EUR "appreciates strongest directly on impact following a monetary policy shock";
+  for information shocks "I do not find a significant reaction of the nominal effective EUR exchange rate". No intraday/daily post-event
+  drift; accounts releases not studied. Entry in research/academic_studies.md.
+- Not added: monthly horizon, no verified tradable post-event EUR/USD direction; ECB-meeting events (~48 dev) below the R090 power floor
+  and the post-ECB drift angle already closed by R129. No item added (rule 3 / R090). pytest 434 passed. 0 trials used (dev 259, val 9,
+  total 268). Not a pipeline failure.
