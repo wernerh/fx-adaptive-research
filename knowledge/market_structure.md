@@ -125,3 +125,8 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - 1735 in-window breakouts, 907 first-per-date setups: 372 retest within 1 pip and hold, 235 failed breaks (close back
   through the level), 300 no retest in 120 min. Retest entry 60 min -0.744 pips (NONE); breakout-close entry 60 min +0.312.
   See experiments/2026-11-13_E048_breakout_retest.
+
+### 2026-11-14 R157: EUR/USD 5m EMA20 crosses with and without 1h/30m/15m EMA20 alignment (E049, dev) [EXP]
+- 26548 5m EMA20 crosses with close in [07:00 London, 12:00 NY); 20046 occur with all three higher timeframes aligned (BULL 9831,
+  BEAR 10215), 8459 in the aligned direction. 60-min continuation: aligned +0.216 pips (n 5317, NONE); unaligned control -0.286
+  (n 8979). See experiments/2026-11-14_E049_mtf_alignment.

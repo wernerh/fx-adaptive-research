@@ -441,3 +441,15 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   1m data shows nothing on dev.
 - **Action:** B58 closed NONE (rejected_hypotheses.md); B58v closed unearned. No re-test with other look-backs, retest tolerances,
   windows, holds or the no-retest variant. Next: B59.
+
+### 2026-11-14 R157: 1h/30m/15m EMA20 alignment with a 5m EMA20-cross trigger has no EUR/USD edge (E049)
+- **Context:** E049 (B59, human-directed), long (short) when the last completed 1h, 30m and 15m closes are all above (below) their
+  EMA20 and a 5m bar closing in [07:00 London, 12:00 NY) crosses its EMA20 in that direction, 60-min hold, non-overlapping, dev, 1 trial.
+- **Observation:** NONE (n 5317, +0.216 pips, date-cluster CI (-0.156, 0.599), t p 0.1469). Unaligned 5m cross -0.286 (descriptive);
+  10m trigger +0.198; SPEC 4 net -0.256 for the tested rule.
+- **Evidence label:** [EXP]
+- **Lesson:** a large, precise sample puts the multi-timeframe trend filter well below the 1-pip bar and below costs. With E048 (break
+  and retest) both human-directed practitioner rules are NONE on dev, consistent with the low prior for technical rules in developed FX
+  (Neely-Weller 2011). A sub-pip lift of a filter over its unfiltered control is not a reason to search nearby settings (lesson R076).
+- **Action:** B59 closed NONE (rejected_hypotheses.md); B59v closed unearned. No re-test with other EMA lengths, timeframes, triggers,
+  windows, holds, one leg, or as a filter on B58. Next: backlog refill.

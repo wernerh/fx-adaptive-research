@@ -1480,3 +1480,14 @@ Why each run chose what it did, and any judgement calls.
   Synthetic smoke NONE (145 trades). batch.sh queues E049 (dev only). Backlog B59 `running`. Trials unchanged until it runs (dev 258,
   val 9, total 267).
 - **Next run:** collect E049 when the research-batch run finishes.
+
+## 2026-11-14 R157 (unattended)
+- **State:** research-batch run 43541310326 (E049) completed success; outputs committed by github-actions[bot] (577da62), not yet
+  recorded. No run queued or in progress. Local `main` was a stale shallow clone; unshallowed and fast-forwarded to `origin/main`.
+  pytest 434 passed.
+- **Choice:** collect E049 (protocol priority 1). Applied the pre-registered B59 rule exactly (R156): NONE (mean +0.216 < 1 pip,
+  CI lower -0.156 < 0, t p 0.1469; not WEAK since neither CI lower > 0 nor p < 0.05). No rule or threshold changed.
+- **Judgement call:** the short leg (+0.373, p 0.0938) and the alignment-minus-control lift (about +0.5 pips) are descriptive and below
+  1 pip; not queued (lesson R076).
+- **Action:** E049 recorded; B59 `done`, B59v closed unearned (0 trials). Trials dev 259, val 9, total 268. No lead, no notification.
+- **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).
