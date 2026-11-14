@@ -917,3 +917,21 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Not on the page (UNVERIFIED):** data frequency, currency list (EUR/USD inclusion), GPR index definition, forecast horizon, sign of
   the effect, costs.
 - **Relevance:** Low until full text is read. No verified EUR/USD sign or horizon; GPR series not in repo. **Status:** abstract only
+
+### Filippou, Gozluklu, Nguyen & Viswanath-Natraj (2025 version), "Signal in the Noise: Trump Tweets and the Currency Market", working paper (added 2026-11-14 R165)
+- [PDF](https://ganeshvnatraj.netlify.app/pubs/trumpfx/trumpFX-paper.pdf) opened via web-fetch (~37% verbatim, rest model summary);
+  version dated 2025-05-03, previously "The Information Content of Trump Tweets and the Currency Market"; journal not stated.
+- **Data:** 14 USD pairs incl. EUR (Thomson Reuters Tick History), minute event study aggregated to 30/60-min windows, hourly panel;
+  sample 2015-06-16 to 2019-08-20.
+- **Finding (abstract, verbatim):** "Informative tweets result in a USD appreciation and a decline in intraday volatility"; about
+  0.5 bp vs an equal-weighted basket, cumulative return peaking "within an hour of the tweet". In-sample UUP ETF rule ~2 bp gross within
+  1 h, costs ~1.5-1.75 bp "naturally absorb some of this return" (authors' figures, not EUR/USD spot).
+- **Relevance:** Low. Effect ~0.05 pips on the basket, far below the 1-pip bar and SPEC 4 costs; needs a tweet timestamp/classification
+  series not in repo; sample overlaps dev only partly. **Status:** partial text
+
+### Krohn, Mueller & Whelan (2021), "Foreign Exchange Fixings and Returns Around the Clock", Bank of Canada SWP 2021-48 (re-opened 2026-11-14 R165)
+- [PDF](https://www.bankofcanada.ca/wp-content/uploads/2021/10/swp2021-48.pdf) opened via web-fetch (~35% verbatim). Same paper family as
+  the KMW entry already in this file (fix reversals, tested E007, E010, E011, E022-E025). New detail read: one-s.d. pre-fix Refinitiv
+  Matching order imbalance is followed by "a post-fix reversal of around 2.5 to 3.5 basis points" (AUD/GBP regressions shown; EUR not
+  confirmed); "most of the trading profits disappear when transaction costs are incorporated". Order-flow data not in repo.
+- **Relevance:** None new (family closed; order flow unavailable). **Status:** partial text

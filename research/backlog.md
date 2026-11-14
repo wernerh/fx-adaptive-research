@@ -1852,3 +1852,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   frequency, currency list, horizon and sign are not stated; GPR data not in repo. Entry in research/academic_studies.md.
 - No item added (rule 3 / R090: no verified EUR/USD sign, horizon or data). pytest 434 passed. 0 trials used (dev 259, val 9,
   total 268). Not a pipeline failure.
+
+### Refill note R165 (not an item; no item added)
+- 2026-11-14 R165 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Trump"/"tweet" or
+  "dollar index"/"DXY" entry in research/ before this run): (a) social-media (presidential tweet) announcements -> later EUR/USD direction;
+  (b) intraday common dollar component / dollar-basket lead-lag -> later EUR/USD returns. Two standard searches. (a) Opened
+  Filippou-Gozluklu-Nguyen-Viswanath-Natraj (2025 WP, ~37% verbatim): informative tweets -> USD appreciation of ~0.5 bp vs basket,
+  peaking within an hour; in-sample UUP rule ~2 bp gross vs ~1.5-1.75 bp costs. (b) Returned only the KMW fixings family (already tested
+  E007-E025) and cross-sectional monthly papers already logged (arXiv:2101.09738, R161); re-opened KMW BoC SWP 2021-48: post-fix reversal
+  predicted by pre-fix order flow (2.5-3.5 bp, data not in repo). Entries in research/academic_studies.md.
+- No item added (rule 3 / R090: effect ~0.05 pips, far below the 1-pip bar and costs; tweet series and order flow not in repo; fix family
+  closed). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
