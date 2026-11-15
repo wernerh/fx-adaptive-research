@@ -2263,3 +2263,18 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) no study, mechanism would be invented here; (b) realised-inflation predictor is a monthly
   release, giving ~72 dev observations, far below the power floor, and EUR/USD coverage is unconfirmed). pytest 434 passed. 0 trials
   used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R196 (not an item; no item added)
+- 2026-11-15 R196 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "reverse repo",
+  "net liquidity" or "weekly financial statement" entry in research/, knowledge/ or rejected_hypotheses.md before this run):
+  (a) Fed liquidity (reserves / overnight reverse repo / Treasury General Account changes) -> later EUR/USD; (b) ECB weekly
+  financial statement (Tuesday release) -> EUR/USD. Two standard searches. (a) Opened Correa, Du & Liao, "U.S. Banks and Global
+  Liquidity", Fed IFDP 1289, July 2020, DOI 10.17016/IFDP.2020.1289 (https://www.federalreserve.gov/econres/ifdp/files/ifdp1289.pdf,
+  ~32% verbatim): daily FR2052a GSIB data; verbatim "an increase in the TGA balance is significantly associated with wider repo and FX
+  swap spreads" (same-day association with funding spreads, not spot returns); no exchange-rate return or forecast test in the part
+  read (unread ~68% UNVERIFIED). Other hits NBER/CEMFI/AEA PDFs not opened, a vendor page and news (not evidence). (b) Hits are ECB
+  monetary-policy-announcement and ECB-statement studies (Fratzscher-type, ETH/KOF WP 07-174; family already covered by earlier
+  "speech"/ECB-announcement refill notes); no study of the weekly financial statement found.
+- No item added (rule 3 / R090: (a) contemporaneous funding-spread result only, no spot-direction mechanism or sign, a forecast
+  rule would be invented here, and weekly TGA/RRP data are not in the repo; (b) no study). pytest 434 passed. 0 trials used (dev 259,
+  val 9, total 268). Not a pipeline failure.

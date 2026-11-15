@@ -1108,3 +1108,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** BIS Quarterly Review, December 2001. [IDEAS](https://ideas.repec.org/a/bis/bisqtr/0112g.html) (opened 2026-11-15 R194, abstract only).
 - **Finding (verbatim abstract):** "the euro depreciated against the dollar by 1.06% - a significant move for a single day" on the Deutsche Telekom/VoiceStream news (19 July 2000).
 - **Relevance:** **Low.** Single-event case study, no statistical test, pre-dates the dev block. Not used. **Status:** read (abstract)
+
+### Correa, Du & Liao (2020): U.S. Banks and Global Liquidity (added 2026-11-15 R196)
+- **Venue:** Federal Reserve IFDP 1289, July 2020, DOI 10.17016/IFDP.2020.1289. [PDF](https://www.federalreserve.gov/econres/ifdp/files/ifdp1289.pdf) (opened 2026-11-15 R196; ~32% read verbatim: cover, abstract, intro, sections 1-3).
+- **Finding (verbatim):** "We find that an increase in the TGA balance is significantly associated with wider repo and FX swap spreads." Daily FR2052a GSIB data; same-day changes; outcomes are funding spreads and bank quantities, not spot FX returns.
+- **Relevance:** **Low.** No exchange-rate return or forecast test in the part read (rest UNVERIFIED); weekly TGA/RRP data not in repo. Not used. **Status:** read (partial)
