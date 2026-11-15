@@ -2097,3 +2097,24 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) no study of the accounts release, needs an accounts-date calendar, and the only opened source is a
   contemporaneous decision-window study needing OIS data; (b) published null, no FX study, no mechanism). pytest 434 passed. 0 trials used
   (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R186 (not an item; no item added)
+- 2026-11-15 R186 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "press conference"
+  reversal or "gold" predictor entry in rejected_hypotheses.md before this run): (a) FOMC press conference (14:30 NY) EUR/USD move
+  reversing the 14:00 statement-window move; (b) lagged gold (XAU/USD) return -> next-day EUR/USD. Two standard searches.
+  (a) Opened Acosta, Ajello, Bauer, Loria, Miranda-Agrippino, "Financial Market Effects of FOMC Communication: Evidence from a New
+  Event-Study Database", FRBSF Working Paper 2025-30 (https://www.frbsf.org/wp-content/uploads/wp2025-30.pdf; paper dated 2026, number
+  2025-30): Table 1 correlation of press-conference and statement rate-futures surprises -0.14 since April 2011 (0.44 in 2015-2019,
+  -0.27 after March 2022); text says press conferences "have tended to counteract" the statement shift. Rate surprises, same-window only,
+  no FX return-reversal test, no trading rule. Also opened Rosa, "The Financial Market Effect of FOMC Minutes", FRBNY Economic Policy
+  Review, December 2013 (https://www.newyorkfed.org/medialibrary/media/research/epr/2013/0913rosa.pdf): volatility/volume around minutes,
+  EUR/USD included, no directional result.
+  (b) Opened Apergis, "Can gold prices forecast the Australian dollar movements?", International Review of Economics and Finance 29
+  (2014) 75-82, DOI 10.1016/j.iref.2013.04.004 (author version:
+  https://espace.curtin.edu.au/bitstream/handle/20.500.11937/4847/197566_197566.pdf?sequence=2): AUD/USD only (commodity-currency
+  terms-of-trade mechanism), RMSE gains vs random walk without significance tests, no costs. A Reading JIMF 2018 revision
+  (https://centaur.reading.ac.uk/82170/9/JIMF_2018_179_Revision%201.pdf) returned a bot-protection page: UNVERIFIED, not circumvented.
+- No item added (rule 3 / R090: (a) ~32 dev scheduled FOMC meetings with a press conference (quarterly before 2019), the FOMC dev sample
+  already used twice (E013, E040), and the published effect is a weak rate-surprise correlation, far below the > 20 pip detectability bar;
+  (b) no EUR/USD study and the mechanism is specific to commodity currencies). pytest 434 passed. 0 trials used (dev 259, val 9, total
+  268). Not a pipeline failure.

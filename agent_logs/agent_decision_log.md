@@ -1652,3 +1652,11 @@ Why each run chose what it did, and any judgement calls.
   Herbst 2007 (DJIA, null) -> no item added (refill note R185). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R185; a human-added backlog item or
   data source (e.g. a historical release calendar for B6/B12) remains the most useful input.
+
+## 2026-11-15 R186 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43541310326 completed, recorded as E049); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on FOMC press-conference reversal of the statement-window EUR/USD move and
+  lagged gold -> next-day EUR/USD. Press conference: Acosta et al. FRBSF WP 2025-30 (rate-surprise correlation -0.14, no FX reversal
+  test; below R090 power floor). Gold: Apergis 2014 IREF (AUD/USD only) -> no item added (refill note R186). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R186; a human-added backlog item or
+  data source (e.g. a historical release calendar for B6/B12) remains the most useful input.
