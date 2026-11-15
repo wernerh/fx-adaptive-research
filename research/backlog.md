@@ -2031,3 +2031,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   no study; ~24 IMM dates on dev, below the R090 power floor anyway. Entry in research/academic_studies.md.
 - No item added (rule 3 / R090: (a) needs options data, cross-sectional; (b) no study, below power floor). pytest 434 passed. 0 trials
   used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R181 (not an item; no item added)
+- 2026-11-15 R181 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "PCE" or "maintenance
+  period" entry in research/ or knowledge/ before this run): (a) US PCE price index release (08:30 NY) -> later EUR/USD drift;
+  (b) ECB reserve maintenance period start / liquidity conditions -> EUR/USD. Two standard searches. (a) Returned only broker/news
+  pages (FXStreet, XTB, Pound Sterling Live) and a macro blog (macroornoise.com; not evidence, not opened); no study. (b) Returned only
+  language variants of an ECB Economic Bulletin 2026 Issue 4 box (ecb.ebbox202604_07); fetch of the English version refused by the
+  tool (not circumvented, content UNVERIFIED, nothing recorded); no FX study.
+- No item added (rule 3 / R090: (a) no study, US-inflation release family partly covered by R148 CPI angle; (b) no verified source).
+  pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
