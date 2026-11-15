@@ -2233,3 +2233,18 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   quoting MUFG; not evidence, not opened); no academic study found.
 - No item added (rule 3 / R090: (a) already covered; (b) no study, and 6 Decembers on dev is far below the power floor). pytest 434
   passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R194 (not an item; no item added)
+- 2026-11-15 R194 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "BTP", "sovereign
+  spread", "M&A" or "merger" entry in research/, knowledge/ or rejected_hypotheses.md before this run): (a) Italian BTP-Bund spread
+  changes -> next-day EUR/USD (lagged daily cross-market signal, lesson R095); (b) cross-border M&A announcements -> EUR/USD.
+  Two standard searches. (a) Hits are bank/broker/news pages only (ING Think, FXStreet, Seeking Alpha, investireoggi; not evidence,
+  not opened); no academic study of a lagged spread -> EUR/USD effect found. (b) Opened Riddiough & Zhang 2022 WP "Cross-Border M&A
+  Flows, Economic Growth, and Foreign Exchange Rates" (https://www.bis.org/events/221213_bis_bdi_ecb_exchange_rates/paper_riddiough.pdf,
+  ~22% verbatim): monthly abnormal net US M&A flows (SDC Platinum) predict next-month currency returns in a 41-country cross-section
+  vs USD; EUR/USD coverage not confirmed; FX-results section not read verbatim (figures UNVERIFIED). Opened the IDEAS record of
+  Fender & Galati 2001, BIS Quarterly Review (https://ideas.repec.org/a/bis/bisqtr/0112g.html, abstract only): one event (Deutsche
+  Telekom/VoiceStream, July 2000), euro -1.06% on the news day, no test.
+- No item added (rule 3 / R090: (a) no study, mechanism would be invented here; (b) needs licensed deal data not in the repo, monthly
+  horizon gives ~72 dev observations far below the power floor, and the EUR/USD evidence is a single 2000 event). pytest 434 passed.
+  0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

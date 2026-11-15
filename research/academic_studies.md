@@ -1098,3 +1098,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** Journal of Bioeconomics 9(1), 1-18. DOI 10.1007/s10818-007-9016-3. [IDEAS](https://ideas.repec.org/a/kap/jbioec/v9y2007i1p1-18.html) (opened 2026-11-15 R185, abstract only).
 - **Finding (verbatim abstract):** "no consistent, predictable lunar influence is found on either daily returns or daily price volatility in the Dow Jones Industrial Average, for either new or full moons."
 - **Relevance:** None for EUR/USD (equities, published null, no mechanism). Not used. **Status:** read (abstract)
+
+### Riddiough & Zhang (2022 WP): Cross-Border M&A Flows, Economic Growth, and Foreign Exchange Rates (added 2026-11-15 R194)
+- **Opened:** https://www.bis.org/events/221213_bis_bdi_ecb_exchange_rates/paper_riddiough.pdf (draft dated 4 July 2022; ~22% read verbatim: intro, literature, data).
+- **Finding (verbatim):** "currencies associated with the most abnormally high level of net investment inflows appreciate on average"; local-firm-driven outflows "typically experience an annualized exchange rate depreciation of 5.07% over the following month". 41 currencies vs USD, monthly, 1994-2018, SDC Platinum deal data.
+- **Relevance:** **Low.** Monthly cross-sectional signal, needs licensed M&A data (not in repo), EUR/USD coverage not confirmed; FX result tables not read verbatim (UNVERIFIED). Not used. **Status:** read (partial)
+
+### Fender & Galati (2001): The impact of transatlantic M&A activity on the dollar/euro exchange rate
+- **Venue:** BIS Quarterly Review, December 2001. [IDEAS](https://ideas.repec.org/a/bis/bisqtr/0112g.html) (opened 2026-11-15 R194, abstract only).
+- **Finding (verbatim abstract):** "the euro depreciated against the dollar by 1.06% - a significant move for a single day" on the Deutsche Telekom/VoiceStream news (19 July 2000).
+- **Relevance:** **Low.** Single-event case study, no statistical test, pre-dates the dev block. Not used. **Status:** read (abstract)
