@@ -2019,3 +2019,15 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   immediate jump with partial reversal, no drift test, no costs; ADP not studied. Entry in research/academic_studies.md.
 - No item added (rule 3 / R090: (a) no study; (b) no ADP study, NFP family already covered by B12/E015). pytest 434 passed. 0 trials
   used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R180 (not an item; no item added)
+- 2026-11-15 R180 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "volatility risk
+  premium"/"realized volatility -> next-day direction" or "IMM date"/futures-roll entry in research/ or knowledge/ before this run):
+  (a) realized/implied volatility -> later EUR/USD direction (safe-haven dollar); (b) CME quarterly FX-futures roll (IMM dates) -> spot
+  EUR/USD. Two standard searches. (a) Opened CEPR DP9549 listing page ("Volatility Risk Premia and Exchange Rate Predictability"):
+  cross-sectional, needs option-implied volatility, EUR/USD not mentioned. Other hits (thesis/central-bank volatility-modelling PDFs,
+  an mql5 forum mirror) not evidence or not about direction, not opened. (b) Returned CME Group / FinanceFeeds articles on the year-end
+  forward-points turn and futures-vs-forwards replication (exchange marketing, forward points only, not spot direction; not opened);
+  no study; ~24 IMM dates on dev, below the R090 power floor anyway. Entry in research/academic_studies.md.
+- No item added (rule 3 / R090: (a) needs options data, cross-sectional; (b) no study, below power floor). pytest 434 passed. 0 trials
+  used (dev 259, val 9, total 268). Not a pipeline failure.

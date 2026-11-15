@@ -1077,3 +1077,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data:** 1-minute EUR/USD closes (HistData.com), 237 monthly NFP events 2000-2020, 26-minute event window.
 - **Finding (partly model summary, UNVERIFIED):** immediate publication-minute jump (order of 25 pips average 2017-2020) with some later reversal; no formal post-announcement drift test, no transaction costs.
 - **Relevance:** NFP family already covered (B12 blocked on release-date source, calendar-free 08:30 NY variant tested E015/E040 line). Not about ADP; no new pre-registrable item. **Status:** read (partial)
+
+### "Volatility Risk Premia and Exchange Rate Predictability", CEPR Discussion Paper DP9549 (added 2026-11-15 R180)
+- **Opened:** https://cepr.org/publications/dp9549 (listing page only; abstract marked as an AI translation on the page; authors, year, frequency and horizon not stated on the page = UNVERIFIED).
+- **Finding (page summary):** a cross-sectional portfolio selling currencies with high volatility-insurance cost (realized volatility minus model-free option-implied expected volatility) and buying low-cost currencies earns sizeable out-of-sample returns, mostly from spot predictability.
+- **Relevance:** None for a pre-registrable EUR/USD item: predictor needs currency-option implied volatility (not in repo, no verified download source), result is cross-sectional, EUR/USD not mentioned. **Status:** read (summary)
