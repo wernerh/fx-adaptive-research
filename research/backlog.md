@@ -2080,3 +2080,20 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   real, rather than estimated transaction costs wipes away most of the profits." No EUR/USD. Entry in research/academic_studies.md.
 - No item added (rule 3 / R090: (a) no study, needs a release-date/consensus calendar (B6 blocker); (b) no EUR/USD evidence, and the
   only opened study finds costs remove the profits). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R185 (not an item; no item added)
+- 2026-11-15 R185 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "ECB minutes"/"monetary
+  policy accounts" or "moon" entry in research/ or knowledge/ before this run): (a) ECB monetary policy accounts release (~4 weeks after
+  each meeting, 13:30 CET) -> later EUR/USD drift; (b) lunar cycle (new/full moon) -> EUR/USD daily return. Two standard searches.
+  (a) Returned FXStreet/XTB/ActionForex/investinglive headline pages (not evidence, not opened) and one Aalto University bachelor's thesis
+  (abstract only; full text behind login; authors and year not shown on page = UNVERIFIED): "Monetary policy announcement shocks and
+  high-frequency exchange rate dynamics: evidence from the euro area"
+  (https://aaltodoc.aalto.fi/items/4dcf8e0b-b547-4905-a85a-64c7d58e84a3): contemporaneous press-release-window reaction of EURUSD/EURGBP/
+  EURJPY to OIS-based ECB announcement shocks, 1999-2023; about decisions, not accounts; no post-window horizon, no costs. (b) Returned
+  MQL5/EarnForex blog posts (one self-described April-fool post; not evidence) and Herbst, "Lunacy in the Stock Market - What is the
+  Evidence?", Journal of Bioeconomics 9(1) 2007, 1-18, DOI 10.1007/s10818-007-9016-3
+  (https://ideas.repec.org/a/kap/jbioec/v9y2007i1p1-18.html, abstract only): DJIA daily, "no consistent, predictable lunar influence";
+  no FX.
+- No item added (rule 3 / R090: (a) no study of the accounts release, needs an accounts-date calendar, and the only opened source is a
+  contemporaneous decision-window study needing OIS data; (b) published null, no FX study, no mechanism). pytest 434 passed. 0 trials used
+  (dev 259, val 9, total 268). Not a pipeline failure.

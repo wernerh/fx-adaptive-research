@@ -1644,3 +1644,11 @@ Why each run chose what it did, and any judgement calls.
   added (refill note R184). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R184; a human-added backlog item or
   data source (e.g. a historical release calendar for B6/B12) remains the most useful input.
+
+## 2026-11-15 R185 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43541310326 completed, recorded as E049); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on ECB monetary policy accounts release -> EUR/USD drift and lunar cycle ->
+  EUR/USD. Accounts: news pages plus one Aalto bachelor's thesis abstract (contemporaneous decision-window reaction, OIS shocks). Lunar:
+  Herbst 2007 (DJIA, null) -> no item added (refill note R185). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R185; a human-added backlog item or
+  data source (e.g. a historical release calendar for B6/B12) remains the most useful input.

@@ -1088,3 +1088,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (verbatim abstract):** "The adjustment for real, rather than estimated transaction costs wipes away most of the profits." RUB/USD (MICEX tick data with bid/ask), 4950 MA and 3069 RSI parameterisations on 10/15/30/60-minute bars, Jan 2000 - Jun 2011, Hansen SPA test.
 - **Relevance:** **Low.** RUB/USD only (managed rate), no EUR/USD; supports the prior that intraday RSI/MA rules do not survive real spreads. Not used.
 - **Status:** VERIFIED (full text, abstract quote)
+
+### Aalto bachelor's thesis: Monetary policy announcement shocks and high-frequency exchange rate dynamics: evidence from the euro area (added 2026-11-15 R185)
+- **Opened:** https://aaltodoc.aalto.fi/items/4dcf8e0b-b547-4905-a85a-64c7d58e84a3 (abstract and metadata only; full text behind Aalto login; author and year not shown = UNVERIFIED).
+- **Finding (verbatim abstract):** "on average, a 100-basis point monetary policy announcement shock results in an immediate 3-4% appreciation of the exchange rate." EURUSD, EURGBP, EURJPY, 1999-2023, press-release window, shocks from 1- and 3-month OIS.
+- **Relevance:** **Low.** Contemporaneous reaction only, needs OIS shock data (not in repo); bachelor's thesis, not peer reviewed. Not used. **Status:** read (abstract)
+
+### Herbst (2007): Lunacy in the Stock Market - What is the Evidence?
+- **Venue:** Journal of Bioeconomics 9(1), 1-18. DOI 10.1007/s10818-007-9016-3. [IDEAS](https://ideas.repec.org/a/kap/jbioec/v9y2007i1p1-18.html) (opened 2026-11-15 R185, abstract only).
+- **Finding (verbatim abstract):** "no consistent, predictable lunar influence is found on either daily returns or daily price volatility in the Dow Jones Industrial Average, for either new or full moons."
+- **Relevance:** None for EUR/USD (equities, published null, no mechanism). Not used. **Status:** read (abstract)
