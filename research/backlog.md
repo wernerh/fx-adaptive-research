@@ -2307,3 +2307,19 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   and Trends data are not in the repo; Goddard et al. is a volatility result; (b) needs signed futures trade imbalance, which
   Dukascopy spot quotes do not provide, and the extreme-week subset of ~312 dev weeks is far below the power floor; weekly reversal
   family already reviewed R174). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R199 (not an item; no item added)
+- 2026-11-15 R199 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "variance ratio" or
+  "Kalman" entry in research/ or knowledge/ before this run): (a) variance-ratio / return-autocorrelation inefficiency -> EUR/USD
+  direction; (b) Kalman-filter trend signal -> EUR/USD. Two standard searches. (a) Bošnjak, Novak & Wittine, "Time-varying
+  inefficiency in exchange rate returns: the case of euro against major currencies", Ekonomska misao i praksa 2025, DOI
+  10.17818/EMIP/2025/45 (https://hrcak.srce.hr/file/486449, full text read except figures): daily ECB reference rates 1999-2025,
+  rolling 500-day Escanciano-Lobato / Kim wild-bootstrap variance-ratio tests; EUR/USD flagged inefficient in ~7.4-7.6% of windows,
+  sign and lag of the autocorrelation not reported, no trading rule or costs; verbatim "Substantial efficiency is a common feature of
+  the exchange rate market for major currencies". Other hits (variance-ratio methodology papers, arXiv physics) not opened.
+  (b) Benhamou, "Trend without hiccups - a Kalman filter approach" (https://arxiv.org/pdf/1808.03297, full text read): E-mini S&P 500
+  only, daily, one year (Feb 2015-Feb 2016), parameters optimised in-sample ("Parameters for the Kalman filter models are obtained
+  by a general optimization."), no FX, no out-of-sample test. Other hits vendor/blog pages (not evidence).
+- No item added (rule 3 / R090: (a) no sign or horizon to pre-register, daily data, the paper's own conclusion is efficiency;
+  (b) in-sample equity-index result with no FX evidence; trend-rule family already NONE in E047-E049). pytest 434 passed. 0 trials
+  used (dev 259, val 9, total 268). Not a pipeline failure.
