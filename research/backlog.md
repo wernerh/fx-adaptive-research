@@ -2323,3 +2323,18 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) no sign or horizon to pre-register, daily data, the paper's own conclusion is efficiency;
   (b) in-sample equity-index result with no FX evidence; trend-rule family already NONE in E047-E049). pytest 434 passed. 0 trials
   used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R200 (not an item; no item added)
+- 2026-11-15 R200 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "lunch", "PPP" or
+  "short-term reversal" entry in research/ or knowledge/ before this run): (a) London lunch-hour (12:00-13:00 London) liquidity dip /
+  intraday return pattern -> EUR/USD; (b) PPP / valuation deviation -> later EUR/USD return; (c) hourly short-term reversal -> EUR/USD.
+  Four standard searches. (a) Top relevant hit was Breedon & Ranaldo, "Intraday Patterns in FX Returns and Order Flow", QMUL SEF WP
+  694 (2012) (https://qmul.ac.uk/sef/research/workingpapers/2012/items/694.html, landing page and abstract read; PDF fetch failed,
+  0% of full text read): "a significant tendency for currencies to depreciate during local trading hours" - the published version
+  is already logged (academic_studies.md, Breedon & Ranaldo 2013) and the home-hours line is closed on val (B14/E017). No study on
+  a lunch-hour pattern found; other hits were fix papers already logged (Marsh-Panagiotou-Payne 2017, Krohn et al.) or a vendor page.
+  (b) Hits were monthly/quarterly PPP and expectations papers (not opened): monthly predictor below the power floor (R195 reasoning).
+  (c) Only hit already logged: Wiśniewska (2014) EURUSD intraday price reversal (academic_studies.md, R055); KMW BoC SWP 2021-48
+  already logged.
+- No item added (rule 3 / R090: no new source with a pre-registrable sign and horizon). pytest 434 passed. 0 trials used
+  (dev 259, val 9, total 268). Not a pipeline failure.
