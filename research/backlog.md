@@ -2173,3 +2173,21 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   daily H&S completions on one pair over 6 dev years give too few events; (b) no FX breakout study; the two EUR/USD technical-rule
   papers found are net-negative after costs and are logged as negative evidence only). pytest 434 passed. 0 trials used (dev 259,
   val 9, total 268). Not a pipeline failure.
+
+### Refill note R190 (not an item; no item added)
+- 2026-11-15 R190 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Ramadan"/"Hijri" or
+  "Japanese fiscal year" entry in research/, knowledge/ or rejected_hypotheses.md before this run): (a) Ramadan / Hijri-calendar effect
+  -> EUR/USD; (b) Japanese fiscal-year-end (March) repatriation flows -> EUR/USD. Two standard searches.
+  (a) Opened Ozkan, "Hijri calendar effect in Borsa Istanbul gold market and Turkey's foreign exchange market", JIABR 10(4) 2019,
+  DOI 10.1108/JIABR-04-2017-0054 (https://ideas.repec.org/a/eme/jiabrp/jiabr-04-2017-0054.html, abstract only): Turkish "Dollar and
+  Euro market" (quote currency presumably TRY, UNVERIFIED), 2003-03-04 .. 2016-09-30, dummy regression + Kruskal-Wallis; "after-Ramadan
+  effect in the Euro market", "the Hijri month effect does not exist in the Dollar market"; sign, size, frequency and costs UNVERIFIED
+  (full text paywalled, not opened). Opened Halari-Helliar-Power-Tantisantiwong, QREF 2018, DOI 10.1016/j.qref.2018.05.018
+  (https://eprints.soton.ac.uk/421696/, abstract only): equities only. Opened Lopez-Martin, RBF 14(4) 2022, DOI 10.1108/RBF-09-2021-0173
+  (https://econpapers.repec.org/RePEc:eme:rbfpps:rbf-09-2021-0173, abstract only): cryptocurrencies only. DOAJ Arab Economic and
+  Business Journal 2016 record (https://doaj.org/article/d4dd34bb29d84243b1046bf5bf4e0d37) not openable (client error): UNVERIFIED.
+  (b) Returned only broker/news pages (FXStreet/Nomura, ForexLive/investingLive, Bloomberg, Pound Sterling Live/MUFG, MoneyShow,
+  FNArena, MQL5; not evidence, not opened), all about USD/JPY or EUR/JPY, no study.
+- No item added (rule 3 / R090: (a) only FX evidence is TRY-quoted with no sign or size, EUR/USD direction not derivable, and ~6
+  Ramadan periods in dev are far below the power floor; (b) no study, JPY-cross mechanism, one March year-end per year). pytest 434
+  passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

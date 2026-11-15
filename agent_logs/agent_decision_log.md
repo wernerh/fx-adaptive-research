@@ -1685,3 +1685,11 @@ Why each run chose what it did, and any judgement calls.
   opening-range rules on FX. Osler-Chang 1995 (abstract only, PDF not openable), Zarattini et al. 2024 (US stocks), Vaughters 2018 and
   Sokolovski 2011 (EUR/USD technical rules, net-negative after costs) -> no item added (refill note R189). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R189.
+
+## 2026-11-15 R190 (unattended)
+- **State:** last research-batch run 43541310326 (E049) completed and recorded; no run queued or in progress; no `ready` backlog item.
+  Workspace local `main` again diverged (stale history); worked on a detached checkout of origin/main (no push of stale commits).
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on Ramadan / Hijri-calendar effect -> EUR/USD and Japanese fiscal-year-end
+  repatriation -> EUR/USD. Ozkan 2019 JIABR (Turkish Dollar/Euro markets, abstract only), Halari et al. 2018 (equities), Lopez-Martin
+  2022 (crypto); (b) broker/news pages only -> no item added (refill note R190). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R190.
