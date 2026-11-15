@@ -1752,3 +1752,11 @@ Why each run chose what it did, and any judgement calls.
   R197). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R197; a human decision (new data
   source, e.g. an economic calendar for B6, or OOS use for B7) would unblock work.
+
+## 2026-11-15 R198 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles not yet in research/: Google Trends attention and volume profile / extreme trading imbalance
+  -> EUR/USD. Sources found are monthly (Bulut 2018), volatility-only (Goddard-Kita-Wang) or need signed futures order flow on a
+  1999-2005 sample (Chen-Kao EFMA 2009) -> no item added (refill note R198). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R198; a human decision (new data
+  source, e.g. an economic calendar for B6, or OOS use for B7) would unblock work.

@@ -2289,3 +2289,21 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: both sources are negative evidence with no published positive mechanism or sign to pre-register;
   daily Ichimoku/MACD signals on 6 dev years give few trades; technical-rule family already NONE in E047-E049). pytest 434 passed.
   0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R198 (not an item; no item added)
+- 2026-11-15 R198 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Google Trends",
+  "volume profile" or "point of control" entry in research/ or knowledge/ before this run): (a) Google search attention -> later
+  EUR/USD returns; (b) volume profile / extreme trading imbalance -> later EUR/USD. Two standard searches. (a) Bulut 2018, "Google
+  Trends and the forecasting performance of exchange rate models", J. Forecasting 37(3) 303-315, DOI 10.1002/for.2500 (RePEc abstract
+  opened, https://ideas.repec.org/a/wly/jforec/v37y2018i3p303-315.html): monthly returns, 11 OECD currencies 2004-2014, better
+  out-of-sample direction for five pairs vs random walk; EUR/USD inclusion, sign and costs UNVERIFIED. Goddard, Kita & Wang,
+  "Investor Attention and FX Market Volatility" (https://orca.cardiff.ac.uk/73438/1/Attetion_FX.pdf, ~51% verbatim): weekly, EUR/USD
+  included, attention predicts next-week volatility, not returns. (b) Volume-profile hits are vendor/forum pages (not evidence).
+  Chen & Kao, "Momentum and Reversals in Weekly Euro FX Futures Returns during Periods of Extreme Trading Imbalance", EFMA 2009
+  (https://www.efmaefm.org/0efmameetings/EFMA%20ANNUAL%20MEETINGS/2009-Milan/papers/EFMA2009_0102_fullpaper.pdf, full text read):
+  CME Euro FX futures 1999-2005, weekly; reversal after extreme negative signed-trade imbalance only; authors state standard
+  regressions show no relation. zendy record for DOI 10.1002/fut.20226 returned an empty page (UNVERIFIED).
+- No item added (rule 3 / R090: (a) monthly predictor gives ~72 dev observations, below the power floor, EUR/USD coverage unconfirmed,
+  and Trends data are not in the repo; Goddard et al. is a volatility result; (b) needs signed futures trade imbalance, which
+  Dukascopy spot quotes do not provide, and the extreme-week subset of ~312 dev weeks is far below the power floor; weekly reversal
+  family already reviewed R174). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
