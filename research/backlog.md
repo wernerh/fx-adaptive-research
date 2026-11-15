@@ -2041,3 +2041,18 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   tool (not circumvented, content UNVERIFIED, nothing recorded); no FX study.
 - No item added (rule 3 / R090: (a) no study, US-inflation release family partly covered by R148 CPI angle; (b) no verified source).
   pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R182 (not an item; no item added)
+- 2026-11-15 R182 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "quote volume
+  imbalance" or "return autocorrelation term structure" entry in research/ or knowledge/ before this run): (a) Dukascopy bid/ask
+  tick-volume (quote) imbalance -> next-interval EUR/USD return; (b) short-horizon (minutes) intraday return reversal / autocorrelation
+  in EUR/USD. Two standard searches. (a) Hits were market-making / crypto order-book papers and blog posts (not FX evidence, not
+  opened); market_microstructure.md already notes Dukascopy tick volume counts quote updates, not traded amounts. (b) Wisniewska (2014)
+  already recorded (Low, too vague). Opened (web-fetch, first ~40k chars verbatim, rest model-summarised and UNVERIFIED):
+  Boyarchenko-Larsen-Whelan, "The Overnight Drift", CEPR DP14462 (2020, https://repec.cepr.org/repec/cpr/ceprdp/DP14462.pdf):
+  S&P 500 E-mini only, 02:00-03:00 ET drift turns to -3.3% p.a. after bid-ask spreads; FX only via cited papers (home-hours
+  depreciation, already closed on val by E017). Baule-Schlie-Zhou, "The Term Structure of Intraday Return Autocorrelations", CESA WP 14
+  (2025, https://www.fernuni-hagen.de/igas/docs/cesa_wp_14.pdf): US stocks only, strongest reversal ~15 min (-2.70% autocorrelation),
+  no trading or cost analysis.
+- No item added (rule 3 / R090: no EUR/USD evidence, no mechanism specific to our data). pytest 434 passed. 0 trials used (dev 259,
+  val 9, total 268). Not a pipeline failure.

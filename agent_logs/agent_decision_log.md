@@ -1620,3 +1620,12 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on US PCE release drift and ECB reserve maintenance period / liquidity ->
   EUR/USD. No new verified, pre-registrable basis -> no item added (refill note R181). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R181.
+
+## 2026-11-15 R182 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43541310326 completed, recorded as E049); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on quote-volume imbalance and short-horizon intraday reversal in EUR/USD.
+  Two papers opened (ES futures overnight drift; US-stock autocorrelation term structure), neither on FX -> no item added (refill note
+  R182). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R182; the angle space reachable with
+  verified free sources and the repo's data looks largely exhausted, so a human-added backlog item or data source (e.g. B12 release
+  dates) would be the most useful input.
