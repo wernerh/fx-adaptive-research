@@ -1776,3 +1776,12 @@ Why each run chose what it did, and any judgement calls.
   Wiśniewska 2014) or monthly -> no item added (refill note R200). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R200; a human decision (new data
   source, e.g. an economic calendar for B6, or OOS use for B7) would unblock work.
+
+## 2026-11-15 R201 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles not yet in research/: euro-area sovereign CDS / credit risk and US trade-balance releases
+  -> EUR/USD. Della Corte-Jeanneret-Patelli (JFE 2023) gives a signed weekly+ USD/EUR predictor but needs licensed IHS Markit
+  quanto-CDS data and is below the dev power floor at weekly frequency; trade balance returned vendor pages only -> no item added
+  (refill note R201). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R201; a human decision (new data
+  source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.

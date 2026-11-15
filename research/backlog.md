@@ -2338,3 +2338,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   already logged.
 - No item added (rule 3 / R090: no new source with a pre-registrable sign and horizon). pytest 434 passed. 0 trials used
   (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R201 (not an item; no item added)
+- 2026-11-15 R201 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "sovereign CDS",
+  "trade balance" or "Della Corte" entry in research/ or knowledge/ before this run): (a) euro-area sovereign CDS / credit risk ->
+  later EUR/USD returns; (b) US trade-balance release -> post-release EUR/USD drift. Two standard searches. (a) Opened two PDFs
+  (entries in research/academic_studies.md): Della Corte, Jeanneret & Patelli, JFE 2023 (~32% verbatim): the USD-vs-EUR quanto CDS
+  credit-implied risk premium "positively predicts future dollar-euro exchange rate returns at any horizon between one week and one
+  year"; daily IHS Markit quanto CDS 2010-2019, weekly+ horizons. 2017 CDS-quanto conference draft (~36% verbatim): pricing model,
+  no forecast. (b) Only broker/vendor pages (mql5 blogs, XTB, ForexCracked; not evidence, not opened).
+- No item added (rule 3 / R090: (a) is the first published, signed EUR/USD predictor found in many refill passes, but it needs
+  licensed quanto-CDS data (IHS Markit) not in the repo and not on the runner, and its weekly horizon gives ~312 dev weeks, below the
+  power floor; adding it would need a human data decision; (b) no study). pytest 434 passed. 0 trials used (dev 259, val 9,
+  total 268). Not a pipeline failure.
