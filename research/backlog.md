@@ -2191,3 +2191,19 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) only FX evidence is TRY-quoted with no sign or size, EUR/USD direction not derivable, and ~6
   Ramadan periods in dev are far below the power floor; (b) no study, JPY-cross mechanism, one March year-end per year). pytest 434
   passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R191 (not an item; no item added)
+- 2026-11-15 R191 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "pre-holiday",
+  "US holiday" or "UK bank holiday" entry in research/, knowledge/ or rejected_hypotheses.md before this run): (a) single-centre
+  public holidays (one of the two currency areas closed) -> EUR/USD direction; (b) pre-holiday effect in FX. Two standard searches
+  plus one follow-up. (a) Re-opened Ranaldo 2007 EFMA 2008 WP
+  (https://www.efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2008-Athens/papers/376.pdf, ~46% verbatim): holiday design is
+  the same section 5.2 already logged in research/academic_studies.md (German-holiday days as EU proxy, n 36 for EUR/USD 1999-2005,
+  no significance marks); nothing new. Search hits otherwise broker/news pages (not evidence, not opened). (b) Opened Howarth 2008
+  Rhodes MCom thesis (https://researchrepository.ru.ac.za/bitstreams/cd843ec4-0cc5-415e-9c73-41ee165e0f0d/download, ~35% verbatim):
+  BRL/MXN/ZAR/KRW/PLN vs USD, day-of-week only, holiday effect not tested; it cites Aydogan & Booth (2003) for exchange rates moving
+  before holidays. Aydogan & Booth 2003 ("Calendar anomalies in the Turkish foreign exchange markets", Applied Financial Economics
+  13(5); https://ideas.repec.org/a/taf/apfiec/v13y2003i5p353-360.html) seen as a search title only, not opened: UNVERIFIED, Turkish
+  market. Dao-McGroarty-Urquhart 2016 (https://eprints.soton.ac.uk/402301, landing page) is the weekend-gap paper already tested (E020).
+- No item added (rule 3 / R090: (a) already covered, ~6 single-centre holidays per year per side gives ~35 dev events, below the
+  power floor; (b) no EUR/USD study). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
