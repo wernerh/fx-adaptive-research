@@ -2133,3 +2133,23 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) proprietary fund-holdings predictor, contemporaneous monthly result only; (b) no FX study, no
   mechanism for BTC -> EUR/USD, and BTC data not in repo). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a
   pipeline failure.
+
+### Refill note R188 (not an item; no item added)
+- 2026-11-15 R188 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Fed speech" or
+  "pre-announcement drift" entry in rejected_hypotheses.md before this run): (a) pre-release price drift before US macro
+  announcements -> EUR/USD; (b) Fed Chair / FOMC-participant speeches -> post-speech EUR/USD drift. Two standard searches.
+  (a) Opened Kurov, Sancetta, Strasser, Wolfe, "Price Drift Before U.S. Macroeconomic News", Internet Appendix, draft Nov 1, 2017
+  (https://www.skidmore.edu/economics/documents/KSSWolfe-2017PriceDriftBeforeUSMacroeconomicNewsAppendix.pdf; ~68% verbatim):
+  E-mini S&P 500 and 10-year T-note futures only (robustness: E-mini Dow, 30-year bond), 2008-2014; drift in [t-30min, t-5s] for
+  7 of 30 releases (ISM mfg/non-mfg, pending/existing home sales, CB confidence, IP, GDP prelim) is signed by the realized surprise,
+  known only at release; no FX instrument, no costs. Main JFQA paper (DOI 10.1017/S0022109018000625) not opened: UNVERIFIED.
+  (b) Opened Ayadi, Ben Omrane, Wang, Welch, SEF 40(5) 2023, DOI 10.1108/SEF-01-2023-0015
+  (https://ideas.repec.org/a/eme/sefpps/sef-01-2023-0015.html, abstract only): Fed/ECB official speeches have "a relatively small
+  impact on currency jumps", no drift test. Opened Sekkel, Zhang, Stern, BoC SWP 2025-33
+  (https://www.bankofcanada.ca/wp-content/uploads/2025/11/swp2025-33.pdf; ~33% verbatim): 211 Fed Chair + 76 Vice Chair speeches
+  1997-2023, window -15 to +75 min, CAD/USD only, no FX drift or direction-knowable result. Opened Djourelova, Ferroni, Melosi,
+  Villa, Chicago Fed WP 2025-23 (https://www.chicagofed.org/-/media/publications/working-papers/2025/wp2025-23.pdf; ~33% verbatim):
+  FOMC-participant speeches 2011-2023, eurodollar futures/yields/equities, "little effect", no FX.
+- No item added (rule 3 / R090: (a) direction of the drift is not knowable before the window (needs the surprise), and release
+  timestamps/consensus are the B6 blocker; (b) no EUR/USD study, no predictable post-speech drift, and a timestamped speech
+  calendar is not in repo). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

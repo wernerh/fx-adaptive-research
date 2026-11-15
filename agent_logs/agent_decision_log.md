@@ -1669,3 +1669,11 @@ Why each run chose what it did, and any judgement calls.
   Rey et al. 2024 (contemporaneous, proprietary holdings) and Eross et al. 2019 (Bitcoin only) -> no item added (refill note R187).
   No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R187.
+
+## 2026-11-15 R188 (unattended)
+- **State:** last research-batch run 43541310326 (E049) completed and recorded; no run queued or in progress; no `ready` backlog item.
+  Workspace local `main` again diverged (stale history); reset to origin/main (no push of stale commits).
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on pre-release drift before US macro news -> EUR/USD and Fed speeches ->
+  post-speech EUR/USD drift. Kurov et al. 2017 appendix (equity/bond futures, drift signed by realized surprise), Ayadi et al. 2023,
+  Sekkel-Zhang-Stern 2025 (CAD/USD), Djourelova et al. 2025 (no FX) -> no item added (refill note R188). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R188.
