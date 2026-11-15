@@ -2067,3 +2067,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) no study, and would need a release-date/consensus calendar (B6 blocker); (b) no study, ~24
   quarterly flash releases on dev, below the power floor). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a
   pipeline failure.
+
+### Refill note R184 (not an item; no item added)
+- 2026-11-15 R184 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "ISM" entry in
+  research/ or knowledge/ before this run; RSI only as one rule family in a daily multi-rule study): (a) US ISM manufacturing PMI release
+  (10:00 NY, first business day) -> later EUR/USD drift; (b) intraday RSI mean-reversion rule in EUR/USD after real spreads. Two
+  standard searches. (a) Returned only FXStreet and Dukascopy market-news pages (not evidence, not opened); no study. (b) Wiśniewska
+  (2014) and Sokolovski (2011) already recorded (refill notes R055, R135-era); TradingView/Substack/MoneyShow posts not evidence. Opened
+  (web-fetch, full text, quotes verbatim, table cells garbled and not used): Frömmel-Lampaert, "Does frequency matter for intraday
+  technical trading?", Finance Research Letters 18 (2016) 177-183, DOI 10.1016/j.frl.2016.04.014
+  (https://core.ac.uk/download/55846873.pdf): RUB/USD (MICEX) only, MA and RSI rules on 10-60 min bars, 2000-2011; "The adjustment for
+  real, rather than estimated transaction costs wipes away most of the profits." No EUR/USD. Entry in research/academic_studies.md.
+- No item added (rule 3 / R090: (a) no study, needs a release-date/consensus calendar (B6 blocker); (b) no EUR/USD evidence, and the
+  only opened study finds costs remove the profits). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

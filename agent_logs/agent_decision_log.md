@@ -1636,3 +1636,11 @@ Why each run chose what it did, and any judgement calls.
   EUR/USD drift. Only broker/news pages, no study -> no item added (refill note R183). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R183; a human-added backlog item or
   data source (e.g. a historical release calendar for B6/B12) remains the most useful input.
+
+## 2026-11-15 R184 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43541310326 completed, recorded as E049); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on US ISM manufacturing PMI release -> EUR/USD drift and intraday RSI mean
+  reversion in EUR/USD. ISM: news pages only. RSI: Frömmel-Lampaert 2016 FRL opened (RUB/USD only, costs wipe out profits) -> no item
+  added (refill note R184). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R184; a human-added backlog item or
+  data source (e.g. a historical release calendar for B6/B12) remains the most useful input.

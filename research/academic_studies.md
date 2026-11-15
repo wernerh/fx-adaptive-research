@@ -1082,3 +1082,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Opened:** https://cepr.org/publications/dp9549 (listing page only; abstract marked as an AI translation on the page; authors, year, frequency and horizon not stated on the page = UNVERIFIED).
 - **Finding (page summary):** a cross-sectional portfolio selling currencies with high volatility-insurance cost (realized volatility minus model-free option-implied expected volatility) and buying low-cost currencies earns sizeable out-of-sample returns, mostly from spot predictability.
 - **Relevance:** None for a pre-registrable EUR/USD item: predictor needs currency-option implied volatility (not in repo, no verified download source), result is cross-sectional, EUR/USD not mentioned. **Status:** read (summary)
+
+### Frömmel & Lampaert (2016): Does frequency matter for intraday technical trading?
+- **Venue:** Finance Research Letters 18, 177-183. DOI 10.1016/j.frl.2016.04.014. [core.ac.uk PDF](https://core.ac.uk/download/55846873.pdf) (opened 2026-11-15 R184, full text via web-fetch; table extraction garbled, no cell figures used).
+- **Finding (verbatim abstract):** "The adjustment for real, rather than estimated transaction costs wipes away most of the profits." RUB/USD (MICEX tick data with bid/ask), 4950 MA and 3069 RSI parameterisations on 10/15/30/60-minute bars, Jan 2000 - Jun 2011, Hansen SPA test.
+- **Relevance:** **Low.** RUB/USD only (managed rate), no EUR/USD; supports the prior that intraday RSI/MA rules do not survive real spreads. Not used.
+- **Status:** VERIFIED (full text, abstract quote)
