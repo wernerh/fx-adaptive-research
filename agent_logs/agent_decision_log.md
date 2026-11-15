@@ -1710,3 +1710,13 @@ Why each run chose what it did, and any judgement calls.
   Bank of England MPC announcements -> EUR/USD spillover. Volta-Aste 2022 (equity indices only, transfer entropy, no FX); ZEW DP 09-010
   not openable (UNVERIFIED) -> no item added (refill note R192). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R192.
+
+## 2026-11-15 R193 (unattended)
+- **State:** last research-batch run 43541310326 (E049) completed and recorded; no run queued or in progress; no `ready` backlog item.
+  Workspace local `main` had diverged again (stale history); kept as local branch `backup-stale-main`, main reset to origin/main
+  (no push of stale commits). pytest 434 passed.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on US Treasury auction results -> EUR/USD and December / turn-of-year USD
+  seasonality. Krohn (FRBSF) already logged R085; December hits are broker/vendor pages only -> no item added (refill note R193).
+  No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R193; the price-only literature
+  appears exhausted and a human decision (new data source, e.g. an economic calendar for B6, or OOS use for B7) would unblock work.

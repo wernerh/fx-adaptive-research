@@ -2223,3 +2223,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) no readable study, drift direction not derivable, mechanism would be invented here; (b) equity-only,
   non-directional coupling measure, ~8 MPC dates per year). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a
   pipeline failure.
+
+### Refill note R193 (not an item; no item added)
+- 2026-11-15 R193 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles: (a) US Treasury
+  auction results -> intraday EUR/USD; (b) December / turn-of-the-year USD seasonality -> EUR/USD. Two standard searches.
+  (a) Only academic hit is Krohn (FRBSF PDF https://www.frbsf.org/wp-content/uploads/Krohn-Paper.pdf), already opened and logged
+  2026-11-11 R085 (research/academic_studies.md ~line 394); nothing new. Other hits broker/chart pages (forex.com, TradingView; not
+  evidence, not opened). (b) Hits are broker/vendor seasonality pages only (forex.com/StoneX, Seasonax, Pound Sterling Live, FXStreet
+  quoting MUFG; not evidence, not opened); no academic study found.
+- No item added (rule 3 / R090: (a) already covered; (b) no study, and 6 Decembers on dev is far below the power floor). pytest 434
+  passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
