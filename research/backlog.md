@@ -2153,3 +2153,23 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) direction of the drift is not knowable before the window (needs the surprise), and release
   timestamps/consensus are the B6 blocker; (b) no EUR/USD study, no predictable post-speech drift, and a timestamped speech
   calendar is not in repo). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R189 (not an item; no item added)
+- 2026-11-15 R189 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "head-and-shoulders"
+  or "volatility breakout" entry in research/ or rejected_hypotheses.md before this run): (a) head-and-shoulders chart pattern ->
+  later EUR/USD direction; (b) intraday volatility-breakout / opening-range rules on EUR/USD. Two standard searches.
+  (a) Opened Osler & Chang, "Head and Shoulders: Not Just a Flaky Pattern", FRBNY Staff Report 4, Aug 1995
+  (https://www.newyorkfed.org/research/staff_reports/sr4.html and https://ideas.repec.org/p/fip/fednsr/4.html, abstract only):
+  daily rates of major currencies vs USD, March 1973 - June 1994, objective algorithm, bootstrap vs random walk (10,000 series).
+  PDF (https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr4.pdf) not openable (fetch-permission timeout, not
+  circumvented): pattern algorithm, profits and significance UNVERIFIED. Published version Chang & Osler 1999, EJ 109(458): UNVERIFIED.
+  (b) Opened Zarattini-Barbon-Aziz 2024 SSRN 4729284 (https://www.alexandria.unisg.ch/server/api/core/bitstreams/3c2989c4-688d-4d78-8a71-f02690990d51/content,
+  ~80%): 5-min opening-range breakout on US stocks only, no FX. Vaughters 2018 Liberty DBA (https://core.ac.uk/download/213462372.pdf,
+  ~13%): EUR/USD Bollinger Bands, "overall net loss from trading" (abstract). Sokolovski 2011 UCT MSc
+  (https://open.uct.ac.za/bitstreams/1ca4b008-7ebc-4b87-8804-c8674358c228/download, ~14%): hourly reservation-price contrarian rule,
+  11 pairs incl. EUR/USD, "cannot generate positive profits in the presence of realistic transaction costs" (abstract). None tests a
+  breakout rule on FX.
+- No item added (rule 3 / R090: (a) pattern definition not readable, so any algorithm would be invented here, pre-1994 sample, and
+  daily H&S completions on one pair over 6 dev years give too few events; (b) no FX breakout study; the two EUR/USD technical-rule
+  papers found are net-negative after costs and are logged as negative evidence only). pytest 434 passed. 0 trials used (dev 259,
+  val 9, total 268). Not a pipeline failure.

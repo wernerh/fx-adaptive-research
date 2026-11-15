@@ -1677,3 +1677,11 @@ Why each run chose what it did, and any judgement calls.
   post-speech EUR/USD drift. Kurov et al. 2017 appendix (equity/bond futures, drift signed by realized surprise), Ayadi et al. 2023,
   Sekkel-Zhang-Stern 2025 (CAD/USD), Djourelova et al. 2025 (no FX) -> no item added (refill note R188). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R188.
+
+## 2026-11-15 R189 (unattended)
+- **State:** last research-batch run 43541310326 (E049) completed and recorded; no run queued or in progress; no `ready` backlog item.
+  Workspace local `main` again diverged (stale history); backed up to a local branch and reset to origin/main (no push of stale commits).
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on head-and-shoulders pattern -> EUR/USD and intraday volatility-breakout /
+  opening-range rules on FX. Osler-Chang 1995 (abstract only, PDF not openable), Zarattini et al. 2024 (US stocks), Vaughters 2018 and
+  Sokolovski 2011 (EUR/USD technical rules, net-negative after costs) -> no item added (refill note R189). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R189.
