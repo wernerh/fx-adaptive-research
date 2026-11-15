@@ -1701,3 +1701,12 @@ Why each run chose what it did, and any judgement calls.
   Ranaldo 2007 (holiday section already logged), Howarth 2008 (EM pairs, no holiday test), Aydogan-Booth 2003 (Turkish, UNVERIFIED)
   -> no item added (refill note R191). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R191.
+
+## 2026-11-15 R192 (unattended)
+- **State:** last research-batch run 43541310326 (E049) completed and recorded; no run queued or in progress; no `ready` backlog item.
+  Workspace local `main` again diverged (stale history); kept as local branch `stale-local-main-backup`, main reset to origin/main
+  (no push of stale commits). pytest 434 passed.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on German Ifo / ZEW survey releases -> EUR/USD post-release drift and
+  Bank of England MPC announcements -> EUR/USD spillover. Volta-Aste 2022 (equity indices only, transfer entropy, no FX); ZEW DP 09-010
+  not openable (UNVERIFIED) -> no item added (refill note R192). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R192.

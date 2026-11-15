@@ -2207,3 +2207,19 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   market. Dao-McGroarty-Urquhart 2016 (https://eprints.soton.ac.uk/402301, landing page) is the weekend-gap paper already tested (E020).
 - No item added (rule 3 / R090: (a) already covered, ~6 single-centre holidays per year per side gives ~35 dev events, below the
   power floor; (b) no EUR/USD study). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R192 (not an item; no item added)
+- 2026-11-15 R192 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no Ifo/ZEW release-drift
+  or BoE-spillover entry in research/, knowledge/ or rejected_hypotheses.md before this run): (a) German Ifo business climate / ZEW
+  sentiment releases -> EUR/USD post-release drift; (b) Bank of England MPC announcements -> EUR/USD spillover. Two standard searches.
+  (a) Only academic hit: Mannheim/ZEW Discussion Paper 09-010 (https://madoc.bib.uni-mannheim.de/2347/1/dp09010.pdf; mirror
+  https://www.zew.de/fileadmin/FTP/dp/dp09010.pdf): Mannheim copy served a bot-challenge page, ZEW copy fetch refused; not opened,
+  title/content UNVERIFIED (not circumvented). Other hits broker/news pages (XTB, FXStreet, aggregators; not evidence, not opened).
+  (b) Opened Volta & Aste, "Causal coupling between European and UK markets triggered by announcements of monetary policy decisions",
+  Royal Society Open Science 9(3) 2022, DOI 10.1098/rsos.211342 (https://researchonline.lse.ac.uk/id/eprint/114947 and
+  https://econpapers.repec.org/paper/ehllserod/114947.htm, abstract only; PMC full text served a bot-challenge page): Euro Stoxx 50 and
+  FTSE 100 1-minute prices only, transfer-entropy information flow "from the market where the announcement is made towards the other",
+  volatility upsurge on announcement days; no FX, no return-forecast or trading test.
+- No item added (rule 3 / R090: (a) no readable study, drift direction not derivable, mechanism would be invented here; (b) equity-only,
+  non-directional coupling measure, ~8 MPC dates per year). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a
+  pipeline failure.
