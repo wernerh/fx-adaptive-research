@@ -2278,3 +2278,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) contemporaneous funding-spread result only, no spot-direction mechanism or sign, a forecast
   rule would be invented here, and weekly TGA/RRP data are not in the repo; (b) no study). pytest 434 passed. 0 trials used (dev 259,
   val 9, total 268). Not a pipeline failure.
+
+### Refill note R197 (not an item; no item added)
+- 2026-11-15 R197 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Ichimoku" entry and
+  MACD only as a rule list in research/ before this run): (a) Ichimoku cloud rules -> EUR/USD; (b) MACD crossover -> EUR/USD. Two
+  standard searches. (a) Deng et al. 2021 IJFE, DOI 10.1002/ijfe.2067 (RePEc abstract opened): FX rules inconsistent across
+  subperiods, parameter sweep found no profitable FX rule; pairs/frequency/costs UNVERIFIED. (b) Franco Silva 2012 ISCTE M.Sc. thesis
+  (~45% verbatim): daily GA-optimised MACD etc.; EUR/USD MACD out-of-sample profit factor 0.97 (summary, UNVERIFIED). Other hits
+  broker/vendor pages (not evidence).
+- No item added (rule 3 / R090: both sources are negative evidence with no published positive mechanism or sign to pre-register;
+  daily Ichimoku/MACD signals on 6 dev years give few trades; technical-rule family already NONE in E047-E049). pytest 434 passed.
+  0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

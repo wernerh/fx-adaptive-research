@@ -1113,3 +1113,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** Federal Reserve IFDP 1289, July 2020, DOI 10.17016/IFDP.2020.1289. [PDF](https://www.federalreserve.gov/econres/ifdp/files/ifdp1289.pdf) (opened 2026-11-15 R196; ~32% read verbatim: cover, abstract, intro, sections 1-3).
 - **Finding (verbatim):** "We find that an increase in the TGA balance is significantly associated with wider repo and FX swap spreads." Daily FR2052a GSIB data; same-day changes; outcomes are funding spreads and bank quantities, not spot FX returns.
 - **Relevance:** **Low.** No exchange-rate return or forecast test in the part read (rest UNVERIFIED); weekly TGA/RRP data not in repo. Not used. **Status:** read (partial)
+
+### Deng, Yu, Wei, Yang & Tatsuro (2021): Ichimoku Kinkohyo trading rules in stock and FX markets (added 2026-11-15 R197)
+- **Venue:** International Journal of Finance & Economics 26(4), 5321-5336, DOI 10.1002/ijfe.2067. [RePEc record](https://ideas.repec.org/a/wly/ijfiec/v26y2021i4p5321-5336.html) (opened 2026-11-15 R197; abstract only, full text not opened).
+- **Finding (abstract, paraphrased):** four stock indices (1995-2018) and four "important currency pairs" (2003-2018); with default (9, 26, 52) settings some rules were profitable in FX in subperiod 1 but not consistently in subperiod 2; the parameter sweep found no profitable rule for currency trading. Pairs named, data frequency and costs: UNVERIFIED.
+- **Relevance:** **Low (negative evidence).** No stable FX effect reported; nothing to pre-register. Not used. **Status:** read (abstract)
+
+### Franco Silva (2012): Optimization of technical trading rules in Forex using genetic algorithm (added 2026-11-15 R197)
+- **Venue:** M.Sc. thesis, ISCTE Business School, Oct 2012 (not peer-reviewed). [PDF](https://repositorio.iscte-iul.pt/bitstream/10071/6396/1/master_pedro_franco_silva.pdf) (opened 2026-11-15 R197; ~45% read verbatim, rest via extracted summary = UNVERIFIED).
+- **Finding:** daily bars, EUR/USD, EUR/JPY, EUR/GBP, EUR/CHF; MACD, double crossover, Bollinger, RSI, Stochastic, Parabolic SAR, ADX with GA-optimised parameters; in-sample 2005-2009, out-of-sample 2010-2011. EUR/USD MACD figures (from summary, UNVERIFIED): in-sample profit factor 1.52 (p 0.083), out-of-sample profit factor 0.97 (p 0.487).
+- **Relevance:** **Low (negative evidence).** Optimised daily rules do not hold out of sample; consistent with lesson on technical rules (E047-E049 NONE). Not used. **Status:** read (partial)
