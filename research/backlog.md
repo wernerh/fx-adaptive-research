@@ -2351,3 +2351,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   licensed quanto-CDS data (IHS Markit) not in the repo and not on the runner, and its weekly horizon gives ~312 dev weeks, below the
   power floor; adding it would need a human data decision; (b) no study). pytest 434 passed. 0 trials used (dev 259, val 9,
   total 268). Not a pipeline failure.
+
+### Refill note R202 (not an item; no item added)
+- 2026-11-15 R202 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "previous week" /
+  "weekly high" or "Safa"/"Maroney" entry in research/ or knowledge/ before this run): (a) breakout of the previous week's high/low
+  -> EUR/USD continuation; (b) quoted bid-ask spread changes -> later EUR/USD returns. Three standard searches. (a) Only result of
+  note is Caporale-Plastun-Oliinyk (Brunel WP 2005), already logged R174 (same-month only); no weekly-extreme study found. (b) Opened
+  the Safa-Maroney (JECD 2012) article page (entry in research/academic_studies.md): AUD, GBP, CAD vs USD only, spread "positively
+  affects" returns, frequency and lag UNVERIFIED (PDF not openable this run, not circumvented).
+- No item added (rule 3: (a) no published mechanism/sign for EUR/USD weekly extremes; (b) no EUR/USD, no verified predictive lag).
+  pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.

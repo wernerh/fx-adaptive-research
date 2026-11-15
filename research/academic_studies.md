@@ -1133,3 +1133,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** conference draft dated 10 Nov 2017. [PDF](https://www.runi.ac.il/media/o5wklx5n/sovereign-credit-risk-and-exchange-rates.pdf) (opened 2026-11-15 R201; ~36% read verbatim).
 - **Finding:** no-arbitrage pricing model of euro-area CDS quanto spreads; weekly (Wednesday) data 2010-2016; USD/EUR is a model state variable, no predictive regression or trading rule ("We work with weekly data frequency to minimize noise due to potential staleness of some of the price", verbatim).
 - **Relevance:** **Low.** Pricing model, no return forecast. Not used. **Status:** read (partial)
+
+### Safa & Maroney (2012), "Bid-Ask Spread, Futures Market Sentiment and Exchange Rate Returns", Journal of Economic Cooperation and Development 33(4), 63-85, doi:10.5281/zenodo.20762890 (added 2026-11-15 R202)
+- **Venue:** [article page](https://journal.sesric.org/Article/Detail/ART12083101) (abstract opened 2026-11-15 R202). PDF not opened (fetch not permitted in this run; not circumvented) -> body UNVERIFIED.
+- **Finding (abstract, verbatim):** "Time series and cross-sectional analyses of three different currency exchange rates; Australian Dollar, British Pound and Canadian Dollar – to US Dollar suggest that the spot market bid-ask spread is one important variable that positively affects the spot exchange rate returns." Volume-based futures sentiment index significant, return-based not. Frequency, sample, lag structure (predictive vs contemporaneous) and magnitudes not stated in the abstract (UNVERIFIED).
+- **Relevance:** **Low.** No EUR/USD in the abstract, unknown frequency and no evidence that the spread effect is lagged (predictive). Not used. **Status:** abstract only
