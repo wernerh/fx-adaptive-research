@@ -2009,3 +2009,13 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   research/academic_studies.md.
 - No item added (rule 3 / R090: (a) no FX study; (b) no EUR/USD evidence and ~8 events/year, below the power floor). pytest 434 passed.
   0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R179 (not an item; no item added)
+- 2026-11-15 R179 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Länder"/German
+  state CPI or ADP-report entry in research/ or knowledge/ before this run): (a) German state CPI releases (published hours before the
+  national flash) -> EUR/USD drift; (b) US ADP employment report (08:15 NY Wednesday) -> later EUR/USD drift. Two standard searches.
+  (a) Returned only Newsquawk/XTB/Continuum headline pages (not evidence, not opened); no study. (b) Returned FXStreet/Dukascopy
+  preview pages (not evidence, not opened) and Jandejsek 2021 master thesis (opened, ~60% verbatim): NFP only, EUR/USD 1-minute,
+  immediate jump with partial reversal, no drift test, no costs; ADP not studied. Entry in research/academic_studies.md.
+- No item added (rule 3 / R090: (a) no study; (b) no ADP study, NFP family already covered by B12/E015). pytest 434 passed. 0 trials
+  used (dev 259, val 9, total 268). Not a pipeline failure.

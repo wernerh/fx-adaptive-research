@@ -1071,3 +1071,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data:** 151 BoJ meetings 2010-01 .. 2023-12; intraday window "starting 5 minutes before the announcement and ending 30 minutes after the announcement"; FG and LSAP shocks.
 - **Finding:** expansionary shocks "depreciate the yen" (USD/JPY only); spillovers measured on foreign 10y yields at h = 0..5 days (UNVERIFIED part). No EUR/USD result and no hour-scale post-announcement drift analysis.
 - **Relevance:** None for a pre-registrable EUR/USD item: no EUR/USD evidence, no drift; BoJ meetings ~8/year, below the R090 power floor. **Status:** read (partial)
+
+### Jandejsek, "The impact development of scheduled U.S. macroeconomic announcements on foreign exchange rates: An empirical study of the nonfarm payrolls announcement and the EURUSD over the past two decades", Master thesis, 2021 (added 2026-11-15 R179)
+- **Opened:** https://web-typo3.modul.ac.at/uploads/files/Theses/Master/Grad_2021/MBA_2021/Master_Thesis_Jandejsek.pdf (~60% verbatim via web-fetch; remainder incl. conclusion not read = UNVERIFIED; institution inferred from host, UNVERIFIED).
+- **Data:** 1-minute EUR/USD closes (HistData.com), 237 monthly NFP events 2000-2020, 26-minute event window.
+- **Finding (partly model summary, UNVERIFIED):** immediate publication-minute jump (order of 25 pips average 2017-2020) with some later reversal; no formal post-announcement drift test, no transaction costs.
+- **Relevance:** NFP family already covered (B12 blocked on release-date source, calendar-free 08:30 NY variant tested E015/E040 line). Not about ADP; no new pre-registrable item. **Status:** read (partial)
