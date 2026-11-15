@@ -1660,3 +1660,12 @@ Why each run chose what it did, and any judgement calls.
   test; below R090 power floor). Gold: Apergis 2014 IREF (AUD/USD only) -> no item added (refill note R186). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R186; a human-added backlog item or
   data source (e.g. a historical release calendar for B6/B12) remains the most useful input.
+
+## 2026-11-15 R187 (unattended)
+- **State:** last research-batch run 43541310326 (E049) completed and recorded; no run queued or in progress; no `ready` backlog item.
+  Workspace local `main` had diverged (stale history, 50 commits); reset to origin/main, old tip kept on local branch
+  `stale-local-main-backup` (not pushed).
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on US equity close / equity-fund demand -> EUR/USD and Bitcoin -> EUR/USD.
+  Rey et al. 2024 (contemporaneous, proprietary holdings) and Eross et al. 2019 (Bitcoin only) -> no item added (refill note R187).
+  No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R187.

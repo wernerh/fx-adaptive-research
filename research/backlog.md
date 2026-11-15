@@ -2118,3 +2118,18 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   already used twice (E013, E040), and the published effect is a weak rate-surprise correlation, far below the > 20 pip detectability bar;
   (b) no EUR/USD study and the mechanism is specific to commodity currencies). pytest 434 passed. 0 trials used (dev 259, val 9, total
   268). Not a pipeline failure.
+
+### Refill note R187 (not an item; no item added)
+- 2026-11-15 R187 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Bitcoin -> EUR/USD"
+  or "mutual-fund equity demand" entry in rejected_hypotheses.md before this run): (a) US equity-market close (16:00 NY) / global
+  equity-fund demand -> EUR/USD; (b) Bitcoin intraday returns leading EUR/USD. Two standard searches.
+  (a) Opened Rey, Rousset Planat, Stavrakeva, Tang, "Elephants in Equity and Currency Markets", preliminary, April 12, 2024
+  (https://www.minneapolisfed.org/-/media/assets/events/2024/federal-reserve-system-committee-on-international-economic-analysis-conference-sciea/tang-elephants-in-equity-and-currency-markets.pdf;
+  ~27% verbatim): contemporaneous monthly variance decomposition (net currency supply explains ~90% of FX variation), 2008-2021,
+  needs ISIN-level mutual-fund holdings; no predictive horizon, no clock-time effect. Later sections UNVERIFIED (summary only).
+  (b) Opened Eross, McGroarty, Urquhart, Wolfe, "The intraday dynamics of bitcoin", RIBAF 49 (2019) 71-81, DOI
+  10.1016/j.ribaf.2019.01.008 (accepted version https://core.ac.uk/download/186324691.pdf, ~75% verbatim): Bitstamp 5-min
+  BTC returns/volume/RV only, 2014-2017; no FX series. Reading repository copy returned a bot-protection page: not circumvented.
+- No item added (rule 3 / R090: (a) proprietary fund-holdings predictor, contemporaneous monthly result only; (b) no FX study, no
+  mechanism for BTC -> EUR/USD, and BTC data not in repo). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a
+  pipeline failure.
