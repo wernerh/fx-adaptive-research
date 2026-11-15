@@ -2248,3 +2248,18 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: (a) no study, mechanism would be invented here; (b) needs licensed deal data not in the repo, monthly
   horizon gives ~72 dev observations far below the power floor, and the EUR/USD evidence is a single 2000 event). pytest 434 passed.
   0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R195 (not an item; no item added)
+- 2026-11-15 R195 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "EUR/CHF" or
+  "breakeven" entry in research/, knowledge/ or rejected_hypotheses.md before this run): (a) Swiss franc / EUR/CHF moves -> next-
+  session EUR/USD (lead-lag); (b) US inflation / breakeven-inflation changes -> next-period EUR/USD. Two standard searches.
+  (a) Hits are broker/forum/news pages only (MQL5 blog, investing.com, FXStreet, forex.com, StoneX, a Substack; not evidence, not
+  opened); no academic lead-lag study found. (b) Opened the BIS landing page of Schrimpf & Sihvonen, "Inflation and the joint
+  bond-FX spanning puzzle", BIS Working Paper 1320, Dec 2025
+  (https://www.bis.org/publications/working-paper-1320-inflation-and-joint-bond-fx-spanning-puzzle; the PDF URL
+  https://www.bis.org/publ/work1320.pdf served the landing page, full text not read): "US inflation predicts both low bond returns
+  and high dollar returns"; uses realised inflation (not breakevens per the summary), dollar counter-currency, frequency, horizon and
+  coefficients UNVERIFIED.
+- No item added (rule 3 / R090: (a) no study, mechanism would be invented here; (b) realised-inflation predictor is a monthly
+  release, giving ~72 dev observations, far below the power floor, and EUR/USD coverage is unconfirmed). pytest 434 passed. 0 trials
+  used (dev 259, val 9, total 268). Not a pipeline failure.

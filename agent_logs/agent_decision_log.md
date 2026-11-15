@@ -1728,3 +1728,11 @@ Why each run chose what it did, and any judgement calls.
   No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R194; a human decision (new data
   source, e.g. an economic calendar for B6, or OOS use for B7) would unblock work.
+
+## 2026-11-15 R195 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles not yet in research/: Swiss franc / EUR/CHF lead-lag -> EUR/USD and US inflation /
+  breakevens -> EUR/USD. Only broker pages for (a); (b) BIS WP 1320 landing page only, monthly realised-inflation predictor below the
+  power floor -> no item added (refill note R195). No lead, no notification.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R195; a human decision (new data
+  source, e.g. an economic calendar for B6, or OOS use for B7) would unblock work.
