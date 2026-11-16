@@ -1820,3 +1820,13 @@ Why each run chose what it did, and any judgement calls.
   origin/main and pushed to main; stale local main kept on local branch `backup-stale-main` (not pushed). No repo history changed.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R205; a human decision (new data
   source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.
+
+## 2026-11-16 R206 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles: Twitter sentiment -> EUR/USD (two papers opened: hourly study no significant gain; daily
+  study only 1-3 month directional effect, no runner data) and economic surprise index (duplicate of R139) -> no item added
+  (refill note R206). No lead, no notification.
+- **Housekeeping:** workspace local `main` had diverged from origin again (stale R079-era history); reset to origin/main, stale
+  commits kept on local branch `stale-local-backup` (not pushed). No repo history changed.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R206; a human decision (new data
+  source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.

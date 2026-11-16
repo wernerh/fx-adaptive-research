@@ -1148,3 +1148,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** [IDEAS/RePEc page](https://ideas.repec.org/p/pra/mprapa/89594.html) (abstract opened 2026-11-16 R204; PDF not opened).
 - **Finding (abstract):** HASTOC rule "back tested with an entry-exit strategy" on "intraday hourly USD/INR data from May, 2018 to September, 2018" (~4 months); long and short signals; costs and horizon not stated.
 - **Relevance:** **Low.** USD/INR only, 4-month sample. Not used. **Status:** abstract only
+
+### Papaioannou, Russo, Papaioannou & Siettos, "Can social microblogging be used to forecast intraday exchange rates?" (added 2026-11-16 R206)
+- **Venue:** [arXiv 1310.5306](https://arxiv.org/abs/1310.5306) (opened 2026-11-16 R206 via web-fetch, ~100% of text read); page states it is a prior version of the paper published in NETNOMICS (Springer; volume/pages UNVERIFIED).
+- **Finding:** 20,250 tweets matching "buy EUR/USD" (posted limit-order target prices, not sentiment), 25/10/2010-05/01/2011 (54 trading days), aggregated hourly; ARX vs random walk, 60/40 out-of-sample split. Verbatim: "no ARX model could significantly outperform the random walk model in terms of the RMSE and MAE". Directional hit up to ~0.59 in the returns setup only; no signed coefficient; no transaction costs.
+- **Relevance:** **Low.** 54-day sample, no significant forecast gain, no costs, and no tweet archive is available on the runner. Not used. **Status:** read
+
+### Gholampour & van Wincoop (2016), "What Can we Learn from Euro-Dollar Tweets?" (added 2026-11-16 R206)
+- **Venue:** NBER conference paper dated 17 Oct 2016, [PDF](https://conference.nber.org/conf_papers/f89970/f89970.pdf) (opened 2026-11-16 R206 via web-fetch; ~34% verbatim, rest model summary -> details from the rest UNVERIFIED). VoxEU column of the same title not opened (permission prompt timed out; not circumvented).
+- **Finding:** 268,770 EURUSD tweets, 9 Oct 2013-11 Mar 2016 (633 trading days), lexicon sentiment, "informed" = >= 500 followers. Verbatim: "We document that the direction of exchange rate changes is predicted by tweets in a way that is statistically significant" and "Twitter Sentiment does not predict the magnitude of future exchange rate changes in a statistically significant way". Horizons 20/40/60 trading days; short-lag (t to t-4 days) regressions insignificant (verbatim section 2.6). No cost treatment found in the part read.
+- **Relevance:** **Low for this repo.** Predictability is directional only at 1-3 month horizons (below power floor on dev, R090), the data (historical Twitter archive) is not downloadable on the runner, and short lags are insignificant. Not used. **Status:** read (partial)

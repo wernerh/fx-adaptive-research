@@ -2398,3 +2398,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   year (~12 dev dates), far below the R090 power floor.
 - No item added (rule 3 / R090: no EUR/USD study with a pre-registrable sign, horizon and cost treatment). pytest 434 passed.
   0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R206 (not an item; no item added)
+- 2026-11-16 R206 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Twitter"/"tweet"
+  entry in research/ or knowledge/ before this run): (a) social-media (Twitter) sentiment -> later EUR/USD returns; (b) economic
+  surprise index -> later EUR/USD returns. Two standard searches. (a) Opened two papers (entries in research/academic_studies.md):
+  Papaioannou et al. (arXiv 1310.5306 / NETNOMICS): hourly "buy EUR/USD" tweets, 54 days, "no ARX model could significantly
+  outperform the random walk" (verbatim), no costs; Gholampour & van Wincoop (NBER conf. paper 2016): informed-tweet sentiment
+  predicts EUR/USD direction at 1-3 months, not magnitude; lags t..t-4 days insignificant. VoxEU column not opened (permission
+  timeout, not circumvented). (b) Top academic hit DNB WP 850 already logged (R139); rest broker/vendor pages (not opened).
+- No item added (rule 3 / R090: no runner-downloadable tweet archive; the only significant effect is at monthly horizons, below the
+  power floor; (b) duplicate). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
