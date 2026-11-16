@@ -1830,3 +1830,13 @@ Why each run chose what it did, and any judgement calls.
   commits kept on local branch `stale-local-backup` (not pushed). No repo history changed.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R206; a human decision (new data
   source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.
+
+## 2026-11-16 R207 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles: FX option expiries at the 10:00 NY cut (news pages only, no study, no runner data) and
+  candlestick reversal patterns (Alanazi et al. 2020 Cogent abstract only, design UNVERIFIED; equity execution-cost WP) -> no item
+  added (refill note R207). No lead, no notification.
+- **Housekeeping:** workspace local `main` had diverged from origin again (stale R079-era history); reset to origin/main, stale
+  commits kept on local branch `stale-local-main` (not pushed). No repo history changed.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R207; a human decision (new data
+  source, e.g. an economic calendar for B6 or quanto-CDS data, the Alanazi full texts, or OOS use for B7) would unblock work.

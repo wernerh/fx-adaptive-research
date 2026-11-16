@@ -2409,3 +2409,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   timeout, not circumvented). (b) Top academic hit DNB WP 850 already logged (R139); rest broker/vendor pages (not opened).
 - No item added (rule 3 / R090: no runner-downloadable tweet archive; the only significant effect is at monthly horizons, below the
   power floor; (b) duplicate). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R207 (not an item; no item added)
+- 2026-11-16 R207 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "options expiry",
+  "doji", "piercing" entry in research/ or knowledge/ before this run): (a) FX option expiries at the 10:00 NY cut (strike pinning)
+  -> EUR/USD around 10:00 NY; (b) intraday/daily candlestick reversal patterns (doji, hammer, piercing line / dark cloud cover)
+  -> EUR/USD. Two standard searches. (a) Only daily expiry-list news pages (investingLive, Newsquawk, VT Markets; not evidence,
+  not opened); no study; historical strike/notional data is not downloadable on the runner. (b) Opened (entries in
+  research/academic_studies.md): Alanazi-Alanazi-McMillan 2020 Cogent (doi:10.1080/23322039.2020.1768648), abstract only, 24 pairs
+  daily, "chart patterns are profitable" but "the spread is a large burden on profitability", EUR/USD not named, design UNVERIFIED
+  (full text permission prompt timed out, not circumvented); same family as Alanazi 2020 EJF already logged (R142). Detollenaere-Mazza
+  2012 WP: Euronext stocks, execution costs only. Alanazi 2020 EJF hit is a duplicate of R142.
+- No item added (rule 3 / R090: no EUR/USD study with a verified pattern definition, horizon and cost treatment; expiry angle has
+  no study and no runner data). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
