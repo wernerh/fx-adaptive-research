@@ -1976,3 +1976,11 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two angles searched (dollar carry / average forward discount; Parabolic SAR rules). Two papers opened and logged in
   research/academic_studies.md. No item added (reasons in the R221 refill note). 0 trials. No lead, no notification.
 - **Observation:** eight consecutive refills (R214-R221) with no item; the R219 observation (human decision on new data) stands.
+
+## 2026-11-16 R222 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local clone
+  was shallow with a stale `main`; worked from a detached checkout of `origin/main` (stale local branch left untouched). pytest 454 passed.
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (retail-trader positioning; quarter-end FX-swap funding / cross-currency basis). Two sources opened
+  and logged in research/academic_studies.md. No item added (reasons in the R222 refill note). 0 trials. No lead, no notification.
+- **Observation:** nine consecutive refills (R214-R222) with no item; the R219 observation (human decision on new data) stands.

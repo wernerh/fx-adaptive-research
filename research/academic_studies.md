@@ -1251,3 +1251,14 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data/design:** hourly EUR/USD, GBP/USD, USD/CHF, USD/JPY, 2001-2010; Wilder default P-SAR, fixed 30-pip TP/SL, 10-hour time exit; no spreads/commissions modelled; no train/test split.
 - **Finding:** EUR/USD net +1,459 pips over 4,967 orders (~0.29 pips/order gross); other pairs negative or marginal; authors call P-SAR "not a suitable indicator".
 - **Relevance:** **None**: gross edge per trade is far below the SPEC 4 cost model; in-sample only. **Status:** VERIFIED (mirror copy, venue UNVERIFIED).
+
+### Cerutti, Obstfeld & Zhou (2020 draft), "Covered Interest Parity Deviations: Macrofinancial Determinants" (added 2026-11-16 R222)
+- **Venue:** NBER conference paper dated 31 May 2020, revision of NBER WP 26129 (2019); [PDF](https://conference.nber.org/conf_papers/f132236.pdf) (opened 2026-11-16 R222 via web-fetch, ~37% verbatim; rest only via fetch summary, not used).
+- **Data/design:** daily 3-month LIBOR (and Treasury) cross-currency basis for 10 currencies incl. EUR vs USD, averaged to monthly, 2002-2019; regressions explain contemporaneous monthly basis changes.
+- **Finding (verbatim, p.8):** "By using monthly averages, our regressions aim to highlight drivers of CIP deviations at a relatively lower frequency". No spot-return forecast in the verbatim part; quarter-end section not read verbatim (UNVERIFIED).
+- **Relevance:** **None** for a spot EUR/USD direction rule (dependent variable is the basis, monthly). **Status:** VERIFIED (partial).
+
+### Krohn & Sushko (2020), "FX spot and swap market liquidity spillovers" (added 2026-11-16 R222)
+- **Venue:** BIS Working Paper 836, Jan 2020; [landing page](https://www.bis.org/publ/work836.pdf) (opened 2026-11-16 R222: abstract/summary only; PDF fetch permission timed out, not circumvented).
+- **Finding (landing page):** uses "exogenous quarter-end funding liquidity shocks in FX swap markets"; worse funding liquidity (forward discount / CIP deviations) goes with wider spot bid-ask spreads. Dependent variable is spot liquidity, not returns.
+- **Relevance:** **None** for a direction rule (liquidity, not returns; body UNVERIFIED). **Status:** VERIFIED (abstract only).
