@@ -2361,3 +2361,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   affects" returns, frequency and lag UNVERIFIED (PDF not openable this run, not circumvented).
 - No item added (rule 3: (a) no published mechanism/sign for EUR/USD weekly extremes; (b) no EUR/USD, no verified predictive lag).
   pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R203 (not an item; no item added)
+- 2026-11-16 R203 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles tried: (a) US cash-equity
+  close (16:00 NY) flows -> late-afternoon EUR/USD return; (b) US Treasury quarterly refunding announcements -> EUR/USD. Two standard
+  searches. (a) Hits were only Krohn-Mueller-Whelan (fixings family, already tested E022-E025, E032), Evans (NYU microstructure
+  meeting 2015, not opened) and the Melvin-Prins equity-hedging slides (already logged; month-end line tested E034); the equity-close
+  angle was already covered by refill note R187 (~line 2123). (b) Only news/broker pages (Newsquawk, FXStreet, MarketPulse, Marc to
+  Market; not evidence, not opened); the angle was already covered by refill note R159 (~line 1785, ~4 events/year, below the R090
+  power floor). Keyword checks (fiscal year, repatriation, dividend, index rebalancing, MSCI, JOLTS, Fed speech) show the remaining
+  candidate angles are all already logged (R149, R170, R161, R188).
+- No item added (rule 3 / R090: nothing new opened; both angles duplicate earlier notes). pytest 434 passed. 0 trials used
+  (dev 259, val 9, total 268). Not a pipeline failure. Search space for free, runner-downloadable, verified EUR/USD predictors
+  appears exhausted under the current data constraints; see decision log R203.

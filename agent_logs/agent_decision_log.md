@@ -1793,3 +1793,12 @@ Why each run chose what it did, and any judgement calls.
   unverified lag -> no item added (refill note R202). No lead, no notification.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R202; a human decision (new data
   source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.
+
+## 2026-11-16 R203 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles: US equity close flows and Treasury quarterly refunding -> EUR/USD; both duplicate earlier
+  refill notes (R187, R159) -> no item added (refill note R203). No lead, no notification.
+- **Housekeeping:** the workspace clone's local `main` had diverged from origin (stale R079-era commits not on origin); reset to
+  origin/main, stale commits kept on local branch `backup-stale-main` (not pushed). No repo history changed.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R203; a human decision (new data
+  source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.
