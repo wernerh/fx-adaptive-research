@@ -11,16 +11,402 @@
   "variable_changed": "new family: ML classifier on lagged daily returns; timing, return definition, walk-forward schedule and decision rule from E050/E019 (B16)",
   "decision_rule": "SIGNAL if mean daily signed > 1.0 pip AND moving-block bootstrap (block 20, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE; first-fit failure -> BLOCKED (0 trials)",
   "n_trials": 1,
-  "status": "preregistered",
+  "status": "complete",
   "command": "python scripts/run_e051_rf_lags.py | tee backtests/validation_reports/E051_results.txt",
   "preregistered_in": "R212",
   "dependencies": {
     "scikit-learn": "1.9.1 (pinned in pyproject)"
   },
-  "next_experiment": "B63 val confirmation if SIGNAL; else B63 closed unearned",
+  "next_experiment": "none (B62 closed NONE, B63 closed unearned); backlog refill next",
   "outputs": [
     "backtests/validation_reports/E051_results.json",
     "backtests/validation_reports/E051_results.txt",
     "backtests/validation_reports/E051_daily.csv"
-  ]
+  ],
+  "results": {
+    "result": {
+      "n": 1241,
+      "mean_pips": 1.953,
+      "median_pips": 1.45,
+      "sd_pips": 50.14,
+      "hit_rate": 0.5109,
+      "t_stat": 1.372,
+      "t_p_one_sided": 0.0852,
+      "mean_ci95_block_boot": [
+        -1.244,
+        4.581
+      ],
+      "decision": "NONE"
+    },
+    "n_trading_dates": 1562,
+    "n_test_days": 1241,
+    "skips": {
+      "no_next": 1,
+      "missing_now": 5,
+      "missing_next": 5,
+      "missing_lag": 49,
+      "flat": 0
+    },
+    "fit_summary": {
+      "n_fits_attempted": 62,
+      "n_fit_failures": 0,
+      "first_fit_n": 233,
+      "first_fit_up_share": 0.4936,
+      "n_fits_ok": 62
+    },
+    "fits": [
+      {
+        "fit_date": "2015-12-31",
+        "n_rows": 233
+      },
+      {
+        "fit_date": "2016-02-02",
+        "n_rows": 248
+      },
+      {
+        "fit_date": "2016-03-02",
+        "n_rows": 269
+      },
+      {
+        "fit_date": "2016-03-31",
+        "n_rows": 290
+      },
+      {
+        "fit_date": "2016-04-29",
+        "n_rows": 311
+      },
+      {
+        "fit_date": "2016-05-30",
+        "n_rows": 332
+      },
+      {
+        "fit_date": "2016-06-28",
+        "n_rows": 353
+      },
+      {
+        "fit_date": "2016-07-27",
+        "n_rows": 374
+      },
+      {
+        "fit_date": "2016-08-25",
+        "n_rows": 395
+      },
+      {
+        "fit_date": "2016-09-23",
+        "n_rows": 416
+      },
+      {
+        "fit_date": "2016-10-24",
+        "n_rows": 437
+      },
+      {
+        "fit_date": "2016-11-22",
+        "n_rows": 458
+      },
+      {
+        "fit_date": "2016-12-21",
+        "n_rows": 479
+      },
+      {
+        "fit_date": "2017-01-19",
+        "n_rows": 500
+      },
+      {
+        "fit_date": "2017-02-17",
+        "n_rows": 521
+      },
+      {
+        "fit_date": "2017-03-20",
+        "n_rows": 542
+      },
+      {
+        "fit_date": "2017-04-18",
+        "n_rows": 563
+      },
+      {
+        "fit_date": "2017-05-17",
+        "n_rows": 584
+      },
+      {
+        "fit_date": "2017-06-15",
+        "n_rows": 605
+      },
+      {
+        "fit_date": "2017-07-14",
+        "n_rows": 626
+      },
+      {
+        "fit_date": "2017-08-14",
+        "n_rows": 647
+      },
+      {
+        "fit_date": "2017-09-12",
+        "n_rows": 668
+      },
+      {
+        "fit_date": "2017-10-11",
+        "n_rows": 689
+      },
+      {
+        "fit_date": "2017-11-09",
+        "n_rows": 710
+      },
+      {
+        "fit_date": "2017-12-08",
+        "n_rows": 731
+      },
+      {
+        "fit_date": "2018-01-09",
+        "n_rows": 741
+      },
+      {
+        "fit_date": "2018-02-07",
+        "n_rows": 761
+      },
+      {
+        "fit_date": "2018-03-08",
+        "n_rows": 782
+      },
+      {
+        "fit_date": "2018-04-06",
+        "n_rows": 803
+      },
+      {
+        "fit_date": "2018-05-07",
+        "n_rows": 824
+      },
+      {
+        "fit_date": "2018-06-05",
+        "n_rows": 845
+      },
+      {
+        "fit_date": "2018-07-04",
+        "n_rows": 866
+      },
+      {
+        "fit_date": "2018-08-02",
+        "n_rows": 887
+      },
+      {
+        "fit_date": "2018-08-31",
+        "n_rows": 908
+      },
+      {
+        "fit_date": "2018-10-01",
+        "n_rows": 929
+      },
+      {
+        "fit_date": "2018-10-30",
+        "n_rows": 950
+      },
+      {
+        "fit_date": "2018-11-28",
+        "n_rows": 971
+      },
+      {
+        "fit_date": "2018-12-27",
+        "n_rows": 989
+      },
+      {
+        "fit_date": "2019-01-28",
+        "n_rows": 1001
+      },
+      {
+        "fit_date": "2019-02-26",
+        "n_rows": 1022
+      },
+      {
+        "fit_date": "2019-03-27",
+        "n_rows": 1043
+      },
+      {
+        "fit_date": "2019-04-25",
+        "n_rows": 1064
+      },
+      {
+        "fit_date": "2019-05-24",
+        "n_rows": 1085
+      },
+      {
+        "fit_date": "2019-06-24",
+        "n_rows": 1106
+      },
+      {
+        "fit_date": "2019-07-23",
+        "n_rows": 1127
+      },
+      {
+        "fit_date": "2019-08-21",
+        "n_rows": 1148
+      },
+      {
+        "fit_date": "2019-09-19",
+        "n_rows": 1169
+      },
+      {
+        "fit_date": "2019-10-18",
+        "n_rows": 1190
+      },
+      {
+        "fit_date": "2019-11-18",
+        "n_rows": 1211
+      },
+      {
+        "fit_date": "2019-12-17",
+        "n_rows": 1232
+      },
+      {
+        "fit_date": "2020-01-16",
+        "n_rows": 1241
+      },
+      {
+        "fit_date": "2020-02-14",
+        "n_rows": 1258
+      },
+      {
+        "fit_date": "2020-03-16",
+        "n_rows": 1271
+      },
+      {
+        "fit_date": "2020-04-14",
+        "n_rows": 1292
+      },
+      {
+        "fit_date": "2020-05-13",
+        "n_rows": 1313
+      },
+      {
+        "fit_date": "2020-06-11",
+        "n_rows": 1334
+      },
+      {
+        "fit_date": "2020-07-10",
+        "n_rows": 1355
+      },
+      {
+        "fit_date": "2020-08-10",
+        "n_rows": 1376
+      },
+      {
+        "fit_date": "2020-09-08",
+        "n_rows": 1397
+      },
+      {
+        "fit_date": "2020-10-07",
+        "n_rows": 1418
+      },
+      {
+        "fit_date": "2020-11-05",
+        "n_rows": 1439
+      },
+      {
+        "fit_date": "2020-12-04",
+        "n_rows": 1460
+      }
+    ],
+    "descriptive": {
+      "feature_importances_last_fit": {
+        "lag0": 0.1011,
+        "lag1": 0.0974,
+        "lag2": 0.1021,
+        "lag3": 0.1034,
+        "lag4": 0.1038,
+        "lag5": 0.1063,
+        "lag6": 0.1,
+        "lag7": 0.091,
+        "lag8": 0.096,
+        "lag9": 0.0989
+      },
+      "long_days": {
+        "n": 598,
+        "mean_signed_pips": 2.973
+      },
+      "short_days": {
+        "n": 643,
+        "mean_signed_pips": 1.004
+      },
+      "buy_and_hold_mean_pips_per_day": 0.912,
+      "mean_p_up": 0.4967,
+      "p_up_quantiles": {
+        "q10": 0.3529,
+        "q50": 0.4902,
+        "q90": 0.6471
+      },
+      "tsmom_e019_same_dates": {
+        "n": 1236,
+        "tsmom_mean_signed_pips": -0.673,
+        "e051_mean_signed_pips_on_these_dates": 2.006,
+        "signal_agreement": 0.5316
+      },
+      "e050_same_dates": {
+        "n": 1241,
+        "e050_mean_signed_pips": -1.268,
+        "e051_mean_signed_pips_on_these_dates": 1.953,
+        "signal_agreement": 0.4988
+      }
+    },
+    "by_year": [
+      {
+        "year": 2016,
+        "n": 254,
+        "mean": 0.27,
+        "hit": 0.48,
+        "long_share": 0.547
+      },
+      {
+        "year": 2017,
+        "n": 254,
+        "mean": -3.093,
+        "hit": 0.48,
+        "long_share": 0.504
+      },
+      {
+        "year": 2018,
+        "n": 248,
+        "mean": 3.669,
+        "hit": 0.504,
+        "long_share": 0.427
+      },
+      {
+        "year": 2019,
+        "n": 248,
+        "mean": 6.641,
+        "hit": 0.569,
+        "long_share": 0.472
+      },
+      {
+        "year": 2020,
+        "n": 237,
+        "mean": 2.461,
+        "hit": 0.523,
+        "long_share": 0.456
+      }
+    ],
+    "cost_check": {
+      "n_days": 1241,
+      "n_round_trips": 629,
+      "n_sign_flips": 625,
+      "mean_days_per_round_trip": 1.97,
+      "mean_signed_mid_pips_per_day": 1.953,
+      "mean_net_bidask_pips_per_day": 1.816,
+      "mean_net_spec4_pips_per_day": 1.715,
+      "mean_net_costs_x1_5_pips_per_day": 1.596,
+      "mean_net_spec4_pips_per_round_trip": 3.383,
+      "median_entry_spread_pips": 0.2
+    },
+    "first_test_date": "2016-01-12",
+    "last_test_date": "2020-12-23",
+    "n_trials": 1,
+    "blocks": [
+      "dev"
+    ],
+    "n_lags": 10,
+    "n_trees": 51,
+    "random_state": 0,
+    "refit_every": 21,
+    "first_fit_end": "2015-12-31",
+    "sklearn_version": "1.9.1"
+  },
+  "recorded_in": "R213",
+  "workflow_run": "43840273851"
 }

@@ -464,3 +464,15 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   (E019, E050). A published 1982-2005 out-of-sample cost-adjusted rule is not enough prior to expect an edge in a recent sample.
 - **Action:** B60 closed NONE (rejected_hypotheses.md); B61 closed unearned. No re-test with 3 states, other horizons, refit
   intervals, interest-differential excess returns or one leg. Next: backlog refill.
+
+### 2026-11-16 R213: a walk-forward random forest on 10 lagged daily returns has no detectable daily EUR/USD edge on 2016-2020 (E051)
+- **Context:** E051 (B62), long (short) at 16:00 NY when a 51-tree random forest on the 10 latest daily 16:00 NY log returns
+  (walk-forward, refit every 21 trading dates) gives P(up) > 0.5 (< 0.5), 1-day hold, dev, 1 trial.
+- **Observation:** NONE (n 1241, +1.953 pips, block-20 CI (-1.244, 4.581), t p 0.0852). Feature importances flat across lags
+  (0.091-0.106); one negative year (2017 -3.093), 2019 +6.641 (descriptive).
+- **Evidence label:** [EXP]
+- **Lesson:** with daily SD ~50 pips and ~1,250 days, a 2-pip daily mean is below the detection limit; a positive point estimate
+  under NONE is not a reason to tune trees, lags or thresholds (rule 7, lesson R076). Published 2009-2010 ML hit rates do not carry
+  a detectable edge into 2016-2020.
+- **Action:** B62 closed NONE (rejected_hypotheses.md); B63 closed unearned. No re-test with other tree or lag counts, refit
+  intervals, probability thresholds, other classifiers or one leg. Next: backlog refill.

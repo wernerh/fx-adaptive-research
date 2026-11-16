@@ -135,3 +135,8 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - 62 walk-forward fits (2015-12-31 .. 2020-12-04), 0 failures. States separate mainly by volatility: last fit sigma 40.5 vs 74.8
   (model units), p_stay 0.9961 / 0.9888. The 8-day expected-return sign changed 13 times in 1290 test days.
   See experiments/2026-11-16_E050_markov_switch.
+
+### 2026-11-16 R213: random-forest fits on 10 lagged daily EUR/USD 16:00 NY returns (E051, dev) [EXP]
+- 62 walk-forward fits (2015-12-31 .. 2020-12-04), 0 failures; first fit 233 rows (up share 0.4936), last 1460 rows. Feature
+  importances at the last fit are flat (0.091-0.106 per lag). Predicted P(up) q10/q50/q90 0.3529/0.4902/0.6471; the sign flipped
+  625 times in 1241 test days. See experiments/2026-11-16_E051_rf_lags.

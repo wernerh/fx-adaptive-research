@@ -1899,3 +1899,12 @@ Why each run chose what it did, and any judgement calls.
 - **Housekeeping:** workspace local `main` again had unrelated stale history; worked on local branch `run-2026-11-16` from origin/main
   and pushed to origin main. No repo history changed.
 - **Next run:** collect E051 outputs when the run finishes; apply decide_b16 exactly.
+
+## 2026-11-16 R213 (unattended)
+- **State:** research-batch run 43840273851 (E051) completed success; outputs committed by github-actions[bot] (32b9e54), not yet
+  recorded. No run queued or in progress. Local `main` was again a stale unrelated history; reset to `origin/main`. pytest 454 passed.
+- **Choice:** collect E051 (protocol priority 1). Applied the pre-registered B62 rule (E019 decide_b16) exactly: NONE (mean +1.953
+  > 1 pip but CI lower -1.244 < 0 and t p 0.0852 > 0.05; not WEAK since neither CI lower > 0 nor p < 0.05). No rule or threshold
+  changed; the positive point estimate does not earn B63.
+- **Action:** E051 recorded; B62 `done`, B63 closed unearned (0 trials). Trials dev 261, val 9, total 270. No lead, no notification.
+- **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).
