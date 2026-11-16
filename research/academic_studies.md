@@ -1227,3 +1227,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data/design:** EBS interdealer EUR/USD and USD/JPY, Jan 1999 - Jan 2004; second-by-second best quotes, 1-minute returns and volume; six US releases incl. retail sales, GDP, PPI, NFP, trade balance, FOMC; return windows from 1 min before to up to ~1 hour after.
 - **Finding (Sec. 4.3, verbatim):** the surprise "produces a movement in the conditional mean that is generally completed within a few minutes, and that is effectively a jump"; "the exchange rate returns subsequent to the few minutes around the time of the data release are orthogonal to the unexpected component of the macroeconomic announcement." Volatility and volume stay elevated afterwards (Sec. 4.2). No test beyond ~1 hour.
 - **Relevance:** **Negative** for a post-release drift item (retail sales or other US releases) on EUR/USD: price adjustment is complete within minutes. **Status:** VERIFIED (partly via fetch summary as noted).
+
+### Dimitriadou & Gregoriou (2023), "Predicting Bitcoin Prices Using Machine Learning" (added 2026-11-16 R220)
+- **Venue:** Entropy 25(5):777, DOI [10.3390/e25050777](https://pmc.ncbi.nlm.nih.gov/articles/PMC10216962/) (PMC copy opened 2026-11-16 R220 via web-fetch; partly via fetch summary).
+- **Data/design:** Bitcoin up/down direction as the target; 24 regressors incl. EUR/USD, GBP, JPY, AUD vs USD, rates, macro, 13 cryptocurrencies; Dec 2014 - Jul 2019, 239 observations (frequency stated inconsistently: daily/weekly); logit, linear SVM, random forest.
+- **Finding:** best accuracy ~66% (logit) for Bitcoin direction. No test of crypto -> FX direction.
+- **Relevance:** **None** for EUR/USD (FX is a regressor, not the target). **Status:** VERIFIED (partly via fetch summary).
+
+### Pečiulis & Vasiliauskaitė (2021), "Exogenous factors that influence returns of Bitcoin and Ether" (added 2026-11-16 R220)
+- **Venue:** 15th International Days of Statistics and Economics (MSED), Prague, 2021, pp. 809-818; [PDF](https://msed.vse.cz/msed_2021/article/529-Peciulis-Tomas-paper.pdf) (opened 2026-11-16 R220 via web-fetch).
+- **Data/design:** daily BTC-USD and ETH-USD, Jul 2015 - Apr 2021; SARMAX with ten exogenous factors incl. EUR/USD as a same-period regressor.
+- **Finding (verbatim):** "EUR/USD exchange rate, 10-yr US treasury bonds, Nikkei 225 has insignificant p-values". No Granger test in either direction.
+- **Relevance:** **None** for a lagged crypto -> EUR/USD rule. **Status:** VERIFIED.

@@ -1960,3 +1960,11 @@ Why each run chose what it did, and any judgement calls.
   logged in research/academic_studies.md. No item added (reasons in the R219 refill note). 0 trials. No lead, no notification.
 - **Observation:** six consecutive refills (R214-R219) with no item. The literature angles are close to exhausted; a human decision
   on new data (see R105 data list) would likely add more value than further refill passes.
+
+## 2026-11-16 R220 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local `main`
+  had diverged from `origin/main` (stale clone); reset to `origin/main` (backup branch kept locally). pytest 454 passed.
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (central-bank blackout period drift; lagged Bitcoin returns -> next-day EUR/USD). Two papers opened
+  and logged in research/academic_studies.md. No item added (reasons in the R220 refill note). 0 trials. No lead, no notification.
+- **Observation:** seven consecutive refills (R214-R220) with no item; the R219 observation (human decision on new data) stands.
