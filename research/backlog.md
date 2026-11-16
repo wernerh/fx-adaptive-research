@@ -2422,3 +2422,53 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   2012 WP: Euronext stocks, execution costs only. Alanazi 2020 EJF hit is a duplicate of R142.
 - No item added (rule 3 / R090: no EUR/USD study with a verified pattern definition, horizon and cost treatment; expiry angle has
   no study and no runner data). pytest 434 passed. 0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R208 (not an item)
+- 2026-11-16 R208 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles (no "Markov", "regime
+  switching", "Engel", "Dueker" or "Williams %R" entry in research/ or knowledge/ before this run): (a) Markov regime-switching
+  trading rules -> daily EUR/USD; (b) Williams %R / stochastic oscillator -> intraday EUR/USD. Two standard searches.
+  (a) Opened Dueker & Neely (St. Louis Fed WP 2001-021, JBF; ~77% verbatim) and the Parikakis & Merika (J. Forecasting 2009)
+  abstract; entries in research/academic_studies.md. (b) Only vendor/broker pages (BabyPips, TradingView, Substack); not evidence,
+  not opened; not added.
+- Why this line: a published, out-of-sample, cost-adjusted daily rule on a series that includes EUR/USD, with a second paper naming
+  EUR/USD; price data only (no new source). Different mechanism from B16 (12-month TSMOM, sign of past return): the signal is the
+  model's expected 8-day return from filtered regime probabilities, which can flip within days. Prior is weak: sample ends 2005
+  (decay, Neely-Weller-Ulrich 2009) and the published gain over MA rules is ~95 bp/yr.
+
+### B60: Markov regime-switching expected-return rule, daily EUR/USD (signal test, dev) · `ready` (Added 2026-11-16 R208 refill; 1 dev trial counted when it runs)
+- **Mechanism [PUB]:** Dueker & Neely (St. Louis Fed WP 2001-021 / JBF, opened R208): a Markov switching model of daily excess
+  FX returns (DEM/EUR, JPY, CHF, GBP vs USD) traded on the sign of its average expected return over eight days earns positive
+  out-of-sample returns net of 10 bp costs, 1982/83-2005, modestly above moving-average rules (verbatim in academic_studies.md).
+  Parikakis & Merika (2009, abstract only) report "exceptional out-of-sample returns" for EUR/USD with Dueker-Neely-type rules.
+  Economic story: persistent regimes in mean/volatility ("long swings") that the filtered probabilities pick up early.
+- **Model (fixed now; a simplification, state it in results):** 2-state Markov switching model on daily mid log returns r(D) =
+  ln(mid 16:00 NY D / mid 16:00 NY D-1) in pips-scaled units, switching mean and switching variance, Gaussian errors, constant
+  transition matrix (statsmodels `MarkovRegression(r, k_regimes=2, trend="c", switching_variance=True)`; statsmodels must be added
+  to the project dependencies). No kurtosis switching, no interest differential (spot only, as B16; carry not in data). Labels are
+  not needed: the forecast uses both states.
+- **Signal (fixed now):** expanding window inside dev. First fit on all dev trading dates up to 2015-12-31 (~260 dates); refit every
+  21 trading dates on all returns up to and including D (parameters frozen between refits; filtered probabilities updated daily with
+  the frozen parameters using returns up to D only). On each trading date D from the first dev date of 2016: E8(D) = sum over
+  h = 1..8 of p(D)' P^h mu, where p(D) is the filtered state probability vector at D, P the transition matrix and mu the state means.
+  s(D) = sign(E8(D)) (s = 0 and date excluded if E8 = 0 exactly). Position s(D) held from 16:00 NY on D to 16:00 NY on D+1 (same
+  timing as B16/E019, avoids the roll). Daily signed return = s(D) x (mid 16:00 NY D+1 - mid 16:00 NY D) in pips. Horizon 8 and
+  refit interval 21 are fixed before data; other values are new trials. If a fit fails to converge, keep the previous parameters and
+  count the failures (if the very first fit fails, the experiment is BLOCKED, 0 trials, and the failure is fixed before re-queueing).
+- **No-look-ahead test (required):** truncating the series after D must leave s(D) unchanged; random-walk synthetic series must give
+  no SIGNAL.
+- **Test:** **dev only, 1 trial**; n ~1,290 (2016-2020). Dates missing either 16:00 NY bar are excluded and counted.
+- **Decision rule (draft, same as B16):** SIGNAL if mean daily signed return > 1.0 pip AND moving-block bootstrap (block 20 dates,
+  2000 draws, seed 0) 95% CI lower > 0 AND one-sided t-test p < 0.05. WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE.
+  A SIGNAL earns B61 (val confirmation).
+- **Descriptive (not in rule):** number of sign flips and mean holding spell; net per flip at bid/ask, SPEC 4 and costs x1.5; by
+  year; long and short dates; buy-and-hold and E019 (TSMOM) on the same dates; refit failures; mean of the two state SDs.
+- **Power note:** daily SD ~45 pips, n ~1,290 -> bootstrap CI half-width ~2.5-3 pips. Dueker-Neely's average 5.27%/yr is ~2 pips/day
+  at EUR/USD ~1.13, so the published effect size is near the detection limit; a NONE does not rule it out.
+- **Contamination note:** daily 16:00 NY returns on dev were used by E019 (sign of 252-day return), E037, E041; no regime model or
+  multi-day expected-return statistic has been computed on dev. Record this.
+- **Calendar label:** multi-day regime/trend; not a time-of-day effect.
+- **Data:** price data in repo only; statsmodels on the runner (pip).
+
+### B61: Markov regime-switching rule, val confirmation (signal test, val only) · `blocked` (Added 2026-11-16 R208; earned only if B60 returns SIGNAL on dev)
+- Same model, horizon, refit interval, timing and rule as B60 on val (2021-01-21 to 2023-06-30), first fit on all dev dates plus val
+  dates up to D (expanding), 1 val trial at p < 0.05, block-20 bootstrap. Closed unearned (0 trials) if B60 is NONE or WEAK.

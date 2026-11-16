@@ -1840,3 +1840,16 @@ Why each run chose what it did, and any judgement calls.
   commits kept on local branch `stale-local-main` (not pushed). No repo history changed.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R207; a human decision (new data
   source, e.g. an economic calendar for B6 or quanto-CDS data, the Alanazi full texts, or OOS use for B7) would unblock work.
+
+## 2026-11-16 R208 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles: Markov regime-switching rules -> daily EUR/USD and Williams %R / stochastic oscillator.
+  Dueker & Neely (St. Louis Fed WP 2001-021 / JBF) opened: published out-of-sample, cost-adjusted daily rule on a series including
+  EUR/USD; Parikakis & Merika (2009) abstract names EUR/USD. Added B60 (dev, 1 trial when it runs) and B61 (val, blocked).
+  Williams %R: vendor pages only, not added. No lead, no notification.
+- **Why B60 is worth a trial:** price data only, a published mechanism with a fixed horizon (8 days) and cost treatment, and a signal
+  distinct from B16 (filtered regime probabilities rather than the sign of a 12-month return). Weak prior (pre-2006 sample, decay);
+  power is borderline (published ~2 pips/day vs CI half-width ~2.5-3 pips), stated in the item.
+- **Housekeeping:** workspace local `main` had diverged from origin again (shallow clone, stale R079-era history); renamed to local
+  branch `stale-main-backup` (not pushed) and recreated `main` from origin/main. No repo history changed.
+- **Next run:** take B60 (pre-register as E050, add statsmodels dependency, implement with no-look-ahead and random-walk tests, queue).
