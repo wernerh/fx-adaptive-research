@@ -1209,3 +1209,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data/design (abstract):** 1,868 Reuters-reported ECB statements 2008-2016 coded dovish/neutral/hawkish, outside policy-meeting days; 1-minute EUR/USD; cumulative abnormal returns and realised volatility.
 - **Finding (abstract, verbatim):** "Cumulative abnormal returns remain within a few basis points by t=+20, and scattered significant minutes are not sequential"; communication "does not generate lasting directional moves". Coefficients UNVERIFIED (full text not read).
 - **Relevance:** **None** for a directional rule (null on returns). **Status:** abstract VERIFIED.
+
+### Khurram, Ali, Jiang & Xie (2022), "Predictability of extreme daily returns and Preference for lottery-like stocks in an emerging market" (added 2026-11-16 R217)
+- **Venue:** Economic Research-Ekonomska Istraživanja 35(1), 1322-1344, doi:10.1080/1331677X.2021.1965000; [RePEc/IDEAS](https://ideas.repec.org/a/taf/reroxx/v35y2022i1p1322-1344.html) (abstract opened 2026-11-16 R217 via web-fetch; full text subscriber-only, not read).
+- **Data/design (abstract):** cross-section of Pakistan Stock Exchange stocks sorted on the maximum daily return of the month (MAX effect); next-month risk-adjusted returns, 3- and 6-month holds. Sample period UNVERIFIED.
+- **Finding (abstract):** a MAX effect that "persists even if we extend the holding period to three- and six-month". Equities only; no FX results.
+- **Relevance:** **None**: cross-sectional equity lottery-preference effect, no single-currency time-series test, no EUR/USD. **Status:** abstract VERIFIED.

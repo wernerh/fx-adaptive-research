@@ -1933,3 +1933,13 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two angles searched (ECB speeches -> intraday EUR/USD; round-number price clustering). Two papers logged in
   research/academic_studies.md. No item added (reasons in the R216 refill note). 0 trials. No lead, no notification.
 - **Next run:** refill again with angles not yet in research/ or knowledge/.
+
+## 2026-11-16 R217 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local HEAD
+  was detached at `origin/main` (same commit). pytest 454 passed after reinstalling dev dependencies (statsmodels was missing in the
+  fresh workspace; not a repo failure).
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (MAX / extreme-daily-return effect; Treasury yields leading intraday EUR/USD). One paper logged in
+  research/academic_studies.md. No item added (reasons in the R217 refill note). 0 trials. No lead, no notification.
+- **Observation:** R214-R217 are four consecutive refill passes with no item added; the remaining price-only daily/intraday angles
+  mostly re-enter tested families. Next refills should favour data sources the runner can download that are not yet in the repo.

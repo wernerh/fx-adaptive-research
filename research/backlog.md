@@ -2558,3 +2558,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (arXiv 1307.5440, not opened, not cited) and equity-market studies; round-number levels are the Osler family already tested (B52).
 - No item added: (a) published evidence is null on direction, and statement timestamps are not in the repo; (b) no directional basis
   beyond the B52 family. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+
+### Refill note R217 (not an item; no item added)
+- 2026-11-16 R217 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "MAX effect",
+  "lottery" or "Khurram" entry in research/ or knowledge/ before this run): (a) MAX / extreme-daily-return effect -> next-period
+  EUR/USD direction; (b) US Treasury yield changes leading intraday EUR/USD. Two standard searches.
+  (a) Opened Khurram-Ali-Jiang-Xie (ERE 2022, doi:10.1080/1331677X.2021.1965000, abstract; entry in research/academic_studies.md):
+  Pakistani equities cross-section, no FX. Reading "MAX Momentum" PDF (centaur.reading.ac.uk/99101): host bot-protection refused,
+  not circumvented, not cited; other hits (Trier "Maxing out", CEPR DP16128, uwasa, hrcak, AJBA) not opened, not cited.
+  Cespa et al. WP-EMG-01-2021 hit already logged (R215). (b) Only broker/news pages and a FRED correlation tool (not evidence, not
+  opened); intraday Treasury yields are not in the repo, and the Treasury line was already tested via auctions (E039).
+- No item added: (a) no single-currency or EUR/USD evidence; a time-series "large-move" rule on daily EUR/USD would be the
+  lagged-return family tested by E033/E050/E051 (all NONE); (b) no source and no data. pytest 454 passed. 0 trials used (dev 261,
+  val 9, total 270). Not a pipeline failure.
