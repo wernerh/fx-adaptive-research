@@ -1811,3 +1811,12 @@ Why each run chose what it did, and any judgement calls.
   kept on local branch `stale-local-main` (not pushed). No repo history changed.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R204; a human decision (new data
   source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.
+
+## 2026-11-16 R205 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles: Keltner/ADX intraday rules (only Frömmel-Lampaert 2016, RUB/USD, already logged R184) and
+  US early-close holiday sessions (news pages only, ~12 dev dates) -> no item added (refill note R205). No lead, no notification.
+- **Housekeeping:** workspace local `main` had diverged from origin again (stale history, shallow clone); worked on a branch from
+  origin/main and pushed to main; stale local main kept on local branch `backup-stale-main` (not pushed). No repo history changed.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R205; a human decision (new data
+  source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.

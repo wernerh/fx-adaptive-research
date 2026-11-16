@@ -2385,3 +2385,16 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   "select time frames", no costs stated) and MPRA 89594 (USD/INR hourly, ~4 months).
 - No item added (rule 3 / R090: no EUR/USD study with a pre-registrable sign, horizon and cost treatment). pytest 434 passed.
   0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
+
+### Refill note R205 (not an item; no item added)
+- 2026-11-16 R205 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles: (a) Keltner-channel /
+  ADX trend-strength rules -> intraday EUR/USD (no "Keltner" entry before this run; ADX only in a GA-optimised daily-rule paper);
+  (b) US early-close / low-liquidity holiday sessions (day after Thanksgiving, Christmas Eve) -> EUR/USD. Two standard searches.
+  (a) Top academic hit opened twice: Frömmel-Lampaert "Does frequency matter for intraday technical trading?" (FRL 18, 2016,
+  doi:10.1016/j.frl.2016.04.014, CORE full text; 2015 working-paper version on unecon.ru): RUB/USD MICEX only, MA and RSI rules
+  only (no Keltner/ADX), in-sample SPA, "The adjustment for real, rather than estimated transaction costs wipes away most of the
+  profits" (verbatim) -> already logged in R184, duplicate. Other hits vendor/broker pages (not evidence, not opened).
+  (b) Only TradingView / FXStreet / forex.com / asset-manager commentary pages (not evidence, not opened); no study; ~2 events per
+  year (~12 dev dates), far below the R090 power floor.
+- No item added (rule 3 / R090: no EUR/USD study with a pre-registrable sign, horizon and cost treatment). pytest 434 passed.
+  0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
