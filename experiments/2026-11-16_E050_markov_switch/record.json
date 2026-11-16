@@ -1,0 +1,22 @@
+{
+  "experiment_id": "E050",
+  "date": "2026-11-16",
+  "instrument": "EURUSD",
+  "hypothesis": "B60: s(D) x (EUR/USD mid 16:00 NY D+1 - mid 16:00 NY D) > 1 pip per day on dev test dates 2016-2020, s(D) = sign of the 8-day expected return of a 2-state Markov switching model (switching mean and variance) fitted walk-forward (first fit to 2015-12-31, refit every 21 trading dates) on daily 16:00 NY log returns up to D (Dueker-Neely 2001)",
+  "blocks_used": ["dev"],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family: Markov regime-switching expected-return signal; timing, return definition and decision rule from E019 (B16)",
+  "decision_rule": "SIGNAL if mean daily signed > 1.0 pip AND moving-block bootstrap (block 20, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE; first-fit failure -> BLOCKED (0 trials)",
+  "n_trials": 1,
+  "status": "preregistered",
+  "command": "python scripts/run_e050_markov_switch.py | tee backtests/validation_reports/E050_results.txt",
+  "preregistered_in": "R209",
+  "next_experiment": "B61 val confirmation if SIGNAL; else B60/B61 closed",
+  "outputs": [
+    "backtests/validation_reports/E050_results.json",
+    "backtests/validation_reports/E050_results.txt",
+    "backtests/validation_reports/E050_daily.csv"
+  ],
+  "results": null
+}

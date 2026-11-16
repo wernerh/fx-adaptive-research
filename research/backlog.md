@@ -2435,7 +2435,8 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   model's expected 8-day return from filtered regime probabilities, which can flip within days. Prior is weak: sample ends 2005
   (decay, Neely-Weller-Ulrich 2009) and the published gain over MA rules is ~95 bp/yr.
 
-### B60: Markov regime-switching expected-return rule, daily EUR/USD (signal test, dev) · `ready` (Added 2026-11-16 R208 refill; 1 dev trial counted when it runs)
+### B60: Markov regime-switching expected-return rule, daily EUR/USD (signal test, dev) · `running` (Added 2026-11-16 R208 refill; 1 dev trial counted when it runs)
+- 2026-11-16 R209: pre-registered as E050 (experiments/2026-11-16_E050_markov_switch/), queued on research-batch; status `running`.
 - **Mechanism [PUB]:** Dueker & Neely (St. Louis Fed WP 2001-021 / JBF, opened R208): a Markov switching model of daily excess
   FX returns (DEM/EUR, JPY, CHF, GBP vs USD) traded on the sign of its average expected return over eight days earns positive
   out-of-sample returns net of 10 bp costs, 1982/83-2005, modestly above moving-average rules (verbatim in academic_studies.md).

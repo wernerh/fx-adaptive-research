@@ -1853,3 +1853,16 @@ Why each run chose what it did, and any judgement calls.
 - **Housekeeping:** workspace local `main` had diverged from origin again (shallow clone, stale R079-era history); renamed to local
   branch `stale-main-backup` (not pushed) and recreated `main` from origin/main. No repo history changed.
 - **Next run:** take B60 (pre-register as E050, add statsmodels dependency, implement with no-look-ahead and random-walk tests, queue).
+
+## 2026-11-16 R209 (unattended)
+- **Decision:** next experiment (AUTONOMOUS_PROTOCOL step 3): no research-batch run queued or unrecorded (latest 43541310326 = E049,
+  recorded R157); top `ready` item is B60. Pre-registered as E050 (hypothesis, methodology, record.json, registry row) before any run,
+  implemented `fxresearch.markov_switch` + `scripts/run_e050_markov_switch.py` with tests (no-look-ahead with the real statsmodels
+  fitter, filter causality, refit schedule, first-fit BLOCKED path, random walk -> no SIGNAL), added statsmodels to pyproject,
+  queued via .github/run-requests/batch.sh. B60 -> `running`.
+- **Why B60:** only ready item; published out-of-sample cost-adjusted rule, price data only, distinct signal from B16.
+- **Implementation choices fixed before data (in methodology.md):** model returns drop pairs with a missing 16:00 quote; refit counter
+  runs over all walked trading dates; filtered probabilities from this repo's Hamilton filter with frozen parameters (statsmodels
+  used only for fitting); fit failure = exception, non-convergence or non-finite parameters.
+- **Housekeeping:** workspace clone was shallow with a stale local `main` (unrelated history); recreated `main` from origin/main.
+- **Next run:** collect E050 outputs when the run finishes; apply decide_b16 exactly.
