@@ -2013,3 +2013,10 @@ Why each run chose what it did, and any judgement calls.
   source opened and logged in research/academic_studies.md. No item added (reasons in the R225 refill note). 0 trials. No lead, no
   notification.
 - **Observation:** twelve consecutive refills (R214-R225) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-16 R226 (unattended)
+- **Decision:** refill pass (protocol step 4). Run 43840273851 already recorded as E051; no run queued or in progress; no `ready`
+  backlog item. Angles chosen because absent from research/ and knowledge/: yield-curve slope / rate-differential changes, and
+  wavelet / price-shock reversal. One new source opened and logged (Chen-Tsang 2011). No item added (reasons in the R226 refill note).
+  0 trials. No lead, no notification.
+- **Observation:** thirteen consecutive refills (R214-R226) with no item. The R219 observation (human decision on new data) stands.
