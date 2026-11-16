@@ -1,0 +1,26 @@
+{
+  "experiment_id": "E051",
+  "date": "2026-11-16",
+  "instrument": "EURUSD",
+  "hypothesis": "B62: s(D) x (EUR/USD mid 16:00 NY D+1 - mid 16:00 NY D) > 1 pip per day on dev test dates 2016-2020, s(D) = sign(p(D) - 0.5), p(D) = P(up) from a RandomForestClassifier(51 trees, random_state 0, defaults) on the 10 latest daily 16:00 NY log returns, fitted walk-forward (first fit to label date 2015-12-31, refit every 21 trading dates) (Theofilatos et al. 2012)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family: ML classifier on lagged daily returns; timing, return definition, walk-forward schedule and decision rule from E050/E019 (B16)",
+  "decision_rule": "SIGNAL if mean daily signed > 1.0 pip AND moving-block bootstrap (block 20, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE; first-fit failure -> BLOCKED (0 trials)",
+  "n_trials": 1,
+  "status": "preregistered",
+  "command": "python scripts/run_e051_rf_lags.py | tee backtests/validation_reports/E051_results.txt",
+  "preregistered_in": "R212",
+  "dependencies": {
+    "scikit-learn": "1.9.1 (pinned in pyproject)"
+  },
+  "next_experiment": "B63 val confirmation if SIGNAL; else B63 closed unearned",
+  "outputs": [
+    "backtests/validation_reports/E051_results.json",
+    "backtests/validation_reports/E051_results.txt",
+    "backtests/validation_reports/E051_daily.csv"
+  ]
+}

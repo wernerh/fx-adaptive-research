@@ -1885,3 +1885,17 @@ Why each run chose what it did, and any judgement calls.
   (val confirmation, `blocked`). Warwick WP 99-89 not opened (permission timeout, not circumvented). Ranked at the bottom (only
   ready item). 0 trials (dev 260, val 9, total 269). No lead, no notification.
 - **Next run:** pre-register B62 as E051 (add scikit-learn dependency, module, script, tests incl. no-look-ahead and random walk).
+
+## 2026-11-16 R212 (unattended)
+- **Decision:** next experiment (AUTONOMOUS_PROTOCOL step 3): no research-batch run queued or unrecorded (latest 43817068619 = E050,
+  recorded R210); top `ready` item is B62. Pre-registered as E051 (hypothesis, methodology, record.json, registry row) before any run,
+  implemented `fxresearch.rf_lags` + `scripts/run_e051_rf_lags.py` with 9 tests (no-look-ahead with the real scikit-learn fitter,
+  refit schedule and training cutoff, exclusions, first-fit BLOCKED path, random walk -> no SIGNAL, synthetic continuation learned),
+  pinned scikit-learn==1.9.1 in pyproject, queued via .github/run-requests/batch.sh. B62 -> `running`.
+- **Why B62:** only ready item; published cost-adjusted ML rule on EUR/USD, price data only, nonlinear lag signal not yet tested.
+- **Implementation choices fixed before data (in methodology.md):** lags counted in trading-date positions (a missing quote makes the
+  affected rows `missing_lag`, no gap skipping); label 0-returns dropped from training; refit counter over all walked dates (as E050);
+  fit failure = exception or single-class labels.
+- **Housekeeping:** workspace local `main` again had unrelated stale history; worked on local branch `run-2026-11-16` from origin/main
+  and pushed to origin main. No repo history changed.
+- **Next run:** collect E051 outputs when the run finishes; apply decide_b16 exactly.
