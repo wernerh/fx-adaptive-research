@@ -1984,3 +1984,12 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two angles searched (retail-trader positioning; quarter-end FX-swap funding / cross-currency basis). Two sources opened
   and logged in research/academic_studies.md. No item added (reasons in the R222 refill note). 0 trials. No lead, no notification.
 - **Observation:** nine consecutive refills (R214-R222) with no item; the R219 observation (human decision on new data) stands.
+
+## 2026-11-16 R223 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local `main`
+  had diverged from `origin/main`; kept it as branch `backup-local-main-20261116` and worked on a fresh branch from `origin/main`.
+  pytest 454 passed.
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (volatility-managed scaling, Moreira-Muir; EVZ euro-vol index -> next-day EUR/USD). One source
+  opened and logged in research/academic_studies.md. No item added (reasons in the R223 refill note). 0 trials. No lead, no notification.
+- **Observation:** ten consecutive refills (R214-R223) with no item; the R219 observation (human decision on new data) stands.
