@@ -1,0 +1,39 @@
+dev bars: 2240215 2015-01-01 22:00:00+00:00 -> 2020-12-31 21:59:00+00:00
+
+E050 DEV Markov switching (2 states, switching mean+variance), sign of 8-day expected return, refit every 21 trading dates, 16:00 NY daily hold (pre-registered, 1 trial):
+n                                  1290
+mean_pips                        -1.106
+median_pips                       0.625
+sd_pips                          50.239
+hit_rate                         0.5023
+t_stat                            -0.79
+t_p_one_sided                    0.7853
+mean_ci95_block_boot    (-3.478, 1.441)
+decision                           NONE
+trading dates: 1562 test days: 1290 excluded: {'missing_now': 5, 'missing_next': 5, 'flat': 0, 'no_next': 1}
+fits: {'dropped_model_pairs': 14, 'n_fits_attempted': 62, 'n_fit_failures': 0, 'first_fit_n': 256, 'n_fits_ok': 62}
+first fit: {'fit_date': '2015-12-31', 'n_obs': 256, 'mu': [-7.1475, 10.6805], 'sigma': [61.9534, 115.8187], 'p_stay': [0.9395, 0.7415]} last fit: {'fit_date': '2020-12-04', 'n_obs': 1530, 'mu': [0.9319, -2.443], 'sigma': [40.5266, 74.7647], 'p_stay': [0.9961, 0.9888]}
+
+Descriptive: {'long_days': {'n': 739, 'mean_signed_pips': -0.0}, 'short_days': {'n': 551, 'mean_signed_pips': -2.588}, 'buy_and_hold_mean_pips_per_day': 1.105, 'mean_state_sd_model_units': 64.704, 'e8_abs_median_model_units': 6.8954, 'tsmom_e019_same_dates': {'n': 1285, 'tsmom_mean_signed_pips': -0.726, 'e050_mean_signed_pips_on_these_dates': -1.11, 'signal_agreement': 0.5564}}
+
+By year (descriptive):
+         n   mean    hit  long_share
+year                               
+2016  260  1.420  0.515       0.000
+2017  258 -4.091  0.512       0.380
+2018  258 -2.517  0.508       0.988
+2019  258 -0.854  0.500       0.829
+2020  256  0.507  0.477       0.672
+
+DEV cost check (descriptive; swap/carry NOT included):
+n_days                                1290.000
+n_round_trips                           19.000
+n_sign_flips                            13.000
+mean_days_per_round_trip                67.890
+mean_signed_mid_pips_per_day            -1.106
+mean_net_bidask_pips_per_day            -1.111
+mean_net_spec4_pips_per_day             -1.114
+mean_net_costs_x1_5_pips_per_day        -1.119
+mean_net_spec4_pips_per_round_trip     -75.658
+median_entry_spread_pips                 0.200
+E050 decision: NONE
