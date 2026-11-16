@@ -1197,3 +1197,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data/design (abstract):** error-correction model built on long-maturity forward exchange rates, consistent with the monetary model; "twelve major currency pairs", 1990-2020. Pairs list, data frequency and horizons UNVERIFIED (not on the abstract page).
 - **Finding (abstract, verbatim):** "outperforms the random walk in out-of-sample forecasting of twelve major currency pairs in both short and long horizons"; robust except around the Lehman collapse. No trading rule or costs on the abstract page.
 - **Relevance:** **Low** for this repo: needs long-maturity forward rates (not in repo, not a proven runner download); monetary-model horizon is monthly and longer, below the power floor of lesson R090. **Status:** abstract VERIFIED, details UNVERIFIED.
+
+### Jansen & de Haan (2005), "Were verbal efforts to support the euro effective? A high-frequency analysis of ECB statements" (added 2026-11-16 R216)
+- **Venue:** working paper dated April 2005, [PDF on nbp.pl](https://nbp.pl/wp-content/uploads/2023/01/jansen_dehaan.pdf) (opened 2026-11-16 R216 via web-fetch, full text). Journal publication UNVERIFIED (the related "Talking heads", JIMF 24(2) 343-361, not opened).
+- **Data/design:** 5-minute Olsen EUR/USD mid-quotes, 4 Jan 1999 - 17 May 2002; 146 ECB verbal interventions on 127 trading days (Governing Council days, official interventions and weekends excluded); +/- 3 h event windows, sign test vs p = 0.5 (baseline 48.1% positive 5-minute returns).
+- **Finding (verbatim):** "ECB verbal interventions have had only small and short-lived effects"; effects "negligible and short-lived"; the only marginally significant window starts 10 minutes before the statement (p = 0.06); e.g. 66 positive returns in the 15-minute window, p = 0.86.
+- **Relevance:** **None** for a directional rule: no lasting drift; pre-euro-crisis sample; needs statement timestamps not in repo. **Status:** VERIFIED (full text).
+
+### Fanta (2025), "CB monetary Policy Communication: An Event Study on Intraday Returns and Volatility in the EUR/USD FX Market" (added 2026-11-16 R216)
+- **Venue:** IES Working Paper 23/2025, Charles University, [RePEc/IDEAS](https://ideas.repec.org/p/fau/wpaper/wp2025_23.html) and [IES page](https://ies.fsv.cuni.cz/cb-monetary-policy-communication-event-study-intraday-returns-and-volatility-eur/usd-fx-market) (abstract opened 2026-11-16 R216; full PDF not read).
+- **Data/design (abstract):** 1,868 Reuters-reported ECB statements 2008-2016 coded dovish/neutral/hawkish, outside policy-meeting days; 1-minute EUR/USD; cumulative abnormal returns and realised volatility.
+- **Finding (abstract, verbatim):** "Cumulative abnormal returns remain within a few basis points by t=+20, and scattered significant minutes are not sequential"; communication "does not generate lasting directional moves". Coefficients UNVERIFIED (full text not read).
+- **Relevance:** **None** for a directional rule (null on returns). **Status:** abstract VERIFIED.

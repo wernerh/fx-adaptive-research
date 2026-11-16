@@ -1925,3 +1925,11 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** three angles searched (09:30 NY equity open; daily high-low range; long-maturity forward rates). One paper logged in
   research/academic_studies.md. No item added (reasons in the R215 refill note). 0 trials. No lead, no notification.
 - **Next run:** refill again with angles not yet in research/ or knowledge/.
+
+## 2026-11-16 R216 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local `main`
+  was detached; reset to `origin/main`. pytest 454 passed.
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (ECB speeches -> intraday EUR/USD; round-number price clustering). Two papers logged in
+  research/academic_studies.md. No item added (reasons in the R216 refill note). 0 trials. No lead, no notification.
+- **Next run:** refill again with angles not yet in research/ or knowledge/.

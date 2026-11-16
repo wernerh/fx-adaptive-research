@@ -2548,3 +2548,13 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   repo, monthly-plus horizon below the R090 power floor.
 - No item added: (a) no evidence beyond a known logged paper, and an hour-of-day window would re-scan E009 cells; (b) no source;
   (c) data and power. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+
+### Refill note R216 (not an item; no item added)
+- 2026-11-16 R216 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "ECB speech",
+  "Jansen", "Fanta" or "price clustering" entry in research/ or knowledge/ before this run): (a) ECB officials' speeches / verbal
+  statements -> intraday EUR/USD drift; (b) price clustering at round numbers in the EUR/USD order book. Two standard searches.
+  (a) Opened Jansen & de Haan (2005 WP, full text) and Fanta (IES WP 23/2025, abstract): both find only small, short-lived effects and
+  no lasting directional move (entries in research/academic_studies.md). (b) Hits were a tick-size/order-book clustering paper
+  (arXiv 1307.5440, not opened, not cited) and equity-market studies; round-number levels are the Osler family already tested (B52).
+- No item added: (a) published evidence is null on direction, and statement timestamps are not in the repo; (b) no directional basis
+  beyond the B52 family. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
