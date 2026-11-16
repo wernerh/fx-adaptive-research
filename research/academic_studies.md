@@ -1215,3 +1215,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data/design (abstract):** cross-section of Pakistan Stock Exchange stocks sorted on the maximum daily return of the month (MAX effect); next-month risk-adjusted returns, 3- and 6-month holds. Sample period UNVERIFIED.
 - **Finding (abstract):** a MAX effect that "persists even if we extend the holding period to three- and six-month". Equities only; no FX results.
 - **Relevance:** **None**: cross-sectional equity lottery-preference effect, no single-currency time-series test, no EUR/USD. **Status:** abstract VERIFIED.
+
+### Batten, Ellis & Hogan (2004/05), "Decomposing Intraday Dependence in Currency Markets: Evidence from the AUD/USD Spot Market" (added 2026-11-16 R218)
+- **Venue:** arXiv [math/0412344](https://arxiv.org/abs/math/0412344) (opened 2026-11-16 R218 via web-fetch; full text returned). Publication venue/date UNVERIFIED (references run to 2005).
+- **Data/design:** ~29,600 Reuters FX= AUD/USD bank quotes, 5 May - 15 Jun 2000; local Hurst exponents on rolling 10/20-quote windows averaged by GMT hour; ANOVA / Kruskal-Wallis and shuffled-series bootstrap.
+- **Finding (abstract, verbatim):** "time-varying dependence and volatility clearly aligning with the opening and closing of markets"; "This variation is attributed to the effects of liquidity and the price-discovery actions of dealers". Authors call the results "tentative".
+- **Relevance:** **None** for a directional rule: descriptive, 6 weeks of AUD/USD, no trading rule, no return-direction forecast, quote-window (sub-hour) horizon. **Status:** VERIFIED (full text via web-fetch).

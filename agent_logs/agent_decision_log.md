@@ -1943,3 +1943,11 @@ Why each run chose what it did, and any judgement calls.
   research/academic_studies.md. No item added (reasons in the R217 refill note). 0 trials. No lead, no notification.
 - **Observation:** R214-R217 are four consecutive refill passes with no item added; the remaining price-only daily/intraday angles
   mostly re-enter tested families. Next refills should favour data sources the runner can download that are not yet in the repo.
+
+## 2026-11-16 R218 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local `main`
+  had diverged from `origin/main` (stale clone); saved as local branch `backup-stale-main`, reset to `origin/main`. pytest 454 passed.
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (realized semivariance / signed jumps -> next-day EUR/USD; Hurst / long-memory intraday rules).
+  One paper logged in research/academic_studies.md. No item added (reasons in the R218 refill note). 0 trials. No lead, no notification.
+- **Next run:** refill focused on a new runner-downloadable data source (R217 observation).

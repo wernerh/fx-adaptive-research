@@ -2571,3 +2571,18 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no single-currency or EUR/USD evidence; a time-series "large-move" rule on daily EUR/USD would be the
   lagged-return family tested by E033/E050/E051 (all NONE); (b) no source and no data. pytest 454 passed. 0 trials used (dev 261,
   val 9, total 270). Not a pipeline failure.
+
+### Refill note R218 (not an item; no item added)
+- 2026-11-16 R218 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles: (a) realized
+  semivariance / signed jump variation -> next-day EUR/USD direction; (b) Hurst-exponent / long-memory trend rules on intraday
+  EUR/USD. Two standard searches.
+  (a) Hits were already logged: Caporin-Shahzad (unipd PDF, R100 note), Babiak-Baruník arXiv:2101.09738 (R161, cross-sectional
+  monthly), Lee-Wang 2025 (R088, post-FOMC jumps; tested E040 NONE). Dallas Fed WP 1902 and HAL signed-jumps paper not opened, not
+  cited. A daily signed-jump rule would sit in the realized-moment family already tested by E044 (realized skewness, NONE).
+  (b) Opened Batten-Ellis-Hogan arXiv math/0412344 (entry in research/academic_studies.md): 6 weeks of AUD/USD quotes 2000,
+  hour-of-day Hurst exponents, no trading rule or direction forecast. Other hits (Bitcoin, order-flow long memory, Warwick WP 99-89
+  already noted R211, Glasgow thesis, mql5 copy of a vendor PDF) not opened or not evidence, not cited.
+- No item added: (a) no new single-currency source; family already tested; (b) descriptive only, sub-hour horizon, no EUR/USD
+  rule. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+- Fifth consecutive refill with no item (R214-R218). Per the R217 observation, the next refill should look for a runner-downloadable
+  data source not yet in the repo rather than another price-only angle.
