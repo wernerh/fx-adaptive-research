@@ -1875,3 +1875,13 @@ Why each run chose what it did, and any judgement calls.
   < 1 pip, CI lower -3.478 < 0, t p 0.7853; not WEAK since mean < 0). No rule or threshold changed.
 - **Action:** E050 recorded; B60 `done`, B61 closed unearned (0 trials). Trials dev 260, val 9, total 269. No lead, no notification.
 - **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).
+
+## 2026-11-16 R211 (unattended)
+- **State:** last research-batch run 43817068619 (E050) already recorded (R210); no run queued or in progress; no `ready` backlog
+  item. Local `main` was again a stale unrelated history; reset to `origin/main`. pytest 445 passed.
+- **Choice:** backlog refill (protocol priority 4). Angles: ML classifiers on lagged daily returns; Kalman trend rules.
+- **Action:** opened Theofilatos et al. (ETASR 2012) full text via a mirror; added B62 (Random Forest, 10 lagged daily returns,
+  51 trees, walk-forward refit every 21 dates, 16:00 NY daily hold, dev, 1 trial when it runs, `ready`, decide_b16 rule) and B63
+  (val confirmation, `blocked`). Warwick WP 99-89 not opened (permission timeout, not circumvented). Ranked at the bottom (only
+  ready item). 0 trials (dev 260, val 9, total 269). No lead, no notification.
+- **Next run:** pre-register B62 as E051 (add scikit-learn dependency, module, script, tests incl. no-look-ahead and random walk).
