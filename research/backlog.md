@@ -2522,3 +2522,17 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - Same model, settings, timing and decision rule as B62, model trained on dev only (expanding refits continue into val with the same
   21-date schedule), evaluated on val dates only; 1 val trial. Pre-register as its own experiment before running. Lead criteria in
   docs/AUTONOMOUS_PROTOCOL.md (costs x1.5 net > 0) apply.
+
+### Refill note R214 (not an item; no item added)
+- 2026-11-16 R214 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "nearest neighbour",
+  "k-nearest" or "Sosvilla" entry in research/ or knowledge/ before this run): (a) nearest-neighbour nonparametric forecasts of daily
+  FX returns -> EUR/USD; (b) short-lookback (1-month) time-series momentum -> daily EUR/USD. Three standard searches.
+  (a) Opened Fernández-Rodríguez, Sosvilla-Rivero & Andrada-Félix (FEDEA WP 2002-05 text; AFE 2003 abstract, doi:10.1080/09603100210100891;
+  entry in research/academic_studies.md): nine EMS currencies vs DEM, 1978-1994, NN rule beats moving averages "in most cases" after
+  costs; no EUR/USD or USD pair; per-currency numbers UNVERIFIED. (b) Only AQR dataset pages, the SSRN landing page and blogs; MOP 2012
+  is already logged (R031, basis of B16).
+- No item added: (a) evidence is pre-euro DEM crosses in the EMS band regime, and the mechanism (nonparametric predictor on lagged daily
+  returns) is the same family as B62, which E051 just tested (NONE); a k-NN variant on the same dev series would be a re-test that
+  adds a trial without a new mechanism. (b) A 1-month lookback is a parameter variant of B16/E019 (12-month, NONE) chosen without
+  EUR/USD-specific evidence (lesson at backlog R-note ~line 655). pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure.

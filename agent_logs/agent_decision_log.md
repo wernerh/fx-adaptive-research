@@ -1908,3 +1908,12 @@ Why each run chose what it did, and any judgement calls.
   changed; the positive point estimate does not earn B63.
 - **Action:** E051 recorded; B62 `done`, B63 closed unearned (0 trials). Trials dev 261, val 9, total 270. No lead, no notification.
 - **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).
+
+## 2026-11-16 R214 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local `main`
+  was again a stale unrelated history; reset to `origin/main`. pytest 454 passed.
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (nearest-neighbour daily predictors; 1-month TSMOM). One paper logged in research/academic_studies.md.
+  No item added (reasons in the R214 refill note: non-EUR/USD pre-euro evidence in the same family as B62; 1-month TSMOM is a parameter
+  variant of B16). 0 trials. No lead, no notification.
+- **Next run:** refill again with angles not yet in research/ or knowledge/.
