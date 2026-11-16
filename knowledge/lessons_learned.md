@@ -453,3 +453,14 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   (Neely-Weller 2011). A sub-pip lift of a filter over its unfiltered control is not a reason to search nearby settings (lesson R076).
 - **Action:** B59 closed NONE (rejected_hypotheses.md); B59v closed unearned. No re-test with other EMA lengths, timeframes, triggers,
   windows, holds, one leg, or as a filter on B58. Next: backlog refill.
+
+### 2026-11-16 R210: a walk-forward Markov switching expected-return rule has no daily EUR/USD edge on 2016-2020 (E050)
+- **Context:** E050 (B60), long (short) at 16:00 NY when the 8-day expected return of a 2-state Markov switching model (switching
+  mean and variance, walk-forward, refit every 21 trading dates) is positive (negative), 1-day hold, dev, 1 trial.
+- **Observation:** NONE (n 1290, -1.106 pips, block-20 CI (-3.478, 1.441), t p 0.7853). Only 19 round trips; short days -2.588,
+  long days -0.0 (descriptive); same sign as E019 TSMOM on the same dates.
+- **Evidence label:** [EXP]
+- **Lesson:** a regime filter on daily returns collapses into a slow trend position; on 2016-2020 EUR/USD such positions lose
+  (E019, E050). A published 1982-2005 out-of-sample cost-adjusted rule is not enough prior to expect an edge in a recent sample.
+- **Action:** B60 closed NONE (rejected_hypotheses.md); B61 closed unearned. No re-test with 3 states, other horizons, refit
+  intervals, interest-differential excess returns or one leg. Next: backlog refill.

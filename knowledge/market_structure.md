@@ -130,3 +130,8 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - 26548 5m EMA20 crosses with close in [07:00 London, 12:00 NY); 20046 occur with all three higher timeframes aligned (BULL 9831,
   BEAR 10215), 8459 in the aligned direction. 60-min continuation: aligned +0.216 pips (n 5317, NONE); unaligned control -0.286
   (n 8979). See experiments/2026-11-14_E049_mtf_alignment.
+
+### 2026-11-16 R210: 2-state Markov switching fits on daily EUR/USD 16:00 NY returns (E050, dev) [EXP]
+- 62 walk-forward fits (2015-12-31 .. 2020-12-04), 0 failures. States separate mainly by volatility: last fit sigma 40.5 vs 74.8
+  (model units), p_stay 0.9961 / 0.9888. The 8-day expected-return sign changed 13 times in 1290 test days.
+  See experiments/2026-11-16_E050_markov_switch.

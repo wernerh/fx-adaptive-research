@@ -1866,3 +1866,12 @@ Why each run chose what it did, and any judgement calls.
   used only for fitting); fit failure = exception, non-convergence or non-finite parameters.
 - **Housekeeping:** workspace clone was shallow with a stale local `main` (unrelated history); recreated `main` from origin/main.
 - **Next run:** collect E050 outputs when the run finishes; apply decide_b16 exactly.
+
+## 2026-11-16 R210 (unattended)
+- **State:** research-batch run 43817068619 (E050) completed success; outputs committed by github-actions[bot] (73d73f3), not yet
+  recorded. No run queued or in progress. Local `main` was again a stale unrelated history; reset to `origin/main` (old tip kept
+  as local branch backup-stale-main, not pushed). pytest 445 passed.
+- **Choice:** collect E050 (protocol priority 1). Applied the pre-registered B60 rule (E019 decide_b16) exactly: NONE (mean -1.106
+  < 1 pip, CI lower -3.478 < 0, t p 0.7853; not WEAK since mean < 0). No rule or threshold changed.
+- **Action:** E050 recorded; B60 `done`, B61 closed unearned (0 trials). Trials dev 260, val 9, total 269. No lead, no notification.
+- **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).
