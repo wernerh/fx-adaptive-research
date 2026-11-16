@@ -2608,3 +2608,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Other hits (CeBER WP, NSF PDF, uma.es, TradingView, Quantpedia) not opened or not evidence, not cited.
 - No item added: (a) duplicate of R175; (b) no verified lagged basis (same result as R146-area bitcoin weekend note). pytest 454
   passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Seventh consecutive refill with no item (R214-R220).
+
+### Refill note R221 (not an item; no item added)
+- 2026-11-16 R221 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "dollar carry",
+  "forward discount" or "Parabolic" entry in research/backlog.md before this run): (a) dollar carry / average forward discount ->
+  EUR/USD direction; (b) Parabolic SAR rules on EUR/USD. Two standard searches. (a) Opened Lustig-Roussanov-Verdelhan JFE 2014
+  (RePEc abstract + NBER WP 16427; entry in research/academic_studies.md): monthly basket signal, 1-12 month horizons, no EUR/USD-only
+  or daily result; needs short rates / forward points not in the repo. (b) Opened Mir Yazdi-Habibi Lashkary 2012 (mql5 mirror of a
+  ResearchGate conference paper; entry in academic_studies.md): hourly EUR/USD 2001-2010, +1,459 pips over 4,967 orders (~0.29 pips
+  per order gross), no costs, in-sample. Other hits (Quantpedia, CMC Markets, IQ Option, babypips, forum pages) not evidence, not cited.
+- No item added: (a) monthly horizon below the R090 power floor and data not in the repo; (b) gross edge far below the SPEC 4 cost
+  model, no out-of-sample design. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Eighth
+  consecutive refill with no item (R214-R221).

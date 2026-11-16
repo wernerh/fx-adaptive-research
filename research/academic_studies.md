@@ -1239,3 +1239,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data/design:** daily BTC-USD and ETH-USD, Jul 2015 - Apr 2021; SARMAX with ten exogenous factors incl. EUR/USD as a same-period regressor.
 - **Finding (verbatim):** "EUR/USD exchange rate, 10-yr US treasury bonds, Nikkei 225 has insignificant p-values". No Granger test in either direction.
 - **Relevance:** **None** for a lagged crypto -> EUR/USD rule. **Status:** VERIFIED.
+
+### Lustig, Roussanov & Verdelhan (2014), "Countercyclical currency risk premia" (added 2026-11-16 R221)
+- **Venue:** Journal of Financial Economics 111(3):527-553, DOI 10.1016/j.jfineco.2013.12.005; [RePEc abstract](https://econpapers.repec.org/RePEc:eee:jfinec:v:111:y:2014:i:3:p:527-553) and [NBER WP 16427 PDF](https://www.nber.org/papers/w16427.pdf) (opened 2026-11-16 R221 via web-fetch; NBER text read verbatim to ~47%, rest via fetch summary; JFE version not opened).
+- **Data/design:** "dollar carry": long a basket of foreign currencies vs USD when the average forward discount (average foreign short rate minus US short rate) is positive, short otherwise; end-of-month series from daily spot/forward quotes, Nov 1983 - Jun 2010; horizons 1-12 months.
+- **Finding (verbatim):** "The key predictor in our study is the average forward discount on foreign currency against the U.S. dollar". Dollar carry Sharpe ~0.66 (developed basket), 1-month AFD R^2 ~3%, ~13% at 12 months. No EUR/USD-only result read; no daily or intraday horizon.
+- **Relevance:** **Low** for this repo: monthly basket signal (below the R090 power floor on dev), needs forward points / short rates not in the repo. **Status:** VERIFIED (partly via fetch summary).
+
+### Mir Yazdi & Habibi Lashkary (2012), "Technical analysis of Forex by Parabolic SAR Indicator" (added 2026-11-16 R221)
+- **Venue:** conference paper, Nov 2012 (ResearchGate cover; conference name not in the text); [PDF mirror](https://c.mql5.com/forextsd/forum/221/Technical%20analysis%20of%20Forex%20by%20Parabolic%20SAR%20Indicator.pdf) (opened 2026-11-16 R221 via web-fetch).
+- **Data/design:** hourly EUR/USD, GBP/USD, USD/CHF, USD/JPY, 2001-2010; Wilder default P-SAR, fixed 30-pip TP/SL, 10-hour time exit; no spreads/commissions modelled; no train/test split.
+- **Finding:** EUR/USD net +1,459 pips over 4,967 orders (~0.29 pips/order gross); other pairs negative or marginal; authors call P-SAR "not a suitable indicator".
+- **Relevance:** **None**: gross edge per trade is far below the SPEC 4 cost model; in-sample only. **Status:** VERIFIED (mirror copy, venue UNVERIFIED).
