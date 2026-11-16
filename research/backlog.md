@@ -2536,3 +2536,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   adds a trial without a new mechanism. (b) A 1-month lookback is a parameter variant of B16/E019 (12-month, NONE) chosen without
   EUR/USD-specific evidence (lesson at backlog R-note ~line 655). pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure.
+
+### Refill note R215 (not an item; no item added)
+- 2026-11-16 R215 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "09:30", "equity open",
+  "high-low range" or "Darvas" entry in research/ or knowledge/ before this run): (a) EUR/USD returns around the 09:30 NY US equity
+  open; (b) daily high-low range as a next-day direction predictor; (c) long-maturity forward rates. Four standard searches.
+  (a) Only Krohn-Mueller-Whelan "Foreign Exchange Fixings and Returns Around the Clock" (BoC SWP 2021-48), already logged; no study of
+  the equity open itself. (b) Only vendor/blog pages and Cespa-Gargano-Riddiough-Sarno WP-EMG-01-2021 (re-opened: volume x lagged
+  return reversal, family already tested E033, NONE). (c) Opened Darvas-Schepp Bruegel WP 02/2020 abstract (entry in
+  research/academic_studies.md): forward-rate error-correction model beats the random walk on 12 pairs; needs forward rates not in the
+  repo, monthly-plus horizon below the R090 power floor.
+- No item added: (a) no evidence beyond a known logged paper, and an hour-of-day window would re-scan E009 cells; (b) no source;
+  (c) data and power. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
