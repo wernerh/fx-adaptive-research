@@ -2643,3 +2643,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   returns; not evidence, not cited.
 - No item added: (a) monthly basket horizon below the R090 power floor and no surviving signal to scale; (b) no verified predictive
   basis (rule 3). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Tenth consecutive refill with no item (R214-R223).
+
+### Refill note R224 (not an item; no item added)
+- 2026-11-16 R224 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "TD Sequential",
+  "DeMark" or "SuperTrend" entry in research/ or knowledge/ before this run): (a) TD Sequential / DeMark exhaustion counts on EUR/USD;
+  (b) SuperTrend (ATR trailing-band) trend rule on EUR/USD. Two standard searches.
+  (a) Hits were only indicator-formula pages (oxfordstrat, Scribd/mql5/TradeStation copies of DeMark manuals); no study of FX
+  profitability; not evidence, not opened, not cited. (b) Only TradingView scripts, a Quantified Strategies blog, broker pages and a
+  HackerNoon post; no peer-reviewed or working-paper test; not evidence, not cited.
+- No item added: no verified predictive basis for either (rule 3); (b) would also sit in the trend-following / breakout family
+  already tested (E048, E049). pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Eleventh
+  consecutive refill with no item (R214-R224).

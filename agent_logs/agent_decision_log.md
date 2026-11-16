@@ -1993,3 +1993,13 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two angles searched (volatility-managed scaling, Moreira-Muir; EVZ euro-vol index -> next-day EUR/USD). One source
   opened and logged in research/academic_studies.md. No item added (reasons in the R223 refill note). 0 trials. No lead, no notification.
 - **Observation:** ten consecutive refills (R214-R223) with no item; the R219 observation (human decision on new data) stands.
+
+## 2026-11-16 R224 (unattended)
+- **State:** latest research-batch run 43840273851 (E051) completed and recorded (R213); no run queued or in progress. Local `main`
+  had again diverged from `origin/main` (50/50); kept it as a local backup branch and reset the working branch to `origin/main`.
+  pytest 454 passed.
+- **Choice:** backlog refill (protocol priority 4): no `ready` item.
+- **Action:** two angles searched (TD Sequential / DeMark exhaustion counts; SuperTrend ATR trailing-band rule). No source qualified as
+  evidence; nothing opened or cited. No item added (reasons in the R224 refill note). 0 trials. No lead, no notification.
+- **Observation:** eleven consecutive refills (R214-R224) with no item; price-only indicator angles are exhausted. The R219 observation
+  (human decision on new data) stands.
