@@ -2586,3 +2586,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   rule. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
 - Fifth consecutive refill with no item (R214-R218). Per the R217 observation, the next refill should look for a runner-downloadable
   data source not yet in the repo rather than another price-only angle.
+
+### Refill note R219 (not an item; no item added)
+- 2026-11-16 R219 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "retail sales" entry
+  in research/backlog.md before this run; FRED daily series are a runner-downloadable source not yet used by the repo): (a) US retail
+  sales release (08:30 NY) -> later EUR/USD drift; (b) lagged daily VIX / risk-on-off change (FRED VIXCLS) -> next-day EUR/USD. Two
+  standard searches. (a) Opened Chaboud et al. FRB IFDP 823 (2004; entry in research/academic_studies.md): EBS EUR/USD 1999-2004,
+  retail sales among six releases; the price jump is "generally completed within a few minutes" and later returns are "orthogonal" to
+  the surprise. KSSW 2017 appendix already logged (R187 area). (b) Beber risk-on/off ECB workshop slides: permission timeout, not
+  read, not cited; other hits (Engel long-horizon papers, Insper/Tsinghua/NSF/JFQA PDFs) not opened, not cited.
+- No item added: (a) verified evidence against post-release drift (same as the NFP/CPI release family); (b) no verified lagged
+  (predictive) basis. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
