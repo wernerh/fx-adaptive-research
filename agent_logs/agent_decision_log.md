@@ -1802,3 +1802,12 @@ Why each run chose what it did, and any judgement calls.
   origin/main, stale commits kept on local branch `backup-stale-main` (not pushed). No repo history changed.
 - **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R203; a human decision (new data
   source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.
+
+## 2026-11-16 R204 (unattended)
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4): no ready backlog item, no research-batch run queued or unrecorded
+  (latest 43541310326 = E049). Angles: COT positioning (duplicate R082/R120), US-German 2y yield spread (vendor pages only) and
+  Heiken Ashi/HASTOC rules (no EUR/USD, no costs) -> no item added (refill note R204). No lead, no notification.
+- **Housekeeping:** workspace local `main` again diverged from origin (stale R079-era history); reset to origin/main, stale commits
+  kept on local branch `stale-local-main` (not pushed). No repo history changed.
+- **Next run:** another refill unless the human adds items. Refill yield has been zero for R158-R204; a human decision (new data
+  source, e.g. an economic calendar for B6 or quanto-CDS data, or OOS use for B7) would unblock work.

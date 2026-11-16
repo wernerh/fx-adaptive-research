@@ -1138,3 +1138,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** [article page](https://journal.sesric.org/Article/Detail/ART12083101) (abstract opened 2026-11-15 R202). PDF not opened (fetch not permitted in this run; not circumvented) -> body UNVERIFIED.
 - **Finding (abstract, verbatim):** "Time series and cross-sectional analyses of three different currency exchange rates; Australian Dollar, British Pound and Canadian Dollar – to US Dollar suggest that the spot market bid-ask spread is one important variable that positively affects the spot exchange rate returns." Volume-based futures sentiment index significant, return-based not. Frequency, sample, lag structure (predictive vs contemporaneous) and magnitudes not stated in the abstract (UNVERIFIED).
 - **Relevance:** **Low.** No EUR/USD in the abstract, unknown frequency and no evidence that the spread effect is lagged (predictive). Not used. **Status:** abstract only
+
+### Roy Trivedi (2022), "Technical analysis using Heiken Ashi Stochastic: To catch a trend, use a HASTOC", International Journal of Finance & Economics 27(2), 1836-1847, doi:10.1002/ijfe.2245 (added 2026-11-16 R204)
+- **Venue:** [IDEAS/RePEc page](https://ideas.repec.org/a/wly/ijfiec/v27y2022i2p1836-1847.html) (abstract and metadata opened 2026-11-16 R204 via web-fetch summary; paper body not opened -> body UNVERIFIED).
+- **Finding (abstract, short verbatim fragments):** HASTOC indicator built from Heiken Ashi candles, reflecting "in a single number the likelihood of trend generation and momentum in the market"; backtested on three (unnamed) currencies, one index and one stock over "three major time frames"; "consistent positive returns for select time frames and markets". Currency pairs, frequency, costs and holding period not stated (UNVERIFIED).
+- **Relevance:** **Low.** Selected-time-frame positive results (in-sample selection), no EUR/USD confirmed, no costs. Not used. **Status:** abstract only
+
+### Roy Trivedi (2018), "Technical Analysis Strategies: Development of Heiken Ashi Stochastic", MPRA Paper 89594 (added 2026-11-16 R204)
+- **Venue:** [IDEAS/RePEc page](https://ideas.repec.org/p/pra/mprapa/89594.html) (abstract opened 2026-11-16 R204; PDF not opened).
+- **Finding (abstract):** HASTOC rule "back tested with an entry-exit strategy" on "intraday hourly USD/INR data from May, 2018 to September, 2018" (~4 months); long and short signals; costs and horizon not stated.
+- **Relevance:** **Low.** USD/INR only, 4-month sample. Not used. **Status:** abstract only

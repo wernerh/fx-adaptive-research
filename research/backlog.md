@@ -2374,3 +2374,14 @@ Trial count so far on dev: **259** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added (rule 3 / R090: nothing new opened; both angles duplicate earlier notes). pytest 434 passed. 0 trials used
   (dev 259, val 9, total 268). Not a pipeline failure. Search space for free, runner-downloadable, verified EUR/USD predictors
   appears exhausted under the current data constraints; see decision log R203.
+
+### Refill note R204 (not an item; no item added)
+- 2026-11-16 R204 refill pass (no ready item, no run queued; last run 43541310326 recorded as E049). Angles: (a) CFTC COT
+  speculative positioning -> EUR/USD; (b) US-German 2-year yield spread change -> next-day EUR/USD; (c) Heiken Ashi / HASTOC
+  candle rules -> EUR/USD (no "Heikin"/"Heiken" entry before this run). Three standard searches. (a) Top hits Klitgaard-Weir 2004
+  (FRBNY EPR) and Tornell-Yuan already logged (R082, R120): duplicate, weekly, below R090 power floor. (b) Only broker/vendor pages
+  (FXStreet, FXCM, TradingView scripts; not evidence, not opened); no study. (c) Opened two IDEAS abstracts (entries in
+  research/academic_studies.md): Roy Trivedi IJFE 2022 (doi:10.1002/ijfe.2245; three unnamed currencies, positive returns only for
+  "select time frames", no costs stated) and MPRA 89594 (USD/INR hourly, ~4 months).
+- No item added (rule 3 / R090: no EUR/USD study with a pre-registrable sign, horizon and cost treatment). pytest 434 passed.
+  0 trials used (dev 259, val 9, total 268). Not a pipeline failure.
