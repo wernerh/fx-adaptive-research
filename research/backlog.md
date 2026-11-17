@@ -2919,3 +2919,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified lagged daily/intraday EUR/USD evidence for either angle, and BTP-Bund or SOFR data are not in the pipeline.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-second consecutive refill with no
   item (R214-R245).
+
+### Refill note R246 (not an item; no item added)
+- 2026-11-17 R246 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Sintra",
+  "Treasury refunding" or "QRA" entry in research/ or knowledge/ before this run): (a) US Treasury Quarterly Refunding Announcement
+  -> USD / EUR/USD reaction; (b) ECB Sintra Forum / Jackson Hole symposium speeches -> EUR/USD. Two standard searches. (a) Hits were
+  news/commentary pages only (Newsquawk, Marc to Market, BabyPips, MarketPulse, FXStreet, Euronext/MNI; not evidence, not opened);
+  no study. (b) Only study hit was the VoxEU column on Comazzi et al. ECB exchange-rate communication, already logged in
+  research/academic_studies.md (R161); other hits commentary or ECB author profile pages.
+- No item added: no new EUR/USD evidence for either angle; both are ~1-4 events a year, below the lesson-R090 power floor on dev,
+  and the refunding calendar is not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline
+  failure. Thirty-third consecutive refill with no item (R214-R246).
