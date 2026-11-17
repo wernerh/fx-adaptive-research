@@ -2765,3 +2765,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) volatility-only, disputed, and tick-volume intensity family already tested (E033); (b) sub-second horizon far
   below 5-minute bars, no directional evidence. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Nineteenth consecutive refill with no item (R214-R232).
+
+### Refill note R233 (not an item; no item added)
+- 2026-11-17 R233 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Caldara" or
+  "self-exciting" entry in research/ or knowledge/ before this run): (a) Caldara-Iacoviello geopolitical risk (GPR) index -> later
+  EUR/USD; (b) Hawkes / self-exciting event clustering -> intraday EUR/USD direction. Two standard searches.
+  (a) Opened Iyke-Phan-Narayan IRFA 2022 (DOI 10.1016/j.irfa.2022.102099, abstract only; entry in research/academic_studies.md):
+  17 currencies, out-of-sample and trading gains claimed, but frequency, EUR/USD coverage, horizon and costs UNVERIFIED (full text
+  subscriber-only). Salisu et al. GPR stock-return paper opened: monthly GPR, 6-24 month horizons, no FX.
+  (b) Opened Rambaldi-Pennesi-Lillo arXiv 1405.6047 and Lallouache-Challet arXiv 1406.3967: EBS EUR/USD quote/trade intensity only,
+  no direction test.
+- No item added: (a) no verified daily EUR/USD design (a daily-GPR item would be a design of our own on abstract-only evidence; monthly
+  is below the R090 floor); (b) activity, not direction. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a
+  pipeline failure. Twentieth consecutive refill with no item (R214-R233).
