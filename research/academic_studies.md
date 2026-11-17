@@ -1296,3 +1296,16 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Data/design:** hourly Yahoo Finance data, EUR/USD, GBP/USD, AUD/USD, CAD/USD, JPY/USD, 20 May 2022 - 20 May 2024; linear-regression price channel (+/- k SD) mean reversion with stop loss, Aroon filter ("AU > 70 AND AD < 30"), final version long-only; fee level not stated in the readable text; all parameters grid-searched (625 combinations plus Aroon lookbacks) on the same 2-year window that is reported, no holdout.
 - **Finding (verbatim):** the strategy "comes short when facing downtrends"; reported EUR/USD long-only MAR 2.518 (in-sample). Internal figures for CAD/USD are inconsistent between sections.
 - **Relevance:** **None** for a pre-registrable EUR/USD item: in-sample grid-search selection, short single-regime window, long-only design that relies on the 2022-2024 drift, unquantified costs, not peer-reviewed. **Status:** VERIFIED (full text read via fetch tool).
+
+### Fossati & Lu (2025), "Exchange Rate Predictability and Financial Conditions" (added 2026-11-17 R230)
+- **Venue:** University of Alberta Economics Working Paper 2025-06 (Sep 2025); [PDF](https://sites.ualberta.ca/~econwps/2025/wp2025-06.pdf) (opened 2026-11-17 R230 via web-fetch; first ~40k of ~71k characters verbatim, remainder tool summary).
+- **Data/design:** weekly (Wednesday) log changes of nine USD rates incl. EUR, predictor = Chicago Fed NFCI (real-time vintages); 520-week rolling OLS / quantile regressions; OOS 2000-2021; horizons 1 day, 1 week, 4 weeks; no transaction costs seen.
+- **Finding (verbatim):** "none of the alternative forecasts outperforms the RW benchmark in terms of the OOS point forecasts"; "the NFCI does not provide a strong signal about the direction of exchange rate movements but rather about the level of uncertainty." Gains are in density (log score) forecasts only.
+- **Relevance:** **None** for a directional EUR/USD item (no point/direction predictability); at most a volatility/sizing input, already covered by E008 (vol timing). **Status:** VERIFIED (partial verbatim read).
+
+### Bianchi, Bigio & Engel (2021, rev. 2023), "Scrambling for Dollars: International Liquidity, Banks and Exchange Rates" (added 2026-11-17 R230)
+- **Venue:** NBER Working Paper 29457; [PDF](https://nber.org/system/files/working_papers/w29457/w29457.pdf) (opened 2026-11-17 R230 via web-fetch; first ~40k of ~255k characters verbatim, remainder tool summary).
+- **Data/design:** monthly, Feb 2001 - Jul 2021, G10 currencies with focus on the euro; regression of the same-month exchange-rate change on the change in US banks' liquidity ratio (reserves + Treasuries/agencies over short-term funding).
+- **Finding (verbatim):** "an increase in the dollar funding risk leads to a rise in the convenience yield and an appreciation of the dollar"; regressions are explicitly contemporaneous ("how changes in the balance sheet between t - 1 and t contribute to changes in the exchange rate between t - 1 and t"). Euro OLS coefficient 0.227 (t 4.84) per the tool summary (UNVERIFIED verbatim).
+- **Relevance:** **None** for a pre-registrable item: contemporaneous monthly relation, no lagged or out-of-sample test, below the R090 power floor. **Status:** VERIFIED (partial verbatim read).
+
