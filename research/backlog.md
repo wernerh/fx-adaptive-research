@@ -2697,3 +2697,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   direction rule (a one-leg version would be a mechanism invented without evidence; intraday cross-pair lead-lag already searched).
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fourteenth consecutive refill with no item
   (R214-R227).
+
+### Refill note R228 (not an item; no item added)
+- 2026-11-17 R228 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "variance risk premium"
+  or "tick imbalance" entry in research/ or knowledge/ before this run): (a) currency / stock variance risk premium -> later EUR/USD
+  returns; (b) tick-direction imbalance from high-frequency quotes -> short-horizon EUR/USD direction. Two standard searches.
+  (a) Opened Londono-Zhou (FRB IFDP 1068, 2012; entry in research/academic_studies.md): EUR/USD among three pairs, monthly data,
+  predictability at 1-6 month horizons, implied vol from JP Morgan OTC options; no costs seen.
+  (b) Hits were older NBER/MPRA microstructure working papers (order flow with dealer data, not opened) and Guyard-Deriaz (arXiv
+  2409.04471, abstract opened; entry in research/academic_studies.md): fitted ML daily direction, one-year return, no mechanism.
+- No item added: (a) horizon below the R090 power floor and FX implied volatility not in the data pipeline; (b) no study of
+  quote-tick imbalance as a predictor was found (Dukascopy tick-count imbalance would be a mechanism invented without evidence), and
+  the ML hit duplicates the E050/E051 family. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Fifteenth consecutive refill with no item (R214-R228).
