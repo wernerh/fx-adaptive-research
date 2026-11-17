@@ -2034,3 +2034,10 @@ Why each run chose what it did, and any judgement calls.
   Angles chosen because absent from research/ and knowledge/: variance risk premium, and tick-direction imbalance. No usable
   evidence for a pre-registrable EUR/USD item; no item added (reasons in the R228 refill note). 0 trials. No lead, no notification.
 - **Observation:** fifteen consecutive refills (R214-R228) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R229 (unattended)
+- **Decision:** refill pass (protocol step 4). Run 43840273851 already recorded as E051; no run queued or in progress; no `ready`
+  backlog item. Local `main` had again diverged from `origin/main` (shallow clone); reset the working branch to `origin/main`.
+  Angles chosen because absent from research/ and knowledge/: Kaufman adaptive MA / efficiency ratio, and Aroon / CCI rules. No
+  usable evidence for a pre-registrable EUR/USD item; no item added (reasons in the R229 refill note). 0 trials. No lead, no notification.
+- **Observation:** sixteen consecutive refills (R214-R229) with no item. The R219 observation (human decision on new data) stands.
