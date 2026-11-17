@@ -2908,3 +2908,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   not opened); no study.
 - No item added: no new EUR/USD evidence for either angle. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a
   pipeline failure. Thirty-first consecutive refill with no item (R214-R244).
+
+### Refill note R245 (not an item; no item added)
+- 2026-11-17 R245 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "sovereign spread",
+  "redenomination", "SOFR" or "dollar factor" entry in research/ or knowledge/ before this run): (a) euro-area sovereign spread
+  (BTP-Bund) changes / redenomination risk -> next-day EUR/USD; (b) USD funding-stress indicators (SOFR spikes, FRA-OIS) -> EUR/USD.
+  Two standard searches. (a) Only study hit, the CEPR/VoxEU column on Italian fiscal vs redenomination risk, failed to open (client
+  error), not cited; other hits bank/FX commentary (ING, FXStreet; not evidence, not opened). (b) Opened Ostry Janeway WP 2311 (entry
+  in research/academic_studies.md): monthly/3-month quantile UIP, in-sample, no daily horizon or costs; other hits glossary/vendor pages.
+- No item added: no verified lagged daily/intraday EUR/USD evidence for either angle, and BTP-Bund or SOFR data are not in the pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-second consecutive refill with no
+  item (R214-R245).

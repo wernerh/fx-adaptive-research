@@ -1436,3 +1436,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** loan-level US leveraged term loans (PitchBook LCD, 6,430 loans, Aug 2011-Dec 2023); ECB surprises from intraday event windows around ECB announcements (Altavilla et al. 2019). Outcome is US loan-spread flexes, not exchange rates.
 - **Finding:** "This paper documents a new dollar channel that transmits monetary policy across borders." No test of bank-lending-survey (SLOOS / ECB BLS) releases; no EUR/USD return forecast.
 - **Relevance:** **None** for a new item (found while searching for bank-lending-survey release effects on EUR/USD). **Status:** VERIFIED (partial).
+
+### Ostry, "Tails of Foreign Exchange-at-Risk (FEaR)", Janeway Institute WP 2311 / CWPE 2343 (7 Jun 2023) (added 2026-11-17 R245)
+- **Link:** [PDF](https://www.janeway.econ.cam.ac.uk/working-paper-pdfs/jiwp2311.pdf) (opened via web-fetch; ~180k of ~200k characters verbatim, appendices not read).
+- **Design:** monthly 1986-2020, G-10 vs USD (DEM before 1999, EUR after), quantile regressions of overlapping 3-month FX changes on the interest differential; in-sample, block-bootstrap CIs.
+- **Finding:** "interest differentials predict high-yield currencies to suffer depreciations ten times as large as suggested by UIP". No daily/intraday horizon, no out-of-sample or trading-cost test (in the text read).
+- **Relevance:** **None** for a new item (found while searching for USD funding-stress -> EUR/USD): monthly/3-month tail predictability, far below the lesson-R090 power floor on dev at that horizon. **Status:** VERIFIED (partial).
