@@ -1424,3 +1424,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** tick data, CAC40 stocks and European index futures, Mar-May 2010; Hayashi-Yoshida lead/lag in seconds. No FX.
 - **Finding:** "We reach 60% of accuracy when forecasting the next midquote variation of the lagger"; "a naive strategy based on market orders cannot make any profit of this effect because of the bid/ask spread."
 - **Relevance:** **None** for a new item: seconds-scale equity lead/lag, unprofitable after spread; no FX evidence. **Status:** VERIFIED (abstract verbatim, body partial).
+
+### Fleming, Liu & Nguyen, "Intraday Price Pressure and Order Flow Around U.S. Treasury Auctions", FRBNY Staff Report 1188 (Mar 2026, revised 2026) (added 2026-11-17 R242)
+- **Link:** [FRBNY page](https://www.newyorkfed.org/research/staff_reports/sr1188.html), [PDF](https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1188.pdf), DOI [10.59576/sr.1188](https://doi.org/10.59576/sr.1188) (opened via web-fetch; landing page and first ~40k PDF characters verbatim, rest summary-only).
+- **Design:** 1-minute on-the-run nominal Treasury coupon yields (GovPX 1991-2000, BrokerTec 2001-2024), 1,684 auctions, six-hour window around auction close. No exchange rates (FX enters only as a foreign-demand proxy).
+- **Finding:** "yields rise in the hours before auction and reverse afterward"; total intraday move 0.7-1.2 bp across maturities, smaller in 2015-2024 than 2007-2014. No FX returns, no out-of-sample or trading-cost analysis (the latter per summary of the unread part, UNVERIFIED).
+- **Relevance:** **None** for a new item: Treasury-yield price pressure only, no EUR/USD evidence; consistent with the R123 note (no FX evidence for auction days). **Status:** VERIFIED (partial).

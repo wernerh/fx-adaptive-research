@@ -2129,3 +2129,11 @@ Why each run chose what it did, and any judgement calls.
   lead-lag -> EUR/USD. No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R241
   refill note). 0 trials. No lead, no notification.
 - **Observation:** twenty-eight consecutive refills (R214-R241) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R242 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). Local `main` had diverged from `origin/main` (old history); worked on a detached checkout of
+  `origin/main`, local branch left untouched. pytest 454 passed.
+  Angles: central-bank speeches -> later EUR/USD drift, and US Treasury auction results -> USD reaction. No usable EUR/USD evidence;
+  no item added (reasons in the R242 refill note). 0 trials. No lead, no notification.
+- **Observation:** twenty-nine consecutive refills (R214-R242) with no item. The R219 observation (human decision on new data) stands.

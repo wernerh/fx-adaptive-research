@@ -2877,3 +2877,13 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no lagged directional evidence, and real-yield data are not in the pipeline; (b) no FX evidence and the
   equity results are seconds-to-minutes effects that do not survive spread. pytest 454 passed. 0 trials used (dev 261, val 9,
   total 270). Not a pipeline failure. Twenty-eighth consecutive refill with no item (R214-R241).
+
+### Refill note R242 (not an item; no item added)
+- 2026-11-17 R242 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles: (a) central-bank
+  speeches (ECB/Fed, outside meeting days) -> later EUR/USD drift; (b) US Treasury auction results -> intraday USD reaction. Two
+  standard searches. (a) Only relevant hit was the IES WP 23/2025 EUR/USD CB-communication event study, already logged in
+  research/academic_studies.md; other hits not FX-intraday or already covered. (b) Opened Fleming-Liu-Nguyen FRBNY SR 1188 (entry
+  in research/academic_studies.md): Treasury-yield inverted-V of 0.7-1.2 bp around auctions, no FX returns.
+- No item added: (a) no new evidence beyond what is logged; (b) no EUR/USD evidence (same conclusion as R123), and an auction-day
+  calendar would need a new data download. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Twenty-ninth consecutive refill with no item (R214-R242).
