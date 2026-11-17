@@ -2864,3 +2864,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   evidence is negative after costs, monthly is below the R090 power floor, and fitted lagged-return models were NONE (E051).
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Twenty-seventh consecutive refill with no
   item (R214-R240).
+
+### Refill note R241 (not an item; no item added)
+- 2026-11-17 R241 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "real yield",
+  "TIPS" or "cross-rate" entry in research/ or knowledge/ before this run): (a) US real-yield (TIPS / linker) daily changes ->
+  next-day EUR/USD; (b) intraday lead-lag from equity index futures -> EUR/USD. Two standard searches; entries in
+  research/academic_studies.md.
+  (a) Opened Clarida NBER WP 18726: daily EUR/USD vs linker yields, contemporaneous only, explicitly no causal or lagged inference,
+  no out-of-sample test; other hits FX commentary (not cited). (b) Opened Canto-Kräussl CFS WP 2006/25 (equity futures, spillovers
+  vanish within 5 minutes, costs likely offset) and Huth-Abergel arXiv 1111.7103 (equity tick lead/lag, unprofitable after spread);
+  no FX lead-lag evidence found.
+- No item added: (a) no lagged directional evidence, and real-yield data are not in the pipeline; (b) no FX evidence and the
+  equity results are seconds-to-minutes effects that do not survive spread. pytest 454 passed. 0 trials used (dev 261, val 9,
+  total 270). Not a pipeline failure. Twenty-eighth consecutive refill with no item (R214-R241).

@@ -1406,3 +1406,21 @@ US session. That is unproven, which is exactly why E001 comes first.
 
 ### PMC7512194 (FX efficiency, multiscale entropy / recurrence quantification) (noted 2026-11-17 R240)
 - Not openable (fetch permission timeout after redirect to pmc.ncbi.nlm.nih.gov); title from search result only. **Not cited.** UNVERIFIED.
+
+### Clarida, "Hot Tip: Nominal Exchange Rates and Inflation Indexed Bond Yields", NBER WP 18726 (January 2013) (added 2026-11-17 R241)
+- **Link:** [NBER PDF](https://www.nber.org/papers/w18726.pdf) (opened via web-fetch).
+- **Design:** daily USD vs GBP, EUR (French/German linkers) and JPY; inflation-indexed bond yields; decomposition of real-rate differentials and risk premium; contemporaneous regressions (sample dates stated inconsistently in text vs regressions).
+- **Finding:** "We do not make any inference of cause and effect"; dynamic lagged effects left to future research. No forecasting or out-of-sample exercise, no costs.
+- **Relevance:** **None** for a new item: contemporaneous only, no lagged real-yield -> EUR/USD basis; real-yield (TIPS/linker) data are not in the pipeline. **Status:** VERIFIED.
+
+### Canto & Kräussl, "Stock Market Interactions and the Impact of Macroeconomic News - Evidence from High Frequency Data of European Futures Markets", CFS WP 2006/25 (added 2026-11-17 R241)
+- **Link:** [CFS PDF](https://gfk-cfs.de/media//06_25.pdf) (opened via web-fetch; ~half read verbatim).
+- **Design:** 1-minute DAX, Euro Stoxx 50, FTSE 100 futures, Jul-Aug 2001; VAR with 9 lags. No exchange rates.
+- **Finding:** "the spillovers vanish within the next five minutes after a change in any of the futures prices"; "even if some predictive ability can be achieved ... it may still not offset the transaction costs."
+- **Relevance:** **None** (equity-only; lead-lag decays within minutes). **Status:** VERIFIED (partial).
+
+### Huth & Abergel, "High Frequency Lead/lag Relationships - Empirical facts", arXiv:1111.7103 (2011/2012) (added 2026-11-17 R241)
+- **Link:** [arXiv PDF](https://www.arxiv.org/pdf/1111.7103) (opened via web-fetch).
+- **Design:** tick data, CAC40 stocks and European index futures, Mar-May 2010; Hayashi-Yoshida lead/lag in seconds. No FX.
+- **Finding:** "We reach 60% of accuracy when forecasting the next midquote variation of the lagger"; "a naive strategy based on market orders cannot make any profit of this effect because of the bid/ask spread."
+- **Relevance:** **None** for a new item: seconds-scale equity lead/lag, unprofitable after spread; no FX evidence. **Status:** VERIFIED (abstract verbatim, body partial).
