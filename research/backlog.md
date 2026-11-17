@@ -2739,3 +2739,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (lesson R095). pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Seventeenth consecutive refill
   with no item (R214-R230).
 
+
+### Refill note R231 (not an item; no item added)
+- 2026-11-17 R231 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "ECB account",
+  "triple witching" or "OPEX" entry in research/ or knowledge/ before this run): (a) ECB monetary-policy accounts releases -> EUR/USD;
+  (b) quarterly equity/futures expiration ("triple witching") -> EUR/USD direction. Two standard searches.
+  (a) Hits were ECB-communication papers already logged (CEMLA 2025 ECB communication PDF, IES WP 23/2025, Altavilla et al. 2019
+  EA-MPD) or vendor/news pages (XTB); no study of the accounts release itself on EUR/USD direction found.
+  (b) Hits were equity-only expiration studies (FAJ 1987 program trading), FX option-expiry news/vendor pages (option-expiry pinning
+  already covered R108/R136/R164) and CESifo WP 9360, which could not be opened (redirect to ifo.de refused by fetch permission,
+  not circumvented): title and content UNVERIFIED, not cited.
+- No item added: (a) no evidence beyond the ECB-communication family already logged; (b) no readable FX study. pytest 454 passed.
+  0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Eighteenth consecutive refill with no item (R214-R231).
