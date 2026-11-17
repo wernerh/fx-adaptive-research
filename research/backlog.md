@@ -2930,3 +2930,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no new EUR/USD evidence for either angle; both are ~1-4 events a year, below the lesson-R090 power floor on dev,
   and the refunding calendar is not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline
   failure. Thirty-third consecutive refill with no item (R214-R246).
+
+### Refill note R247 (not an item; no item added)
+- 2026-11-17 R247 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "survey
+  expectation", "forecaster" or "carry trade unwind" entry in research/ or knowledge/ before this run): (a) professional / consensus
+  FX forecasts -> EUR/USD returns; (b) carry-trade unwind (JPY funding shocks) -> next-day EUR/USD. Two standard searches.
+  (a) Opened Ballensiefen-Somogyi-Winterberg CFR WP 26-04 (entry in research/academic_studies.md): monthly G10 panel, 24-month
+  horizon, in-sample, no costs; Kiel Institute page ("Are consensus FX forecasts valuable for investors") redirected and the redirect
+  could not be opened (permission timeout), not cited. (b) Only study hits were jump papers already logged (Lee et al., Erdemlioglu
+  et al.) or not specific to carry unwinds; other hits commentary (FXStreet, Advisor Perspectives, Swissquote; not evidence, not opened).
+- No item added: no verified daily/intraday EUR/USD evidence for either angle, and Consensus Economics data is not in the pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-fourth consecutive refill with no
+  item (R214-R247).

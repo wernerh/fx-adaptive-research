@@ -1442,3 +1442,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** monthly 1986-2020, G-10 vs USD (DEM before 1999, EUR after), quantile regressions of overlapping 3-month FX changes on the interest differential; in-sample, block-bootstrap CIs.
 - **Finding:** "interest differentials predict high-yield currencies to suffer depreciations ten times as large as suggested by UIP". No daily/intraday horizon, no out-of-sample or trading-cost test (in the text read).
 - **Relevance:** **None** for a new item (found while searching for USD funding-stress -> EUR/USD): monthly/3-month tail predictability, far below the lesson-R090 power floor on dev at that horizon. **Status:** VERIFIED (partial).
+
+### Ballensiefen, Somogyi & Winterberg, "Demand for Dollars: Evidence from Survey Expectations", CFR WP 26-04 (26 Apr 2026) (added 2026-11-17 R247)
+- **Link:** [PDF](https://www.cfr-cologne.de/download/workingpaper/cfr-26-04.pdf) (opened via web-fetch; first ~40k characters verbatim, later sections summary-only, last ~14k not read).
+- **Design:** monthly panel, nine G10 currencies vs USD incl. EUR, Sep 2012-May 2025 (return local projection from Dec 1994); Consensus Economics FX forecasts at 3/12/24-month horizons; currency and time fixed effects; no out-of-sample or trading-cost test found.
+- **Finding:** "forward-looking expectations accurately predict both currency returns and flows"; once flows are controlled, "currency flows subsume the predictive content of exchange rate forecasts" (verbatim). Short-horizon (3-month) forecasts have limited predictive power (summary).
+- **Relevance:** **None** for a new item (found while searching for consensus FX forecasts -> EUR/USD): monthly/24-month horizon, in-sample panel, and Consensus Economics data is not in the pipeline. **Status:** VERIFIED (partial).
