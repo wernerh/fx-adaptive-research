@@ -1345,3 +1345,20 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** Journal of International Money and Finance 24(5), 693-718; DOI [10.1016/j.jimonfin.2005.04.005](https://doi.org/10.1016/j.jimonfin.2005.04.005); [FGCU record page](https://scholarscommons.fgcu.edu/esploro/outputs/journalArticle/The-impact-of-macroeconomic-surprises-on/99384088378506570) (opened 2026-11-17 R234, abstract only; full-text PDF refused by fetch permission, not opened).
 - **Finding (abstract):** surprises in 23 announcement types; "exchange rates respond to announcements related to consumer demand, inflation, and interest rates, but not to the announcements directly related to the general strength of the economy"; Treasury budget, trade balance and capacity utilization strongest. Whether TIC is among the 23 and whether any post-announcement drift is found: UNVERIFIED.
 - **Relevance:** **Low**: contemporaneous response study; release-time drift family already covered (Chaboud et al. 2004, R219). **Status:** VERIFIED (abstract only).
+
+### Afonso, Furceri & Gomes, "Sovereign credit ratings and financial markets linkages: application to European data" (added 2026-11-17 R235)
+- **Link:** [UC3M author PDF](https://www.eco.uc3m.es/~pgomes/Papers/Pub_JIMF_RatingsEuro.pdf) (opened, read in full via fetch agent). Year and journal are not printed in the PDF; file name suggests JIMF: venue/DOI UNVERIFIED.
+- **Design:** daily 10-year yield spreads over Germany, 5-year CDS spreads and national equity indices, 24 EU countries, January 1995 - October 2010; [-1,1] event windows, panel regressions, persistence regressions.
+- **Finding:** "the reaction of EU spreads to credit rating events is clear and quick (within one to two days)"; downgrades keep spreads higher for up to ~6 months. Exchange rates are not studied.
+- **Relevance:** **None** for a directional EUR/USD item (no FX test). **Status:** VERIFIED.
+
+### Mo Ka Lok (HKUST COMP 4971C student report, 2021-22), "Analysis of Trading with Harmonic Patterns in US Stock, Forex, and Crypto Market" (added 2026-11-17 R235)
+- **Link:** [HKUST PDF](https://cse.hkust.edu.hk/~rossiter/independent_studies_projects/trading_harmonic_patterns/trading_harmonic_patterns.pdf) (opened; last ~25% only summarised by fetch agent).
+- **Design:** hourly Dukascopy SPY, EUR/USD, BTC/USD, 2017-09-01 to 2021-09-01; no commission; no out-of-sample split found.
+- **Finding:** "the occurrence of these patterns is not high in general, which results in low profitability"; EUR/USD bullish Gartley ~3 signals/year, best CAGR 0.86%.
+- **Relevance:** **None**: student report, in-sample, no costs, signal too rare for the R090 power floor. **Status:** VERIFIED (partly summarised).
+
+### Zhalgasbek (2023), "Analysis of Elliott Wave Theory on Time-Series Data from Forex" (Nazarbayev University capstone/master's thesis) (added 2026-11-17 R235)
+- **Link:** [NU repository record](https://nur.nu.edu.kz/handle/123456789/7226) (record page opened; PDF access restricted, not read).
+- **Finding (abstract):** "the patterns identified by the Elliott wave theory did not have statistically significant predictive power for daily exchange rates of currencies." Pairs, sample and costs UNVERIFIED.
+- **Relevance:** **None** (negative, daily, pairs unknown). **Status:** VERIFIED (abstract only).
