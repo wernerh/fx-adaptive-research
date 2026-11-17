@@ -2942,3 +2942,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified daily/intraday EUR/USD evidence for either angle, and Consensus Economics data is not in the pipeline.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-fourth consecutive refill with no
   item (R214-R247).
+
+### Refill note R248 (not an item; no item added)
+- 2026-11-17 R248 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Wikipedia" or
+  "Parkinson" entry in research/ or knowledge/ before this run): (a) Wikipedia page-view attention -> EUR/USD returns; (b) daily
+  high-low range (range-based volatility) -> next-day EUR/USD direction. Two standard searches. (a) Opened two abstract pages
+  (Pyun Econ. Letters 2024; Hervé-Zouaoui-Belvaux Econ. Modelling 2019; entries in research/academic_studies.md): equities only,
+  no FX test; the one FX attention paper they cite (Han-Xu-Yin 2018) is already logged (volatility, weekly, no direction result).
+  (b) Hits were vendor/forum/blog pages only (NumXL, MQL5, Forex Peace Army, Scribd, Dummies, FXStreet; not evidence, not opened).
+- No item added: no verified EUR/USD evidence for either angle, and Wikipedia page-view data is not in the pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-fifth consecutive refill with no
+  item (R214-R248).

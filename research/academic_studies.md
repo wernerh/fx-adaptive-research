@@ -1448,3 +1448,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** monthly panel, nine G10 currencies vs USD incl. EUR, Sep 2012-May 2025 (return local projection from Dec 1994); Consensus Economics FX forecasts at 3/12/24-month horizons; currency and time fixed effects; no out-of-sample or trading-cost test found.
 - **Finding:** "forward-looking expectations accurately predict both currency returns and flows"; once flows are controlled, "currency flows subsume the predictive content of exchange rate forecasts" (verbatim). Short-horizon (3-month) forecasts have limited predictive power (summary).
 - **Relevance:** **None** for a new item (found while searching for consensus FX forecasts -> EUR/USD): monthly/24-month horizon, in-sample panel, and Consensus Economics data is not in the pipeline. **Status:** VERIFIED (partial).
+
+### Pyun, "The Wikipedia effect: Analyzing investor attention for strategic investment decisions", Economics Letters 241, 2024 (added 2026-11-17 R248)
+- **Link:** [IDEAS](https://ideas.repec.org/a/eee/ecolet/v241y2024ics0165176524003203.html), doi:10.1016/j.econlet.2024.111836 (abstract page opened via web-fetch; full text not read).
+- **Design/finding (abstract):** long-short stock portfolios on changes in Wikipedia page views earn positive abnormal returns; listed equities only.
+- **Relevance:** **None** for a new item (found while searching for Wikipedia attention -> EUR/USD): no FX test. **Status:** VERIFIED (abstract only).
+
+### Hervé, Zouaoui & Belvaux, "Noise traders and smart money: Evidence from online searches", Economic Modelling 83, 2019 (added 2026-11-17 R248)
+- **Link:** [IDEAS](https://ideas.repec.org/p/hal/journl/hal-02065042.html), doi:10.1016/j.econmod.2019.02.005 (abstract page opened via web-fetch; full text not read).
+- **Design/finding (abstract):** 87 French stocks 2008-2018; Wikipedia traffic (smart-investor proxy) vs Google SVI (noise-trader proxy); only noise-trader attention influences returns. Its FX reference (Han-Xu-Yin 2018) is already logged above.
+- **Relevance:** **None** for a new item: equities only, no FX test. **Status:** VERIFIED (abstract only).

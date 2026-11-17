@@ -2176,3 +2176,11 @@ Why each run chose what it did, and any judgement calls.
   Angles: consensus / professional FX forecasts and carry-trade unwind -> EUR/USD. No new daily/intraday EUR/USD evidence;
   no item added (reasons in the R247 refill note). 0 trials. No lead, no notification.
 - **Observation:** thirty-four consecutive refills (R214-R247) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R248 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). Local `main` was again a stale history diverged from `origin/main`; reset to `origin/main` (backup
+  branch kept locally). pytest 454 passed.
+  Angles: Wikipedia page-view attention and daily high-low range -> EUR/USD. No verified EUR/USD evidence; no item added
+  (reasons in the R248 refill note). 0 trials. No lead, no notification.
+- **Observation:** thirty-five consecutive refills (R214-R248) with no item. The R219 observation (human decision on new data) stands.
