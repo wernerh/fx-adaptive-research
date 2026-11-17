@@ -2828,3 +2828,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   daily equity-vol -> EUR/USD evidence; the cited paper is FX-option data at 3-6 month horizons, below the R090 floor and not in the
   pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Twenty-fourth consecutive refill
   with no item (R214-R237).
+
+### Refill note R238 (not an item; no item added)
+- 2026-11-17 R238 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "debt ceiling" or
+  "G7" entry in research/ or knowledge/ before this run): (a) US debt-ceiling / shutdown resolutions -> later EUR/USD drift;
+  (b) G7 communiqué / official FX statements -> later EUR/USD drift. Two standard searches.
+  (a) Opened Nippani JAF 2016 (entry in research/academic_studies.md): one 2013 episode, daily closes, same-day move only, no drift
+  test; other hits FX news/broker commentary (not cited). (b) Fratzscher ECB WP 952 not openable (fetch permission timeout after
+  redirect to ecb.europa.eu), not cited; other hits (econpapers, Dallas Fed WPs) not opened.
+- No item added: (a) single-event evidence and too few dev 2016-2020 events (below the R090 power floor); (b) no openable evidence,
+  and G7 FX statements are rare after 2013 (also below the floor). pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Twenty-fifth consecutive refill with no item (R214-R238).

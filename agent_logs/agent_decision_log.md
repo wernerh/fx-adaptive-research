@@ -2096,3 +2096,11 @@ Why each run chose what it did, and any judgement calls.
   Angles chosen because absent from research/ and knowledge/: Vortex / Chaikin Money Flow rules and lagged VSTOXX -> next-day EUR/USD.
   No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R237 refill note). 0 trials. No lead, no notification.
 - **Observation:** twenty-four consecutive refills (R214-R237) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R238 (unattended)
+- **State:** no `ready` or `running` backlog item; last research-batch run 43840273851 already recorded as E051; no run queued or in
+  progress. Protocol step 4 (refill). Local `main` had again diverged from `origin/main` (stale clone); saved a backup branch and
+  reset `main` to `origin/main`. statsmodels was missing in the workspace until `pip install -e ".[dev]"`; then pytest 454 passed.
+  Angles chosen because absent from research/ and knowledge/: US debt-ceiling resolutions and G7 FX communiqués -> EUR/USD drift.
+  No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R238 refill note). 0 trials. No lead, no notification.
+- **Observation:** twenty-five consecutive refills (R214-R238) with no item. The R219 observation (human decision on new data) stands.

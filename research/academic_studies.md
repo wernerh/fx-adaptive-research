@@ -1379,3 +1379,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** predictor is the slope of the OTC **FX** option implied-volatility term structure (ATM, 10-delta tails) vs USD, developed and EM currencies; daily data, overlapping 3- and 6-month holding periods, lagged slope, Hansen-Hodrick t-stats; in-sample regressions plus cross-sectional slope-sorted portfolios. Sample period UNVERIFIED (dates dropped in extraction). Out-of-sample test not seen in the read text.
 - **Finding:** "For developed countries a steep term structure means negative future returns" (significance mainly on the right-tail slope).
 - **Relevance:** **None** for a new item: equity implied vol (VSTOXX/VIX) is not tested as a predictor; horizon 3-6 months (below the R090 power floor at our sample length); needs OTC FX implied vols not in the pipeline. **Status:** VERIFIED (partial full text).
+
+### Nippani, "Arbitrage Opportunities in Dollar Trading Due to Unexpected Political Events: An Empirical Note", Journal of Accounting and Finance 16(5), 2016, pp. 11-19 (added 2026-11-17 R238)
+- **Link:** [articlegateway PDF/text](https://articlegateway.com/index.php/JAF/article/download/1048/990) (opened, read in full via web-fetch).
+- **Design:** daily Bloomberg closes 2013-01-01 to 2013-12-31 (N = 261); DXY, EUR/USD, GBP/USD; dummies for the October 2013 US shutdown (1-16 Oct) and 17 Oct 2013 (day after the debt-ceiling deal). One episode only; no intraday data; no costs; trading suggestions untested.
+- **Finding:** shutdown period not significant; on the day after the deal "the dollar index did drop significantly on October 17, 2013" (EUR/USD up). Single same-day event, no multi-day drift examined.
+- **Relevance:** **None** for a new item (one 2013 event, no drift test, US debt-ceiling resolutions in dev 2016-2020 too few for the R090 power floor). **Status:** VERIFIED.
