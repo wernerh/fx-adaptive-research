@@ -2184,3 +2184,11 @@ Why each run chose what it did, and any judgement calls.
   Angles: Wikipedia page-view attention and daily high-low range -> EUR/USD. No verified EUR/USD evidence; no item added
   (reasons in the R248 refill note). 0 trials. No lead, no notification.
 - **Observation:** thirty-five consecutive refills (R214-R248) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R249 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). Local `main` was again a stale history diverged from `origin/main`; reset to `origin/main` (backup
+  branch kept locally). pytest 454 passed.
+  Angles: US durable goods orders release and EVZ (euro implied-volatility index) changes -> EUR/USD. No verified lagged EUR/USD
+  evidence; no item added (reasons in the R249 refill note). 0 trials. No lead, no notification.
+- **Observation:** thirty-six consecutive refills (R214-R249) with no item. The R219 observation (human decision on new data) stands.

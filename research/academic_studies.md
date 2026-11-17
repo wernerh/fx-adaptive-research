@@ -1458,3 +1458,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS](https://ideas.repec.org/p/hal/journl/hal-02065042.html), doi:10.1016/j.econmod.2019.02.005 (abstract page opened via web-fetch; full text not read).
 - **Design/finding (abstract):** 87 French stocks 2008-2018; Wikipedia traffic (smart-investor proxy) vs Google SVI (noise-trader proxy); only noise-trader attention influences returns. Its FX reference (Han-Xu-Yin 2018) is already logged above.
 - **Relevance:** **None** for a new item: equities only, no FX test. **Status:** VERIFIED (abstract only).
+
+### "Examining the Return-Volatility Relation for Foreign Exchange: Evidence from the Euro VIX", Journal of Futures Markets, 2012 (added 2026-11-17 R249)
+- **Link:** [metatoc abstract page](https://metatoc.com/papers/19126-examining-the-return-volatility-relation-for-foreign-exchange-evidence-from-the-euro-vix) (opened via web-fetch; abstract only, authors and DOI not shown there: UNVERIFIED; the zendy page for doi:10.1002/fut.21582 opened with an empty body, so that DOI is UNVERIFIED).
+- **Design/finding (abstract):** euro-currency ETF (FXE) returns vs its option implied-volatility index (EVZ); quantile regressions; the return-implied volatility relation is asymmetric, weaker than for equities and can be positive; abstract reports only **contemporaneous** relations.
+- **Relevance:** **None** for a new item (found while searching for EVZ -> EUR/USD returns): no lagged/predictive result, ETF not spot, and EVZ data is not in the pipeline. **Status:** VERIFIED (abstract only; bibliographic details UNVERIFIED).

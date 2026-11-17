@@ -2953,3 +2953,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD evidence for either angle, and Wikipedia page-view data is not in the pipeline.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-fifth consecutive refill with no
   item (R214-R248).
+
+### Refill note R249 (not an item; no item added)
+- 2026-11-17 R249 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "durable goods",
+  "Euro VIX" or "Hibbert" entry in research/ or knowledge/ before this run): (a) US durable goods orders release (08:30 NY) -> later
+  EUR/USD drift; (b) Cboe EuroCurrency volatility index (EVZ) changes -> next-day EUR/USD direction. Two standard searches.
+  (a) Hits were news pages only (Dukascopy market-news, FXStreet; not evidence, not opened); no study. (b) Opened the abstract of
+  "Examining the Return-Volatility Relation for Foreign Exchange: Evidence from the Euro VIX" (JFM 2012; entry in
+  research/academic_studies.md): FXE ETF vs EVZ, contemporaneous relation only, no predictive test; other hits vendor/glossary pages.
+- No item added: no verified lagged EUR/USD evidence for either angle, and EVZ / release-calendar data are not in the pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-sixth consecutive refill with no
+  item (R214-R249).
