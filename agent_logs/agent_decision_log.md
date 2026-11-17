@@ -2192,3 +2192,10 @@ Why each run chose what it did, and any judgement calls.
   Angles: US durable goods orders release and EVZ (euro implied-volatility index) changes -> EUR/USD. No verified lagged EUR/USD
   evidence; no item added (reasons in the R249 refill note). 0 trials. No lead, no notification.
 - **Observation:** thirty-six consecutive refills (R214-R249) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R250 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). pytest 454 passed.
+  Angles: flash PMI releases and lagged EUR/CHF safe-haven returns -> EUR/USD. No verified lagged EUR/USD evidence; no item
+  added (reasons in the R250 refill note). 0 trials. No lead, no notification.
+- **Observation:** thirty-seven consecutive refills (R214-R250) with no item. The R219 observation (human decision on new data) stands.
