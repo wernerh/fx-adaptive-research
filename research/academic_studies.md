@@ -1430,3 +1430,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** 1-minute on-the-run nominal Treasury coupon yields (GovPX 1991-2000, BrokerTec 2001-2024), 1,684 auctions, six-hour window around auction close. No exchange rates (FX enters only as a foreign-demand proxy).
 - **Finding:** "yields rise in the hours before auction and reverse afterward"; total intraday move 0.7-1.2 bp across maturities, smaller in 2015-2024 than 2007-2014. No FX returns, no out-of-sample or trading-cost analysis (the latter per summary of the unread part, UNVERIFIED).
 - **Relevance:** **None** for a new item: Treasury-yield price pressure only, no EUR/USD evidence; consistent with the R123 note (no FX evidence for auction days). **Status:** VERIFIED (partial).
+
+### Meisenzahl, Niepmann & Schmidt-Eisenlohr, "The Dollar Channel of Monetary Policy Transmission", FEDS 2025-046 (Jun 2025) (added 2026-11-17 R243)
+- **Link:** [PDF](https://www.federalreserve.gov/econres/feds/files/2025046pap.pdf), DOI [10.17016/FEDS.2025.046](https://doi.org/10.17016/FEDS.2025.046) (opened via web-fetch; first ~40k characters verbatim, rest summary-only).
+- **Design:** loan-level US leveraged term loans (PitchBook LCD, 6,430 loans, Aug 2011-Dec 2023); ECB surprises from intraday event windows around ECB announcements (Altavilla et al. 2019). Outcome is US loan-spread flexes, not exchange rates.
+- **Finding:** "This paper documents a new dollar channel that transmits monetary policy across borders." No test of bank-lending-survey (SLOOS / ECB BLS) releases; no EUR/USD return forecast.
+- **Relevance:** **None** for a new item (found while searching for bank-lending-survey release effects on EUR/USD). **Status:** VERIFIED (partial).

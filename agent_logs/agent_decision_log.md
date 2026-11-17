@@ -2137,3 +2137,11 @@ Why each run chose what it did, and any judgement calls.
   Angles: central-bank speeches -> later EUR/USD drift, and US Treasury auction results -> USD reaction. No usable EUR/USD evidence;
   no item added (reasons in the R242 refill note). 0 trials. No lead, no notification.
 - **Observation:** twenty-nine consecutive refills (R214-R242) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R243 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). Local `main` had again diverged from `origin/main` (old history); kept it as local branch
+  `stale-local-main` and reset the working `main` to `origin/main`. pytest 454 passed.
+  Angles: ECB BLS / Fed SLOOS releases and euro-area balance-of-payments releases -> EUR/USD. No usable EUR/USD evidence;
+  no item added (reasons in the R243 refill note). 0 trials. No lead, no notification.
+- **Observation:** thirty consecutive refills (R214-R243) with no item. The R219 observation (human decision on new data) stands.

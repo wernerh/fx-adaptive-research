@@ -2887,3 +2887,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no new evidence beyond what is logged; (b) no EUR/USD evidence (same conclusion as R123), and an auction-day
   calendar would need a new data download. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Twenty-ninth consecutive refill with no item (R214-R242).
+
+### Refill note R243 (not an item; no item added)
+- 2026-11-17 R243 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "SLOOS" / "bank
+  lending survey" or euro-area balance-of-payments release entry in research/ or knowledge/ before this run): (a) ECB Bank Lending
+  Survey / Fed SLOOS release -> later EUR/USD drift; (b) ECB monthly euro-area balance-of-payments / current-account release ->
+  EUR/USD. Two standard searches. (a) Hits were papers on FX -> bank lending (wrong direction) and news pages (MNI, Saxo, Continuum;
+  not evidence, not opened); opened Meisenzahl-Niepmann-Schmidt-Eisenlohr FEDS 2025-046 (entry in research/academic_studies.md):
+  ECB surprises -> US loan spreads, no survey-release or FX-return test. (b) Returned only ECB / Banque de France press releases; no study.
+- No item added: no EUR/USD evidence for either angle; both would also need a new release-calendar download and are ~4 (BLS) or
+  ~12 (BoP) events a year, below the lesson-R090 power floor on dev. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Thirtieth consecutive refill with no item (R214-R243).
