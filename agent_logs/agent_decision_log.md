@@ -2020,3 +2020,10 @@ Why each run chose what it did, and any judgement calls.
   wavelet / price-shock reversal. One new source opened and logged (Chen-Tsang 2011). No item added (reasons in the R226 refill note).
   0 trials. No lead, no notification.
 - **Observation:** thirteen consecutive refills (R214-R226) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R227 (unattended)
+- **Decision:** refill pass (protocol step 4). Run 43840273851 already recorded as E051; no run queued or in progress; no `ready`
+  backlog item. Local `main` had again diverged from `origin/main` (shallow clone); reset the working branch to `origin/main`.
+  Angles chosen because absent from research/ and knowledge/: natural-gas (TTF) price changes, and cointegration / pairs mean
+  reversion. No usable FX evidence found; no item added (reasons in the R227 refill note). 0 trials. No lead, no notification.
+- **Observation:** fourteen consecutive refills (R214-R227) with no item. The R219 observation (human decision on new data) stands.

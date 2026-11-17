@@ -2680,3 +2680,20 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) monthly horizon below the R090 power floor, no EUR evidence, euro-area yields not on the runner; (b) duplicates
   or fitted-model results with no pre-registrable mechanism. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a
   pipeline failure. Thirteenth consecutive refill with no item (R214-R226).
+
+### Refill note R227 (not an item; no item added)
+- 2026-11-17 R227 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "natural gas", "TTF"
+  or "cointegration" entry in research/ or knowledge/ before this run): (a) European natural-gas (TTF) price changes -> next-day
+  EUR/USD (energy terms-of-trade channel); (b) cointegration / pairs mean reversion between EUR/USD and another USD pair -> EUR/USD
+  direction. Two standard searches.
+  (a) Hits were FX commentary only (poundsterlinglive, capital.com, FXStreet, FXEmpire, TradingView) and two arXiv papers on Italian
+  firm pricing / energy volatility modelling with no FX forecast; not evidence, not cited. TTF prices are also not in the repo or a
+  proven runner download.
+  (b) halshs-01566803 PDF (Anubis access-denied) and FAU IWF WP 05-2016 (Anubis bot challenge) could not be read, not circumvented,
+  not cited; NTNU thesis link redirected to a registration record, not followed. Opened Liu, Chang & Geman (2015, "Intraday Pairs
+  Trading Strategies on High Frequency Data: The Case of Oil Companies", https://core.ac.uk/download/42135919.pdf): 5-minute US oil
+  stocks, no FX instrument; not relevant to EUR/USD, not logged as evidence.
+- No item added: (a) no study, no data; (b) no readable FX pairs-trading evidence, and a two-leg spread is not a single-pair EUR/USD
+  direction rule (a one-leg version would be a mechanism invented without evidence; intraday cross-pair lead-lag already searched).
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fourteenth consecutive refill with no item
+  (R214-R227).
