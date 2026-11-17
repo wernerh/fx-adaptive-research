@@ -2145,3 +2145,11 @@ Why each run chose what it did, and any judgement calls.
   Angles: ECB BLS / Fed SLOOS releases and euro-area balance-of-payments releases -> EUR/USD. No usable EUR/USD evidence;
   no item added (reasons in the R243 refill note). 0 trials. No lead, no notification.
 - **Observation:** thirty consecutive refills (R214-R243) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R244 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). Local `main` was again a stale shallow history unrelated to `origin/main`; reset the working `main`
+  to `origin/main` (the old local commits are older shallow copies). pytest 454 passed.
+  Angles: US equity closing-auction flows and CME FX futures settlement window -> EUR/USD. No new EUR/USD evidence;
+  no item added (reasons in the R244 refill note). 0 trials. No lead, no notification.
+- **Observation:** thirty-one consecutive refills (R214-R244) with no item. The R219 observation (human decision on new data) stands.
