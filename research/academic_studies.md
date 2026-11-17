@@ -1334,3 +1334,14 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (verbatim):** "a large part of the activity is explained by the self-exciting mechanism"; the model "is able to capture the increase of trading activity after the news". Activity only, no direction or trading rule.
 - **Related:** Lallouache & Challet, arXiv [1406.3967](https://arxiv.org/abs/1406.3967) (opened, full text): EBS EUR/USD trade arrivals Q1 2012; Hawkes fits pass significance tests only "for fitting an hour at a time", longer periods fail from non-stationarity. No direction.
 - **Relevance:** **None** for a directional item: intensity/activity models; post-news activity already covered by the release-time family. **Status:** VERIFIED.
+
+### Schmidt, Silvestrini & Szczerbowicz (2026), "Federal Reserve shocks: which securities really flow?" (added 2026-11-17 R234)
+- **Venue:** Banque de France Working Paper 1040, April 2026; [PDF](https://www.banque-france.fr/system/files/2026-04/WP1040.pdf) (opened 2026-11-17 R234 via web-fetch; first ~45% verbatim, rest summarised by the fetch tool).
+- **Data/design:** monthly US TIC cross-border securities flows by investor and asset class, March 1994 - June 2019; FOMC shocks split into pure policy and central-bank-information shocks; local projections over 12 months.
+- **Finding (verbatim):** "much of the observed capital inflows into the US is actually due to US investors repatriating funds from foreign equities"; "a 100 basis-point monetary tightening leads to a cumulative repatriation of roughly $2.4 billion in foreign equities over nine months."
+- **Relevance:** **None** for a directional item: TIC used as a monthly flow series, not as a release event; no exchange-rate return or release-window test. **Status:** VERIFIED (partly summarised).
+
+### Simpson, Ramchander & Chaudhry (2005), "The impact of macroeconomic surprises on spot and forward foreign exchange markets" (added 2026-11-17 R234)
+- **Venue:** Journal of International Money and Finance 24(5), 693-718; DOI [10.1016/j.jimonfin.2005.04.005](https://doi.org/10.1016/j.jimonfin.2005.04.005); [FGCU record page](https://scholarscommons.fgcu.edu/esploro/outputs/journalArticle/The-impact-of-macroeconomic-surprises-on/99384088378506570) (opened 2026-11-17 R234, abstract only; full-text PDF refused by fetch permission, not opened).
+- **Finding (abstract):** surprises in 23 announcement types; "exchange rates respond to announcements related to consumer demand, inflation, and interest rates, but not to the announcements directly related to the general strength of the economy"; Treasury budget, trade balance and capacity utilization strongest. Whether TIC is among the 23 and whether any post-announcement drift is found: UNVERIFIED.
+- **Relevance:** **Low**: contemporaneous response study; release-time drift family already covered (Chaboud et al. 2004, R219). **Status:** VERIFIED (abstract only).

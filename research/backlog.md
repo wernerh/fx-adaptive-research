@@ -2778,3 +2778,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no verified daily EUR/USD design (a daily-GPR item would be a design of our own on abstract-only evidence; monthly
   is below the R090 floor); (b) activity, not direction. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a
   pipeline failure. Twentieth consecutive refill with no item (R214-R233).
+
+### Refill note R234 (not an item; no item added)
+- 2026-11-17 R234 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "TIC" or "cross-border
+  merger" entry in research/ or knowledge/ before this run): (a) US Treasury International Capital (TIC) monthly release (16:00 NY) ->
+  later EUR/USD drift; (b) cross-border M&A flows -> EUR/USD. Two standard searches plus one follow-up.
+  (a) Hits were Treasury press releases (not evidence). Opened Schmidt-Silvestrini-Szczerbowicz BdF WP 1040 (2026; entry in
+  research/academic_studies.md): TIC used as monthly flow series, no release-event or FX-return test. Opened Simpson-Ramchander-Chaudhry
+  JIMF 2005 (DOI 10.1016/j.jimonfin.2005.04.005, abstract only): contemporaneous surprise response, TIC inclusion and drift UNVERIFIED;
+  full text refused by fetch permission. Other hits (FRB IFDP 823/784, BIS WP 626, LSE DP 475) already in the release-time family or not opened.
+  (b) Top hit Riddiough-Zhang "Cross-Border M&A Flows" already logged (R194); other hits theses / not opened, not cited.
+- No item added: (a) no evidence that TIC releases move EUR/USD, let alone a later drift; monthly event count (~70 dev releases) also
+  near the R090 power floor; (b) duplicate of R194. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline
+  failure. Twenty-first consecutive refill with no item (R214-R234).

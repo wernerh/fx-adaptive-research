@@ -2064,3 +2064,11 @@ Why each run chose what it did, and any judgement calls.
   Angles chosen because absent from research/ and knowledge/: geopolitical risk (GPR) index and Hawkes / self-exciting clustering.
   No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R233 refill note). 0 trials. No lead, no notification.
 - **Observation:** twenty consecutive refills (R214-R233) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R234 (unattended)
+- **State:** no `ready` or `running` backlog item; last research-batch run 43840273851 already recorded as E051; no run queued or in
+  progress. Protocol step 4 (refill). Local `main` again diverged from `origin/main` (stale clone); reset to `origin/main`, old local
+  commits kept on local branch `stale-local-main-backup` (not pushed).
+  Angles chosen because absent from research/ and knowledge/: US TIC monthly release and cross-border M&A flows.
+  No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R234 refill note). 0 trials. No lead, no notification.
+- **Observation:** twenty-one consecutive refills (R214-R234) with no item. The R219 observation (human decision on new data) stands.
