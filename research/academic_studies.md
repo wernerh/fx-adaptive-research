@@ -1309,3 +1309,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding (verbatim):** "an increase in the dollar funding risk leads to a rise in the convenience yield and an appreciation of the dollar"; regressions are explicitly contemporaneous ("how changes in the balance sheet between t - 1 and t contribute to changes in the exchange rate between t - 1 and t"). Euro OLS coefficient 0.227 (t 4.84) per the tool summary (UNVERIFIED verbatim).
 - **Relevance:** **None** for a pre-registrable item: contemporaneous monthly relation, no lagged or out-of-sample test, below the R090 power floor. **Status:** VERIFIED (partial verbatim read).
 
+
+### Andersen & Bondarenko (2014), "VPIN and the flash crash" (added 2026-11-17 R232)
+- **Venue:** Journal of Financial Markets 17, 1-46; DOI [10.1016/j.finmar.2013.05.005](https://doi.org/10.1016/j.finmar.2013.05.005); [IDEAS abstract page](https://ideas.repec.org/a/eee/finmar/v17y2014icp1-46.html) (opened 2026-11-17 R232 via web-fetch: abstract only, full text paywalled).
+- **Data/design:** not on the abstract page (UNVERIFIED). Re-examines the claim that VPIN (volume-synchronised probability of informed trading) predicts short-run volatility.
+- **Finding (abstract, verbatim):** VPIN is "a poor predictor of short run volatility"; its predictive content "is due primarily to a mechanical relation with the underlying trading intensity."
+- **Relevance:** **None** for a directional EUR/USD item: a volatility (not direction) measure whose volatility content is itself disputed; tick-volume intensity already tested (E033). **Status:** VERIFIED (abstract only).
+
+### Fenn, Howison, McDonald, Williams & Johnson (2008), "The Mirage of Triangular Arbitrage in the Spot Foreign Exchange Market" (added 2026-11-17 R232)
+- **Venue:** arXiv [0812.0913](https://arxiv.org/pdf/0812.0913) (v1, Dec 2008; opened 2026-11-17 R232 via web-fetch, full text).
+- **Data/design:** second-by-second executable HSBC quotes, triangles {EUR/USD, USD/CHF, EUR/CHF} and {EUR/USD, USD/JPY, EUR/JPY}, main sample Oct 2005 (about four weeks); frequency, duration and size of triangular mispricings plus fill-probability trading simulations with costs.
+- **Finding (verbatim):** "triangular arbitrage opportunities do exist, but that most have short durations and small magnitudes"; "the foreign exchange market appears internally self-consistent." About 60% of opportunities last 1 second or less. No test of later EUR/USD direction.
+- **Relevance:** **None**: sub-second horizon, far below the repo's 5-minute bars and tradable horizon; no directional result. **Status:** VERIFIED (full text read via fetch tool).
