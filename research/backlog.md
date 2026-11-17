@@ -2839,3 +2839,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) single-event evidence and too few dev 2016-2020 events (below the R090 power floor); (b) no openable evidence,
   and G7 FX statements are rare after 2013 (also below the floor). pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Twenty-fifth consecutive refill with no item (R214-R238).
+
+### Refill note R239 (not an item; no item added)
+- 2026-11-17 R239 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "FOMC minutes" or
+  "Fed minutes" entry in research/ or knowledge/; ZEW/Ifo only mentioned in passing): (a) FOMC minutes release (14:00 NY) -> later
+  EUR/USD drift; (b) German Ifo / ZEW releases -> later EUR/USD drift. Two standard searches.
+  (a) Opened Rosa FRBNY EPR 2013 (entry in research/academic_studies.md): volatility/volume only, no sign, effect within ~1 h and
+  declining since 2008; other hits Dukascopy market-news pages (not cited). (b) Mannheim DP 09-010 PDF behind an Anubis bot check
+  (not circumvented, not cited); other hits news/broker pages.
+- No item added: (a) no directional evidence and ~40 dev events (below the R090 power floor); (b) no openable evidence, monthly
+  events (~60 dev dates per survey) also near or below the floor. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Twenty-sixth consecutive refill with no item (R214-R239).

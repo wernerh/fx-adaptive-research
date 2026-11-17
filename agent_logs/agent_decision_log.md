@@ -2104,3 +2104,10 @@ Why each run chose what it did, and any judgement calls.
   Angles chosen because absent from research/ and knowledge/: US debt-ceiling resolutions and G7 FX communiqués -> EUR/USD drift.
   No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R238 refill note). 0 trials. No lead, no notification.
 - **Observation:** twenty-five consecutive refills (R214-R238) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R239 (unattended)
+- **State:** no `ready` or `running` backlog item; last research-batch run 43840273851 already recorded as E051; no run queued or in
+  progress. Protocol step 4 (refill). Local clone was on a detached HEAD; checked out `main` and reset to `origin/main`. pytest 454 passed.
+  Angles chosen because absent from research/ and knowledge/: FOMC minutes releases and German Ifo/ZEW releases -> later EUR/USD drift.
+  No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R239 refill note). 0 trials. No lead, no notification.
+- **Observation:** twenty-six consecutive refills (R214-R239) with no item. The R219 observation (human decision on new data) stands.

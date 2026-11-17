@@ -1385,3 +1385,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** daily Bloomberg closes 2013-01-01 to 2013-12-31 (N = 261); DXY, EUR/USD, GBP/USD; dummies for the October 2013 US shutdown (1-16 Oct) and 17 Oct 2013 (day after the debt-ceiling deal). One episode only; no intraday data; no costs; trading suggestions untested.
 - **Finding:** shutdown period not significant; on the day after the deal "the dollar index did drop significantly on October 17, 2013" (EUR/USD up). Single same-day event, no multi-day drift examined.
 - **Relevance:** **None** for a new item (one 2013 event, no drift test, US debt-ceiling resolutions in dev 2016-2020 too few for the R090 power floor). **Status:** VERIFIED.
+
+### Rosa, "The Financial Market Effect of FOMC Minutes", FRBNY Economic Policy Review, December 2013, pp. 67-81 (added 2026-11-17 R239)
+- **Link:** [FRBNY PDF](https://www.newyorkfed.org/medialibrary/media/research/epr/2013/0913rosa.pdf) (opened, read via web-fetch).
+- **Design:** five-minute data January 2005 to March 2011; 2y/10y Treasury yields, E-mini S&P 500, EBS USD vs EUR, CHF, JPY (with volume); window one hour before to two hours after the 14:00 ET minutes release vs matched control days. No surprise measure, so no direction (sign) of the FX response is estimated.
+- **Finding:** volatility and volume rise at release; elevated "up to roughly one hour after the announcement"; EUR volume about four times non-event days; "The asset price response to the minutes has declined since 2008,".
+- **Relevance:** **None** for a new item: volatility/volume only, no directional or drift result; FOMC minutes are 8 per year (~40 dev 2016-2020 dates, below the R090 power floor). **Status:** VERIFIED.
