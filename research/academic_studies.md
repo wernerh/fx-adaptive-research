@@ -1373,3 +1373,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [RePEc record](https://ideas.repec.org/a/eee/finana/v17y2008i1p198-217.html) (record opened; no abstract shown; full text subscriber-only, not read).
 - **Design:** S&P 500 futures only; no FX test. Frequency, costs and findings UNVERIFIED.
 - **Relevance:** **None** (no FX evidence). **Status:** VERIFIED (bibliographic record only).
+
+### Ornelas & Maaud, "Implied Volatility Term Structure and Exchange Rate Predictability", Banco Central do Brasil WP 492 (year UNVERIFIED) (added 2026-11-17 R237)
+- **Link:** [BCB PDF](https://www.bcb.gov.br/pec/wps/ingl/wps492.pdf) (opened; first ~half read verbatim, rest only via fetch summary).
+- **Design:** predictor is the slope of the OTC **FX** option implied-volatility term structure (ATM, 10-delta tails) vs USD, developed and EM currencies; daily data, overlapping 3- and 6-month holding periods, lagged slope, Hansen-Hodrick t-stats; in-sample regressions plus cross-sectional slope-sorted portfolios. Sample period UNVERIFIED (dates dropped in extraction). Out-of-sample test not seen in the read text.
+- **Finding:** "For developed countries a steep term structure means negative future returns" (significance mainly on the right-tail slope).
+- **Relevance:** **None** for a new item: equity implied vol (VSTOXX/VIX) is not tested as a predictor; horizon 3-6 months (below the R090 power floor at our sample length); needs OTC FX implied vols not in the pipeline. **Status:** VERIFIED (partial full text).

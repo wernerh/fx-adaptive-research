@@ -2816,3 +2816,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no FX evidence; (b) negative evidence after costs on EUR/USD itself, and candlestick / fitted-ML family already NONE.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Twenty-third consecutive refill with no
   item (R214-R236).
+
+### Refill note R237 (not an item; no item added)
+- 2026-11-17 R237 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Vortex", "Chaikin"
+  or "VSTOXX" entry in research/ or knowledge/ before this run): (a) Vortex indicator / Chaikin Money Flow rules -> EUR/USD;
+  (b) lagged VSTOXX (euro-equity implied vol) -> next-day EUR/USD. Two standard searches.
+  (a) Only candidate study: a theses.cz bachelor thesis PDF, blocked by a JavaScript bot check (not circumvented, not cited). Other
+  hits TradingView/vendor pages (BTC, no study). (b) Hits were broker/news commentary; opened Ornelas-Maaud BCB WP 492 (entry in
+  research/academic_studies.md): FX-option implied-vol term-structure slope, 3-6 month horizons, no equity-vol predictor.
+- No item added: (a) no openable evidence; Chaikin needs real volume (tick-volume family already tested E033); (b) no verified
+  daily equity-vol -> EUR/USD evidence; the cited paper is FX-option data at 3-6 month horizons, below the R090 floor and not in the
+  pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Twenty-fourth consecutive refill
+  with no item (R214-R237).

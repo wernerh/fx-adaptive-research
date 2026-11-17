@@ -2088,3 +2088,11 @@ Why each run chose what it did, and any judgement calls.
   Angles chosen because absent from research/ and knowledge/: point-and-figure charting rules and pin-bar / single-candle price action.
   No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R236 refill note). 0 trials. No lead, no notification.
 - **Observation:** twenty-three consecutive refills (R214-R236) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R237 (unattended)
+- **State:** no `ready` or `running` backlog item; last research-batch run 43840273851 already recorded as E051; no run queued or in
+  progress. Protocol step 4 (refill). Local `main` was again diverged from `origin/main` (stale clone); reset to `origin/main`
+  (backup branch from R236 already exists).
+  Angles chosen because absent from research/ and knowledge/: Vortex / Chaikin Money Flow rules and lagged VSTOXX -> next-day EUR/USD.
+  No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R237 refill note). 0 trials. No lead, no notification.
+- **Observation:** twenty-four consecutive refills (R214-R237) with no item. The R219 observation (human decision on new data) stands.
