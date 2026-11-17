@@ -2080,3 +2080,11 @@ Why each run chose what it did, and any judgement calls.
   Angles chosen because absent from research/ and knowledge/: euro-area sovereign rating announcements and harmonic / Elliott-wave patterns.
   No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R235 refill note). 0 trials. No lead, no notification.
 - **Observation:** twenty-two consecutive refills (R214-R235) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-17 R236 (unattended)
+- **State:** no `ready` or `running` backlog item; last research-batch run 43840273851 already recorded as E051; no run queued or in
+  progress. Protocol step 4 (refill). Local `main` had diverged from `origin/main` (stale clone); saved it as local branch
+  `stale-local-main-backup` and reset `main` to `origin/main`.
+  Angles chosen because absent from research/ and knowledge/: point-and-figure charting rules and pin-bar / single-candle price action.
+  No usable evidence for a pre-registrable directional EUR/USD item; no item added (reasons in the R236 refill note). 0 trials. No lead, no notification.
+- **Observation:** twenty-three consecutive refills (R214-R236) with no item. The R219 observation (human decision on new data) stands.

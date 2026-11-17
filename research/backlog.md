@@ -2805,3 +2805,14 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no FX evidence and too few dev events; (b) negative/in-sample evidence only and signals too rare.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Twenty-second consecutive refill with no
   item (R214-R235).
+
+### Refill note R236 (not an item; no item added)
+- 2026-11-17 R236 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "point and figure"
+  or "pin bar" entry in research/ or knowledge/ before this run): (a) point-and-figure charting rules -> EUR/USD; (b) pin-bar /
+  single-candle price-action patterns -> EUR/USD. Two standard searches; records opened via web-fetch (entries in research/academic_studies.md).
+  (a) Only study found: Anderson-Faff IRFA 2008, S&P 500 futures, no FX test; other hits forum-hosted copies of the same paper, not opened.
+  (b) Orquín-Serrano Mathematics 2020 (doi:10.3390/math8050802), EUR/USD only, out-of-sample with costs: "No net positive average
+  returns ... after taking into account transaction costs." Alanazi 2020 EJF hit is a duplicate of R142. Other hits vendor/blog pages.
+- No item added: (a) no FX evidence; (b) negative evidence after costs on EUR/USD itself, and candlestick / fitted-ML family already NONE.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Twenty-third consecutive refill with no
+  item (R214-R236).

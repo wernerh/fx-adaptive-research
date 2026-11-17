@@ -1362,3 +1362,14 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [NU repository record](https://nur.nu.edu.kz/handle/123456789/7226) (record page opened; PDF access restricted, not read).
 - **Finding (abstract):** "the patterns identified by the Elliott wave theory did not have statistically significant predictive power for daily exchange rates of currencies." Pairs, sample and costs UNVERIFIED.
 - **Relevance:** **None** (negative, daily, pairs unknown). **Status:** VERIFIED (abstract only).
+
+### Orquín-Serrano (2020), "Predictive Power of Adaptive Candlestick Patterns in Forex Market. Eurusd Case", Mathematics 8(5), 802 (added 2026-11-17 R236)
+- **Link:** [DOAJ record](https://doaj.org/article/9c856e1e9fa24613a25dd669aee0ce1c), doi:10.3390/math8050802 (record/abstract opened; full text not read).
+- **Design (abstract):** EUR/USD only; adaptive candlestick patterns and supervised-learning variants using up to 24 preceding candles; out-of-sample evaluation with transaction costs. Frequency and sample UNVERIFIED.
+- **Finding:** "No net positive average returns are found in any case after taking into account transaction costs."
+- **Relevance:** **None** for a new item: negative after costs, same candlestick/fitted-ML family already NONE (engulfing R142, E050/E051). **Status:** VERIFIED (abstract only).
+
+### Anderson & Faff (2008), "Point and Figure charting: A computational methodology and trading rule performance in the S&P 500 futures market", IRFA 17(1), 198-217 (added 2026-11-17 R236)
+- **Link:** [RePEc record](https://ideas.repec.org/a/eee/finana/v17y2008i1p198-217.html) (record opened; no abstract shown; full text subscriber-only, not read).
+- **Design:** S&P 500 futures only; no FX test. Frequency, costs and findings UNVERIFIED.
+- **Relevance:** **None** (no FX evidence). **Status:** VERIFIED (bibliographic record only).
