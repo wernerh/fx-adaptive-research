@@ -1391,3 +1391,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design:** five-minute data January 2005 to March 2011; 2y/10y Treasury yields, E-mini S&P 500, EBS USD vs EUR, CHF, JPY (with volume); window one hour before to two hours after the 14:00 ET minutes release vs matched control days. No surprise measure, so no direction (sign) of the FX response is estimated.
 - **Finding:** volatility and volume rise at release; elevated "up to roughly one hour after the announcement"; EUR volume about four times non-event days; "The asset price response to the minutes has declined since 2008,".
 - **Relevance:** **None** for a new item: volatility/volume only, no directional or drift result; FOMC minutes are 8 per year (~40 dev 2016-2020 dates, below the R090 power floor). **Status:** VERIFIED.
+
+### Levich & Potì, "Predictability and 'Good Deals' in Currency Markets", working version 29 Sep 2013, "Forthcoming in the International Journal of Forecasting" (published venue details UNVERIFIED) (added 2026-11-17 R240)
+- **Link:** [Uniba repository PDF](https://ricerca.uniba.it/retrieve/1d6a7e28-5ed3-4451-b179-c28eefbbd176/Levich-Poti_FXPredictability_GoodDeals_Final_130929.pdf) (opened via web-fetch; ~42% verbatim: abstract, Sections 1-4, start of Section 5; tables not read).
+- **Design:** six majors vs USD (AUD, CAD, JPY, GBP, CHF, ECU/EUR; ECU basket before 1999), daily and monthly Bloomberg 6pm London rates, 1971-2012 (extended to Aug 2013); ARMA/AR(5) predictive models, in-sample R² compared with a "no good-deal" bound; a variance-scaled "rational trading rule" for Sharpe ratios.
+- **Finding:** "predictability exceeds this bound during recurring albeit short-lived episodes"; "periods of high and low predictability tend to alternate"; "Transaction costs can explain much of the daily excess-predictability but not monthly excess-predictability"; at 5 bp "the SRs of daily strategies are negative for all currencies."
+- **Relevance:** **None** for a new item: daily predictability does not survive 3-5 bp costs; the monthly result is below the R090 power floor at our sample length; fitted lagged-return models already NONE on dev (E051). **Status:** VERIFIED (partial full text).
+
+### Tokar & Horvath, "Market inefficiency identified by both single and multiple currency trends", arXiv:1110.2612 (2011) (added 2026-11-17 R240)
+- **Link:** [arXiv](https://arxiv.org/abs/1110.2612) (opened, read essentially in full via web-fetch).
+- **Design:** OANDA EUR/USD ticks 2004-2009 resampled to 1 minute; sign-of-trend variables over ~100 lookbacks (1 minute to ~2 days); conditional matching statistics vs future shifts over 15/60/240 minutes. In-sample only; no trading rule, no returns, no costs.
+- **Finding:** "clear non-suitability of naive trend estimator for the forecast purposes"; "the trend continuation is less good compared to the contrarian strategy of the trend turnover."
+- **Relevance:** **None** for a new item: in-sample descriptive statistics without effect sizes in pips or costs; the short-horizon reversal family is already logged (Wiśniewska 2014) and tested. **Status:** VERIFIED.
+
+### PMC7512194 (FX efficiency, multiscale entropy / recurrence quantification) (noted 2026-11-17 R240)
+- Not openable (fetch permission timeout after redirect to pmc.ncbi.nlm.nih.gov); title from search result only. **Not cited.** UNVERIFIED.

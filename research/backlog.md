@@ -2850,3 +2850,17 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no directional evidence and ~40 dev events (below the R090 power floor); (b) no openable evidence, monthly
   events (~60 dev dates per survey) also near or below the floor. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Twenty-sixth consecutive refill with no item (R214-R239).
+
+### Refill note R240 (not an item; no item added)
+- 2026-11-17 R240 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "permutation entropy",
+  "market efficiency", "Levich" or "filter rule" entry in research/ or knowledge/ before this run): (a) entropy / time-varying
+  efficiency measures as a regime filter for EUR/USD direction; (b) adaptive-markets / episodic predictability of daily FX returns.
+  Two standard searches; entries in research/academic_studies.md.
+  (a) Opened Tokar-Horvath arXiv 1110.2612: EUR/USD 1-minute 2004-2009, in-sample trend-sign statistics, contrarian beats trend,
+  no trading rule, returns or costs. PMC7512194 (multiscale entropy) not openable (fetch permission timeout), not cited.
+  (b) Opened Levich-Potì (IJF forthcoming 2013 version, ~42% verbatim): excess predictability episodic; daily strategies negative
+  at 5 bp costs for all six currencies; only monthly survives costs.
+- No item added: (a) no out-of-sample or cost-aware evidence, and short-horizon reversal is already logged and tested; (b) daily
+  evidence is negative after costs, monthly is below the R090 power floor, and fitted lagged-return models were NONE (E051).
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Twenty-seventh consecutive refill with no
+  item (R214-R240).
