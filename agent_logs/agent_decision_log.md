@@ -2282,3 +2282,10 @@ Why each run chose what it did, and any judgement calls.
   (b) Kebe-Uhl 2024 (abstract) supports intraday news-sentiment predictability but needs a news feed not in the pipeline; no item added
   (reasons in the R263 refill note). 0 trials. No lead, no notification.
 - **Observation:** fifty consecutive refills (R214-R263) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R264 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: US tariff announcements -> later EUR/USD drift and BTP-Bund spread -> next-day EUR/USD. (a) BoE SWP 1,139 (2025) shows
+  daily multi-week USD effects whose sign depends on later retaliation (look-ahead), dev-only events and no val episode; (b) commentary
+  only. No item added (reasons in the R264 refill note). 0 trials. No lead, no notification.
+- **Observation:** fifty-one consecutive refills (R214-R264) with no item. The R219 observation (human decision on new data) stands.

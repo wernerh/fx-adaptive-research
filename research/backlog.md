@@ -3147,3 +3147,19 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no verified evidence; (b) a pre-registrable rule needs a timestamped news/sentiment feed, which is not in the
   pipeline (RavenPack licensed; GDELT history 2015-2023 too large for the runner, R-entry for Zhang). pytest 454 passed. 0 trials used
   (dev 261, val 9, total 270). Not a pipeline failure. Fiftieth consecutive refill with no item (R214-R263).
+
+### Refill note R264 (not an item; no item added)
+- 2026-11-18 R264 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "tariff",
+  "Italian spread" or "BTP-Bund" entry in research/ or knowledge/ before this run): (a) US tariff announcements -> later EUR/USD drift;
+  (b) BTP-Bund sovereign spread changes -> next-day EUR/USD. Two standard searches.
+  (a) Opened Ostry-Lloyd-Corsetti BoE SWP 1,139 (2025): daily, EUR/USD included, 46 event days 2018-2020; USD ~1% up over four weeks
+  after unretaliated shocks, sign flips with retaliation (defined by a foreign response within 7 days, i.e. look-ahead). Opened BIS WP
+  1282 landing page only (2025 episode, dollar move attributed to non-tariff shocks; PDF failed). Other hits (CEPR column, Ostry DP20452
+  mirror, Morningstar, FXStreet, Ebury) not opened or commentary; not cited. (b) Hits were commentary only (ING/FXStreet "dangerous
+  correlation" 2023, FXStreet 2018, Equals, Hellenic Shipping News, Italian-language pages); no predictive study; none opened, not cited.
+  Entries in research/academic_studies.md.
+- No item added: (a) the unconditional sign is not identified without look-ahead on retaliation; dev events already used by the authors;
+  val has no tariff episode so no pre-registered val confirmation is possible (LEAD criterion 2 unreachable); event list not in the
+  pipeline; daily multi-week horizon outside the intraday frame. (b) no verified evidence; BTP/Bund yields not in the pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fifty-first consecutive refill with no item
+  (R214-R264).
