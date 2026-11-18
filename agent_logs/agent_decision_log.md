@@ -2233,3 +2233,10 @@ Why each run chose what it did, and any judgement calls.
   Angles: euro-area/German industrial production release drift and intraday bond-futures lead-lag -> EUR/USD. (a) news pages only;
   (b) millisecond lead, no tradeable horizon, data not in pipeline; no item added (reasons in the R256 refill note). 0 trials. No lead, no notification.
 - **Observation:** forty-three consecutive refills (R214-R256) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R257 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: minute-of-hour / top-of-hour intraday seasonality and deep reinforcement learning intraday EUR/USD trading. (a) descriptive
+  1997 DEM/USD study only; (b) results vanish at sub-SPEC-4 spreads, no held-out test; no item added (reasons in the R257 refill note).
+  0 trials. No lead, no notification.
+- **Observation:** forty-four consecutive refills (R214-R257) with no item. The R219 observation (human decision on new data) stands.

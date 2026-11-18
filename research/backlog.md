@@ -3055,3 +3055,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no verified EUR/USD drift evidence; (b) the documented lead is milliseconds, below the 1-minute bar resolution
   and inside the SPEC 4 spread, and bond-futures data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9,
   total 270). Not a pipeline failure. Forty-third consecutive refill with no item (R214-R256).
+
+### Refill note R257 (not an item; no item added)
+- 2026-11-18 R257 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "minute-of-hour",
+  "top of the hour" or "reinforcement" entry in research/ or knowledge/ before this run): (a) minute-of-hour / top-of-hour intraday
+  seasonality in EUR/USD returns; (b) deep reinforcement learning intraday EUR/USD trading. Two standard searches.
+  (a) Opened Cotter-Dowd arXiv 1103.5664: one week of 1997 DEM/USD, 3-hour GMT blocks, volatility/tail seasonality only, no
+  minute-of-hour or direction test. Ito-Hashimoto NBER w12413 hit already logged. (b) Opened Huang arXiv 1807.02787: DRQN on 15-minute
+  bars incl. EUR/USD 2012-2017, online training without held-out test, spreads 0.08-0.2 bp; EUR/USD ~0.1% annualised at 0.15 bp.
+  Other hits (arXiv 2410.23294, 1411.2153, 2007.15982, 2110.04745, TU Delft, JBS wp0030, dekalog blog) not opened, not cited.
+  Entries in research/academic_studies.md.
+- No item added: (a) no verified return/direction effect at minute-of-hour resolution; (b) the only EUR/USD evidence vanishes at
+  spreads far below SPEC 4 costs, has no out-of-sample split, and the ML-on-lags family is already NONE (E051). pytest 454 passed.
+  0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Forty-fourth consecutive refill with no item (R214-R257).
