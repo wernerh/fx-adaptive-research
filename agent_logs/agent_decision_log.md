@@ -2345,3 +2345,10 @@ Why each run chose what it did, and any judgement calls.
   event study, no forecast/cost test; (b) Ito-Lyons-Melvin (1998) is volatility only. No item added (reasons in the R273 refill note).
   0 trials. No lead, no notification.
 - **Observation:** sixty consecutive refills (R214-R273) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R274 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: regime-switching intraday direction and FX dealer-inventory reversal -> EUR/USD. (a) Chaudhary arXiv 2606.06190 is a
+  volatility-regime tool with an uncosted IC of 0.025, overlapping E050 (NONE); (b) all dealer-inventory/fix hits already logged.
+  No item added (reasons in the R274 refill note). 0 trials. No lead, no notification.
+- **Observation:** sixty-one consecutive refills (R214-R274) with no item. The R219 observation (human decision on new data) stands.
