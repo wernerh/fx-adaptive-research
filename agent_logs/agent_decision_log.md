@@ -2324,3 +2324,10 @@ Why each run chose what it did, and any judgement calls.
   variable; (b) Bräuer-Hau (2022) is contemporaneous/monthly with no OOS test. No item added (reasons in the R269 refill note).
   0 trials. No lead, no notification.
 - **Observation:** fifty-six consecutive refills (R214-R269) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R271 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: Brexit/UK political shocks -> later EUR/USD and ECB policymaker speeches -> EUR/USD drift. (a) Dao et al. (2019) studies
+  correlation/volatility transmission around one vote; (b) ECB Blog (Sep 2026) measures contemporaneous reactions only. No item added
+  (reasons in the R271 refill note). 0 trials. No lead, no notification.
+- **Observation:** fifty-eight consecutive refills (R214-R271) with no item. The R219 observation (human decision on new data) stands.

@@ -1618,3 +1618,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS/RePEc abstract](https://ideas.repec.org/a/eee/finlet/v32y2020ics1544612318307876.html) (abstract opened via web-fetch; full text paywalled, body UNVERIFIED).
 - **Design/finding (abstract):** 14 major currencies vs USD (EUR inclusion not confirmed on the page); panel regression finds significant long-run predictability, a BDI rise going with currency depreciation; individual regressions in- and out-of-sample, "inverted U-shaped predictive pattern". Frequency and costs not stated; no trading test in the abstract.
 - **Relevance:** None for a new item: long-run horizon, no cost/strategy test, BDI not in the pipeline; BDI as a lagged daily predictor already appears in the daily-predictor study logged above (line with "Baltic Dry Index"). **Status:** VERIFIED (abstract only).
+
+### Dao, McGroarty and Urquhart, "The Brexit vote and currency markets" (Journal of International Financial Markets, Institutions and Money 59, 2019, pp. 153-164, doi:10.1016/j.intfin.2018.11.004) (added 2026-11-18 R271)
+- **Link:** [EconPapers abstract](https://econpapers.repec.org/RePEc:eee:intfin:v:59:y:2019:i:c:p:153-164) (abstract opened via web-fetch; full text not opened, body UNVERIFIED).
+- **Design/finding (abstract):** event study of the Brexit vote on intraday correlation and volatility transmission among CHF, JPY, GBP, EUR and gold; correlation of safe havens with GBP and EUR falls, GBP-EUR volatility transmission drops. Sample, interval and quote pairs not stated on the page (EUR/USD inclusion UNVERIFIED).
+- **Relevance:** None for a new item: one event, correlation/volatility only, no return-direction or cost test. **Status:** VERIFIED (abstract only).
+
+### Istrefi, Odendahl and Sestieri, "How policymakers' speeches and interviews move markets" (ECB Blog, 24 Sep 2026) (added 2026-11-18 R271)
+- **Link:** [ECB Blog](https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260924~3240af33dc.en.html) (opened via web-fetch; page partly truncated; full author list UNVERIFIED, metadata names Sestieri).
+- **Design/finding (as extracted, not verbatim):** 1999 - early 2024, 304 formal announcements and ~5,000 inter-meeting communication events; contemporaneous intraday reactions (90-minute speech windows, 15-minute other windows) of 1-year OIS and other assets; EUR/USD in the variable set but no separate EUR/USD result; no return-forecast, OOS or cost test.
+- **Relevance:** None for a new item: contemporaneous reaction only, and no historical ECB speech-time calendar in the pipeline. **Status:** VERIFIED (blog, partly read).
