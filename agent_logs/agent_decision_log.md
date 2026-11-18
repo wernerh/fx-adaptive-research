@@ -2303,3 +2303,10 @@ Why each run chose what it did, and any judgement calls.
   al. (2014) is an in-sample EGARCH news model; (b) only broker commentary plus Norges Bank Staff Memo 5/2026 (contemporaneous, no
   forecasting test). No item added (reasons in the R266 refill note). 0 trials. No lead, no notification.
 - **Observation:** fifty-three consecutive refills (R214-R266) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R267 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: FX option dealer gamma / strike pinning -> EUR/USD and EU ETS carbon returns -> next-day EUR/USD. (a) trade press only, no
+  study; (b) arXiv 2406.05094 models EUR/USD as a driver of carbon prices, not the reverse. No item added (reasons in the R267 refill
+  note). 0 trials. No lead, no notification.
+- **Observation:** fifty-four consecutive refills (R214-R267) with no item. The R219 observation (human decision on new data) stands.
