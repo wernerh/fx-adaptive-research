@@ -3043,3 +3043,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   2015-2020 number well under 20 events, far below the R090 power floor; (c) no evidence for the fixing angle and CNY fixing
   data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Forty-second consecutive refill with no item (R214-R255).
+
+### Refill note R256 (not an item; no item added)
+- 2026-11-18 R256 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "industrial
+  production", "Dobrev" or "Bund future" entry in research/ or knowledge/ before this run): (a) euro-area / German industrial
+  production release -> later EUR/USD drift; (b) intraday bond-futures (Treasury / Bund) lead-lag -> EUR/USD. Two standard searches.
+  (a) Hits were FXStreet release headlines only (not evidence, not opened, not cited); no study. (b) Opened Dobrev-Schaumburg
+  (2018) working paper (entry in research/academic_studies.md): Treasury and equity cash-vs-futures, lead-lag at ~5 ms, no
+  minute-plus directional or cost test. Krohn-Vala-Uthemann-Yang BoC SWP 2025-29 hit is already logged (B-line at backlog l.754).
+  Other hits (AgEcon Monash 185, AEA 2018 preliminary paper, Frankfurt OPUS, eflab event, Eurex hedging note) not opened, not cited.
+- No item added: (a) no verified EUR/USD drift evidence; (b) the documented lead is milliseconds, below the 1-minute bar resolution
+  and inside the SPEC 4 spread, and bond-futures data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9,
+  total 270). Not a pipeline failure. Forty-third consecutive refill with no item (R214-R256).

@@ -2227,3 +2227,9 @@ Why each run chose what it did, and any judgement calls.
   Angles: abnormal FX volume and currency-futures open interest -> EUR/USD. (a) duplicates E033 (Cespa et al. already tested);
   (b) monthly, in-sample, data not in pipeline; no item added (reasons in the R254 refill note). 0 trials. No lead, no notification.
 - **Observation:** forty-one consecutive refills (R214-R254) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R256 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: euro-area/German industrial production release drift and intraday bond-futures lead-lag -> EUR/USD. (a) news pages only;
+  (b) millisecond lead, no tradeable horizon, data not in pipeline; no item added (reasons in the R256 refill note). 0 trials. No lead, no notification.
+- **Observation:** forty-three consecutive refills (R214-R256) with no item. The R219 observation (human decision on new data) stands.
