@@ -2240,3 +2240,11 @@ Why each run chose what it did, and any judgement calls.
   1997 DEM/USD study only; (b) results vanish at sub-SPEC-4 spreads, no held-out test; no item added (reasons in the R257 refill note).
   0 trials. No lead, no notification.
 - **Observation:** forty-four consecutive refills (R214-R257) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R258 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: Chinese macro releases -> EUR/USD and fundamentals/nowcast short-run EUR/USD forecasting. (a) contemporaneous surprise
+  reaction only; (b) out-of-sample weekly gains claimed but needs a real-time macro panel not in the pipeline; no item added (reasons
+  in the R258 refill note). 0 trials. No lead, no notification.
+- **Observation:** forty-five consecutive refills (R214-R258) with no item. The R219 observation (human decision on new data) stands;
+  BdE WP 1203 is one concrete candidate if a macro data source is ever approved.
