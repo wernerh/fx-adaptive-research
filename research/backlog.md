@@ -3267,3 +3267,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no FX evidence and ~24 quarterly tax dates on dev, below the R090 power floor; (b) equities only, ~6 dev events.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fifty-ninth consecutive refill with no item
   (R214-R272).
+
+### Refill note R273 (not an item; no item added)
+- 2026-11-18 R273 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Swiss National Bank",
+  "Tokyo lunch" or "Tokyo experiment" entry in research/ or knowledge/ before this run): (a) SNB policy decisions -> EUR/USD;
+  (b) Tokyo lunch-hour liquidity -> EUR/USD. Two standard searches.
+  (a) Opened Borner SNB WP 2025-01 landing page: 30-min event windows, futures/stocks/FX, contemporaneous only, no EUR/USD forecast,
+  OOS or cost test; sample UNVERIFIED. Other hits (LSE DP550, NYU, JPMorgan Chase Institute pages, FXStreet, Euromoney, SUERF note)
+  not opened; not cited. (b) Opened Ito-Lyons-Melvin NBER w5936 / JF 1998: lunch return variance doubles once lunch trading allowed,
+  volatility only. Other hits (AEA 2020 paper, Krohn WU PDF already covered by KMW entries, BoC SWP 2021-48, LSEG notes, Columbia,
+  SNB WP 2011-04 already logged, w12413) not opened; not cited. Entries in research/academic_studies.md.
+- No item added: (a) contemporaneous CHF reaction, ~4 decisions/yr, below the R090 power floor; (b) volatility only, 1990s regime,
+  Tokyo-hours windows already scanned (E009) and home-hours line closed on val (E017). pytest 454 passed. 0 trials used (dev 261,
+  val 9, total 270). Not a pipeline failure. Sixtieth consecutive refill with no item (R214-R273).

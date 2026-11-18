@@ -1638,3 +1638,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Griffith PDF (in-press copy)](https://news.griffith.edu.au/wp-content/uploads/2014/09/CLNY-Effect.pdf) (opened via web-fetch; first ~2/3 read verbatim, rest only as extracted summary).
 - **Design/finding:** daily index returns of seven Asian equity markets, Sep 1999 - Mar 2012, ARMA(1,1)-GARCH(1,1) with 3-day pre/post holiday dummies; significant pre-holiday returns (e.g. Korea 0.68%, Japan 0.49%, Hong Kong 0.47%). Trading-rule/cost results UNVERIFIED (later part not read verbatim). No FX test, no OOS.
 - **Relevance:** None for a new item: equities only, ~6 dev events for EUR/USD. **Status:** VERIFIED (partly read).
+
+### Borner, "Central bank information and pure monetary policy surprises in Switzerland" (SNB Working Paper 2025-01, 22 Jan 2025) (added 2026-11-18 R273)
+- **Link:** [SNB WP 2025-01 landing page](https://www.snb.ch/de/publications/research/working-papers/2025/working_paper_2025_01) (opened via web-fetch; abstract/metadata only, PDF not read).
+- **Design/finding:** 30-minute event windows around SNB policy announcements; interest-rate futures, stock market and exchange rates; sign-restriction split into pure policy vs central-bank-information surprises; abstract (verbatim fragment): "these effects differ from each other only for the exchange rates and stock market responses". Currencies and sample UNVERIFIED (PDF not read). Contemporaneous only; no EUR/USD return-forecast, OOS or cost test in the abstract.
+- **Relevance:** None for a new item: contemporaneous CHF reaction, ~4 SNB decisions/yr (below the R090 floor on dev). **Status:** VERIFIED (abstract only).
+
+### Ito, Lyons and Melvin, "Is There Private Information in the FX Market? The Tokyo Experiment" (NBER WP 5936, 1997; Journal of Finance 53(3), 1998, 1111-1130; doi:10.3386/w5936) (added 2026-11-18 R273)
+- **Link:** [NBER w5936](https://www.nber.org/papers/w5936) (opened via web-fetch; abstract/metadata only).
+- **Finding (verbatim, abstract):** "Lunch return variance doubles with the introduction of trading." Evidence on private information via volatility around the end of the Tokyo lunch-hour trading ban (1994); currency pair/sample UNVERIFIED (full paper not read). No predictive return, OOS or cost test.
+- **Relevance:** None for a new item: volatility only, a 1990s regime change outside the repo's data; Tokyo-hours return windows already scanned on dev (E009) and the home-hours line closed on val (E017). **Status:** VERIFIED (abstract only).

@@ -2338,3 +2338,10 @@ Why each run chose what it did, and any judgement calls.
   TGA/reserves data, no FX; (b) Yuan-Gupta (2014) tests Asian equities only. No item added (reasons in the R272 refill note). 0 trials.
   No lead, no notification.
 - **Observation:** fifty-nine consecutive refills (R214-R272) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R273 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: SNB policy decisions -> EUR/USD and Tokyo lunch-hour liquidity -> EUR/USD. (a) Borner SNB WP 2025-01 is a contemporaneous
+  event study, no forecast/cost test; (b) Ito-Lyons-Melvin (1998) is volatility only. No item added (reasons in the R273 refill note).
+  0 trials. No lead, no notification.
+- **Observation:** sixty consecutive refills (R214-R273) with no item. The R219 observation (human decision on new data) stands.
