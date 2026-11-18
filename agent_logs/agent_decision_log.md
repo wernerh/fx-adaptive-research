@@ -2206,3 +2206,10 @@ Why each run chose what it did, and any judgement calls.
   Angles: Monday / day-of-week effect and quarter-end rebalancing flows -> EUR/USD. No verified out-of-sample EUR/USD evidence;
   no item added (reasons in the R251 refill note). 0 trials. No lead, no notification.
 - **Observation:** thirty-eight consecutive refills (R214-R251) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R252 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). pytest 454 passed.
+  Angles: ECB asset-purchase announcements and Japanese fiscal-year-end flows -> EUR/USD. No verified lagged EUR/USD evidence;
+  both below the R090 power floor; no item added (reasons in the R252 refill note). 0 trials. No lead, no notification.
+- **Observation:** thirty-nine consecutive refills (R214-R252) with no item. The R219 observation (human decision on new data) stands.

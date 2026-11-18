@@ -1478,3 +1478,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS](https://ideas.repec.org/a/taf/apfiec/v24y2014i3p161-174.html), doi:10.1080/09603107.2013.870651 (IDEAS abstract page opened via web-fetch; full text subscriber-only, not opened).
 - **Design/finding (abstract):** daily EUR/USD 1999-2012; "evidence of the presence of day effects, even if they play a more limited role"; some significant month effects in first differences, strong month variation in variance. Days/months, signs and magnitudes not given (UNVERIFIED); no out-of-sample or trading test.
 - **Relevance:** **None** for a new item: in-sample, unnamed cells; day-of-week cells already scanned on dev (E009), month-end windows tested (E034). **Status:** VERIFIED (abstract only).
+
+### Uz Akdogan, "Monetary policy responses to COVID-19 in emerging European economies: measuring the QE announcement effects on foreign exchange markets", Empirica 50(3), 625-655, 2023 (added 2026-11-18 R252)
+- **Link:** [Springer](https://link.springer.com/article/10.1007/s10663-023-09578-9), doi:10.1007/s10663-023-09578-9 (article page opened via web-fetch; only part of the text visible, tables not seen).
+- **Design/finding:** daily HUF, PLN, TRY vs USD and EUR around domestic central-bank QE announcements in 2020 (3 Hungary, 7 Poland, 1 Turkey); contemporaneous day-0 and 3/7/11-day event windows; qualitative appreciation vs USD in a 3-day window. ECB QE only in the literature review. No EUR/USD event, no drift, predictive, out-of-sample or cost test. Sample dates inconsistent in the text (UNVERIFIED).
+- **Relevance:** **None** for a new item: not EUR/USD, contemporaneous only, 11 events. **Status:** VERIFIED (partial text).
