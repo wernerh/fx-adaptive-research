@@ -2261,3 +2261,10 @@ Why each run chose what it did, and any judgement calls.
   Angles: Fed stress-test release -> EUR/USD and transformer models for EUR/USD. (a) no FX study found; (b) daily, test-block window
   selection, ML-on-lags family already NONE (E051); no item added (reasons in the R260 refill note). 0 trials. No lead, no notification.
 - **Observation:** forty-seven consecutive refills (R214-R260) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R261 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: US Treasury FX report / manipulator designations -> EUR/USD and OPEC decisions -> EUR/USD. (a) news only, too few events;
+  (b) no verified FX study (one candidate behind a bot check, not circumvented); no item added (reasons in the R261 refill note).
+  0 trials. No lead, no notification.
+- **Observation:** forty-eight consecutive refills (R214-R261) with no item. The R219 observation (human decision on new data) stands.
