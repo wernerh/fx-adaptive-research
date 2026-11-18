@@ -1468,3 +1468,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Springer](https://link.springer.com/article/10.1186/s41937-017-0014-7), doi:10.1186/s41937-017-0014-7 (opened via web-fetch; first part of the page read verbatim, the rest summarised).
 - **Design/finding:** monthly, 1990-2011; trade-weighted CHF index and EUR/CHF vs S&P 500 / SPI; instrumental-variable (Maggiori-style) and GARCH/DCC conditional covariances; CHF acts as a safe haven in crises with a time-varying safety premium. All tests **contemporaneous**; no EUR/USD analysis, no lagged or out-of-sample forecast.
 - **Relevance:** **None** for a new item (found while searching for EUR/CHF safe-haven moves -> next-day EUR/USD): monthly, contemporaneous, no EUR/USD. **Status:** VERIFIED (partial).
+
+### Bush & Stephens, "The Monday effect in the EUR/USD currency pair: Periods of EUR strength and weakness", Journal of Behavioral and Experimental Finance 10, 72-74, 2016 (added 2026-11-18 R251)
+- **Link:** [IDEAS](https://ideas.repec.org/a/eee/beexfi/v10y2016icp72-74.html), doi:10.1016/j.jbef.2016.03.003 (IDEAS abstract page opened via web-fetch; full text not opened).
+- **Design/finding (abstract):** EUR/USD over "six different periods"; the Monday effect "varies in periods of EUR strength versus periods of EUR weakness". Sample, frequency, sign, magnitude and significance not given on the page (UNVERIFIED); no out-of-sample or cost test mentioned.
+- **Relevance:** **None** for a new item: a regime-dependent in-sample calendar description; Monday cells already scanned on dev (E009), weekend-gap reversal tested (B17/E020 NONE). **Status:** VERIFIED (abstract only).
+
+### Cellini & Cuccia, "Seasonal processes in the Euro-US Dollar daily exchange rate", Applied Financial Economics 24(3), 161-174, 2014 (added 2026-11-18 R251)
+- **Link:** [IDEAS](https://ideas.repec.org/a/taf/apfiec/v24y2014i3p161-174.html), doi:10.1080/09603107.2013.870651 (IDEAS abstract page opened via web-fetch; full text subscriber-only, not opened).
+- **Design/finding (abstract):** daily EUR/USD 1999-2012; "evidence of the presence of day effects, even if they play a more limited role"; some significant month effects in first differences, strong month variation in variance. Days/months, signs and magnitudes not given (UNVERIFIED); no out-of-sample or trading test.
+- **Relevance:** **None** for a new item: in-sample, unnamed cells; day-of-week cells already scanned on dev (E009), month-end windows tested (E034). **Status:** VERIFIED (abstract only).

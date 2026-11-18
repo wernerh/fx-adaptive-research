@@ -2975,3 +2975,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified lagged EUR/USD evidence for either angle, and a PMI release calendar is not in the pipeline (B6 blocker).
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-seventh consecutive refill with no
   item (R214-R250).
+
+### Refill note R251 (not an item; no item added)
+- 2026-11-18 R251 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Monday effect",
+  "Bush" or "Cellini" entry in research/ or knowledge/ before this run): (a) Monday effect / day-of-week returns in EUR/USD;
+  (b) quarter-end rebalancing flows -> EUR/USD. Two standard searches. (a) Opened two abstract pages (Bush-Stephens JBEF 2016
+  doi:10.1016/j.jbef.2016.03.003; Cellini-Cuccia AFE 2014 doi:10.1080/09603107.2013.870651; entries in research/academic_studies.md):
+  in-sample, regime-dependent or unnamed day/month cells, no magnitudes, no out-of-sample or cost test; day-of-week cells already
+  scanned on dev (E009), weekend reversal tested (E020 NONE). (b) Hits were broker/vendor/news pages only (TradingView, FXEmpire,
+  Tickmill, BNY iFlow, Pound Sterling Live; not evidence, not opened) and an IMF WP not opened; month-end windows already tested (E034).
+- No item added: no verified out-of-sample EUR/USD evidence for either angle, and both are subsets of calendar cells already seen
+  on dev. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Thirty-eighth consecutive refill
+  with no item (R214-R251).
