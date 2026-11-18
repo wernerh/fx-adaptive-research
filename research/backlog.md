@@ -3202,3 +3202,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no verified evidence and dealer positioning data not available; (b) wrong causal direction, EUA prices not in
   the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fifty-fourth consecutive
   refill with no item (R214-R267).
+
+### Refill note R268 (not an item; no item added)
+- 2026-11-18 R268 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "swap line",
+  "TARGET2" or "Target2" entry in research/ or knowledge/ before this run): (a) Fed central-bank dollar swap-line usage -> EUR/USD;
+  (b) TARGET2 balances -> EUR/USD. Two standard searches.
+  (a) Opened Kloks (St. Gallen WP, Sep 2025, Boston Fed conference PDF): daily CLS FX-swap data 2012-2022 incl. EUR/USD, swap-line
+  supply lowers FX-swap effective spreads (0.7 bp per 1 s.d. net USD demand); no spot-return forecast, no OOS or cost test. Other
+  hits (NBER w31901/w28585, DNB WP 752, CEPS note, glossary pages) not opened; not cited. (b) Opened Bettendorf-Jochem, Applied
+  Economics 2023 abstract: BVAR of German TARGET claims, no FX variable. Other hits not opened; not cited. Entries in
+  research/academic_studies.md.
+- No item added: (a) swap-market pricing, not spot direction, and swap-line operations are sparse outside crises (2020 only in dev);
+  (b) no FX evidence and monthly data not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a
+  pipeline failure. Fifty-fifth consecutive refill with no item (R214-R268).

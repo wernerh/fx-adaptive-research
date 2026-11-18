@@ -2310,3 +2310,10 @@ Why each run chose what it did, and any judgement calls.
   study; (b) arXiv 2406.05094 models EUR/USD as a driver of carbon prices, not the reverse. No item added (reasons in the R267 refill
   note). 0 trials. No lead, no notification.
 - **Observation:** fifty-four consecutive refills (R214-R267) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R268 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: Fed dollar swap-line usage -> EUR/USD and TARGET2 balances -> EUR/USD. (a) Kloks (2025) studies FX-swap spreads, not spot
+  direction; (b) Bettendorf-Jochem (2023) has no FX variable. No item added (reasons in the R268 refill note). 0 trials. No lead,
+  no notification.
+- **Observation:** fifty-five consecutive refills (R214-R268) with no item. The R219 observation (human decision on new data) stands.

@@ -1588,3 +1588,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv PDF](https://arxiv.org/pdf/2406.05094) (opened via web-fetch; text truncated, later part model-summarised, details UNVERIFIED).
 - **Design/finding:** daily EUA closing prices Jan 2014 - Apr 2023 (2374 obs); information-imbalance tests Δ(X_t -> EUA_t+δt) with EUR/USD spot and EUR/USD uncertainty among the candidate drivers; carbon price is the target. Abstract: "with the uncertainty in the EUR/CHF exchange rate emerging as a crucial determinant." No test of carbon returns predicting EUR/USD; no out-of-sample or cost test found.
 - **Relevance:** None: causal direction is FX -> carbon, the opposite of what a EUR/USD signal needs; EUA prices not in the pipeline. **Status:** VERIFIED (PDF opened, partly read).
+
+### Kloks, "Swap Line Dollar Supply" (University of St. Gallen working paper, 16 Sep 2025) (added 2026-11-18 R268)
+- **Link:** [Boston Fed conference PDF](https://www.bostonfed.org/-/media/Documents/events/2025/stress-testing-research-conference/Kloks_SwapLines.pdf) (opened via web-fetch; text truncated after ~40k of 110k characters, later part model-summarised, those details UNVERIFIED).
+- **Design/finding:** daily CLS FX-swap settlement data Jan 2012 - Jun 2022, 17 USD pairs incl. EUR/USD, 8 tenors; IV design using pre-set swap-line auction days; finding (verbatim): "a one–standard-deviation decline in net U.S. dollar demand reduces the effective spread by 0.7 bps on average." Studies FX-swap spreads and order flow, contemporaneous and COVID event window; no forecast of spot EUR/USD returns, no out-of-sample or strategy cost test.
+- **Relevance:** None for a new item: swap-market pricing, not spot direction; CLS swap data not in the pipeline. **Status:** VERIFIED (PDF opened, partly read).
+
+### Bettendorf and Jochem, "TARGET balances in the euro area: the case of Germany" (Applied Economics 55(29), 2023, doi:10.1080/00036846.2022.2114993) (added 2026-11-18 R268)
+- **Link:** [IDEAS/RePEc abstract](https://ideas.repec.org/a/taf/applec/v55y2023i29p3317-3328.html) (abstract opened; full text paywalled, body UNVERIFIED).
+- **Design/finding:** BVAR identifying drivers of Germany's TARGET claims (monetary policy, euro-area risk, global risk); 2015-2017 flows attributed largely to monetary policy. No exchange-rate variable or prediction test.
+- **Relevance:** None: not an FX study; TARGET2 balances are monthly and not in the pipeline. **Status:** VERIFIED (abstract only).
