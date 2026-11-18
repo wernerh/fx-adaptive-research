@@ -2296,3 +2296,10 @@ Why each run chose what it did, and any judgement calls.
   2021-2025 only; (b) CEPR DP15735 uses confidential breach data with no FX direction result. No item added (reasons in the R265
   refill note). 0 trials. No lead, no notification.
 - **Observation:** fifty-two consecutive refills (R214-R265) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R266 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: European cash-equity open -> EUR/USD and German state CPI releases -> EUR/USD. (a) no verified cash-open study; Cagliesi et
+  al. (2014) is an in-sample EGARCH news model; (b) only broker commentary plus Norges Bank Staff Memo 5/2026 (contemporaneous, no
+  forecasting test). No item added (reasons in the R266 refill note). 0 trials. No lead, no notification.
+- **Observation:** fifty-three consecutive refills (R214-R266) with no item. The R219 observation (human decision on new data) stands.
