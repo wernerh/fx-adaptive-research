@@ -1548,3 +1548,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Russell Investments research note](https://russellinvestments.com/content/ri/us/en/insights/russell-research/2025/11/holiday-trading-effect.html) (opened via web-fetch, full text).
 - **Design/finding:** practitioner note on year-end/holiday liquidity across asset classes; no instruments, frequency or sample stated. FX: volumes "running 30–50% below normal by the second half of the month"; Christmas Eve and Boxing Day "roughly 20% of normal". No return-direction test.
 - **Relevance:** **None** for a new item: liquidity/volume only, practitioner note, no EUR/USD price pattern; US early-close days are ~3/yr (~18 dev events, below the R090 floor). **Status:** VERIFIED.
+
+### Kebe and Uhl, "High-Frequency Effects of Novel News on the EURUSD Exchange Rate", Journal of Behavioral Finance 25(2), 194-207, 2024 (added 2026-11-18 R263)
+- **Link:** [IDEAS record](https://ideas.repec.org/a/taf/hbhfxx/v25y2024i2p194-207.html), doi:10.1080/15427560.2022.2100386 (abstract only via web-fetch; full text paywalled, not opened).
+- **Design/finding (abstract):** >100 million news articles with millisecond timestamps, novel Euro-specific news vs intraday EURUSD returns. Verbatim: "We show a predictive but not contemporaneous relationship between these news and their sentiment and EURUSD returns." Regime change since the GFC; positive sentiment relation strongest in the euro debt crisis. Sample, horizon, out-of-sample design and costs UNVERIFIED.
+- **Relevance:** Low for a new item: needs a timestamped news/sentiment feed not in the pipeline; no tradable rule or cost test verified. **Status:** VERIFIED (abstract only).

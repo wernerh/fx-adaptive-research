@@ -2275,3 +2275,10 @@ Why each run chose what it did, and any judgement calls.
   (b) no verified FX return study (only a volatility-spillover paper); no item added (reasons in the R262 refill note).
   0 trials. No lead, no notification.
 - **Observation:** forty-nine consecutive refills (R214-R262) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R263 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: euro-area bank equity returns -> next-day EUR/USD and news-sentiment indices -> EUR/USD. (a) no verified FX study;
+  (b) Kebe-Uhl 2024 (abstract) supports intraday news-sentiment predictability but needs a news feed not in the pipeline; no item added
+  (reasons in the R263 refill note). 0 trials. No lead, no notification.
+- **Observation:** fifty consecutive refills (R214-R263) with no item. The R219 observation (human decision on new data) stands.

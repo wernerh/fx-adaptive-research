@@ -3134,3 +3134,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) liquidity only, ~3 events/yr (below the R090 floor); (b) no verified EUR/USD direction evidence, volatility only.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Forty-ninth consecutive refill with no item
   (R214-R262).
+
+### Refill note R263 (not an item; no item added)
+- 2026-11-18 R263 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "bank stock",
+  "banking sector" or "RavenPack" entry in research/ or knowledge/ before this run): (a) euro-area bank equity returns -> next-day
+  EUR/USD; (b) news-sentiment indices (RavenPack/GDELT) -> EUR/USD returns. Two standard searches.
+  (a) No FX return study among hits (econbiz record on predicting Eurozone bank stock direction, ECB FSR 2006 article, FXStreet/
+  poundsterlinglive commentary, arXiv 2408.13214 LLM fusion forecaster); none opened, not cited. (b) Opened Zhang arXiv 2505.16136
+  (already logged in academic_studies.md: GDELT + FinBERT, daily, Sharpe ~5.9 implausible) and Kebe-Uhl, J. Behavioral Finance 25(2)
+  2024, doi:10.1080/15427560.2022.2100386 (IDEAS abstract only: intraday Euro-specific news sentiment "predictive but not
+  contemporaneous" for EURUSD; design, horizon, OOS and costs UNVERIFIED, full text paywalled). Entry in research/academic_studies.md.
+- No item added: (a) no verified evidence; (b) a pre-registrable rule needs a timestamped news/sentiment feed, which is not in the
+  pipeline (RavenPack licensed; GDELT history 2015-2023 too large for the runner, R-entry for Zhang). pytest 454 passed. 0 trials used
+  (dev 261, val 9, total 270). Not a pipeline failure. Fiftieth consecutive refill with no item (R214-R263).
