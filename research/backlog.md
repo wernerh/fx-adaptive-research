@@ -3096,3 +3096,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) trader behaviour/performance only, no verified EUR/USD price pattern, retail position data not in the pipeline;
   (b) contemporaneous only, and order-book data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Forty-sixth consecutive refill with no item (R214-R259).
+
+### Refill note R260 (not an item; no item added)
+- 2026-11-18 R260 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "stress test" or
+  "transformer" entry in research/ or knowledge/ before this run): (a) Fed bank stress-test results release -> later EUR/USD drift;
+  (b) transformer / attention models for EUR/USD return forecasting. Two standard searches.
+  (a) No FX event study on stress-test releases among hits (Columbia monetary-policy-uncertainty PDF, NY Fed SR744, FEDS 2021-012,
+  St. Gallen WPF-1814, FMG dp-54, Boston Fed ppb137, KC Fed RWP 22-01, newswire release-date page); none opened, not cited.
+  (b) Opened Liu-Ślepaczuk-Tang arXiv 2512.12727 (EXFormer): daily EUR/USD/JPY/GBP 2010-2024, post-cost cumulative ~7% for EUR/USD on
+  the test block, input window chosen on test outcomes. Other hits (SSRN 7405518 mirror, preprints.org 202509.0931, MDPI JRFM 19/3/203,
+  emergentmind pages) not opened, not cited. Entry in research/academic_studies.md.
+- No item added: (a) no verified EUR/USD basis; (b) daily horizon, test-block selection, and the ML-on-lags family is already NONE
+  (E051). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Forty-seventh consecutive refill with no item (R214-R260).

@@ -2255,3 +2255,9 @@ Why each run chose what it did, and any judgement calls.
   (b) contemporaneous price impact only, order-book data not in pipeline; no item added (reasons in the R259 refill note). 0 trials.
   No lead, no notification.
 - **Observation:** forty-six consecutive refills (R214-R259) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R260 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: Fed stress-test release -> EUR/USD and transformer models for EUR/USD. (a) no FX study found; (b) daily, test-block window
+  selection, ML-on-lags family already NONE (E051); no item added (reasons in the R260 refill note). 0 trials. No lead, no notification.
+- **Observation:** forty-seven consecutive refills (R214-R260) with no item. The R219 observation (human decision on new data) stands.
