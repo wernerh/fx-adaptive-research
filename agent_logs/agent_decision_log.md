@@ -2213,3 +2213,10 @@ Why each run chose what it did, and any judgement calls.
   Angles: ECB asset-purchase announcements and Japanese fiscal-year-end flows -> EUR/USD. No verified lagged EUR/USD evidence;
   both below the R090 power floor; no item added (reasons in the R252 refill note). 0 trials. No lead, no notification.
 - **Observation:** thirty-nine consecutive refills (R214-R252) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R253 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). pytest 454 passed.
+  Angles: Ehlers/Hilbert cycle indicators and OU/z-score intraday mean reversion -> EUR/USD. No verified EUR/USD evidence;
+  no item added (reasons in the R253 refill note). 0 trials. No lead, no notification.
+- **Observation:** forty consecutive refills (R214-R253) with no item. The R219 observation (human decision on new data) stands.

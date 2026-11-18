@@ -2999,3 +2999,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified lagged EUR/USD evidence for either angle; ECB QE announcements on dev number roughly a dozen and the
   Japanese fiscal year end gives ~6 dev events, both far below the R090 power floor. pytest 454 passed. 0 trials used (dev 261,
   val 9, total 270). Not a pipeline failure. Thirty-ninth consecutive refill with no item (R214-R252).
+
+### Refill note R253 (not an item; no item added)
+- 2026-11-18 R253 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Ehlers",
+  "Hilbert", "Ornstein" or "half-life" entry in research/ or knowledge/ before this run): (a) Ehlers / Hilbert-transform
+  dominant-cycle indicators -> EUR/USD; (b) Ornstein-Uhlenbeck / z-score intraday mean reversion on EUR/USD. Two standard searches.
+  (a) Hits were MQL5 forum/articles, TradeStation tutorial, TradingView scripts, WH SelfInvest strategy page and the indicator
+  author's own mesasoftware.com notes (not evidence, not opened, not cited); no study. (b) Opened Sun, WNE UW WP 20/2025 (daily
+  equity pairs, Renko/Kagi, no FX) and Holý-Tomanová arXiv 1811.09312 (tick OU estimation, NYSE oil stocks, no FX); entries in
+  research/academic_studies.md. Other hits (arXiv 1303.7177 market-making, core.ac.uk, FAU, dergipark, arXiv 2412.12458 pairs)
+  not opened, not cited.
+- No item added: no verified EUR/USD evidence for either angle; a single-pair intraday reversion rule would overlap fade/reversal
+  tests already run. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fortieth consecutive
+  refill with no item (R214-R253).

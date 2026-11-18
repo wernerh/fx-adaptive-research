@@ -1483,3 +1483,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Springer](https://link.springer.com/article/10.1007/s10663-023-09578-9), doi:10.1007/s10663-023-09578-9 (article page opened via web-fetch; only part of the text visible, tables not seen).
 - **Design/finding:** daily HUF, PLN, TRY vs USD and EUR around domestic central-bank QE announcements in 2020 (3 Hungary, 7 Poland, 1 Turkey); contemporaneous day-0 and 3/7/11-day event windows; qualitative appreciation vs USD in a 3-day window. ECB QE only in the literature review. No EUR/USD event, no drift, predictive, out-of-sample or cost test. Sample dates inconsistent in the text (UNVERIFIED).
 - **Relevance:** **None** for a new item: not EUR/USD, contemporaneous only, 11 events. **Status:** VERIFIED (partial text).
+
+### Sun, "Performance of Pairs Trading Strategies Based on Renko and Kagi Charts", University of Warsaw Faculty of Economic Sciences Working Papers No. 20/2025 (483), 2025 (added 2026-11-18 R253)
+- **Link:** [WNE UW PDF](https://www.wne.uw.edu.pl/download_file/6099/0) (opened via web-fetch; first ~40k of 184k characters read, rest via model summary; table figures not checked verbatim, UNVERIFIED).
+- **Design/finding:** daily S&P 500 and CSI index constituents, log-price spread pairs, 12-month formation / 6-month trading, Renko/Kagi threshold contrarian rule, 0.10%-0.30% costs; positive net monthly means for most indices per the summary. FX pairs mentioned only as examples; no FX or EUR/USD test.
+- **Relevance:** **None** for a new item: equity pairs, daily, not a single-pair EUR/USD rule. **Status:** VERIFIED (partial text).
+
+### Holý and Tomanová, "Estimation of Ornstein-Uhlenbeck Process Using Ultra-High-Frequency Data with Application to Intraday Pairs Trading Strategy", arXiv 1811.09312 (added 2026-11-18 R253)
+- **Link:** [ar5iv](https://ar5iv.labs.arxiv.org/html/1811.09312) (opened via web-fetch; first ~180k of 483k characters read; empirical profit section not reached).
+- **Design/finding:** noise-robust MLE for OU parameters on tick data; seven NYSE oil stocks (21 pairs), 2015-2018; first-passage entry/exit levels. Naive tick MLE overstates reversion speed ~6x. No FX, no out-of-sample split seen, no numeric cost assumption seen.
+- **Relevance:** **None** for a new item: equities only; methodological point (microstructure noise inflates apparent mean reversion at tick scale) consistent with SPEC bid/ask costing. **Status:** VERIFIED (partial text).
