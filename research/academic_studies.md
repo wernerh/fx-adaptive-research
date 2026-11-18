@@ -1628,3 +1628,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ECB Blog](https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260924~3240af33dc.en.html) (opened via web-fetch; page partly truncated; full author list UNVERIFIED, metadata names Sestieri).
 - **Design/finding (as extracted, not verbatim):** 1999 - early 2024, 304 formal announcements and ~5,000 inter-meeting communication events; contemporaneous intraday reactions (90-minute speech windows, 15-minute other windows) of 1-year OIS and other assets; EUR/USD in the variable set but no separate EUR/USD result; no return-forecast, OOS or cost test.
 - **Relevance:** None for a new item: contemporaneous reaction only, and no historical ECB speech-time calendar in the pipeline. **Status:** VERIFIED (blog, partly read).
+
+### Huther, Pettit and Wilkinson, "Fiscal Flow Volatility and Reserves" (FEDS Notes, Federal Reserve Board, 16 Dec 2019) (added 2026-11-18 R272)
+- **Link:** [FEDS Note](https://www.federalreserve.gov/econres/notes/feds-notes/fiscal-flow-volatility-and-reserves-20191216.html) (opened via web-fetch).
+- **Design/finding:** daily TGA balances 1995-2005 and average absolute weekly changes of TGA/reserves/bills/repo 2003-2019; TGA weekly changes "less than $1 billion" pre-crisis vs ~$24bn (2010-2018) and ~$35bn (Mar 2018 - Sep 2019). Descriptive only.
+- **Relevance:** None for a new item: no exchange-rate, return, OOS or cost analysis; tax-date events too few on dev. **Status:** VERIFIED.
+
+### Yuan and Gupta, "Chinese Lunar New Year effect in Asian stock markets, 1999-2012" (Quarterly Review of Economics and Finance, 2014, doi:10.1016/j.qref.2014.06.001) (added 2026-11-18 R272)
+- **Link:** [Griffith PDF (in-press copy)](https://news.griffith.edu.au/wp-content/uploads/2014/09/CLNY-Effect.pdf) (opened via web-fetch; first ~2/3 read verbatim, rest only as extracted summary).
+- **Design/finding:** daily index returns of seven Asian equity markets, Sep 1999 - Mar 2012, ARMA(1,1)-GARCH(1,1) with 3-day pre/post holiday dummies; significant pre-holiday returns (e.g. Korea 0.68%, Japan 0.49%, Hong Kong 0.47%). Trading-rule/cost results UNVERIFIED (later part not read verbatim). No FX test, no OOS.
+- **Relevance:** None for a new item: equities only, ~6 dev events for EUR/USD. **Status:** VERIFIED (partly read).

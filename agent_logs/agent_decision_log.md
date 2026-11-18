@@ -2331,3 +2331,10 @@ Why each run chose what it did, and any judgement calls.
   correlation/volatility transmission around one vote; (b) ECB Blog (Sep 2026) measures contemporaneous reactions only. No item added
   (reasons in the R271 refill note). 0 trials. No lead, no notification.
 - **Observation:** fifty-eight consecutive refills (R214-R271) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R272 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: US quarterly tax dates / TGA cash drains -> EUR/USD and Chinese Lunar New Year -> EUR/USD. (a) FEDS Note (2019) is descriptive
+  TGA/reserves data, no FX; (b) Yuan-Gupta (2014) tests Asian equities only. No item added (reasons in the R272 refill note). 0 trials.
+  No lead, no notification.
+- **Observation:** fifty-nine consecutive refills (R214-R272) with no item. The R219 observation (human decision on new data) stands.
