@@ -2317,3 +2317,10 @@ Why each run chose what it did, and any judgement calls.
   direction; (b) Bettendorf-Jochem (2023) has no FX variable. No item added (reasons in the R268 refill note). 0 trials. No lead,
   no notification.
 - **Observation:** fifty-five consecutive refills (R214-R268) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R269 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: euro-area government bond auctions -> EUR/USD and institutional FX hedge-ratio changes -> EUR/USD. (a) DNB WP 674 has no FX
+  variable; (b) Bräuer-Hau (2022) is contemporaneous/monthly with no OOS test. No item added (reasons in the R269 refill note).
+  0 trials. No lead, no notification.
+- **Observation:** fifty-six consecutive refills (R214-R269) with no item. The R219 observation (human decision on new data) stands.

@@ -1598,3 +1598,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS/RePEc abstract](https://ideas.repec.org/a/taf/applec/v55y2023i29p3317-3328.html) (abstract opened; full text paywalled, body UNVERIFIED).
 - **Design/finding:** BVAR identifying drivers of Germany's TARGET claims (monetary policy, euro-area risk, global risk); 2015-2017 flows attributed largely to monetary policy. No exchange-rate variable or prediction test.
 - **Relevance:** None: not an FX study; TARGET2 balances are monthly and not in the pipeline. **Status:** VERIFIED (abstract only).
+
+### Lengyel and Giuliodori, "Demand Shocks for Public Debt in the Eurozone" (DNB Working Paper 674, Mar 2020) (added 2026-11-18 R269)
+- **Link:** [DNB landing page](https://www.dnb.nl/en/publications/research-publications/working-paper-2020/674-demand-shocks-for-public-debt-in-the-eurozone) and [PDF](https://www.dnb.nl/media/g5slxapq/working-paper-no-674_tcm47.pdf) (opened via web-fetch; PDF truncated, back half model-summarised, details UNVERIFIED).
+- **Design/finding:** 1-minute German and Italian government bond futures around Treasury auctions (Germany 536, Italy 247 auctions, 1999-2017) identify auction demand shocks; daily outcomes are sovereign yields, CDS, equity and corporate bond indices. No exchange-rate variable in the abstract or read sections.
+- **Relevance:** None: no FX test of euro-area bond auctions. **Status:** VERIFIED (page and PDF opened, partly read).
+
+### Bräuer and Hau, "Can Time-Varying Currency Risk Hedging Explain Exchange Rates?" (BIS/BdI/ECB conference paper, 21 Nov 2022) (added 2026-11-18 R269)
+- **Link:** [BIS PDF](https://www.bis.org/events/221213_bis_bdi_ecb_exchange_rates/paper_brauer.pdf) (opened via web-fetch; truncated after ~40k of 88k characters, later part model-summarised, those details UNVERIFIED).
+- **Design/finding:** monthly Sep 2012 - Mar 2022; CLS fund forward/swap positions as hedging pressure, US TIC positions; EUR, GBP, JPY, CHF, CAD, AUD, NZD vs USD. Verbatim: "The contemporaneous relationships are economically and statistically significant at various frequencies (i.e. quarterly, monthly, weekly, daily)." In-sample VAR: dollar response to a hedging-pressure shock "peaks after 5 months". No out-of-sample forecast or cost test; lagged regressors reportedly not significant (summary, UNVERIFIED).
+- **Relevance:** None for a new item: contemporaneous/monthly, CLS positioning data not in the pipeline. **Status:** VERIFIED (PDF opened, partly read).
