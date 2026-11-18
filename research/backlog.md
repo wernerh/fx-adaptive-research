@@ -3027,3 +3027,19 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) duplicates E033; (b) monthly horizon gives ~72 dev observations, far below the R090 power floor, and CME
   open-interest data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline
   failure. Forty-first consecutive refill with no item (R214-R254).
+
+### Refill note R255 (not an item; no item added)
+- 2026-11-18 R255 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "election"
+  match in this file; "CNH"/"yuan" only incidental): (1) elections -> later EUR/USD drift; (2) PBoC daily USD/CNY fixing
+  surprise -> EUR/USD spillover.
+- (1) Opened: Jantke de Boer & Eichler (2025), ESRB workshop paper
+  https://www.esrb.europa.eu/news/schedule/2025/pdf/2025-06-30-awg-mpag8-annual-workshop-session-3-paper-stefan-eichler-jantke-de-boer.pdf
+  : 71 emerging-market currencies (no euro), 15-minute windows on US debate nights 1996-2016, contemporaneous reaction only, no
+  drift, out-of-sample or cost test. Aizenman & Saadaoui (2024, rev. 2025), NBER WP 33193
+  https://www.nber.org/system/files/working_papers/w33193/w33193.pdf : 2024 US election, 73 USD pairs with the euro explicitly
+  excluded, cross-sectional in-sample regressions on 1-day/4-day/1-week moves, no sign prediction, no costs.
+- (2) Search returned only broker explainers and newswire fixing headlines (forex.com, newsquawk); no study opened, nothing cited.
+- No item added: (a) no study tests EUR/USD direction after elections; (b) national elections relevant to EUR/USD in dev
+  2015-2020 number well under 20 events, far below the R090 power floor; (c) no evidence for the fixing angle and CNY fixing
+  data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Forty-second consecutive refill with no item (R214-R255).
