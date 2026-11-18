@@ -2248,3 +2248,10 @@ Why each run chose what it did, and any judgement calls.
   in the R258 refill note). 0 trials. No lead, no notification.
 - **Observation:** forty-five consecutive refills (R214-R258) with no item. The R219 observation (human decision on new data) stands;
   BdE WP 1203 is one concrete candidate if a macro data source is ever approved.
+
+## 2026-11-18 R259 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: FX disposition effect -> EUR/USD and limit-order-book imbalance -> EUR/USD. (a) trader behaviour only, no price-pattern test;
+  (b) contemporaneous price impact only, order-book data not in pipeline; no item added (reasons in the R259 refill note). 0 trials.
+  No lead, no notification.
+- **Observation:** forty-six consecutive refills (R214-R259) with no item. The R219 observation (human decision on new data) stands.

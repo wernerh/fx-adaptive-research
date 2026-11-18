@@ -3082,3 +3082,17 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) needs consensus-surprise data not in the repo and shows only a minutes-long contemporaneous reaction; (b) needs
   a real-time US/euro-area macro panel with no sanctioned runner download path (same blocker as B12). pytest 454 passed. 0 trials
   used (dev 261, val 9, total 270). Not a pipeline failure. Forty-fifth consecutive refill with no item (R214-R258).
+
+### Refill note R259 (not an item; no item added)
+- 2026-11-18 R259 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "disposition" or
+  "order book imbalance" entry in research/ or knowledge/ before this run): (a) FX traders' disposition effect / capital-gains overhang
+  -> EUR/USD; (b) limit-order-book imbalance -> short-horizon EUR/USD direction. Two standard searches.
+  (a) Opened Heimer-Imas AEA 2019 preliminary paper "Doing Less with More": retail myForexBook traders 2010, CFTC leverage cap reduces
+  disposition effect ~13% and raises per-trade timing returns 1.9 bp; no exchange-rate predictability test. (b) Opened Kozhan-Moore-
+  Payne 2012 (BoC conference PDF): Reuters D3000 2003-2004, daily/hourly contemporaneous order-flow price impact, no forecast test.
+  Other hits (core.ac.uk 13240855, typeset prospect-theory PDF, JFQA dynamic loss aversion, Tsinghua PDF, arXiv 2507.22712 / 2508.06788,
+  NBER w12682, NBER f121921, AEA 2009 pdfid 301, medium/emergentmind/nestegg/mql5/substack pages) not opened, not cited. Xu-Kozhan-Taylor
+  prospect-theory paper already logged (academic_studies.md ~l.550). Entries in research/academic_studies.md.
+- No item added: (a) trader behaviour/performance only, no verified EUR/USD price pattern, retail position data not in the pipeline;
+  (b) contemporaneous only, and order-book data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Forty-sixth consecutive refill with no item (R214-R259).
