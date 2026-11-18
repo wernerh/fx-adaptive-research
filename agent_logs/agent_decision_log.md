@@ -2289,3 +2289,10 @@ Why each run chose what it did, and any judgement calls.
   daily multi-week USD effects whose sign depends on later retaliation (look-ahead), dev-only events and no val episode; (b) commentary
   only. No item added (reasons in the R264 refill note). 0 trials. No lead, no notification.
 - **Observation:** fifty-one consecutive refills (R214-R264) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R265 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: stablecoin flows -> EUR/USD and ECB quiet period -> EUR/USD drift. (a) BIS WP 1340 is a causal IV study, EM-focused,
+  2021-2025 only; (b) CEPR DP15735 uses confidential breach data with no FX direction result. No item added (reasons in the R265
+  refill note). 0 trials. No lead, no notification.
+- **Observation:** fifty-two consecutive refills (R214-R265) with no item. The R219 observation (human decision on new data) stands.

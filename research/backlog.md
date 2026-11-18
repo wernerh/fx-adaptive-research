@@ -3163,3 +3163,17 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   pipeline; daily multi-week horizon outside the intraday frame. (b) no verified evidence; BTP/Bund yields not in the pipeline.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fifty-first consecutive refill with no item
   (R214-R264).
+
+### Refill note R265 (not an item; no item added)
+- 2026-11-18 R265 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "stablecoin", "USDT"
+  or "quiet period" entry in research/ or knowledge/ before this run): (a) stablecoin issuance / net flows -> EUR/USD; (b) ECB
+  monetary-policy quiet period -> EUR/USD drift. Two standard searches.
+  (a) Opened BIS WP 1340 (Aldasoro-Beltrán-Grinberg 2026) landing page: 27 fiat currencies 2021-2025, IV design, stablecoin demand
+  depreciates the local currency (EM most exposed), +40 bp parity deviation per 1% inflow; no predictive or cost test; EUR coverage
+  not stated. Other hits (IMF WP 2026/056, JFQA blockchain-currency PDF, SNB seminar slides, news pages) not opened; not cited.
+  (b) Opened CEPR DP15735 (Gnan-Rieder) landing page: confidential breach data, market-reaction size only, no FX direction test.
+  Other hits ECB explainer pages and FXStreet commentary; not cited. Entries in research/academic_studies.md.
+- No item added: (a) causal not predictive, EM-focused, sample starts in val/OOS era (no dev coverage), flow data not in pipeline;
+  (b) breach records confidential, no direction evidence (ECB meeting windows already tested E022-E025 family). pytest 454 passed
+  (after reinstalling dev dependencies in a fresh workspace). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Fifty-second consecutive refill with no item (R214-R265).

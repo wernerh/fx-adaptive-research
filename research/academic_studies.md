@@ -1563,3 +1563,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [BIS landing page](https://www.bis.org/publications/working-paper-1282-market-whiplash-after-2025-tariff-shock-event-targeted-var-approach) (landing page opened; PDF fetch failed, not retried; details UNVERIFIED).
 - **Finding (landing page):** "the dollar's persistent depreciation and movements in government bond yields largely stem from other orthogonal shocks" (Treasury-market liquidity), not tariff shocks. EUR/USD not mentioned.
 - **Relevance:** None for a new item: one 2025 episode (OOS period), no EUR/USD result. **Status:** VERIFIED (landing page only).
+
+### Aldasoro, Beltrán and Grinberg, "Stablecoin flows and spillovers to FX markets" (BIS Working Paper 1340, Mar 2026) (added 2026-11-18 R265)
+- **Link:** [BIS landing page](https://www.bis.org/publ/work1340.htm) (landing page opened via web-fetch; 69-page PDF not read; frequency, currency list and lag structure UNVERIFIED).
+- **Design/finding (landing page):** four USD-pegged stablecoins vs 27 fiat currencies on 64 exchanges, 2021-2025; granular instrumental variable on net stablecoin inflows. Verbatim: "An exogenous surge in stablecoin demand depreciates the local currency in the traditional spot market"; "a 1% exogenous increase in net stablecoin inflows raises parity deviations by 40 basis points"; emerging-market currencies "are most exposed". No FX magnitude, no out-of-sample or trading/cost test stated; whether EUR is in the sample is not stated.
+- **Relevance:** None for a new item: causal (IV) rather than predictive design, emphasis on EM currencies, sample starts 2021 (no dev coverage), exchange-level stablecoin flow data not in the pipeline. **Status:** VERIFIED (landing page only).
+
+### Gnan and Rieder, "The (Not So) Quiet Period: Communication by ECB Decision-makers during Monetary Policy Blackout Days" (CEPR DP15735, 2021, rev. 2022) (added 2026-11-18 R265)
+- **Link:** [CEPR page](https://cepr.org/publications/dp15735) (landing page opened via web-fetch; PDF not read).
+- **Finding (landing page):** confidential data on ECB quiet-period breaches 2008-2021; breaches "trigger high-frequency market reactions that are up to twice as large as the median market reaction to speeches in inter-meeting periods". No exchange-rate series named; no direction, predictive or cost test.
+- **Relevance:** None: breach records are confidential; no FX direction result. **Status:** VERIFIED (landing page only).
