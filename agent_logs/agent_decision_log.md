@@ -2268,3 +2268,10 @@ Why each run chose what it did, and any judgement calls.
   (b) no verified FX study (one candidate behind a bot check, not circumvented); no item added (reasons in the R261 refill note).
   0 trials. No lead, no notification.
 - **Observation:** forty-eight consecutive refills (R214-R261) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R262 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: US early-close/half-day holiday sessions -> EUR/USD and geomagnetic storms -> EUR/USD. (a) liquidity only, too few events;
+  (b) no verified FX return study (only a volatility-spillover paper); no item added (reasons in the R262 refill note).
+  0 trials. No lead, no notification.
+- **Observation:** forty-nine consecutive refills (R214-R262) with no item. The R219 observation (human decision on new data) stands.
