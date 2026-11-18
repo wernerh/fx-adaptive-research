@@ -2220,3 +2220,10 @@ Why each run chose what it did, and any judgement calls.
   Angles: Ehlers/Hilbert cycle indicators and OU/z-score intraday mean reversion -> EUR/USD. No verified EUR/USD evidence;
   no item added (reasons in the R253 refill note). 0 trials. No lead, no notification.
 - **Observation:** forty consecutive refills (R214-R253) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-18 R254 (unattended)
+- **Decision:** no ready item, no research-batch run queued or in progress (latest 43840273851, completed, recorded as E051).
+  Protocol step 4 (refill). pytest 454 passed.
+  Angles: abnormal FX volume and currency-futures open interest -> EUR/USD. (a) duplicates E033 (Cespa et al. already tested);
+  (b) monthly, in-sample, data not in pipeline; no item added (reasons in the R254 refill note). 0 trials. No lead, no notification.
+- **Observation:** forty-one consecutive refills (R214-R254) with no item. The R219 observation (human decision on new data) stands.

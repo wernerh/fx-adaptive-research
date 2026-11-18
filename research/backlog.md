@@ -3012,3 +3012,18 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD evidence for either angle; a single-pair intraday reversion rule would overlap fade/reversal
   tests already run. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure. Fortieth consecutive
   refill with no item (R214-R253).
+
+### Refill note R254 (not an item; no item added)
+- 2026-11-18 R254 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "open interest",
+  "abnormal volume" or "trading volume" entry in research/ or knowledge/ before this run): (a) abnormal FX trading volume ->
+  next-day / intraday EUR/USD direction; (b) currency-futures open-interest changes -> later EUR/USD. Two standard searches.
+  (a) The only study hit was Cespa-Gargano-Riddiough-Sarno "Foreign Exchange Volume" (CEPR DP16128, RFS 2022
+  doi:10.1093/rfs/hhab095; CEPR and Cambridge repository abstract pages opened): next-day reversal stronger after abnormally low
+  volume. Already in research/academic_studies.md and already tested as B28/B29 in E033 (NONE/NONE on dev). Other hits
+  (thefullfx.com, CXO Advisory, VoxEU column) not evidence, not opened. (b) Opened Hong-Yogo NBER WP 16712 (entry in
+  research/academic_studies.md): monthly, 12-month smoothed open-interest growth, foreign-currency portfolio vs USD, weaker for
+  currencies than commodities, in-sample. Other hits (Bundesbank DP, RBA RDP 2004-07, NY Fed EPR/SR 262 on COT positioning)
+  not opened; COT positioning already closed (R082, R120).
+- No item added: (a) duplicates E033; (b) monthly horizon gives ~72 dev observations, far below the R090 power floor, and CME
+  open-interest data are not in the pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline
+  failure. Forty-first consecutive refill with no item (R214-R254).
