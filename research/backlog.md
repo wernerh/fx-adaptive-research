@@ -3495,3 +3495,19 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no study and no social-media feed in the pipeline; (b) the single EUR result is one cell of a multi-currency,
   multi-day dummy scan with no stated mechanism or out-of-sample test (garden-of-forking-paths risk; SPEC needs a mechanism), and
   Friday-the-13th has no FX evidence and ~1-2 events/yr (below the R090 power floor). 0 trials.
+
+### Refill note R290 (not an item; no item added)
+- 2026-11-19 R290 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "sight deposit" or
+  "current account" entry in research/ or knowledge/ before this run): (a) weekly SNB sight-deposit changes (intervention proxy) ->
+  later EUR/USD; (b) euro-area monthly balance-of-payments / current-account release -> EUR/USD drift. Two standard searches.
+  (a) Opened Kugler (2020), "The Short-Run Impact of SNB Sight Deposits on Exchange Rates: Results from Weekly Data 2015 - 2018",
+  WWZ Working Paper 2020/04, University of Basel (https://ideas.repec.org/p/bsl/wpaper/2020-04.html; full text
+  https://core.ac.uk/download/294761712.pdf): weekly, ~2015-2018 (paper states the sample end inconsistently), GMM simultaneous
+  system; targets EUR/CHF and USD/CHF only and assumes SNB policy does not move EUR/USD; contemporaneous effect (1% sight-deposit
+  rise -> ~0.38-0.41% CHF depreciation), no lagged predictor in the FX equations, no out-of-sample or cost test.
+  (b) Hits were ECB/Banque de France BoP press releases and EUR/USD news-announcement papers (Cardiff A2006 and Greenwich CEPGR
+  already logged; CESifo WP 7239 not opened, not cited); no study of the BoP release -> EUR/USD.
+- No item added: (a) contemporaneous, CHF crosses only, and by the paper's own assumption no EUR/USD channel; sight-deposit data not
+  in the pipeline; (b) no verified EUR/USD evidence and ~12 events/yr with no mechanism for a drift. 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventy-seventh consecutive refill with no item (R214-R290).

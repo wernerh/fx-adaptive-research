@@ -2433,3 +2433,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: Reddit / social-media attention -> EUR/USD, and calendar superstition effects -> EUR/USD.
   (a) no study found; (b) Chung-Li 2013 abstract only (in-sample day-of-month scan), Lucey 2001 equities only. No item added (reasons in the R289 refill note). 0 trials. No lead, no notification.
 - **Observation:** seventy-six consecutive refills (R214-R289) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R290 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851, recorded as E051). Protocol step 4 (refill).
+- **Choice:** angles not yet logged: weekly SNB sight-deposit changes -> EUR/USD, and euro-area balance-of-payments release -> EUR/USD.
+  (a) Kugler 2020 opened: contemporaneous, EUR/CHF and USD/CHF only; (b) no study found. No item added (reasons in the R290 refill note). 0 trials. No lead, no notification.
+- **Observation:** seventy-seven consecutive refills (R214-R290) with no item. The R219 observation (human decision on new data) stands.
