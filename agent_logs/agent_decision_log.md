@@ -2439,3 +2439,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: weekly SNB sight-deposit changes -> EUR/USD, and euro-area balance-of-payments release -> EUR/USD.
   (a) Kugler 2020 opened: contemporaneous, EUR/CHF and USD/CHF only; (b) no study found. No item added (reasons in the R290 refill note). 0 trials. No lead, no notification.
 - **Observation:** seventy-seven consecutive refills (R214-R290) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R291 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851, recorded as E051). Protocol step 4 (refill).
+- **Choice:** angles not yet logged: US bond-market-only holidays (Columbus/Veterans Day) -> EUR/USD, and Riksbank decisions -> EUR/USD spillover.
+  (a) news pages only, no study; (b) Riksbank WP 456 opened: SEK crosses only, EUR/USD a control. No item added (reasons in the R291 refill note). 0 trials. No lead, no notification.
+- **Observation:** seventy-eight consecutive refills (R214-R291) with no item. The R219 observation (human decision on new data) stands.

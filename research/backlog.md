@@ -3511,3 +3511,21 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   in the pipeline; (b) no verified EUR/USD evidence and ~12 events/yr with no mechanism for a drift. 0 trials.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventy-seventh consecutive refill with no item (R214-R290).
+
+### Refill note R291 (not an item; no item added)
+- 2026-11-19 R291 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Columbus",
+  "Veterans" or "Riksbank" entry in research/ or knowledge/ before this run): (a) US bond-market-only holidays (Columbus Day,
+  Veterans Day: SIFMA closes cash Treasuries, FX and equities open) -> EUR/USD drift or range on those days; (b) Riksbank policy
+  decisions -> EUR/USD spillover. Two standard searches.
+  (a) Hits were trade-press / news pages only (FXStreet "Forex Today" 2024-10-14, investinglive, OANDA, fxnx; not cited as
+  evidence), no study of FX returns on US bond-only holidays.
+  (b) Opened Artta, Nessén, Savoia, Vredin (2025), "Financial Flows and Exchange Rate Dynamics: Evidence from Sweden", Sveriges
+  Riksbank Working Paper No. 456
+  (https://www.riksbank.se/globalassets/media/rapporter/working-papers/2025/no.-456-financial-flows-and-exchange-rate-dynamics-evidence-from-sweden.pdf):
+  daily, from Feb 2021; dependent variables EUR/SEK and USD/SEK, EUR/USD only a control; local-projection impulse responses to
+  flow shocks, no predictive regression, no out-of-sample or cost test (remainder of PDF only summarised; sample end stated
+  inconsistently in the paper). Riksbank event-study database page seen in results (not opened, not cited).
+- No item added: (a) no verified evidence and only ~2 events/yr (below the R090 power floor); (b) SEK crosses only, EUR/USD is a
+  control, no lagged EUR/USD channel. 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventy-eighth consecutive refill with no item (R214-R291).
