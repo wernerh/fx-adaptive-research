@@ -2415,3 +2415,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: same-calendar-month return seasonality -> EUR/USD, and volatility-managed currency momentum -> EUR/USD.
   (a) Keloharju et al. 2014 has no currencies; (b) Barroso et al. 2018 is a monthly cross-sectional overlay with no EUR/USD result. No item added (reasons in the R285 refill note). 0 trials. No lead, no notification.
 - **Observation:** seventy-two consecutive refills (R214-R285) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R287 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item -> refill (protocol step 4).
+- **Choice:** angles not yet logged: euro-area flash HICP release -> intraday EUR/USD, and FX volatility risk premium -> later EUR/USD.
+  (a) news pages only, no study; (b) DP9549 family already logged, implied-vol data not in pipeline. No item added (reasons in the R287 refill note). 0 trials. No lead, no notification.
+- **Observation:** seventy-four consecutive refills (R214-R287) with no item. The R219 observation (human decision on new data) stands.

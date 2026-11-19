@@ -3453,3 +3453,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no study; (b) no single-pair evidence, data not in pipeline.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventy-third consecutive refill with no item (R214-R286).
+
+### Refill note R287 (not an item; no item added)
+- 2026-11-19 R287 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "flash inflation"
+  entry and no "volatility risk premium" phrase in research/ or knowledge/ before this run): (a) euro-area flash HICP release ->
+  intraday EUR/USD direction; (b) FX volatility risk premium (implied minus realized) -> later EUR/USD returns. Two standard searches.
+  (a) Hits were FXStreet release/news pages only (not evidence); none opened, not cited. No study.
+  (b) Hits were CEPR DP9549 "Volatility Risk Premia and Exchange Rate Predictability" (already logged R180, academic_studies.md
+  ~line 1081; also re-surfaced R276), its Imperial/City/mql5 copies and BCB WPS454 (VRP -> commodities, Ornelas-Mauad family
+  already logged R278); none newly opened, not cited. Option implied-vol data are also not in the pipeline.
+- No item added: (a) no study; (b) family already logged, data not in pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventy-fourth consecutive refill with no item (R214-R287).
