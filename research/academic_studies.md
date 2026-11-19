@@ -1729,3 +1729,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [CFR Cologne colloquium PDF](https://www.cfr-cologne.de/download/kolloquium/2018/BarrosoMenichettiReichenecker.pdf) (opened via web-fetch; partly read, rest summary-based).
 - **Design/finding:** monthly cross-sectional parametric currency overlay for a global equity investor, 10 currencies, 1976-2016; OOS 1986-2016 with forward bid-ask costs; characteristics momentum, forward discount, long-term reversal, autocorrelation; Jensen's alpha 110-129 bps, Sharpe gain ~38% (abstract); volatility characteristics not significant.
 - **Relevance:** None for a new item: cross-sectional monthly overlay, no EUR/USD single-pair result, carry/forward data not in pipeline, momentum-on-lags already tested on dev. **Status:** VERIFIED (partly read).
+
+### Pojarliev & Levich, "Detecting Crowded Trades in Currency Funds", NBER WP 15698 (Jan 2010) (added 2026-11-19 R286)
+- **Link:** [NBER WP 15698 PDF](https://www.nber.org/papers/w15698.pdf) (opened via web-fetch; first part read verbatim, rest summary-based).
+- **Design/finding:** 80 currency managers (DB FXSelect), weekly returns Apr 2005 - Mar 2008; crowdedness = share of managers loading on carry/trend/value factor indices; EUR-USD only a component of the factor indices. Authors: "our sample period is too short for more formal statistical tests." No spot-direction forecast, no costs.
+- **Relevance:** None for a new item: no EUR/USD direction test, manager-return data not in pipeline. **Status:** VERIFIED (partly read).
+
+### Sokolovski, "Crowds, Crashes, and the Carry Trade", job market paper (15 Dec 2016) (added 2026-11-19 R286)
+- **Link:** [UC3M seminar PDF](https://indem.uc3m.es/seminarios/filesem_1486993340.pdf) (opened via web-fetch; first part read verbatim, rest summary-based).
+- **Design/finding:** nine G10 vs USD (EUR with DEM history), daily 1976-2016; crowdedness from abnormal return correlations among carry target currencies; abstract: "carry trade crowdedness negatively forecasts monthly carry trade returns" (equal-weighted carry portfolio, not single pairs). Costs explicitly ignored ("Ignoring transaction costs"); in-sample per summary (UNVERIFIED). Coefficient sizes summary-based only (UNVERIFIED).
+- **Relevance:** None for a new item: monthly cross-sectional carry-portfolio target, needs forward rates and other G10 pairs not in pipeline, no EUR/USD direction or cost test. **Status:** VERIFIED (partly read).

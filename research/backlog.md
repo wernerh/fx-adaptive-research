@@ -3440,3 +3440,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no FX evidence; (b) cross-sectional monthly design, no single-pair evidence, data not in pipeline.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventy-second consecutive refill with no item (R214-R285).
+
+### Refill note R286 (not an item; no item added)
+- 2026-11-19 R286 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (only one prior
+  "risk reversal" mention and no "crowd"/CTA-positioning study entry in research/ or knowledge/ before this run): (a) EUR/USD 25-delta
+  risk reversals -> next-day spot direction; (b) CTA / speculator crowding -> EUR/USD. Two standard searches.
+  (a) Hits were trade press (GlobalCapital, FXStreet), a vendor glossary (LuxAlgo) and an exotic-pricing paper (arXiv 2602.01376,
+  pricing only per title/snippet); none opened, not cited. Option risk-reversal data are also not in the pipeline.
+  (b) Opened Pojarliev-Levich NBER WP 15698 and Sokolovski 2016 JMP (entries in research/academic_studies.md): manager-factor
+  crowding (no formal test) and monthly carry-portfolio crowding (costs ignored); no EUR/USD single-pair direction test. Other hits
+  (BofA/Tickmill/Investing/FXStreet CTA and COT commentary) not opened; not cited (COT -> EUR/USD already argued against, R082).
+- No item added: (a) no study; (b) no single-pair evidence, data not in pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventy-third consecutive refill with no item (R214-R286).
