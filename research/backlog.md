@@ -3480,3 +3480,18 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   already tested (E050 Markov switching, E051 random forest); (b) no verified single-pair evidence.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventy-fifth consecutive refill with no item (R214-R288).
+
+### Refill note R289 (not an item; no item added)
+- 2026-11-19 R289 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Reddit" or
+  "superstition"/"Friday the 13" entry in research/ or knowledge/ before this run): (a) Reddit / retail social-media attention ->
+  EUR/USD; (b) calendar superstition effects (Friday the 13th, Chinese lucky/unlucky days) -> EUR/USD. Two standard searches.
+  (a) Hits were the Twitter EUR/USD papers already logged (Papaioannou et al. arXiv 1310.5306 / 1402.1624) and NBER papers not about
+  FX; no Reddit-FX study found; none newly opened, not cited.
+  (b) Opened Chung & Li (2013), "Chinese Superstition and Foreign Currency Returns", Academy of Taiwan Business Management Review 9(1)
+  (https://research-repository.griffith.edu.au/items/8417cb6c-2c1f-542d-ae55-683fa290e588): metadata + abstract only, eight
+  currencies, day-of-month dummies; abstract reports unlucky day 24 linked to higher EUR returns; pair, frequency, sample and any
+  OOS/cost test UNVERIFIED (PDF not read). Opened Lucey (2001), "Friday the 13th: international evidence", Appl. Econ. Lett. 8(9)
+  577-579, doi:10.1080/13504850010025664 (EconPapers abstract): 19 equity indices 1988-2000, no currencies.
+- No item added: (a) no study and no social-media feed in the pipeline; (b) the single EUR result is one cell of a multi-currency,
+  multi-day dummy scan with no stated mechanism or out-of-sample test (garden-of-forking-paths risk; SPEC needs a mechanism), and
+  Friday-the-13th has no FX evidence and ~1-2 events/yr (below the R090 power floor). 0 trials.

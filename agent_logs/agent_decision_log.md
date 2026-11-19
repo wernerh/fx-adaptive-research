@@ -2427,3 +2427,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: ARIMA / univariate forecasts -> next-day EUR/USD, and wavelet-decomposition forecasts -> EUR/USD.
   (a) Costantini et al. 2016 abstract only (macro models, limited gain); (b) no new verified source. No item added (reasons in the R288 refill note). 0 trials. No lead, no notification.
 - **Observation:** seventy-five consecutive refills (R214-R288) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R289 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851, recorded as E051). Protocol step 4 (refill).
+- **Choice:** angles not yet logged: Reddit / social-media attention -> EUR/USD, and calendar superstition effects -> EUR/USD.
+  (a) no study found; (b) Chung-Li 2013 abstract only (in-sample day-of-month scan), Lucey 2001 equities only. No item added (reasons in the R289 refill note). 0 trials. No lead, no notification.
+- **Observation:** seventy-six consecutive refills (R214-R289) with no item. The R219 observation (human decision on new data) stands.
