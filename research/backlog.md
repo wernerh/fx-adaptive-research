@@ -3413,3 +3413,17 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no verified pre-FOMC blackout drift result beyond already-logged Karnaukh work; (b) no study.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventieth consecutive refill with no item (R214-R283).
+
+### Refill note R284 (not an item; no item added)
+- 2026-11-19 R284 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Mrs Watanabe",
+  "toshin"/"Japanese retail" or "ECB balance sheet" entry in research/ or knowledge/ before this run): (a) Japanese retail FX
+  margin-trader positioning -> later EUR/USD; (b) Eurosystem weekly financial statement (Tuesday release) -> EUR/USD. Two standard searches.
+  (a) Opened Hayo-Iwatsubo Kobe DP 1909 / CityU GRU WP 2019-026 (same study; entry in research/academic_studies.md): survey of
+  trader profitability, no exchange-rate prediction test. Other hits (RBA Bulletin Mar 2009, Kobe repository PDF, BoJ Review
+  rev23e07, MDPI 14/18/11662, Bloomberg/Japan Times/FX-Markets/MUFG news) not opened; not cited. Retail positioning data
+  (e.g. broker or exchange position ratios) is also not in the pipeline.
+  (b) Hits were the weekly statements themselves (ECB, Banque de France, Banca d'Italia, Banco de Espana PDFs), no study; none
+  opened, not cited.
+- No item added: (a) no verified positioning -> EUR/USD direction evidence and no data in pipeline; (b) no study.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventy-first consecutive refill with no item (R214-R284).
