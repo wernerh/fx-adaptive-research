@@ -2391,3 +2391,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: FX option barrier levels -> EUR/USD spot, and air pollution / investor mood -> EUR/USD.
   (a) Jessen-Poulsen QF 2013 is a barrier-option pricing study with no spot-direction test; (b) Heyes-Neidell-Saberian NBER WP 22753 covers equities only. No item added (reasons in the R281 refill note). 0 trials. No lead, no notification.
 - **Observation:** sixty-eight consecutive refills (R214-R281) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R282 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item -> refill (protocol step 4).
+- **Choice:** angles not yet logged: US high-yield credit-spread changes -> EUR/USD, and US yield-curve slope -> EUR/USD.
+  (a) Rossi Júnior Insper BEWP 198/2014 has no euro and uses contemporaneous fundamentals, no costs; Della Corte-Jeanneret-Patelli already logged; (b) Chen-Tsang already logged. No item added (reasons in the R282 refill note). 0 trials. No lead, no notification.
+- **Observation:** sixty-nine consecutive refills (R214-R282) with no item. The R219 observation (human decision on new data) stands.

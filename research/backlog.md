@@ -3386,3 +3386,17 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no spot-direction evidence and barrier-level data is not in the pipeline (vendor/bank feed); (b) no FX test,
   pollution data not in pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Sixty-eighth consecutive refill with no item (R214-R281).
+
+### Refill note R282 (not an item; no item added)
+- 2026-11-19 R282 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "credit spread",
+  "HY spread" or "yield curve slope" entry in research/ or knowledge/ before this run): (a) US high-yield credit-spread changes ->
+  later EUR/USD; (b) US yield-curve slope -> EUR/USD. Two standard searches.
+  (a) Opened Rossi Júnior Insper BEWP 198/2014 (entry in research/academic_studies.md): weekly, 27 non-euro currencies vs USD,
+  HY spread as a contemporaneous "realized fundamental", no costs. Also re-opened Della Corte-Jeanneret-Patelli AEA 2020 draft
+  (already logged R201: licensed quanto-CDS data, weekly+ horizon). Other hits (Liège skewness PDFs, Engel appendix, AEA 2018/2021
+  drafts, UCP thesis) not opened; not cited.
+  (b) Top hit Chen-Tsang NBER WP 16427 already logged (R221/R226: monthly basket signal). Other hits (UW, AOF, core.ac.uk, Chinn
+  foreign yield curves, vLex, WU slides, Bond Vigilantes blog) not opened; not cited.
+- No item added: (a) no EUR/USD tradable-forecast evidence and credit-spread data not in pipeline; (b) already-logged monthly
+  evidence only. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Sixty-ninth consecutive refill with no item (R214-R282).

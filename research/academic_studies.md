@@ -1704,3 +1704,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [NBER page](https://www.nber.org/papers/w22753) (abstract opened via web-fetch).
 - **Design/finding:** Manhattan PM2.5 vs same-day S&P 500 returns; one SD higher PM2.5 lowers same-day returns (abstract: "by 11.9% in our preferred specification"); effect strictly local, attributed to lower risk tolerance. No exchange rates studied.
 - **Relevance:** None for a new item: equities only, no FX test; pollution data not in pipeline. **Status:** VERIFIED (abstract only).
+
+### Rossi Júnior, "The Usefulness of Financial Variables in Predicting Exchange Rate Movements", Insper BEWP 198/2014 (added 2026-11-19 R282)
+- **Link:** [Insper repository PDF](https://repositorio-api.insper.edu.br/server/api/core/bitstreams/e210bda8-8bca-4634-9e6f-720baa220200/content) (opened via web-fetch; truncated, later sections summary-based).
+- **Design/finding:** weekly end-of-week data Jan 2001 - Apr 2013, 27 currencies vs USD (no euro, no DEM). Predictors include the US high-yield minus investment-grade corporate spread, 10-year Treasury yield, VIX, TED spread. HY-spread model beats a driftless random walk out-of-sample (rolling window, Clark-West) at 1-8 weeks for all but CHF; hit ratios ~52-63% (summary). The model uses realized (contemporaneous) fundamentals; the author concedes this is "not truly out-of-sample". No transaction costs.
+- **Relevance:** None for a new item: EUR not covered, contemporaneous-fundamentals design (not a tradable forecast), no costs; credit-spread data not in pipeline. **Status:** VERIFIED (partly read).
