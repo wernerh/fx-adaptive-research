@@ -3360,3 +3360,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) the only opened study is negative for developed currencies and the equity/bond-return -> FX family is
   already NONE (B35/E037); (b) no study. pytest passed (see run log). 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Sixty-sixth consecutive refill with no item (R214-R279).
+
+### Refill note R280 (not an item; no item added)
+- 2026-11-19 R280 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "EPFR", "fund flow",
+  "COFER" or "reserve manager" entry in research/ or knowledge/ before this run): (a) international mutual-fund / ETF flows (EPFR)
+  -> later EUR/USD; (b) central-bank reserve-currency diversification (IMF COFER) -> EUR/USD. Two standard searches.
+  (a) Opened Li-de Haan-Scholtens OER 2018 doi:10.1007/s11079-017-9469-5 (entry in research/academic_studies.md): monthly EPFR flows,
+  53 countries, in-sample panel, mostly contemporaneous co-movement, no EUR/USD pair, no OOS/cost test. Other hits (isimarkets blog,
+  BIS WP 1042, fa-mag / wealthmanagement / financial-planning ETF articles, Informa dataset page) not opened; not cited.
+  (b) Opened Gefang-Hall-Tavlas arXiv:2608.24468 (entry in research/academic_studies.md): annual reserve shares 1999-2023, models
+  shares not FX returns. Other hits (OER 2022 s11079-022-09681-7, VoxEU column, NY Fed SR1087, IMF blogs, Ito JIMF paper) not opened; not cited.
+- No item added: (a) in-sample monthly contemporaneous panel, flow data not in pipeline; (b) annual, no return-prediction test, COFER
+  is quarterly with a lag (far below the R090 event floor). 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Sixty-seventh consecutive refill with no item (R214-R280).

@@ -1684,3 +1684,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS abstract page](https://ideas.repec.org/a/eee/empfin/v83y2025ics0927539825000635.html) (opened via web-fetch; abstract only, full text paywalled).
 - **Design/finding (abstract, paraphrased):** out-of-sample tests (statistical and a trading strategy) of whether international stock and bond returns predict future spot exchange-rate changes, developed vs emerging countries. Profits appear in emerging markets (driven mainly by emerging stock returns, less by bond returns); no such profitability in developed-country data. Currencies, frequency and sample period not stated in the abstract (UNVERIFIED).
 - **Relevance:** None for a new item: the developed-market (which would include EUR/USD) result is negative; studies stock/bond returns, not the stock-bond correlation regime; equity/bond-return -> FX line already NONE (B35/E037). **Status:** VERIFIED (abstract only).
+
+### Li, de Haan & Scholtens, "Are International Fund Flows Related to Exchange Rate Dynamics?" (Open Economies Review 29, 31-48, 2018; doi:10.1007/s11079-017-9469-5) (added 2026-11-19 R280)
+- **Link:** [Springer article page](https://link.springer.com/article/10.1007/s11079-017-9469-5) (opened via web-fetch; page truncated, later sections summary-based).
+- **Design/finding:** monthly EPFR Global equity (1996-2015) and bond (2004-2015) fund flows, 53 countries; dependent variable is each country's bilateral real exchange rate change vs USD; in-sample dynamic panel (LSDV, GMM robustness). Inflows co-move with real appreciation, mostly contemporaneously. No out-of-sample or cost test seen; EUR/USD not modelled as a pair.
+- **Relevance:** None for a new item: contemporaneous/in-sample monthly panel, no EUR/USD direction test; EPFR flow data not in pipeline. **Status:** VERIFIED (partly read).
+
+### Gefang, Hall & Tavlas, "Dynamics of the Currency Composition of Central Bank Reserves" (arXiv:2608.24468, Aug 2026) (added 2026-11-19 R280)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/2608.24468) (opened via web-fetch; truncated, later sections summary-based).
+- **Design/finding:** annual unbalanced panel of reserve-currency shares (AUD, CAD, CNY, EUR, GBP, JPY, USD, Other), 53 countries 1999-2023, constrained SUR. Shares are highly persistent; exchange-rate variables largely lose significance with year effects. Models reserve shares, not exchange-rate returns; no forecasting test.
+- **Relevance:** None for a new item: annual frequency, reserve shares as the dependent variable, no EUR/USD return prediction. **Status:** VERIFIED (partly read).

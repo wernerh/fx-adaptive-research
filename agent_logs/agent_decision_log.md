@@ -2379,3 +2379,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: stock-bond correlation regime -> EUR/USD, and the "dollar smile" (USD vs US equity drawdowns).
   (a) Phylaktis-Yamani JEF 2025 finds no developed-market FX predictability from stock/bond returns; (b) commentary only. No item added (reasons in the R279 refill note). 0 trials. No lead, no notification.
 - **Observation:** sixty-six consecutive refills (R214-R279) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R280 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item -> refill (protocol step 4).
+- **Choice:** angles not yet logged: EPFR fund flows -> later EUR/USD, and central-bank reserve diversification (COFER) -> EUR/USD.
+  (a) Li-de Haan-Scholtens OER 2018 is an in-sample monthly contemporaneous panel; (b) Gefang-Hall-Tavlas 2026 models annual reserve shares, not FX returns. No item added (reasons in the R280 refill note). 0 trials. No lead, no notification.
+- **Observation:** sixty-seven consecutive refills (R214-R280) with no item. The R219 observation (human decision on new data) stands.
