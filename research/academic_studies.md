@@ -1694,3 +1694,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv PDF](https://arxiv.org/pdf/2608.24468) (opened via web-fetch; truncated, later sections summary-based).
 - **Design/finding:** annual unbalanced panel of reserve-currency shares (AUD, CAD, CNY, EUR, GBP, JPY, USD, Other), 53 countries 1999-2023, constrained SUR. Shares are highly persistent; exchange-rate variables largely lose significance with year effects. Models reserve shares, not exchange-rate returns; no forecasting test.
 - **Relevance:** None for a new item: annual frequency, reserve shares as the dependent variable, no EUR/USD return prediction. **Status:** VERIFIED (partly read).
+
+### Jessen & Poulsen, "Empirical Performance of Models for Barrier Option Valuation", Quantitative Finance 13(1), 1-11 (2013) (doi:10.1080/14697688.2012.723820) (added 2026-11-19 R281)
+- **Link:** [CBS open-archive PDF](https://research-api.cbs.dk/ws/files/58805670/cathrine_jessen_BarrierPaper_Revised030812_openarchive.pdf) (opened via web-fetch; Aug 2012 working version, later sections summary-based).
+- **Design/finding:** USD/EUR, daily, Jan 2004 - Sep 2005; 156 Danske Bank single-barrier contracts (3,108 valuations). Compares option-pricing models on pricing error: continuous-path models (Black-Scholes, CEV, Heston) about equal, jump models worse. Does not study spot behaviour near barrier levels; no trading, out-of-sample P&L or cost test.
+- **Relevance:** None for a new item: option-pricing study, no spot-direction evidence; barrier-level data not in pipeline. **Status:** VERIFIED (partly read).
+
+### Heyes, Neidell & Saberian, "The Effect of Air Pollution on Investor Behavior: Evidence from the S&P 500", NBER WP 22753 (2016) (added 2026-11-19 R281)
+- **Link:** [NBER page](https://www.nber.org/papers/w22753) (abstract opened via web-fetch).
+- **Design/finding:** Manhattan PM2.5 vs same-day S&P 500 returns; one SD higher PM2.5 lowers same-day returns (abstract: "by 11.9% in our preferred specification"); effect strictly local, attributed to lower risk tolerance. No exchange rates studied.
+- **Relevance:** None for a new item: equities only, no FX test; pollution data not in pipeline. **Status:** VERIFIED (abstract only).

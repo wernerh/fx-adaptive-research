@@ -3373,3 +3373,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) in-sample monthly contemporaneous panel, flow data not in pipeline; (b) annual, no return-prediction test, COFER
   is quarterly with a lag (far below the R090 event floor). 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Sixty-seventh consecutive refill with no item (R214-R280).
+
+### Refill note R281 (not an item; no item added)
+- 2026-11-19 R281 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "barrier",
+  "pollution" or "air quality" entry in research/ or knowledge/ before this run): (a) FX option barrier levels -> EUR/USD spot
+  behaviour (defence / pinning / reversal near barriers); (b) air pollution / investor mood -> EUR/USD. Two standard searches.
+  (a) Opened Jessen-Poulsen QF 2013 doi:10.1080/14697688.2012.723820 (CBS open archive; entry in research/academic_studies.md):
+  barrier-option pricing-model comparison on USD/EUR 2004-2005, no spot-behaviour or trading test. Other hits (arXiv 1511.00848
+  pricing method, UvA slides, SGGW article, GlobalCapital news, mql5 vendor blog, mathfinance fixing-delay notes/slides) not opened; not cited.
+  (b) Opened Heyes-Neidell-Saberian NBER WP 22753 (entry in research/academic_studies.md): Manhattan PM2.5 -> same-day S&P 500
+  returns, equities only. Other hits (MSU thesis, The World news, Frontiers public-health article, CFA digest, Southampton eprint) not opened; not cited.
+- No item added: (a) no spot-direction evidence and barrier-level data is not in the pipeline (vendor/bank feed); (b) no FX test,
+  pollution data not in pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Sixty-eighth consecutive refill with no item (R214-R281).

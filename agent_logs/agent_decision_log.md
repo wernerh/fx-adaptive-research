@@ -2385,3 +2385,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: EPFR fund flows -> later EUR/USD, and central-bank reserve diversification (COFER) -> EUR/USD.
   (a) Li-de Haan-Scholtens OER 2018 is an in-sample monthly contemporaneous panel; (b) Gefang-Hall-Tavlas 2026 models annual reserve shares, not FX returns. No item added (reasons in the R280 refill note). 0 trials. No lead, no notification.
 - **Observation:** sixty-seven consecutive refills (R214-R280) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R281 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item -> refill (protocol step 4).
+- **Choice:** angles not yet logged: FX option barrier levels -> EUR/USD spot, and air pollution / investor mood -> EUR/USD.
+  (a) Jessen-Poulsen QF 2013 is a barrier-option pricing study with no spot-direction test; (b) Heyes-Neidell-Saberian NBER WP 22753 covers equities only. No item added (reasons in the R281 refill note). 0 trials. No lead, no notification.
+- **Observation:** sixty-eight consecutive refills (R214-R281) with no item. The R219 observation (human decision on new data) stands.
