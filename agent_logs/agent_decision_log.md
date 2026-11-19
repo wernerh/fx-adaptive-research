@@ -2463,3 +2463,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: Chinese PMI releases -> intraday EUR/USD, and Asian/foreign equity session returns -> later EUR/USD.
   (a) trade press only, no study; (b) Dunne-Hau-Moore 2005 contemporaneous, Cenedese et al. 2015 monthly cross-section, Phylaktis-Yamani WP = logged JEF paper. No item added (reasons in the R294 refill note). 0 trials. No lead, no notification.
 - **Observation:** eighty-one consecutive refills (R214-R294) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R295 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851, recorded as E051). Protocol step 4 (refill).
+- **Choice:** angles not yet logged: aggregate US corporate earnings surprises -> later USD / EUR/USD, and US earnings-season timing -> EUR/USD.
+  (a) FEDS 2024-049 opened: equity-return paper, no FX forecast; (b) no study found. No item added (reasons in the R295 refill note). 0 trials. No lead, no notification.
+- **Observation:** eighty-two consecutive refills (R214-R295) with no item. The R219 observation (human decision on new data) stands.

@@ -1756,3 +1756,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Relevance:** None for a new item: monthly cross-sectional, no EUR/USD single-pair test, needs 42-country equity data. **Status:** VERIFIED (partly read).
 
 - Also opened R294: Phylaktis & Yamani, Bayes EMG WP-EMG-02-2025 (https://www.bayes.citystgeorges.ac.uk/__data/assets/pdf_file/0009/889236/Phylaktis-and-Ehab-Foreign-Forecasting-06.05.25.pdf): working-paper version of the already-logged JEF 2025 paper (doi:10.1016/j.jempfin.2025.101641); abstract (verbatim) "this profitability is not evident in developed countries data." No new entry.
+
+### Sharpe & Gil de Rubio Cruz (2024), "Predicting Analysts' S&P 500 Earnings Forecast Errors and Stock Market Returns using Macroeconomic Data and Nowcasts", FEDS 2024-049 (added 2026-11-19 R295)
+- **Link:** [Federal Reserve PDF](https://federalreserve.gov/econres/feds/files/2024049pap.pdf), DOI 10.17016/FEDS.2024.049 (opened via web-fetch; ~first half read verbatim, later sections summary-based, UNVERIFIED).
+- **Design/finding:** quarterly 1993-2023; a macro model of S&P 500 earnings (Blue Chip GDP forecasts, lagged broad-dollar change) predicts analysts' forecast errors, and the gap predicts 3-month-ahead stock returns. The broad dollar index is only a regressor; no exchange-rate return is forecast.
+- **Relevance:** None for a new item: equity-return paper, no FX predictive/OOS/cost test, no EUR/USD. **Status:** VERIFIED (partly read).
+
