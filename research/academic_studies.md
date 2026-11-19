@@ -1772,3 +1772,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design/finding:** CTA trend-following on a pooled futures universe (EUR futures one of several FX contracts, 2 bp costs), signals at 20-500 days, rolling OOS from 2013; dropping the 125-day layer improves Sharpe. No EUR/USD-specific or intraday test.
 - **Relevance:** None for a new item: pooled multi-asset daily trend; single-pair trend already tested on dev. **Status:** VERIFIED (partly read).
 
+### Izadyar (4 Aug 2026), "AI and Exchange Rate Predictability", arXiv:2608.00761 (added 2026-11-19 R297)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/2608.00761) (opened via web-fetch; abstract and Sections 1-4 verbatim, later sections summary-based, UNVERIFIED).
+- **Design/finding:** GPT-4o labels 544 Investing.com macro indicators (1996-2024) as strengthening/weakening a currency; AIFX index over 1-60 month lookbacks; monthly long top-2 / short bottom-2 of G10 vs USD. Abstract (verbatim fragment): "generates a Sharpe ratio exceeding 0.7 per annum". Gross only; text (verbatim): "transaction costs are unlikely to significantly erode returns". No train/test split; look-ahead from LLM training data addressed with four checks.
+- **Relevance:** None for a new item: monthly cross-sectional, no EUR/USD single-pair daily/intraday direction or net-of-cost result; LLM release-text pipeline not in repo. **Status:** VERIFIED (partly read).
+
+### Levich & Poti (Dec 2008), "Predictability and 'Good Deals' in Currency Markets", NBER WP 14597 (added 2026-11-19 R297)
+- **Link:** [NBER PDF](https://www.nber.org/papers/w14597.pdf) (opened via web-fetch; Sections 1-5 verbatim, rest summary-based, UNVERIFIED).
+- **Design/finding:** daily and monthly spot vs USD 1971-2006 (AUD, CAD, JPY, GBP, CHF, ECU/EUR); rolling ARMA R-squared vs a no-good-deal bound. Footnote 7 (verbatim): "the empirical results are in-sample". Verbatim: "Excess-predictability is highest in the 1970s and tends to decrease over time, but it is still present in the final part of the sample period" and "With transaction costs of five basis points, the maximal SRs of daily strategies are negative for all currencies." Monthly strategies stay positive at 5 bp.
+- **Relevance:** None for a new item: in-sample, daily predictability does not survive costs, no intraday result (adaptive-markets framing only). **Status:** VERIFIED (partly read).
+

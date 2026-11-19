@@ -2475,3 +2475,10 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: CLS settlement window -> intraday EUR/USD, and volatility-targeted single-pair trend following.
   (a) Hasbrouck-Levich 2019 liquidity metrics only; (b) arXiv:2510.23150 pooled CTA study. No item added (reasons in the R296 refill note). 0 trials. No lead, no notification.
 - **Observation:** eighty-three consecutive refills (R214-R296) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R297 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851, recorded as E051). Protocol step 4 (refill).
+- **Choice:** angles not yet logged: LLM (GPT-4o) forecasts -> EUR/USD, and adaptive-market time-varying predictability of EUR/USD.
+  (a) arXiv:2608.00761 monthly gross cross-sectional only; (b) NBER WP 14597 in-sample, daily edge negative at 5 bp. No item added (reasons in the R297 refill note). 0 trials. No lead, no notification.
+- **Observation:** eighty-four consecutive refills (R214-R297) with no item. The R219 observation (human decision on new data) stands.
+
