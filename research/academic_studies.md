@@ -1653,3 +1653,19 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv 2606.06190](https://arxiv.org/abs/2606.06190) (opened via web-fetch; first ~70% read verbatim, remainder summarised only).
 - **Design/finding:** EUR/USD 1-minute mid 2015-2025 resampled to 1H/4H/1D; three AR(1)-MS-GARCH models (3 regimes each) feeding 27 RidgeCV experts; train to 2021-01-01, quarterly walk-forward test 2021-2024. Verbatim (abstract): volatility forecast vs GARCH(1,1) "DM = +4.7040 (p = 1.28 x 10^-6)"; OOS directional IC "+0.0252 (p = 6.75 x 10^-5)"; positioned "as a risk management tool rather than a standalone alpha engine". No trading P&L or cost treatment found (costs statement from the summarised part, UNVERIFIED).
 - **Relevance:** None for a new item: volatility/regime focus; directional IC tiny with no cost test; test period overlaps the repo's val/OOS blocks; Markov-switching direction line already NONE on dev (E050). **Status:** VERIFIED (partly read).
+
+### Kumar, "On the disappearance of calendar anomalies: have the currency markets become efficient?" (Studies in Economics and Finance 35(3), 441-456, 2018; doi:10.1108/SEF-08-2015-0192) (added 2026-11-19 R275)
+- **Link:** [IDEAS](https://ideas.repec.org/a/eme/sefpps/sef-08-2015-0192.html) (opened via web-fetch; abstract/metadata only, full text paywalled).
+- **Design/finding (paraphrased, abstract):** 20 currency pairs vs USD, Jan 1995 - Dec 2014 split 1995-2004 / 2005-2014; OLS with GARCH(1,1) and Kruskal-Wallis. Day-of-week, January (higher) and turn-of-month (lower) effects found in the first half largely disappear in 2005-2014. No magnitudes in abstract; EUR/USD inclusion UNVERIFIED; no OOS or cost test.
+- **Relevance:** None for a new item: reported decay before the repo's dev block, ~6 Januaries on dev (below the R090 power floor); day-of-week and month-end already tested (E009, E034). **Status:** VERIFIED (abstract only).
+
+### Cho & Rho, "On asymmetric volatility effects in currency markets" (Empirical Economics 62(5), 2149-2177, 2022; doi:10.1007/s00181-021-02091-7) (added 2026-11-19 R275)
+- **Link:** [Springer](https://link.springer.com/10.1007/s00181-021-02091-7) (opened via web-fetch; abstract only).
+- **Design/finding (paraphrased, abstract):** 5-minute bid/ask mid quotes 2004-2017 for the most actively traded currencies (list UNVERIFIED); HAR models with quantile regression and positive/negative realized semivariances. Safe-haven currencies' future volatility is driven by appreciation-side semivariance, others by depreciation-side; effects stronger in high-volatility phases. Volatility forecasting only; no direction, OOS or cost test.
+- **Relevance:** None for a new item: no return-direction claim. **Status:** VERIFIED (abstract only).
+
+### Gkillas, Gupta & Pierdzioch, "Forecasting (downside and upside) realized exchange-rate volatility: Is there a role for realized skewness and kurtosis?" (Physica A 532, 121867, 2019; doi:10.1016/j.physa.2019.121867) (added 2026-11-19 R275)
+- **Link:** [IDEAS](https://ideas.repec.org/a/eee/phsmap/v532y2019ics0378437119310957.html) (opened via web-fetch; abstract only).
+- **Design/finding (paraphrased, abstract):** AUD, CAD, CHF, EUR, GBP, JPY vs USD, intraday-based realized measures, 1 Jul 2003 - 28 Aug 2015; in-sample and out-of-sample one-day-ahead RV forecasts. Mainly realized kurtosis improves OOS RV forecasts, depending on loss function and pair. No magnitudes in abstract; no direction or cost test.
+- **Relevance:** None for a new item: volatility only; realized skewness -> next-day direction already NONE on dev (E044/B50). **Status:** VERIFIED (abstract only).
+

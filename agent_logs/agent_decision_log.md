@@ -2352,3 +2352,12 @@ Why each run chose what it did, and any judgement calls.
   volatility-regime tool with an uncosted IC of 0.025, overlapping E050 (NONE); (b) all dealer-inventory/fix hits already logged.
   No item added (reasons in the R274 refill note). 0 trials. No lead, no notification.
 - **Observation:** sixty-one consecutive refills (R214-R274) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R275 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851 recorded as E051). Step = refill.
+  Angles: turn-of-the-year / January effect and asymmetric volatility -> EUR/USD. (a) Kumar (SEF 2018) reports calendar effects
+  vanishing after 2005 and gives ~6 dev Januaries; (b) Cho-Rho (2022) and Gkillas-Gupta-Pierdzioch (2019) are volatility forecasting
+  only, and realized skew -> direction is already NONE (E044). No item added (reasons in the R275 refill note). 0 trials. No lead,
+  no notification.
+- **Observation:** sixty-two consecutive refills (R214-R275) with no item. The R219 observation (human decision on new data) stands.
+
