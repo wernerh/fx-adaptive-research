@@ -3308,3 +3308,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) effect reported to have disappeared after 2005 and ~6 Januaries on dev, below the R090 power floor; (b) volatility
   forecasting only, and realized skewness -> direction already NONE on dev (E044/B50). pytest 454 passed. 0 trials used (dev 261,
   val 9, total 270). Not a pipeline failure. Sixty-second consecutive refill with no item (R214-R275).
+
+### Refill note R276 (not an item; no item added)
+- 2026-11-19 R276 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "prediction market",
+  "Polymarket" or "Kalshi" entry in research/ or knowledge/ before this run; "yield curve" already covered R226, Chen-Tsang logged):
+  (a) prediction-market probabilities (Polymarket/Kalshi) -> EUR/USD; (b) abnormal FX/futures volume -> next-day EUR/USD. Two standard
+  searches. (a) Hits were vendor blogs/market pages only (sparkco.ai, keyrock, frenzycap, struct.to, allmind.ai, Payden PoV commentary);
+  no academic or backtested FX study among them; none opened; not cited. (b) Hits point to Cespa-Gargano-Riddiough-Sarno RFS 2022
+  (IDEAS rfinst v35 p2386), already logged in research/academic_studies.md; JBS/Cambridge Network press items and Bayes WP-EMG-01-2021
+  not opened; not cited. No new entries in research/academic_studies.md.
+- No item added: (a) no study; prediction-market history starts ~2020-2024, mostly outside dev, and no EUR/USD contract series in the
+  pipeline; (b) no new source; FX volume data (CLS) not in pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Sixty-third consecutive refill with no item (R214-R276).
