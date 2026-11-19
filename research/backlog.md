@@ -3334,3 +3334,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   reserve data would give ~300 dev weeks with no verified mechanism. pytest 454 passed (after reinstalling dev extras; statsmodels
   was missing from this workspace, not a repo fault). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Sixty-fourth consecutive refill with no item (R214-R277).
+
+### Refill note R278 (not an item; no item added)
+- 2026-11-19 R278 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "MOVE index" or
+  "VVIX" entry in research/ or knowledge/ before this run): (a) Treasury implied volatility (ICE BofA MOVE) -> next-day EUR/USD;
+  (b) volatility-of-volatility (VVIX) / FX volatility risk premia -> later EUR/USD returns. Two standard searches. (a) Hits were
+  broker/news commentary only (rankiapro, myfxbook/liquidityfinder, Continuum Economics, StoneX); no study; none opened; not cited.
+  (b) Re-opened Babiak-Baruník arXiv:2101.09738 abstract (already logged R161: cross-sectional option-implied volatility network,
+  not vol-of-vol); opened Ornelas-Mauad BCB WP 455 (entry in research/academic_studies.md: VRP -> 1-3 month index returns,
+  in-sample, post-crisis only, no EUR/USD target). Other hits (Scribd VVIX deck, Frankfurt SSRN-id3183610, Vienna thesis,
+  Cambridge repository) not opened; not cited.
+- No item added: (a) no study, and MOVE / option data are not in the pipeline; (b) monthly in-sample index regressions only, no
+  EUR/USD daily or intraday direction evidence. pytest 454 passed (after reinstalling dev extras). 0 trials used (dev 261, val 9,
+  total 270). Not a pipeline failure. Sixty-fifth consecutive refill with no item (R214-R278).

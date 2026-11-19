@@ -2367,3 +2367,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: FX settlement-holiday / CLS settlement risk -> EUR/USD, and weekly Fed reserve-balance changes -> next-week EUR/USD.
   (a) IMF WP/2026/156 is CEE-only in-sample DiD with no EUR/USD direction; (b) data series and commentary only. No item added (reasons in the R277 refill note). 0 trials. No lead, no notification.
 - **Observation:** sixty-four consecutive refills (R214-R277) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R278 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item -> refill (protocol step 4).
+- **Choice:** angles not yet logged: MOVE (Treasury implied vol) -> next-day EUR/USD, and vol-of-vol / FX volatility risk premia -> later EUR/USD.
+  (a) commentary only; (b) BCB WP 455 is in-sample monthly index regressions with no EUR/USD target. No item added (reasons in the R278 refill note). 0 trials. No lead, no notification.
+- **Observation:** sixty-five consecutive refills (R214-R278) with no item. The R219 observation (human decision on new data) stands.
