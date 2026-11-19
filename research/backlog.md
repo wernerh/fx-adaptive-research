@@ -3400,3 +3400,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no EUR/USD tradable-forecast evidence and credit-spread data not in pipeline; (b) already-logged monthly
   evidence only. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Sixty-ninth consecutive refill with no item (R214-R282).
+
+### Refill note R283 (not an item; no item added)
+- 2026-11-19 R283 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no Fed "blackout"
+  or US-German 2-year spread entry in research/ or knowledge/ before this run; ECB quiet period was R265): (a) FOMC blackout
+  period -> USD / EUR/USD drift; (b) daily change in the US-German 2-year yield spread -> next-day EUR/USD. Two standard searches.
+  (a) Opened the Fed IFDP note of 22 Sep 2017 (entry in research/academic_studies.md): dollar index, same-day sensitivity on FOMC
+  days, no drift or blackout test. Karnaukh and Borisenko-Pozdeev hits already logged. Other hits (AEA/AFA preliminary pages,
+  Boston Fed PPB 13-7, FRBSF WP 2015-18, Macrosynergy commentary, RePEc pages) not opened; not cited.
+  (b) Hits were FXStreet/FXCM/Investing.com commentary and TradingView scripts only (contemporaneous co-movement claims); none
+  opened, not cited; daily German/US 2-year yields are also not in the pipeline.
+- No item added: (a) no verified pre-FOMC blackout drift result beyond already-logged Karnaukh work; (b) no study.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventieth consecutive refill with no item (R214-R283).
