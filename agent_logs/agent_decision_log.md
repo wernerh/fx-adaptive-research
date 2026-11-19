@@ -2482,3 +2482,9 @@ Why each run chose what it did, and any judgement calls.
   (a) arXiv:2608.00761 monthly gross cross-sectional only; (b) NBER WP 14597 in-sample, daily edge negative at 5 bp. No item added (reasons in the R297 refill note). 0 trials. No lead, no notification.
 - **Observation:** eighty-four consecutive refills (R214-R297) with no item. The R219 observation (human decision on new data) stands.
 
+
+## 2026-11-19 R298 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) economic surprise index -> EUR/USD and (b) real-rate / Taylor-rule differentials -> EUR/USD.
+  (a) only already-logged papers and commentary; (b) Molodtsova-Papell 2011 "Phoenix" opened: quarterly MSPE predictability, no trading/cost test. No item added (reasons in the R298 refill note). 0 trials. No lead, no notification.
+- **Observation:** eighty-five consecutive refills (R214-R298) with no item. The R219 observation (human decision on new data) stands.
