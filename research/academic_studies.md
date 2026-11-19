@@ -1744,3 +1744,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [WU research portal](https://research.wu.ac.at/de/publications/forecasting-errors-directional-accuracy-and-profitability-of-curr-3/) (opened via web-fetch; abstract and metadata only; accepted-manuscript PDF fetch failed, body UNVERIFIED).
 - **Design/finding (abstract, verbatim):** out-of-sample EUR/USD forecasts "based on multivariate macroeconomic models and forecast combinations"; "forecast combinations, in particular those based on principal components of forecasts, help to improve over benchmark trading strategies, although the excess return per unit of deviation is limited." Data frequency, sample, model list and cost treatment not stated in the part read.
 - **Relevance:** None for a new item: macro-model inputs not in pipeline, frequency/costs unverified, authors report limited risk-adjusted gain. **Status:** abstract only.
+
+### Dunne, Hau & Moore (Nov 2005), "International Order Flows: Explaining Equity and Exchange Rate Returns" (added 2026-11-19 R294)
+- **Link:** [Bank of Canada conference PDF](https://www.bankofcanada.ca/wp-content/uploads/2010/08/hau_dunne_moore.pdf) (opened via web-fetch; truncated, later sections summary-based).
+- **Design/finding:** daily 1999-2003, S&P100 and CAC40 vs USD/EUR; EBS FX order flow (1999 only) as instrument. Abstract (verbatim): "Almost 60 percent of the daily returns in the S&P100 index is explained jointly by exchange rate returns and aggregate order flows." Same-day regressions only; no lagged/predictive, OOS or cost test.
+- **Relevance:** None for a new item: contemporaneous, not a direction forecast. **Status:** VERIFIED (partly read).
+
+### Cenedese, Payne, Sarno & Valente (2015), "What do stock markets tell us about exchange rates?", Bank of England Staff WP 537 (added 2026-11-19 R294)
+- **Link:** [BoE PDF](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2015/what-do-stock-markets-tell-us-about-exchange-rates.pdf) (opened via web-fetch; truncated, net-of-cost figures summary-based, UNVERIFIED).
+- **Design/finding:** monthly 1983-2011, 42 countries vs USD, cross-sectional portfolio sorts on equity-return predictors; euro-area members as separate entries, no single EUR/USD pair. Abstract (verbatim): "exchange rate movements are in fact unrelated to differentials in country-level equity returns."
+- **Relevance:** None for a new item: monthly cross-sectional, no EUR/USD single-pair test, needs 42-country equity data. **Status:** VERIFIED (partly read).
+
+- Also opened R294: Phylaktis & Yamani, Bayes EMG WP-EMG-02-2025 (https://www.bayes.citystgeorges.ac.uk/__data/assets/pdf_file/0009/889236/Phylaktis-and-Ehab-Foreign-Forecasting-06.05.25.pdf): working-paper version of the already-logged JEF 2025 paper (doi:10.1016/j.jempfin.2025.101641); abstract (verbatim) "this profitability is not evident in developed countries data." No new entry.
