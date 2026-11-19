@@ -3529,3 +3529,19 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   control, no lagged EUR/USD channel. 0 trials.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventy-eighth consecutive refill with no item (R214-R291).
+
+### Refill note R292 (not an item; no item added)
+- 2026-11-19 R292 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "World Economic
+  Outlook" or "excess liquidity" entry in research/ or knowledge/ before this run; TLTRO mentioned once in passing): (a) IMF World
+  Economic Outlook releases -> later EUR/USD drift; (b) euro-area excess liquidity / TLTRO III repayment dates -> EUR/USD. Two
+  standard searches.
+  (a) Hits were IMF working papers on other topics (natural disasters and exchange rates, high-frequency monetary policy shocks,
+  taper tantrum) and an IMF press-briefing transcript; none studies WEO releases and FX. Not opened, not cited.
+  (b) Opened ECB Economic Bulletin Focus, Issue 8/2024, "TLTRO III phase-out and bank lending conditions"
+  (https://www.ecb.europa.eu/press/economic-bulletin/focus/2025/html/ecb.ebbox202408_07~220d11edeb.en.html; body read only
+  via a fetch summary, authorship UNVERIFIED): bank funding replacement and lending conditions, Sept 2022 - 2024, no exchange-rate
+  or FX return test. ECB Occasional Paper 355 seen in results (not opened, not cited).
+- No item added: (a) no study, and WEO releases are ~2-4 events/yr (below the R090 power floor); (b) no EUR/USD evidence, and
+  repayment dates are few and clustered in 2022-2024 (val/OOS only, nothing on dev). 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventy-ninth consecutive refill with no item (R214-R292).

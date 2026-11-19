@@ -2445,3 +2445,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: US bond-market-only holidays (Columbus/Veterans Day) -> EUR/USD, and Riksbank decisions -> EUR/USD spillover.
   (a) news pages only, no study; (b) Riksbank WP 456 opened: SEK crosses only, EUR/USD a control. No item added (reasons in the R291 refill note). 0 trials. No lead, no notification.
 - **Observation:** seventy-eight consecutive refills (R214-R291) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R292 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851, recorded as E051). Protocol step 4 (refill).
+- **Choice:** angles not yet logged: IMF WEO releases -> EUR/USD, and euro-area excess liquidity / TLTRO III repayments -> EUR/USD.
+  (a) no study among hits; (b) ECB EB Focus 8/2024 opened: lending conditions only, no FX. No item added (reasons in the R292 refill note). 0 trials. No lead, no notification.
+- **Observation:** seventy-nine consecutive refills (R214-R292) with no item. The R219 observation (human decision on new data) stands.
