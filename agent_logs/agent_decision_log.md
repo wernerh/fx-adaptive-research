@@ -2361,3 +2361,9 @@ Why each run chose what it did, and any judgement calls.
   no notification.
 - **Observation:** sixty-two consecutive refills (R214-R275) with no item. The R219 observation (human decision on new data) stands.
 
+
+## 2026-11-19 R277 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item -> refill (protocol step 4).
+- **Choice:** angles not yet logged: FX settlement-holiday / CLS settlement risk -> EUR/USD, and weekly Fed reserve-balance changes -> next-week EUR/USD.
+  (a) IMF WP/2026/156 is CEE-only in-sample DiD with no EUR/USD direction; (b) data series and commentary only. No item added (reasons in the R277 refill note). 0 trials. No lead, no notification.
+- **Observation:** sixty-four consecutive refills (R214-R277) with no item. The R219 observation (human decision on new data) stands.

@@ -3320,3 +3320,17 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no study; prediction-market history starts ~2020-2024, mostly outside dev, and no EUR/USD contract series in the
   pipeline; (b) no new source; FX volume data (CLS) not in pipeline. pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Sixty-third consecutive refill with no item (R214-R276).
+
+### Refill note R277 (not an item; no item added)
+- 2026-11-19 R277 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "settlement risk",
+  "bank reserves" or "H.4.1"-reserves entry in research/ or knowledge/ before this run; IMM/futures roll already covered R137,
+  sovereign ratings R169): (a) FX settlement-holiday / value-date and CLS settlement-risk effects -> EUR/USD; (b) weekly Fed H.4.1
+  reserve-balance changes -> next-week EUR/USD. Two standard searches. (a) Opened Lee-Ranaldo-Tsuruga IMF WP/2026/156 (landing page
+  and markdown rendering of the PDF): CEE currencies only (HUF treated, 2015-2016), daily excess returns ~10 bp lower after CLS
+  adoption, US-holiday test on 4 CEE/USD pairs, in-sample DiD with one treated unit, no EUR/USD direction, no OOS or cost test.
+  Interactive Brokers / thismatter / gojust pages are broker explainers; not cited. (b) Hits were FRED/ALFRED data series and
+  FXStreet/TradingView commentary only; no study; none opened; not cited. Entry in research/academic_studies.md.
+- No item added: (a) no EUR/USD direction evidence (EUR/USD already CLS-settled throughout the data); (b) no study, and weekly
+  reserve data would give ~300 dev weeks with no verified mechanism. pytest 454 passed (after reinstalling dev extras; statsmodels
+  was missing from this workspace, not a repo fault). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Sixty-fourth consecutive refill with no item (R214-R277).
