@@ -1762,3 +1762,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design/finding:** quarterly 1993-2023; a macro model of S&P 500 earnings (Blue Chip GDP forecasts, lagged broad-dollar change) predicts analysts' forecast errors, and the gap predicts 3-month-ahead stock returns. The broad dollar index is only a regressor; no exchange-rate return is forecast.
 - **Relevance:** None for a new item: equity-return paper, no FX predictive/OOS/cost test, no EUR/USD. **Status:** VERIFIED (partly read).
 
+### Hasbrouck & Levich, "FX Liquidity and Market Metrics: New Results Using CLS Bank Settlement Data" (NYU Stern, 30 Sep 2019) (added 2026-11-19 R296)
+- **Link:** [PDF](https://pages.stern.nyu.edu/jhasbrou/Research/Hasbrouck-Levich%20v25.pdf) (opened via web-fetch; first part read verbatim, rest summary-based, UNVERIFIED).
+- **Design/finding:** CLS settlement instructions for all of April 2010, 2013 and 2016 (ms timestamps), Olsen 10-second quotes, 13 pairs incl. EUR/USD; price impact falls 2010->2013 and rises 2013->2016; spreads, settlement sizes and price clustering decline (algorithmic trading). No return-predictability, OOS or cost test. Cites Ranaldo-Somogyi (2018) CLS hourly net flow -> spot (not fetched, UNVERIFIED).
+- **Relevance:** None for a new item: liquidity metrics only; CLS flow data not in the pipeline. **Status:** VERIFIED (partly read).
+
+### Etienne, Ohana, Benhamou, Guez, Setrouk & Jacquot, "Revisiting the Structure of Trend Premia: When Diversification Hides Redundancy" (arXiv:2510.23150v2, Oct 2025) (added 2026-11-19 R296)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/2510.23150) (opened via web-fetch; partly verbatim, rest summary-based, UNVERIFIED).
+- **Design/finding:** CTA trend-following on a pooled futures universe (EUR futures one of several FX contracts, 2 bp costs), signals at 20-500 days, rolling OOS from 2013; dropping the 125-day layer improves Sharpe. No EUR/USD-specific or intraday test.
+- **Relevance:** None for a new item: pooled multi-asset daily trend; single-pair trend already tested on dev. **Status:** VERIFIED (partly read).
+
