@@ -3427,3 +3427,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no verified positioning -> EUR/USD direction evidence and no data in pipeline; (b) no study.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventy-first consecutive refill with no item (R214-R284).
+
+### Refill note R285 (not an item; no item added)
+- 2026-11-19 R285 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Keloharju",
+  "return seasonalit" or "Barroso" entry in research/ or knowledge/ before this run): (a) same-calendar-month return seasonality
+  -> EUR/USD; (b) volatility-managed currency momentum -> EUR/USD. Two standard searches.
+  (a) Opened Keloharju-Linnainmaa-Nyberg NBER WP 20815 (entry in research/academic_studies.md): stocks, commodities, country
+  indices only, no currencies. Other hits (Bauer/AQR copies of the same paper, RePEc, vLex, SUFE, Nasdaq PDF) not opened; not cited.
+  (b) Opened Barroso-Menichetti-Reichenecker 2018 draft (entry in research/academic_studies.md): monthly cross-sectional overlay,
+  no EUR/USD single-pair result. Other hits (Quantpedia, ADU/CORE/BIS WP 366/UCP/Reschenhofer PDFs) not opened; not cited
+  (Menkhoff et al. currency momentum already in academic_studies.md).
+- No item added: (a) no FX evidence; (b) cross-sectional monthly design, no single-pair evidence, data not in pipeline.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Seventy-second consecutive refill with no item (R214-R285).

@@ -1719,3 +1719,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Kobe DP 1909 PDF](https://www.econ.kobe-u.ac.jp/wp/wp-content/uploads/2023/06/1909.pdf); same study as [CityU GRU WP 2019-026 PDF](https://www.cb.cityu.edu.hk/ef/doc/GRU/WPS/GRU%232019-026%20Iwatsubo.pdf) (both opened via web-fetch; partly read, end sections summary-based).
 - **Design/finding:** internet survey of 1,000 Japanese adults (Feb-Mar 2018, for the Financial Futures Association of Japan), 962 obs; in-sample OLS of self-reported 2017 trader profit on demographics, strategy and financial literacy (age negative, "no specific strategy" negative, self-reported FX skills positive). No exchange-rate data, no return-prediction test.
 - **Relevance:** None for a new item: trader-performance survey, no positioning -> EUR/USD test, no out-of-sample or cost test. **Status:** VERIFIED (partly read).
+
+### Keloharju, Linnainmaa & Nyberg, "Common Factors in Return Seasonalities", NBER WP 20815 (Dec 2014) (added 2026-11-19 R285)
+- **Link:** [NBER WP 20815 PDF](https://www.nber.org/papers/w20815.pdf) (opened via web-fetch; first part read verbatim, rest summary-based).
+- **Design/finding:** same-calendar-month return seasonality in US stocks (CRSP 1963-2011, long-short ~13%/yr), anomaly portfolios, 24 commodity futures and 15 MSCI country indices (1970-2011, summary). No currencies.
+- **Relevance:** None for a new item: no FX or EUR/USD test; a monthly same-calendar-month rule would give ~3 dev observations per month cell. **Status:** VERIFIED (partly read).
+
+### Barroso, Menichetti & Reichenecker, "Hedging with an edge: parametric currency overlay", first draft (9 Jan 2018) (added 2026-11-19 R285)
+- **Link:** [CFR Cologne colloquium PDF](https://www.cfr-cologne.de/download/kolloquium/2018/BarrosoMenichettiReichenecker.pdf) (opened via web-fetch; partly read, rest summary-based).
+- **Design/finding:** monthly cross-sectional parametric currency overlay for a global equity investor, 10 currencies, 1976-2016; OOS 1986-2016 with forward bid-ask costs; characteristics momentum, forward discount, long-term reversal, autocorrelation; Jensen's alpha 110-129 bps, Sharpe gain ~38% (abstract); volatility characteristics not significant.
+- **Relevance:** None for a new item: cross-sectional monthly overlay, no EUR/USD single-pair result, carry/forward data not in pipeline, momentum-on-lags already tested on dev. **Status:** VERIFIED (partly read).

@@ -2409,3 +2409,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: Japanese retail FX margin-trader positioning -> EUR/USD, and the Eurosystem weekly financial statement -> EUR/USD.
   (a) Hayo-Iwatsubo 2019 is a trader-profitability survey, no return-prediction test; (b) statements only, no study. No item added (reasons in the R284 refill note). 0 trials. No lead, no notification.
 - **Observation:** seventy-one consecutive refills (R214-R284) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R285 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item -> refill (protocol step 4).
+- **Choice:** angles not yet logged: same-calendar-month return seasonality -> EUR/USD, and volatility-managed currency momentum -> EUR/USD.
+  (a) Keloharju et al. 2014 has no currencies; (b) Barroso et al. 2018 is a monthly cross-sectional overlay with no EUR/USD result. No item added (reasons in the R285 refill note). 0 trials. No lead, no notification.
+- **Observation:** seventy-two consecutive refills (R214-R285) with no item. The R219 observation (human decision on new data) stands.
