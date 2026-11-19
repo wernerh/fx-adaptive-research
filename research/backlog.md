@@ -3545,3 +3545,19 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   repayment dates are few and clustered in 2022-2024 (val/OOS only, nothing on dev). 0 trials.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
   Not a pipeline failure. Seventy-ninth consecutive refill with no item (R214-R292).
+
+### Refill note R293 (not an item; no item added)
+- 2026-11-19 R293 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Good Friday",
+  "German election" or "French election" entry in research/ or knowledge/ before this run; "Easter" absent): (a) European-only
+  holidays with the US open (Good Friday, Easter Monday, TARGET2 closing days) -> EUR/USD drift or range; (b) German / French
+  national elections -> EUR/USD. Two standard searches.
+  (a) Hits were trade-press pages (FXStreet, investinglive, investing.com, moneyshow; not cited as evidence) and a QuantRocket
+  blog post opened via fetch summary: Stanley (2019), "Exploiting Business Day Patterns in FX Markets"
+  (https://quantrocket.com/blog/business-day-fx-patterns): not a holiday study but a replication of the Breedon-Ranaldo home-hours
+  rule on EUR/USD (short 03:00-11:00 NY, long 11:00-16:00 NY), IB data from 2005, in-sample only, no t-stats or trade counts,
+  CAGR/Sharpe claims UNVERIFIED (charts not readable). That family is already tested and closed on val (E017, B14).
+  (b) Hits were news pages (FXStreet, marketnews) and NBER w33193 (2024 US election, already logged in the backlog); no EUR/USD election study.
+- No item added: (a) no verified holiday evidence and ~2-4 events/yr (below the R090 power floor); the only study-like hit is the
+  already-closed home-hours family; (b) a handful of events per decade, no study. 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Eightieth consecutive refill with no item (R214-R293).

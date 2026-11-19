@@ -2451,3 +2451,9 @@ Why each run chose what it did, and any judgement calls.
 - **Choice:** angles not yet logged: IMF WEO releases -> EUR/USD, and euro-area excess liquidity / TLTRO III repayments -> EUR/USD.
   (a) no study among hits; (b) ECB EB Focus 8/2024 opened: lending conditions only, no FX. No item added (reasons in the R292 refill note). 0 trials. No lead, no notification.
 - **Observation:** seventy-nine consecutive refills (R214-R292) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-19 R293 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress (last run 43840273851, recorded as E051). Protocol step 4 (refill).
+- **Choice:** angles not yet logged: European-only holidays with the US open (Good Friday / Easter Monday) -> EUR/USD, and German/French elections -> EUR/USD.
+  (a) only trade press plus a QuantRocket blog that replicates the already-closed home-hours family; (b) news pages only. No item added (reasons in the R293 refill note). 0 trials. No lead, no notification.
+- **Observation:** eighty consecutive refills (R214-R293) with no item. The R219 observation (human decision on new data) stands.
