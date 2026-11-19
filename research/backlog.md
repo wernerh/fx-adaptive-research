@@ -3347,3 +3347,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no study, and MOVE / option data are not in the pipeline; (b) monthly in-sample index regressions only, no
   EUR/USD daily or intraday direction evidence. pytest 454 passed (after reinstalling dev extras). 0 trials used (dev 261, val 9,
   total 270). Not a pipeline failure. Sixty-fifth consecutive refill with no item (R214-R278).
+
+### Refill note R279 (not an item; no item added)
+- 2026-11-19 R279 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "stock-bond",
+  "equity-bond correlation" or "dollar smile" entry in research/ or knowledge/ before this run): (a) stock-bond correlation regime
+  -> EUR/USD direction; (b) "dollar smile" (USD direction conditional on US equity drawdowns / risk-off). Two standard searches.
+  (a) Opened Phylaktis-Yamani JEF 2025 doi:10.1016/j.jempfin.2025.101641 abstract (entry in research/academic_studies.md): OOS
+  stock/bond returns -> FX, profitable only for emerging markets, none in developed-country data; not a correlation-regime study.
+  Other hits (Bayes WP-EMG-03-2022, City thesis, State Street stock-bond correlation paper, ISEG REM WP 0366, etf.com, FXStreet)
+  not opened; not cited. (b) Hits were asset-manager / broker commentary only (J.P. Morgan AM, T. Rowe Price, rankiapro) plus
+  Daniel-Hodrick-Lu carry-trade paper (not opened; not cited); no empirical test of the dollar smile; none opened.
+- No item added: (a) the only opened study is negative for developed currencies and the equity/bond-return -> FX family is
+  already NONE (B35/E037); (b) no study. pytest passed (see run log). 0 trials used (dev 261, val 9, total 270).
+  Not a pipeline failure. Sixty-sixth consecutive refill with no item (R214-R279).
