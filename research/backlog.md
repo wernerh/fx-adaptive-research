@@ -3832,3 +3832,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R314 (not an item; no item added)
+- 2026-11-20 R314 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: daylight
+  saving (R114, R158), Halloween/Sell in May (R135), PBoC fixing (R128), copper/Bund (R160), breakeven inflation (~line 2254),
+  cointegration (~line 2686), ECB accounts (~line 2086), geopolitical risk (R164, R233), equity-hedging flows (B30/E034) all covered;
+  "earnings season" had no entry. Angles: (a) US aggregate earnings-announcement season -> USD / EUR/USD; (b) overnight (Asian-session)
+  S&P 500 futures return -> EUR/USD European session. Two standard searches and one extended search.
+  (a) Hits were equity-only studies (Guo "Earnings extrapolation", Chang-Hartzmark-Solomon-Soltes "Earnings seasonality"; no FX
+  result) and news/commentary on the dollar during earnings season (Yahoo Finance, Marketplace, FXStreet, Investing.com, Gulf News);
+  no FX study, nothing opened, not cited. Study hits for "aggregate earnings ... exchange rate" were already logged (Bae-Da-Zurita
+  forex.pdf ~line 443 of research/academic_studies.md, Riddiough-Zhang R194, FEDS 2024-049). (b) Hits were broker/news pages
+  (FXStreet, Forex.com, City Index; not evidence, not opened) and NY Fed SR917 (already logged R145).
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

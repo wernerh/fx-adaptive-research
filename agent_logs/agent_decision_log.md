@@ -2591,3 +2591,10 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** opened Kilic FEDS 2025-089r1 and MPRA 57673; neither supports a pre-registrable EUR/USD item. No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
 - **Observation:** R310-R313 refills added nothing; the angle space checked by keyword is largely exhausted. A human may want to re-prioritise (e.g. decide on parked OOS-only items) rather than continue hourly refills.
 - **Housekeeping:** local main holds a stale diverged history (R243-R252, never on origin); left untouched, worked on branch `work-r313` from origin/main and pushed to origin main.
+
+## 2026-11-20 R314 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded as E052; no run queued or in progress; no `ready` backlog item.
+- **Choice:** backlog refill (protocol priority 4). Angles: US earnings-announcement season; overnight S&P 500 futures -> EUR/USD European session.
+- **Action:** two standard + one extended search; no new FX study found, all study hits already logged. No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
+- **Observation:** fifth consecutive empty refill (R310-R314). The keyword-checked angle space is exhausted; hourly refills are now low value. A human decision (e.g. on parked OOS-only items or new data sources) would unblock more than further refills.
+- **Housekeeping:** stale diverged local main (R243-R252, never on origin) saved as local branch `backup-local-main-stale`; main reset to origin/main.
