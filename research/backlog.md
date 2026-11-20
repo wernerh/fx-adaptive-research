@@ -3656,3 +3656,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (5 on dev), far below the R090 power floor. 0 trials.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Eighty-seventh consecutive refill with no item (R214-R300).
+
+### Refill note R301 (not an item; no item added)
+- 2026-11-20 R301 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (keyword checks first:
+  "consensus forecast" and "insider"/"short interest" had no entry; ETF flows already logged): (a) consensus/survey FX forecasts as a
+  trading signal -> EUR/USD; (b) currency-ETF (FXE) flows -> EUR/USD. Two standard searches.
+  (a) Opened EconPapers abstract of Kwas-Beckmann-Rubaszek IJF 2024 doi:10.1016/j.ijforecast.2023.02.007: Consensus Economics
+  survey signals add up to 2 pp/yr over momentum/carry/value portfolios; EUR/USD, frequency, OOS and costs UNVERIFIED (abstract
+  only; IfW page fetch refused). Entry in research/academic_studies.md. (b) Hits were advisor/trade press (WealthManagement,
+  FA-Mag, WisdomTree blog) and spam pages; no study; not opened; ETF angle already logged.
+- No item added: (a) monthly survey data not in the pipeline and ~72 dev months, below the R090 power floor; (b) no evidence. 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Eighty-eighth consecutive refill with no item (R214-R301).
