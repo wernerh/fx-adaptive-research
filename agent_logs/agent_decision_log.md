@@ -2613,3 +2613,9 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** two standard searches (Japanese retail FX margin flows -> later FX returns; USD/JPY leading EUR/USD intraday). Two studies opened and logged (BoJ Review 2018-E-3 abstract; Hayo-Iwatsubo 2022); neither tests EUR/USD direction prediction. Lead-lag hits already logged. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local clone had a stale diverged main again; worked on local branch `work` from origin/main and pushed to origin/main (no remote rewrite).
+
+## 2026-11-20 R318 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (Frankfurt open / pre-London hour EUR/USD drift; August/summer seasonality). Hits already logged (Krohn-Mueller-Whelan family) or broker/news pages; nothing new opened or cited. No item added. 0 trials. No lead, no notification.
+- pytest 464 passed.
+- **Note:** the refill line has now produced no item in R310-R318 (nine passes); the evidence base for new lagged EUR/USD direction hypotheses on in-pipeline data looks saturated.

@@ -3885,3 +3885,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   are general FX papers by title, not opened, not cited. No new USD/JPY -> EUR/USD lead study.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R318 (not an item; no item added)
+- 2026-11-20 R318 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Frankfurt open"
+  / "pre-London" (1 passing mention), "August"/summer seasonality (no backlog entry); most other candidate angles checked this run (FOMC
+  minutes R239/R302, gotobi, G-SIB, Golden Week, CDS, OPEC, TARGET2, XGBoost R~1871, FXE/UUP ETF flows R~3663, Kalman, cross-currency basis,
+  VIX, TGA) already covered. Angles: (a) Frankfurt open / pre-London hour (07:00-08:00 London) EUR/USD drift; (b) August / summer
+  liquidity seasonality in EUR/USD. Two standard searches.
+  (a) Hits were the Krohn-Mueller-Whelan "around the clock" family (BoC SWP 2021-48, AEA drafts, CEPR DP14462, BIS slides; already logged)
+  and a JFQA supplement not opened; no new study. The hour itself was already scanned on dev in E009 (exploratory, no candidate there).
+  (b) Hits were broker/news seasonality pages only (Forex.com, Investing.com, EarnForex, FXStreet SocGen volatility note); not evidence,
+  not opened, not cited. A month-of-year effect also has only 6 Augusts on dev (below the R090 power floor).
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
