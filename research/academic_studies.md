@@ -1932,3 +1932,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [AEA conference page](https://aeaweb.org/conference/2019/preliminary/paper/bQA4KdAR) (opened via web-fetch; ~40k of 92k characters verbatim, rest summary-based).
 - **Design/finding:** daily ECB reference rates 1999 - May 2018 for CZK/EUR, PLN/EUR, HUF/EUR and USD/EUR; DCC correlations (contemporaneous) and Diebold-Yilmaz volatility spillovers; HUF leads volatility in distress periods. No return-direction forecast, OOS or cost test.
 - **Relevance:** None (volatility transmission, not EUR/USD direction). **Status:** VERIFIED (partly summary-read).
+
+### Hashimoto & Ito, "Effects of Japanese Macroeconomic Announcements on the Dollar/Yen Exchange Rate: High-Resolution Picture", NBER WP 15020 (May 2009), published JJIE 24(3), 334-354 (2010) (added 2026-11-20 R321)
+- **Link:** [NBER](https://www.nber.org/papers/w15020), DOI 10.3386/w15020 (abstract page opened via web-fetch; full PDF not read).
+- **Design/finding:** EBS intraday quotes and deals, USD/JPY only; "Market impacts of Japanese macroeconomic announcements within minutes on the dollar/yen foreign exchange are analyzed"; Tankan, GDP, industrial production (preliminary), PPI among influential releases; announcements raise deals and volatility immediately after release. Contemporaneous/volatility focus; no directional drift, OOS or cost test on the abstract page; sample period UNVERIFIED.
+- **Relevance:** None for an item (USD/JPY, no EUR/USD direction test). **Status:** VERIFIED (abstract only).
+
+### Kamada, "Central bank's surprise policy and its potential to change people's deflationary mindset: evidence from the yen-dollar exchange market", Keio-IES DP2025-015 (14 Jul 2025) (added 2026-11-20 R321)
+- **Link:** [Keio-IES PDF](https://ies.keio.ac.jp/upload/DP2025-015_EN.pdf) (opened via web-fetch; first part verbatim, rest summary-based).
+- **Design/finding:** daily yen-dollar candlesticks (Nikkei NEEDS) 5 Jun 1984 - 15 May 2024 used to build a same-day BoJ surprise measure; outcomes are policy classification and the Phillips curve. No EUR/USD (no London/EU data), no direction forecast, OOS or cost test.
+- **Relevance:** None. **Status:** VERIFIED (partly summary-read).
