@@ -2538,3 +2538,9 @@ Why each run chose what it did, and any judgement calls.
   (a) already-logged studies only; (b) Bulut 2018 abstract opened (monthly, no cost test). No item added (reasons in the R306 refill note). 0 trials. No lead, no notification.
 - **Observation:** ninety-three consecutive refills (R214-R306) with no item. The R219 observation (human decision on new data) stands.
 - **Housekeeping:** stale local `main` (unpushed R243-R252 commits) saved as local branch `stale-local-main`, local `main` reset to origin/main. pytest initially failed 3 tests on a missing `statsmodels` in this workspace; `pip install -e ".[dev]"` fixed it (environment only, no code change).
+
+## 2026-11-20 R307 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on lagged daily Bitcoin returns -> next-day EUR/USD. Feng & Zhang (JIMF 2023) opened: EUR-specific out-of-sample result (daily DoC 51.79%, CW 2.0081), positive sign, gross only. Added B64 (dev signal test, ready) and B65 (val confirmation, blocked). 0 trials now. No lead, no notification.
+- **Why B64 despite lesson R095:** the prior is a published EUR row out-of-sample, not another currency; sign fixed before data. Power note recorded: the published effect is likely below our dev detection limit.
+- **Housekeeping:** local `main` had diverged again (unpushed R243-R252 duplicates); saved as local branch `stale-local-main-backup`, reset to origin/main. pytest 454 passed.
