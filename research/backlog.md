@@ -3783,3 +3783,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - Added B64 (ready) and B65 (blocked). Weekend-only (Monday) variant not added: a subset of B64, a second trial only if B64 earns it.
   pytest 454 passed. 0 trials used now (dev 261, val 9, total 270; B64 counts 1 dev trial when it runs). Not a pipeline failure.
   Ends the run of refills with no item (R214-R306).
+
+### Refill note R310 (not an item; no item added)
+- 2026-11-20 R310 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Angles (keyword checks first:
+  "Ethereum" and "1906.07834" had no entry; "bank stock" angle not logged): (a) lagged Ethereum / crypto-market returns -> next-day
+  EUR/USD; (b) euro-area bank stock returns -> next-day EUR/USD. Two standard searches.
+  (a) Opened Drożdż et al. Future Internet 2019 (arXiv:1906.07834): descriptive multifractal cross-correlation of BTC/ETH vs EUR/USD,
+  "do not show any noticeable relationships", no forecast/OOS/cost test. Other hits already logged (Feng-Zhang R307) or not opened.
+  Entry in research/academic_studies.md. (b) Hits were bank-stock direction ML papers, ECB FSR article, arXiv EUR/USD text-mining
+  papers already logged, and FXStreet news; no EUR/USD predictive study; not opened.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; an Ethereum variant would be a second trial on the
+  crypto-lag line after B64 NONE (lesson R081, one variable at a time, multiple-testing cost). 0 trials.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

@@ -2563,3 +2563,10 @@ Why each run chose what it did, and any judgement calls.
   neither CI lower > 0 nor p < 0.05). No rule or threshold changed; the Tue-Fri descriptive split (t p 0.0462) is not tested.
 - **Action:** E052 recorded; B64 `done`, B65 closed unearned (0 trials). Trials dev 262, val 9, total 271. pytest 464 passed. No lead, no notification.
 - **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).
+
+## 2026-11-20 R310 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded as E052; no run queued or in progress; no `ready` backlog item.
+- **Choice:** backlog refill (protocol priority 4). Angles: lagged Ethereum/crypto-market returns and euro-area bank stock returns -> next-day EUR/USD (no prior entries).
+- **Action:** opened Drożdż et al. 2019 (arXiv:1906.07834; descriptive, no prediction). No item added (no verified EUR/USD OOS cost evidence; Ethereum would re-test the B64 NONE line). 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local workspace main had 50 stale unpushed commits (old R214-R252 history) diverged from origin; left untouched, this run worked on a branch from origin/main and pushed to origin main.
+- **Next run:** refill again unless a ready item appears.

@@ -1847,3 +1847,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IRIS Sapienza PDF](https://iris.uniroma1.it/retrieve/1d32ef71-fae2-444c-a49b-40d528a423d4/Ciganovic_Forecasting_2023.pdf) (opened via web-fetch; ~40k of 85k characters verbatim, rest summary-based).
 - **Design/finding:** 10 cryptocurrencies, daily 2018-2022, LASSO-VAR with social-media sentiment, Google Trends, volume; "social media sentiment does not Granger-cause cryptocurrencies returns". No fiat FX variable.
 - **Relevance:** None. **Status:** VERIFIED (partly summary-read).
+
+### Drożdż, Minati, Oświęcimka, Stanuszek & Wątorek, "Signatures of crypto-currency market decoupling from the Forex", Future Internet 11(7) (2019) 154, doi:10.3390/fi11070154 (added 2026-11-20 R310)
+- **Link:** [arXiv:1906.07834](https://arxiv.org/abs/1906.07834) (abstract and PDF opened via web-fetch; ~40k of 52k characters verbatim, rest summary-based).
+- **Design/finding:** Kraken 10-second returns 2016-07-01 to 2018-12-31 for BTC/EUR, BTC/USD, ETH/EUR, ETH/USD, BTC/ETH vs Dukascopy EUR/USD; descriptive multifractal (MFDFA/MFCCA, qDCCA) cross-correlation analysis. Verbatim: "do not show any noticeable relationships"; "the cryptocurrency market has begun decoupling itself from the Forex." No forecasting, out-of-sample or cost test.
+- **Relevance:** None for a new item; contemporaneous/scaling only. Ethereum -> EUR/USD would be a sibling of B64 (NONE, E052) with no EUR/USD predictive evidence. **Status:** VERIFIED (partly summary-read).
