@@ -3680,3 +3680,16 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no EUR/USD direction evidence and no timestamped speech calendar in the pipeline (B6 blocker); (b) no FX evidence.
   0 trials. pytest 454 passed (after reinstalling dev deps). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Eighty-ninth consecutive refill with no item (R214-R302).
+
+### Refill note R303 (not an item; no item added)
+- 2026-11-20 R303 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (keyword checks first:
+  "tax day" and "window dressing" had no entry): (a) US tax dates / TGA cash drains -> USD / EUR/USD; (b) bank quarter-end window
+  dressing -> EUR/USD spot. Two standard searches.
+  (a) Opened Dao-Tan-Zhou IMF WP/25/127 (USD repo spreads vs TGA, no FX) and Correa-Du-Liao NBER 2021 draft (US bank reserves ->
+  repo/FX-swap intermediation, CIP basis only, no spot forecast). FEDS Note on fiscal flows already logged; other hits trade press
+  (Accounting Today, FXStreet, ABA Journal; not opened). (b) All study hits already logged (BIS WP 836, Boston Fed WP 18-6, Ranaldo
+  ECB 2024 paper); risk.net/fx-markets news not opened. Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD spot-direction evidence with an OOS cost test; tax dates are ~4 events/yr (~20 on dev), below the
+  R090 power floor; quarter-end effects appear in FX-swap basis, not spot, and month-/quarter-end spot angles are already logged. 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Ninetieth consecutive refill with no item (R214-R303).
