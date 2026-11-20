@@ -3898,3 +3898,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   not opened, not cited. A month-of-year effect also has only 6 Augusts on dev (below the R090 power floor).
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R319 (not an item; no item added)
+- 2026-11-20 R319 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Treasury futures
+  roll"/"quarterly roll" and "staff projection" had no entry; semivariance (R218/R275), weekend gap (B17/E020), EU summits (R177), TIC
+  release (~line 2784), intraday momentum, Beige Book, round numbers, Hurst already covered. Angles: (a) US Treasury futures quarterly roll
+  period -> USD / EUR/USD; (b) ECB staff macroeconomic projections release -> EUR/USD. Two standard searches.
+  (a) Opened CME/Quantitative Brokers 2018 roll study (Treasury calendar spreads only, descriptive, no FX); Bank of Canada SWP 2025-29 and
+  Krohn FRBSF paper already logged; Lustig slides / NBER w24439 general dollar papers by title, not opened, not cited.
+  (b) Opened ECB WP 2197 (Dedola et al.: monthly QE impulse responses, no forecast test) and Ahelegbey et al. JFM 2026 (weekly cross-currency
+  basis, contemporaneous). ECB projection pages and ING note are not evidence, not cited; VoxEU exchange-rate-communication column already
+  logged. Projections are released with ECB meeting statements (ECB-day family already tested). No study of projections -> later EUR/USD.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

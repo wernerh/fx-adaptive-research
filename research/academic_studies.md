@@ -1902,3 +1902,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Kobe University repository PDF](https://da.lib.kobe-u.ac.jp/da/kernel/0100476804/0100476804.pdf) (opened via web-fetch; ~40k of 60k characters verbatim, rest summary-based). Previously listed as a not-opened hit (MDPI 14/18/11662, ~R222 area).
 - **Design/finding:** 2018 internet survey of 962 Japanese FX margin traders; cross-sectional OLS of self-reported trader profit/loss on age, strategy, trade amount, fundamental-analysis preference and self-rated skill. No exchange-rate return prediction, no EUR/USD.
 - **Relevance:** None (trader-level survey, not a market-direction signal). **Status:** VERIFIED (partly summary-read).
+
+### Gholizadeh & Narayanan (Quantitative Brokers), "Descriptive Study of U.S. Treasury Futures' Calendar Spread Around the Roll Period", CME Group, 20 Aug 2018 (added 2026-11-20 R319)
+- **Link:** [CME PDF](https://www.cmegroup.com/market-data/files/a-descriptive-study-of-us-treasury-rolls-aug-20-2018.pdf) (opened via web-fetch).
+- **Design/finding:** end-of-day settlements of ZB/ZN (1980-2018), ZF/ZT (from 1990), UB (from 2010); calendar-spread behaviour around the quarterly roll; descriptive full-sample correlations (early-roll vs later-roll spread changes ~18%, post-roll reversal ~-31%). No currencies, no forecast/OOS/cost test.
+- **Relevance:** None (Treasury calendar spreads, no FX channel). **Status:** VERIFIED.
+
+### Dedola, Georgiadis, Gräb & Mehl, "Does a big bazooka matter? Central bank balance-sheet policies and exchange rates", ECB Working Paper No 2197 (Nov 2018) (added 2026-11-20 R319)
+- **Link:** [ECB PDF](https://ecb.europa.eu/pub/pdf/scpwps/ecb.wp2197.it.pdf) (opened via web-fetch; partly summary-read).
+- **Design/finding:** monthly (weekly robustness), ~2009-2017 (summary-based, UNVERIFIED); local-projection impulse responses of USD/EUR to relative balance-sheet (QE) shocks; verbatim: APP "depreciated the euro vis-à-vis the US dollar by 12%". Structural attribution, no return-forecast, OOS or cost test.
+- **Relevance:** None for a new item (monthly structural, ECB QE angle already covered ~R252 area). **Status:** VERIFIED (partly summary-read).
+
+### Ahelegbey, Ibhagui & Gerth, "The Dollar's Double Life: Not All Dollar Appreciations Are Born Equal for the Cross-Currency Basis", Journal of Futures Markets (2026), doi:10.1002/fut.70081 (added 2026-11-20 R319)
+- **Link:** [Essex repository PDF](https://repository.essex.ac.uk/42654/1/Ahelegbey%20-%20The%20Dollar%20s%20Double%20Life.pdf) (opened via web-fetch; partly summary-read).
+- **Design/finding:** weekly Bloomberg G10 cross-currency basis (EUR 1Y-30Y), 2005-2021 (end date unclear); threshold regressions of basis changes on same-week dollar changes. Contemporaneous, no spot-return forecast, OOS or cost test.
+- **Relevance:** None (explains the basis, not EUR/USD direction; cross-currency basis already covered). **Status:** VERIFIED (partly summary-read).

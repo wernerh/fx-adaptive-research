@@ -2619,3 +2619,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches (Frankfurt open / pre-London hour EUR/USD drift; August/summer seasonality). Hits already logged (Krohn-Mueller-Whelan family) or broker/news pages; nothing new opened or cited. No item added. 0 trials. No lead, no notification.
 - pytest 464 passed.
 - **Note:** the refill line has now produced no item in R310-R318 (nine passes); the evidence base for new lagged EUR/USD direction hypotheses on in-pipeline data looks saturated.
+
+## 2026-11-20 R319 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (US Treasury futures quarterly roll -> USD/EUR/USD; ECB staff projections release -> EUR/USD). Three documents opened and logged in research/academic_studies.md (CME roll study 2018; ECB WP 2197; Ahelegbey et al. JFM 2026); none tests EUR/USD direction prediction out of sample with costs. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main had diverged again (stale local R243-R252 commits, never on origin); saved as local branch `backup-stale-local-main` and reset main to origin/main (no remote change).
+- **Note:** ten consecutive refill passes (R310-R319) without an item; the refill line remains saturated.
