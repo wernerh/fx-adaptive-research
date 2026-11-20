@@ -3641,3 +3641,18 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   far below the R090 power floor on dev. 0 trials.
   pytest 454 passed (after reinstalling dev deps). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Eighty-sixth consecutive refill with no item (R214-R299).
+
+### Refill note R300 (not an item; no item added)
+- 2026-11-20 R300 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (no "Thanksgiving week"
+  or "fiscal year-end" entry in research/ or knowledge/ before this run): (a) US Thanksgiving / December holiday-week effects ->
+  EUR/USD; (b) Japanese fiscal year-end (March) repatriation -> EUR/USD via USD leg. Four standard searches (two on angles first
+  checked and found already logged: US government shutdown -> USD (articlegateway JAF paper, logged) and month-end rebalancing
+  (Krohn-Mueller-Whelan, Melvin-Prins, logged)).
+  (a) Opened Russell Investments "Holiday trading effect" (Lenzo, 11 Nov 2026): practitioner liquidity note, FX volume 50-80% below
+  normal late December, explicitly no direction signal, no OOS/cost test. Other hits were broker seasonality blogs (investing.com,
+  forex.com, FXStreet; not evidence, not opened). (b) Hits were trade press only (FXStreet/Nomura note, ForexLive, Japan Times,
+  Bloomberg); no study; not opened. Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; Thanksgiving/fiscal-year-end give one event per year
+  (5 on dev), far below the R090 power floor. 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Eighty-seventh consecutive refill with no item (R214-R300).

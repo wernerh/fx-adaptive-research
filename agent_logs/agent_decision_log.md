@@ -2494,3 +2494,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) FX illiquidity / price-impact shocks -> EUR/USD and (b) sports sentiment -> EUR/USD.
   (a) only already-logged papers; (b) Edmans-García-Norli 2005 opened: equities only, no FX test. No item added (reasons in the R299 refill note). 0 trials. No lead, no notification.
 - **Observation:** eighty-six consecutive refills (R214-R299) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-20 R300 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) US Thanksgiving / December holiday weeks -> EUR/USD and (b) Japanese fiscal year-end repatriation -> EUR/USD.
+  (a) Russell Investments 2026 note opened: liquidity only, no direction test; (b) trade press only. No item added (reasons in the R300 refill note). 0 trials. No lead, no notification.
+- **Observation:** eighty-seven consecutive refills (R214-R300) with no item. The R219 observation (human decision on new data) stands.
