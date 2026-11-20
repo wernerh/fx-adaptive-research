@@ -3872,3 +3872,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   logged or not opened; not cited. Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R317 (not an item; no item added)
+- 2026-11-20 R317 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Watanabe" (only
+  the 2008 microstructure paper), "USD/JPY lead" had no entry; lead-lag (27 mentions), retail positioning (R222), Treasury auctions (R123),
+  jobless claims (R150), HICP (R141-area, ~line 3459), NR7 (R176-area) already covered. Angles: (a) Japanese retail FX margin traders'
+  positions/flows -> later FX returns; (b) USD/JPY returns leading EUR/USD intraday. Two standard searches.
+  (a) Opened BoJ Review 2018-E-3 (Mukoyama-Kikuta-Washimi, abstract: retail contrarian overnight, trend-following intraday at times; no
+  prediction test) and Hayo-Iwatsubo Sustainability 2022 (survey of trader profits; no FX prediction). Entries in research/academic_studies.md.
+  Kobe WP 1909, CityU GRU 2019-026 Iwatsubo, BoJ rev23e07 already logged; RBA bulletin and Bloomberg news not opened, not cited.
+  (b) Hits (arXiv 1504.06235, 1609.04640, 1906.10388, St Louis Fed WP 2012-008) already logged; NBER w21122/w12413/w12682 and AEA pages
+  are general FX papers by title, not opened, not cited. No new USD/JPY -> EUR/USD lead study.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

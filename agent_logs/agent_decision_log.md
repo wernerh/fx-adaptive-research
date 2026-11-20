@@ -2608,3 +2608,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** two standard searches (UK macro release spillover; interest-rate differential / gilt yields -> EUR/USD direction). Two studies opened and logged; neither gives in-pipeline, cost-tested EUR/USD evidence. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local clone was on a detached HEAD with a stale diverged local main; local main reset to origin/main (no remote change).
+
+## 2026-11-20 R317 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (Japanese retail FX margin flows -> later FX returns; USD/JPY leading EUR/USD intraday). Two studies opened and logged (BoJ Review 2018-E-3 abstract; Hayo-Iwatsubo 2022); neither tests EUR/USD direction prediction. Lead-lag hits already logged. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local clone had a stale diverged main again; worked on local branch `work` from origin/main and pushed to origin/main (no remote rewrite).
