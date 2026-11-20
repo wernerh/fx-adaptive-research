@@ -2598,3 +2598,8 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard + one extended search; no new FX study found, all study hits already logged. No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
 - **Observation:** fifth consecutive empty refill (R310-R314). The keyword-checked angle space is exhausted; hourly refills are now low value. A human decision (e.g. on parked OOS-only items or new data sources) would unblock more than further refills.
 - **Housekeeping:** stale diverged local main (R243-R252, never on origin) saved as local branch `backup-local-main-stale`; main reset to origin/main.
+
+## 2026-11-20 R315 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (data-snooping-adjusted technical rules; Italian election political risk). Two studies opened and logged; neither EUR/USD-specific with OOS cost evidence. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local clone had a stale diverged main again; saved as local branch `backup-stale-main`, main reset to origin/main (no remote change).
