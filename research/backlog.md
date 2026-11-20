@@ -3932,7 +3932,7 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) German GfK consumer climate / consumer-confidence releases -> EUR/USD. Two standard searches.
   (a) Opened NBER w15020 (Hashimoto-Ito 2009/JJIE 2010: USD/JPY only, EBS minutes, contemporaneous/volatility, no drift/OOS/cost test)
   and Keio-IES DP2025-015 (Kamada: daily USD/JPY BoJ-surprise measure, no FX forecast). BoJ FAQ and CME Econoday pages are not evidence.
-  (b) Hits were already logged (Norges Bank Staff Memo 5/2026 R266, Cagliesi et al. R25x, Cardiff/CEQURA R10x/R15x, Bundesbank Jan 2026
+  (b) Hits were already logged (Norges Bank Staff Memo 5/2026 and Cagliesi et al. R266, Cardiff/CEQURA R129/R152, Bundesbank Jan 2026
   R312) or not studies (Kellogg Insight article); no GfK-specific EUR/USD study found.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
