@@ -1917,3 +1917,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Essex repository PDF](https://repository.essex.ac.uk/42654/1/Ahelegbey%20-%20The%20Dollar%20s%20Double%20Life.pdf) (opened via web-fetch; partly summary-read).
 - **Design/finding:** weekly Bloomberg G10 cross-currency basis (EUR 1Y-30Y), 2005-2021 (end date unclear); threshold regressions of basis changes on same-week dollar changes. Contemporaneous, no spot-return forecast, OOS or cost test.
 - **Relevance:** None (explains the basis, not EUR/USD direction; cross-currency basis already covered). **Status:** VERIFIED (partly summary-read).
+
+### McDonald, Suleman, Williams, Howison & Johnson, "Detecting a Currency's Dominance or Dependence using Foreign Exchange Network Trees", arXiv cond-mat/0412411 (Dec 2004) (added 2026-11-20 R320)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/cond-mat/0412411) (opened via web-fetch, full text).
+- **Design/finding:** hourly quotes 1 Apr 1993 - 30 Dec 1994 (08:00-16:00 GMT), 110 USD and cross series incl. USD/DEM (no EUR/USD); minimum-spanning-tree correlation clustering; lagged cross-correlations up to ~100 h show lead-lag under one hour only; authors state the method has no predictive power. No OOS or cost test.
+- **Relevance:** None (pre-euro, descriptive, no usable lagged signal). **Status:** VERIFIED.
+
+### Misik, "Forecasting and Correlation Dynamics in Regional and Global Currency Trios", PhD thesis, Corvinus University of Budapest (2026) (added 2026-11-20 R320)
+- **Link:** [Corvinus PDF](https://phd.lib.uni-corvinus.hu/1517/1/PhD%20Thesis%20Sandor%20Misik.pdf) (opened via web-fetch; first ~40k of ~310k characters read, rest not read).
+- **Design/finding:** daily 2005-2026 EUR/USD currency triangles with HUF, CZK, PLN, NOK, SEK, CHF, JPY, GBP; OOS one-month-ahead correlation forecasts (RMSE/QLIKE); ultra-high-frequency (100-200 ms) VAR/impulse-response spillovers within trios. Forecasts correlation, not direction; no trading or cost test seen; Chapter 4 results not read (UNVERIFIED).
+- **Relevance:** None for an item (no EUR/USD direction forecast; ms-level spillovers are not tradable at SPEC 4 costs). Unreviewed thesis. **Status:** VERIFIED (partly read).
+
+### Kočenda & Moravcová, "Exchange rate comovements, hedging and volatility spillovers on new EU forex markets", AEA 2019 preliminary paper (added 2026-11-20 R320)
+- **Link:** [AEA conference page](https://aeaweb.org/conference/2019/preliminary/paper/bQA4KdAR) (opened via web-fetch; ~40k of 92k characters verbatim, rest summary-based).
+- **Design/finding:** daily ECB reference rates 1999 - May 2018 for CZK/EUR, PLN/EUR, HUF/EUR and USD/EUR; DCC correlations (contemporaneous) and Diebold-Yilmaz volatility spillovers; HUF leads volatility in distress periods. No return-direction forecast, OOS or cost test.
+- **Relevance:** None (volatility transmission, not EUR/USD direction). **Status:** VERIFIED (partly summary-read).

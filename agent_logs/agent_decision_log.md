@@ -2625,3 +2625,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches (US Treasury futures quarterly roll -> USD/EUR/USD; ECB staff projections release -> EUR/USD). Three documents opened and logged in research/academic_studies.md (CME roll study 2018; ECB WP 2197; Ahelegbey et al. JFM 2026); none tests EUR/USD direction prediction out of sample with costs. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main had diverged again (stale local R243-R252 commits, never on origin); saved as local branch `backup-stale-local-main` and reset main to origin/main (no remote change).
 - **Note:** ten consecutive refill passes (R310-R319) without an item; the refill line remains saturated.
+
+## 2026-11-20 R320 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (lagged EUR/GBP / cross-rate returns -> next-day EUR/USD; CEE currency spillover -> EUR/USD). Three documents opened and logged in research/academic_studies.md (McDonald et al. arXiv 2004; Misik thesis 2026; Kočenda-Moravcová AEA 2019); none tests EUR/USD direction prediction out of sample with costs. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main still diverged (stale local commits); worked on a detached checkout of origin/main and left local main untouched (no remote change).
+- **Note:** eleven consecutive refill passes (R310-R320) without an item; the refill line remains saturated. A human decision on new data sources or on using OOS for parked items would be needed to restart experiments.

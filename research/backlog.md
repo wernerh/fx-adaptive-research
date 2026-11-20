@@ -3911,3 +3911,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   logged. Projections are released with ECB meeting statements (ECB-day family already tested). No study of projections -> later EUR/USD.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R320 (not an item; no item added)
+- 2026-11-20 R320 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "EUR/GBP" (1
+  passing mention), "EUR/PLN"/"Polish"/"cross rate" (no entry); lunar (R139), geomagnetic (~line 3127), Treasury auctions (R123), GPR,
+  tariffs (R264), DST, gold, oil, ISM, COT, pivots, NR7 already covered. Angles: (a) lagged EUR/GBP / cross-rate returns -> next-day EUR/USD;
+  (b) Central European currencies (PLN/HUF/CZK) spillover -> EUR/USD. Two standard searches.
+  (a) Opened arXiv cond-mat/0412411 (McDonald et al. 2004: hourly 1993-94, no EUR/USD, lead-lag < 1 h, "no predictive power"); arXiv
+  1906.10388 and 1504.06235 already logged; FXStreet pages are not evidence, not cited.
+  (b) Opened Misik PhD thesis (Corvinus 2026: EUR/USD trios, OOS correlation forecasts and ms-level spillovers, no direction/cost test;
+  partly read) and Kočenda-Moravcová AEA 2019 (daily ECB rates, DCC and volatility spillovers, contemporaneous). ING EMEA FX Talking
+  notes are not evidence, not cited. CEE FX data also not in the pipeline.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
