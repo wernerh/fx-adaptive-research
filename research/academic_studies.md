@@ -1826,3 +1826,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 
 ### UNVERIFIED (not opened): City, University of London open-access JFE revision "TS_v35" (eprint 24178)
 - **Link:** [PDF](https://openaccess.city.ac.uk/id/eprint/24178/1/TS_v35%20%5BJFE_Revision_v6%5D.pdf) — fetch returned an access-denied bot page; title, authors and findings UNVERIFIED. Surfaced by a "VIX term structure -> currency returns" search; not used.
+
+### Lupinu & Machura-Urbaniak, "The Next Generation EU (NGEU) as a catalyst for the promotion of the international role of the euro", REBUILD Working Paper 4, January 2023 (added 2026-11-20 R305)
+- **Link:** [ORBilu PDF](https://orbilu.uni.lu/bitstream/10993/54742/1/REBUILD%20Working%20Paper%20-%20Lupinu%20%26%20Machura-Urbaniak.pdf) (opened via web-fetch; first ~40k of 85k characters read verbatim, rest summary-based).
+- **Design/finding:** qualitative policy/legal analysis of whether NGEU green bonds and EU safe assets could raise the euro's international role. No dataset, no exchange-rate return or direction test, no OOS or cost test.
+- **Relevance:** None for a new item (no EUR/USD return evidence). **Status:** VERIFIED (partly summary-read).

@@ -2524,3 +2524,10 @@ Why each run chose what it did, and any judgement calls.
   (a) only new study hit blocked (UNVERIFIED, not used); (b) no payday study, Corhay et al. 1995 opened (day-of-week settlement artefact). No item added (reasons in the R304 refill note). 0 trials. No lead, no notification.
 - **Observation:** ninety-one consecutive refills (R214-R304) with no item. The R219 observation (human decision on new data) stands.
 - **Housekeeping:** local `main` still diverged from origin (stale commits); left untouched, work done on a branch from origin/main and pushed to main.
+
+## 2026-11-20 R305 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) NGEU / EU joint-bond issuance -> EUR/USD and (b) US weekly jobless claims -> intraday EUR/USD.
+  (a) Lupinu & Machura-Urbaniak 2023 opened (qualitative, no FX test); (b) trade press only. No item added (reasons in the R305 refill note). 0 trials. No lead, no notification.
+- **Observation:** ninety-two consecutive refills (R214-R305) with no item. The R219 observation (human decision on new data) stands.
+- **Housekeeping:** local `main` still diverged from origin (stale commits); left untouched, work done detached from origin/main and pushed to main.

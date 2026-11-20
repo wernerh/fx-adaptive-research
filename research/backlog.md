@@ -3705,3 +3705,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   data source = human decision, R219 observation); day-of-week family already covered on dev (E009). 0 trials.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Ninety-first consecutive refill with no item (R214-R304).
+
+### Refill note R305 (not an item; no item added)
+- 2026-11-20 R305 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (keyword checks first:
+  "NGEU"/"EU bond" and "jobless claims" had no study entry): (a) EU joint-bond (NGEU) supranational issuance -> EUR/USD;
+  (b) US weekly initial jobless claims release -> intraday EUR/USD drift. Two standard searches.
+  (a) Opened Lupinu & Machura-Urbaniak REBUILD WP 4 (2023): qualitative euro-international-role analysis, no FX return test. Other
+  hits were EC/ECB/EP policy documents and OMFIF/FXStreet commentary (not evidence, not opened). Entry in research/academic_studies.md.
+  (b) Hits were FXStreet news pages and an MQL5 blog only; no study; not opened.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; NGEU issuance dates are not in the pipeline (new data
+  source = human decision, R219 observation); US macro-release windows already covered by the release-time family. 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Ninety-second consecutive refill with no item (R214-R305).
