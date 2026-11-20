@@ -2505,3 +2505,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) consensus/survey FX forecasts as a signal -> EUR/USD and (b) currency-ETF flows -> EUR/USD.
   (a) Kwas-Beckmann-Rubaszek IJF 2024 abstract opened: monthly survey data not in pipeline; (b) press only. No item added (reasons in the R301 refill note). 0 trials. No lead, no notification.
 - **Observation:** eighty-eight consecutive refills (R214-R301) with no item. The R219 observation (human decision on new data) stands.
+## 2026-11-20 R302 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) Fed speeches / central-bank communication -> EUR/USD and (b) Japanese public holidays -> Asian-session EUR/USD.
+  (a) Sekkel-Zhang 2024 opened: CAD/USD only, contemporaneous; (b) no FX study. No item added (reasons in the R302 refill note). 0 trials. No lead, no notification.
+- **Observation:** eighty-nine consecutive refills (R214-R302) with no item. The R219 observation (human decision on new data) stands.
