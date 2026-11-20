@@ -2570,3 +2570,10 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** opened Drożdż et al. 2019 (arXiv:1906.07834; descriptive, no prediction). No item added (no verified EUR/USD OOS cost evidence; Ethereum would re-test the B64 NONE line). 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local workspace main had 50 stale unpushed commits (old R214-R252 history) diverged from origin; left untouched, this run worked on a branch from origin/main and pushed to origin main.
 - **Next run:** refill again unless a ready item appears.
+
+## 2026-11-20 R311 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded as E052; no run queued or in progress; no `ready` backlog item.
+- **Choice:** backlog refill (protocol priority 4). Angles: European electricity prices and daily cross-currency lagged returns -> next-day EUR/USD.
+- **Action:** opened Castagneto-Gissey & Green (J. Energy Markets) abstract and re-opened EXFormer (arXiv 2512.12727v2, already logged). No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main fast-forwarded to origin/main (it was an ancestor).
+- **Next run:** refill again unless a ready item appears.

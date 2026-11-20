@@ -3795,3 +3795,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; an Ethereum variant would be a second trial on the
   crypto-lag line after B64 NONE (lesson R081, one variable at a time, multiple-testing cost). 0 trials.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R311 (not an item; no item added)
+- 2026-11-20 R311 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Angles (keyword checks first:
+  "electricity", "European power" had no entry; "cable"/USD-JPY cross-pair lead-lag only covered at minute horizon): (a) European
+  electricity prices -> EUR/USD; (b) daily cross-currency (GBP/USD, USD/JPY) lagged returns -> next-day EUR/USD. Two standard searches.
+  (a) Opened the Castagneto-Gissey & Green (J. Energy Markets) EconPapers abstract: FX/oil -> electricity volatility, daily 2005-2011,
+  no EUR/USD forecast. Other hits were FX news pages and spam mirrors; not opened, not cited. Entry in research/academic_studies.md.
+  (b) Main hit was EXFormer (arXiv 2512.12727, re-opened v2; already logged R260: fitted transformer on 28 covariates incl. other FX
+  pairs, window chosen on its own test set, EUR/USD post-cost result summary-only); other hits already logged (Maier-Paape & Platen,
+  lead-lag networks arXiv 1609.04640) or not opened.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
