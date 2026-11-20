@@ -10,3 +10,4 @@ data/raw_index/
 *.egg-info/
 data/raw_oil/
 data/raw_gold/
+data/raw_btc/

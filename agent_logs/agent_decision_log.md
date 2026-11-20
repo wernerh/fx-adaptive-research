@@ -2544,3 +2544,12 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on lagged daily Bitcoin returns -> next-day EUR/USD. Feng & Zhang (JIMF 2023) opened: EUR-specific out-of-sample result (daily DoC 51.79%, CW 2.0081), positive sign, gross only. Added B64 (dev signal test, ready) and B65 (val confirmation, blocked). 0 trials now. No lead, no notification.
 - **Why B64 despite lesson R095:** the prior is a published EUR row out-of-sample, not another currency; sign fixed before data. Power note recorded: the published effect is likely below our dev detection limit.
 - **Housekeeping:** local `main` had diverged again (unpushed R243-R252 duplicates); saved as local branch `stale-local-main-backup`, reset to origin/main. pytest 454 passed.
+
+## 2026-11-20 R308 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051 in R213); B64 is the top `ready` item.
+- **Decision:** AUTONOMOUS_PROTOCOL step 3: pre-register B64 as E052 (lagged daily BTC/USD return -> next-day EUR/USD, 16:00 NY hold,
+  dev 2017-05-09..2020-12-31, 1 trial, B16 rule plus >= 500 dates and a 90% BTC data gate), implement `fxresearch.btc_lag` with tests
+  (no-look-ahead truncation/perturbation, random walk gives no SIGNAL), add `scripts/download_dukascopy_btc.sh` (dev dates only) and
+  queue it on research-batch. Decision rule fixed before any data. No val, no OOS.
+- **Housekeeping:** local `main` still diverged from origin (stale backup branch exists); worked on a detached checkout of origin/main
+  and pushed HEAD to main. pytest 464 passed (454 + 10 new).

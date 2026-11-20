@@ -1,0 +1,28 @@
+{
+  "experiment_id": "E052",
+  "date": "2026-11-20",
+  "instrument": "EURUSD",
+  "hypothesis": "B64: s(D) x (EUR/USD mid 16:00 NY D+1 - mid 16:00 NY D) > 1 pip per day on dev test dates 2017-05-09..2020-12-31, s(D) = sign(ln BTC/USD mid 16:00 NY D - ln BTC/USD mid 16:00 NY previous EUR/USD trading date) (Feng & Zhang JIMF 2023, EUR row)",
+  "blocks_used": [
+    "dev"
+  ],
+  "oos_touched": false,
+  "parent_experiment": null,
+  "variable_changed": "new family: lagged Bitcoin cross-market signal; hold, return definition and decision rule from E050/E051 (B16)",
+  "decision_rule": "data gate: valid BTC 16:00 NY quote at both points on >= 90% of grid dates else BLOCKED (0 trials); < 500 tested dates -> NONE; SIGNAL if mean daily signed > 1.0 pip AND moving-block bootstrap (block 20, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
+  "n_trials": 1,
+  "status": "preregistered",
+  "command": "bash scripts/download_dukascopy_btc.sh; python scripts/run_e052_btc_lag.py | tee backtests/validation_reports/E052_results.txt",
+  "preregistered_in": "R308",
+  "dependencies": {
+    "dukascopy-node": "1.51.1 (runner)",
+    "btcusd": "Dukascopy m1 bid/ask 2017-05-07..2021-01-01"
+  },
+  "next_experiment": "B65 (val confirmation) only if SIGNAL; else close B65 unearned",
+  "outputs": [
+    "backtests/validation_reports/E052_results.json",
+    "backtests/validation_reports/E052_results.txt",
+    "backtests/validation_reports/E052_daily.csv",
+    "backtests/validation_reports/E052_download.txt"
+  ]
+}
