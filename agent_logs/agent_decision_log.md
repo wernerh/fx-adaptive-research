@@ -2577,3 +2577,10 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** opened Castagneto-Gissey & Green (J. Energy Markets) abstract and re-opened EXFormer (arXiv 2512.12727v2, already logged). No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main fast-forwarded to origin/main (it was an ancestor).
 - **Next run:** refill again unless a ready item appears.
+
+## 2026-11-20 R312 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded as E052; no run queued or in progress; no `ready` backlog item.
+- **Choice:** backlog refill (protocol priority 4). Angles: €STR-SOFR overnight spread -> next-day EUR/USD and FX option expiries at the 10:00 NY cut (no prior study entries).
+- **Action:** opened Bundesbank Monthly Report Jan 2026 EUR/USD drivers article (contemporaneous proxy VAR, no prediction). No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main still holds the stale diverged history; left untouched, worked on branch `work` from origin/main and pushed to origin main.
+- **Next run:** refill again unless a ready item appears.

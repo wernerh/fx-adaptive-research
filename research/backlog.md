@@ -3807,3 +3807,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   lead-lag networks arXiv 1609.04640) or not opened.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R312 (not an item; no item added)
+- 2026-11-20 R312 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Angles (keyword checks first:
+  "€STR"/"ESTR" had no entry; FX option-expiry / 10:00 NY cut pinning only mentioned in passing, no study logged): (a) €STR-SOFR
+  overnight-rate spread changes -> next-day EUR/USD; (b) FX option expiries at the 10:00 NY cut -> EUR/USD spot pinning. Two standard
+  searches.
+  (a) Opened the Bundesbank Monthly Report January 2026 article (publikationen.bundesbank.de/content/972880): daily Bayesian proxy VAR
+  2002-2025, contemporaneous attribution of EUR/USD moves to policy, demand, energy and risk shocks; no lagged/OOS forecast, no cost
+  test. Entry in research/academic_studies.md. Other hits (CME, Seeking Alpha, FXStreet, ING, ABN AMRO, FRED blog, Bruegel GBP paper)
+  were commentary or off-pair; not opened, not cited. (b) Hits were daily expiry-list news pages (investinglive, Newsquawk, FXStreet)
+  only; no empirical study; not opened, not cited. An expiry-size history is also not in the pipeline (no verified downloadable source).
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
