@@ -3859,3 +3859,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   direction study found among titles; not opened, not cited. Election dates are also too few on dev for the power floor (R090).
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R316 (not an item; no item added)
+- 2026-11-20 R316 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "UK data",
+  "gilt", "Hambuckers", "time varying skewness" had no entry; semivariance/skewness (R218, R275, E044), BoE MPC (R190-area ~line 2214)
+  covered. Angles: (a) UK macro releases (09:30 London) -> EUR/USD spillover; (b) gilt yields / interest-rate differentials -> next-day
+  EUR/USD direction. Two standard searches.
+  (a) Opened Evans-Speight JIMF 2010 (published version of the logged 2006 WP): 5-minute contemporaneous reactions, US news dominates
+  EUR-USD, no OOS/cost test. Cardiff ORCA/Swansea hits not opened, not cited. (b) Opened Hambuckers-Ulm 2021 WP (ORBi): daily USD/EUR,
+  LIBOR-differential-driven skewness, rolling OOS sign forecasts, gross ~4.9%/yr, weaker after 2018; rate data not in pipeline. Other hits
+  (Macquarie WP 16-07, Bayes WP-EMG, Essex Alexandridis, Bruegel, EUR thesis, Molodtsova Taylor_Euro, FernUni cesa_wp_02, Convera) already
+  logged or not opened; not cited. Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
