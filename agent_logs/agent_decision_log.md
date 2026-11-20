@@ -2553,3 +2553,13 @@ Why each run chose what it did, and any judgement calls.
   queue it on research-batch. Decision rule fixed before any data. No val, no OOS.
 - **Housekeeping:** local `main` still diverged from origin (stale backup branch exists); worked on a detached checkout of origin/main
   and pushed HEAD to main. pytest 464 passed (454 + 10 new).
+
+## 2026-11-20 R309 (unattended)
+- **State:** research-batch run 44712462069 (E052) completed success; outputs committed by github-actions[bot] (37aa727), not yet
+  recorded. No run queued or in progress. Local `main` was again a stale unrelated history; backed up to local branch
+  `backup-stale-main` and reset to `origin/main`.
+- **Choice:** collect E052 (protocol priority 1). Applied the pre-registered B64 rule (`btc_lag.decide_b64`) exactly: data gate
+  passed (0.9705 >= 0.90), n 911 >= 500; NONE (mean +2.278 > 1 pip but CI lower -0.674 < 0 and t p 0.0779 > 0.05; not WEAK since
+  neither CI lower > 0 nor p < 0.05). No rule or threshold changed; the Tue-Fri descriptive split (t p 0.0462) is not tested.
+- **Action:** E052 recorded; B64 `done`, B65 closed unearned (0 trials). Trials dev 262, val 9, total 271. pytest 464 passed. No lead, no notification.
+- **Next run:** no `ready` item remains -> backlog refill (protocol priority 4).

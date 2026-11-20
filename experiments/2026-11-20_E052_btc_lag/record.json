@@ -11,18 +11,38 @@
   "variable_changed": "new family: lagged Bitcoin cross-market signal; hold, return definition and decision rule from E050/E051 (B16)",
   "decision_rule": "data gate: valid BTC 16:00 NY quote at both points on >= 90% of grid dates else BLOCKED (0 trials); < 500 tested dates -> NONE; SIGNAL if mean daily signed > 1.0 pip AND moving-block bootstrap (block 20, 2000 draws, seed 0) 95% CI lower > 0 AND one-sided t p < 0.05 (1 trial); WEAK if mean > 0 and (CI lower > 0 or p < 0.05); else NONE",
   "n_trials": 1,
-  "status": "preregistered",
+  "status": "complete",
   "command": "bash scripts/download_dukascopy_btc.sh; python scripts/run_e052_btc_lag.py | tee backtests/validation_reports/E052_results.txt",
   "preregistered_in": "R308",
   "dependencies": {
     "dukascopy-node": "1.51.1 (runner)",
     "btcusd": "Dukascopy m1 bid/ask 2017-05-07..2021-01-01"
   },
-  "next_experiment": "B65 (val confirmation) only if SIGNAL; else close B65 unearned",
+  "next_experiment": "none (B64 closed NONE, B65 closed unearned); backlog refill next",
   "outputs": [
     "backtests/validation_reports/E052_results.json",
     "backtests/validation_reports/E052_results.txt",
     "backtests/validation_reports/E052_daily.csv",
     "backtests/validation_reports/E052_download.txt"
-  ]
+  ],
+  "result": {
+    "decision": "NONE",
+    "run_id": 44712462069,
+    "outputs_commit": "37aa727",
+    "n": 911,
+    "mean_pips": 2.278,
+    "median_pips": 2.55,
+    "sd_pips": 48.398,
+    "hit_rate": 0.5137,
+    "t_p_one_sided": 0.0779,
+    "mean_ci95_block_boot": [
+      -0.674,
+      5.176
+    ],
+    "data_gate_share": 0.9705,
+    "net_spec4_pips_per_day": 2.035,
+    "net_costs_x1_5_pips_per_day": 1.913,
+    "lead": false
+  },
+  "recorded_in": "R309"
 }

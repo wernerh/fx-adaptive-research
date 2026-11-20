@@ -140,3 +140,7 @@ Session definitions used everywhere are in docs/SPEC.md section 2. Do not use an
 - 62 walk-forward fits (2015-12-31 .. 2020-12-04), 0 failures; first fit 233 rows (up share 0.4936), last 1460 rows. Feature
   importances at the last fit are flat (0.091-0.106 per lag). Predicted P(up) q10/q50/q90 0.3529/0.4902/0.6471; the sign flipped
   625 times in 1241 test days. See experiments/2026-11-16_E051_rf_lags.
+### 2026-11-20 R309: lagged BTC/USD vs daily EUR/USD 16:00 NY returns (E052, dev) [EXP]
+- Dukascopy btcusd m1 2017-05-07..2020-12-31: 1,752,419 bars; valid 16:00 NY BTC quotes at both points on 922 of 950 grid dates
+  (0.9705). Daily 16:00 NY BTC log return: mean 0.00267, SD 0.04857, median |B| 0.02078. Same-day corr with EUR/USD 0.0207 (n 906);
+  lag corr with next-day EUR/USD 0.0486. See experiments/2026-11-20_E052_btc_lag.

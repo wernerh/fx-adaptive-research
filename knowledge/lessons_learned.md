@@ -476,3 +476,15 @@ Process and methodology lessons. Use templates/lessons_learned_template.md for e
   a detectable edge into 2016-2020.
 - **Action:** B62 closed NONE (rejected_hypotheses.md); B63 closed unearned. No re-test with other tree or lag counts, refit
   intervals, probability thresholds, other classifiers or one leg. Next: backlog refill.
+### 2026-11-20 R309: lagged daily Bitcoin returns have no detectable next-day EUR/USD edge on 2017-2020 (E052)
+- **Context:** E052 (B64), long (short) EUR/USD 16:00 NY D -> 16:00 NY next trading date when BTC/USD rose (fell) over the prior
+  16:00 NY -> 16:00 NY D interval, dev 2017-05-09..2020-12-31, 1 trial (Feng & Zhang JIMF 2023, EUR row).
+- **Observation:** NONE (n 911, +2.278 pips, block-20 CI (-0.674, 5.176), t p 0.0779). Descriptive: Tue-Fri +3.007 (t p 0.0462,
+  CI includes 0), Mondays -0.788; buy-and-hold same dates +1.123; one negative year (2017 -3.004).
+- **Evidence label:** [EXP]
+- **Lesson:** a published gross EUR-specific OOS edge of ~51.8% direction-of-change (~1-1.5 pips/day) cannot be detected in ~900
+  dev days (SE ~1.6 pips), exactly as the pre-registration predicted. Positive point estimates under NONE recur (E051, E052) and partly
+  reflect long-skew in an up-drifting sample; they are not reasons to test descriptive subsets (Tue-Fri, high |B|) post hoc
+  (rule 7, lesson R076). Cross-market daily signals with published edges below ~3 pips/day are low-value items on our sample sizes.
+- **Action:** B64 closed NONE (rejected_hypotheses.md); B65 closed unearned. No re-test with day-of-week subsets, |B| thresholds,
+  other lags, other crypto or other hold times. Next: backlog refill.
