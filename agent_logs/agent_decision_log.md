@@ -2637,3 +2637,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches (BoJ Tankan release -> EUR/USD; German GfK / consumer-confidence releases -> EUR/USD). Two new documents opened and logged in research/academic_studies.md (Hashimoto-Ito NBER w15020; Kamada Keio-IES DP2025-015); both USD/JPY only, no EUR/USD direction, OOS or cost test. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** stale local main (old R243-R252 commits not on origin) saved as local branch backup-stale-main and local main reset to origin/main; no remote change.
 - **Note:** twelve consecutive refill passes (R310-R321) without an item; the refill line remains saturated. A human decision on new data sources or on using OOS for parked items would be needed to restart experiments.
+
+## 2026-11-20 R322 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (French OAT-Bund spread -> EUR/USD; FX bid-ask spread / illiquidity -> later EUR/USD returns). Three AEA papers opened and logged in research/academic_studies.md; none tests lagged liquidity -> EUR/USD direction OOS with costs. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main again diverged (stale R243-R252 history); work done on a branch from origin/main and pushed to main; no remote history change.
+- **Note:** thirteen consecutive refill passes (R310-R322) without an item; refill line remains saturated.

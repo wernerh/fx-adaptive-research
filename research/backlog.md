@@ -3936,3 +3936,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   R312) or not studies (Kellogg Insight article); no GfK-specific EUR/USD study found.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R322 (not an item; no item added)
+- 2026-11-20 R322 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "OAT"/"French"
+  (only incidental: linkers ~line 1412, election angle R29x ~line 3551), "gap fill"/"psychological" none; liquidity papers f121921, Massey,
+  Bayes WP-EMG-01-2021, MPRA 102702, LUISS JFE2022, Aston 16427 already logged. Angles: (a) French OAT-Bund spread / French fiscal-political
+  risk -> next-day EUR/USD; (b) FX bid-ask spread / illiquidity shocks -> later EUR/USD returns. Two standard searches.
+  (a) Hits were broker/news pages only (BabyPips, FXStreet, ING THINK, Pepperstone, Finimize); not evidence, not cited; OAT/Bund data not
+  in the pipeline. (b) Opened three AEA papers: Söderlind-Somogyi 2019 (cross-sectional monthly liquidity-beta premium, no OOS),
+  Ranaldo-Santucci de Magistris 2019 (contemporaneous volume/illiquidity) and Mancini-Ranaldo-Wrampelmeyer 2011/JF 2013 (contemporaneous
+  liquidity risk premium, gross). Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

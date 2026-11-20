@@ -1942,3 +1942,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Keio-IES PDF](https://ies.keio.ac.jp/upload/DP2025-015_EN.pdf) (opened via web-fetch; first part verbatim, rest summary-based).
 - **Design/finding:** daily yen-dollar candlesticks (Nikkei NEEDS) 5 Jun 1984 - 15 May 2024 used to build a same-day BoJ surprise measure; outcomes are policy classification and the Phillips curve. No EUR/USD (no London/EU data), no direction forecast, OOS or cost test.
 - **Relevance:** None. **Status:** VERIFIED (partly summary-read).
+
+### Söderlind & Somogyi, "When does Liquidity matter?", AEA 2020 preliminary paper (version 6 Nov 2019) (added 2026-11-20 R322)
+- **Link:** [AEA conference page](https://aeaweb.org/conference/2020/preliminary/paper/i5H7K9kR) (opened via web-fetch; extended abstract PDF).
+- **Design/finding:** 15 USD-base pairs (EUR/USD inclusion not confirmed on the page), hourly CLS order flow Sep 2013 - Jan 2019 with Olsen quotes; low-frequency liquidity factor (PC of nine measures); monthly portfolios sorted on trailing 252-day liquidity betas. "FX liquidity is only priced conditional on volatility being high"; high-minus-low liquidity-beta portfolio 4.97% p.a., Sharpe 0.88, t 2.07 (cross-sectional, monthly). Cost robustness with quoted spreads "qualitatively unchanged"; no OOS test described.
+- **Relevance:** None for an item (cross-sectional monthly risk premium, not a EUR/USD time-series direction signal; CLS data not in pipeline). **Status:** VERIFIED (extended abstract).
+
+### Ranaldo & Santucci de Magistris, "Trading Volume, Illiquidity and Commonalities in FX Markets", AEA 2020 preliminary paper (20 Dec 2019) (added 2026-11-20 R322)
+- **Link:** [AEA conference page](https://aeaweb.org/conference/2020/preliminary/paper/8nYYaKbD) (opened via web-fetch; first part verbatim, rest summary-based). Working-paper precursor of the JFE 2022 paper already logged above (line ~276).
+- **Design/finding:** 29 pairs incl. EURUSD, hourly CLS volume Nov 2011 - Oct 2016, Olsen quotes, EBS 2016; HF Amihud illiquidity; contemporaneous volume/volatility/illiquidity regressions and commonality ("EURUSD is by far the most traded FX rate, with a share above 30% between 7AM to 6PM"). No return-predictability, OOS or cost test.
+- **Relevance:** None (contemporaneous). **Status:** VERIFIED (partly summary-read).
+
+### Mancini, Ranaldo & Wrampelmeyer, "Liquidity in the Foreign Exchange Market: Measurement, Commonality, and Risk Premiums", AEA 2012 paper (version 16 Dec 2011), published J. Finance 68(5), 1805-1841 (2013) (added 2026-11-20 R322)
+- **Link:** [AEA 2012 PDF](https://aeaweb.org/conference/2012/retrieve.php?pdfid=585) (opened via web-fetch; first part verbatim, rest summary-based; journal DOI not opened).
+- **Design/finding:** 1-second EBS data, 9 pairs incl. EUR/USD ("EUR/USD is the most liquid exchange rate"), daily liquidity measures Jan 2007 - Dec 2009; strong liquidity commonality; liquidity risk factor priced in carry returns (contemporaneous). Lagged VIX/TED predict next-day liquidity, not FX returns. No direction forecast, OOS or net-of-cost test. Table values read only via summary: UNVERIFIED.
+- **Relevance:** None for an item. **Status:** VERIFIED (partly summary-read).
