@@ -2584,3 +2584,10 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** opened Bundesbank Monthly Report Jan 2026 EUR/USD drivers article (contemporaneous proxy VAR, no prediction). No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main still holds the stale diverged history; left untouched, worked on branch `work` from origin/main and pushed to origin main.
 - **Next run:** refill again unless a ready item appears.
+
+## 2026-11-20 R313 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded as E052; no run queued or in progress; no `ready` backlog item.
+- **Choice:** backlog refill (protocol priority 4). Angles: recent EUR/USD OOS predictability with costs; lagged order-flow imbalance.
+- **Action:** opened Kilic FEDS 2025-089r1 and MPRA 57673; neither supports a pre-registrable EUR/USD item. No item added. 0 trials (dev 262, val 9, total 271). pytest 464 passed. No lead, no notification.
+- **Observation:** R310-R313 refills added nothing; the angle space checked by keyword is largely exhausted. A human may want to re-prioritise (e.g. decide on parked OOS-only items) rather than continue hourly refills.
+- **Housekeeping:** local main holds a stale diverged history (R243-R252, never on origin); left untouched, worked on branch `work-r313` from origin/main and pushed to origin main.

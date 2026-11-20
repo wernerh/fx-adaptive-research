@@ -3820,3 +3820,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   only; no empirical study; not opened, not cited. An expiry-size history is also not in the pipeline (no verified downloadable source).
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R313 (not an item; no item added)
+- 2026-11-20 R313 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: natural gas/TTF
+  (R227), Nikkei (R151), reverse repo / net liquidity (R196), COT (R082, R120), risk reversals (R146), intraday momentum, tick volume,
+  surprise index all already covered. Angles: (a) recent (2025-2026) EUR/USD out-of-sample predictability with costs; (b) lagged order-flow
+  imbalance -> next-period EUR/USD. Two standard searches.
+  (a) Opened Kilic FEDS 2025-089r1 (monthly, 8 USD pairs, panel OOS R2 <= 0, EUR not among significant pairs, gross). Other hits already
+  logged (EXFormer, Phylaktis, Mispricing risk premia, hrcak 486449) or not opened. (b) Opened Zhang-Zhang-Majeed MPRA 57673 (DEM/USD 1997,
+  5 days, lagged order flow not significant, in-sample only). Other hits (Evans-Lyons, Marsh-Miao, Rime et al., NBER f121921) already logged.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test. 0 trials.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
