@@ -1787,3 +1787,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design/finding:** real-time quarterly US/euro-area data 1999Q4-2010Q4, rolling 26-quarter regressions, one-quarter-ahead EUR/USD forecasts, MSPE ratio vs random walk with Clark-West test. Verbatim: "The Taylor rule specifications outperform the random walk with forecasts ending between 2007:Q1 and 2008:Q1"; "The monetary and PPP models cannot outperform the random walk for any forecast interval"; "Taylor rule predictability, however, rises from the dead in 2009 and 2010."
 - **Relevance:** None for a new item: quarterly, statistical predictability only (no directional, trading or cost result seen), macro real-time data not in the pipeline. **Status:** VERIFIED (partly read).
 
+
+### Edmans, García & Norli (Dec 2005 draft), "Sports sentiment and stock returns" (added 2026-11-20 R299)
+- **Link:** [PDF (Colorado Leeds faculty page)](https://leeds-faculty.colorado.edu/garcia/paper91v32.pdf) (opened via web-fetch; front part verbatim, last part summary-based, UNVERIFIED).
+- **Design/finding:** 39 national stock indices (local currency, Datastream), daily, first trading day after international soccer (1973-2004), cricket, rugby, ice hockey, basketball matches. Next-day loss effect: -38.4 bp after 138 elimination losses, -49.4 bp after 56 World Cup elimination losses, -21.2 bp across all 524 losses; no significant win effect. No currency returns tested; no OOS or cost test seen.
+- **Relevance:** None for a new item: equities only, and euro-area/US elimination matches give far fewer events on dev than the R090 power floor. **Status:** VERIFIED (partly read).

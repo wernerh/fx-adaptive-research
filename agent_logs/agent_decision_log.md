@@ -2488,3 +2488,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) economic surprise index -> EUR/USD and (b) real-rate / Taylor-rule differentials -> EUR/USD.
   (a) only already-logged papers and commentary; (b) Molodtsova-Papell 2011 "Phoenix" opened: quarterly MSPE predictability, no trading/cost test. No item added (reasons in the R298 refill note). 0 trials. No lead, no notification.
 - **Observation:** eighty-five consecutive refills (R214-R298) with no item. The R219 observation (human decision on new data) stands.
+
+## 2026-11-20 R299 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) FX illiquidity / price-impact shocks -> EUR/USD and (b) sports sentiment -> EUR/USD.
+  (a) only already-logged papers; (b) Edmans-García-Norli 2005 opened: equities only, no FX test. No item added (reasons in the R299 refill note). 0 trials. No lead, no notification.
+- **Observation:** eighty-six consecutive refills (R214-R299) with no item. The R219 observation (human decision on new data) stands.
