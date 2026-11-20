@@ -3717,3 +3717,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   source = human decision, R219 observation); US macro-release windows already covered by the release-time family. 0 trials.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Ninety-second consecutive refill with no item (R214-R305).
+
+### Refill note R306 (not an item; no item added)
+- 2026-11-20 R306 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (keyword checks first:
+  "sovereign rating" had no study entry under that key, "Google Trends" none in academic_studies.md): (a) euro-area sovereign rating
+  announcements -> EUR/USD; (b) Google Trends search attention -> EUR/USD returns. Two standard searches.
+  (a) Study hits already logged (Afonso-Furceri-Gomes, R235) or on rating spillovers to bond/CDS markets; nothing new opened.
+  (b) Opened Bulut J. Forecasting 2018 doi:10.1002/for.2500 abstract (monthly, 11 OECD pairs, OOS Clark-West, no cost test);
+  Goddard-Kita-Wang already logged. Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; monthly horizon gives too few dev observations;
+  Google Trends is a new data source (human decision, R219 observation). 0 trials.
+  pytest 454 passed (after reinstalling dev dependencies in this workspace). 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Ninety-third consecutive refill with no item (R214-R306).

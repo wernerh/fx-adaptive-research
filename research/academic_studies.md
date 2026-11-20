@@ -1831,3 +1831,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ORBilu PDF](https://orbilu.uni.lu/bitstream/10993/54742/1/REBUILD%20Working%20Paper%20-%20Lupinu%20%26%20Machura-Urbaniak.pdf) (opened via web-fetch; first ~40k of 85k characters read verbatim, rest summary-based).
 - **Design/finding:** qualitative policy/legal analysis of whether NGEU green bonds and EU safe assets could raise the euro's international role. No dataset, no exchange-rate return or direction test, no OOS or cost test.
 - **Relevance:** None for a new item (no EUR/USD return evidence). **Status:** VERIFIED (partly summary-read).
+
+### Bulut, "Google Trends and the forecasting performance of exchange rate models", Journal of Forecasting 37(3), 2018, pp. 303-315, doi:10.1002/for.2500 (added 2026-11-20 R306)
+- **Link:** [IDEAS/RePEc abstract page](https://ideas.repec.org/a/wly/jforec/v37y2018i3p303-315.html) (opened via web-fetch; abstract only, paraphrased; full text not opened).
+- **Design/finding:** monthly nominal exchange-rate returns of 11 OECD currencies, Jan 2004-Jun 2014; Google Trends search-query predictors vs structural (PPP, monetary) models and a random walk, out-of-sample, Clark-West test. Google Trends beats the random walk for 5 of 11 pairs (monetary model 1 of 11) and is better at direction. Pairs not named in the abstract (EUR/USD inclusion UNVERIFIED); no trading or cost test mentioned.
+- **Relevance:** None for a new item: monthly horizon (~60 dev months), Google Trends data not in the pipeline (new data source = human decision, R219 observation), no net-of-cost evidence. **Status:** VERIFIED (abstract only).
