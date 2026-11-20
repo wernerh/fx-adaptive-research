@@ -2517,3 +2517,10 @@ Why each run chose what it did, and any judgement calls.
   (a) IMF WP/25/127 and Correa-Du-Liao 2021 opened: USD repo / FX-swap basis only; (b) all studies already logged. No item added (reasons in the R303 refill note). 0 trials. No lead, no notification.
 - **Observation:** ninety consecutive refills (R214-R303) with no item. The R219 observation (human decision on new data) stands.
 - **Housekeeping:** local `main` in this workspace held 10 stale unpushed refill commits (R243-R252) diverged from origin; left untouched, work done on a detached checkout of origin/main and pushed to main.
+
+## 2026-11-20 R304 (unattended)
+- **State:** no research-batch run queued or in progress (last run 43840273851, recorded as E051); no `ready` backlog item.
+- **Decision:** refill pass (AUTONOMOUS_PROTOCOL step 4) on (a) VIX term-structure slope -> next-day EUR/USD and (b) payday / payroll dates -> USD.
+  (a) only new study hit blocked (UNVERIFIED, not used); (b) no payday study, Corhay et al. 1995 opened (day-of-week settlement artefact). No item added (reasons in the R304 refill note). 0 trials. No lead, no notification.
+- **Observation:** ninety-one consecutive refills (R214-R304) with no item. The R219 observation (human decision on new data) stands.
+- **Housekeeping:** local `main` still diverged from origin (stale commits); left untouched, work done on a branch from origin/main and pushed to main.

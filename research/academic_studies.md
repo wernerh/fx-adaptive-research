@@ -1818,3 +1818,11 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [PDF](https://conference.nber.org/conf_papers/f150492/f150492.pdf) (opened via web-fetch; front part verbatim, last ~20k characters summary-based, UNVERIFIED in detail).
 - **Design/finding:** daily FR 2052a supervisory data for six US GSIBs from Dec 2015; banks use excess reserves to lend in repo and FX swap markets; quarter-end/TGA reserve shifts move intermediation spreads (CIP basis). Verbatim: "a large Fed balance sheet may be necessary even when short-term interest rates are well above the zero-lower bound." EUR enters only via CIP/FX-swap basis (summary). No spot-return forecast, OOS or cost test.
 - **Relevance:** None for a new item: FX-swap/basis channel, not EUR/USD spot direction; quarter-end window dressing -> FX swaps already logged (BIS WP 836, Boston Fed WP 18-6, Ranaldo ECB 2024). **Status:** VERIFIED (partly read).
+
+### Corhay, Fatemi & Tourani Rad, "On the Presence of a Day-of-the-Week Effect in the Foreign Exchange Market", Managerial Finance 21(8), 1995, pp. 32-43 (added 2026-11-20 R304)
+- **Link:** [ORBi postprint PDF](https://orbi.uliege.be/bitstream/2268/96132/1/Corhay_A_%201995_Managerial%20finance_21_32-43.pdf) (opened via web-fetch; read in full, summary-based, details UNVERIFIED verbatim).
+- **Design/finding:** daily log spot returns of GBP, CAD, DEM, FRF, JPY, CHF vs USD, Jan 1973-Dec 1992 (5,218 obs), day-of-week dummies with Wednesday intercept, OLS and GARCH(1,1)-t. Wednesday returns significantly higher before the 1 Oct 1981 settlement-procedure change (GBP t = 3.33), not after (t = 1.23); attributed to the settlement cycle. In-sample only, no trading rule, no costs. Found while searching a "payday / payroll date" angle; no payday study surfaced.
+- **Relevance:** None for a new item: no EUR/USD, pre-1993 settlement artefact, day-of-week family already covered (E009 hour/day cells on dev). **Status:** VERIFIED (summary-read).
+
+### UNVERIFIED (not opened): City, University of London open-access JFE revision "TS_v35" (eprint 24178)
+- **Link:** [PDF](https://openaccess.city.ac.uk/id/eprint/24178/1/TS_v35%20%5BJFE_Revision_v6%5D.pdf) — fetch returned an access-denied bot page; title, authors and findings UNVERIFIED. Surfaced by a "VIX term structure -> currency returns" search; not used.

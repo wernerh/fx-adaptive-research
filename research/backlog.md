@@ -3693,3 +3693,15 @@ Trial count so far on dev: **261** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   R090 power floor; quarter-end effects appear in FX-swap basis, not spot, and month-/quarter-end spot angles are already logged. 0 trials.
   pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
   Ninetieth consecutive refill with no item (R214-R303).
+
+### Refill note R304 (not an item; no item added)
+- 2026-11-20 R304 refill pass (no ready item, no run queued; last run 43840273851 recorded as E051). Angles (keyword checks first:
+  "VIX term" and "payday" had no entry): (a) VIX term-structure slope (VIX vs VIX3M / futures contango) -> next-day EUR/USD;
+  (b) payday / US payroll dates -> USD / EUR/USD. Two standard searches.
+  (a) Only study hit not already logged (City eprint 24178, JFE revision "TS_v35") was blocked by the host's bot wall: UNVERIFIED,
+  not used; BCB WP 492 already logged; other hits broker/vendor pages (Saxo, CME; not opened). (b) No payday study; opened Corhay-
+  Fatemi-Tourani Rad 1995 (pre-1993 day-of-week settlement artefact, no EUR/USD, in-sample, no costs). Entries in academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; VIX3M/VIX futures data are not in the pipeline (new
+  data source = human decision, R219 observation); day-of-week family already covered on dev (E009). 0 trials.
+  pytest 454 passed. 0 trials used (dev 261, val 9, total 270). Not a pipeline failure.
+  Ninety-first consecutive refill with no item (R214-R304).
