@@ -2709,3 +2709,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R339 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked detached from origin/main (local `main` stale/diverged; left untouched, not pushed).
 - **Action:** two standard searches (iTraxx/CDX credit-index changes -> next-day EUR/USD; German state CPI -> later EUR/USD drift). One unlogged study opened (Catillo LUISS WP: credit-index forecasting, no FX). No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R340 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on branch `work` from origin/main (local `main` stale/diverged; left untouched, not pushed). Workspace lacked statsmodels; reinstalled `.[dev]`, then pytest 464 passed.
+- **Action:** two standard searches (equity-index rebalancing days (MSCI/FTSE) -> EUR/USD FX flows; US Treasury cash balance / FX predictability, TGA angle already R196). Two unlogged sources opened (BNY iFlow MSCI note: descriptive commentary; IMF WP/26/186: survey expectations -> CLS flows, not exchange-rate direction). No item added. 0 trials. No lead, no notification.

@@ -4171,3 +4171,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   iTraxx/CDX data are also not in the pipeline. (b) Hits were XTB news pages only - not studies, not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
   test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R340 (not an item; no item added)
+- 2026-11-21 R340 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "index
+  rebalanc" had one incidental entry and "MSCI" appears only as a predictor in a logged daily panel; Fed liquidity / TGA already
+  covered (R196). Angles: (a) equity-index rebalancing days (MSCI/FTSE reviews) -> EUR/USD flows/moves into the London 16:00 fix;
+  (b) dollar-demand / flow predictors -> later EUR/USD direction. Two standard searches.
+  (a) Unlogged hit opened: Savage (BNY Mellon), "MSCI August Index Review, T+1 and iFlow", 23 Aug 2024
+  (https://bk.bnymellon.com/rs/353-HRB-792/images/MB20240823%20MSCI%20August%20Index%20Review%20T1%20and%20iFlow.pdf?version=0):
+  market commentary; "the rebalancing also has implications for bonds and FX markets as well", no measured exchange-rate move, nothing
+  EUR-specific, no regression/OOS/cost test - not EUR/USD evidence. Other hits (MPRA 112909/115194, NBER conf f127643, CSEF WP487,
+  CEPR DP15617/DP4862, Darden WP) not opened, not cited.
+  (b) Unlogged hit opened: Ballensiefen, Somogyi & Winterberg, "Demand for Dollars: Evidence from Survey Expectations", IMF WP/26/186,
+  Sep 2026 (https://www.imf.org/-/media/files/publications/wp/2026/english/wpiea2026186-source-pdf.pdf, first ~40k characters read):
+  CLS hourly flows, 9 USD pairs incl. EUR, 2012-09..2025-05; monthly Consensus survey expectations predict net dollar *flows*, not
+  exchange-rate direction; paper notes surveys are "known to be weak predictors of exchange rates"; no OOS/cost test in the part read;
+  CLS and survey data not in pipeline. Other hits already logged or not opened.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
+  test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
