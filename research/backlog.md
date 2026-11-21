@@ -4244,3 +4244,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   contemporaneous policy-expectation studies; no FRA-OIS -> next-day EUR/USD direction study found. FRA-OIS data not in pipeline.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
   test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-21 R345 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "APP purchase", "weekly purchase", "main refinancing", "allotment" and "tender" had no entry in research/ or knowledge/
+  ("PEPP" 1 incidental, "MRO" 1 incidental; ECB QE announcements covered R252). Angles: (a) weekly Eurosystem APP/PEPP
+  purchase-volume disclosures -> later EUR/USD; (b) weekly ECB main refinancing operation (MRO) allotment results (Tue) ->
+  later EUR/USD. Two standard searches.
+  (a) Opened Dedola, Georgiadis, Gräb & Mehl, "Does a Big Bazooka Matter? Central Bank Balance-Sheet Policies and Exchange
+  Rates" (2018 version, https://www.eui.eu/Documents/Projects/PWC/Central-Bank-Balance-Sheet-Policies-and-Exchange-Rates.pdf;
+  2017 preliminary version https://icmaif.soc.uoc.gr/Year/2018/papers/paper_1_88.pdf marked "do not cite"): same work as ECB WP
+  2197 already logged R319. Monthly USD/EUR 2009-2017, local projections/2SLS with QE-announcement instruments, weekly data only
+  as robustness; verbatim abstract "QE measures have large and persistent effects on the exchange rate". No lagged forecast,
+  no OOS, no costs; weekly purchase volumes not used as a predictor. ~40% read verbatim, rest model-summarised (UNVERIFIED).
+  (b) Hits were ECB operation result pages only (ecb.europa.eu/mopo/implement/omo/...); no study.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS
+  cost test (purchase/allotment series also not in pipeline). pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.
