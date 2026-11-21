@@ -2034,3 +2034,14 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [RePEc/IDEAS record](https://ideas.repec.org/a/wly/jfutmk/v37y2017i1p3-22.html) (abstract only; full text not opened: data details UNVERIFIED).
 - **Design/finding:** option-implied cross-sectional variance (1- and 3-month options) "outperforms past cross-sectional return variance in forecasting future cross-sectional return variance."
 - **Relevance:** None for an item (forecasts dispersion, not EUR/USD direction; needs OTC option data not in the pipeline). **Status:** VERIFIED (abstract only).
+
+### Wellmann & Trück, "Exchange Rates and Unobservable Fundamentals: A New Approach to Out-of-sample Forecasting", Macquarie University WP 16-07 (Oct 2016) (added 2026-11-21 R346)
+- **Link:** [Macquarie PDF](https://www.mq.edu.au/__data/assets/pdf_file/0010/583282/working_paper_16-07.pdf) (opened via web-fetch; ~40% read verbatim, results/trading section model-summarised: UNVERIFIED).
+- **Design/finding:** monthly USD vs AUD, CAD, CHF, JPY, GBP plus three crosses, 1995-01 .. 2014-12, rolling 60-month window; predictors = foreign-minus-US yield-spread level and slope; horizons 1-12 months. Verbatim: "We do not include the Euro because there is no Euro yield curve"; abstract: "superior to a random walk in terms of direction of change forecasts and profitability". Cost treatment UNVERIFIED.
+- **Relevance:** None for an item (monthly, EUR/USD excluded, far below the R090 power floor on dev; same yield-curve-factor family as Chen & Tsang, R226). **Status:** VERIFIED (partial read).
+
+### Gräb & Kostka, "Predicting risk premia in short-term interest rates and exchange rates", ECB preliminary paper (ICMAIF 2018) (added 2026-11-21 R346)
+- **Link:** [ICMAIF PDF](https://icmaif.soc.uoc.gr/Year/2018/papers/paper_3_69.pdf) (opened via web-fetch, main body read).
+- **Design/finding:** monthly G10 panel incl. USD/EUR (DEM before 1999), 1997-04 .. 2015-12; relative 3m/2y/10y yields and Nelson-Siegel factors predict excess currency returns 1-12 months ahead. Verbatim: "can predict, in-sample, both surprises in money market rates ... and future exchange rate risk premia". No OOS, no costs.
+- **Relevance:** None for an item (monthly, in-sample only, no cost test; yield-curve-factor family already covered R226). **Status:** VERIFIED.
+

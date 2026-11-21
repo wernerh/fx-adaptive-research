@@ -4259,3 +4259,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS
   cost test (purchase/allotment series also not in pipeline). pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+- 2026-11-21 R346 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "weekly international", "2s10s" and "curve steep" had no entry in research/ or knowledge/ ("MOF" only for yen intervention,
+  "slope" 5 hits incl. Chen & Tsang R226). Angles: (a) Japan MoF weekly "International Transactions in Securities" (Japanese
+  residents' net foreign bond purchases, Thu) -> later EUR/USD; (b) US/relative yield-curve slope changes -> later EUR/USD.
+  Two standard searches.
+  (a) Hits were the MoF release PDFs (https://www.mof.go.jp/english/policy/international_policy/reference/itn_transactions_in_securities/)
+  and MNI/FXStreet/MUFG flow commentary only; no study. Weekly flow series not in pipeline.
+  (b) Opened Wellmann & Trück, Macquarie WP 16-07 (2016): monthly, EUR excluded ("no Euro yield curve"), rolling OOS 1-12 months,
+  costs UNVERIFIED. Opened Gräb & Kostka (ECB, ICMAIF 2018 paper_3_69): monthly G10 incl. EUR, in-sample only, no costs.
+  Both logged in academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS
+  cost test at a daily-or-faster horizon (monthly evidence below the R090 power floor). pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
