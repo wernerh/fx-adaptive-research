@@ -2676,3 +2676,8 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R330 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** two standard searches (Chicago PMI -> later EUR/USD drift; US JOLTS -> later EUR/USD drift). No new study opened (CESifo WP 7239 fetch timed out, UNVERIFIED). No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R331 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (US advance GDP -> later EUR/USD drift; S&P 500 futures overnight return -> next-session EUR/USD). Opened ECB WP 1901 (Kurov et al. 2016): futures-only pre-release drift, no FX, no post-release drift; same family as R188. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Note:** refill passes have added no item for many consecutive runs (macro-release, calendar, cross-asset and sentiment angles are largely exhausted in this repo's logs); a human may want to review whether to widen data scope or park unattended refills. Not a pipeline failure, so no notification per protocol.
