@@ -4202,3 +4202,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (redirect to ifo.de, fetch refused): UNVERIFIED, not used. SLOOS is quarterly (about 20 releases on dev), below the R090 power floor.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
   test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R342 (not an item; no item added)
+- 2026-11-21 R342 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "Eurogroup" 1 incidental mention, "Bund auction" 2 (DNB WP 674 logged R269, no FX). Angles: (a) Eurogroup / EU summit meeting
+  days -> EUR/USD; (b) German Bund auction days -> EUR/USD. Two standard searches.
+  (a) Only calendar/Council meeting pages (fxblue, consilium.europa.eu), none cited.
+  (b) Unlogged hit opened: Zimmermann, "Financial Market Behavior during the European Sovereign Debt Crisis: A Market Microstructure
+  Approach", Dr. rer. pol. dissertation, HHU Düsseldorf 2018 (https://docserv.uni-duesseldorf.de/servlets/DerivateServlet/Derivate-51222,
+  partly read): bond chapters study MTS bid-ask spreads, no FX around Bund auctions; Ch. 6 (with Smeets, JCMS 2013) is an in-sample
+  daily event study of 26 EU summits 2008-09..2012-04, EUR/USD in excess of EER-20, "only limited evidence of any longer-term impact
+  of the meetings after an immediate appreciation of the common currency"; no OOS/cost test. Summit/ECB result tables not read
+  verbatim, not used. Summits are irregular, ~26 events in 3.7 years, below the R090 power floor and outside the dev window logic.
+  Other hits (Krohn fixings paper, DNB WP 674, Bundesbank Monthly Report) already logged or not relevant.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
+  test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

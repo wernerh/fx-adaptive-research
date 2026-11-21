@@ -2717,3 +2717,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R341 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin again (stale history); saved it as local branch `stale-local-main` (not pushed) and reset `main` to origin/main.
 - **Action:** two standard searches (US/EU DST mismatch weeks -> EUR/USD; Fed SLOOS release -> later EUR/USD drift). DST and Popović-Đurović hits already logged; SLOOS hits were news pages; CESifo WP 7288 unopenable (UNVERIFIED). No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R342 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin again (stale history); saved it as local branch `stale-local-main-backup` (not pushed) and reset `main` to origin/main.
+- **Action:** two standard searches (Eurogroup / EU summit days -> EUR/USD; German Bund auction days -> EUR/USD). Eurogroup hits were calendar pages; opened Zimmermann (HHU Düsseldorf 2018 dissertation): no FX around Bund auctions, summit FX study in-sample, ~26 events, no OOS/cost. No item added. 0 trials. pytest 464 passed. No lead, no notification.
