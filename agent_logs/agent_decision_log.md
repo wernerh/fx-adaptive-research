@@ -2689,3 +2689,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R334 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** two standard searches (January / turn-of-year EUR/USD seasonality; SNB announcements -> later EUR/USD drift). Opened Girardin-Salimi Namin Econ. Modelling 2019 abstract (monthly calendar effect, OOS/costs UNVERIFIED, below power floor on dev) and JPMC Institute 2019 SNB note (EUR/CHF positioning only). No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R335 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin (stale commits from an older clone); reset to origin/main, old tip kept on a local `stale-local-main-*` branch, nothing pushed from it.
+- **Action:** two standard searches (lagged USD/CAD return -> next-day EUR/USD; lagged Brent/commodity return -> next-day EUR/USD). Opened Bank of Canada SAN 2016-2 (CAD/USD only, contemporaneous fit, lagged regressors no better than random walk) and Passari "Commodity Currencies Revisited" draft (panel, gross only, EUR figures UNVERIFIED; same mechanism as rejected lagged-WTI test). No item added. 0 trials. pytest 464 passed. No lead, no notification.

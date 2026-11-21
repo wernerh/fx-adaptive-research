@@ -4105,3 +4105,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   SNB decisions are ~4/yr (below the R090 floor). Other hits already logged (SNB WP 2025-01, R273).
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R335 (not an item; no item added)
+- 2026-11-21 R335 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "USD/CAD"
+  and "loonie" had no entry in research/ or knowledge/; lagged daily WTI -> next-day EUR/USD already tested and rejected (rejected_hypotheses
+  2026-11-11); Ferraro-Rogoff-Rossi (NBER w17998) already logged. Angles: (a) lagged daily USD/CAD (commodity-currency) return -> next-day
+  EUR/USD; (b) lagged daily Brent / commodity-index return -> next-day EUR/USD. Two standard searches.
+  (a) Opened Berg, Guérin & Imura, "Predictive Ability of Commodity Prices for the Canadian Dollar", Bank of Canada Staff Analytical Note
+  2016-2 (March 2016), https://www.bankofcanada.ca/wp-content/uploads/2016/03/san2016-2.pdf (full text read): CAD/USD target only, daily
+  1985-2015, "out-of-sample fit" with realized (contemporaneous) regressors; footnote 6: regressions on the lagged explanatory variable
+  "did not typically improve on the forecasting performance of the random walk model". No EUR/USD target, no cost test.
+  (b) Opened Passari, "Commodity Currencies Revisited" (draft, Université Paris Dauphine; ICMAIF 2018 folder),
+  https://icmaif.soc.uoc.gr/Year/2018/papers/paper_1_196.pdf (~35% verbatim; rest model-summarised, UNVERIFIED): 25 USD pairs incl. EUR,
+  daily 2000-2011, lagged commodity returns -> next-day FX, rolling OOS vs random walk (Clark-West); significant for 16/25 daily; portfolio
+  results gross ("the effect of transaction costs is not taken into consideration"; bid-ask adjustment "can erode profitability
+  completely"). EUR-specific figures (CW t ~1.38, not significant) only in the summarised part: UNVERIFIED, not used. Same lagged-oil
+  mechanism as the rejected WTI test; Brent would be a near-duplicate variant, not a new family.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
