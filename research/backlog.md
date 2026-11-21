@@ -4073,3 +4073,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were calendar/news pages only (FXBlue, Newsquawk, CME Econoday, Admiral Markets); no study. Not cited.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R333 (not an item; no item added)
+- 2026-11-21 R333 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "factory orders"
+  had no entry in research/ or knowledge/; "durable" one passing mention only. Angles: (a) German factory orders release (08:00 CET)
+  -> later EUR/USD drift; (b) US durable goods orders release (08:30 NY) -> later EUR/USD drift. Three standard searches.
+  (a) Hits were FXStreet/Nasdaq news pages only; no study. Not cited.
+  (b) Hits were Dukascopy market-news pages; academic follow-up search opened Evans & Speight, "International Macroeconomic Announcements
+  and Intraday Euro Exchange Rate Volatility", Cardiff Business School WP A2007/4 (Sept 2007), https://orca.cardiff.ac.uk/39697/1/A2007_4.pdf
+  (~54% verbatim read; rest model-summarised, UNVERIFIED): 5-min EUR-USD/GBP/JPY Olsen quotes Jan 2002-Jul 2003, 132 indicators incl.
+  US Durable Goods Orders and German Manufacturing Orders; models VOLATILITY response over a fixed 1-hour horizon, no return drift, no OOS,
+  no cost test (in the verbatim part). Same authors' JIMF 2010 paper already logged R316. A Jyväskylä thesis hit
+  (jyx.jyu.fi bitstream 4aafee28-...) could not be fetched (server error): UNVERIFIED, not used. ABDV (NBER w8959) already logged.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
