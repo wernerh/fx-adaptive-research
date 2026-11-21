@@ -2685,3 +2685,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R333 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** three standard searches (German factory orders / US durable goods orders -> later EUR/USD drift). Opened Evans-Speight Cardiff WP A2007/4: volatility-only, no drift/OOS/cost test. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R334 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (January / turn-of-year EUR/USD seasonality; SNB announcements -> later EUR/USD drift). Opened Girardin-Salimi Namin Econ. Modelling 2019 abstract (monthly calendar effect, OOS/costs UNVERIFIED, below power floor on dev) and JPMC Institute 2019 SNB note (EUR/CHF positioning only). No item added. 0 trials. pytest 464 passed. No lead, no notification.

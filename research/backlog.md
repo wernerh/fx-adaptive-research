@@ -4087,3 +4087,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (jyx.jyu.fi bitstream 4aafee28-...) could not be fetched (server error): UNVERIFIED, not used. ABDV (NBER w8959) already logged.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R334 (not an item; no item added)
+- 2026-11-21 R334 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "January"
+  already logged once (20 USD pairs 1995-2014, January/TOM anomalies "seem to have disappeared" 2005-2014); "SNB" only via CHF papers
+  (R144, R273). Angles: (a) January / turn-of-the-year EUR/USD seasonality; (b) SNB policy announcements -> later EUR/USD drift. Two
+  standard searches.
+  (a) Opened abstract page of Girardin & Salimi Namin, "The January effect in the foreign exchange market: Evidence for seasonal equity
+  carry trades", Economic Modelling 81 (2019) 422-439, doi:10.1016/j.econmod.2019.07.021,
+  https://econpapers.repec.org/RePEc:eee:ecmode:v:81:y:2019:i:c:p:422-439 (HAL post-print record RePEc:hal:journl:hal-02314156 is the
+  same paper): USD/DEM and USD/EUR 1971-2017, "persistent January and December effects"; frequency, OOS and cost treatment UNVERIFIED
+  (full text not read). A monthly calendar effect gives ~4 Januaries on dev, far below the R090 power floor; other hits were
+  broker/news pages, not cited.
+  (b) Opened JPMorgan Chase Institute (Farrell-Bhagat-Zhao, Jan 2019), "Does the Timing of Central Bank Announcements Matter?",
+  https://ir.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/institute/pdf/institute-timing-of-central-bank-announcements.pdf
+  (~62% verbatim): EUR/CHF hedge-fund positioning before quarterly SNB meetings 2011-2017, no EUR/USD, no return-drift/OOS/cost test.
+  SNB decisions are ~4/yr (below the R090 floor). Other hits already logged (SNB WP 2025-01, R273).
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
