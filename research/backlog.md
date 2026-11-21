@@ -4011,3 +4011,14 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) All hits already logged (NBER/CEPR Gholampour-van Wincoop, arXiv 1402.1624, 1310.5306); nothing new opened.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R328 (not an item; no item added)
+- 2026-11-21 R328 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Conference
+  Board" and "housing starts" had no entry in research/ or knowledge/; "2411.16244" had no entry. Angles: (a) US Conference Board consumer
+  confidence release (10:00 NY) -> later EUR/USD drift; (b) US housing starts release (08:30 NY) -> later EUR/USD drift. Two standard searches.
+  (a) Opened Martins-Lopes arXiv 2411.16244 (2024): 5-min AUD and CHF vs USD 2017-2023, US/Australian/Swiss events, zero-mean return model,
+  announcements enter volatility only (effects fade within 30 min); no direction or drift test, no EUR/USD, no costs. Other hits (Chaboud et al.
+  IFDP 823 and Cagliesi et al. already logged; Norges Bank staff memo 5/2026, Newcastle thesis, Cardiff/ECB/LMU PDFs, FXStreet page) not opened, not cited.
+  (b) Hits were news/broker pages only (XTB, ForexLive, FXStreet, Moneycorp); no study. Not cited.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

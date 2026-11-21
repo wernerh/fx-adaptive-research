@@ -2662,3 +2662,8 @@ Why each run chose what it did, and any judgement calls.
 - **Housekeeping:** local main still diverged (stale history); worked on a detached HEAD at origin/main and pushed HEAD:main; local main left untouched.
 - **Note:** sixteen consecutive refill passes (R310-R325) without an item; refill line remains saturated.
 
+
+## 2026-11-21 R328 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (Conference Board consumer confidence release -> later EUR/USD drift; US housing starts release -> later EUR/USD drift). One new paper opened (Martins-Lopes arXiv 2411.16244) and logged in research/academic_studies.md; volatility only, no direction test. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main still diverged (stale history); worked on branch `run` at origin/main and pushed it to main; local main left untouched.

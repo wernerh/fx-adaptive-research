@@ -2009,3 +2009,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design/finding:** daily Bloomberg ATM, risk-reversal and butterfly implied-vol quotes for EUR-USD, EUR-GBP, EUR-JPY (1-9 month maturities), Jan 2006 - Nov 2013; functional time-series model forecasts one-day-ahead implied-volatility levels/changes, recursive OOS Dec 2011 - Nov 2013: "the FTS model significantly outperforms implied volatility forecasts produced by traditionally employed parametric models." Does not test spot-return direction; butterfly/risk reversal are smile inputs, not spot predictors.
 - **Relevance:** None for an item (forecasts implied vol, not EUR/USD spot direction; OTC option data not in the pipeline). **Status:** VERIFIED (partly summary-read).
 - City, University of London eprint 24959 ("Cross section of FX options returns and volatility", filename only) blocked by bot wall: UNVERIFIED, not used.
+
+### Martins & Lopes, "What events matter for exchange rate volatility?", arXiv 2411.16244v1 (Oct 2024) (added 2026-11-21 R328)
+- **Link:** [arXiv HTML](https://arxiv.org/html/2411.16244v1) (opened via web-fetch; first ~40,000 characters verbatim, rest summary-based).
+- **Design/finding:** 5-minute AUD and CHF returns vs USD, Jan 2017 - Dec 2023 (OOS from Jul 2022); 117 US/Australian events (Bloomberg calendar) enter a stochastic-volatility model's log-variance for up to 30 minutes; returns modelled as zero-mean. Verbatim: "we find a link between intraday seasonality, trading volume, and the opening hours of major markets across the globe."
+- **Relevance:** None for an item (volatility only, no return-direction or drift test, no EUR/USD or euro-area events, no costs). **Status:** VERIFIED (partly summary-read).
