@@ -4123,3 +4123,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   mechanism as the rejected WTI test; Brent would be a near-duplicate variant, not a new family.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R336 (not an item; no item added)
+- 2026-11-21 R336 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Hang Seng"
+  and "KOSPI" had no entry in research/ or knowledge/; regional Fed surveys (Philly Fed) already an angle (~line 4028); US-German
+  2-year spread already closed (R138, ~line 3407); Phylaktis & Yamani stock/bond -> FX forecasting already logged (R294). Angles:
+  (a) lagged Asian-session equity return (Nikkei / Hang Seng) -> same-day London-session EUR/USD; (b) US Philadelphia Fed survey release
+  -> later EUR/USD drift. Three standard searches.
+  (a) Hits were Krohn-Mueller-Whelan "FX premia around the clock", CEPR DP14462, NY Fed SR917, Bank of Canada SWP 2021-48 and Phylaktis
+  & Yamani (Bayes) - all already logged in research/; Lou-Polk-Skouras (overnight vs intraday) is equities only, already referenced.
+  No new study with an EUR/USD target found; nothing new opened. (b) Hits were FXStreet news/how-to pages only (not studies, not
+  opened); duplicate of the regional-Fed-survey angle.
+- No item added: no new verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
+  test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

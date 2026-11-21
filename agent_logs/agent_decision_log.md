@@ -2693,3 +2693,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R335 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin (stale commits from an older clone); reset to origin/main, old tip kept on a local `stale-local-main-*` branch, nothing pushed from it.
 - **Action:** two standard searches (lagged USD/CAD return -> next-day EUR/USD; lagged Brent/commodity return -> next-day EUR/USD). Opened Bank of Canada SAN 2016-2 (CAD/USD only, contemporaneous fit, lagged regressors no better than random walk) and Passari "Commodity Currencies Revisited" draft (panel, gross only, EUR figures UNVERIFIED; same mechanism as rejected lagged-WTI test). No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R336 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` again diverged from origin (stale shallow clone); worked on a detached checkout of origin/main, nothing pushed from the stale branch.
+- **Action:** three standard searches (lagged Asian-session equity return -> London-session EUR/USD; Philly Fed release -> later EUR/USD drift). Every study hit was already logged in research/; remaining hits were news pages. No new source opened, no item added. 0 trials. pytest 464 passed. No lead, no notification.
