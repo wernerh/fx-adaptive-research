@@ -2667,3 +2667,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** two standard searches (Conference Board consumer confidence release -> later EUR/USD drift; US housing starts release -> later EUR/USD drift). One new paper opened (Martins-Lopes arXiv 2411.16244) and logged in research/academic_studies.md; volatility only, no direction test. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main still diverged (stale history); worked on branch `run` at origin/main and pushed it to main; local main left untouched.
+
+## 2026-11-21 R329 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (Fed Chair testimony -> later EUR/USD drift; Empire State / Philly Fed surveys -> later EUR/USD drift). Two new papers opened (Gordon-Lunsford Cleveland Fed WP 23-26 + EC 2024-01; Koch-Yung Dallas Fed GMPI WP 287) and logged in research/academic_studies.md; both contemporaneous only. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main had unrelated stale history; renamed it to `stale-local-main-backup` (local only, not pushed) and worked on a fresh `main` tracking origin/main.

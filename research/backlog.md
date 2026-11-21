@@ -4022,3 +4022,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were news/broker pages only (XTB, ForexLive, FXStreet, Moneycorp); no study. Not cited.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R329 (not an item; no item added)
+- 2026-11-21 R329 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "testimony",
+  "Humphrey", "Empire State", "Philadelphia Fed", "Lunsford" had no entry in research/ or knowledge/. Angles: (a) Fed Chair congressional
+  (Humphrey-Hawkins / MPR) testimony -> later EUR/USD drift; (b) regional Fed manufacturing surveys (Empire State 08:30 NY, Philly Fed
+  08:30 NY) -> later EUR/USD drift. Two standard searches.
+  (a) Opened Gordon-Lunsford Cleveland Fed WP 23-26 (doi:10.26509/frbc-wp-202326) and EC 2024-01: minute-level rates/equities around 179
+  testimonies 1991-2023, contemporaneous window, no FX, no drift/OOS/cost test. Other hits (FXStreet, Forex.com, Convera, MoneyShow,
+  CFA blog) are news/commentary, not opened, not cited.
+  (b) Opened Koch-Yung Dallas Fed GMPI WP 287: 5-min currency futures incl. EUR around 21 US releases 1996-2016, contemporaneous only,
+  FX less sensitive than rates; no drift/OOS/cost test. Other hits (Chaboud et al. IFDP 823, Norges Bank staff memo 5/2026, Bundesbank
+  Jan 2026 already logged; FXStreet, FXBlue, Continuum pages) not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
