@@ -2672,3 +2672,7 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** two standard searches (Fed Chair testimony -> later EUR/USD drift; Empire State / Philly Fed surveys -> later EUR/USD drift). Two new papers opened (Gordon-Lunsford Cleveland Fed WP 23-26 + EC 2024-01; Koch-Yung Dallas Fed GMPI WP 287) and logged in research/academic_studies.md; both contemporaneous only. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main had unrelated stale history; renamed it to `stale-local-main-backup` (local only, not pushed) and worked on a fresh `main` tracking origin/main.
+
+## 2026-11-21 R330 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (Chicago PMI -> later EUR/USD drift; US JOLTS -> later EUR/USD drift). No new study opened (CESifo WP 7239 fetch timed out, UNVERIFIED). No item added. 0 trials. pytest 464 passed. No lead, no notification.

@@ -4036,3 +4036,14 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Jan 2026 already logged; FXStreet, FXBlue, Continuum pages) not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R330 (not an item; no item added)
+- 2026-11-21 R330 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Chicago PMI"
+  had no entry in research/ or knowledge/; "JOLTS" one passing mention only. Angles: (a) Chicago PMI release (09:45 NY) -> later EUR/USD
+  drift; (b) US JOLTS job openings release (10:00 NY) -> later EUR/USD drift. Two standard searches.
+  (a) Hits: Cardiff A2006/05, arXiv 2411.16244, Norges Bank staff memo 5/2026, Chaboud et al. IFDP 823 already logged; CESifo WP 7239
+  (intraday news effects on emerging European FX, title inferred from URL slug) could not be opened (redirect to ifo.de, fetch-permission
+  timeout): UNVERIFIED, not used. XTB news pages not opened, not cited.
+  (b) Hits were news/broker pages only (FXStreet, TMGM); no study. Not cited.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
