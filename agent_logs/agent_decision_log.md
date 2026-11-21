@@ -2713,3 +2713,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R340 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on branch `work` from origin/main (local `main` stale/diverged; left untouched, not pushed). Workspace lacked statsmodels; reinstalled `.[dev]`, then pytest 464 passed.
 - **Action:** two standard searches (equity-index rebalancing days (MSCI/FTSE) -> EUR/USD FX flows; US Treasury cash balance / FX predictability, TGA angle already R196). Two unlogged sources opened (BNY iFlow MSCI note: descriptive commentary; IMF WP/26/186: survey expectations -> CLS flows, not exchange-rate direction). No item added. 0 trials. No lead, no notification.
+
+## 2026-11-21 R341 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin again (stale history); saved it as local branch `stale-local-main` (not pushed) and reset `main` to origin/main.
+- **Action:** two standard searches (US/EU DST mismatch weeks -> EUR/USD; Fed SLOOS release -> later EUR/USD drift). DST and Popović-Đurović hits already logged; SLOOS hits were news pages; CESifo WP 7288 unopenable (UNVERIFIED). No item added. 0 trials. pytest 464 passed. No lead, no notification.

@@ -4189,3 +4189,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   CLS and survey data not in pipeline. Other hits already logged or not opened.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
   test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R341 (not an item; no item added)
+- 2026-11-21 R341 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Angles: (a) US/EU
+  daylight-saving-time mismatch weeks -> EUR/USD; (b) Fed Senior Loan Officer Opinion Survey (SLOOS) release -> later EUR/USD drift.
+  Two standard searches.
+  (a) Study hits already logged: Nower (2024, Economics Letters, Durham repository; R114), Krohn et al. fixings paper, SNB WP 2011-04.
+  The Popović & Đurović (2014, Applied Economics, doi:10.1080/00036846.2014.948676) RePEc abstract was reopened this run: hourly
+  EUR/USD 2004-2014, in-sample day-hour ANOVA, Friday 00:00 -> 03:00 pattern, no OOS/cost test; already logged (R060, R176).
+  (b) Only news/calendar pages (MarketPulse, Kitco/Reuters, Investing.com, Fed SLOOS index, Bank of Canada SLOS), none
+  opened or cited. One candidate study, CESifo WP 7288 (https://www.cesifo.org/DocDL/cesifo1_wp7288.pdf), could not be opened
+  (redirect to ifo.de, fetch refused): UNVERIFIED, not used. SLOOS is quarterly (about 20 releases on dev), below the R090 power floor.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
+  test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
