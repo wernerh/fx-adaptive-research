@@ -1977,3 +1977,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Lancaster eprints PDF](https://eprints.lancs.ac.uk/71649/1/_paper.pdf) (opened via web-fetch; venue not read).
 - **Design/finding:** OANDA retail order flow, EUR/USD focus, Oct 2003 - May 2004; lagged retail order-flow categories improve 1-5 minute mid-quote forecasts OOS (last 4 weeks; modified DM test). No net-of-cost trading test; retail order-flow data not in the pipeline; minute horizon far below cost hurdle.
 - **Relevance:** None for an item (data unavailable; horizon too short for SPEC 4 costs). **Status:** VERIFIED (partly summary-read).
+
+### Temprano Arroyo, "The EU's Response to the COVID-19 Crisis: A Game Changer for the International Role of the Euro?" (European Economy Discussion Paper 164, Jun 2022; doi:10.2765/24542) (added 2026-11-21 R324)
+- **Link:** [European Commission PDF](https://economy-finance.ec.europa.eu/system/files/2022-11/dp164_en_0.pdf) (opened via web-fetch; middle sections summary-read).
+- **Design/finding:** descriptive policy analysis of NGEU/SURE safe-asset supply, reserve shares (COFER 1995-2020), investor composition, spreads over Bunds and bid-ask liquidity; verbatim: NGEU/SURE are "unlikely to sufficiently boost on their own the euro's global role". No exchange-rate return, event-study, OOS or cost test.
+- **Relevance:** None. **Status:** VERIFIED (partly summary-read).

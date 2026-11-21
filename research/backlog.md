@@ -3960,3 +3960,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R324 (not an item; no item added)
+- 2026-11-21 R324 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "SURE bond",
+  "EFSF", "value date", "spot-next" had no entry; HICP (R287), Bund auctions, TIC (R234), tax dates (R147/R272), coupon dates (R175),
+  rollover (R145), stablecoins (R265), US-German 2y spread (R138/R28x), Lee-Mykland jumps (B48/E043) already covered. Angles: (a) EU
+  supranational (NGEU/SURE) bond syndications -> EUR demand -> EUR/USD; (b) FX spot value-date / settlement-holiday effects -> EUR/USD.
+  Two standard searches.
+  (a) Opened EC Discussion Paper 164 (Temprano Arroyo 2022): safe-asset / international-role analysis, no exchange-rate test. Other hits
+  were EC issuance pages, a Lupinu & Machura-Urbaniak working paper (already logged) and broker/news pages (FXStreet/TMGM "BNY" note,
+  Newsquawk; not evidence, not opened). (b) Hits were broker holiday calendars (Interactive Brokers, LBMA value dates; not studies) and
+  papers already logged (IMF WP/2026/156 R277, Krohn-Mueller-Whelan UIP in high frequency). Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

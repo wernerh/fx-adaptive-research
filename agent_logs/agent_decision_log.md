@@ -2649,3 +2649,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches (ECB communication text tone -> later EUR/USD; abnormal quote/trading activity -> next-day EUR/USD). Four papers opened and logged in research/academic_studies.md; none tests a lagged predictor of EUR/USD direction OOS with costs on in-pipeline data. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main again diverged (stale R243-R252 history, saved as local branch backup/stale-local-main); main reset to origin/main; no remote history change.
 - **Note:** fourteen consecutive refill passes (R310-R323) without an item; refill line remains saturated.
+
+## 2026-11-21 R324 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (EU NGEU/SURE bond syndications -> EUR/USD; FX value-date / settlement-holiday effects -> EUR/USD). One new paper opened (EC DP 164) and logged in research/academic_studies.md; no exchange-rate test. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main diverged again (stale shallow-clone history); worked on a detached HEAD at origin/main and pushed HEAD:main; local main left untouched; no remote history change.
+- **Note:** fifteen consecutive refill passes (R310-R324) without an item; refill line remains saturated.
