@@ -2721,3 +2721,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R342 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin again (stale history); saved it as local branch `stale-local-main-backup` (not pushed) and reset `main` to origin/main.
 - **Action:** two standard searches (Eurogroup / EU summit days -> EUR/USD; German Bund auction days -> EUR/USD). Eurogroup hits were calendar pages; opened Zimmermann (HHU Düsseldorf 2018 dissertation): no FX around Bund auctions, summit FX study in-sample, ~26 events, no OOS/cost. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R343 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin again (stale history); saved it as local branch `stale-local-main-backup` (not pushed) and reset `main` to origin/main.
+- **Action:** two standard searches (US Treasury auction tails -> later USD / EUR/USD; Fed ON RRP usage -> next-day EUR/USD). Auction hits already logged (BoC SWP 2025-29, NY Fed SR1188); opened FEDS 2016-023 and Alquist-Kahn-Dilts Stedman NBER draft: no FX direction test. No item added. 0 trials. pytest 464 passed. No lead, no notification.

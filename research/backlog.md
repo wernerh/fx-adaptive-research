@@ -4217,3 +4217,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Other hits (Krohn fixings paper, DNB WP 674, Bundesbank Monthly Report) already logged or not relevant.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
   test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-21 R343 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "auction tail" had no entry, "Treasury auction" 6 (Krohn-Vala-Uthemann-Yang BoC SWP 2025-29 logged ~line 754), "RRP" 1 /
+  "reverse repo" 3 incidental. Angles: (a) US Treasury auction tails -> later USD / EUR/USD; (b) Fed ON RRP usage changes ->
+  next-day EUR/USD. Two standard searches.
+  (a) Hits: BoC SWP 2025-29 and NY Fed SR1188 already logged (research/academic_studies.md); others are broker/blog pages
+  (fxnx, MQL5, forex.com), not cited.
+  (b) Two unlogged hits opened: Anderson & Huther, "Modelling Overnight RRP Participation", FEDS 2016-023
+  (https://www.federalreserve.gov/econresdata/feds/2016/files/2016023pap.pdf): daily ON RRP take-up Dec 2013-Nov 2014, models
+  participation and repo rates, no FX test. Alquist, Kahn & Dilts Stedman, "Central Banker to the World: Foreign Reserve Management
+  and U.S. Money Market Liquidity" (NBER conference draft 2025, https://conference.nber.org/conf_papers/f212016/f212016.pdf):
+  repo spreads / pegged-currency rate differentials, in-sample, no EUR/USD direction test. Both PDFs only partly read verbatim.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
+  test (ON RRP data also not in pipeline). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
