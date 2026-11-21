@@ -3986,3 +3986,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   option-implied vol not in the pipeline. Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R326 (not an item; no item added)
+- 2026-11-21 R326 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "term premium"
+  and "ACM" had no entry; yield-curve slope (R226), weekly reversal (R174, Chen-Kao ~line 2302) already covered. Angles: (a) US / foreign
+  term-premium changes -> later EUR/USD; (b) weekly own-return reversal / momentum in EUR/USD. Two standard searches.
+  (a) Opened Greenwood-Hanson-Stein-Sunderam QJE 2023 (doi:10.1093/qje/qjad024): monthly six-pair panel 2001-2021, lagged 3y7y forward
+  differential predicts 3/12-month carry-inclusive excess returns, in-sample, no OOS/cost test; daily QE part contemporaneous. Other
+  hits were EC/Bundesbank pages (Bundesbank Jan 2026 already logged R312) and broker/news pages (Convera, Investing.com, Forex.com;
+  not evidence, not opened). (b) Opened Raza-Marshall-Visaltanachoti JIMF 2014 abstract: 63-currency cross-section, EUR/USD not
+  reported. City eprint 13700 blocked by bot wall (UNVERIFIED, not used). Other hits already logged (NTU 35555, Soton 402301, Massey,
+  Brunel GMC, CXO). Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
