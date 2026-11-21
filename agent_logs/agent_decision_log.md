@@ -2705,3 +2705,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R338 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on a branch checked out from origin/main (local `main` stale/diverged from an old history; left untouched, not pushed).
 - **Action:** two standard searches (US weekly initial jobless claims -> later EUR/USD drift; US ISM services PMI -> later EUR/USD drift). All hits were news/broker/blog pages; none opened or cited. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R339 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked detached from origin/main (local `main` stale/diverged; left untouched, not pushed).
+- **Action:** two standard searches (iTraxx/CDX credit-index changes -> next-day EUR/USD; German state CPI -> later EUR/USD drift). One unlogged study opened (Catillo LUISS WP: credit-index forecasting, no FX). No item added. 0 trials. pytest 464 passed. No lead, no notification.

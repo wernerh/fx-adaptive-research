@@ -4158,3 +4158,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were FXStreet / Dukascopy release previews and trading guides only - not studies, not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
   test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R339 (not an item; no item added)
+- 2026-11-21 R339 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "iTraxx",
+  "CDX" and "German state CPI" had no entry in research/ or knowledge/; US HY credit spread (R282) and euro-area flash HICP (R287)
+  already covered. Angles: (a) European credit-index (iTraxx Europe / Crossover) changes -> next-day EUR/USD; (b) German state CPI
+  releases (pre-national CPI) -> later EUR/USD drift. Two standard searches.
+  (a) Unlogged hit opened: Catillo, "CDS Indices Spreads: Forecasting and Trading iTraxx and CDX Indices", LUISS working paper 3/2015-2016
+  (https://luissuniversitypress.it/wp-content/uploads/2020/09/wp_tesi_ecc.2015-16_catillo_def-1.pdf, first part read): monthly
+  iTraxx/CDX spreads as the forecast target (predictors equities, vol, rates, gold), no exchange-rate test - not EUR/USD evidence.
+  Imperial JFE 2023 PDF, AEA 2020/2021 drafts and Liège skewness WP already logged. CreditGrades FAJ 2006, MQL5 forum, S&P page not opened.
+  iTraxx/CDX data are also not in the pipeline. (b) Hits were XTB news pages only - not studies, not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
+  test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
