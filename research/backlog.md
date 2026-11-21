@@ -3973,3 +3973,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   papers already logged (IMF WP/2026/156 R277, Krohn-Mueller-Whelan UIP in high frequency). Entry in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R325 (not an item; no item added)
+- 2026-11-21 R325 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "inflation swap",
+  "5y5y", "swaption" had no entry; US breakevens (~line 2254), MOVE, EVZ, CTA/COT (R082, ~line 3447), Riksbank (~line 3517) already
+  covered. Angles: (a) euro-area inflation-swap (5y5y) changes -> next-day EUR/USD; (b) interest-rate (swaption) implied volatility /
+  FX volatility risk premia -> later EUR/USD returns. Two standard searches.
+  (a) Hits were broker/news pages only (FXStreet, ING THINK, FXCM, MNI, BlueGamma rate page); not evidence, not cited; inflation-swap
+  data not in the pipeline. (b) Opened BIS WP 1068 (Liu-Xie 2023, abstract page): swaption implied vol -> future swap-rate realized
+  volatility, no FX. Opened City eprint 13156 (Della Corte-Ramadorai-Sarno accepted manuscript, JFE 2016): verified full version of the
+  already-logged CEPR DP9549 (R180); monthly cross-sectional VRP sort over 10/20 USD pairs, EUR/USD not reported separately, needs OTC
+  option-implied vol not in the pipeline. Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

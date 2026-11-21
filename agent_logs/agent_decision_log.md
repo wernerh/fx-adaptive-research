@@ -2655,3 +2655,10 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches (EU NGEU/SURE bond syndications -> EUR/USD; FX value-date / settlement-holiday effects -> EUR/USD). One new paper opened (EC DP 164) and logged in research/academic_studies.md; no exchange-rate test. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main diverged again (stale shallow-clone history); worked on a detached HEAD at origin/main and pushed HEAD:main; local main left untouched; no remote history change.
 - **Note:** fifteen consecutive refill passes (R310-R324) without an item; refill line remains saturated.
+
+## 2026-11-21 R325 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (euro-area 5y5y inflation swaps -> next-day EUR/USD; swaption implied vol / FX volatility risk premia -> later EUR/USD). Two papers opened (BIS WP 1068; Della Corte-Ramadorai-Sarno accepted manuscript) and logged in research/academic_studies.md; neither gives a pre-registrable EUR/USD direction test on in-pipeline data. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main still diverged (stale history); worked on a detached HEAD at origin/main and pushed HEAD:main; local main left untouched.
+- **Note:** sixteen consecutive refill passes (R310-R325) without an item; refill line remains saturated.
+

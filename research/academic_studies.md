@@ -1982,3 +1982,14 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [European Commission PDF](https://economy-finance.ec.europa.eu/system/files/2022-11/dp164_en_0.pdf) (opened via web-fetch; middle sections summary-read).
 - **Design/finding:** descriptive policy analysis of NGEU/SURE safe-asset supply, reserve shares (COFER 1995-2020), investor composition, spreads over Bunds and bid-ask liquidity; verbatim: NGEU/SURE are "unlikely to sufficiently boost on their own the euro's global role". No exchange-rate return, event-study, OOS or cost test.
 - **Relevance:** None. **Status:** VERIFIED (partly summary-read).
+
+### Liu & Xie, "Forecasting swap rate volatility with information from swaptions", BIS Working Paper 1068 (25 Jan 2023) (added 2026-11-21 R325)
+- **Link:** [BIS abstract page](https://www.bis.org/publ/work1068.htm) (opened via web-fetch; abstract page only, 48-page PDF not read).
+- **Design/finding:** model-free implied volatility from OTC swaption quotes -> future realized volatility of swap rates across tenors; abstract: it "demonstrates significant predictability on future realized volatility of swap rates" and holds "out of sample". Currencies, sample and frequency UNVERIFIED (PDF not read). Volatility of rates only; no FX direction, no cost test.
+- **Relevance:** None. **Status:** VERIFIED (abstract only).
+
+### Della Corte, Ramadorai & Sarno, "Volatility Risk Premia and Exchange Rate Predictability", J. Financial Economics 120(1), 21-40 (2016), doi:10.1016/j.jfineco.2016.02.015 (accepted manuscript Feb 2015) (added 2026-11-21 R325; supplements the R180 CEPR DP9549 entry, which stays as written)
+- **Link:** [City Research Online PDF](https://openaccess.city.ac.uk/id/eprint/13156/1/VRP_Paper_18Feb2015%20%28with%20Figures%29.pdf) (opened via web-fetch; first ~35% verbatim, rest summary-based; journal DOI not opened).
+- **Design/finding:** VRP = 1-year realized vol minus 1-year volatility-swap rate from JP Morgan OTC implied vols; monthly end-of-month quintile sorts over 10 developed (incl. Euro Area) and 20 developed+emerging USD pairs, Jan 1998 - Dec 2013; verbatim: "currencies with relatively cheap volatility insurance tend to appreciate"; excess returns "adjusted for transaction costs using bid-ask quotes on spot and forward rates". Net Sharpe ratios (0.61 / 0.51) and the OOS design read only via summary: UNVERIFIED. EUR/USD not reported as a single-pair time-series test.
+- **Relevance:** None for an item (cross-sectional, monthly, OTC option-implied vol not in the pipeline). **Status:** VERIFIED (partly summary-read).
+
