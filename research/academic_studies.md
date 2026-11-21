@@ -2024,3 +2024,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Dallas Fed GMPI WP 287 PDF](https://www.dallasfed.org/institute/~/media/documents/institute/wpapers/2016/0287.pdf) (opened via web-fetch).
 - **Design/finding:** 21 US macro announcements (NFP, CPI, GDP, claims, etc.) vs Bloomberg consensus, 1996-10 - 2016-01 split pre/post 2008; 5-minute 10-year T-note futures and EUR, GBP, JPY, AUD, CAD futures; symmetric window around release. "domestic interest rates tend to be more sensitive to U.S. macroeconomic news than exchange rates."
 - **Relevance:** None for an item (contemporaneous announcement responses only, no later-drift, OOS or cost test; regional Fed surveys not singled out). **Status:** VERIFIED.
+
+### Žukovič, "Dynamics of episodic transient correlations in currency exchange rate returns and their predictability", arXiv:1301.1893 (Jan 2013, preprint) (added 2026-11-21 R337)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/1301.1893) (opened via web-fetch, full text).
+- **Design/finding:** hourly average rates per euro for USD, CAD, CHF, GBP, JPY (EUR/USD included), 2004-03-01 .. 2009-12-17, 37,620 obs; rolling portmanteau test flags windows of significant autocorrelation, then next-hour direction = sign(lag-1 autocorrelation x last standardized return). Verbatim: "during these relatively brief periods the returns are predictable to a certain degree." Hit rate ~0.5 on random data.
+- **Relevance:** None for an item (hourly, in-sample evaluation, no costs; same hourly autocorrelation / variance-ratio family already covered R199, R~2329). **Status:** VERIFIED.
+
+### Grobys & Heinonen, "Does Option-Implied Cross-Sectional Return Dispersion Forecast Realized Cross-Sectional Return Dispersion? Evidence From the G10 Currencies", J. Futures Markets 37(1), 3-22 (2017) (added 2026-11-21 R337)
+- **Link:** [RePEc/IDEAS record](https://ideas.repec.org/a/wly/jfutmk/v37y2017i1p3-22.html) (abstract only; full text not opened: data details UNVERIFIED).
+- **Design/finding:** option-implied cross-sectional variance (1- and 3-month options) "outperforms past cross-sectional return variance in forecasting future cross-sectional return variance."
+- **Relevance:** None for an item (forecasts dispersion, not EUR/USD direction; needs OTC option data not in the pipeline). **Status:** VERIFIED (abstract only).

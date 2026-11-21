@@ -2697,3 +2697,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R336 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` again diverged from origin (stale shallow clone); worked on a detached checkout of origin/main, nothing pushed from the stale branch.
 - **Action:** three standard searches (lagged Asian-session equity return -> London-session EUR/USD; Philly Fed release -> later EUR/USD drift). Every study hit was already logged in research/; remaining hits were news pages. No new source opened, no item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-21 R337 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on a detached checkout of origin/main (local `main` stale/diverged; not pushed).
+- **Action:** two standard searches (time-varying EUR/USD-equity correlation regime -> next-day EUR/USD; G10 currency-return dispersion -> later EUR/USD). Opened Žukovič arXiv:1301.1893 (hourly, in-sample, no costs; covered family) and Grobys-Heinonen JFM 2017 abstract (dispersion forecast, not direction). No item added. 0 trials. pytest 464 passed. No lead, no notification.
