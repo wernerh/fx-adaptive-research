@@ -4061,3 +4061,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   fxnx blog not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R332 (not an item; no item added)
+- 2026-11-21 R332 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "M3"/"money
+  supply" and "INSEE"/"French business" had no entry in research/ or knowledge/. Angles: (a) euro-area M3 monetary-aggregates release
+  (10:00 CET) -> later EUR/USD drift; (b) French INSEE business climate release (08:45 CET) -> later EUR/USD drift. Three standard searches.
+  (a) Hits were ECB author-profile pages only; no study. Follow-up search opened the abstract page of Ehrmann & Fratzscher, "Exchange rates
+  and fundamentals: new evidence from real-time data", ECB WP 365 (2004), https://econpapers.repec.org/RePEc:ecb:ecbwps:2004365: daily
+  USD/EUR (DEM) 1993-2003, US/German/euro-area news, model "explaining about 75% of the monthly directional changes" (contemporaneous fit);
+  no post-announcement drift, no OOS forecast, no cost test stated on the page; release list (whether M3 is included) UNVERIFIED.
+  (b) Hits were calendar/news pages only (FXBlue, Newsquawk, CME Econoday, Admiral Markets); no study. Not cited.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
