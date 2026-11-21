@@ -3999,3 +3999,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Brunel GMC, CXO). Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R327 (not an item; no item added)
+- 2026-11-21 R327 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "butterfly"
+  and "Cummins" had no entry; risk reversal (6 hits), Twitter/tweets (Gholampour-van Wincoop R206, arXiv 1402.1624 / 1310.5306) already
+  covered. Angles: (a) FX option butterfly / smile curvature -> later EUR/USD spot direction; (b) Twitter/StockTwits sentiment -> next-day
+  EUR/USD. Two standard searches.
+  (a) Opened Kearney-Cummins-Murphy EJF (DCU DORAS manuscript): forecasts one-day-ahead implied vol for EUR-USD/GBP/JPY, OOS, but no
+  spot-direction test. City eprint 24959 blocked by bot wall (UNVERIFIED, not used). Other hits (DOAJ/IMFI Hoque 2020 already logged,
+  Cambridge "large moves" already logged, CME articles, UWA vol-forecast page, AEA slides, PMC smile construction) not opened, not cited.
+  (b) All hits already logged (NBER/CEPR Gholampour-van Wincoop, arXiv 1402.1624, 1310.5306); nothing new opened.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost test.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

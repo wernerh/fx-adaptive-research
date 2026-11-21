@@ -2003,3 +2003,9 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [EconPapers abstract](https://econpapers.repec.org/RePEc:eee:jimfin:v:45:y:2014:i:c:p:38-60) (opened via web-fetch; abstract only, full text paywalled).
 - **Design/finding:** cross-section of 63 currencies, 1-4 week formation; "Momentum strategy returns are as large as 8% p.a." EUR/USD time-series result, sample period, OOS and cost tests not on the abstract page (UNVERIFIED).
 - **Relevance:** None (cross-sectional; weekly EUR/USD reversal family already reviewed R174/R19x, below the dev power floor). **Status:** VERIFIED (abstract only).
+
+### Kearney, Cummins & Murphy, "Forecasting Implied Volatility in Foreign Exchange Markets: A Functional Time Series Approach", European Journal of Finance (forthcoming at time of the repository copy; DOI not shown) (added 2026-11-21 R327)
+- **Link:** [DORAS (DCU) accepted manuscript PDF](https://doras.dcu.ie/24127/1/MARK%20CUMMINS%20EJOF%20FOR%20DORAS.pdf) (opened via web-fetch; first ~55% verbatim, rest summary-based).
+- **Design/finding:** daily Bloomberg ATM, risk-reversal and butterfly implied-vol quotes for EUR-USD, EUR-GBP, EUR-JPY (1-9 month maturities), Jan 2006 - Nov 2013; functional time-series model forecasts one-day-ahead implied-volatility levels/changes, recursive OOS Dec 2011 - Nov 2013: "the FTS model significantly outperforms implied volatility forecasts produced by traditionally employed parametric models." Does not test spot-return direction; butterfly/risk reversal are smile inputs, not spot predictors.
+- **Relevance:** None for an item (forecasts implied vol, not EUR/USD spot direction; OTC option data not in the pipeline). **Status:** VERIFIED (partly summary-read).
+- City, University of London eprint 24959 ("Cross section of FX options returns and volatility", filename only) blocked by bot wall: UNVERIFIED, not used.
