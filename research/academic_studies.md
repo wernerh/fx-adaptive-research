@@ -1957,3 +1957,23 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [AEA 2012 PDF](https://aeaweb.org/conference/2012/retrieve.php?pdfid=585) (opened via web-fetch; first part verbatim, rest summary-based; journal DOI not opened).
 - **Design/finding:** 1-second EBS data, 9 pairs incl. EUR/USD ("EUR/USD is the most liquid exchange rate"), daily liquidity measures Jan 2007 - Dec 2009; strong liquidity commonality; liquidity risk factor priced in carry returns (contemporaneous). Lagged VIX/TED predict next-day liquidity, not FX returns. No direction forecast, OOS or net-of-cost test. Table values read only via summary: UNVERIFIED.
 - **Relevance:** None for an item. **Status:** VERIFIED (partly summary-read).
+
+### Fortes & Le Guenedal, "Tracking ECB's Communication: Perspectives and implications for financial markets", MPRA Paper 108746 (Dec 2020, posted 22 Jul 2021) (added 2026-11-21 R323)
+- **Link:** [MPRA PDF](https://mpra.ub.uni-muenchen.de/108746/1/MPRA_paper_108746.pdf) (opened via web-fetch; first part verbatim, rest summary-based).
+- **Design/finding:** text database of ECB speeches, interviews and press conferences 1997 - Jul 2020; Lasso-selected OLS of same-day daily EUR/USD change on same-day topic signals, 2002 - Jul 2020 in three sub-periods; text "improve[s] financial-linked models consistently in all periods analyzed (2.5% on average)" (adjusted R2). Contemporaneous; authors state they "did not test for the value added of this database in a predictive process". No OOS or cost test. Table values read only via summary: UNVERIFIED.
+- **Relevance:** None for an item (contemporaneous, no lagged direction test; ECB-day family already tested). **Status:** VERIFIED (partly summary-read).
+
+### Nguyen (co-author UNVERIFIED), "ECB's central bank communication and monetary policy transmission: predictability from text-based sentiment indicators?", Macroeconomic Dynamics 29, e102 (2025), doi:10.1017/S1365100525000239 (added 2026-11-21 R323)
+- **Link:** [Cambridge Core](https://www.cambridge.org/core/journals/macroeconomic-dynamics/article/ecbs-central-bank-communication-and-monetary-policy-transmission-predictability-from-textbased-sentiment-indicators/9A8225BEFA56175C87F3FD7DA47DE35C) (opened via web-fetch; partly summary-read).
+- **Design/finding:** press-conference sentiment (266 meetings 1998-2022) -> EONIA, policy-rate and SPF expectations, in-sample lags 0-12; no exchange rate, no OOS, no trading/cost test.
+- **Relevance:** None. **Status:** VERIFIED (partly summary-read).
+
+### Collodel, "Interpreting the Interpreter: Can We Model Post-ECB Conferences Volatility with LLM Agents?", arXiv:2508.13635 (v4, May 2026) (added 2026-11-21 R323)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/2508.13635) (opened via web-fetch; partly summary-read).
+- **Design/finding:** LLM-agent "synthetic disagreement" from ECB press-conference transcripts -> next-day euro-area OIS high-low range (3M/2Y/10Y), 1998 - Mar 2026; Spearman 0.38-0.53 in sample, small OOS (10 conferences). Volatility of rates, not EUR/USD direction; no cost test.
+- **Relevance:** None. **Status:** VERIFIED (partly summary-read).
+
+### Nolte & Nolte, "The Information Content of Retail Investors' Order Flow" (Lancaster working version 7 Nov 2014) (added 2026-11-21 R323)
+- **Link:** [Lancaster eprints PDF](https://eprints.lancs.ac.uk/71649/1/_paper.pdf) (opened via web-fetch; venue not read).
+- **Design/finding:** OANDA retail order flow, EUR/USD focus, Oct 2003 - May 2004; lagged retail order-flow categories improve 1-5 minute mid-quote forecasts OOS (last 4 weeks; modified DM test). No net-of-cost trading test; retail order-flow data not in the pipeline; minute horizon far below cost hurdle.
+- **Relevance:** None for an item (data unavailable; horizon too short for SPEC 4 costs). **Status:** VERIFIED (partly summary-read).

@@ -2643,3 +2643,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches (French OAT-Bund spread -> EUR/USD; FX bid-ask spread / illiquidity -> later EUR/USD returns). Three AEA papers opened and logged in research/academic_studies.md; none tests lagged liquidity -> EUR/USD direction OOS with costs. No item added. 0 trials. pytest 464 passed. No lead, no notification.
 - **Housekeeping:** local main again diverged (stale R243-R252 history); work done on a branch from origin/main and pushed to main; no remote history change.
 - **Note:** thirteen consecutive refill passes (R310-R322) without an item; refill line remains saturated.
+
+## 2026-11-21 R323 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (ECB communication text tone -> later EUR/USD; abnormal quote/trading activity -> next-day EUR/USD). Four papers opened and logged in research/academic_studies.md; none tests a lagged predictor of EUR/USD direction OOS with costs on in-pipeline data. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+- **Housekeeping:** local main again diverged (stale R243-R252 history, saved as local branch backup/stale-local-main); main reset to origin/main; no remote history change.
+- **Note:** fourteen consecutive refill passes (R310-R323) without an item; refill line remains saturated.
