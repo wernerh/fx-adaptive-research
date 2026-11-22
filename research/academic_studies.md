@@ -2090,3 +2090,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv PDF](https://arxiv.org/pdf/1202.2447) (opened via web-fetch; ~40k of ~70k chars verbatim, OOS tables model-summarised: UNVERIFIED).
 - **Design/finding:** S&P 500 10-minute returns 1985-2010; martingale-scaling conditional-density bounds give trend-following intraday signals; rolling 15-year calibration with forward evaluation; verbatim in-sample Table I average profit 4.479 bp per trade (25% quantile). No costs ("profits ... would be sensibly reduced" per summary); no FX results.
 - **Relevance:** None for an item (equity index, no costs, no EUR/USD; intraday trend/quantile-breakout family already tested in E048/E049). **Status:** VERIFIED (partial read).
+
+### Bieganowski & Slepaczuk, "Explainable Patterns in Cryptocurrency Microstructure", arXiv:2602.00776 (2026) (added 2026-11-22 R354)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/2602.00776) (opened via web-fetch; ~40k of ~59k chars verbatim; sections 8-9 not verified: UNVERIFIED).
+- **Design/finding:** Binance Futures perpetuals (BTC, LTC, ETC, ENJ, ROSE), 1-second order books 2022-01-01..2025-10-12; order-flow imbalance, spread and VWAP-to-mid features in CatBoost predict the 3-second log mid return; purged walk-forward CV, outer folds only; taker fills at best bid/ask, gross and fee-adjusted. Taker t-tests significant at 5% only for ETC, ENJ, ROSE; ROSE "largely due to the extreme event on 2025-10-10" (verbatim). No FX.
+- **Relevance:** None for an item (crypto, 3-second horizon, full order book not in the Dukascopy pipeline, no EUR/USD). **Status:** VERIFIED (partial read).

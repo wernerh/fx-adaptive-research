@@ -4367,3 +4367,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   pages (forex.com, FXStreet, City Index, MarketScreener, Continuum; not evidence, not opened, not cited). Nothing new opened.
 - No item added: no new verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+
+### Refill note R354 (not an item; no item added)
+- 2026-11-22 R354 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "order flow imbalance" and "Diwali" had no entry in research/ or knowledge/. Angles: (a) order-flow / quote-imbalance proxy ->
+  short-horizon EUR/USD returns; (b) Diwali / Indian festival calendar -> EUR/USD. Two standard searches.
+  (a) Opened Bieganowski & Slepaczuk arXiv:2602.00776 (details in research/academic_studies.md): crypto perpetuals, 3-second
+  horizon, full order book; no FX. Marsh-Miao (City PDF) already logged; other hits (NBER, Durham, Konstanz, Warwick, MIT,
+  arXiv:2112.02947 equities OFI) not opened, not cited.
+  (b) Hits concern Indian equities (BSE Sensex, Muhurat trading) and INR/CAD seasonality (FXStreet); none on EUR/USD; not opened,
+  not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; order-book data not in the pipeline; Diwali gives
+  ~4 events on dev, far below the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.
