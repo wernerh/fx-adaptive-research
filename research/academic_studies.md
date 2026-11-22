@@ -2125,3 +2125,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [EUR thesis repository PDF](https://thesis.eur.nl/pub/53210/Final-A-Cointegration-Trading-Strategy-for-Currency-Exchange-Rates-Bachelor-paper-by-Jeroen-Goudvis.pdf) (opened via web-fetch; first ~40k of ~70k characters verbatim, remainder summarised: later sections partly UNVERIFIED).
 - **Design/finding:** daily spot rates of 27 USD-quoted currencies, 2000-2019; pairs selected by cointegration on 2000-2009, distance-rule trading 2010-2019 (open at 2 rolling SD, close at crossing). Verbatim abstract: 38 closed positions, "an average realized return of 6,5% over 10 years", significant at 1%. No transaction costs, no Sharpe ratio; EUR/USD cannot be a leg (USD is the base currency of every series).
 - **Relevance:** None for an item (no EUR/USD leg, no costs, 38 trades over 10 years, student thesis; cointegration/pairs angle already reviewed ~backlog line 2686). **Status:** VERIFIED (partial read).
+
+### Ghazei, "High-Frequency Identification of Monetary Policy Surprises in Canada: Evidence from Intraday Exchange Rate Data", MA extended essay, University of Victoria (2025) (added 2026-11-22 R361)
+- **Link:** [UVic PDF](https://www.uvic.ca/socialsciences/economics/_assets/docs/pantea-ghazei-exteneded-essay.pdf) (opened via web-fetch; first ~40k of ~48k characters verbatim, remainder UNVERIFIED).
+- **Design/finding:** minute USD/CAD 2001-2024 around 53 Bank of Canada announcements; intraday-window surprise measures (w = 1..10 min), contemporaneous only. Verbatim conclusion: "markets regularly misjudge either the magnitude or the direction of the Bank's intended move." No later-return/drift test, no OOS, no costs; EUR/USD not included.
+- **Relevance:** None for an item. **Status:** VERIFIED (partial read).
+
+### Ferrari, Kearns & Schrimpf, "Monetary policy's rising FX impact in the era of ultra-low rates", BIS Working Paper 626 (2017) (added 2026-11-22 R361)
+- **Link:** [BIS landing page](https://www.bis.org/publ/work626.pdf) (abstract opened; PDF body fetch refused: body UNVERIFIED).
+- **Design/finding (abstract):** high-frequency event study of policy news from seven central banks, 2004-2015; verbatim "The FX impact of monetary policy is state-dependent and is stronger the lower the level of interest rates." Event-window (contemporaneous) reaction; pairs, any later-return test, OOS and costs UNVERIFIED.
+- **Relevance:** None for an item (contemporaneous; central-bank announcement family already tested, E013/E022-E025). **Status:** VERIFIED (abstract only).

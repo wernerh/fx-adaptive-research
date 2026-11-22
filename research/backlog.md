@@ -4458,3 +4458,14 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were FXStreet / Forex.com / DailyFX / investingLive market commentary only (not evidence, not cited).
 - No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+
+### Refill note R361 (not an item; no item added)
+- 2026-11-22 R361 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Angles: (a) non-G2 central-bank
+  announcements (Bank of Canada / Riksbank / Norges Bank) -> later EUR/USD drift; (b) recent EUR/USD intraday return-predictability
+  papers with OOS and costs. Two standard searches.
+  (a) Opened Ghazei (UVic MA essay 2025: USD/CAD only, contemporaneous) and BIS WP 626 abstract (seven central banks, event-window
+  reaction; PDF body refused, UNVERIFIED); details in research/academic_studies.md. Norges Bank staff memo 5/2026, BoC SWP 2025-33 and
+  SAN 2025-10 already logged; other hits not opened, not cited.
+  (b) All hits already logged (EXFormer arXiv 2512.12727, arXiv 1411.2153, hrcak 486449, UCP repository, FEDS 2025-089, Phylaktis-Ehab).
+- No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.

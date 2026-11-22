@@ -2805,3 +2805,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` branch was again the old diverged R243-R252 line; worked on a detached checkout of origin/main (local branch left untouched). pytest 464 passed.
 - **Action:** two standard searches (EUR/USD pairs/cointegration mean reversion; Asian-session Treasury-yield change -> European-session EUR/USD). One new source opened (Goudvis 2020 thesis); no admissible item (see R360 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R359: refill passes are not producing admissible items.
+
+## 2026-11-22 R361 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was again the old diverged R243-R252 line; worked on a new local branch from origin/main (old branch left untouched). pytest 464 passed.
+- **Action:** two standard searches (non-G2 central-bank announcements -> EUR/USD drift; recent EUR/USD intraday predictability papers with OOS/costs). Two new sources opened (Ghazei 2025; BIS WP 626 abstract); no admissible item (see R361 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R360: refill passes are not producing admissible items.
