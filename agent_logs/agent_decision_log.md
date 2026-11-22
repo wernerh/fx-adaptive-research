@@ -2835,3 +2835,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on detached origin/main (local `main` branch in this workspace is a stale divergent clone; left untouched).
 - **Action:** two standard searches (GDPNow nowcast revisions -> EUR/USD; EIA crude-inventory release -> EUR/USD). Two new sources opened (RBA RDP 2025-09; BoC SWP 2020-8); no admissible item (see R366 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R365: refill passes are not producing admissible items.
+
+## 2026-11-22 R367 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on detached origin/main (local `main` branch in this workspace is a stale divergent clone; left untouched).
+- **Action:** two standard searches (iron ore -> EUR/USD; container/shipping freight -> EUR/USD). One new source opened (Okudan Soytürk-Açık 2024); no admissible item (see R367 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R366: refill passes are not producing admissible items.

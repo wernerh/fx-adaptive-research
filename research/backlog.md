@@ -4532,3 +4532,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+
+### Refill note R367 (not an item; no item added)
+- 2026-11-22 R367 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "iron ore"
+  and "container" had no entry; "freight" 1 file (Baltic Dry entries, 3 files). Angles: (a) iron ore price returns -> next-day EUR/USD;
+  (b) container / shipping freight rates -> later EUR/USD. Two standard searches.
+  (a) Hits are commodity-currency papers already logged (Ferraro-Rogoff-Rossi, Jeanneret-Sokolovski, Alexandridis et al.) or about
+  commodity-exporter currencies (AUD/CAD/NOK), not EUR/USD; none opened anew, not cited.
+  (b) Opened Okudan Soytürk-Açık 2024 (MASTEB 13(4)): monthly DXY vs dirty-tanker index, in-sample asymmetric causality, dollar ->
+  freight only; no EUR/USD, no OOS, no costs. Other hits (Commerzbank briefing, AEA 2024 abstract, CBS Schramm freight forecasting,
+  City Sui 2025, TRID, Marburg 12-2018) are about freight forecasting or macro, not EUR/USD direction; not opened, not cited.
+  Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; freight and iron ore data also not in the pipeline.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
