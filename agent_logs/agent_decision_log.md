@@ -2737,3 +2737,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-21 R346 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had diverged from origin (stale pre-rebase R2xx commits); worked on a detached checkout of origin/main and pushed from it, leaving local `main` untouched.
 - **Action:** two standard searches (Japan MoF weekly foreign-securities flows -> later EUR/USD; yield-curve slope changes -> later EUR/USD). Opened Wellmann-Trück 2016 (monthly, EUR excluded) and Gräb-Kostka (monthly, in-sample). MoF hits were release pages/commentary only. No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-22 R347 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had unrelated (pre-rewrite) history vs origin; kept it as branch `backup-stale-main` and reset local `main` to origin/main.
+- **Action:** three standard searches (ECB Monetary Dialogue hearings -> later EUR/USD; ECB non-monetary-policy meeting days -> EUR/USD). Opened the Born-Horn-Moench-Mustafi EP Monetary Dialogue study (no EUR/USD test). No item added. 0 trials. pytest 464 passed. No lead, no notification.

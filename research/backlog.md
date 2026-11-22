@@ -4272,3 +4272,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS
   cost test at a daily-or-faster horizon (monthly evidence below the R090 power floor). pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-22 R347 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "Monetary Dialogue", "European Parliament", "ECON hearing" and "non-monetary" had no entry in research/ or knowledge/
+  (ECB speeches/communication covered R166 Istrefi-Odendahl-Sestieri, R234; Fed testimony covered). Angles: (a) ECB President's
+  quarterly Monetary Dialogue hearings at the European Parliament ECON committee -> later EUR/USD; (b) ECB Governing Council
+  non-monetary-policy meeting days -> EUR/USD. Three standard searches.
+  (a) Opened Born, Horn, Moench & Mustafi, "Wait and Watch: Steering Monetary Policy Under Balanced Inflation Risks", EP study
+  PE 764.368 for the 6 Oct 2025 Monetary Dialogue (https://www.europarl.europa.eu/cmsdata/298533/FSFM_Bonn_Final%20MD%20October.pdf,
+  ~40% read verbatim, rest model-summarised, UNVERIFIED): policy-stance review; only event study is 10y Bund yields around ECB
+  announcements; no EUR/USD test, no lagged/OOS/cost test. Other hits were ECB speech pages, the Banque de France 5,100-event
+  note (same EA-CED work as R166) and the ECB blog already logged (academic_studies.md ~line 1628).
+  (b) Hits were the ECB meeting calendar (https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html) and broker
+  economic-calendar pages only; no study.
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test (hearing
+  dates also not in the repo calendars). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
