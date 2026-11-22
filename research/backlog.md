@@ -4432,3 +4432,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   QuantRocket blog (not evidence, not cited).
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; (b) duplicates the logged around-the-clock
   intraday-premium family. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R359 (not an item; no item added)
+- 2026-11-22 R359 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Hurst" only
+  as EuroStoxx/AUD-quote entries, "realized skewness" only as cross-sectional/option-skew entries. Angles: (a) rolling Hurst-exponent
+  regime (trend vs mean-reversion) switch -> daily EUR/USD; (b) realized (intraday) skewness -> next-day EUR/USD. Two standard searches.
+  (a) Hits: arXiv 2105.09140 "Forecasting with fractional Brownian motion" (fetch refused by the fetch tool, not opened: UNVERIFIED,
+  not cited), arXiv 1612.06665 (option pricing, not direction), Warwick/HKU/core.ac.uk PDFs and TradingView scripts (not opened /
+  not evidence, not cited).
+  (b) Opened Zhang-Feng-Wei QF 2025 IDEAS page (oil realized skewness -> 9 exchange rates; pairs, frequency, OOS, costs not stated;
+  details in research/academic_studies.md). Pretoria repository 2263/70757 and the Physica A item already logged; JFQA skewness
+  risk premia (cross-section, option-implied) and Economic Modelling/NAJEF "Can skewness predict currency excess returns?"
+  (already logged) not reopened.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; (b) relies on intraday oil data not in pipeline and
+  on the lagged-oil mechanism already rejected. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

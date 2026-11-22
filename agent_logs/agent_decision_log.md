@@ -2795,3 +2795,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was again stale/diverged from origin; worked on a fresh branch from origin/main and pushed to main (local stale branch left untouched). pytest 464 passed.
 - **Action:** two standard searches (Scandinavian-cross lagged returns -> EUR/USD; Frankfurt pre-open hour drift). No new admissible source; no item added (see R358 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R357: refill passes are not producing admissible items.
+
+## 2026-11-22 R359 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was stale/diverged from origin (old R243-R252 commits); reset local main to origin/main (old commits remain in reflog). pytest 464 passed.
+- **Action:** two standard searches (Hurst-exponent regime -> daily EUR/USD; realized skewness -> next-day EUR/USD). One new source opened (Zhang-Feng-Wei QF 2025, abstract only); no admissible item (see R359 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R358: refill passes are not producing admissible items.
