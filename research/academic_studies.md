@@ -2045,3 +2045,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design/finding:** monthly G10 panel incl. USD/EUR (DEM before 1999), 1997-04 .. 2015-12; relative 3m/2y/10y yields and Nelson-Siegel factors predict excess currency returns 1-12 months ahead. Verbatim: "can predict, in-sample, both surprises in money market rates ... and future exchange rate risk premia". No OOS, no costs.
 - **Relevance:** None for an item (monthly, in-sample only, no cost test; yield-curve-factor family already covered R226). **Status:** VERIFIED.
 
+
+### Harris, Karadotchev, Sowerbutts & Stoja, "Have FSRs got news for you? Evidence from the impact of Financial Stability Reports on market activity", Bank of England Staff WP 792 (Apr 2019) (added 2026-11-22 R348)
+- **Link:** [BoE page](https://www.bankofengland.co.uk/working-paper/2019/have-fsrs-got-news-for-you) / [PDF](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2019/have-fsrs-got-news-for-you.pdf) (opened via web-fetch; ~40k chars verbatim, remainder model-summarised: UNVERIFIED).
+- **Design/finding:** daily returns, volume, spreads of 73 UK-listed financials and CDS of 7 large UK banks, Jan 2010 .. Jan 2018, 16 FSR publications, event window day 0..+2, bootstrap vs random days. Verbatim: "publication of the FSR is, on average, associated with no abnormal returns". No FX, no OOS, no costs.
+- **Relevance:** None for an item (no exchange-rate test; semi-annual events far below the R090 power floor). **Status:** VERIFIED (partial read).

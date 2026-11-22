@@ -2741,3 +2741,7 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-22 R347 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had unrelated (pre-rewrite) history vs origin; kept it as branch `backup-stale-main` and reset local `main` to origin/main.
 - **Action:** three standard searches (ECB Monetary Dialogue hearings -> later EUR/USD; ECB non-monetary-policy meeting days -> EUR/USD). Opened the Born-Horn-Moench-Mustafi EP Monetary Dialogue study (no EUR/USD test). No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-22 R348 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` again diverged from origin (stale pre-rewrite history); left untouched, worked on branch `run-r348` from origin/main and pushed to origin main.
+- **Action:** two standard searches (central-bank Financial Stability Report days -> later EUR/USD; bank stress-test result releases -> later EUR/USD). Opened BoE SWP 792 (no FX test, no abnormal returns). ECB WP 2054 unfetchable (UNVERIFIED). No item added. 0 trials. pytest 464 passed. No lead, no notification.

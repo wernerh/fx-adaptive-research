@@ -4286,3 +4286,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   economic-calendar pages only; no study.
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test (hearing
   dates also not in the repo calendars). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-22 R348 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "Financial Stability Review", "Financial Stability Report", "CCAR" and "SREP" had no entry in research/ or knowledge/
+  ("stress test" one incidental hit). Angles: (a) ECB Financial Stability Review / central-bank FSR publication days -> later
+  EUR/USD; (b) bank stress-test result releases (EBA/ECB, Fed CCAR) -> later EUR/USD. Two standard searches.
+  (a) Opened Harris, Karadotchev, Sowerbutts & Stoja, "Have FSRs got news for you? Evidence from the impact of Financial
+  Stability Reports on market activity", BoE Staff WP 792 (2019)
+  (https://www.bankofengland.co.uk/working-paper/2019/have-fsrs-got-news-for-you; PDF ~40k chars read verbatim, rest
+  model-summarised, UNVERIFIED): daily UK financial equities/CDS 2010-2018, 16 FSRs, contemporaneous 3-day CARs; verbatim
+  "publication of the FSR is, on average, associated with no abnormal returns"; no FX test, no OOS/cost test.
+  (b) ECB WP 2054 (https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2054.en.pdf) could not be fetched: UNVERIFIED, not used.
+  Other hits were ECB Macroprudential Bulletin pages and bank-equity stress-test event studies (not opened; not FX).
+- No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism and an OOS cost test (FSRs
+  twice a year and stress tests annually are far below the R090 power floor on dev). pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
