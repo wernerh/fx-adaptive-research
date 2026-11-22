@@ -4446,3 +4446,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (already logged) not reopened.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; (b) relies on intraday oil data not in pipeline and
   on the lagged-oil mechanism already rejected. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R360 (not an item; no item added)
+- 2026-11-22 R360 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "cointegration"
+  / pairs angle already reviewed (~line 2686); no entry on Asian-session Treasury-yield moves. Angles: (a) EUR/USD vs another USD pair
+  divergence / pairs mean reversion -> EUR/USD (re-check for new evidence with costs); (b) US Treasury yield change during the Asian
+  session -> European-session EUR/USD. Two standard searches.
+  (a) Opened Goudvis (Erasmus bachelor thesis 2020; details in research/academic_studies.md): no EUR/USD leg, no costs. Essex repository
+  S1057521916301958 already logged; other PDFs in results (core.ac.uk, City, HKU, UCL, UCT theses, Pandini press-release PDF) not opened,
+  not cited.
+  (b) Hits were FXStreet / Forex.com / DailyFX / investingLive market commentary only (not evidence, not cited).
+- No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.
