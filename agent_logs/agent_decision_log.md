@@ -2760,3 +2760,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` still diverged from origin (stale history); left untouched, worked on branch `run-r351` from origin/main and pushed to origin main.
 - **Action:** two standard searches (Jewish High Holy Days -> EUR/USD; euro-area partial / cross-market holidays -> EUR/USD). Opened Frieder-Subrahmanyam (FAJ WP 2002) and Batrinca-Hesse-Treleaven (IJFE 2018). No item added. 0 trials. No lead, no notification.
 - **Observation for the human (not a notification):** same as R349/R350: the admission bar appears exhausted; refill passes keep adding nothing.
+
+## 2026-11-22 R352 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Action:** two standard searches (euro-area/US PMI differential -> EUR/USD; volatility-regime intraday autocorrelation -> EUR/USD). Opened Hayes (IHS Markit 2021), Pan (S&P Global MI 2025), Baldovin et al. (arXiv:1202.2447). No item added. 0 trials. No lead, no notification.
+- **Observation for the human (not a notification):** same as R349-R351: refill passes keep adding nothing; the admission bar appears exhausted.

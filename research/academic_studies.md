@@ -2075,3 +2075,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [UCL Discovery PDF](https://discovery.ucl.ac.uk/id/eprint/10059527/1/Batrinca_et_al-2018-International_Journal_of_Finance_%2526_Economics.pdf) (opened via web-fetch; ~40k of ~113k chars verbatim, results sections model-summarised: UNVERIFIED).
 - **Design/finding:** ~2,353 pan-European stocks, 21 countries, Jan 2000 - May 2015; verbatim "The trading volumes on dates when there is at least one cross-market holiday are on average 8.5% lower than the volumes of the previous period." Volume only; no returns, no FX, no costs; validation by cross-validation (not a chronological holdout).
 - **Relevance:** None (equity volume, no direction claim, no FX). **Status:** VERIFIED (partial read).
+
+### Hayes (IHS Markit), "Estimating short-term FX equilibria using PMIs: EUR/USD case study", vendor commentary dated 19 Oct 2021 (added 2026-11-22 R352)
+- **Link:** [PDF](https://cdn.ihsmarkit.com/www/pdf/1021/FX-model-21-10-18.pdf) (opened via web-fetch; 4 pages, full verbatim text).
+- **Design/finding:** OLS "short-term 'fair value'" of the EUR/USD level on contemporaneous 6-month rolling eurozone-minus-US manufacturing output and input-price PMI differentials, STOXX 600 minus S&P 500 6-month return, Bund-UST 10y spread and BTP 10y yield, Jan 2004 - Sep 2021; verbatim "explain approximately 70% of the variation in EUR/USD"; PMIs add ~6 pp adjusted R2. Misvaluation > 1 SD followed by "sharp movements" is a visual claim with no test. In-sample, no lagged predictor, no OOS, no costs.
+- **Relevance:** None for an item (contemporaneous level fit; PMI data not in pipeline). **Status:** VERIFIED (full read).
+
+### Pan (S&P Global Market Intelligence), "Using PMI data to gauge the direction of the US dollar index", blog 23 Jul 2025 (added 2026-11-22 R352)
+- **Link:** [page](https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/07/using-pmi-data-to-gauge-the-direction-of-the-us-dollar-index) (opened via web-fetch; ~40k of ~124k chars verbatim, rest model-summarised: UNVERIFIED).
+- **Design/finding (as extracted):** monthly PMI-based regression signals for the broad USD index, entry on the 6th of each month, May 2012 - May 2025; reports win rates only (~55% simple, 59% multi-factor, 64% in a 3-year point-in-time test from May 2022). No returns, no costs, no EUR/USD pair result.
+- **Relevance:** None for an item (USD index, monthly, ~72 monthly signals on dev, win-rate only, PMI data not in pipeline). **Status:** VERIFIED (partial read).
+
+### Baldovin, Camana, Caraglio, Stella & Caporin, "Ensemble properties of high frequency data and intraday trading rules", arXiv:1202.2447v2 (2013) (added 2026-11-22 R352)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/1202.2447) (opened via web-fetch; ~40k of ~70k chars verbatim, OOS tables model-summarised: UNVERIFIED).
+- **Design/finding:** S&P 500 10-minute returns 1985-2010; martingale-scaling conditional-density bounds give trend-following intraday signals; rolling 15-year calibration with forward evaluation; verbatim in-sample Table I average profit 4.479 bp per trade (25% quantile). No costs ("profits ... would be sensibly reduced" per summary); no FX results.
+- **Relevance:** None for an item (equity index, no costs, no EUR/USD; intraday trend/quantile-breakout family already tested in E048/E049). **Status:** VERIFIED (partial read).
