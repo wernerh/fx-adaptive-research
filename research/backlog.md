@@ -4508,3 +4508,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entry in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; KOSPI/KRW data also not in the pipeline. pytest 464
   passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R365 (not an item; no item added)
+- 2026-11-22 R365 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "VIX expir" had
+  no entry; "earnings season" 1 file, no study. Angles: (a) VIX futures/options expiration days -> EUR/USD; (b) US corporate earnings
+  season -> EUR/USD. Two standard searches.
+  (a) Opened CXO Advisory "Short-term VIX Calendar Effects" (2015): VIX/VXX only, gross, no OOS, no FX. Other hits (AEA 2dedYfDH and
+  BoC SWP 2021-48 already logged; Cboe settlement calendar and Eurex VSTOXX article are not evidence) not cited.
+  (b) Opened Lombardi UChicago dissertation 2017: US equity premium concentrated in earnings seasons, no FX. Other hits are news pages
+  (Fortune, Marketplace, Kitco, Inquirer) or firm-level FX exposure studies, not evidence for EUR/USD direction, not cited.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.

@@ -2160,3 +2160,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [LSE Research Online eprint 132024](https://researchonline.lse.ac.uk/id/eprint/132024) (record page and abstract opened via web-fetch; thesis body UNVERIFIED).
 - **Design/finding:** cross-sectional asset pricing: two-beta (downside/upside) CAPM for global stock momentum portfolios and a "global downside market factor" for carry-trade / forward-discount-sorted currency portfolios; GMM estimates. Verbatim: "I propose a new factor – the global downside market factor – to explain high returns to carry trades." No single-pair EUR/USD test, no directional time-series forecast, no OOS, no costs stated.
 - **Relevance:** None for an item (cross-sectional risk premia, not next-period EUR/USD direction). **Status:** VERIFIED (abstract only).
+
+### LeCompte / CXO Advisory (2015), "Short-term VIX Calendar Effects" (added 2026-11-22 R365)
+- **Link:** [cxoadvisory.com/calendar-effects/vix-calendar-effects/](https://www.cxoadvisory.com/calendar-effects/vix-calendar-effects/) (opened via web-fetch).
+- **Design/finding:** daily VIX (1990-2015) and VXX (2009-2015) by day of week, turn of month and options expiration; VIX rises on Mondays on average and drops abnormally on the day before VIX options expiration (VXX 56 of 77 OE-1 returns negative). Gross returns, no costs, no OOS; author warns of small samples and snooping. No currency tested.
+- **Relevance:** None for an item (volatility products only, no EUR/USD). **Status:** VERIFIED (practitioner article, not peer reviewed).
+
+### Lombardi (2017), "Financial Reporting and the Market Risk Premium", University of Chicago PhD dissertation (added 2026-11-22 R365)
+- **Link:** [knowledge.uchicago.edu record 163 PDF](https://knowledge.uchicago.edu/record/163/files/Lombardi_uchicago_0330D_14112.pdf) (opened via web-fetch; front matter verbatim, body partly via extracted summary, UNVERIFIED in detail).
+- **Design/finding:** CRSP daily US equity 1926-2015: market excess returns concentrated in earnings seasons (~67-70% of the premium in ~half the days; bellwether announcement days 9.53 bp vs 1.98 bp). US equities (plus Australian replication); no currency test, no OOS, no costs.
+- **Relevance:** None for an item (equity risk premium, no EUR/USD direction). **Status:** VERIFIED (partial read).

@@ -2825,3 +2825,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on a detached HEAD at origin/main (local `main` in this workspace holds stale unpushed commits from an old clone; left untouched). pytest 464 passed.
 - **Action:** two standard searches (equity downside-risk / momentum spillover -> next-period EUR/USD; KOSPI/KRW Asian-session return -> European-session EUR/USD). One new source opened (Dobrynskaya LSE thesis 2014); no admissible item (see R364 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R363: refill passes are not producing admissible items.
+
+## 2026-11-22 R365 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` in this workspace was reset to origin/main (its stale unpushed R243-R252 commits from an old clone kept on local branch `stale-local-main`, not pushed). pytest 464 passed.
+- **Action:** two standard searches (VIX expiration days -> EUR/USD; US earnings season -> EUR/USD). Two new sources opened (CXO Advisory 2015; Lombardi 2017); no admissible item (see R365 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R364: refill passes are not producing admissible items.
