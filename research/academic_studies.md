@@ -2140,3 +2140,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Links:** [Banque de France WP859 PDF](https://www.banque-france.fr/system/files/2025-05/WP859.pdf); [Banco de España DT 2431 PDF](https://repositorio.bde.es/bitstream/123456789/37792/1/dt2431e.pdf) (both opened via web-fetch; early pages verbatim, later results UNVERIFIED).
 - **Design/finding:** minute-by-minute mid-quotes (Refinitiv) of 47 euro-area market variables including EUR/USD, Jan 1999 - 16 Feb 2024; event windows of 15 min pre / 90 min event / 15 min post around ECB Governing Council meetings, speeches and interviews. Contemporaneous reaction only; no later-return/drift test, no out-of-sample forecast evaluation, no transaction costs. No EUR/USD figure verified.
 - **Relevance:** None for an item (contemporaneous; ECB communication family already covered: ECB accounts ~backlog line 2086, ECB speeches line 2926, E013/E022-E025). **Status:** VERIFIED (partial read).
+
+### Zhang (Yunhe), "Price Discovery in the CSI 300 Index Futures and Spot Markets: An Empirical Analysis Using High-Frequency Data in China", NYU Shanghai honors thesis (May 2025) (added 2026-11-22 R363)
+- **Link:** [PDF](https://cdn.shanghai.nyu.edu/sites/default/files/honorsthesis2025_yunhe_zhang.pdf) (opened via web-fetch; ~55% verbatim, rest model-summarised: UNVERIFIED).
+- **Design/finding:** CSI 300 futures vs spot, 5-minute, 2024; Granger/VECM/information share, in-sample. Verbatim: "I find strong evidence that futures prices significantly Granger-cause spot prices." No FX, no OOS, no costs (internal table/text inconsistencies noted by the reader).
+- **Relevance:** None (no FX). **Status:** VERIFIED (partial read).
+
+### Cuestas & Tang, "Exchange Rate Changes and Stock Returns in China: A Markov Switching SVAR Approach", Sheffield Economic Research Paper Series 2015024 (Dec 2015) (added 2026-11-22 R363)
+- **Link:** [PDF](https://sheffield.ac.uk/media/3882/download) (opened via web-fetch; main text verbatim).
+- **Design/finding:** daily 1994-2012, USD/RMB and HKD/RMB vs Shanghai/Shenzhen A/B shares and Hang Seng; in-sample Granger tests and MS-SVAR. Verbatim: "exchange rate changes exhibit little effect on stock returns." Stock returns Granger-cause RMB changes (in-sample). No EUR/USD, no OOS, no costs.
+- **Relevance:** None for an item (RMB, not EUR/USD; Chinese equity data not in pipeline). **Status:** VERIFIED.
+
+### Kim & Ochoa, "International Yield Spillovers", FEDS 2021-001 (Federal Reserve Board) (added 2026-11-22 R363)
+- **Link:** [PDF](https://www.federalreserve.gov/econres/feds/files/2021001pap.pdf) (opened via web-fetch; abstract/intro verbatim, later sections UNVERIFIED).
+- **Design/finding:** daily Treasury/Bund/Gilt futures 2010-2017 (contemporaneous spillovers) and weekly 10y zero yields 2000-2019 (in-sample predictive regressions for bond yields). Verbatim: "a low level of foreign yields relative to U.S. yields predicts a decline in distant forward U.S. yields." Bond yields only; FX enters only for hedged returns; no OOS, no costs.
+- **Relevance:** None for an item (no EUR/USD direction result; rate-differential family already covered). **Status:** VERIFIED (partial read).

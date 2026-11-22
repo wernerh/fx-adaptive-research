@@ -4481,3 +4481,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   only, no drift/OOS/cost test. ECB blog 2026-09-24 already logged; ECB WP 2281 and research-bulletin pages not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a
   pipeline failure.
+
+### Refill note R363 (not an item; no item added)
+- 2026-11-22 R363 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "CSI 300" /
+  "Chinese equit" and "Bund-Treasury" had no entry (Tokyo equity overnight return covered ~line 1700; rate differential / yield slope
+  covered R226). Angles: (a) Chinese A-share (CSI 300) Asian-session return -> European-session EUR/USD; (b) daily Bund-Treasury 10y
+  spread change -> next-day EUR/USD. Two standard searches.
+  (a) Opened Zhang NYU Shanghai thesis 2025 (CSI 300 futures/spot price discovery, no FX) and Cuestas-Tang Sheffield SERPS 2015024
+  (USD/RMB vs Chinese stocks, in-sample Granger, no EUR/USD). Other hits (arXiv 2109.15060, PMC7887722, arXiv 1507.06242, drpress,
+  Emerald IJOEM, PBFJ v80) not opened, not cited.
+  (b) Opened Kim-Ochoa FEDS 2021-001 (bond-yield spillovers; in-sample yield predictability, no FX direction). MQ WP 16-07 and the
+  Allianz transatlantic-spread note already logged; FXStreet / TradingView pages are not evidence, not cited.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; Chinese equity and Bund/Treasury yield series are also
+  not in the pipeline. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

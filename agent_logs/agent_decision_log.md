@@ -2815,3 +2815,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local clone was on a detached HEAD; reset local `main` to origin/main. pytest 464 passed (after installing missing dev deps).
 - **Action:** two standard searches (US Treasury FX report -> EUR/USD; ECB accounts/communication -> later EUR/USD drift). One new source opened (Istrefi-Odendahl-Sestieri, BdF WP 859 / BdE DT 2431); no admissible item (see R362 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R361: refill passes are not producing admissible items; the keyword space of single-event EUR/USD drift angles appears exhausted.
+
+## 2026-11-22 R363 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` had stale unpushed commits from an old clone (not on origin); reset local `main` to origin/main (nothing upstream rewritten). pytest 464 passed.
+- **Action:** two standard searches (CSI 300 Asian-session return -> European-session EUR/USD; Bund-Treasury 10y spread change -> next-day EUR/USD). Three new sources opened (Zhang NYU Shanghai 2025; Cuestas-Tang SERPS 2015024; Kim-Ochoa FEDS 2021-001); no admissible item (see R363 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R362: refill passes are not producing admissible items; the keyword space of single-event EUR/USD drift angles appears exhausted.
