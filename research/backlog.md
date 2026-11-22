@@ -4422,3 +4422,13 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; gold-auction effect is on gold, not EUR/USD; the
   prior-day-high/low sweep idea duplicates the false-break family already tested. pytest 464 passed. 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+- 2026-11-22 R358 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "Scandinavian" and "GBP/USD lag" had no entry; "Frankfurt open" only incidental. Angles: (a) lagged EUR/SEK / EUR/NOK
+  (Scandinavian cross) returns -> next-period EUR/USD; (b) Frankfurt pre-open hour (06:00-07:00 London) EUR/USD drift. Two standard searches.
+  (a) Hits: Basnarkov et al. arXiv 1906.10388 and Riksbank WP 456 (both already logged); Riksbank staff memo 2020 "Forecasting
+  short-term movements in the Swedish krona" and a 2026 Lund-hosted "Intraday SEK Dynamics" PDF seen in results (SEK targets, not
+  EUR/USD; not opened, not cited); bank/news pages (Nordea, Danske via FXStreet, SEB handbook) are not evidence, not cited.
+  (b) Hits were the Krohn-Mueller-Whelan family (CEPR DP14462, BoC SWP 2021-48, BIS slides, AEA pages; already logged) and a
+  QuantRocket blog (not evidence, not cited).
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; (b) duplicates the logged around-the-clock
+  intraday-premium family. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
