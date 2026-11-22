@@ -4520,3 +4520,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+
+### Refill note R366 (not an item; no item added)
+- 2026-11-22 R366 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "GDPNow" and
+  "crude inventor" had no entry; "Atlanta Fed"/"nowcast"/"EIA" entries were unrelated. Angles: (a) Atlanta Fed GDPNow nowcast revisions ->
+  next-day EUR/USD; (b) weekly EIA crude-inventory release -> later EUR/USD. Two standard searches.
+  (a) Opened McCarthy-Snudden RBA RDP 2025-09: real-time forecasts of month-average exchange-rate levels (83 countries), no next-day
+  direction or costs; no GDPNow -> FX study found (Atlanta Fed GDPNow pages are data, not evidence).
+  (b) Opened Alquist-Ellwanger-Jin BoC SWP 2020-8: 15-min contemporaneous FX (incl. EUR) reaction to EIA inventory news, no drift/OOS/cost.
+  Other hits (ECB WP 1882, FEDS 2015-046, UGA/Adelaide theses, IAEE, Risk.net, IDEAS eneeco v59) not opened, not cited.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.
