@@ -4329,3 +4329,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (2015-2020), below the R090 power floor, and positioning data is not in the pipeline. If the human obtains the full text, a
   daylight-season EUR/USD daily-return test could be pre-registered (dev only). 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R351 (not an item; no item added)
+- 2026-11-22 R351 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "Jewish", "Yom Kippur", "Rosh", "Ascension", "Whit" and "Corpus Christi" had no entry in research/ or knowledge/.
+  Angles: (a) Jewish High Holy Days (Rosh HaShanah / Yom Kippur) thin-US-liquidity effect -> EUR/USD; (b) euro-area partial
+  public holidays (Ascension, Whit Monday, Corpus Christi; cross-market holidays) -> EUR/USD. Two standard searches.
+  (a) Opened Frieder & Subrahmanyam (FAJ, WP 2002; details in research/academic_studies.md): S&P 500 positive around Rosh HaShanah,
+  negative around Yom Kippur (window t +2.14 / -2.31), 1962-2000, no FX/OOS/costs. Bank of Israel holiday lists and NSU news page
+  not opened, not cited.
+  (b) Opened Batrinca, Hesse & Treleaven IJFE 2018 doi:10.1002/ijfe.1643: European equity volume ~8.5% lower on cross-market
+  holidays; volume only, no FX. Russell, Kalkine, WikiFX, CFA digest and EFMA 2008 pages not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; ~12 events per holiday on dev, far below the R090
+  power floor. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

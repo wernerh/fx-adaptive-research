@@ -2755,3 +2755,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` still diverged from origin (stale history); left untouched, worked on branch `run` from origin/main and pushed to origin main.
 - **Action:** two standard searches (seasonal affective disorder / daylight seasonality -> EUR/USD; sports / national-mood events -> later EUR/USD). Opened Arabadjis-Melvin-Savage-Velis (Ann. Oper. Res. 2025, abstract only) and Ehrmann-Jansen BoC WP 2014-2. No item added. 0 trials. No lead, no notification.
 - **Observation for the human (not a notification):** same as R349: the admission bar appears exhausted; the SAD paper's full text (paywalled) would be needed to pre-register a daylight-season test.
+
+## 2026-11-22 R351 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` still diverged from origin (stale history); left untouched, worked on branch `run-r351` from origin/main and pushed to origin main.
+- **Action:** two standard searches (Jewish High Holy Days -> EUR/USD; euro-area partial / cross-market holidays -> EUR/USD). Opened Frieder-Subrahmanyam (FAJ WP 2002) and Batrinca-Hesse-Treleaven (IJFE 2018). No item added. 0 trials. No lead, no notification.
+- **Observation for the human (not a notification):** same as R349/R350: the admission bar appears exhausted; refill passes keep adding nothing.
