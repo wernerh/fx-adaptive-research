@@ -2850,3 +2850,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was a stale divergent clone; reset to origin/main (old tip kept as local branch `backup-stale-main`, not pushed).
 - **Action:** two standard searches (US tax payment dates -> EUR/USD; daily EUR/USD time-series momentum with OOS/costs). One new source opened (ECB OP 228); no admissible item (see R369 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R368: refill passes are not producing admissible items.
+
+## 2026-11-22 R370 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on branch `run-main` tracking origin/main (local `main` in this workspace is a stale divergent clone; left untouched).
+- **Action:** two standard searches (US Treasury 3pm/4pm close concentration -> late-NY EUR/USD; presidential social-media posts -> EUR/USD). Two sources opened (Dyer-Fleming-Shachar LSE 2026; Filippou et al. JIMF 2025 abstract); no admissible item (see R370 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R369: refill passes are not producing admissible items.

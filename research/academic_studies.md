@@ -2195,3 +2195,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ecb.europa.eu ecb.op228](https://ecb.europa.eu/pub/pdf/scpops/ecb.op228~bb3e50120a.fi.pdf) (opened via web-fetch; first ~40k of ~84k characters verbatim, rest via extracted summary, UNVERIFIED in detail).
 - **Design/finding:** descriptive/analytical study of the EUR/USD cross-currency basis and its drivers (Eurosystem APP, cross-border corporate and SSA issuance, quarter-end balance-sheet constraints). Mentions US tax changes (TCJA 2017, BEAT, repatriation) but not US tax payment dates. No forecast of EUR/USD spot direction, no OOS, no costs.
 - **Relevance:** None for an item (basis, not spot direction; no tax-date FX test). **Status:** VERIFIED (partial read).
+
+### Dyer, Fleming & Shachar (2026), "Treasury Trading at the Close", Liberty Street Economics, FRBNY, DOI 10.59576/lse.20260922 (added 2026-11-22 R370)
+- **Link:** [libertystreeteconomics.newyorkfed.org](https://libertystreeteconomics.newyorkfed.org/2026/09/treasury-trading-at-the-close/) (opened via web-fetch; article body verbatim).
+- **Design/finding:** BrokerTec on-the-run Treasury volume 2016-2025; trading increasingly concentrated around the 3 p.m. and 4 p.m. index strike times, especially month-end (~58% higher volume on the last trading day); volume shifted 3pm -> 4pm after Bloomberg moved its strike in Jan 2021. No FX variable, no return prediction, no OOS, no costs.
+- **Relevance:** None for an item (Treasury volume only; late-NY hours already covered by the E009 hourly scan and the month-end fix tests). **Status:** VERIFIED.
+
+### Filippou, Gozluklu, Nguyen & Viswanath-Natraj (2025), "Signal in the noise: Trump tweets and the currency market", JIMF 156, DOI 10.1016/j.jimonfin.2025.103343 (added 2026-11-22 R370)
+- **Link:** [IDEAS/RePEc](https://ideas.repec.org/a/eee/jimfin/v156y2025ics0261560625000786.html) (abstract/metadata opened; full text paywalled, UNVERIFIED). Published version of the working paper logged R165.
+- **Design/finding (abstract):** informative (macro/trade) tweets -> USD appreciation and lower intraday volatility, robust to macro announcements; contemporaneous event response, no lagged forecast, OOS or costs mentioned.
+- **Relevance:** None for an item (same family as R165 entry; event-response, tweet data not in pipeline). **Status:** VERIFIED (abstract only).
