@@ -2155,3 +2155,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [PDF](https://www.federalreserve.gov/econres/feds/files/2021001pap.pdf) (opened via web-fetch; abstract/intro verbatim, later sections UNVERIFIED).
 - **Design/finding:** daily Treasury/Bund/Gilt futures 2010-2017 (contemporaneous spillovers) and weekly 10y zero yields 2000-2019 (in-sample predictive regressions for bond yields). Verbatim: "a low level of foreign yields relative to U.S. yields predicts a decline in distant forward U.S. yields." Bond yields only; FX enters only for hedged returns; no OOS, no costs.
 - **Relevance:** None for an item (no EUR/USD direction result; rate-differential family already covered). **Status:** VERIFIED (partial read).
+
+### Dobrynskaya (2014), "Downside risk in stock and currency markets", LSE PhD thesis (Department of Finance) (added 2026-11-22 R364)
+- **Link:** [LSE Research Online eprint 132024](https://researchonline.lse.ac.uk/id/eprint/132024) (record page and abstract opened via web-fetch; thesis body UNVERIFIED).
+- **Design/finding:** cross-sectional asset pricing: two-beta (downside/upside) CAPM for global stock momentum portfolios and a "global downside market factor" for carry-trade / forward-discount-sorted currency portfolios; GMM estimates. Verbatim: "I propose a new factor – the global downside market factor – to explain high returns to carry trades." No single-pair EUR/USD test, no directional time-series forecast, no OOS, no costs stated.
+- **Relevance:** None for an item (cross-sectional risk premia, not next-period EUR/USD direction). **Status:** VERIFIED (abstract only).

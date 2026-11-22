@@ -4495,3 +4495,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; Chinese equity and Bund/Treasury yield series are also
   not in the pipeline. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R364 (not an item; no item added)
+- 2026-11-22 R364 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Dobrynskaya",
+  "KOSPI" (1 file, no study) and "ex-dividend" had no study entry; option expiry, IMM roll, CFTC/COT, intraday momentum, macro-release
+  drifts and dividend flows (Zheng 2023) already covered. Angles: (a) equity downside-risk / momentum spillover -> next-period EUR/USD;
+  (b) Korean equity (KOSPI) / KRW Asian-session return -> European-session EUR/USD. Two standard searches.
+  (a) Opened Dobrynskaya LSE thesis 2014 (eprint 132024): cross-sectional downside-beta pricing of carry/momentum portfolios, no
+  EUR/USD direction test, no OOS/costs. Cenedese et al. BoE SWP 537 already logged (R294). Other hits (BIS WP 366, WEF, City UEP,
+  HSE, FAJ 2020, NBER w33003, Bayes WP-EMG-03-2022) not opened, not cited.
+  (b) News/market-commentary pages only (asiae, Euronext, Continuum, MNI); not evidence, not cited.
+  Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; KOSPI/KRW data also not in the pipeline. pytest 464
+  passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
