@@ -2765,3 +2765,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
 - **Action:** two standard searches (euro-area/US PMI differential -> EUR/USD; volatility-regime intraday autocorrelation -> EUR/USD). Opened Hayes (IHS Markit 2021), Pan (S&P Global MI 2025), Baldovin et al. (arXiv:1202.2447). No item added. 0 trials. No lead, no notification.
 - **Observation for the human (not a notification):** same as R349-R351: refill passes keep adding nothing; the admission bar appears exhausted.
+
+## 2026-11-22 R353 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). pytest 464 passed.
+- **Action:** two standard searches (Asian-session currency / dollar-factor returns -> later European-session EUR/USD; Australian / Asian equity session return -> later EUR/USD). Every relevant hit (Krohn-Mueller-Whelan family incl. BoC SWP 2021-48 and AEA drafts, Caporin-Shahzad, Batten-Ellis-Hogan arXiv math/0412344) was already logged in research/academic_studies.md; nothing new opened. No item added. 0 trials. No lead, no notification.
+- **Observation for the human (not a notification):** same as R349-R352: refill searches now return only already-logged sources; the admission bar appears exhausted and hourly refill passes are not producing items.

@@ -4356,3 +4356,14 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction rule with an OOS cost test; PMI data is not in the pipeline and monthly signals give
   ~72 observations on dev, below the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R353 (not an item; no item added)
+- 2026-11-22 R353 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "ASX" had no entry in research/ or knowledge/; cross-session lead-lag only via the KMW "around the clock" family.
+  Angles: (a) Asian-session currency / common dollar-factor return -> later European-session EUR/USD; (b) Australian / Asian equity
+  session return -> later EUR/USD. Two standard searches.
+  (a) and (b) returned only sources already logged in research/academic_studies.md (Krohn-Mueller-Whelan: BoC SWP 2021-48, AEA
+  2019/2020 drafts, AUT 2018 PDF, WU 2022 PDF; Caporin-Shahzad unipd PDF; Batten-Ellis-Hogan arXiv math/0412344) plus broker/news
+  pages (forex.com, FXStreet, City Index, MarketScreener, Continuum; not evidence, not opened, not cited). Nothing new opened.
+- No item added: no new verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.
