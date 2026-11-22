@@ -4469,3 +4469,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) All hits already logged (EXFormer arXiv 2512.12727, arXiv 1411.2153, hrcak 486449, UCP repository, FEDS 2025-089, Phylaktis-Ehab).
 - No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+
+### Refill note R362 (not an item; no item added)
+- 2026-11-22 R362 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: PBoC fixing
+  (R128), Jackson Hole (~line 1944), Treasury refunding (~line 1787, 2925), volatility-managed (~line 2638), TARGET2, COT, IMM/roll,
+  Ramadan/Golden Week/Lunar New Year, Thanksgiving, quarter-end all covered. Angles: (a) US Treasury semiannual FX report / manipulator
+  designations -> EUR/USD; (b) ECB monetary-policy accounts / ECB communication -> later EUR/USD drift. Two standard searches.
+  (a) Hits were Treasury press releases, CFR, CSIS, CRS IF10049, Wikipedia, Yahoo news (policy/news pages; already seen R-line ~3116;
+  not evidence, not cited); ~2 reports per year is far below the R090 power floor.
+  (b) Opened Istrefi-Odendahl-Sestieri (BdF WP 859 / BdE DT 2431; details in research/academic_studies.md): contemporaneous event windows
+  only, no drift/OOS/cost test. ECB blog 2026-09-24 already logged; ECB WP 2281 and research-bulletin pages not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a
+  pipeline failure.
