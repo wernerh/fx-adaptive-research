@@ -4559,3 +4559,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entry in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; grain prices also not in the pipeline. pytest 464 passed.
   0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R369 (not an item; no item added)
+- 2026-11-22 R369 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "tax day"/
+  "tax deadline" 1 backlog line, no study; "time-series momentum" 3 backlog lines. Angles: (a) US corporate / individual tax payment
+  dates (Apr/Jun/Sep/Dec 15, TGA drain, USD funding) -> EUR/USD; (b) recent daily EUR/USD time-series-momentum papers with OOS and
+  costs. Two standard searches.
+  (a) Opened ECB Occasional Paper 228 (Brophy et al. 2019): EUR/USD cross-currency basis drivers; TCJA/repatriation discussed, tax
+  payment dates not; no spot-direction forecast, no OOS, no costs. Other hits (Boston Fed WP 18-06 and ECB WP 3017 already logged;
+  Ranaldo/Sigaux ECB conference papers on money markets; Fortune 2016 and ING FX Daily news/commentary) are not EUR/USD tax-date
+  direction evidence; not opened, not cited. TGA angle already covered in earlier notes.
+  (b) Hits already logged (EXFormer arXiv 2512.12727, Menkhoff et al. currency momentum, hrcak 486449 re-opened: Bošnjak-Nova-Wittine
+  2025 rolling weak-form efficiency, in-sample logit, no direction forecast/OOS/costs, as logged ~line 2316) or not evidence (CME
+  education note, repository theses, BIS WP 366 not opened). Not cited anew.
+  Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle; ~4 tax dates/year would also sit below
+  the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

@@ -2190,3 +2190,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [core.ac.uk download 527948921](https://core.ac.uk/download/527948921.pdf) (opened via web-fetch; first ~40k of 87k characters verbatim, rest via extracted summary, UNVERIFIED in detail).
 - **Design/finding:** monthly wheat, soybean and corn prices, 1980-01..2016-12; predictors include the USD real effective exchange rate; OOS 2005-01..2016-12 (rolling 240-month window, Diebold-Mariano vs random walk, directional accuracy and a trading return). Direction is exchange rate -> commodity prices; no EUR/USD series, no commodity -> FX test, no transaction costs in the verbatim part.
 - **Relevance:** None for an item (wrong causal direction, monthly, USD REER not EUR/USD; grain prices not in the pipeline). **Status:** VERIFIED (partial read).
+
+### Brophy, Herrala, Jurado, Katsalirou, Le Quéau, Lizarazo & O'Donnell (2019), "Role of cross currency swap markets in funding and investment decisions", ECB Occasional Paper No 228 (added 2026-11-22 R369)
+- **Link:** [ecb.europa.eu ecb.op228](https://ecb.europa.eu/pub/pdf/scpops/ecb.op228~bb3e50120a.fi.pdf) (opened via web-fetch; first ~40k of ~84k characters verbatim, rest via extracted summary, UNVERIFIED in detail).
+- **Design/finding:** descriptive/analytical study of the EUR/USD cross-currency basis and its drivers (Eurosystem APP, cross-border corporate and SSA issuance, quarter-end balance-sheet constraints). Mentions US tax changes (TCJA 2017, BEAT, repatriation) but not US tax payment dates. No forecast of EUR/USD spot direction, no OOS, no costs.
+- **Relevance:** None for an item (basis, not spot direction; no tax-date FX test). **Status:** VERIFIED (partial read).
