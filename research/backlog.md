@@ -4545,3 +4545,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entry in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; freight and iron ore data also not in the pipeline.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R368 (not an item; no item added)
+- 2026-11-22 R368 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "wheat"/"grain"
+  had no entry; "triple"/"Wednesday roll" 1 file (no study). Angles: (a) wheat / grain price returns -> next-day EUR/USD; (b) Wednesday
+  triple-rollover (swap) day -> EUR/USD return anomaly. Two standard searches.
+  (a) Opened Crespo Cuaresma-Hlouskova-Obersteiner J. Forecasting 2021: monthly USD REER -> wheat/soy/corn prices (exchange rate predicts
+  commodities, not the reverse), no EUR/USD, no costs. Other hits (Ferraro-Rogoff-Rossi, Chen-Rogoff-Rossi NBER, RBA Rossi 2008, ICMAIF
+  2018 paper_1_196, StoneX note) already logged or not evidence; not cited anew.
+  (b) Hits are already-logged papers (AEA 2dedYfDH, BoC SWP 2021-48, Applied Economics 46(32), JBS high-frequency UIP, Krohn fixing
+  returns) or broker/blog explainers of the triple-swap charge (EBC, MQL5, fxnx); no study of a Wednesday EUR/USD return anomaly; not
+  opened, not cited. Day-of-week effects were already scanned on dev.
+  Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; grain prices also not in the pipeline. pytest 464 passed.
+  0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
