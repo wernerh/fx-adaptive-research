@@ -4314,3 +4314,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with a lagged, pre-registrable mechanism on in-pipeline data and an OOS cost
   test (SEP meetings ~24 on dev, below the R090 power floor; FOMC statement day already covered by E013/E014). pytest 464 passed.
   0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R350 (not an item; no item added)
+- 2026-11-22 R350 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "seasonal affective", "Kamstra" and "Eurovision" had no entry in research/ or knowledge/ ("World Cup"/"football" incidental).
+  Angles: (a) seasonal affective disorder (daylight) seasonality -> EUR/USD; (b) national-mood / sports-result events -> later
+  EUR/USD. Two standard searches.
+  (a) Opened Arabadjis, Melvin, Savage & Velis, Ann. Oper. Res. 2025 doi:10.1007/s10479-024-06364-z (abstract only, details in
+  research/academic_studies.md): greater euro short positioning in long-daylight seasons, a "SAD-inspired currency portfolio"
+  backtest; return rule, OOS and costs UNVERIFIED (paywalled).
+  (b) Opened Ehrmann & Jansen BoC WP 2014-2: intraday single-stock soccer-match effect, no FX. Other hits (Eurovision sentiment
+  blog pages, theses) not opened, not cited.
+- No item added: no verified EUR/USD direction rule with an OOS cost test; the SAD regime has ~6 half-year cycles on dev
+  (2015-2020), below the R090 power floor, and positioning data is not in the pipeline. If the human obtains the full text, a
+  daylight-season EUR/USD daily-return test could be pre-registered (dev only). 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.
