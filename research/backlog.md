@@ -4394,3 +4394,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; Obon gives one week per year (~6 events on dev),
   far below the R090 power floor, and the mechanism is a JPY-cross volatility effect. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R356 (not an item; no item added)
+- 2026-11-22 R356 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "Fear and Greed" and "rating downgrade" had no entry in research/ or knowledge/ (sovereign ratings covered R169, R235).
+  Angles: (a) CNN Fear & Greed / equity-sentiment index -> next-day EUR/USD; (b) US / euro-area rating downgrades -> later EUR/USD.
+  Two standard searches.
+  (a) Opened Farrell & O'Connor FRL 2025 (abstract; in-sample Granger on US equities/gold, no FX) and Mahmoud, Vontobel "Currency
+  of Emotions" (monthly 7-currency RavenPack sentiment basket, Sharpe ~1.2, no OOS/costs, EUR/USD not named). Details in
+  research/academic_studies.md. Broker pages (babypips, finmasters, substack) not opened, not cited; CEPR DP16049 already logged.
+  (b) Opened Fornari & Zaghini ECB WP 2740 (sovereign downgrades -> corporate CDS; no FX). Baum-Schaefer-Stephan already logged;
+  VoxEU, Convera, CME, Swansea and Frankfurt hits not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; Fear & Greed and RavenPack data are not in the
+  pipeline; US sovereign downgrades are ~3 events in total, far below the R090 power floor. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.

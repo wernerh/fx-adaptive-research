@@ -2095,3 +2095,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv PDF](https://arxiv.org/pdf/2602.00776) (opened via web-fetch; ~40k of ~59k chars verbatim; sections 8-9 not verified: UNVERIFIED).
 - **Design/finding:** Binance Futures perpetuals (BTC, LTC, ETC, ENJ, ROSE), 1-second order books 2022-01-01..2025-10-12; order-flow imbalance, spread and VWAP-to-mid features in CatBoost predict the 3-second log mid return; purged walk-forward CV, outer folds only; taker fills at best bid/ask, gross and fee-adjusted. Taker t-tests significant at 5% only for ETC, ENJ, ROSE; ROSE "largely due to the extreme event on 2025-10-10" (verbatim). No FX.
 - **Relevance:** None for an item (crypto, 3-second horizon, full order book not in the Dukascopy pipeline, no EUR/USD). **Status:** VERIFIED (partial read).
+
+### Farrell & O'Connor, "The CNN Fear and Greed Index as a predictor of US equity index returns: Static and time-varying Granger causality", Finance Research Letters 72 (2025) (doi:10.1016/j.frl.2024.106492) (added 2026-11-22 R356)
+- **Link:** [IDEAS/RePEc](https://ideas.repec.org/a/eee/finlet/v72y2025ics1544612324015216.html) (abstract/metadata only; full text paywalled: details beyond the abstract UNVERIFIED).
+- **Design/finding:** static and Shi et al. (2020) time-varying Granger tests of the CNN Fear and Greed Index on S&P 500, Nasdaq, Russell 3000 and gold returns, 2011-2020 and 2021-2024; verbatim "the Fear and Greed Index Granger causes returns on the S&P 500" (2011-2020), weaker 2021-2024, possibly "driven by a stronger relationship existing pre-2014". In-sample only; no FX, no costs.
+- **Relevance:** None for an item (equities/gold, in-sample, no EUR/USD; index not in pipeline). **Status:** VERIFIED (abstract).
+
+### Mahmoud (Vontobel Asset Management), "Currency of Emotions" (practitioner article, undated; chart files suggest Jan 2025) (added 2026-11-22 R356)
+- **Link:** [Vontobel insights](https://am.vontobel.com/en/insights/currency-of-emotions) (full text read via web-fetch).
+- **Design/finding:** RavenPack macro/currency news sentiment for 7 unnamed currencies vs USD, monthly long-positive/short-negative rebalancing, 2005-2024; verbatim "achieving a Sharpe ratio of approximately 1.2", "driven primarily by the short leg". Hypothetical full-sample backtest; no OOS split, no costs; EUR/USD not named.
+- **Relevance:** None for an item (cross-sectional monthly basket, RavenPack data not in pipeline, no OOS/costs; news-sentiment family already reviewed R121/R166/R355). **Status:** VERIFIED (practitioner, not peer reviewed).
+
+### Fornari & Zaghini, "It's not time to make a change: sovereign fragility and the corporate credit risk", ECB WP 2740 (2022) (added 2026-11-22 R356)
+- **Link:** [ECB PDF](https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2740~927e1f5458.en.pdf) (~40k of ~90k chars verbatim; rest model-summarised: UNVERIFIED; DOI not verified).
+- **Design/finding:** 68 unconfounded euro-area sovereign downgrades 2006-2018, weekly corporate CDS changes; verbatim "the delivery of a sovereign downgrade has a negative spillover to the euro area corporate credit risk". Euro NEER is a control only; no EUR/USD test, no OOS, no costs.
+- **Relevance:** None for an item (CDS outcome; sovereign-rating -> EUR/USD angle already reviewed R169/R235). **Status:** VERIFIED (partial read).

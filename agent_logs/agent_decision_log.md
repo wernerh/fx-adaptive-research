@@ -2780,3 +2780,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). pytest 464 passed.
 - **Action:** two standard searches (news-based sentiment index -> next-day EUR/USD; Japan Obon holiday week -> EUR/USD). No new source verified (BNN Bloomberg page fetched without article body: UNVERIFIED). No item added (see R355 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R354: refill passes are not producing admissible items.
+
+## 2026-11-22 R356 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). pytest 464 passed.
+- **Action:** two standard searches (CNN Fear & Greed / equity sentiment -> EUR/USD; rating downgrades -> EUR/USD). Three sources opened and logged; none admissible. No item added (see R356 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R355: refill passes are not producing admissible items.
