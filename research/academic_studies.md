@@ -2110,3 +2110,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ECB PDF](https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2740~927e1f5458.en.pdf) (~40k of ~90k chars verbatim; rest model-summarised: UNVERIFIED; DOI not verified).
 - **Design/finding:** 68 unconfounded euro-area sovereign downgrades 2006-2018, weekly corporate CDS changes; verbatim "the delivery of a sovereign downgrade has a negative spillover to the euro area corporate credit risk". Euro NEER is a control only; no EUR/USD test, no OOS, no costs.
 - **Relevance:** None for an item (CDS outcome; sovereign-rating -> EUR/USD angle already reviewed R169/R235). **Status:** VERIFIED (partial read).
+
+### Donati & Jung, "Gold Price Dynamics Around the Clock", MSc thesis, Copenhagen Business School (2019; supervisor P. Whelan) (added 2026-11-22 R357)
+- **Link:** [CBS research portal](https://research.cbs.dk/en/studentProjects/gold-price-dynamics-around-the-clock/) (abstract and metadata only; full thesis not linked/opened: body UNVERIFIED).
+- **Design/finding:** intraday 24h gold returns, eastern vs western trading hours; verbatim "We find a hat-shaped intraday seasonality, with gold appreciating during eastern trading hours in a robust way" and "in the years of alleged manipulation gold prices drop around the London fixing times". Backtests up to Sharpe 1.61 before costs; after costs underperform the market but "still show some profitability". Sample, data source and OOS design not stated on the page.
+- **Relevance:** None for an item (gold, not EUR/USD; no FX test; student thesis; London-fix return patterns already covered for FX via Evans / Marsh-Panagiotou-Payne / Krohn-Mueller-Whelan). **Status:** VERIFIED (abstract only).

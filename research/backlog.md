@@ -4408,3 +4408,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; Fear & Greed and RavenPack data are not in the
   pipeline; US sovereign downgrades are ~3 events in total, far below the R090 power floor. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R357 (not an item; no item added)
+- 2026-11-22 R357 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first:
+  "gold fix" and "stop hunt" had no entry in research/ or knowledge/ (LBMA only as a holiday-calendar label; false breaks are a core
+  repo family). Angles: (a) LBMA gold price auction (10:30 / 15:00 London) -> EUR/USD returns around the auction; (b) stop-hunt /
+  liquidity sweep of prior-day high/low -> intraday EUR/USD reversal. Two standard searches.
+  (a) Opened Donati & Jung CBS MSc thesis 2019 abstract (gold only, no FX; details in research/academic_studies.md) and Evans MPRA
+  60171 (2014 draft of "Forex trading and the WMR Fix", already logged as Evans 2018: WMR 4pm FX fix, in-sample, cost-sensitive).
+  Other hits (KMW family, BIS Mueller slides, NYU Stern silver WP) already logged or not about EUR/USD; not opened, not cited.
+  (b) Hits were KMW (already logged), Brunel GMC overreactions WP (already logged) and practitioner/blog pages (mql5, TradingView,
+  fxnx, thortradecopier, GitHub freqtrade README; not evidence, not opened, not cited).
+- No item added: no verified EUR/USD direction evidence with an OOS cost test; gold-auction effect is on gold, not EUR/USD; the
+  prior-day-high/low sweep idea duplicates the false-break family already tested. pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.

@@ -2785,3 +2785,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). pytest 464 passed.
 - **Action:** two standard searches (CNN Fear & Greed / equity sentiment -> EUR/USD; rating downgrades -> EUR/USD). Three sources opened and logged; none admissible. No item added (see R356 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R355: refill passes are not producing admissible items.
+
+## 2026-11-22 R357 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was stale/diverged; reset to origin/main (no unpushed work of value lost: detached HEAD already matched origin). pytest 464 passed.
+- **Action:** two standard searches (LBMA gold auction -> EUR/USD; stop-hunt / prior-day high-low sweep -> EUR/USD). One new source (Donati & Jung CBS thesis, abstract) logged; none admissible. No item added (see R357 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R356: refill passes are not producing admissible items.
