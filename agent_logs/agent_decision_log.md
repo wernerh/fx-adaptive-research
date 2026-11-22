@@ -2745,3 +2745,8 @@ Why each run chose what it did, and any judgement calls.
 ## 2026-11-22 R348 (unattended)
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` again diverged from origin (stale pre-rewrite history); left untouched, worked on branch `run-r348` from origin/main and pushed to origin main.
 - **Action:** two standard searches (central-bank Financial Stability Report days -> later EUR/USD; bank stress-test result releases -> later EUR/USD). Opened BoE SWP 792 (no FX test, no abnormal returns). ECB WP 2054 unfetchable (UNVERIFIED). No item added. 0 trials. pytest 464 passed. No lead, no notification.
+
+## 2026-11-22 R349 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` again diverged from origin (stale pre-rewrite history); left untouched, worked on branch `run` from origin/main and pushed to origin main.
+- **Action:** two standard searches (FOMC SEP/dot-plot meetings -> later EUR/USD; US inflation-breakeven changes -> next-day EUR/USD). Opened NY Fed SR 1204 (rates-only under-reaction to SEP surprises, no FX test). No item added. 0 trials. No lead, no notification.
+- **Observation for the human (not a notification):** refill passes have added no item since R308; the backlog's admission bar (published lagged EUR/USD direction evidence + OOS cost test + power floor) appears exhausted. A human decision on new data sources or a looser admission bar for dev-only tests would be needed to restart experiments.
