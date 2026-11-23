@@ -4865,3 +4865,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   analysis and a J-STAGE Japanese paper; not evidence for EUR/USD, not opened; one event per year is below the R090 power floor.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. pytest 464 passed.
   0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R392 (not an item; no item added)
+- 2026-11-23 R392 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "gradient boost"
+  and "deep learning" had no entry in research/backlog.md; "Hawkes" only 2 mentions. Angles: (a) gradient-boosting / ML classifiers for
+  EUR/USD direction with OOS and costs; (b) Hawkes self-exciting activity -> EUR/USD trading rule net of spread. Two standard searches.
+  (a) Opened Enkhbayar-Ślepaczuk WNE WP 10/2024 (daily/4h EUR/USD ML walk-forward, fixed 0.02% cost; headline summary-only, UNVERIFIED)
+  and Cheevirot et al. Algorithms 2026 19(6) 442 (EUR/USD H1 CatBoost grid with martingale sizing, one 12-month OOS window, ~80% equity
+  drawdown); entries in research/academic_studies.md. Also opened, no FX: James-Leung-Prokhorov SBFC 2023 (US equities, option-cost
+  ML) and Chu AEA 2024 (SPY only); not cited further. arXiv 2505.16136, 2409.04471, 2512.12727 already logged; 2605.17724 (MNQ futures) not opened.
+  (b) Only Hawkes hits with FX were arXiv 1405.6047 and 1406.3967, already logged; others execution/HFT-identity papers or a QuantConnect page.
+- No item added: (a) ML on lagged features is the E051 family (lesson R213: no other classifiers); the grid paper's martingale sizing
+  breaks SPEC risk rules; (b) no new verified basis. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
