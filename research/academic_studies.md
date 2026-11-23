@@ -2260,3 +2260,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Eurex news item](https://eurex.com/ex-de/ressourcen/news/Fixed-income-futures-June-roll-analysis-3612036) (opened via web-fetch).
 - **Design/finding:** exchange note; descriptive volumes, open interest, deliveries, CTD switches and calendar spreads for Bund/Bobl/Schatz/Buxl/BTP/OAT futures over the June 2023 roll. Verbatim: "The introduction of the minimum exchange day rule ensured that there were no front month CTD switches". No FX data, no tests.
 - **Relevance:** None (no FX; not evidence of a price effect). **Status:** VERIFIED.
+
+### Kloks, Mattille & Ranaldo (26 Sep 2024), "Hunting for Dollars" (ECB money-market conference paper) (added 2026-11-23 R376)
+- **Link:** [ECB conference PDF](https://ecb.europa.eu/press/conferences/shared/pdf/20241107_money_markets/Ranaldo_paper.pdf) (opened via web-fetch; first ~30% verbatim, rest summarized by the fetch tool).
+- **Design/finding:** daily CLS FX-swap settlement data, 40 currency pairs (17 USD pairs), 8 tenors, 2012-09-03 to 2022-06-30, plus repo and money-market data; quarter-end repo-to-FX-swap substitution by euro-area banks (leverage-ratio window dressing) and the cross-currency basis. Verbatim: "Eurozone banks pay no more than 37 million of USD per year as a result of repo-FX swap substitution." Swap volumes and basis only; no spot-direction or lagged-return test, no OOS, no costs.
+- **Relevance:** None for an item (swap/basis, not EUR/USD spot direction; quarter-end calendar already covered by E034/R-notes). **Status:** VERIFIED (partial read).

@@ -2880,3 +2880,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` is a stale divergent clone (left untouched); worked on a branch from origin/main.
 - **Action:** two standard searches (global bond-index month-end rebalancing -> EUR/USD; Eurex Bund-futures roll window -> EUR/USD). Two sources opened (BIS WP 1210 abstract; Eurex June-2023 roll analysis); no admissible item (see R375 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R374: refill passes are not producing admissible items.
+
+## 2026-11-23 R376 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` is still a stale divergent clone (left untouched); worked on a branch from origin/main.
+- **Action:** two standard searches (US money-market-fund flows -> EUR/USD; leverage-ratio quarter-end window dressing -> EUR/USD spot). One new source opened (Kloks-Mattille-Ranaldo 2024); no admissible item (see R376 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R375: refill passes are not producing admissible items.

@@ -4657,3 +4657,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle; Bund-futures roll windows (4/year,
   ~24 on dev) are below the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R376 (not an item; no item added)
+- 2026-11-23 R376 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "money
+  market fund" and "leverage ratio" no entry; GSIB, quarter-end/year-end, window dressing, TGA/RRP already covered. Angles:
+  (a) US money-market-fund flows -> later EUR/USD; (b) bank leverage-ratio quarter-end window dressing -> EUR/USD spot. Two standard
+  searches.
+  (a) No new study: the only research hit (IMF WP/2026/186 "Demand for Dollars") is already logged; other hits broker/blog pages,
+  not opened, not cited.
+  (b) Opened Kloks-Mattille-Ranaldo "Hunting for Dollars" (2024, ECB conference PDF): daily FX-swap volumes and basis around
+  quarter-ends, no spot-direction test. Abbassi-Bräuning Boston Fed WP 18-6 already logged; ECB WP 2771, Springer s11149, Banxico
+  and ECB blog hits not opened, not cited.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle; quarter-end windows (4/year) are below
+  the R090 power floor and the calendar is already covered (E034). pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.
