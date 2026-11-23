@@ -2960,3 +2960,8 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "gradient boost" and "deep learning" had no keyword entry in the backlog; Hawkes processes only lightly covered.
 - **Action:** two standard searches; four new sources opened (two with EUR/USD); no admissible item (see R392 refill note).
 - **Observation for the human (not a notification):** same as R349-R391: refill passes are not producing admissible items; keyword space effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-23 R393 (unattended)
+- **Why these angles:** "G20" had no keyword entry in the backlog; FX implied-vol term structure only lightly covered.
+- **Action:** two standard searches; one new source opened (Lo Duca-Stracca JIMF 2015); no admissible item (see R393 refill note).
+- **Observation for the human (not a notification):** same as R349-R392: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
