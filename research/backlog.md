@@ -4643,3 +4643,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction or drift evidence with an OOS cost test for either angle; SEP meetings (4/year, ~24 on
   dev) are below the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R375 (not an item; no item added)
+- 2026-11-23 R375 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "WGBI",
+  "bond index", "Bloomberg Agg", "roll week", "reconstitution" no entry; index rebalancing (R170/R196), IMM/FX-futures roll (R137),
+  month-end (E034), triple witching, MSCI already covered. Angles: (a) global bond-index month-end rebalancing / duration extension
+  -> EUR/USD; (b) Eurex Bund-futures quarterly roll window -> EUR/USD. Two standard searches.
+  (a) Opened Jansen-Shin-von Peter BIS WP 1210 abstract (euro-area bond holdings respond to the dollar; portfolio responses, no
+  lagged spot-direction test). Other hits (LSEG/FTSE Russell WMR and FX-convention notes, T. Rowe Price, CSEF WP 487, AEA 2025 page)
+  not opened, not cited.
+  (b) Opened Eurex June-2023 roll analysis (descriptive futures roll statistics, no FX). Other Eurex roll notes and the Eurex
+  bond/FX-futures hedging paper not opened, not cited.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle; Bund-futures roll windows (4/year,
+  ~24 on dev) are below the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

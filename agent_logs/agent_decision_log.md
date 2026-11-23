@@ -2875,3 +2875,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Workspace was on a detached HEAD at origin/main (local `main` is a stale divergent clone; left untouched).
 - **Action:** two standard searches (FOMC SEP/dot-plot meetings -> EUR/USD drift; Riksbank/Norges/SNB spillovers -> EUR/USD). Three sources opened (Norges Bank WP 9/2018; SNB WP 2020-18 abstract; Hager-Nitschka SJES 2023); no admissible item (see R374 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R373: refill passes are not producing admissible items.
+
+## 2026-11-23 R375 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` is a stale divergent clone (left untouched); worked on a branch from origin/main.
+- **Action:** two standard searches (global bond-index month-end rebalancing -> EUR/USD; Eurex Bund-futures roll window -> EUR/USD). Two sources opened (BIS WP 1210 abstract; Eurex June-2023 roll analysis); no admissible item (see R375 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R374: refill passes are not producing admissible items.

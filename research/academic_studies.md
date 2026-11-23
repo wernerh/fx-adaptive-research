@@ -2250,3 +2250,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Springer](https://link.springer.com/article/10.1186/s41937-023-00117-8) (opened via web-fetch; ~40% read verbatim, rest summarised).
 - **Design/finding:** daily ECB announcement days 2004-2023; Swiss swap rates and stocks only; verbatim: "we do not examine exchange rate reactions to ECB policy surprises". No OOS, no costs.
 - **Relevance:** None (no FX). **Status:** VERIFIED (partial read).
+
+### Jansen, Shin & von Peter (2024), "Which exchange rate matters to global investors?", BIS Working Paper 1210 (added 2026-11-23 R375)
+- **Link:** [BIS page](https://www.bis.org/publ/work1210.htm) (opened via web-fetch; abstract page only, PDF not opened).
+- **Design/finding (abstract):** security-level bond holdings of euro-area investors plus a VaR portfolio-choice model. Verbatim: "euro area-based investors systematically shed sovereign bonds as the dollar strengthens". Portfolio-allocation responses, not a spot-direction forecast; sample, frequency, OOS and costs not stated on the page (UNVERIFIED without the PDF).
+- **Relevance:** None for an item (holdings responses, contemporaneous; no lagged EUR/USD direction test). **Status:** VERIFIED (abstract only).
+
+### Eurex (30 June 2023), "Fixed income futures - June roll analysis" (added 2026-11-23 R375)
+- **Link:** [Eurex news item](https://eurex.com/ex-de/ressourcen/news/Fixed-income-futures-June-roll-analysis-3612036) (opened via web-fetch).
+- **Design/finding:** exchange note; descriptive volumes, open interest, deliveries, CTD switches and calendar spreads for Bund/Bobl/Schatz/Buxl/BTP/OAT futures over the June 2023 roll. Verbatim: "The introduction of the minimum exchange day rule ensured that there were no front month CTD switches". No FX data, no tests.
+- **Relevance:** None (no FX; not evidence of a price effect). **Status:** VERIFIED.
