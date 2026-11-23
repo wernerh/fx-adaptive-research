@@ -2363,3 +2363,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS](https://ideas.repec.org/a/eee/jimfin/v53y2015icp192-217.html), DOI [10.1016/j.jimonfin.2015.01.003](https://doi.org/10.1016/j.jimonfin.2015.01.003) (IDEAS record opened via web-fetch; full text paywalled, not read).
 - **Design/finding:** event study of G20 Ministerial and Leaders meetings, 2007-2013, on equity returns, bond yields and implied volatility/skewness/kurtosis. Abstract: "G20 summits have not had a strong, consistent and durable effect on any of the markets that we consider". No FX result stated in the abstract; event count not stated.
 - **Relevance:** None for an item: published null, no EUR/USD result, and too few events for our power floor. **Status:** VERIFIED (abstract only).
+
+### Dodd, Fernandez-Perez & Sosvilla-Rivero (2022), "Currency and commodity return relationship under extreme geopolitical risks: Evidence from the invasion of Ukraine", IREA WP 2022/04 (added 2026-11-23 R394)
+- **Link:** [UB repository PDF](https://diposit.ub.edu/dspace/bitstream/2445/187101/1/IR22_004_Dodd%2bFdez%2bSosvilla.pdf) (opened via web-fetch; full extracted text read).
+- **Design/finding:** pooled daily panel of 31 floating currencies vs USD (euro one of them), 2012-01-01..2022-03-11, panel OLS with fixed effects; contemporaneous currency-commodity relation reverses in the ~3-week war window (pooled Commodity x War -0.137, t = -4.30). Caldara-Iacoviello GPR only in a robustness check. No euro-only estimate, no OOS, no trading rule, no costs.
+- **Relevance:** None for an item: in-sample, contemporaneous, one short event window, no EUR/USD-specific result. **Status:** VERIFIED.
+
+### Bondarenko, Kang, Lewis, Rottner & Schüler (2026), "Geopolitical risk in the euro area: measurement and transmission", BIS WP 1348 (added 2026-11-23 R394)
+- **Link:** [BIS landing page](https://www.bis.org/publications/working-paper-1348-geopolitical-risk-euro-area-measurement-and-transmission) (landing page/abstract opened via web-fetch; full PDF not read).
+- **Design/finding:** builds a euro-area GPR index (monthly and daily) from European newspapers; VAR transmission to output, prices and policy rates. Abstract mentions no exchange-rate or EUR/USD result. FX content UNVERIFIED (full text not read).
+- **Relevance:** None for an item: macro VAR, no stated FX predictability, OOS or cost test; GPR -> FX predictability already covered by Iyke-Phan-Narayan 2022 (R164/R233). **Status:** VERIFIED (abstract only).

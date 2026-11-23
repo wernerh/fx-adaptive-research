@@ -4891,3 +4891,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) data unavailable (blocked line, same as earlier option-implied items); (b) published null, and roughly 2 meetings
   per year gives about a dozen dev events, below the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R394 (not an item; no item added)
+- 2026-11-23 R394 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "daylight
+  saving" 1 mention; "geopolitical risk" 6. Angles: (a) US/EU daylight-saving-time transitions -> EUR/USD; (b) daily geopolitical-risk
+  index -> next-day EUR/USD. Two standard searches.
+  (a) Only relevant hit was Nower Econ. Letters 2024 (Durham), already opened and logged (R114); others already logged (Krohn) or
+  vendor/forum pages; not opened. Two transitions per year are below the R090 power floor.
+  (b) Iyke-Phan-Narayan IRFA 2022 already logged (R164/R233). Opened Dodd-Fernandez-Perez-Sosvilla-Rivero IREA WP 2022/04 (pooled
+  in-sample panel, Ukraine-war window, no OOS/costs) and BIS WP 1348 landing page (euro-area GPR macro VAR, no FX result in abstract);
+  entries in research/academic_studies.md. KSH 2024, Harvard DASH, AUT and IFDP hits not opened, not cited.
+- No item added: no new verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. pytest 464
+  passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
