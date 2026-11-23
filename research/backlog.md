@@ -4713,3 +4713,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   ECB OP 91, NBER conference paper not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R380 (not an item; no item added)
+- 2026-11-23 R380 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "salience"
+  had no entry in research/ or knowledge/; "Keltner" one mention only. Angles: (a) salience-theory / lagged-interest-rate currency
+  return predictability -> EUR/USD; (b) Keltner-channel breakout rules on EUR/USD with OOS and costs. Two standard searches.
+  (a) Opened Avramov-Xu (2019 WP, Mannheim FSS PDF): monthly 25-currency panel, lagged foreign rate conditions a dollar strategy,
+  costs not mentioned; monthly single-pair signal is below the R090 power floor and the carry/rate line is covered. No salience-in-FX
+  paper among hits; other academic hits (NBER w16427 Lustig et al., HHS, MIT Verdelhan, AEA 2020) already in the carry/dollar family,
+  not opened, not cited.
+  (b) Re-opened Zarrabi-Snaith-Coakley IRFA 2017 (already logged): no euro, OOS "not consistently profitable". Other hits
+  (QuantConnect, MQL5 tester reports, LiberatedStockTrader, MoneyShow, TradingView, HKU thesis) are vendor/blog pages, not opened,
+  not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
