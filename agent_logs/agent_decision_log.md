@@ -2942,3 +2942,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "sovereign wealth" and "petrodollar" had no entry in research/ or knowledge/.
 - **Action:** two standard searches; no admissible source (see R389 refill note).
 - **Observation for the human (not a notification):** same as R349-R388: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) would be needed to make progress.
+
+## 2026-11-23 R390 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was stale/divergent; saved as local branch `stale-local-main` and reset local `main` to origin/main (no remote history rewritten).
+- **Why these angles:** "treasury auction" and "beige book" had no keyword entry in research/ or knowledge/.
+- **Action:** two standard searches; all academic hits already logged (see R390 refill note). No admissible item.
+- **Observation for the human (not a notification):** same as R349-R389: refill passes are not producing admissible items; keyword space effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

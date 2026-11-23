@@ -4842,3 +4842,13 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   repo data; not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R390 (not an item; no item added)
+- 2026-11-23 R390 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "treasury
+  auction" (lower-case) and "beige book" had no entry in research/ or knowledge/. Angles: (a) US Treasury auction results -> post-auction
+  EUR/USD drift; (b) Fed Beige Book release -> EUR/USD. Two standard searches.
+  (a) Only academic hits were BoC SWP 2025-29 / FRBSF Krohn paper and NY Fed SR1188, already opened and logged (research/academic_studies.md,
+  R085); others broker/blog pages (forex.com, fxnx, FXStreet), not evidence, not opened.
+  (b) Only academic hit was Zavodny-Ginther 2005 SEJ, already opened and logged (R150); others calendar/news pages, not opened.
+- No item added: no new verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
