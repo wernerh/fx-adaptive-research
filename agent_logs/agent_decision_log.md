@@ -2905,3 +2905,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local clone `main` was stale and divergent again; reset local `main` to origin/main (old local commits kept on local branch `stale-local-main`, not pushed).
 - **Action:** two standard searches (HMM regime filters for EUR/USD direction; Kalman-filter trend extraction for intraday EUR/USD). No new admissible source: EUR/USD hits already logged, others equity/vendor; no admissible item (see R381 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R380: refill passes are not producing admissible items.
+
+## 2026-11-23 R382 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local clone `main` was stale and divergent again; worked from a detached checkout of origin/main and pushed to main (no history rewritten, local branch left untouched).
+- **Action:** two standard searches (NR4/NR7 narrow-range breakout on EUR/USD; previous-day high/low / rolling support-resistance levels). One new source opened (Chung-Bellotti arXiv 2101.07410: in-sample bounce statistics, no costs/OOS); no admissible item (see R382 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R381: refill passes are not producing admissible items.

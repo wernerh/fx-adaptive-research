@@ -4740,3 +4740,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   not cited) and MQL5 forum PDFs (vendor, not evidence, not opened). No Kalman-trend study on EUR/USD with OOS costs found.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R382 (not an item; no item added)
+- 2026-11-23 R382 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "NR7" /
+  "narrow range" had no entry in research/ or knowledge/; "inside bar" one mention; "previous day high" none; Osler support/resistance
+  and round-number lines (B15, B52) already covered. Angles: (a) narrow-range-day (NR4/NR7) volatility-contraction breakout on EUR/USD
+  with OOS and costs; (b) previous-day high/low or rolling support/resistance levels as intraday EUR/USD reversal/breakout signals.
+  Two standard searches.
+  (a) Only vendor/practitioner hits (FXStreet education page, TradingView scripts, Quantified Strategies substack); not evidence, not
+  opened, not cited.
+  (b) Opened Chung-Bellotti (arXiv 2101.07410; entry in research/academic_studies.md): EURUSD 1-minute 2018 rolling min/max bounce
+  probabilities, in-sample vs shuffled returns, no trading rule, no OOS, no costs; 2018 lies inside dev. Other hits (Osler 2000 FRBNY
+  EPR, UCT thesis, Brunel GMC WP 2005: already logged; Scribd, mql5 forum PDF, TradingView: not evidence) not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
