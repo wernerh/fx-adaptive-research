@@ -4685,3 +4685,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: (a) is a re-test of a closed line (E033) with no new data source (CLS volume not in pipeline); (b) has no EUR/USD
   evidence. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R378 (not an item; no item added)
+- 2026-11-23 R378 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "contagion"
+  and "VXY"/"global FX volatility" no entry in backlog; Halloween (R135), SNB sight deposits (R290), semivariance/signed jumps (R218)
+  already covered. Angles: (a) emerging-market currency stress / contagion -> next-day EUR/USD; (b) global FX volatility innovations ->
+  next-day EUR/USD. Two standard searches.
+  (a) Opened Frost-Saiki DNB WP 373 (2013): quarterly crisis-probability probit, 46 countries, no EUR/USD direction/cost test. Other
+  hits (Phylaktis-Ehab, arXiv 2101.09738, Bayes WP-EMG-01-2021, JFE 2023 Imperial PDF) already logged; AEA 2020/2021 abstracts,
+  CFA digest and slideshare hits not opened, not cited.
+  (b) Opened Menkhoff-Sarno-Schmeling-Schrimpf CEPR DP8291 (abstract): global FX vol as cross-sectional carry risk factor, no single-pair
+  direction test. EXFormer arXiv 2512.12727 and CEPR DP16128 already logged; Bayreuth dissertation not opened, not cited.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.

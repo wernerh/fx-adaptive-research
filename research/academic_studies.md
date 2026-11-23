@@ -2275,3 +2275,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ECB PDF](https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2056.en.pdf) (opened via web-fetch; first ~36% verbatim, rest summarised).
 - **Design/finding:** Belgian, French, German and Italian primary auctions; daily secondary-market yield change from close t-1 to close of auction day. Verbatim: "more successful auctions of euro area public debt ... lead to lower secondary-market yields following the auctions". No exchange-rate variable, no drift, OOS or cost test in the part read.
 - **Relevance:** None (no FX; euro-area auction demand family already logged via DNB WP 674, R269). **Status:** VERIFIED (partial read).
+
+### Menkhoff, Sarno, Schmeling & Schrimpf (2011), "Carry Trades and Global Foreign Exchange Volatility", CEPR Discussion Paper 8291 (added 2026-11-23 R378)
+- **Link:** [CEPR abstract page](https://cepr.org/publications/DP8291) (opened via web-fetch; abstract only, full PDF not read).
+- **Design/finding:** global FX volatility innovations as a priced risk factor; verbatim: "captures more than 90% of the cross-sectional excess returns in five carry trade portfolios". Cross-sectional asset pricing, no single-pair EUR/USD direction test; OOS and costs not stated in the abstract.
+- **Relevance:** None for a new item (cross-sectional carry pricing, not EUR/USD time-series direction). **Status:** VERIFIED (abstract).
+
+### Frost & Saiki (March 2013), "Early warning for currency crises: what is the role of financial openness?", DNB Working Paper 373 (added 2026-11-23 R378)
+- **Link:** [DNB PDF](https://www.dnb.nl/media/5rgjh1bx/working-paper-373.pdf) (opened via web-fetch; first ~half verbatim).
+- **Design/finding:** quarterly panel, 46 advanced and emerging economies, 1975Q1-2011Q4; random-effects probit for crisis probability from an exchange-market-pressure index vs USD. Verbatim: "our model performs well out-of-sample". No EUR/USD pair, no direction or cost test.
+- **Relevance:** None (quarterly crisis probability, not EUR/USD direction; far below the R090 power floor). **Status:** VERIFIED (partial read).
