@@ -4813,3 +4813,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   The published evidence points the wrong way for a futures-leads-spot rule, and CME futures ticks are not in the repo.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R388 (not an item; no item added)
+- 2026-11-23 R388 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "copper/gold",
+  "copper-gold", "put-call" and "option volume" had no entry in research/ or knowledge/ (copper alone covered R160). Angles: (a) copper-to-gold
+  ratio -> next-day EUR/USD; (b) equity put-call ratio / FX option volume -> next-day EUR/USD. Two standard searches.
+  (a) Opened Oort (2020) Erasmus BSc thesis (entry in research/academic_studies.md): no FX at all, and its own OOS test fails. Other hits
+  (UPF 1461, MPRA 83564, BSE, RBA/Rossi 2008, NBER w13901 Chen-Rogoff-Rossi: FX -> commodities direction, already-known line; FXStreet,
+  CFA blog, Saxo commentary) not opened, not cited.
+  (b) Opened Czech-Della Corte-Huang-Wang BoE SWP 964 (entry in research/academic_studies.md): option volume predicts next-day USD
+  returns cross-sectionally (majors LMH 14.63% p.a., t 2.66, gross, Nov 2014 - Dec 2016), no OOS/cost test identified; needs DTCC or
+  Bloomberg option-volume data that the repo and runner do not have. Other hits (core.ac.uk PDFs, Emerald JDQS 2023, NBER Pan-Poteshman
+  equity put-call, Tickmill/BNPP blog, Bayes WP-EMG-03-2022, IMFI 2020) not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. If the human
+  can supply a daily EUR/USD option-volume series (e.g. Bloomberg, public aggregate per SWP 964 footnote 1), (b) becomes a candidate.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

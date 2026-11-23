@@ -2330,3 +2330,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS record](https://ideas.repec.org/a/wly/jfutmk/v29y2009i2p137-156.html) (abstract only; full text not opened, sample details UNVERIFIED).
 - **Finding:** EUR and JPY, CME GLOBEX regular and E-mini futures vs EBS spot; verbatim "the spot market is found to consistently lead the price discovery process for both currencies during the sample period". No trading rule/OOS/costs in the abstract.
 - **Relevance:** None for a new item (same as Rosenberg-Traub 2006 sample). **Status:** VERIFIED (abstract only).
+
+### Czech, Della Corte, Huang & Wang (2022), "FX option volume", Bank of England Staff Working Paper No. 964 (added 2026-11-23 R388)
+- **Link:** [BoE SWP 964 PDF](https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2022/fx-option-volume.pdf) (opened via web-fetch; ~40k characters verbatim, Sections 4.4 onward summarised only).
+- **Data/design:** EMIR trade-repository (DTCC) FX option trades with a UK-regulated counterparty, daily, Nov 2014 - Dec 2016; 19 currencies vs USD incl. EUR; volume standardised over a 21-day window; cross-sectional low-minus-high (LMH) volume portfolios, signal lagged one day.
+- **Finding (verbatim abstract):** "FX option volume can predict future exchange rate returns, especially when the demand for the US dollar is high." Major currencies (AUD, CAD, CHF, EUR, GBP, JPY, NZD) LMH 14.63% p.a., t = 2.66 (gross); all 19 currencies 5.91% p.a., t = 1.11 (n.s.). Dealer-client volume drives it.
+- **Limits:** cross-sectional (not a single-pair EUR/USD timing rule); ~2 years of data; no OOS test and no transaction-cost analysis identified (summary-only for later sections, UNVERIFIED); DTCC data not public; Bloomberg aggregate option volume (public per footnote 1) is not in the repo and not downloadable on the runner.
+- **Relevance:** None for a new item now (no option-volume data source; cross-sectional design). **Status:** VERIFIED (partial read).
+
+### Oort (2020), "Predicting Asset Returns using the Copper to Gold Ratio", BSc thesis, Erasmus School of Economics (added 2026-11-23 R388)
+- **Link:** [thesis.eur.nl 53697 PDF](https://thesis.eur.nl/pub/53697/BSc-Thesis-Sebastiaan-Oort-Final-version.pdf) (opened via web-fetch; ~40k of ~54k characters verbatim).
+- **Design/finding:** CME copper/gold futures ratio, daily Dec 1988 - Jan 2020, predicting the US 10y yield and equity/commodity/bond indices. No exchange rates studied (no EUR/USD). Verbatim: "the results of the the out of sample test are not more predictive than their in sample counter part"; negative OOS R² values and zero transaction costs are summary-only (UNVERIFIED). Undergraduate thesis, not peer-reviewed.
+- **Relevance:** None (no FX; OOS fails for its own targets). **Status:** VERIFIED (partial read).

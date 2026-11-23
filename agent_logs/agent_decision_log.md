@@ -2930,3 +2930,9 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was stale and divergent again; work done on a branch from origin/main (no history rewritten, stale local commits untouched).
 - **Action:** two standard searches (transfer entropy -> EUR/USD; CME euro FX futures leading spot). Two sources opened (FRBNY SR262, JFM 2009 abstract): spot leads; no admissible item (see R387 refill note).
 - **Observation for the human (not a notification):** same as R349-R386: refill passes are not producing admissible items.
+
+## 2026-11-23 R388 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local checkout was a detached HEAD; reset local `main` to origin/main before working (no remote history rewritten).
+- **Why these angles:** copper-to-gold ratio and option volume / put-call ratio had no entry in research/ or knowledge/.
+- **Action:** two standard searches; two sources opened (BoE SWP 964 "FX option volume"; Oort 2020 Erasmus thesis). No admissible item (see R388 refill note).
+- **Observation for the human (not a notification):** same as R349-R387: refill passes are not producing admissible items. BoE SWP 964 would need an option-volume data source the repo lacks.
