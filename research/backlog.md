@@ -4587,3 +4587,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entry in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test; late-NY hours already scanned on dev (E009); tweet data
   not in the pipeline. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R371 (not an item; no item added)
+- 2026-11-23 R371 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Sydney" no
+  entry, "Wellington" no entry, "flash crash" 1 (VPIN R232), "post-jump"/"jump reversal" 3 files. Angles: (a) Sydney/Wellington Sunday
+  open first-hour EUR/USD drift; (b) extreme intraday moves -> short-horizon reversal in EUR/USD. Two standard searches.
+  (a) Hits: KMW FX premia around the clock and Krohn fixing papers (already logged), broker session pages (not evidence), theses
+  already logged (Dao NTU 35555, Adelman UGA). Nothing new opened, not cited. Sunday-open hours fall in the weekend-gap family.
+  (b) Opened Zawadowski-Andor-Kertész arXiv cond-mat/0406696 (US equities, minute data, reversal, spread-only costs, no OOS) and
+  Rif-Utz QREF 2021 (Nasdaq-100, 1-minute reversal, no OOS, no costs). Neither covers FX. Other hits (Caporale overreaction
+  papers, BoC SWP 2021-48) already logged.
+  Entry in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
