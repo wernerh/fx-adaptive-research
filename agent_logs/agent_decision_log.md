@@ -2948,3 +2948,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "treasury auction" and "beige book" had no keyword entry in research/ or knowledge/.
 - **Action:** two standard searches; all academic hits already logged (see R390 refill note). No admissible item.
 - **Observation for the human (not a notification):** same as R349-R389: refill passes are not producing admissible items; keyword space effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-23 R391 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill).
+- **Why these angles:** "US equity overnight" had no keyword entry; Japanese fiscal-year-end repatriation not logged as a study.
+- **Action:** two standard searches; one new record opened (equities only); no admissible item (see R391 refill note).
+- **Observation for the human (not a notification):** same as R349-R390: refill passes are not producing admissible items; keyword space effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

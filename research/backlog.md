@@ -4852,3 +4852,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Only academic hit was Zavodny-Ginther 2005 SEJ, already opened and logged (R150); others calendar/news pages, not opened.
 - No item added: no new verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R391 (not an item; no item added)
+- 2026-11-23 R391 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "US equity
+  overnight" had no entry in research/ or knowledge/; "fiscal year" repatriation not logged as a study. Angles: (a) US equity
+  last-half-hour / overnight return -> EUR/USD at the next European open; (b) Japanese fiscal year-end (March) repatriation -> EUR/USD.
+  Two standard searches.
+  (a) Opened Xu-Li-Singh-Chen-Li JIFMIM 2025 record (entry in research/academic_studies.md): equity indices only, no FX. Other hits
+  (vLex, Rapach SmartCarry, Bayes WP-EMG-03-2022, Chen-Hsu J. Forecasting 2019, Phylaktis-Yamani) already logged or cross-sectional/
+  monthly; not re-opened.
+  (b) Hits were broker/news pages (FXStreet/Nomura, investinglive/forexlive, Japan Times, MoneyShow, Aron Groups), an OeNB MOP 2005
+  analysis and a J-STAGE Japanese paper; not evidence for EUR/USD, not opened; one event per year is below the R090 power floor.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. pytest 464 passed.
+  0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

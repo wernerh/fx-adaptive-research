@@ -2342,3 +2342,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [thesis.eur.nl 53697 PDF](https://thesis.eur.nl/pub/53697/BSc-Thesis-Sebastiaan-Oort-Final-version.pdf) (opened via web-fetch; ~40k of ~54k characters verbatim).
 - **Design/finding:** CME copper/gold futures ratio, daily Dec 1988 - Jan 2020, predicting the US 10y yield and equity/commodity/bond indices. No exchange rates studied (no EUR/USD). Verbatim: "the results of the the out of sample test are not more predictive than their in sample counter part"; negative OOS R² values and zero transaction costs are summary-only (UNVERIFIED). Undergraduate thesis, not peer-reviewed.
 - **Relevance:** None (no FX; OOS fails for its own targets). **Status:** VERIFIED (partial read).
+
+### Xu, Li, Singh, Chen & Li (2025), "Cross-market overnight time-series momentum", JIFMIM 105, 102239 (added 2026-11-23 R391)
+- **Link:** [Griffith repository record](https://research-repository.griffith.edu.au/items/77d29c70-c6f9-426e-a28a-fca4c540dedd) (record page and abstract opened via web-fetch; full text embargoed to 2027-10-21, not read; DOI not shown on the page).
+- **Design/finding (abstract):** "the US stock market's last half-hour return predicts the next day's first half-hour stock returns in international markets"; significant "both in- and out-of-sample"; "remains profitable with the consideration of transaction costs". Equity indices only; no FX or EUR/USD in the abstract.
+- **Relevance:** None for an item (equities only; an EUR/USD transfer would be our own untested extension). **Status:** VERIFIED (abstract only).
