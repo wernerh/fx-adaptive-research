@@ -4754,3 +4754,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   EPR, UCT thesis, Brunel GMC WP 2005: already logged; Scribd, mql5 forum PDF, TradingView: not evidence) not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R383 (not an item; no item added)
+- 2026-11-23 R383 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "absorption
+  ratio" and "triple swap" had no entry in research/ or knowledge/. Angles: (a) systemic-risk absorption ratio / market-stress
+  measures -> EUR/USD direction; (b) Wednesday triple-rollover (T+2 weekend value) -> EUR/USD spot behaviour around the 17:00 NY roll.
+  Two standard searches.
+  (a) Hits were already logged (Babiak-Baruník arXiv 2101.09738, JFE 2023 Imperial PDF) or AEA 2020/2021 conference abstracts and a
+  Harvard DASH file (not opened, not cited). Opened the CFA Institute blog by Petric (2025; entry in research/academic_studies.md):
+  opinion piece on path-signature features, no study cited, no data/OOS/costs/numbers.
+  (b) Hits: ECB WP 3017 (already logged), CME roll-liquidity marketing pages, mql5 blog and fxnx broker pages (not evidence, not opened,
+  not cited), Evans NYU microstructure paper (order flow; not opened, not cited). No study of spot direction around the triple roll.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
