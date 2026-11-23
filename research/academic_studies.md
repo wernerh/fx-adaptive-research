@@ -2215,3 +2215,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [opus.bibliothek.uni-augsburg.de](https://opus.bibliothek.uni-augsburg.de/opus4/files/94257/1-s2.0-S1062976921000922-main.pdf) (opened via web-fetch; partial read).
 - **Design/finding:** Nasdaq-100 stocks, 1-minute intervals 2014-2019; "31% of such an extreme one-minute interval's return is reversed in the subsequent trading minute". Full-sample fixed-effects regressions, no OOS, no net-of-cost profit; no FX.
 - **Relevance:** None for an item (equities only, one-minute horizon, no costs). **Status:** VERIFIED (partial read).
+
+### Altavilla, Brugnolini, Gürkaynak, Motto & Ragusa (2019), "Measuring euro area monetary policy", ECB Working Paper No 2281 (added 2026-11-23 R372)
+- **Link:** [ecb.europa.eu WP 2281](https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2281~3303fd281b.en.pdf) (opened via web-fetch; partial read, first ~40k of ~120k characters).
+- **Design/finding (readable part):** EA-MPD intraday event-study database; press-release window 13:25-14:15 CET and press-conference window 14:15-15:50 CET; factors (target, timing, forward guidance, QE) extracted from OIS/yield moves; forward guidance factor "affected the middle of the yield curve most heavily, with a peak effect at about two years". EUR/USD reaction table (Table 10) seen only in a model summary, not verified; contemporaneous window response, no post-window drift test, no OOS, no costs.
+- **Relevance:** None for an item (contemporaneous response to an unobservable-in-real-time surprise factor; ECB communication family already covered: E013-area, ECB accounts R185, ECB speeches). **Status:** VERIFIED (partial read; EUR/USD figures UNVERIFIED).
+
+### Duarte (2025), "The Effect of ECB Forward Guidance on the Euro Area Yield Curve", NOVA SBE Master's work project (added 2026-11-23 R372)
+- **Link:** [run.unl.pt 10362/181613](https://run.unl.pt/bitstream/10362/181613/1/2024_25_Fall_47195_Tom_sFaluaDuarte.pdf) (opened via web-fetch; partial read).
+- **Design/finding:** daily event study on ECB communication dates, July 2005-July 2024, euro OIS 1m-10y; forward-guidance factor coefficient negative and significant at 1% at all maturities (e.g. -5.436 bp per SD at 2y, ARCH(1), Table 1). No FX, no OOS, no costs.
+- **Relevance:** None for an item (rates only, student thesis). **Status:** VERIFIED (partial read).

@@ -4600,3 +4600,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entry in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R372 (not an item; no item added)
+- 2026-11-23 R372 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "forward
+  guidance" no entry, "Powell" no entry, "Black Friday" no entry; ECB communication (accounts R185, speeches, E013 family), order flow,
+  term premium (R326), yield differential, TTF (R227), reserve maintenance, Thanksgiving (R300) already covered. Angles: (a) ECB forward
+  guidance / press-conference window -> post-conference EUR/USD drift; (b) EUR/USD high-frequency order imbalance -> short-horizon
+  direction with OOS and costs. Two standard searches.
+  (a) Opened Altavilla et al. ECB WP 2281 (2019; intraday EA-MPD windows, contemporaneous surprise response, no drift/OOS/costs; EUR/USD
+  table seen only via model summary, UNVERIFIED) and Duarte NOVA SBE 2025 (OIS only, daily, in-sample). Other hits (CEPR DP13759,
+  Boston Fed WP 19-17, ECB RB 2020, AEA 2023 programme) not opened, not cited.
+  (b) Hits already logged (hrcak 486449, arXiv 1609.04640, 2602.00776, NBER w12682) or crypto/equity only (arXiv 2607.09426, 2209.10334);
+  Warwick roman.pdf could not be opened (fetch refused), UNVERIFIED, not cited. Order-flow data are not in the pipeline.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle; ECB-surprise factors are not observable
+  in real time. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
