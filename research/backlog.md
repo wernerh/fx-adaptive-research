@@ -4727,3 +4727,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   not cited.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R381 (not an item; no item added)
+- 2026-11-23 R381 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "HMM" had no
+  entry in research/ or knowledge/; "Kalman" one mention only; Markov-switching (Chaudhary, R-entry ~line 3288), Donchian (R143),
+  Neely-Weller TA decay already covered. Angles: (a) hidden-Markov-model regime filters for EUR/USD direction with OOS and costs;
+  (b) Kalman-filter trend extraction for intraday EUR/USD trading with OOS and costs. Two standard searches.
+  (a) Only EUR/USD-specific hit is Chaudhary arXiv 2606.06190, already logged (volatility regimes, no cost/P&L test, test period
+  overlaps val/OOS). Other hits (MPRA 21154, arXiv 2310.04536, 2402.05272, 2603.04441: equity/portfolio regimes; FXStreet page) already
+  logged or not FX direction; not opened, not cited.
+  (b) Hits are Neely-Weller (2003) intraday technical trading (already logged), USC filter-rules PDF, Warwick/Exeter WPs (not opened,
+  not cited) and MQL5 forum PDFs (vendor, not evidence, not opened). No Kalman-trend study on EUR/USD with OOS costs found.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
