@@ -2235,3 +2235,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [hub.hku.hk 10722/229640](https://hub.hku.hk/bitstream/10722/229640/1/Content.pdf?accept=1) (opened via web-fetch; full read).
 - **Design/finding:** 30 USD rates, daily London midday quotes (no high/low), developed 1971-2015; 21,195 rules on closing rates; selection to 2011-12-31, OOS 2012-01-01..2015-09-11; costs = one-third of 1m forward bid-ask (developed avg "just under 4.5 basis points" one-way). Germany/E.U. series: in-sample best rule MA1 OOS annualized 0.843%, Sharpe 0.141; developed-currency OOS portfolio Sharpe 0.244, t-ratio 0.469 (not significant).
 - **Relevance:** None for an item (daily closing-rate technical rules, family already tested; euro OOS not significant). **Status:** VERIFIED.
+
+### ter Ellen, Jansen & Larsson Midthjell (2018), "ECB spillovers and domestic monetary policy effectiveness in small open economies", Norges Bank Working Paper 9/2018 (added 2026-11-23 R374)
+- **Link:** [norges-bank.no working_paper_9_18.pdf](https://www.norges-bank.no/contentassets/405144032222464fb50a0928a5cb73e6/working_paper_9_18.pdf) (opened via web-fetch; first ~40k of ~69k characters read verbatim, rest model-summarised). Later EER publication cited in another paper's bibliography only, UNVERIFIED.
+- **Design/finding:** 5-minute data, window 13:30-15:45 CET around ECB decisions, 2002-06/2018 (FX from 2004); EUR/NOK, EUR/SEK, EUR/DKK; EUR/USD appears only in ECB factor loadings (Table 1). Verbatim: "Our findings show that domestic monetary policy is still effective". Contemporaneous window responses plus in-sample local projections; no OOS, no costs.
+- **Relevance:** None for an item (contemporaneous, non-USD crosses; ECB-meeting family already covered). **Status:** VERIFIED (partial read).
+
+### Rossi & Wolff (2020), "Spillovers to exchange rates from monetary and macroeconomic communications events", SNB Working Paper 2020-18 (added 2026-11-23 R374)
+- **Link:** [snb.ch landing page](https://www.snb.ch/en/publications/research/working-papers/2020/working_paper_2020_18) (opened via web-fetch; abstract only, PDF not opened).
+- **Design/finding (abstract):** event study of EUR, CHF, BRL, MXN vs USD around U.S. monetary and macro communication events since the GFC. Verbatim: "Approximately 20 percent of the U.S. communications events were associated with statistically significant exchange rate effects." Contemporaneous event windows; drift, OOS and costs not described (UNVERIFIED without the PDF).
+- **Relevance:** None for an item (contemporaneous; FOMC/US-release families already covered). **Status:** VERIFIED (abstract only).
+
+### Hager & Nitschka (2023), "Responses of Swiss interest rates and stock prices to ECB policy surprises", Swiss J. Econ. Stat. 159:13, DOI [10.1186/s41937-023-00117-8](https://doi.org/10.1186/s41937-023-00117-8) (added 2026-11-23 R374)
+- **Link:** [Springer](https://link.springer.com/article/10.1186/s41937-023-00117-8) (opened via web-fetch; ~40% read verbatim, rest summarised).
+- **Design/finding:** daily ECB announcement days 2004-2023; Swiss swap rates and stocks only; verbatim: "we do not examine exchange rate reactions to ECB policy surprises". No OOS, no costs.
+- **Relevance:** None (no FX). **Status:** VERIFIED (partial read).
