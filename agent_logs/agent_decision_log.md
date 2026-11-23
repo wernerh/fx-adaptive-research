@@ -2920,3 +2920,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` still stale/divergent; worked from a detached checkout of origin/main and pushed to main (no history rewritten).
 - **Action:** two standard searches (MSCI / bond-index rebalancing -> EUR/USD; Russell reconstitution -> EUR/USD). One new source opened (Pandolfi-Williams CSEF WP 487: EM currencies only); no admissible item (see R384 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R383: refill passes are not producing admissible items.
+
+## 2026-11-23 R385 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Stale divergent local `main` kept as local branch `backup/stale-local-main`; local `main` reset to track origin/main (no remote history rewritten).
+- **Action:** two standard searches (TWAP / FX execution-algorithm flows -> intraday EUR/USD; ECB minimum-reserve maintenance-period end -> EUR/USD). One new source opened (Hao et al. arXiv 2610.31141: equities only); no admissible item (see R385 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R384: refill passes are not producing admissible items.
