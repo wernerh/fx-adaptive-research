@@ -4767,3 +4767,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   not cited), Evans NYU microstructure paper (order flow; not opened, not cited). No study of spot direction around the triple roll.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R384 (not an item; no item added)
+- 2026-11-23 R384 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "MSCI
+  rebalanc", "index inclusion" and "Russell reconstitution" had no entry in research/ or knowledge/. Angles: (a) equity/bond index
+  rebalancing days (MSCI, benchmark bond indices) -> EUR/USD via index-tracker FX flows; (b) Russell reconstitution day (late June)
+  -> EUR/USD. Two standard searches.
+  (a) Opened Pandolfi-Williams CSEF WP 487 (entry in research/academic_studies.md): GBI-EM rebalancing flows -> 16 EM currencies vs
+  USD, 2009-2016, no EUR/USD, no verified OOS/cost test. Other hits (BNY iFlow note, MSCI methodology pages, MPRA 112909/115194,
+  BGU, UCT thesis, CEPR DP4862) not opened, not cited.
+  (b) Hits are US-equity reconstitution studies (FAJ 2003, JFQA, RQFA 2006, EFMA 2007, Nasdaq/LSEG pages); no FX mechanism; not
+  opened, not cited. One event per year would also be far below the R090 power floor.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.

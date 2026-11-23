@@ -2915,3 +2915,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` still stale/divergent; worked from a detached checkout of origin/main and pushed to main (no history rewritten).
 - **Action:** two standard searches (absorption ratio / systemic-risk measures -> EUR/USD; Wednesday triple-rollover spot effect). One new source opened (Petric 2025 CFA blog: opinion piece, no study); no admissible item (see R383 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R382: refill passes are not producing admissible items.
+
+## 2026-11-23 R384 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` still stale/divergent; worked from a detached checkout of origin/main and pushed to main (no history rewritten).
+- **Action:** two standard searches (MSCI / bond-index rebalancing -> EUR/USD; Russell reconstitution -> EUR/USD). One new source opened (Pandolfi-Williams CSEF WP 487: EM currencies only); no admissible item (see R384 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R383: refill passes are not producing admissible items.
