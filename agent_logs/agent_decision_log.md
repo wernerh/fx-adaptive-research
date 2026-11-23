@@ -2936,3 +2936,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** copper-to-gold ratio and option volume / put-call ratio had no entry in research/ or knowledge/.
 - **Action:** two standard searches; two sources opened (BoE SWP 964 "FX option volume"; Oort 2020 Erasmus thesis). No admissible item (see R388 refill note).
 - **Observation for the human (not a notification):** same as R349-R387: refill passes are not producing admissible items. BoE SWP 964 would need an option-volume data source the repo lacks.
+
+## 2026-11-23 R389 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on a detached checkout of origin/main (local `main` has diverged from origin; left untouched).
+- **Why these angles:** "sovereign wealth" and "petrodollar" had no entry in research/ or knowledge/.
+- **Action:** two standard searches; no admissible source (see R389 refill note).
+- **Observation for the human (not a notification):** same as R349-R388: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) would be needed to make progress.

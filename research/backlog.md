@@ -4828,3 +4828,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. If the human
   can supply a daily EUR/USD option-volume series (e.g. Bloomberg, public aggregate per SWP 964 footnote 1), (b) becomes a candidate.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R389 (not an item; no item added)
+- 2026-11-23 R389 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "sovereign
+  wealth" and "petrodollar" had no entry in research/ or knowledge/ (oil, Norges, pension/hedge ratios covered R160/R269). Angles:
+  (a) sovereign-wealth-fund / reserve-manager currency purchases -> EUR/USD; (b) oil-exporter petrodollar recycling flows -> EUR/USD.
+  Two standard searches.
+  (a) Hits were IMF WP/2026/186 (dollar demand from survey expectations), ECB WP 2931, ECB occasional paper 91, ECB IRE box 2024,
+  NBER w9080, Cologne CFR 26-04, ESRB WP 148 (already logged R269); macro/reserve-composition studies, no daily EUR/USD direction
+  test with OOS and costs; not opened, not cited.
+  (b) Hits were OeNB MOP 2008 Q4, CFR article, EIA working papers, Innsbruck WP 2008-08, NBER w17998, an Essex thesis and the JIFMIM
+  2021 oil-volatility forecasting paper (oil -> FX line already covered); quarterly/annual flow data, no daily mechanism usable with
+  repo data; not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
