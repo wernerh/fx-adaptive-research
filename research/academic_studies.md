@@ -2211,7 +2211,7 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Design/finding:** minute-level TAQ data, liquid NYSE (2000-2002) and NASDAQ stocks; "significant reversal for both intraday price decreases and increases" over 30-60 minutes after 4% / 8x-volatility moves. Bid-ask spread included, other costs omitted; no OOS; no FX.
 - **Relevance:** None for an item (US equities only; post-jump reversal family already covered in research/). **Status:** VERIFIED.
 
-### Rif & Utz (2021), "Short-term stock price reversals after extreme downward price movements", Q. Rev. Econ. Finance 81, 123-133, DOI 10.1016/j.qref.2021.05.006 (UNVERIFIED DOI string; PII S1062976921000922) (added 2026-11-23 R371)
+### Rif & Utz (2021), "Short-term stock price reversals after extreme downward price movements", Q. Rev. Econ. Finance 81, 123-133, PII S1062976921000922 (DOI not confirmed, UNVERIFIED) (added 2026-11-23 R371)
 - **Link:** [opus.bibliothek.uni-augsburg.de](https://opus.bibliothek.uni-augsburg.de/opus4/files/94257/1-s2.0-S1062976921000922-main.pdf) (opened via web-fetch; partial read).
 - **Design/finding:** Nasdaq-100 stocks, 1-minute intervals 2014-2019; "31% of such an extreme one-minute interval's return is reversed in the subsequent trading minute". Full-sample fixed-effects regressions, no OOS, no net-of-cost profit; no FX.
 - **Relevance:** None for an item (equities only, one-minute horizon, no costs). **Status:** VERIFIED (partial read).
