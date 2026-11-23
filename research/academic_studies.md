@@ -2225,3 +2225,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [run.unl.pt 10362/181613](https://run.unl.pt/bitstream/10362/181613/1/2024_25_Fall_47195_Tom_sFaluaDuarte.pdf) (opened via web-fetch; partial read).
 - **Design/finding:** daily event study on ECB communication dates, July 2005-July 2024, euro OIS 1m-10y; forward-guidance factor coefficient negative and significant at 1% at all maturities (e.g. -5.436 bp per SD at 2y, ARCH(1), Table 1). No FX, no OOS, no costs.
 - **Relevance:** None for an item (rates only, student thesis). **Status:** VERIFIED (partial read).
+
+### Caporin, Ranaldo & Santucci de Magistris (2011), "On the Predictability of Stock Prices: a Case for High and Low Prices", Univ. Padova "Marco Fanno" WP 136 (added 2026-11-23 R373)
+- **Link:** [economia.unipd.it 20110136.pdf](https://economia.unipd.it/en/sites/decon.unipd.it/files/20110136.pdf) (opened via web-fetch; middle section read only via extractor summary).
+- **Design/finding:** 30 DJIA stocks, daily high/low/close 2003-2010; fractional VECM on daily high and low with the range as error-correction term; "high-low bands" as trading signals on 1-minute data for 20 stocks. OOS 2009 one-step forecasts (Diebold-Mariano). Verbatim: "We find strong support for the forecasting ability of FVECM". Costs: flat per-trade fee only (from extractor summary, UNVERIFIED). No FX, no close-location-value predictor.
+- **Relevance:** None for an item (US equities only; range-based level forecasting, not FX direction). **Status:** VERIFIED (partial read).
+
+### Hsu, Taylor & Wang, "Technical Trading: Is it Still Beating the Foreign Exchange Market?" (primary full text; SSRN 2765673; year/journal UNVERIFIED from the fetched text) (added 2026-11-23 R373; supplements the secondary-summary entry above, line ~769)
+- **Link:** [hub.hku.hk 10722/229640](https://hub.hku.hk/bitstream/10722/229640/1/Content.pdf?accept=1) (opened via web-fetch; full read).
+- **Design/finding:** 30 USD rates, daily London midday quotes (no high/low), developed 1971-2015; 21,195 rules on closing rates; selection to 2011-12-31, OOS 2012-01-01..2015-09-11; costs = one-third of 1m forward bid-ask (developed avg "just under 4.5 basis points" one-way). Germany/E.U. series: in-sample best rule MA1 OOS annualized 0.843%, Sharpe 0.141; developed-currency OOS portfolio Sharpe 0.244, t-ratio 0.469 (not significant).
+- **Relevance:** None for an item (daily closing-rate technical rules, family already tested; euro OOS not significant). **Status:** VERIFIED.

@@ -4615,3 +4615,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle; ECB-surprise factors are not observable
   in real time. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R373 (not an item; no item added)
+- 2026-11-23 R373 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "close
+  location" and "narrow range" no entry; NR7 (R176-area), Donchian (R143), BoE MPC (R194-area), BTP-Bund (R134/R194), M3 (R332),
+  technical-rule families already covered. Angles: (a) daily close location value (close position within the day's high-low range)
+  -> next-day EUR/USD direction; (b) daily high/low range-based signals in FX with OOS and costs. Two standard searches.
+  (a)/(b) Opened Caporin-Ranaldo-Santucci de Magistris Padova WP 136 (2011; DJIA high/low FVECM, no FX) and Hsu-Taylor-Wang primary
+  full text (hub.hku.hk 10722/229640; closing-rate rules only, euro OOS Sharpe 0.141, developed OOS portfolio t 0.469). Other hits
+  already logged (KMW, Gao et al. intraday momentum, Dao NTU 35555, Levich-Poti, Alexandridis) or not evidence (TradingView, AEA
+  programme pages, not opened, not cited). No study tests close location value in FX.
+  Entries in research/academic_studies.md.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.

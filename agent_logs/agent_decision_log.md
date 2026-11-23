@@ -2865,3 +2865,8 @@ Why each run chose what it did, and any judgement calls.
 - **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Worked on a run branch tracking origin/main (local `main` in this workspace is a stale divergent clone; left untouched).
 - **Action:** two standard searches (ECB forward guidance / press conference -> EUR/USD drift; HF order imbalance -> EUR/USD direction). Two sources opened (Altavilla et al. ECB WP 2281; Duarte NOVA SBE 2025); no admissible item (see R372 refill note in research/backlog.md).
 - **Observation for the human (not a notification):** same as R349-R371: refill passes are not producing admissible items.
+
+## 2026-11-23 R373 (unattended)
+- **State:** last research-batch run 44712462069 completed and recorded (E052); nothing queued; no `ready` backlog item -> protocol step 4 (refill). Local `main` was behind a shallow clone; unshallowed and fast-forwarded to origin/main.
+- **Action:** two standard searches (close location value -> next-day EUR/USD; range-based FX signals with OOS/costs). Two sources opened (Caporin et al. Padova WP 136; Hsu-Taylor-Wang primary text); no admissible item (see R373 refill note in research/backlog.md).
+- **Observation for the human (not a notification):** same as R349-R372: refill passes are not producing admissible items.
