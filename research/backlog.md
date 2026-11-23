@@ -4699,3 +4699,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Entries in research/academic_studies.md.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R379 (not an item; no item added)
+- 2026-11-23 R379 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "life insur",
+  "GPIF", "NBIM" and "SWF" had no entry in research/ or knowledge/; dividend flows (Zheng 2023, R060/R149) and global portfolio
+  rebalancing (Camanho-Hau-Rey) already covered. Angles: (a) Japanese life-insurer semiannual investment / hedge-ratio plans -> EUR/USD;
+  (b) sovereign-wealth-fund / institutional rebalancing flows -> later EUR/USD. Two standard searches.
+  (a) Opened Chen (2024) Economics Letters 240 (abstract): insurer portfolio returns and hedging under a carry-trade scenario, no
+  EUR/USD direction test; ~2 plan dates per year would be far below the R090 power floor anyway. Other hits (Bloomberg, MNI, FX Markets,
+  Japan Times, Euromoney, Insurance Journal) are press, not opened, not cited.
+  (b) Opened Graziano-Habib ECB WP 2931: quarterly US mutual-fund currency shares, contemporaneous returns, no spot-direction/OOS/cost
+  test. Camanho-Hau-Rey (NBER w24320/SSRN 3127061) already logged; NBIM carry note, UiO course paper, CEPR DP15617, HWR Berlin PDF,
+  ECB OP 91, NBER conference paper not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.

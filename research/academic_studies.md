@@ -2285,3 +2285,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [DNB PDF](https://www.dnb.nl/media/5rgjh1bx/working-paper-373.pdf) (opened via web-fetch; first ~half verbatim).
 - **Design/finding:** quarterly panel, 46 advanced and emerging economies, 1975Q1-2011Q4; random-effects probit for crisis probability from an exchange-market-pressure index vs USD. Verbatim: "our model performs well out-of-sample". No EUR/USD pair, no direction or cost test.
 - **Relevance:** None (quarterly crisis probability, not EUR/USD direction; far below the R090 power floor). **Status:** VERIFIED (partial read).
+
+### Chen (2024), "Foreign investments of Japanese life insurance companies", Economics Letters 240 (added 2026-11-23 R379)
+- **Link:** [IDEAS abstract page](https://ideas.repec.org/a/eee/ecolet/v240y2024ics0165176524002581.html), doi:10.1016/j.econlet.2024.111774 (abstract page opened via web-fetch; full text paywalled, not read).
+- **Design/finding:** Japanese life insurers' foreign portfolio returns, volatility and currency-hedging choices, including a yen-funded carry-trade scenario. Verbatim: "Third, the investment returns significantly decrease under the carry trade scenario." Pairs, frequency, OOS and costs UNVERIFIED (not in abstract); no EUR/USD spot-direction test visible.
+- **Relevance:** None for a new item (insurer portfolio returns, not lagged EUR/USD direction; semiannual plan dates ~2/year are below the R090 power floor). **Status:** VERIFIED (abstract).
+
+### Graziano & Habib, "Mutual funds and safe government bonds: do returns matter?", ECB Working Paper 2931 (added 2026-11-23 R379)
+- **Link:** [ECB PDF](https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2931~8b0e21c2d2.en.pdf) (opened via web-fetch; first ~40k of 146k characters verbatim, rest summarised only).
+- **Design/finding:** quarterly panel 2010Q1-2021Q4 of US mutual funds' currency shares in safe sovereign bonds (USD, EUR, JPY, GBP, CHF, AUD, CAD). Verbatim: "We find evidence of active rebalancing towards government bonds that offer relatively higher returns on an unhedged basis". Contemporaneous returns; no spot-direction, OOS or cost test. Lagged-return appendix result UNVERIFIED (summary only).
+- **Relevance:** None (portfolio-share regressions, same rebalancing family as Camanho-Hau-Rey already logged). **Status:** VERIFIED (partial read).
