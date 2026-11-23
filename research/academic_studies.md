@@ -2320,3 +2320,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv PDF](https://arxiv.org/pdf/2610.31141) (opened via web-fetch; ~40k of ~364k characters verbatim, rest summarised only).
 - **Design/finding:** five anonymised stocks, full limit-order-book events, 22-26 November 2010 (five trading days); trader-level execution flow vs next-interval VWAP change at 26 horizons (1 s to 30 min); traders classified on days 1-2, verbatim "The subsequent three-day period serves as the out-of-sample validation window". Flow-following Sharpe ratios verbatim "ranging from 16 to 63" "before transaction costs" (cost sensitivity reported in figures; not read verbatim, UNVERIFIED).
 - **Relevance:** None for a new item (equities only, no FX pair; needs trader-identified order flow we do not have; five-day sample). **Status:** VERIFIED (partial read).
+
+### Rosenberg & Traub (2008), "Price Discovery in the Foreign Currency Futures and Spot Market", FRBNY Staff Report 262 (added 2026-11-23 R387)
+- **Link:** [FRBNY SR262](https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr262.html) (opened via web-fetch; ~40k of ~89k characters verbatim, rest summarised only).
+- **Design/finding:** CME futures vs interdealer/composite spot, 3-minute returns, daily VECM; 1996 sample (DEM, JPY, CHF, GBP) and March-May 2006 sample (EUR, JPY, GBP). Verbatim 1996: "futures returns lead spot returns by up to 12 minutes"; verbatim 2006: "in our more recent sample that the spot market has the dominant information share". No trading rule, OOS or cost test.
+- **Relevance:** None for a new item (spot leads in the electronic era; no CME futures data in repo). **Status:** VERIFIED (partial read).
+
+### Cabrera, Wang & Yang (2009), "Do futures lead price discovery in electronic foreign exchange markets?", J. Futures Markets 29(2) 137-156 (added 2026-11-23 R387)
+- **Link:** [IDEAS record](https://ideas.repec.org/a/wly/jfutmk/v29y2009i2p137-156.html) (abstract only; full text not opened, sample details UNVERIFIED).
+- **Finding:** EUR and JPY, CME GLOBEX regular and E-mini futures vs EBS spot; verbatim "the spot market is found to consistently lead the price discovery process for both currencies during the sample period". No trading rule/OOS/costs in the abstract.
+- **Relevance:** None for a new item (same as Rosenberg-Traub 2006 sample). **Status:** VERIFIED (abstract only).

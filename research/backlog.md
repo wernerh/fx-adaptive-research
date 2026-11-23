@@ -4801,3 +4801,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were a FRED graph and FXStreet news items (descriptive market commentary); no predictive study; not opened, not cited.
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R387 (not an item; no item added)
+- 2026-11-23 R387 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "transfer
+  entropy" only one passing mention (FTSE, R192); "futures basis" / CME futures-spot lead-lag not logged as an angle. Angles: (a) transfer
+  entropy / information-flow measures -> EUR/USD direction; (b) CME euro FX futures leading spot EUR/USD intraday. Two standard searches.
+  (a) Hits were general entropy/econophysics papers (equity indices, methodology), TradingView scripts; no EUR/USD direction study with
+  OOS and cost tests; not opened, not cited.
+  (b) Opened Rosenberg-Traub FRBNY SR262 (futures led in 1996, spot has the dominant information share in the 2006 EUR sample) and
+  Cabrera-Wang-Yang JFM 2009 abstract (EBS spot consistently leads CME futures for EUR and JPY); entries in research/academic_studies.md.
+  The published evidence points the wrong way for a futures-leads-spot rule, and CME futures ticks are not in the repo.
+- No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
