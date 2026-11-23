@@ -4672,3 +4672,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with an OOS cost test for either angle; quarter-end windows (4/year) are below
   the R090 power floor and the calendar is already covered (E034). pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R377 (not an item; no item added)
+- 2026-11-23 R377 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "volume
+  spike" and "sovereign auction" no entry. Angles: (a) abnormal FX volume -> next-day EUR/USD (high-volume return premium);
+  (b) euro-area sovereign bond auctions -> EUR/USD. Two standard searches.
+  (a) Opened Gargano-Riddiough-Sarno "The Value of Volume in Foreign Exchange" (2017 WP, Norges Bank PDF): CLS volume, daily
+  cross-sectional low-volume reversal, net Sharpe > 1, no single-pair EUR/USD trading result. Same mechanism as B28/B29, already
+  tested in E033 (NONE on dev, line closed on dev). CEPR DP16128 and JBS/CEPR column hits not opened, not cited.
+  (b) Opened Beetsma-Giuliodori-Hanson-de Jong ECB WP 2056 (bid-to-cover -> secondary yields, no FX). DNB WP 674 already logged;
+  ECB WP 2927, UvA chapters, ICMAIF papers and rttnews hit not opened, not cited.
+  Entries in research/academic_studies.md.
+- No item added: (a) is a re-test of a closed line (E033) with no new data source (CLS volume not in pipeline); (b) has no EUR/USD
+  evidence. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
