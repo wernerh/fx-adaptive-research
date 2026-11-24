@@ -5178,3 +5178,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Other hits were broker/commentary pages, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R415 (not an item; no item added)
+- 2026-11-24 R415 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "unemployment" and "Bundesagentur" had no entry, "Shanghai" one; PMI, Ifo, ZEW, Sentix, flash GDP, retail sales, UK
+  bank holidays, PBoC/CNY fixing, Nikkei/Hang Seng and ~15 others already have entries. Angles: (a) German monthly unemployment
+  release (Bundesagentur fuer Arbeit, ~09:55 CET) -> later EUR/USD drift; (b) Chinese equity returns -> European-session EUR/USD.
+  Two standard searches.
+  (a) Hits: Cardiff ORCA 33529/77683 and the JFQA macro-news HF paper (already in academic_studies.md), Cardiff A2007_4 (already in
+  backlog), FMG DP258 (already logged R395). ECB WP 631 (https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp631.pdf) could not be opened
+  (fetch-permission timeout): UNVERIFIED, not cited.
+  (b) Opened Liu, Grith, Dong & Cucuringu, "A Bipartite Graph Approach to U.S.-China Cross-Market Return Forecasting", arXiv preprint
+  2603.10559 (https://arxiv.org/html/2603.10559v1): daily US/China stock returns 2014-2021, rolling OOS, pre-cost; equities only, no
+  FX leg; finding is US -> China, reverse effect "limited". PMC7887722 already logged; other hits commentary/not opened.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
