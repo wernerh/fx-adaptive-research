@@ -5116,3 +5116,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   funding/CIP effects; none opened gives an EUR/USD spot direction test; usage data are weekly/episodic and not in the pipeline.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R411 (not an item; no item added)
+- 2026-11-24 R411 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): ~50 candidate terms (lunar, weather, COT, CLS, option expiry, NFP, GDELT, Ifo/ZEW/Sentix, round number, month-/
+  quarter-end, Hurst, variance ratio, Halloween, Golden Week, FOMC minutes, ...) all already have entries; "ECB minutes"/"ECB
+  account" (2/6), "current account" (2), "trade balance" (4) were thinnest. Angles: (a) ECB monetary-policy accounts release ->
+  EUR/USD drift; (b) euro-area monthly balance-of-payments / current-account release -> EUR/USD. Two standard searches.
+  (a) Hits: VoxEU ECB exchange-rate-communication column, IES WP 23/2025 (IDEAS wp2025_23) and BdE DT 2431 - all already logged
+  in research/academic_studies.md; no new source. Other hits (ECB blog, Bundesbank monthly report/data files) not evidence.
+  (b) Hits were ECB/Banque de France/BdE press releases of the monthly BoP statistics only; no study of an FX reaction; not cited.
+- No item added: no new verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
