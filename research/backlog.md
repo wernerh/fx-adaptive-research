@@ -5018,3 +5018,12 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   notes (2025 and 2026, both already logged R262/R300). Angle already covered by R300.
 - No item added: no new verified source; both angles were already closed by earlier passes (one event per year, no OOS/cost
   evidence). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R404 (not an item; no item added)
+- 2026-11-24 R404 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "Lunar/Chinese New Year", "NGEU/syndicat", "Golden Week", "OAT", "EUR/GBP", "excess liquidity", "DXY", "H.4.1",
+  "weekly financial statement", "TGA", "reverse repo" all already have entries. One standard search on EUR/USD intraday return
+  predictability with OOS and costs: hits arXiv 2512.12727 (EXFormer), FEDS 2025-089, arXiv 1411.2153, Phylaktis-Ehab (Bayes) and the
+  hrcak paper are all already logged; the only new hit, WRAP 180610 (mispricing risk premia in currency markets), is a monthly
+  cross-sectional currency-factor paper, not EUR/USD single-pair timing; not opened, not cited.
+- No item added: no new verified source. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
