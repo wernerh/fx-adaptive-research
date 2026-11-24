@@ -2987,3 +2987,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "reverse Yankee" and corporate bond issuance had no entry; credit spreads only touched in passing.
 - **Action:** two standard searches; two new sources opened (ECB reverse-Yankee box 2025, Časta CNB WP 7/2022), one already-logged source re-opened; no admissible item (see R397 refill note).
 - **Observation for the human (not a notification):** same as R349-R396: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R398 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued/in progress; last run 44712462069 already recorded as E052. Protocol step 4 (refill).
+- **Why these angles:** "flash HICP" and German state CPI had backlog mentions but no logged study.
+- **Action:** three standard searches; no new source could be opened (CEQURA WP8 fetch-permission timeout again; other hits news pages); no admissible item (see R398 refill note).
+- **Observation for the human (not a notification):** same as R349-R397: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

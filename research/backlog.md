@@ -4940,3 +4940,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   research/academic_studies.md. MSCI, Macquarie (already logged), BoC SWP 2017-19 and AEA 2021 hits not opened, not cited.
 - No item added: no verified daily/intraday EUR/USD direction evidence with OOS/costs usable with repo data; horizons below the R090
   power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R398 (not an item; no item added)
+- 2026-11-24 R398 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "flash HICP"
+  4 backlog mentions, 0 studies; "Ifo/ZEW" 19 backlog, 0 studies; option-expiry cut, pre-holiday, Ramadan, Jackson Hole all already
+  touched. Angles: (a) euro-area flash HICP release -> later EUR/USD drift; (b) German state CPI releases (pre-national-flash) -> EUR/USD.
+  Three standard searches.
+  (a) Hits were FXStreet release pages only (not opened, not cited). Scholarly search returned already-logged sources (Norges Bank
+  Staff Memo 5/2026, Bundesbank MR Jan 2026) and CEQURA WP8, which redirected to cequra.uni-muenchen.de and failed again with a
+  fetch-permission timeout (same as the earlier attempt at ~line 1714); not retried, contents UNVERIFIED, not cited as evidence.
+  (b) Hits were Newsquawk/XTB/Continuum headline pages only; not opened, not cited.
+- No item added: no verified EUR/USD direction evidence with OOS/costs; surprise data not in repo; release-time continuation without
+  surprises = E026 mechanism (NONE); ~12 flash releases/year below the R090 power floor. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
