@@ -4929,3 +4929,14 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence with OOS/costs; ECB-meeting line blocked (calendar not in repo, below power
   floor). pytest 464 passed (after reinstalling dev deps: statsmodels was missing in this workspace). 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+
+### Refill note R397 (not an item; no item added)
+- 2026-11-24 R397 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "reverse
+  Yankee", "corporate bond issuance" no entry; "credit spread"/"HY spread" 2 each (passing). Angles: (a) euro corporate bond issuance by
+  US firms (reverse Yankee) -> EUR/USD; (b) corporate credit-spread changes -> next-day EUR/USD. Two standard searches.
+  (a) Opened ECB box "Reverse Yankee bonds" (June 2025): monthly issuance-share local projections, no FX direction test.
+  (b) Opened Časta CNB WP 7/2022 (monthly corporate-loan ECM, EUR/USD OOS gains only at 6-36 months, no costs) and re-opened Della
+  Corte-Jeanneret-Patelli AEA 2020 draft (already logged R201: licensed quanto-CDS data, weekly+ horizon). Entries in
+  research/academic_studies.md. MSCI, Macquarie (already logged), BoC SWP 2017-19 and AEA 2021 hits not opened, not cited.
+- No item added: no verified daily/intraday EUR/USD direction evidence with OOS/costs usable with repo data; horizons below the R090
+  power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
