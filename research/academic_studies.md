@@ -2443,3 +2443,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [HKMA PDF](https://www.hkma.gov.hk/media/eng/publication-and-research/research/working-papers/HKMAWP09_11_full.pdf) (opened via web-fetch; first ~40k characters verbatim, tail summary-based).
 - **Design/finding:** daily AUD, GBP, EUR, JPY, NZD, CHF vs USD, 9 Aug 2007 - 31 Mar 2009; EGARCH regressions of daily returns on *same-day* changes in risk reversals, carry-to-risk and LIBOR-OIS spreads. Verbatim: "liquidity risk measured by the LIBOR-OIS spread was a significant factor affecting the exchange-rate movements of the euro." In-sample, contemporaneous, crisis sample only, no costs.
 - **Relevance:** None for an item: contemporaneous explanation, not prediction; sample precedes dev; LIBOR-OIS not in the pipeline (and LIBOR discontinued). **Status:** VERIFIED (partial read).
+
+### Ghanem, Harasheh, Sbaih & Ajmal (2024), "The predictability of technical analysis in foreign exchange market using forward return: evidence from developed and emerging currencies", Cogent Business & Management 11(1), 2428781, doi:10.1080/23311975.2024.2428781 (added 2026-11-24 R406)
+- **Link:** [Unibo CRIS PDF](https://cris.unibo.it/retrieve/handle/11585/996996/56154880-2ad1-4dae-8c72-8a75de65fb83/punlication%2032_Cogent_Technical.pdf) (opened via web-fetch; ~40k of ~76k characters verbatim, tail summary-based).
+- **Design/finding:** daily data Jan 2000 - Dec 2022, 10 USD pairs incl. EUR/USD; 497 SMA/RSI/HAMA/KAMA rules; one-way ANOVA of mean forward returns (1-7 days) after buy vs sell signals; full sample, no OOS split. Verbatim: "The returns are calculated without adjustment for transaction costs or interest rates." Developed-pair group finding (verbatim): "no significant and correctly signed SMA indicators for the next day's holding position". EUR/USD-specific figures (e.g. SMA(6,150) 3-day short) are from the summary-based tail: UNVERIFIED.
+- **Relevance:** None new: moving-average rules on daily EUR/USD are already covered (B16 / E019 family); in-sample, gross, massive multiple testing. **Status:** VERIFIED (partial read).
+
+### Vlasiuk & Smirnov (2025), "Push-response anomalies in high-frequency S&P 500 price series", arXiv:2511.06177v1 (added 2026-11-24 R406)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/2511.06177v1) (opened via web-fetch, read in full).
+- **Design/finding:** SPY NBBO quote updates in event time, Jan 2018 - Dec 2023; lag-resolved push-response decomposition; full-sample with bootstrap bands, no OOS, no costs ("Extending the analysis with explicit transactioncost overlays should also improve trading implementability."). No FX.
+- **Relevance:** None (equity ETF microstructure; no EUR/USD). **Status:** VERIFIED.

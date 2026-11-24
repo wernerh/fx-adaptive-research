@@ -5039,3 +5039,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   BIS WP 854 / IMF / ECB hits are funding-market studies without FX prediction; not opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware link for either angle, and neither series is in
   the repo. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R406 (not an item; no item added)
+- 2026-11-24 R406 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "quote intensity", "moving-average distance", "price-to-high" had no entry; ~45 other candidate keywords (BTP, flash
+  PMI, turn-of-the-month, TLTRO, EUR/CHF, Hurst, ZEW, Ifo, intervention, gamma, COT, RSI, Bollinger, VWAP, tick volume, lead-lag,
+  52-week, anchoring ...) already have entries. Angles: (a) quote-arrival intensity -> short-horizon EUR/USD returns; (b) distance
+  from a moving average (anchoring) -> later EUR/USD returns. Two standard searches.
+  (a) Only new hit opened: Vlasiuk-Smirnov arXiv 2511.06177 (SPY NBBO push-response, no FX, no OOS/costs). Other hits (Durham
+  1394665, Marsh-Miao City 12154, NBER w12682) already logged; arXiv 2312.16190/2408.06519 are point-process methodology, not opened.
+  (b) Opened Ghanem et al. Cogent B&M 2024 (Unibo CRIS): daily SMA/RSI rules on 10 USD pairs incl. EUR/USD, ANOVA, full-sample, gross,
+  developed-pair next-day SMA signals not significant. Menkhoff-Sarno momentum, NBER w14597/w15518 and Massey hits already logged or
+  cross-sectional; not opened.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD result for either angle; (b) reduces to
+  the already-tested daily moving-average family. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
