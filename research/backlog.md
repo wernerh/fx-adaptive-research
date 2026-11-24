@@ -5144,3 +5144,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   accuracy, trading rule or costs; ARIMA-GARCH slightly better on the range sample. Not evidence of a tradable edge.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R413 (not an item; no item added)
+- 2026-11-24 R413 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "commitments", "tick size", "Suzanne Lee" had no entry; "co-jump", "heikin", "order book imbalance" had one each
+  (Heikin-Ashi R-note ~line 2381; BTP-Bund ~lines 3153/3858 already covered); Kalman, Ichimoku, Donchian, Bollinger, VPIN, intraday
+  momentum, price clustering, attention, Wikipedia and ~10 others already have entries. Angles: (a) EUR/USD intraday jumps ->
+  post-jump drift/reversal; (b) price clustering at round numbers -> stop-loss cascades. Two standard searches.
+  (a) Opened Lee & Wang, "Tales of Tails: Jumps in Currency Markets", working paper dated March 2019, journal not stated
+  (https://www.scheller.gatech.edu/directory/research/finance/lee/pdf/jumps_in_currency_markets_jfm5.0.pdf): 18 USD pairs incl. EUR,
+  15-minute Olsen mid quotes 1999-2015; models jump arrival/size and clustering only, no post-jump return drift/reversal test for
+  EUR/USD; its trading application is a cross-sectional carry portfolio (jump-robust timing), not a single-pair direction rule.
+  Table figures came from a fetch summary (UNVERIFIED, not cited). Other hits (Bayes WP 08-2014, St. Louis Fed WP 2012-008,
+  JBS large-moves page, rasset 2025, jump-forecasting paper) already logged or not opened.
+  (b) Hits were Osler FRBNY SR125/SR150 (already logged and tested as B52) and arXiv 1307.5440 (already logged), plus trading blogs.
+- No item added: no new verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
