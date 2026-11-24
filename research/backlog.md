@@ -5066,3 +5066,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Bollerslev et al. semivariance papers are equity-volatility papers (not opened); ORBi 257214 and Caporin-Shahzad already logged.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R408 (not an item; no item added)
+- 2026-11-24 R408 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "Korean won", "consensus dispersion", "survey dispersion", "Citi surprise" had no entry; ~60 other candidate
+  keywords (EIA, WMR, options expiry, VIX, yield curve, PMI, Bund, BTP, Nikkei, Hang Seng, KOSPI, TTF, freight, economic surprise,
+  opening range ...) already have entries. Angles: (a) economist-forecast dispersion before US releases -> post-release EUR/USD
+  drift; (b) Asian currencies' overnight returns leading the European-session EUR/USD move. Two standard searches.
+  (a) Only new hit opened: Chaboud-Chernenko-Wright Fed IFDP 903 (2007,
+  https://www.federalreserve.gov/pubs/ifdp/2007/903/ifdp903.htm): EBS EUR/USD and USD/JPY 1-minute data 1999-2004; MMS forecast
+  dispersion relates (mostly negatively) to post-release trading VOLUME only; no price drift, no OOS, no costs. Norges staff memo
+  5/2026, Cardiff A2007_4/a2006_4, IFDP 823 and Cagliesi-Bina-Tivegna already logged.
+  (b) All hits already logged (Krohn et al. fixings/around-the-clock, BoC SWP 2021-48, NY Fed SR917, Caporin-Shahzad, AEA 2019/2020
+  previews) or commentary (Continuum Economics, not cited). Asian FX data are not in the pipeline.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
