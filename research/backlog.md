@@ -5160,3 +5160,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were Osler FRBNY SR125/SR150 (already logged and tested as B52) and arXiv 1307.5440 (already logged), plus trading blogs.
 - No item added: no new verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R414 (not an item; no item added)
+- 2026-11-24 R414 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "real yield" and "MOVE index" had one entry each, "settlement price" and "first trading day" none; reverse repo/TGA,
+  crypto, EUR/CHF, GDELT, DXY, realized skew, dividend flows (Zheng 2023), quarter-end, Treasury/Bund futures lead-lag and ~25 others
+  already have entries. B13 (CME settlement) stays `blocked` (needs a human-supplied official settlement-time source). Angles:
+  (a) US real-yield (TIPS) changes -> next-day EUR/USD; (b) MOVE index (Treasury implied vol) -> next-day EUR/USD. Two standard searches.
+  (a) Opened Engel & Wu, "Exchange Rate Models are Better than You Think, and Why They Didn't Work in the Old Days", working paper,
+  August 2025, journal not stated (https://econ.cuhk.edu.hk/wp-content/uploads/2025/08/EngelWu_BetterThanYouThink.pdf): monthly
+  1999-2023 G10 vs USD incl. EUR; headline is in-sample fit of monthly changes on *contemporaneous* real-rate changes (R^2 ~0.25-0.30
+  per fetch summary); a rolling Clark-West OOS section was not read verbatim (UNVERIFIED); no costs; monthly frequency is below the
+  R090 power floor. Other hits (ualberta wp2025-06, MQ WP 16-07, Molodtsova Taylor_Euro, ORBi 257214, arXiv 2512.12727, cesa_wp_02)
+  already logged. (b) Opened Eeso, "Signals in the Storm: Predicting Market Shifts with VIX, CVI, MOVE, and BBDXY Indices", Oakland
+  University Honors thesis, April 2025 (https://our.oakland.edu/bitstreams/df350e6d-0a70-4455-8b86-b8a294ef4f7b/download): daily
+  full-sample OLS on DXY (not EUR/USD), lagged MOVE change t ~1.70 per fetch summary (UNVERIFIED), adj. R^2 0.28%, no OOS, no costs.
+  Other hits were broker/commentary pages, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
