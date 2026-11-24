@@ -3017,3 +3017,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "JGB" had no entry anywhere in research/, knowledge/ or the backlog; Euribor-futures rate changes had only one incidental backlog mention.
 - **Action:** two standard searches; three sources opened, none links the angle to later EUR/USD returns; no admissible item (see R402 refill note).
 - **Observation for the human (not a notification):** same as R349-R401: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R403 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued/in progress; last run 44712462069 already recorded as E052. Protocol step 4 (refill).
+- **Why these angles:** low-count keywords (Japanese holidays, Thanksgiving) that might still hold a testable calendar effect.
+- **Action:** two standard searches; only already-logged or broker sources; both angles had been closed by earlier passes; no admissible item (see R403 refill note).
+- **Observation for the human (not a notification):** same as R349-R402: refill passes are not producing admissible items; nearly every candidate keyword is already covered. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
