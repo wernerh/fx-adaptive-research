@@ -5211,3 +5211,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   accepted manuscript of the already-logged Greenwich version; in-sample EGARCH news model, no OOS/costs. Other hits already logged.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-24 R417 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "vol target" and "Treasury futures roll" had no entry, "volatility target" two (no tested item); flash PMI, Sentix,
+  TTF/natural gas, cross-pair lead-lag, CLS, IMM date, cointegration and ~35 others already have entries. Angles: (a) volatility-
+  targeted / volatility-filtered trend following on EUR/USD; (b) US Treasury futures quarterly roll window -> EUR/USD. Two standard searches.
+  (a) Newly opened: Sepp & Lucic, "The Science and Practice of Trend-Following Systems", arXiv 2607.19497 (2026)
+  (https://arxiv.org/pdf/2607.19497; partly read, cost/results sections from summary UNVERIFIED): 84-futures portfolio, FX only as a
+  10-contract class, no EUR/USD result, no formal OOS. Miao, "Volatility Filters for Active Asset Trading and Portfolio Optimisation",
+  LJMU PhD thesis 2006 (https://researchonline.ljmu.ac.uk/id/eprint/5793/1/431316.pdf; partly read, EUR/USD appendix tables not read,
+  UNVERIFIED): RiskMetrics volatility filter on MACD/MA rules; EUR/USD results full-sample, OOS only for a nine-pair portfolio
+  (2004-05, 261 days); vol-state conditioning family already exists (backlog ~line 205) and the MA/TSMOM base rule closed NONE (B16/E019).
+  (b) Only CME Group pages (Treasury roll study already in academic_studies.md; FX-futures roll explainers): no EUR/USD spot direction test.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
