@@ -2993,3 +2993,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "flash HICP" and German state CPI had backlog mentions but no logged study.
 - **Action:** three standard searches; no new source could be opened (CEQURA WP8 fetch-permission timeout again; other hits news pages); no admissible item (see R398 refill note).
 - **Observation for the human (not a notification):** same as R349-R397: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R399 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued/in progress; last run 44712462069 already recorded as E052. Protocol step 4 (refill).
+- **Why these angles:** US jobless claims and ISM had no logged scholarly study.
+- **Action:** two standard searches; two abstracts opened (logged); no admissible item (see R399 refill note).
+- **Observation for the human (not a notification):** same as R349-R398: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
