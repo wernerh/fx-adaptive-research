@@ -4916,3 +4916,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   opened, not cited. Event is post-dev (2024): no dev test possible.
 - No item added: (a) surprise data not in repo; surprise-free continuation = E026 mechanism (NONE); ~60 dev events with a 12 h hold below
   the R090 power floor. (b) no evidence and no dev coverage. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R396 (not an item; no item added)
+- 2026-11-24 R396 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "Roodbar"
+  no entry; "DAX" 1 incidental; "refunding" 6 (passing). Angles: (a) European equity-market open return -> intraday EUR/USD;
+  (b) US Treasury quarterly refunding announcement -> EUR/USD. Two standard searches.
+  (a) Marsh-Miao, Cagliesi-Bina-Tivegna, arXiv 2409.04471, QuantRocket and Brunel GMC already logged. Opened Roodbar Newcastle PhD
+  2018 (partial read): DAX/EUR/USD pre-ECB rumour-conditional drift, in-sample, gross; no equity-open -> EUR/USD test; Ch.4
+  "ECB conditional Friday effect" not read (UNVERIFIED). Entry in research/academic_studies.md. Other hits not opened, not cited.
+  (b) Hits were news/broker pages only (FXStreet, MarketPulse, Newsquawk, Continuum, Euronext); not opened, not cited. Four events
+  per year: below the R090 power floor.
+- No item added: no verified EUR/USD direction evidence with OOS/costs; ECB-meeting line blocked (calendar not in repo, below power
+  floor). pytest 464 passed (after reinstalling dev deps: statsmodels was missing in this workspace). 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.

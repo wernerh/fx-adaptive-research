@@ -2975,3 +2975,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "Almeida-Goodhart-Payne" and the post-ECB drift poster had no entry; T+1 settlement only touched in passing.
 - **Action:** three standard searches; two new sources opened (LSE FMG DP258, AFA 2023 Valentin poster); no admissible item (see R395 refill note).
 - **Observation for the human (not a notification):** same as R349-R394: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R396 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued/in progress; last run 44712462069 already recorded as E052. Protocol step 4 (refill).
+- **Why these angles:** "Roodbar" had no entry; European equity open -> EUR/USD and Treasury refunding only touched in passing.
+- **Action:** two standard searches; one new source opened (Roodbar Newcastle PhD 2018, partial); no admissible item (see R396 refill note).
+- **Observation for the human (not a notification):** same as R349-R395: refill passes are not producing admissible items. A human decision (new data source such as the ECB meeting calendar, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
