@@ -3059,3 +3059,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no/one prior entry: German unemployment release drift; Chinese equity returns -> European-session EUR/USD.
 - **Action:** two standard searches; one new source opened (Liu et al. arXiv 2603.10559, equities only); ECB WP 631 not openable (UNVERIFIED); no admissible item (see R415 refill note).
 - **Observation for the human (not a notification):** same as R349-R414: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R416 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress; last run 44712462069 already recorded as E052.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry: US large-bank earnings releases -> intraday EUR/USD; US bond-market early-close days -> late-NY EUR/USD.
+- **Action:** two standard searches; four new sources opened, none addresses either angle or gives an OOS, cost-aware direction result; no admissible item (see R416 refill note).
+- **Observation for the human (not a notification):** same as R349-R415: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

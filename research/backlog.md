@@ -5193,3 +5193,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   FX leg; finding is US -> China, reverse effect "limited". PMC7887722 already logged; other hits commentary/not opened.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R416 (not an item; no item added)
+- 2026-11-24 R416 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "bank earnings" and "earnings release" had no entry, "half-day"/"early close" two each (no tested item); PCE, TIC,
+  JOLTS, PPI, Empire/Philly, OPEC/EIA, IMM/COT, Jackson Hole, Bund futures, BTP, TARGET2, geomagnetic and ~30 others already have
+  entries. Angles: (a) US large-bank quarterly earnings releases (pre-NY-open) -> intraday EUR/USD; (b) US bond-market early-close
+  (SIFMA half) days -> late-NY EUR/USD. Two standard searches.
+  Newly opened (none mention earnings or early-close days): Conrad & Lamla, "ECB Communication and the EUR-US Dollar Exchange Rate",
+  preliminary draft Dec 2006 (https://icmaif.soc.uoc.gr/Year/11conf/docs/ExchangeRate.pdf): 5-min contemporaneous ECB event study,
+  no OOS/costs. Breedon & Ranaldo, "Intraday Patterns in FX returns and Order Flow", AEA 2009 draft
+  (https://swlb1.aeaweb.org/conference/2009/retrieve.php?pdfid=301): time-of-day home-hours rule, EBS bid/ask, in-sample only; same
+  mechanism as the published version already in academic_studies.md and the home-hours line closed on val (E017). Harvey & Huang,
+  NBER WP 4663, 1994 (https://www.nber.org/papers/w4663.pdf): Fed open-market "Fed Time" volatility in currency futures 1982-88,
+  contemporaneous, no OOS/costs (partly read; details beyond the read portion UNVERIFIED). Cagliesi, Della Bina & Tivegna, Economic
+  Notes 45(2) 2016, DOI 10.1111/ecno.12053 (https://cris.unibo.it/bitstream/11585/553862/11/CAGLIESI_Euro-Dollar_Exchange_Rate_2016.pdf):
+  accepted manuscript of the already-logged Greenwich version; in-sample EGARCH news model, no OOS/costs. Other hits already logged.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
