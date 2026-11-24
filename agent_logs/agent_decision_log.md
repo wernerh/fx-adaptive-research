@@ -3041,3 +3041,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry: macro-forecast dispersion -> post-release drift; Asian FX overnight -> European-session EUR/USD.
 - **Action:** two standard searches; one new source opened (Fed IFDP 903); no admissible item (see R408 refill note).
 - **Observation for the human (not a notification):** same as R349-R407: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R410 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress; last run 44712462069 already recorded as E052.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no/one prior entry: ECB asset-purchase announcement drift; dollar swap-line usage.
+- **Action:** two standard searches; one new source opened (Sosvilla-Rivero & Fernández-Fernández UCM postprint); no admissible item (see R410 refill note).
+- **Observation for the human (not a notification):** same as R349-R409: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

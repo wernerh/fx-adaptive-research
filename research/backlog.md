@@ -5098,3 +5098,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle;
   (b) is negative evidence (weekly horizon, below R090 power floor anyway). pytest 464 passed. 0 trials used (dev 262, val 9,
   total 271). Not a pipeline failure.
+
+### Refill note R410 (not an item; no item added)
+- 2026-11-24 R410 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "PSPP", "central bank liquidity", "vol-managed", "stop-loss cluster" had no entry; "swap line" and "APP purchase"
+  had one each; TGA, TARGET2, H.4.1, reverse repo, TIPS, risk reversal, Google Trends, DXY and ~15 others already have entries.
+  Angles: (a) ECB unconventional-policy / asset-purchase announcements -> post-announcement EUR/USD drift; (b) Fed/ECB dollar
+  swap-line usage -> EUR/USD direction. Two standard searches.
+  (a) Opened Sosvilla-Rivero & Fernández-Fernández, "Unconventional monetary policy and the dollar-euro exchange rate: Further
+  evidence from event studies", UCM postprint
+  (https://eprints.ucm.es/55442/1/SOSVILLA%20Unconventional%20Monetary%20Policy%20and%20the%20Dollar_Event%20studies-Postprint.pdf;
+  journal/DOI not stated, UNVERIFIED): daily ECB SDW USD-EUR 2007-2015, Brown-Warner average adjusted returns around ~15 ECB/Fed
+  announcements, [DA,+10]/[DA,+20] windows reported but no standard errors or significance tests, no OOS, no costs; abstract
+  sign wording appears inconsistent with its footnote-1 convention (unresolved). Far below the R090 power floor (~15 events).
+  Other hits (UCP/UCM theses, ECB WP 2197, CEPR DP14324, Dedola slides) not opened.
+  (b) Hits (NBER w31901, Kloks Boston Fed/EBA slides, DNB WP 752, BoE SWP 2022, ECB EB box 2020/5) are about swap-line
+  funding/CIP effects; none opened gives an EUR/USD spot direction test; usage data are weekly/episodic and not in the pipeline.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
