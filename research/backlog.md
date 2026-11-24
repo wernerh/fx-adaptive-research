@@ -5224,3 +5224,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Only CME Group pages (Treasury roll study already in academic_studies.md; FX-futures roll explainers): no EUR/USD spot direction test.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-24 R418 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "Fourier" and "spectral" had no entry in research/backlog.md; "USD/MXN"/"MXN" one passing mention (EM stress R378);
+  ~60 other candidate keywords (TIC, gilt, triangular, Corwin, debt ceiling, stochastic oscillator, Parabolic, BTP, TLTRO, COT, GDELT,
+  etc.) already have entries. Angles: (a) Fourier / spectral cycle forecasting of EUR/USD; (b) lagged daily USD/MXN return -> next-day
+  EUR/USD. Two standard searches.
+  (a) Newly opened: Brooks & Hinich, "Detecting intraday periodicities with application to high frequency exchange rates", JRSS C
+  55(2) 2006, DOI 10.1111/j.1467-9876.2006.00534.x (accepted manuscript https://reading-9.eprints-hosting.org/20509/1/20509.pdf;
+  partly read, later sections via summary UNVERIFIED): spectral signal-coherence trading rule on 1996 half-hourly data for seven
+  pre-euro pairs (no EUR/USD); abstract states the rules do not retain profitability net of transaction costs. Klein Tank,
+  "Forecasting the US Dollar/Euro Exchange Rate: The Economic Value of Combining Fundamentals, Technical Analysis, and Order Flow",
+  Erasmus MSc thesis 2012 (https://thesis.eur.nl/pub/12232/12232-KleinTank.pdf; abstract/intro read, tables via summary UNVERIFIED):
+  not spectral; daily Taylor-rule (monthly macro) + channel-breakout + CME order-flow signals, OOS 2005-2010; composite Taylor 5.38%/yr
+  Sharpe 0.74 t=1.68, channel n.s., order flow negative; selection among 32 Taylor specifications not corrected; break-even costs only.
+  Monthly macro signal and pre-dev sample; channel/Donchian family already covered. (b) Only broker commentary (Monex daily FX notes).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
