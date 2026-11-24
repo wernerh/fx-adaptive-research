@@ -3023,3 +3023,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** low-count keywords (Japanese holidays, Thanksgiving) that might still hold a testable calendar effect.
 - **Action:** two standard searches; only already-logged or broker sources; both angles had been closed by earlier passes; no admissible item (see R403 refill note).
 - **Observation for the human (not a notification):** same as R349-R402: refill passes are not producing admissible items; nearly every candidate keyword is already covered. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R405 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued/in progress (latest run 44712462069 completed, already recorded as E052). Protocol step 4 (refill).
+- **Why these angles:** "Cboe SKEW"/"tail risk" and "Libor-OIS" had no entry in research/, knowledge/ or the backlog.
+- **Action:** two standard searches; two new sources opened (Hambuckers-Ulm later version, HKMA WP 11/2009); neither yields an admissible item (see R405 refill note).
+- **Observation for the human (not a notification):** same as R349-R404: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
