@@ -2970,3 +2970,8 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "daylight saving" had a single keyword mention; daily geopolitical-risk index sources beyond Iyke et al. not yet checked.
 - **Action:** two standard searches; two new sources opened (Dodd et al. IREA WP 2022/04, BIS WP 1348 landing page); no admissible item (see R394 refill note).
 - **Observation for the human (not a notification):** same as R349-R393: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R395 (unattended)
+- **Why these angles:** "Almeida-Goodhart-Payne" and the post-ECB drift poster had no entry; T+1 settlement only touched in passing.
+- **Action:** three standard searches; two new sources opened (LSE FMG DP258, AFA 2023 Valentin poster); no admissible item (see R395 refill note).
+- **Observation for the human (not a notification):** same as R349-R394: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

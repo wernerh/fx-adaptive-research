@@ -4903,3 +4903,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   entries in research/academic_studies.md. KSH 2024, Harvard DASH, AUT and IFDP hits not opened, not cited.
 - No item added: no new verified EUR/USD direction evidence with an OOS cost test usable with repo data for either angle. pytest 464
   passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R395 (not an item; no item added)
+- 2026-11-24 R395 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first: "dp258",
+  "52E2ERbB", "Almeida", "post-ECB announcement drift" had no entry; Conference Board (R328), Michigan (~line 1993), T+1 (R~4180) already
+  covered. Angles: (a) US consumer-sentiment / consumer-confidence release -> later EUR/USD drift; (b) US T+1 equity settlement (May 2024)
+  -> late-NY EUR/USD. Three standard searches.
+  (a) Opened Almeida-Goodhart-Payne LSE FMG DP258 (1997; DEM/USD 1992-94, Consumer Confidence and Payroll surprises significant to 12 h,
+  in-sample, surprise data) and Valentin AFA 2023 poster (post-ECB drift in equities/OIS, no FX); entries in research/academic_studies.md.
+  FXStreet/XTB pages not opened, not cited.
+  (b) Hits were NY Fed FXC, BofA, DTCC, BNY, LSEG, risk.net practitioner notes (operational funding, no price-direction evidence); not
+  opened, not cited. Event is post-dev (2024): no dev test possible.
+- No item added: (a) surprise data not in repo; surprise-free continuation = E026 mechanism (NONE); ~60 dev events with a 12 h hold below
+  the R090 power floor. (b) no evidence and no dev coverage. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
