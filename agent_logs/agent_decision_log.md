@@ -3011,3 +3011,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** "volatility risk premium" had no study entry; overnight equity-futures -> intraday EUR/USD lead-lag had only incidental mentions.
 - **Action:** two standard searches; all relevant hits already logged; no admissible item (see R401 refill note).
 - **Observation for the human (not a notification):** same as R349-R400: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R402 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued/in progress; last run 44712462069 already recorded as E052. Protocol step 4 (refill).
+- **Why these angles:** "JGB" had no entry anywhere in research/, knowledge/ or the backlog; Euribor-futures rate changes had only one incidental backlog mention.
+- **Action:** two standard searches; three sources opened, none links the angle to later EUR/USD returns; no admissible item (see R402 refill note).
+- **Observation for the human (not a notification):** same as R349-R401: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

@@ -2418,3 +2418,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [FRBSF PDF](https://www.frbsf.org/wp-content/uploads/wp06-23bk.pdf) (opened via web-fetch; read to ~48% verbatim).
 - **Design/finding:** monthly fed funds futures (1988-2005) and quarterly eurodollar futures excess returns predicted by payrolls, Treasury and BBB spreads. Verbatim: "excess returns are surprisingly well predicted by macroeconomic indicators such as employment growth and financial business-cycle indicators such as Treasury yield spreads and corporate bond spreads." No exchange rates.
 - **Relevance:** None for an item: no FX outcome; monthly horizon below the R090 power floor. **Status:** VERIFIED (partial read).
+
+### Bernoth & von Hagen (2003), "The Performance of the Euribor Futures Market: Efficiency and the Impact of ECB Policy Announcements", NY Fed conference paper (added 2026-11-24 R402)
+- **Link:** [NY Fed PDF](https://www.newyorkfed.org/medialibrary/media/research/conference/2003/bernoth_final.pdf) (opened via web-fetch; first ~40k of ~69k characters read verbatim).
+- **Design/finding:** daily 3-month Euribor futures (LIFFE, Dec 1998 - Mar 2002); efficiency tests of futures vs realized rates and futures volatility on ECB Governing Council days. Verbatim: "the Euribor futures show to be unbiased and informational efficient." No exchange rates; no OOS or cost analysis stated.
+- **Relevance:** None for an item: no FX outcome; ECB-day effects are same-day; Euribor futures data not in the repo. **Status:** VERIFIED (partial read).
+
+### Ferrero & Nobili (2009), "Futures Contract Rates as Monetary Policy Forecasts", International Journal of Central Banking 5(2) (added 2026-11-24 R402)
+- **Link:** [IJCB abstract](https://ijcb.org/journal/ijcb09q2a4.pdf) (abstract page opened; full PDF not opened).
+- **Design/finding:** excess returns of euro-area and US short-rate futures, decomposed into risk premium and forecast error. Verbatim: "Excess returns ... are positive, on average, and statistically significant." No exchange rates.
+- **Relevance:** None for an item: no FX outcome. **Status:** VERIFIED (abstract only).
+
+### Hossfeld & Röthig (2016), "Do speculative traders anticipate or follow USD/EUR exchange rate movements? New evidence on the efficiency of the EUR currency futures market", Finance Research Letters 18, 218-225 (added 2026-11-24 R402)
+- **Link:** [EconPapers record](https://econpapers.repec.org/RePEc:eee:finlet:v:18:y:2016:i:c:p:218-225), DOI 10.1016/j.frl.2016.04.019 (abstract opened; full text paywalled, WP version Bundesbank DP 41/2015 not opened).
+- **Design/finding:** CFTC speculative positions vs USD/EUR, predictive regressions with multiple-testing control. Verbatim: "the evidence for speculative positions leading exchange rate movements ... largely collapses if we account for multiple testing, such a pattern does not emerge in the other direction."
+- **Relevance:** Negative evidence for a COT-positioning item (weekly, below R090 power floor, already covered by COT refill notes). **Status:** VERIFIED (abstract only).
