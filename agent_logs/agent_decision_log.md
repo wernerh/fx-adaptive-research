@@ -3005,3 +3005,9 @@ Why each run chose what it did, and any judgement calls.
 - **Why these angles:** US Treasury buybacks had no entry; daily policy-expectation changes -> next-day EUR/USD had no logged FX study.
 - **Action:** two standard searches; two papers opened (logged); no admissible item (see R400 refill note).
 - **Observation for the human (not a notification):** same as R349-R399: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-24 R401 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued/in progress; last run 44712462069 already recorded as E052. Protocol step 4 (refill).
+- **Why these angles:** "volatility risk premium" had no study entry; overnight equity-futures -> intraday EUR/USD lead-lag had only incidental mentions.
+- **Action:** two standard searches; all relevant hits already logged; no admissible item (see R401 refill note).
+- **Observation for the human (not a notification):** same as R349-R400: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
