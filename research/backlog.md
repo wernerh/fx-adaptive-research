@@ -5081,3 +5081,20 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   previews) or commentary (Continuum Economics, not cited). Asian FX data are not in the pipeline.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R409 (not an item; no item added)
+- 2026-11-24 R409 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "turn of the month", "Kelly", "PMI flash" had no entry; "swap spread" and "silver" had one each; EUR/CHF, Hurst,
+  entropy, wavelet, COT, Golden Week, gold, oil, carry and ~30 others already have entries. Angles: (a) gold/silver ratio -> EUR/USD;
+  (b) interest-rate swap spreads / swap-market variables -> next-day EUR/USD. Two standard searches.
+  (a) Hits were FXStreet commentary only (not evidence, not opened, not cited).
+  (b) Opened (partial text, rest from fetch summary) Filonzi, UCP MSc 2025
+  (https://repositorio.ucp.pt/bitstreams/fdcd7ea9-ef2d-4e03-ad31-1c5fc47e82aa/download): swap-rate volatility forecasting
+  monthly macro/FX VOLATILITY (EUR/USD vol a target), no return/direction test, no costs. Opened (partial) Cardoso, UCP MSc 2025
+  (https://repositorio.ucp.pt/bitstreams/81a272eb-aaf1-4ffa-8a21-001cd0fd6053/download): weekly/monthly EUR/USD forecasts with swap
+  spreads, CDS, yields etc. (OLS/EN/RF/XGBoost), held-out test 2003-2021 data; abstract verbatim: "the random walk outperforms our
+  models during the test phase"; no costs. Weekly OOS R2 figures are from the fetch summary, UNVERIFIED, not cited. Other hits
+  (Imperial spiral 96561, ORBi 257214/307590, AEA previews) already logged or not about EUR/USD direction.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle;
+  (b) is negative evidence (weekly horizon, below R090 power floor anyway). pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.
