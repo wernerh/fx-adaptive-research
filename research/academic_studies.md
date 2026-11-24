@@ -2408,3 +2408,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Cardiff ORCA record](https://orca.cardiff.ac.uk/id/eprint/33529/) (opened via web-fetch; abstract and metadata only).
 - **Design/finding (abstract):** 5-minute returns on three euro rates (not named in abstract), 19-month sample; asymmetric responses to surprise components of US/euro-area announcements, state-dependent on economic climate; rate announcements cause jumps beyond the surprise. No post-announcement drift, OOS, costs or trading rule mentioned.
 - **Relevance:** None for an item: surprise data not in the repo; short in-sample window. **Status:** VERIFIED (abstract only).
+
+### Fatum & Scholnick (2003), "Do Exchange Rates Respond to Day-to-Day Changes in Monetary Policy Expectations? Evidence from the Federal Funds Futures Market", UC Santa Cruz Center for International Economics, Recent Work (added 2026-11-24 R400)
+- **Link:** [eScholarship record](https://www.escholarship.org/uc/item/4cc3291n) (opened via web-fetch; PDF read to ~65% verbatim, later event-study tables and conclusion summary only: UNVERIFIED).
+- **Design/finding:** daily DEM/USD, JPY/USD, GBP/USD vs daily changes in 2- and 3-month fed funds futures, 1989-03..2002-02 (DEM/USD to 1998-12); in-sample GARCH with 15 lags plus target-change event study. Verbatim: "day-to-day changes in policy expectations trigger same-day exchange rate responses as opposed to systematic delayed effects"; for DEM/USD "there is no sign of significant next-day effects" (isolated significant lags for JPY/USD only). No OOS, no costs.
+- **Relevance:** None for an item: the paper itself finds the response is same-day, not lagged, for the EUR predecessor (DEM/USD); fed funds futures data not in the repo. **Status:** VERIFIED (partial read).
+
+### Piazzesi & Swanson (2006), "Futures Prices as Risk-Adjusted Forecasts of Monetary Policy", FRBSF Working Paper 2006-23 (added 2026-11-24 R400)
+- **Link:** [FRBSF PDF](https://www.frbsf.org/wp-content/uploads/wp06-23bk.pdf) (opened via web-fetch; read to ~48% verbatim).
+- **Design/finding:** monthly fed funds futures (1988-2005) and quarterly eurodollar futures excess returns predicted by payrolls, Treasury and BBB spreads. Verbatim: "excess returns are surprisingly well predicted by macroeconomic indicators such as employment growth and financial business-cycle indicators such as Treasury yield spreads and corporate bond spreads." No exchange rates.
+- **Relevance:** None for an item: no FX outcome; monthly horizon below the R090 power floor. **Status:** VERIFIED (partial read).
