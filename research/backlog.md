@@ -5128,3 +5128,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were ECB/Banque de France/BdE press releases of the monthly BoP statistics only; no study of an FX reaction; not cited.
 - No item added: no new verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R412 (not an item; no item added)
+- 2026-11-24 R412 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "ARFIMA", "singular spectrum", "empirical mode", "client positioning", "Sunday gap", "net order flow" had no entry;
+  retail sentiment, weekend gap (B17/E020), sovereign ratings (R169/R235), Fed testimony (R329), ECB Monetary Dialogue, holidays,
+  Ramadan/Lunar New Year, LSTM/transformer and ~20 others already have entries. Angles: (a) ARFIMA / long-memory forecasting ->
+  EUR/USD direction with OOS and costs; (b) singular spectrum analysis (SSA) forecasts -> EUR/USD direction. Two standard searches.
+  (a) Hits were generic long-memory / volatility-memory methodology (arXiv 2512.12727, 1812.07295, 2512.02166), US monetary indices
+  and other non-EUR/USD-direction papers; none opened gives an EUR/USD direction rule with OOS and costs; not cited.
+  (b) Opened Abreu, Souza & Oliveira (2019), "Applying singular spectrum analysis and ARIMA-GARCH for forecasting EUR/USD exchange
+  rate", RAM Rev. Adm. Mackenzie 20(4), eRAMF190146, DOI 10.1590/1678-6971/eRAMF190146
+  (https://www.scielo.br/j/ram/a/kz7Wqjm4b8CPSprGCDYxs3p/abstract/?lang=en): three ~1-day samples of 1-minute FXCM ask closes in
+  August 2016, 5-minute-ahead forecasts (one origin per sample, per fetch summary, UNVERIFIED), MAPE/RMSE/Theil only; no directional
+  accuracy, trading rule or costs; ARIMA-GARCH slightly better on the range sample. Not evidence of a tradable edge.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
