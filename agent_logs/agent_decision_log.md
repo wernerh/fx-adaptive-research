@@ -3113,3 +3113,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Stochastic RSI" 0, "Mass Index" 0, "Detrended Price" 0): Stochastic RSI rules -> EUR/USD; DPO / Mass Index rules -> EUR/USD.
 - **Action:** two standard searches; three new academic documents opened (Tharavanij et al. 2015; Oktaba & Grzywińska-Rąpca 2023; Gröhn 2012), none tests these rules on EUR/USD with an out-of-sample cost-aware result; no item added (see R427 refill note).
 - **Observation for the human (not a notification):** same as R349-R426: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R428 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress; last run 44712462069 already recorded as E052.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Gann" 0, "Wyckoff" 0, "market profile" 0): Gann/Wyckoff rules -> EUR/USD; market-profile value-area rules -> EUR/USD.
+- **Action:** two standard searches; one new academic document opened (Hassanniakalager et al. JEF 2021), daily rule-ensemble family already covered, no Gann/Wyckoff/market-profile test; no item added (see R428 refill note).
+- **Observation for the human (not a notification):** same as R349-R427: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

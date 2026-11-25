@@ -5365,3 +5365,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   and Unibo 11585/996996. No academic DPO/Mass Index EUR/USD study found.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R428 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Gann", "Wyckoff", "market profile", "Toby Crabel", "Zigzag" had no entry;
+  ~25 other candidate keywords (CCI, Aroon, Ichimoku, Donchian, Keltner, KAMA, PMI, Ifo, ZEW, Sentix, GfK, Renko, Hurst, VWAP, NR7,
+  opening range, SNB, BoE, BoJ, Riksbank, Norges, RBA) already covered. Angles: (a) Gann / Wyckoff rules on EUR/USD; (b) market-
+  profile value-area / point-of-control rules on EUR/USD. Two standard searches.
+  (a) Hits mostly already logged (HKU 10722/229640, Essex 18805, Springer s11408-023-00433-2, WIFO WP 263, CORE 47866, Warwick
+  roman.pdf, UCP 7af09180). Newly opened: Hassanniakalager-Sermpinis-Stasinakis JEF 2021 (daily 7,846-rule screen + Bayesian
+  combination; no Gann/Wyckoff; small margins; entry in academic_studies.md). An mql5 forum PDF and a GitHub backtest page were not
+  opened, not cited.
+  (b) Hits were TradingView ideas/scripts and broker blog pages only (not opened, not cited). No academic market-profile EUR/USD study.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
