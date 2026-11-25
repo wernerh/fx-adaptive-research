@@ -5481,3 +5481,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   project, FSV CUNI 1541, EUR thesis 12232, core 79433496), not cited. No conformal-prediction FX trading source found.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R437 (not an item; no item added)
+- 2026-11-25 R437 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Gaussian process", "reservoir", "echo state", "LightGBM", "Commodity
+  Channel", "Jurik", "VIDYA" had no entry; ~40 other candidates (Kalman, wavelet, Renko, Ichimoku, Donchian, Parabolic SAR, Aroon,
+  KAMA, Supertrend, Fibonacci, Hilbert, Elliott, XGBoost, reinforcement, SNB, Brent, copper, ...) already covered. Angles:
+  (a) Gaussian-process regression -> EUR/USD direction; (b) echo state networks / reservoir computing -> EUR/USD. Two standard searches.
+  (a) Opened Costantini-Crespo Cuaresma-Hlouskova, J. Forecasting 35 (2016) 652-668, DOI 10.1002/for.2398 (BURA record 2438/12673,
+  abstract only; entry in academic_studies.md): macro-model forecast combinations, OOS, excess return per unit risk "limited"; macro
+  model inputs not in pipeline, no GP. IIASA mirror (pure.iiasa.ac.at 12332) bot-blocked, not cited. arXiv 2409.04471 already logged;
+  arXiv 2006.13456 (GP methodology) not opened, not cited.
+  (b) Opened Ballarin-Capra-Dellaportas arXiv 2504.19623 (US stocks, 10-min, MSFE only, no FX/costs) and Edlund Chalmers MSc 2025
+  (LME metals, ESN-GA does not consistently beat random walk on test): neither FX. Other hits (arXiv 2602.03912, 2508.05416,
+  2211.00363, 2512.13642, PMC7880499) not opened, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

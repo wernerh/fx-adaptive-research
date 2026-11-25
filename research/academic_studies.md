@@ -2558,3 +2558,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ar5iv HTML](https://ar5iv.labs.arxiv.org/html/2407.16376) (opened via web-fetch; partial read, appendices and end of Section 5.3 not read).
 - **Design/finding:** BOCPD extended with AR(q) structure and score-driven time-varying variance/correlation. Applications: bee waggle-dance trajectories, quarterly US real GNP 1951-2019, 4-minute order flow for MSFT (Mar 2020) and TSLA (Dec 2021). Evaluation is one-step-ahead out-of-sample MSE / Diebold-Mariano only; no trading rule, returns or costs; no FX in text read.
 - **Relevance:** None: methodology only, no EUR/USD direction or cost-aware trading evidence. **Status:** VERIFIED (partial read).
+
+### Costantini, Crespo Cuaresma & Hlouskova (2016), "Forecasting errors, directional accuracy and profitability of currency trading: The case of EUR/USD exchange rate", Journal of Forecasting 35, 652-668 (added 2026-11-25 R437)
+- **Link:** [BURA 2438/12673](https://bura.brunel.ac.uk/handle/2438/12673), DOI [10.1002/for.2398](https://doi.org/10.1002/for.2398) (abstract page opened via web-fetch; full text not read).
+- **Design/finding:** out-of-sample EUR/USD forecasts from multivariate macroeconomic models and forecast combinations (incl. principal components of forecasts), evaluated by forecast error, directional accuracy and trading profit with data-snooping-robust tests; combinations improve over benchmark trading strategies but "the excess return per unit of deviation is limited".
+- **Relevance:** None for a new item: macro-model inputs not in pipeline, low-frequency horizon, limited economic value. **Status:** VERIFIED (abstract only).
+
+### Ballarin, Capra & Dellaportas (2025), "Multi-Horizon Echo State Network Prediction of Intraday Stock Returns", arXiv 2504.19623 (added 2026-11-25 R437)
+- **Link:** [arXiv HTML](https://arxiv.org/html/2504.19623v1) (opened via web-fetch; partial read).
+- **Design/finding:** ESN on ~500 US stocks, 10-min bars, tuning Q4 2012, evaluation 2013; MSFE gains vs linear baseline (>0.87% at 10 min, shrinking with horizon); no directional/trading results or costs; no FX.
+- **Relevance:** None: no EUR/USD, no cost-aware trading evidence. **Status:** VERIFIED (partial read).
+
+### Edlund (2025), "AI-Driven Predictions of Industrial Metal Prices on the London Metal Exchange: Optimizing Echo State Networks with Genetic Algorithms", MSc thesis, Chalmers (added 2026-11-25 R437)
+- **Link:** [Chalmers ODR PDF](https://odr.chalmers.se/server/api/core/bitstreams/91a98bfc-3cf6-455d-bead-16658012600e/content) (opened via web-fetch; partial read).
+- **Design/finding:** daily LME metal cash prices 2008-2024; ESN-GA does not consistently outperform a random walk on the held-out test set; no costs; no FX.
+- **Relevance:** None. **Status:** VERIFIED (partial read).

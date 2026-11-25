@@ -3161,3 +3161,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("change-point" 0, "CUSUM" 0, "conformal" 0): Bayesian online change-point / CUSUM regime signals -> EUR/USD; conformal-prediction-gated EUR/USD forecasts.
 - **Action:** two standard searches; one new source opened (Tsaknaki-Lillo-Mazzarisi arXiv 2407.16376); not admissible; no item added (see R436 refill note).
 - **Observation for the human (not a notification):** same as R349-R435: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R437 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Gaussian process" 0, "reservoir" 0, "echo state" 0): Gaussian-process regression -> EUR/USD direction; echo state networks / reservoir computing -> EUR/USD.
+- **Action:** two standard searches; three new sources opened (Costantini et al. JoF 2016, Ballarin et al. arXiv 2504.19623, Edlund Chalmers 2025); not admissible; no item added (see R437 refill note).
+- **Observation for the human (not a notification):** same as R349-R436: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
