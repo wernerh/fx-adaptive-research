@@ -5256,3 +5256,20 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   spread assumed but net/gross not stated. Tiny-n, test-informed selection; ML-direction family already closed NONE (E051). Not admissible.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R420 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "Coppock", "EEX" and "Ulcer" had no entry in research/backlog.md, "EUA" one passing mention, "TRIX" two; ~55 other
+  candidate keywords (Williams, Chaikin, Aroon, Donchian, SNB, Norges, Bund, PMI, ZEW, Ifo, TTF, WTI, fixing, month-end, etc.) already
+  have entries. Angles: (a) EU carbon allowance (EUA) price changes -> next-day EUR/USD; (b) Coppock-curve / TRIX momentum rules on
+  EUR/USD. Two standard searches.
+  (a) Newly opened: Bastianin, Mirto, Qin & Rossini, "What drives the European carbon market? Macroeconomic factors and forecasts",
+  arXiv 2402.04828v1 (2024) (https://arxiv.org/pdf/2402.04828v1; first ~55% read, later figures via summary UNVERIFIED): forecasts the
+  monthly EUA price, not FX; DM/PT tests vs random walk never significant. Zhao, "Influence on Carbon Emission Price in Europe", AEBMR
+  vol. 226 (ESFCT 2022) pp. 720-726 (https://www.atlantis-press.com/article/125980466.pdf; full text read): daily 2020-2021 in-sample
+  OLS of EUA returns on contemporaneous VIX, EUR/USD and a Monday dummy; EUR/USD coefficient t = 0.087, p = 0.93; reverse direction,
+  no lag, no OOS, no costs.
+  (b) Newly opened: Bakker, "Technical Analysis in the Cryptocurrency Market", Erasmus MSc thesis 2017
+  (https://thesis.eur.nl/pub/41546/Bakker.pdf; first ~25% read, headline numbers via summary UNVERIFIED): 5-minute USD/BTC only, no
+  EUR/USD. Other hits (Springer s11408-023-00433-2, HKU 10722/229640, Essex 18805, ISCTE 10071/6396) already logged. No Coppock/TRIX
+  EUR/USD source with OOS/costs found.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
