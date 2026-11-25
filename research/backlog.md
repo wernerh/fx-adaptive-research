@@ -5240,3 +5240,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Monthly macro signal and pre-dev sample; channel/Donchian family already covered. (b) Only broker commentary (Monex daily FX notes).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R419 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive): "Hull" and "Lempel" had no entry in research/backlog.md, "permutation" one passing mention; ~35 other candidate
+  keywords (Kalman, wavelet, Hurst, Heikin, Renko, Keltner, Supertrend, Kaufman, Ichimoku, fractal, entropy, etc.) already have entries.
+  Angles: (a) Hull moving-average rules on EUR/USD; (b) permutation-entropy / Lempel-Ziv complexity -> EUR/USD predictability. Two
+  standard searches. Most hits already logged (Tokar-Horvath arXiv 1110.2612, PMC7512194, Rink FMPM 2023, others).
+  (a) Newly opened: Hudson & Urquhart, "Technical trading and cryptocurrencies", Annals of Operations Research 2019, DOI
+  10.1007/s10479-019-03357-1 (https://hull-repository.worktribe.com/OutputFile/2639834; partly read, OOS dates/tables via summary
+  UNVERIFIED): daily cryptocurrencies 2010-2017 only, no EUR/USD; Bitcoin no OOS predictability; breakeven costs only. (No Hull-MA
+  EUR/USD source found; the search term matched the University of Hull repository.)
+  (b) Newly opened: King & Amigó, "Enhancing Forex Forecasting Accuracy: The Impact of Hybrid Variable Sets in Cognitive Algorithmic
+  Trading Systems", arXiv 2511.16657v1 (2025) (https://arxiv.org/pdf/2511.16657v1; first ~80% read, conclusion UNVERIFIED): not
+  entropy-based; daily EUR/USD neural classifier on macro + technical features, 10-day direction target, test window 2023-06-01..
+  2024-03-04 (after val period; ~20 trades), short threshold changed after "preliminary testing", model chosen on test AUC, 1-pip
+  spread assumed but net/gross not stated. Tiny-n, test-informed selection; ML-direction family already closed NONE (E051). Not admissible.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

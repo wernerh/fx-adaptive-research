@@ -3077,3 +3077,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry: Fourier/spectral cycle forecasting of EUR/USD; lagged daily USD/MXN return -> next-day EUR/USD.
 - **Action:** two standard searches; two new sources opened (Brooks-Hinich JRSS C 2006, Klein Tank Erasmus thesis 2012), neither gives an EUR/USD OOS, cost-aware direction result admissible here; no item added (see R418 refill note).
 - **Observation for the human (not a notification):** same as R349-R417: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R419 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress; last run 44712462069 already recorded as E052.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Hull" 0, "Lempel" 0, "permutation" 1 passing mention): Hull moving-average rules on EUR/USD; permutation-entropy / Lempel-Ziv complexity -> EUR/USD predictability.
+- **Action:** two standard searches; two new sources opened (King-Amigó arXiv 2511.16657, Hudson-Urquhart AOR 2019), neither gives an EUR/USD OOS, cost-aware direction result admissible here; no item added (see R419 refill note).
+- **Observation for the human (not a notification):** same as R349-R418: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
