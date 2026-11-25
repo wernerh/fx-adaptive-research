@@ -5298,3 +5298,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed (after reinstalling dev extras; statsmodels was missing from the fresh environment). 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R423 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "CFNAI"/"National Activity" and "Fisher transform" had no entry; ~20 other
+  candidate keywords (Kalman, Empire State, Sentix, Tankan, Ichimoku, Keltner, wavelet, Euribor, SOFR, quarter-end, daylight, etc.)
+  already covered. Angles: (a) Chicago Fed National Activity Index release (08:30 NY) -> intraday EUR/USD; (b) Ehlers Fisher-transform
+  rules on EUR/USD. Two standard searches.
+  (a) Only academic hit was Fed IFDP 823 (already logged, academic_studies.md ~line 1226, R219); the rest were fxstreet release
+  headlines (not opened, not cited). No study of EUR/USD around CFNAI releases found.
+  (b) Academic hits all already logged (Essex 18805, HKU 10722/229640, Springer s11408-023-00433-2, USC filter-rules FX paper);
+  remaining hits were TradingView scripts, an mql5 forum copy and a Scribd copy of Ehlers' practitioner article (not opened, not
+  cited; no OOS/costs).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
