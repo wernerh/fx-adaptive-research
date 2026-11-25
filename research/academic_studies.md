@@ -2538,3 +2538,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS/RePEc abstract](https://ideas.repec.org/p/nbr/nberwo/33423.html) (abstract page opened; full text not opened).
 - **Design/finding:** verbatim: "The relative restrictiveness of a central bank's supply of money predicts the raw and risk-adjusted returns of its currency" — "next month and at least three years into the future"; restrictiveness built from out-of-sample panel regressions of M1 on macro variables. Sample, EUR/USD-specific results, OOS test of returns and costs not stated on the page (UNVERIFIED).
 - **Relevance:** None for a new item: monthly cross-currency signal, below the single-pair power floor on dev/val; M1 data not in pipeline. **Status:** VERIFIED (abstract only).
+
+### Doganov (2012), "Exchange rates and economic surprise indexes", MSc thesis, Erasmus School of Economics (added 2026-11-25 R434)
+- **Link:** [thesis.eur.nl PDF](https://thesis.eur.nl/pub/12870/Doganov,%20V.S.%20%28324535%29.pdf) (opened via web-fetch; partial read).
+- **Design/finding:** monthly EUR/USD, USD/JPY, GBP/USD, Jan 2003 - Mar 2012; Citi economic surprise indexes (CESI); estimation to Dec 2006, OOS 2007 - Mar 2012 with lagged index values. Abstract: "economic surprises only influence the direction of change of exchange rates". Transaction costs reportedly not included (from summary, not verbatim: UNVERIFIED); per-table EUR/USD figures came from a garbled extraction and are not cited.
+- **Relevance:** None for a new item: monthly horizon (below the single-pair power floor on dev/val, lesson R090), unpublished thesis, no costs; CESI data not in pipeline. **Status:** VERIFIED (partial read).
+
+### Evans & Speight (2010), "Dynamic news effects in high frequency Euro exchange rates", JIFMIM 20(3), 238-258 (added 2026-11-25 R434)
+- **Link:** [ORCA record](https://orca.cardiff.ac.uk/id/eprint/22759/), DOI [10.1016/j.intfin.2010.03.002](https://doi.org/10.1016/j.intfin.2010.03.002) (repository record opened; full text not read).
+- **Design/finding:** 5-minute EUR/USD and EUR/GBP responses to macro announcement surprises. Verbatim abstract: "The reaction of exchange rate returns to news is very quick and occurs within the first 5 min of the release with very little reaction in the 15 min before and after"; US news "generates far more dramatic responses in EUR–USD returns". No lagged prediction, OOS or costs stated.
+- **Relevance:** None: contemporaneous reaction; argues against a post-release (incl. UK-release) EUR/USD drift item. **Status:** VERIFIED (abstract only).

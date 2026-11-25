@@ -5437,3 +5437,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   EUR/USD results not stated; below single-pair power floor, M1 not in pipeline. fxstreet, Brunel and UCR hits not opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R434 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "UK CPI", "UK labour", "UK employment", "UK GDP", "UK retail",
+  "Commitments of Traders", "Swiss CPI" had no entry; ~35 other candidates (HICP, ZEW, Ifo, PBoC fix, refunding, €STR/SOFR, Tankan,
+  BoE, gilt, BTP, CFTC/COT, dividend flows, sight deposits, surprise index, Halloween, Ramadan, Golden Week, ...) already covered.
+  Angles: (a) UK macro releases (07:00 London) -> later EUR/USD drift; (b) economic surprise indexes -> EUR/USD direction.
+  Two standard searches.
+  (a) Opened Evans & Speight JIFMIM 2010 record (entry in academic_studies.md): 5-min reaction complete within 5 minutes,
+  contemporaneous only. Other hits (Cardiff A2007_4/a2006_4, JIFM 20(3) RePEc, Greenwich CEPGR2) already logged; PMC8965417,
+  Swansea cronfa42612, LSE dp475, City 32596 not opened, not cited.
+  (b) Opened Doganov EUR MSc 2012 (entry in academic_studies.md): monthly CESI, OOS 2007-2012, no costs. DNB WP 850, Bayes
+  WP-EMG-03-2022, NBER w16427 already logged; other hits not opened, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
