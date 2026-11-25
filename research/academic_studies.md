@@ -2588,3 +2588,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [VU ePublications PDF](https://epublications.vu.lt/object/elaba:308157703/308157703.pdf) (opened via web-fetch; partial read, ~1/3 verbatim plus summary).
 - **Design/finding:** daily EUR/USD Dec 2003-Dec 2025; single-hidden-layer FFNN and KNN on distance-filtered patterns; test set 2024-2025 is 11 patterns; best single seed 72.73% accuracy, 100-seed median 54.55%; thesis states the test is not statistically significant; no trading simulation or costs; no CCI or Kolmogorov-Arnold networks.
 - **Relevance:** None (11 test patterns, seed selection, no costs). **Status:** VERIFIED (partial read).
+
+### Saly-Kaufmann, Wood, Calliess & Zohren (2026), "How do standard time series forecasting benchmarks translate to finance? A broad study of risk adjusted performance", arXiv 2603.01820 (added 2026-11-25 R439)
+- **Link:** [arXiv 2603.01820](https://arxiv.org/pdf/2603.01820) (opened via web-fetch; ~1/3 verbatim plus summary).
+- **Design/finding:** daily multi-asset futures 1990-2024/25, walk-forward (train 1990-2010, OOS 2010 on, 5-year retraining); deep models incl. Temporal Fusion Transformer (OOS Sharpe 2.27), VLSTM 2.40, LPatchTST 2.29 on a portfolio; headline tables gross (c=0); FX futures listed are DX, USD/SEK, USD/SGD, USD/NZD, NOK/USD, CAD/JPY, JPY, CHF; no EUR/USD contract seen; per-asset FX breakeven costs ~1-2 bps (summary only, not checked).
+- **Relevance:** None for the pipeline: no EUR/USD result, portfolio-level gross headline, per-asset FX breakevens near or below EUR/USD costs. **Status:** VERIFIED (partial read).
+
+### Bilis, Papadimitriou, Diamantaras & Goulianas (2025), "EXPERT: EXchange Rate Prediction Using Encoder Representation from Transformers", Forecasting 7(4) 65, DOI 10.3390/forecast7040065 (added 2026-11-25 R439)
+- **Link:** [MDPI Forecasting 7/4/65](https://www.mdpi.com/2571-9394/7/4/65) (opened via web-fetch; ~3/4 read, part summary).
+- **Design/finding:** daily OHLC, nine pairs incl. EUR/USD 1999-2022 (MetaTrader); transformer encoder forecasts next-day close; final 14% split held out; EUR/USD next-day MAPE 0.298% equals the random-walk benchmark (summary); trading test Dec 2018-Mar 2022 +2.36%/yr vs -0.77% buy-and-hold, no costs stated.
+- **Relevance:** None: point forecast ties the random walk on EUR/USD; trading result gross; deep-learning-on-lagged-prices family already closed on dev (E051 random forest NONE). **Status:** VERIFIED (partial read).

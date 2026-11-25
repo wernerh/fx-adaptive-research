@@ -5512,3 +5512,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R439 (not an item; no item added)
+- 2026-11-25 R439 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "temporal fusion", "Lee-Ready"/"trade sign", "overnight gap" had no entry;
+  ~50 other indicator/ML/macro angles already covered. Angles: (a) Temporal Fusion Transformer / transformer forecasters -> EUR/USD;
+  (b) tick-rule trade-sign imbalance -> next-hour EUR/USD. Two standard searches.
+  (a) Opened Saly-Kaufmann et al. arXiv 2603.01820 (multi-asset futures, no EUR/USD, gross headline) and Bilis et al. Forecasting 7(4) 65
+  (EUR/USD next-day MAPE ties random walk; trading test gross). Entries in academic_studies.md. arXiv 2512.12727 already logged;
+  preprints 202509.0931 already logged; GitHub repo not opened, not cited.
+  (b) Hits already logged (arXiv 2312.16190, 2602.00776, 2209.10334, 2511.06177, NBER w12682, Warwick roman.pdf) or not FX (2306.17179,
+  not opened). Chan blog "FX order flow as predictor" (epchan.blogspot, Feb 2018): fetch permission refused, UNVERIFIED, not cited.
+  Dukascopy tick data has no trade sign (quotes only), so a tick-rule imbalance would be a quote-change proxy already close to tested
+  momentum/reversal rules.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
