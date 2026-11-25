@@ -2553,3 +2553,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ECB PDF](https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp447.pdf) (opened via web-fetch; partial read).
 - **Design/finding:** daily OTC 1-month implied vols for cross-rate triangles incl. USD/EUR, Jan 1992 - Mar 2004; implied vs historical/RiskMetrics/GARCH correlation forecasts of 21-day realised correlation. Verbatim: regressions are "carried out in-sample". Appendix Fama-type regressions of one-month spot changes reported only via a model summary (UNVERIFIED, not cited). No costs.
 - **Relevance:** None for a new item: forecasts correlation, not EUR/USD direction; in-sample; monthly horizon below the power floor; option-implied data not in pipeline. **Status:** VERIFIED (partial read).
+
+### Tsaknaki, Lillo & Mazzarisi (2024), "Bayesian Autoregressive Online Change-Point Detection with Time-Varying Parameters", arXiv 2407.16376 (added 2026-11-25 R436)
+- **Link:** [ar5iv HTML](https://ar5iv.labs.arxiv.org/html/2407.16376) (opened via web-fetch; partial read, appendices and end of Section 5.3 not read).
+- **Design/finding:** BOCPD extended with AR(q) structure and score-driven time-varying variance/correlation. Applications: bee waggle-dance trajectories, quarterly US real GNP 1951-2019, 4-minute order flow for MSFT (Mar 2020) and TSLA (Dec 2021). Evaluation is one-step-ahead out-of-sample MSE / Diebold-Mariano only; no trading rule, returns or costs; no FX in text read.
+- **Relevance:** None: methodology only, no EUR/USD direction or cost-aware trading evidence. **Status:** VERIFIED (partial read).

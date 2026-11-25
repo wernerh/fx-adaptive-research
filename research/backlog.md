@@ -5466,3 +5466,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   SR917 and CEPR DP14462 already logged; other hits broker "European open" commentary (not opened, not cited).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R436 (not an item; no item added)
+- 2026-11-25 R436 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "change-point", "changepoint", "structural break", "CUSUM", "conformal",
+  "Bayesian online", "volume spike", "seasonal volatility" had no entry; ~45 other candidates (Google Trends, NFP, Treasury auction,
+  Bund auction, sovereign CDS, EIA, Jackson Hole, Sintra, G7/G20, ratings, elections, LSTM, transformer, Hurst, entropy, VPIN,
+  cross-currency basis, inflation swap, swap line, ...) already covered. Angles: (a) Bayesian online change-point / CUSUM regime
+  signals -> EUR/USD trend-following; (b) conformal-prediction-gated EUR/USD forecasts. Two standard searches.
+  (a) Opened Tsaknaki-Lillo-Mazzarisi arXiv 2407.16376 (entry in academic_studies.md): methodology, bees/GNP/equity order flow,
+  MSE only, no FX, no trading or costs. Other hits (arXiv 2105.13727, 2201.02325, 2307.02375, Glasgow eprint 246954, UCP repository,
+  Siena QF 2024) not opened, not cited (UCP repository already logged).
+  (b) Hits already logged (EXFormer arXiv 2512.12727, ualberta wp2025-06, arXiv 2411.07560, Brunel thesis) or not opened (IMPA
+  project, FSV CUNI 1541, EUR thesis 12232, core 79433496), not cited. No conformal-prediction FX trading source found.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
