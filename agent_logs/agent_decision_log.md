@@ -3089,3 +3089,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("CFNAI"/"National Activity" 0, "Fisher transform" 0): CFNAI release -> intraday EUR/USD; Ehlers Fisher-transform rules on EUR/USD.
 - **Action:** two standard searches; no new admissible source (all academic hits already logged); no item added (see R423 refill note).
 - **Observation for the human (not a notification):** same as R349-R422: refill passes are not producing admissible items. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R424 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress; last run 44712462069 already recorded as E052.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("supplementary leverage" 0, "6E roll"/"contract roll" 0): SLR / quarter-end bank constraints -> EUR/USD spot; CME EUR futures quarterly roll -> EUR/USD.
+- **Action:** two standard searches; both angles turned out to be already covered under other keywords (leverage-ratio window dressing, futures quarterly roll); no new admissible source; no item added (see R424 refill note).
+- **Observation for the human (not a notification):** same as R349-R423: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

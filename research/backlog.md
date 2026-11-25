@@ -5310,3 +5310,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   cited; no OOS/costs).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R424 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "supplementary leverage" and "6E roll"/"contract roll" had no entry; ~90
+  other candidate keywords (Lagarde, Humphrey, HICP, SNB sight deposits, reverse repo, TGA, G-SIB, triple witching, holidays, Google
+  Trends, GDELT, refunding, debt ceiling, etc.) already covered. Angles: (a) US supplementary leverage ratio / quarter-end bank
+  balance-sheet constraint -> EUR/USD spot; (b) CME EUR FX futures quarterly roll window -> EUR/USD. Two standard searches.
+  (a) Hits were about the CIP / dollar basis (Ranaldo ECB 2024 conference paper and Boston Fed wp1806 already logged; CEPR DP15569,
+  Imperial CIP paper, ECB WP 3016, BoE "currency mispricing and dealer balance sheets", VoxEU leverage-ratio column not opened, not
+  cited: basis/forward pricing, not spot direction). The spot angle is already covered: bank leverage-ratio quarter-end window
+  dressing (R~4664 refill note) and quarter-end FX-swap substitution (academic_studies.md ~line 2266).
+  (b) Only CME education/marketing pages on the roll and calendar spreads (not opened, not cited) and one DIW paper on an unrelated
+  topic by its listing; futures quarterly roll windows already covered (R~3905, R~4651, R~5217). No study of EUR/USD spot direction
+  around the 6E roll found.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
