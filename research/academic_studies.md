@@ -2468,3 +2468,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv PDF](https://arxiv.org/pdf/1807.04393) (opened via web-fetch). Year inferred from the arXiv ID: UNVERIFIED.
 - **Design/finding:** 18 Indian NIFTY indices, 5-minute data Dec 2016 - Jun 2017; Bollinger-band squeeze durations used as a statistic to test GBM vs regime-switching models (surrogate-data Monte Carlo); no trading rule, no FX, no costs.
 - **Relevance:** None (not a trading test; no EUR/USD). **Status:** VERIFIED.
+
+### Tharavanij, Siraprapasiri & Rajchamaha (2015), "Performance of technical trading rules: evidence from Southeast Asian stock markets", SpringerPlus 4:552 (added 2026-11-25 R427)
+- **Link:** [Springer PDF](https://link.springer.com/content/pdf/10.1186/s40064-015-1334-7.pdf), DOI 10.1186/s40064-015-1334-7 (opened via web-fetch; first ~40k of ~113k characters verbatim, results tables summary-based: UNVERIFIED).
+- **Design/finding:** RSI, Stochastic oscillator (incl. %K/%D cross), MACD, DMI, OBV on five SE Asian stock indices, daily 2000-2013; breakeven vs assumed round-trip costs; most rules not profitable net of costs. No held-out test (summary-based). No Stochastic RSI.
+- **Relevance:** None (equities only, no EUR/USD). **Status:** VERIFIED (partial read).
+
+### Oktaba & Grzywińska-Rąpca (2023), "Modification of technical analysis indicators and increasing the rate of return on investment", Central European Economic Journal 10(57) 148-162 (added 2026-11-25 R427)
+- **Link:** [reference-global](https://reference-global.com/article/10.2478/ceej-2023-0009?tab=article), DOI 10.2478/ceej-2023-0009 (opened via web-fetch; first ~40k of ~73k characters verbatim, results summary-based: UNVERIFIED).
+- **Design/finding:** EUR/USD H1 (MT4) Sep 2021 - Feb 2023; Parabolic SAR + RSI with default vs modified settings/stops; settings chosen and evaluated on the same period, no held-out test, costs not mentioned; summary reports default -1,735 points vs modified +5,970 points over 126 signals.
+- **Relevance:** None: in-sample parameter tuning, gross, tiny sample; Parabolic SAR/RSI families already covered. **Status:** VERIFIED (partial read).
+
+### Gröhn (2012), "Using technical analysis to predict future performance of interest rate futures: RSI, its modifications and Moving Average as trading rules", University of Vaasa MSc thesis (added 2026-11-25 R427)
+- **Link:** [CORE PDF](https://core.ac.uk/download/197965922.pdf) (opened via web-fetch; first ~40k of ~341k characters verbatim; results sections not read: UNVERIFIED).
+- **Design/finding:** RSI, dual-RSI and 1-50 MA rules on 132 short-term interest-rate futures (7 currencies), daily 2000-2009; costs excluded; abstract: no consistent outperformance of buy-and-hold.
+- **Relevance:** None (rate futures, no EUR/USD spot). **Status:** VERIFIED (partial read).

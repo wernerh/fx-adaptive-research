@@ -3107,3 +3107,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Ultimate Oscillator" 0, "Know Sure" 0, volatility "Squeeze" 0, "Choppiness" 0): Ultimate Oscillator / KST rules -> EUR/USD; Bollinger-Keltner squeeze breakout -> EUR/USD.
 - **Action:** two standard searches; three new academic documents opened (Kozhan-Salmon WP08-06; Schulmeister WIFO WP 263/2005; Das-Goswami arXiv 1807.04393), none tests these rules on EUR/USD with an out-of-sample cost-aware result; no item added (see R426 refill note).
 - **Observation for the human (not a notification):** same as R349-R425: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R427 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress; last run 44712462069 already recorded as E052.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Stochastic RSI" 0, "Mass Index" 0, "Detrended Price" 0): Stochastic RSI rules -> EUR/USD; DPO / Mass Index rules -> EUR/USD.
+- **Action:** two standard searches; three new academic documents opened (Tharavanij et al. 2015; Oktaba & Grzywińska-Rąpca 2023; Gröhn 2012), none tests these rules on EUR/USD with an out-of-sample cost-aware result; no item added (see R427 refill note).
+- **Observation for the human (not a notification):** same as R349-R426: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

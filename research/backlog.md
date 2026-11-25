@@ -5352,3 +5352,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   model-fit statistic on Indian indices, no trading rule, no FX).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R427 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Stochastic RSI"/"StochRSI", "Mass Index", "Detrended Price", "Klinger",
+  "Ease of Movement" and "money flow index" had no entry; ~12 other candidate keywords (durable goods, Philly Fed, Elder, PPI, retail
+  sales, housing starts, harmonic, TD Sequential, Vortex, Coppock, Chaikin) already covered. Angles: (a) Stochastic RSI rules on
+  EUR/USD; (b) Detrended Price Oscillator / Mass Index rules on EUR/USD. Two standard searches.
+  (a) Most hits already logged (ISCTE 10071/6396, CORE 55846873, Springer s11408-023-00433-2, HKU 10722/229640, Essex 18805, UCP
+  7af09180). Newly opened: Tharavanij et al. SpringerPlus 2015 (SE Asian equities, Stochastic not StochRSI, no FX); Oktaba &
+  Grzywińska-Rąpca CEEJ 2023 (EUR/USD H1 Parabolic SAR + RSI, in-sample tuning, no costs/OOS); Gröhn Vaasa MSc 2012 (RSI on rate
+  futures, no FX). None tests Stochastic RSI.
+  (b) Hits were TradingView scripts, quantifiedstrategies and mql5 pages (not opened, not cited) and already-logged HKUST COMP4971C
+  and Unibo 11585/996996. No academic DPO/Mass Index EUR/USD study found.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
