@@ -3095,3 +3095,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("supplementary leverage" 0, "6E roll"/"contract roll" 0): SLR / quarter-end bank constraints -> EUR/USD spot; CME EUR futures quarterly roll -> EUR/USD.
 - **Action:** two standard searches; both angles turned out to be already covered under other keywords (leverage-ratio window dressing, futures quarterly roll); no new admissible source; no item added (see R424 refill note).
 - **Observation for the human (not a notification):** same as R349-R423: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R425 (unattended)
+- **State:** no `ready` backlog item; no research-batch run queued or in progress; last run 44712462069 already recorded as E052.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Alligator" 0, "Awesome" 0, "Schaff" 0): Bill Williams Alligator / Awesome Oscillator rules -> EUR/USD; Schaff Trend Cycle rules -> EUR/USD.
+- **Action:** two standard searches; two new academic documents opened (Repkine MPRA 7849; Veiga Martins FEP Porto 2017), neither tests these indicators nor gives an out-of-sample cost-aware EUR/USD result; no item added (see R425 refill note).
+- **Observation for the human (not a notification):** same as R349-R424: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

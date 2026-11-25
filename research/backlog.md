@@ -5324,3 +5324,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   around the 6E roll found.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R425 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Alligator", "Awesome" (oscillator) and "Schaff" had no entry; ~55 other
+  indicator/pattern keywords (Renko, Parabolic SAR, Aroon, Donchian, Bollinger, KAMA, DeMark, NR7, engulfing, Hurst, etc.) already
+  covered. Angles: (a) Bill Williams Alligator / Awesome Oscillator rules on EUR/USD; (b) Schaff Trend Cycle rules on EUR/USD. Two
+  standard searches.
+  (a) Academic hits all already logged (Springer s11408-023-00433-2, Essex 18805, HKU 10722/229640, ISCTE 10071/6396, Unibo
+  11585/996996); the rest were broker education pages and a TradingView idea (not opened, not cited).
+  (b) Hits were mql5 copies of Schaff's practitioner article and code, a TradingView script (not opened, not cited), already-logged
+  sources (arXiv 2511.16657, FRB St Louis WP 2011-001, Unibo 11585/996996) and two new academic documents, opened:
+  Repkine, MPRA Paper 7849 (2008), https://core.ac.uk/download/213896952.pdf: chart-pattern template rules on 7 pairs incl. EUR/USD,
+  daily 1999-2007, 40-120 day horizons, no held-out test, no costs; no Schaff/Alligator/Awesome rules. Veiga Martins, FEP Porto MSc
+  dissertation (2017), https://repositorio-aberto.up.pt/bitstream/10216/141147/2/230666.pdf: MACD divergence on AUD/NZD, AUD/USD,
+  CAD/CHF, GBP/JPY (no EUR/USD), daily/weekly 1994-2016, spread-adjusted, no out-of-sample test. Neither tests either angle.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
