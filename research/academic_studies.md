@@ -2453,3 +2453,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv PDF](https://arxiv.org/pdf/2511.06177v1) (opened via web-fetch, read in full).
 - **Design/finding:** SPY NBBO quote updates in event time, Jan 2018 - Dec 2023; lag-resolved push-response decomposition; full-sample with bootstrap bands, no OOS, no costs ("Extending the analysis with explicit transactioncost overlays should also improve trading implementability."). No FX.
 - **Relevance:** None (equity ETF microstructure; no EUR/USD). **Status:** VERIFIED.
+
+### Kozhan & Salmon (2008), "On Uncertainty, Market Timing and the Predictability of Tick by Tick Exchange Rates", Warwick FERC WP08-06 (added 2026-11-25 R426)
+- **Link:** [CORE PDF](https://core.ac.uk/download/47866.pdf) (opened via web-fetch; first ~40k of ~160k characters verbatim, rest summary-based or unread).
+- **Design/finding:** USD/DM transaction data, Reuters D2000-2, one week from 5 Oct 1998 (18,065 trades); GA-evolved rules with a no-trade band, in-sample Mon-Tue, out-of-sample Wed-Fri, White's reality check; abstract reports significant OOS directional predictability and economic value after costs when trade frequency is controlled. Names of the comparison "classic" rules and the cost rate are summary-based: UNVERIFIED.
+- **Relevance:** None for the pipeline: pre-euro DM, one week of tick data, no EUR/USD. **Status:** VERIFIED (partial read).
+
+### Schulmeister (2005), "Components of the Profitability of Technical Currency Trading", WIFO WP 263/2005 (added 2026-11-25 R426)
+- **Link:** [WIFO PDF](https://wifo.ac.at/wp-content/uploads/upload-8712/WP_2005_263.pdf) (opened via web-fetch; first ~40k of ~57k characters verbatim, tail summary-based).
+- **Design/finding:** daily NY noon rates; 1024 MA and momentum models, in-sample DM/$ 1973-1999, out-of-sample euro/dollar 2000-2004; costs 0.02% per trade stated (analysis mainly gross). Table 2 all-models 2000-2004 gross mean 3.82 %/yr, t 0.775 (as extracted; column layout ambiguous for the 25-best row).
+- **Relevance:** None new: daily MA/momentum rules on EUR/USD are already covered (B16 / E019 family, NONE on dev); OOS period 2000-2004 predates the repo's dev block. **Status:** VERIFIED (partial read).
+
+### Das & Goswami (2018?), "Testing of Binary Regime Switching Models Using Squeeze Duration Analysis", arXiv:1807.04393 (added 2026-11-25 R426)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/1807.04393) (opened via web-fetch). Year inferred from the arXiv ID: UNVERIFIED.
+- **Design/finding:** 18 Indian NIFTY indices, 5-minute data Dec 2016 - Jun 2017; Bollinger-band squeeze durations used as a statistic to test GBM vs regime-switching models (surrogate-data Monte Carlo); no trading rule, no FX, no costs.
+- **Relevance:** None (not a trading test; no EUR/USD). **Status:** VERIFIED.

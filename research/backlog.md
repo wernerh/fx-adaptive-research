@@ -5339,3 +5339,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   CAD/CHF, GBP/JPY (no EUR/USD), daily/weekly 1994-2016, spread-adjusted, no out-of-sample test. Neither tests either angle.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R426 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Ultimate Oscillator", "Know Sure", "Squeeze" (as a volatility setup; the one
+  hit is the quarter-end funding squeeze) and "Choppiness" had no entry; ~20 other indicator/release keywords (Vortex, Ifo, ZEW, Chande,
+  Williams %R, Chaikin, Beige Book, JOLTS, Fibonacci, VWAP, Supertrend, etc.) already covered. Angles: (a) Ultimate Oscillator / Know
+  Sure Thing rules on EUR/USD; (b) Bollinger-Keltner volatility-squeeze breakout on EUR/USD. Two standard searches.
+  (a) Hits were mostly already logged (Springer s11408-023-00433-2, Essex 18805, HKU 10722/229640, City 13700, Erasmus 41546); new
+  documents opened: Kozhan-Salmon Warwick WP08-06 (USD/DM, one week of ticks, GA rules) and Schulmeister WIFO WP 263/2005 (daily
+  MA/momentum, EUR/USD OOS 2000-2004 gross 3.82 %/yr, t 0.775); neither tests UO/KST; the MA/momentum family is already covered
+  (B16/E019). ECONWPA 0512033 and AgEcon 19039 not opened, not cited.
+  (b) Hits were TradingView scripts (not opened, not cited) and Das-Goswami arXiv 1807.04393 (opened: squeeze durations as a
+  model-fit statistic on Indian indices, no trading rule, no FX).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
