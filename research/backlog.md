@@ -5497,3 +5497,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   2211.00363, 2512.13642, PMC7880499) not opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R438 (not an item; no item added)
+- 2026-11-25 R438 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Commodity Channel", "TabNet", "Kolmogorov-Arnold" had no entry; Williams %R,
+  Chaikin, Vortex, LightGBM, Hurst, Choppiness, VWAP, transfer entropy, Kelly already covered. Angles: (a) Commodity Channel Index
+  (CCI) rules -> EUR/USD; (b) Kolmogorov-Arnold networks -> EUR/USD direction. Two standard searches.
+  (a) Opened Maitah et al. IJEFI 2016 (IDEAS abstract: agricultural commodities only, no figures) and Zafeiriou-Kalles arXiv 2405.08045
+  (EUR/USD ticks Oct-Dec 2021, CCI-300 as ANN input, signal-hit rate only, no P&L or costs). Entries in academic_studies.md. Other hits
+  already logged (s11408-023-00433-2, Essex 18805, HKU 229640, ISCTE 10071/6396, Warwick roman.pdf) or not opened (ADU repository,
+  AgEcon 19039). USC "Filter Rules FX" JIFMIM PDF: fetch refused (robots unreachable), UNVERIFIED, not cited.
+  (b) No Kolmogorov-Arnold FX source found. Opened Shahria VU MSc 2026 (daily EUR/USD FFNN/KNN, 11 test patterns, not significant,
+  no costs). arXiv 2409.04471, 2512.12727, 2511.16657, 1310.5306 already logged; AAU thesis 717518836, arXiv 1401.1333, mql5 PDF not
+  opened, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

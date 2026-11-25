@@ -2573,3 +2573,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Chalmers ODR PDF](https://odr.chalmers.se/server/api/core/bitstreams/91a98bfc-3cf6-455d-bead-16658012600e/content) (opened via web-fetch; partial read).
 - **Design/finding:** daily LME metal cash prices 2008-2024; ESN-GA does not consistently outperform a random walk on the held-out test set; no costs; no FX.
 - **Relevance:** None. **Status:** VERIFIED (partial read).
+
+### Maitah, Prochazka, Cermak et al. (2016), "Commodity Channel Index: Evaluation of Trading Rule of Agricultural Commodities", Int. J. Econ. Financial Issues 6(1) 176-178 (added 2026-11-25 R438)
+- **Link:** [IDEAS record](https://ideas.repec.org/a/eco/journ1/2016-01-23.html) (opened via web-fetch; abstract page only, full text not fetched).
+- **Design/finding:** CCI trading rule on agricultural commodities; abstract reports results "positive in term of % CCI", no figures; no FX; sample, OOS and costs not stated on the page.
+- **Relevance:** None (no EUR/USD). **Status:** VERIFIED (abstract only).
+
+### Zafeiriou & Kalles (2024), "Comparative analysis of neural network architectures for short-term FOREX forecasting", arXiv 2405.08045 (added 2026-11-25 R438)
+- **Link:** [arXiv 2405.08045](https://www.arxiv.org/pdf/2405.08045) (opened via web-fetch; read in full).
+- **Design/finding:** EUR/USD tick data Oct-Dec 2021 only; custom ANN with indicator inputs including CCI-300 (thresholds +/-150, +/-100) vs LSTMs (trained on first half of each month, tested on second half); "successful signal" = threshold move within 900 ticks, 81.13% (ANN) vs 72.64% (best LSTM); no P&L figures, no costs, three-month sample.
+- **Relevance:** None for the pipeline: signal-hit metric, not cost-aware returns; sample far below the power floor; not a held-out period. **Status:** VERIFIED.
+
+### Shahria (2026), "Artificial Intelligence for Time Series", MSc thesis, Vilnius University (added 2026-11-25 R438)
+- **Link:** [VU ePublications PDF](https://epublications.vu.lt/object/elaba:308157703/308157703.pdf) (opened via web-fetch; partial read, ~1/3 verbatim plus summary).
+- **Design/finding:** daily EUR/USD Dec 2003-Dec 2025; single-hidden-layer FFNN and KNN on distance-filtered patterns; test set 2024-2025 is 11 patterns; best single seed 72.73% accuracy, 100-seed median 54.55%; thesis states the test is not statistically significant; no trading simulation or costs; no CCI or Kolmogorov-Arnold networks.
+- **Relevance:** None (11 test patterns, seed selection, no costs). **Status:** VERIFIED (partial read).

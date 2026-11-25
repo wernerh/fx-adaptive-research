@@ -3167,3 +3167,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Gaussian process" 0, "reservoir" 0, "echo state" 0): Gaussian-process regression -> EUR/USD direction; echo state networks / reservoir computing -> EUR/USD.
 - **Action:** two standard searches; three new sources opened (Costantini et al. JoF 2016, Ballarin et al. arXiv 2504.19623, Edlund Chalmers 2025); not admissible; no item added (see R437 refill note).
 - **Observation for the human (not a notification):** same as R349-R436: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R438 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Commodity Channel" 0, "Kolmogorov-Arnold" 0, "TabNet" 0): CCI rules -> EUR/USD; Kolmogorov-Arnold networks -> EUR/USD direction.
+- **Action:** two standard searches; three new sources opened (Maitah et al. IJEFI 2016, Zafeiriou-Kalles arXiv 2405.08045, Shahria VU 2026); not admissible; no item added (see R438 refill note).
+- **Observation for the human (not a notification):** same as R349-R437: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
