@@ -5527,3 +5527,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   momentum/reversal rules.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R440 (not an item; no item added)
+- 2026-11-25 R440 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Chronos", "TimeGPT", "foundation model", "N-HiTS", "Mamba", "fair value gap",
+  "order block" had no entry. Angles: (a) pretrained time-series foundation models -> EUR/USD direction; (b) ICT/"smart money"
+  fair-value-gap and order-block rules -> EUR/USD. Two standard searches.
+  (a) Opened arXiv 2606.27100 (US equities only, gains vs random walk "small and sparse", no trading), arXiv 2507.07296 (EUR/USD
+  volatility MSE only) and Lemeneh et al. Mathematics 14(13) 2319 (minute USD/EUR, test Sep 2024-Dec 2025, gross headline; costs remove
+  profit for all but one variant). Entries in academic_studies.md. arXiv 2511.18578, 2605.21504, 2412.09394 not opened, not cited.
+  (b) Only broker/vendor pages: FXNX blog "Do Smart Money Concepts Work?" (opened: unspecified sample, no OOS, no costs in the backtest;
+  standalone order blocks labelled "Negative Edge"); ForexTester blog and TradingView ideas not opened. Not evidence. Mechanically,
+  FVG/order-block entries are breakout-retest / liquidity-sweep variants already closed on dev (E045, E048).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

@@ -2598,3 +2598,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [MDPI Forecasting 7/4/65](https://www.mdpi.com/2571-9394/7/4/65) (opened via web-fetch; ~3/4 read, part summary).
 - **Design/finding:** daily OHLC, nine pairs incl. EUR/USD 1999-2022 (MetaTrader); transformer encoder forecasts next-day close; final 14% split held out; EUR/USD next-day MAPE 0.298% equals the random-walk benchmark (summary); trading test Dec 2018-Mar 2022 +2.36%/yr vs -0.77% buy-and-hold, no costs stated.
 - **Relevance:** None: point forecast ties the random walk on EUR/USD; trading result gross; deep-learning-on-lagged-prices family already closed on dev (E051 random forest NONE). **Status:** VERIFIED (partial read).
+
+### Noguer i Alonso & Pereira Franklin (2026), "Pretrained Time-Series Foundation Models for Financial Return Forecasting", arXiv 2606.27100 (added 2026-11-25 R440)
+- **Link:** [arXiv 2606.27100](https://arxiv.org/pdf/2606.27100) (opened via web-fetch; ~first third verbatim plus summary).
+- **Design/finding:** zero-shot TSFMs (Chronos, Moirai, TimesFM) on five US equities, daily 2014-2026, 20-business-day returns, rolling-origin evaluation after Aug 2024; abstract: gains over the random walk "small and sparse"; forecast error only, no trading or costs.
+- **Relevance:** None (no FX, no trading test). **Status:** VERIFIED (partial read).
+
+### Marconi (2025), "Time Series Foundation Models for Multivariate Financial Time Series Forecasting", arXiv 2507.07296 (added 2026-11-25 R440)
+- **Link:** [arXiv 2507.07296](https://arxiv.org/abs/2507.07296v1) (opened via web-fetch; abstract plus ~first half of PDF; rest unread).
+- **Design/finding:** TTM/Chronos on daily 2005-2025; EUR/USD task is 21-day realised volatility (MSE), not direction; abstract: specialised models "matched or exceeded" TTM in two of three tasks; no costs.
+- **Relevance:** None (volatility, not direction; no trading). **Status:** VERIFIED (partial read).
+
+### Lemeneh, Hadad, ... Tomasic & Shasha (2026), "ForExAI: Time Series Inference and News Article Analysis Reveal Profitable Foreign Exchange Signals", Mathematics 14(13) 2319, DOI 10.3390/math14132319 (added 2026-11-25 R440)
+- **Link:** [MDPI Mathematics 14/13/2319](https://www.mdpi.com/2227-7390/14/13/2319) (opened via web-fetch; parts verbatim, cost section via summary only).
+- **Design/finding:** minute USD/EUR (plus CNY, BRL, GBP); train Jan-Jun 2024, val Jul-Aug 2024, test Sep 2024-Dec 2025; Chronos-Bolt/Toto/TCN/N-BEATS + news; headline profits at zero cost; abstract: "not directly actionable"; cost table caption (summary): costs "eliminate the profitability of all strategies" except one Kelly trend variant; no random-walk comparison.
+- **Relevance:** None for the pipeline: gross headline, test period entirely after OOS start, one surviving variant out of many. **Status:** VERIFIED (partial read; cost table UNVERIFIED verbatim).
