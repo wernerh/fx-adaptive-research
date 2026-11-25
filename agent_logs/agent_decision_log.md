@@ -3125,3 +3125,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Force Index" 0, "Envelope" 0, "Linear regression channel" 0): Elder Force Index / Elder Ray -> EUR/USD; MA envelope / regression channel -> EUR/USD.
 - **Action:** two standard searches; three new academic documents opened (Harris-Yilmaz 2008; Hutchinson et al. 2022; Potì-Levich-Pattitoni 2012), none tests these rules on EUR/USD intraday/daily with an OOS cost-aware result; no item added (see R430 refill note).
 - **Observation for the human (not a notification):** same as R349-R429: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R431 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Connors" 0, "RSI(2)" 0, "Higuchi" 0, "Fractal dimension" 0): Connors RSI(2) mean reversion -> EUR/USD; fractal-dimension regime signals -> EUR/USD.
+- **Action:** two standard searches; two new documents opened (Backtrex vendor backtest; Ciucu-Paun 2015), neither gives an OOS cost-aware EUR/USD result; no item added (see R431 refill note).
+- **Observation for the human (not a notification):** same as R349-R430: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

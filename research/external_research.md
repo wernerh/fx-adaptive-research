@@ -23,3 +23,8 @@ It is recorded so we know which claims are circulating and can test them. Label 
 - **Claim:** EUR/USD 5-minute bars, 2009-2018, first-Friday NFP days: on days with a bullish first-hour post-release reaction, price drifted up in the hours before 08:30 ET on average, and down before bearish reactions. The author says this uses future information to classify days, is not tradable as written, and gives no performance figures.
 - **Our view:** look-ahead by construction; not a testable strategy. It does show NFP-day intraday paths are used in practice. Not used for B12, which tests post-release continuation with information available at 08:45 NY.
 - **How to check:** n/a without an ex-ante predictor of the release surprise.
+
+### 2026-11-25: Backtrex, "RSI(2) Strategy Backtest on Forex: EUR/USD (10 Years)" (added R431)
+- **Link:** https://backtrex.com/en/backtests/connors-rsi-2-eur-usd (opened via web-fetch, vendor page, run dated 2026-10-02).
+- **Claim:** daily EUR/USD 2016-10-02..2026-10-01; Connors RSI(2) <5 / >95 entries with 200-day SMA filter, 5-SMA exits; 0.02%/side commission, no slippage, no OOS split. Reported: 75 trades, win rate 54.67%, profit factor 0.78, total return -4.5% (buy-and-hold +0.1%).
+- **Our view:** vendor backtest, single in-sample run, not evidence; negative net result anyway. Short-horizon daily reversal family already tested (E021, E028, E035). No item.

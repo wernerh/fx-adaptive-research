@@ -2523,3 +2523,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [archive.nyu.edu PDF](https://archive.nyu.edu/jspui/bitstream/2451/31452/2/PLP1.pdf) (opened via web-fetch; partial read, EUR table values UNVERIFIED).
 - **Design/finding:** CME currency futures 1988-2010, monthly, rolling-window ARMA+GARCH "rational" rules vs AFX momentum and carry indices; says costs controlled. Text says the euro shows a high alpha; table values not verified.
 - **Relevance:** None for a new item: monthly futures, below power floor; ARMA/ML lag-return family already tested (E050/E051). **Status:** VERIFIED (partial read).
+
+### Ciucu & Paun (2015), "Financial data analysis using nonlinear time series methods. Fluctuations interpretation of foreign currency exchange rates", U.P.B. Sci. Bull. Series A 77(1) (added 2026-11-25 R431)
+- **Link:** [scientificbulletin.upb.ro PDF](https://scientificbulletin.upb.ro/static/pdfs/rezc22_956953.pdf) (opened via web-fetch).
+- **Design/finding:** EUR/RON and CHF/RON daily NBR rates 2013-01-01..2015-02-05; descriptive box-counting fractal dimension (~1.7 EUR/RON, ~1.67-1.68 CHF/RON). No trading rule, forecast, OOS or costs; no EUR/USD.
+- **Relevance:** None. **Status:** VERIFIED.
