@@ -3137,3 +3137,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("dynamic time warping" 0, "pattern matching" 0, "chaos" 0, "Lyapunov" 0): dynamic-time-warping / analog pattern matching -> EUR/USD; chaos / Lyapunov-exponent signals -> EUR/USD.
 - **Action:** two standard searches; two new candidates selected (Tsinaslanidis-Guijarro chart-pattern paper, RiuNet; CESifo WP 3420) but neither could be opened (bot challenge; fetch-permission timeout) -> UNVERIFIED, not cited; no item added (see R432 refill note).
 - **Observation for the human (not a notification):** same as R349-R431: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R433 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("quantitative tightening" 0, "monetary base" 0, "Divisia" 0): QT / balance-sheet announcements -> EUR/USD; money-supply growth -> EUR/USD direction.
+- **Action:** two standard searches; two new sources opened (CFM DP 2021-17; NBER w33423 abstract); neither admissible; no item added (see R433 refill note).
+- **Observation for the human (not a notification):** same as R349-R432: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

@@ -2528,3 +2528,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [scientificbulletin.upb.ro PDF](https://scientificbulletin.upb.ro/static/pdfs/rezc22_956953.pdf) (opened via web-fetch).
 - **Design/finding:** EUR/RON and CHF/RON daily NBR rates 2013-01-01..2015-02-05; descriptive box-counting fractal dimension (~1.7 EUR/RON, ~1.67-1.68 CHF/RON). No trading rule, forecast, OOS or costs; no EUR/USD.
 - **Relevance:** None. **Status:** VERIFIED.
+
+### Miranda-Agrippino & Nenova (2021), "A Tale of Two Global Monetary Policies", CFM Discussion Paper 2021-17 (added 2026-11-25 R433)
+- **Link:** [lse.ac.uk PDF](https://www.lse.ac.uk/CFM/assets/pdf/CFM-Discussion-Papers-2021/CFMDP2021-17-Paper.pdf) (opened via web-fetch; partial read).
+- **Design/finding:** daily event-window/local projections 1999-2017 and monthly BVAR 2000-2018 of responses to Fed and ECB policy surprises (conventional and unconventional); EUR/USD is a response variable. Verbatim abstract: "Monetary policy tightenings in both areas are followed by a global retrenchment in capital flows". No prediction of future FX returns, no OOS, no costs in text read.
+- **Relevance:** None for a new item: contemporaneous responses; policy-announcement windows already covered (ECB/FOMC lines). **Status:** VERIFIED (partial read).
+
+### Bartram, Grinblatt & Xu (2025), "Monetary Policy Predicts Currency Movements", NBER WP 33423 (also CEPR DP 19881) (added 2026-11-25 R433)
+- **Link:** [IDEAS/RePEc abstract](https://ideas.repec.org/p/nbr/nberwo/33423.html) (abstract page opened; full text not opened).
+- **Design/finding:** verbatim: "The relative restrictiveness of a central bank's supply of money predicts the raw and risk-adjusted returns of its currency" — "next month and at least three years into the future"; restrictiveness built from out-of-sample panel regressions of M1 on macro variables. Sample, EUR/USD-specific results, OOS test of returns and costs not stated on the page (UNVERIFIED).
+- **Relevance:** None for a new item: monthly cross-currency signal, below the single-pair power floor on dev/val; M1 data not in pipeline. **Status:** VERIFIED (abstract only).
