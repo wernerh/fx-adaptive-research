@@ -5553,3 +5553,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   forecasting). arXiv 2511.13503, 2411.13881 (stock indices), 2203.05603, KTH thesis not opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R442 (not an item; no item added)
+- 2026-11-25 R442 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "signed jump", "commercial paper" had no entry; ~90 other macro/calendar/flow/
+  funding/indicator/ML angles checked already have entries. Angles: (a) signed jump variation / good-minus-bad realized semivariance ->
+  next-day EUR/USD direction; (b) USD commercial-paper / funding spreads -> EUR/USD direction. Two standard searches.
+  (a) hal-amu hal-01500858 ("The explanatory power of signed jumps for the risk-return tradeoff") returned a bot-protection page:
+  UNVERIFIED, not cited. Other hits are volatility forecasting (Patton-Sheppard, Bollerslev et al. JFEC 2022, arXiv 1204.1452) or
+  already logged (Caporin-Shahzad); not opened, not cited. Daily realized skewness -> next-day direction already NONE on dev (E044/B50).
+  (b) Opened AEA 2020 and AEA 2021 preliminary drafts of Della Corte-Jeanneret-Patelli "A Credit-Based Theory of the Currency Risk
+  Premium": earlier drafts of the JFE 2023 paper already logged (academic_studies.md, R201); weekly+ horizons, predictor needs USD/EUR
+  quanto sovereign CDS (IHS Markit), not in the pipeline. No commercial-paper-spread source found.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
+  from pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

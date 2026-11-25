@@ -3185,3 +3185,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("path signature" 0, "topological" 0, "persistent homology" 0): path-signature features -> EUR/USD; persistent homology / TDA -> EUR/USD.
 - **Action:** two standard searches; two new sources opened (Petric CFA blog 2025, de Favereau de Jeneret-Diamantis DSFE 2026 / arXiv 2510.19306); not admissible; no item added (see R441 refill note).
 - **Observation for the human (not a notification):** same as R349-R440: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R442 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("signed jump" 0, "commercial paper" 0): signed jump variation / realized semivariance -> next-day EUR/USD; USD commercial-paper / funding spreads -> EUR/USD.
+- **Action:** two standard searches; HAL signed-jumps paper bot-blocked (UNVERIFIED); AEA 2020/2021 drafts of Della Corte et al. opened (already-logged JFE 2023 paper, CDS data not in pipeline); no item added (see R442 refill note).
+- **Observation for the human (not a notification):** same as R349-R441: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
