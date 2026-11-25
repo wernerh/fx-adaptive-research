@@ -3119,3 +3119,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Gann" 0, "Wyckoff" 0, "market profile" 0): Gann/Wyckoff rules -> EUR/USD; market-profile value-area rules -> EUR/USD.
 - **Action:** two standard searches; one new academic document opened (Hassanniakalager et al. JEF 2021), daily rule-ensemble family already covered, no Gann/Wyckoff/market-profile test; no item added (see R428 refill note).
 - **Observation for the human (not a notification):** same as R349-R427: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R430 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Force Index" 0, "Envelope" 0, "Linear regression channel" 0): Elder Force Index / Elder Ray -> EUR/USD; MA envelope / regression channel -> EUR/USD.
+- **Action:** two standard searches; three new academic documents opened (Harris-Yilmaz 2008; Hutchinson et al. 2022; Potì-Levich-Pattitoni 2012), none tests these rules on EUR/USD intraday/daily with an OOS cost-aware result; no item added (see R430 refill note).
+- **Observation for the human (not a notification):** same as R349-R429: refill passes are not producing admissible items; the keyword space is effectively exhausted. A human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

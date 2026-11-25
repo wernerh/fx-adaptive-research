@@ -5390,3 +5390,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (FXNX "Pivot Point Hit Rates", opened: descriptive touch rates, method undisclosed, no costs/OOS; not evidence).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R430 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Force Index", "Envelope", "Linear regression channel", "Rainbow",
+  "Treynor", "Mayer" had no entry; ~34 other candidate keywords (Halloween, sell in May, turn-of-the-month, lunar, Ramadan, weather,
+  Vortex, Chaikin, OBV, Money Flow, DeMark, doji, weekend gap, Google Trends, GDELT, COT, Aroon, ADX, Chandelier, Turtle, Darvas, ...)
+  already covered. Angles: (a) Elder Force Index / Elder Ray rules -> EUR/USD; (b) moving-average envelope / linear-regression
+  channel rules -> EUR/USD. Two standard searches.
+  (a) Hits all already logged (Springer s11408-023-00433-2, HKU 10722/229640, FRB St Louis WP 2011-001, Essex 18805, WIFO WP 263,
+  Hambuckers-Heuchenne, AgEcon 19039, Klein Tank) plus quantifiedstrategies/TradingView pages (not opened, not cited).
+  (b) Newly opened (entries in academic_studies.md): Harris-Yilmaz Exeter WP 08/04 (monthly MA/HP/kernel trend, no costs);
+  Hutchinson et al. RIBAF 2022 (G11 daily rule universe, Sharpe 0.62 -> 0.06 OOS, nothing significant OOS); Potì-Levich-Pattitoni
+  NYU WP 2012 (monthly futures ARMA-GARCH rules). None tests envelope, regression-channel or Elder rules.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

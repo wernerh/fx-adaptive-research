@@ -2508,3 +2508,18 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [thesis.eur.nl PDF](https://thesis.eur.nl/pub/34694/Landgraf.pdf) (opened via web-fetch; partial read: UNVERIFIED beyond abstract/intro).
 - **Design/finding:** 11 US gold-mining stocks, minute bars 1998-2016, intraday formation/trading windows; abstract: no variant remains profitable after costs (intro states up to 26 bp/day for distance/cointegration: conflicting).
 - **Relevance:** None (equities, no FX). **Status:** VERIFIED (partial read).
+
+### Harris & Yilmaz (2008), "A Momentum Trading Strategy Based on the Low Frequency Component of the Exchange Rate", Exeter Xfi WP 08/04 (added 2026-11-25 R430)
+- **Link:** [ore.exeter.ac.uk PDF](https://ore.exeter.ac.uk/repository/bitstream/10036/3463/7/0804.pdf) (opened via web-fetch; partial read, tables UNVERIFIED).
+- **Design/finding:** 9 USD pairs incl. EUR, monthly 1986-2008, recursive OOS 1993-2008; MA(m,n) rules vs MA(1,2) on HP-filter / kernel trend; costs ignored. EWP: HP/kernel trend improves accuracy and Sharpe over raw MA; text says EUR is the exception where HP does not beat MA.
+- **Relevance:** None for a new item: monthly horizon below power floor; MA/trend family already tested; no costs. No MA-envelope/regression-channel/Elder rule. **Status:** VERIFIED (partial read).
+
+### Hutchinson, Kyziropoulos, O'Brien, O'Reilly & Sharma (2022), "Technical trading rule profitability in currencies: It's all about momentum", RIBAF 63, 101779 (added 2026-11-25 R430)
+- **Link:** [repository.adu.ac.ae PDF](https://repository.adu.ac.ae/bitstreams/30d15095-739e-4967-a33f-7233bf0644df/download) (opened via web-fetch; partial read).
+- **Design/finding:** G11 vs USD (EUR incl.) daily, in-sample 1980-1998, OOS 1999-2020; filter, MA, channel (price-range) breakout and trading-range breakout, 388 parameterisations, net of costs (paper states two inconsistent cost schedules). Mean Sharpe falls 0.62 in-sample -> 0.06 OOS; no rule class significant OOS for the G11 portfolio; only MA keeps a small significant net alpha. No EUR-specific rule result in text read.
+- **Relevance:** Corroborates lessons on technical-rule decay (B16 family); no new admissible item. **Status:** VERIFIED (partial read).
+
+### Potì, Levich & Pattitoni (2012 WP), "Technical Trading, Predictability and Learning in Currency Markets" (added 2026-11-25 R430)
+- **Link:** [archive.nyu.edu PDF](https://archive.nyu.edu/jspui/bitstream/2451/31452/2/PLP1.pdf) (opened via web-fetch; partial read, EUR table values UNVERIFIED).
+- **Design/finding:** CME currency futures 1988-2010, monthly, rolling-window ARMA+GARCH "rational" rules vs AFX momentum and carry indices; says costs controlled. Text says the euro shows a high alpha; table values not verified.
+- **Relevance:** None for a new item: monthly futures, below power floor; ARMA/ML lag-return family already tested (E050/E051). **Status:** VERIFIED (partial read).
