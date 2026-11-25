@@ -5273,3 +5273,14 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   EUR/USD source with OOS/costs found.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R421 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Turtle", "ATR stop" and "chandelier" had no entry; "Heikin" one entry (MPRA
+  89594, R204); "option expir" only an equity-VIX note; ~60 other candidate keywords already covered. Angles: (a) FX option expiries
+  at the 10:00 NY cut -> spot pinning / post-cut EUR/USD move; (b) Heikin-Ashi rules on EUR/USD. Three standard searches.
+  (a) Hits were daily expiry-list news pages (newsquawk, investinglive; not opened, not cited), stock-pinning literature (risk.net,
+  equities), and BoE SWP 964 "FX option volume" (already logged R388). No verified study of EUR/USD spot behaviour around the NY cut;
+  strike/notional data are not in the pipeline, and a calendar-only 10:00 NY window has no mechanism without them.
+  (b) All academic hits already logged (MPRA 89594 R204, Springer s11408-023-00433-2, Essex 18805, ISCTE 10071/6396, HKU 10722/229640,
+  Warwick roman.pdf UNVERIFIED); remaining hits were TradingView backtest pages (not opened, not cited).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
