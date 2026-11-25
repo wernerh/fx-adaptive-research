@@ -2613,3 +2613,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [MDPI Mathematics 14/13/2319](https://www.mdpi.com/2227-7390/14/13/2319) (opened via web-fetch; parts verbatim, cost section via summary only).
 - **Design/finding:** minute USD/EUR (plus CNY, BRL, GBP); train Jan-Jun 2024, val Jul-Aug 2024, test Sep 2024-Dec 2025; Chronos-Bolt/Toto/TCN/N-BEATS + news; headline profits at zero cost; abstract: "not directly actionable"; cost table caption (summary): costs "eliminate the profitability of all strategies" except one Kelly trend variant; no random-walk comparison.
 - **Relevance:** None for the pipeline: gross headline, test period entirely after OOS start, one surviving variant out of many. **Status:** VERIFIED (partial read; cost table UNVERIFIED verbatim).
+
+### Petric (2025), "How the Trajectory of Asset Prices Can Predict FX Movements", CFA Institute Enterprising Investor blog, 19 July 2025 (added 2026-11-25 R441)
+- **Link:** [CFA Institute blog](https://blogs.cfainstitute.org/blog/2025/07/19/how-the-trajectory-of-asset-prices-can-predict-fx-movements) (opened via web-fetch).
+- **Design/finding:** non-technical commentary on path-signature (rough-path) features for FX forecasting; no pair named, no data, no OOS test, no costs, no numbers; "early studies" cited without references.
+- **Relevance:** None (commentary, no evidence). **Status:** VERIFIED (opened).
+
+### de Favereau de Jeneret & Diamantis (2026), "Topology of Currencies: Persistent Homology for FX Co-movements: A Comparative Clustering Study", Data Science in Finance and Economics 6(2) 183-211, DOI 10.3934/DSFE.2026007; preprint arXiv 2510.19306 (added 2026-11-25 R441)
+- **Link:** [DSFE PDF](https://www.aimspress.com/aimspress-data/dsfe/2026/2/PDF/DSFE-06-02-007.pdf), [arXiv 2510.19306](https://arxiv.org/html/2510.19306v1) (both opened via web-fetch; arXiv HTML truncated).
+- **Design/finding:** unsupervised clustering of 13 currencies vs EUR (incl. USD), ECB daily reference rates 2000-2022/2024 resampled to 266 monthly returns; TDA features give modestly better silhouette scores (0.19 vs 0.11) than correlation features; descriptive, no forecasting, no OOS, no costs.
+- **Relevance:** None (no directional prediction, monthly). **Status:** VERIFIED.

@@ -3179,3 +3179,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("Chronos" 0, "foundation model" 0, "fair value gap" 0, "order block" 0): time-series foundation models -> EUR/USD; ICT fair-value-gap/order-block rules -> EUR/USD.
 - **Action:** two standard searches; four sources opened (arXiv 2606.27100, arXiv 2507.07296, MDPI Mathematics 14(13) 2319, FXNX blog); not admissible; no item added (see R440 refill note).
 - **Observation for the human (not a notification):** same as R349-R439: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R441 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("path signature" 0, "topological" 0, "persistent homology" 0): path-signature features -> EUR/USD; persistent homology / TDA -> EUR/USD.
+- **Action:** two standard searches; two new sources opened (Petric CFA blog 2025, de Favereau de Jeneret-Diamantis DSFE 2026 / arXiv 2510.19306); not admissible; no item added (see R441 refill note).
+- **Observation for the human (not a notification):** same as R349-R440: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

@@ -5541,3 +5541,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   FVG/order-block entries are breakout-retest / liquidity-sweep variants already closed on dev (E045, E048).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R441 (not an item; no item added)
+- 2026-11-25 R441 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "path signature", "topological", "persistent homology" had no entry; ~70 other
+  macro/calendar/flow/indicator/ML angles checked already have entries. Angles: (a) path-signature features -> EUR/USD direction;
+  (b) topological data analysis (persistent homology) -> EUR/USD direction. Two standard searches.
+  (a) Opened Petric CFA Institute blog 2025-07-19 (commentary, no pair, no data, no numbers). arXiv 2512.12727 already logged; arXiv
+  2607.17865, 2505.05332, 2406.10214, 2503.02680, Springer s10614-019-09934-7, ORA Oxford record not opened, not cited.
+  (b) Opened de Favereau de Jeneret-Diamantis DSFE 6(2) 2026 / arXiv 2510.19306 (monthly clustering of 13 currencies vs EUR, no
+  forecasting). arXiv 2511.13503, 2411.13881 (stock indices), 2203.05603, KTH thesis not opened, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
