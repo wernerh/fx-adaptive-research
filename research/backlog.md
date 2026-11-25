@@ -5284,3 +5284,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Warwick roman.pdf UNVERIFIED); remaining hits were TradingView backtest pages (not opened, not cited).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R422 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "bank lending survey" and "Challenger" had no entry; "V2X", "options skew" none
+  but VSTOXX (R237) and risk reversals already covered; ~70 other candidate keywords (term spread, forward premium, Michigan, ECB
+  accounts, Beige Book, ADP, jobless claims, holidays, round numbers, VWAP, pivots, etc.) already have entries. Angles: (a) ECB euro
+  area Bank Lending Survey release -> EUR/USD; (b) US Challenger job-cuts release (07:30 NY, first Thursday-ish) -> intraday EUR/USD.
+  Two standard searches.
+  (a) Academic hits were all already logged (FEDS 2025-046 in academic_studies.md ~line 1435; ECB WP 2197 ~line 1912; ICMAIF 2018
+  paper_1_88 R~4254); remaining hits were ECB/Bundesbank release calendars and data notes (not evidence). No study of EUR/USD around
+  BLS releases found.
+  (b) Only news/broker pages (fxstreet, XTB "USD muted after Challenger report", babypips, convera; not opened, not cited). No
+  verified study.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed (after reinstalling dev extras; statsmodels was missing from the fresh environment). 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
