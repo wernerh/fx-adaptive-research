@@ -5450,3 +5450,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   WP-EMG-03-2022, NBER w16427 already logged; other hits not opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R435 (not an item; no item added)
+- 2026-11-25 R435 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "implied correlation", "Nikkei futures", "Bloomberg dollar index",
+  "pension rebalancing", "Tether" had no entry; ~30 other candidates (daylight saving, Thanksgiving, triple witching, Riksbank,
+  Norges, Polymarket, Kalshi, risk reversal, Euribor, Bund futures, flash PMI, stablecoin, EUR/GBP, USD/JPY lead-lag, VSTOXX,
+  BTP-Bund, DXY, CNH, ...) already covered. Angles: (a) FX option-implied correlation -> EUR/USD direction; (b) overnight Nikkei
+  futures returns -> European-session EUR/USD. Two standard searches.
+  (a) Opened Castrén-Mazzotta ECB WP 447 (entry in academic_studies.md): correlation forecasting, in-sample, monthly, no costs.
+  Also opened Della Corte-Jeanneret-Patelli AEA 2020 (credit-based currency risk premium) and Czech-Della Corte-Huang-Wang AEA 2023
+  (FX option volume): both already logged. arXiv 2101.09738 and BoE FX option volume WP already logged; MNB forward-vol paper and
+  arXiv 1201.1782/0904.4822 (pricing) not opened, not cited.
+  (b) Opened Bondarenko-Muravyev JFQA online appendix (S&P E-mini around the clock; no FX): parent article already logged. NY Fed
+  SR917 and CEPR DP14462 already logged; other hits broker "European open" commentary (not opened, not cited).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

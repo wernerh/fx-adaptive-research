@@ -2548,3 +2548,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [ORCA record](https://orca.cardiff.ac.uk/id/eprint/22759/), DOI [10.1016/j.intfin.2010.03.002](https://doi.org/10.1016/j.intfin.2010.03.002) (repository record opened; full text not read).
 - **Design/finding:** 5-minute EUR/USD and EUR/GBP responses to macro announcement surprises. Verbatim abstract: "The reaction of exchange rate returns to news is very quick and occurs within the first 5 min of the release with very little reaction in the 15 min before and after"; US news "generates far more dramatic responses in EUR–USD returns". No lagged prediction, OOS or costs stated.
 - **Relevance:** None: contemporaneous reaction; argues against a post-release (incl. UK-release) EUR/USD drift item. **Status:** VERIFIED (abstract only).
+
+### Castrén & Mazzotta (2005), "Foreign exchange option and returns based correlation forecasts: evaluation and two applications", ECB WP 447 (added 2026-11-25 R435)
+- **Link:** [ECB PDF](https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp447.pdf) (opened via web-fetch; partial read).
+- **Design/finding:** daily OTC 1-month implied vols for cross-rate triangles incl. USD/EUR, Jan 1992 - Mar 2004; implied vs historical/RiskMetrics/GARCH correlation forecasts of 21-day realised correlation. Verbatim: regressions are "carried out in-sample". Appendix Fama-type regressions of one-month spot changes reported only via a model summary (UNVERIFIED, not cited). No costs.
+- **Relevance:** None for a new item: forecasts correlation, not EUR/USD direction; in-sample; monthly horizon below the power floor; option-implied data not in pipeline. **Status:** VERIFIED (partial read).

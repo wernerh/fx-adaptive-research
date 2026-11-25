@@ -3149,3 +3149,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("UK CPI" 0, "UK labour" 0, "UK GDP" 0): UK macro releases -> later EUR/USD drift; economic surprise indexes -> EUR/USD direction.
 - **Action:** two standard searches; two new sources opened (Evans-Speight JIFMIM 2010 record; Doganov EUR MSc 2012); neither admissible; no item added (see R434 refill note).
 - **Observation for the human (not a notification):** same as R349-R433: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-25 R435 (unattended)
+- **State:** no research-batch run queued or in progress (latest 44712462069, recorded as E052); no `ready` backlog item.
+- **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("implied correlation" 0, "Nikkei futures" 0): FX option-implied correlation -> EUR/USD direction; overnight Nikkei futures returns -> European-session EUR/USD.
+- **Action:** two standard searches; one new source opened (Castrén-Mazzotta ECB WP 447), three others opened but already logged; none admissible; no item added (see R435 refill note).
+- **Observation for the human (not a notification):** same as R349-R434: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
