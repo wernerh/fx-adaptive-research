@@ -5377,3 +5377,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were TradingView ideas/scripts and broker blog pages only (not opened, not cited). No academic market-profile EUR/USD study.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-25 R429 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "copula", "Camarilla", "Murrey", "Range Bar" had no entry; ~16 other
+  candidate keywords (Williams %R, Parabolic, pivot point, Fibonacci, Kalman, Chande, Hilbert, wavelet, Elliott, candlestick, inside
+  bar, engulfing, Choppiness, Supertrend, Heston, tick volume) already covered. Angles: (a) copula dependence / pairs signals ->
+  EUR/USD; (b) Camarilla pivot levels -> EUR/USD. Two standard searches.
+  (a) Newly opened (entries in academic_studies.md): Krauss-Stübinger FAU DP 15/2015 (S&P 100 pairs, no FX); Cerrato-Li-Zhang
+  Glasgow 2021 (weekly multi-currency factor allocation); Anatolyev et al. JEF 2017 (monthly carry decomposition, EUR significant
+  per summary, below power floor, data not in pipeline); Landgraf EUR MSc 2016 (gold-mining equities). UTS QFR rp362, Springer
+  jdhf.2011.31, UCP 7af09180 (already logged) and QuantRocket blog not opened / not cited.
+  (b) Hits were investing.com level pages, TradingView scripts and fxstreet articles (not opened, not cited) and one broker blog
+  (FXNX "Pivot Point Hit Rates", opened: descriptive touch rates, method undisclosed, no costs/OOS; not evidence).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

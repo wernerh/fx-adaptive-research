@@ -2488,3 +2488,23 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [Glasgow eprint PDF](https://eprints.gla.ac.uk/246954/2/246954.pdf), DOI 10.1016/j.jempfin.2021.07.006 (opened via web-fetch; first ~40k of ~120k characters verbatim; data period, OOS design, costs and all numbers summary-based: UNVERIFIED).
 - **Design/finding:** EUR/USD, GBP/USD, USD/JPY daily; 7,846 technical rules (filters, MAs, support/resistance, channel breakouts, OBV) screened with a Romano-Shaikh-Wolf data-snooping test, survivors combined by Naive Bayes / RVM / DMA / DMS / Bayesian NN; rolling 3-year in-sample / 1-year OOS; costs reportedly 3 bp per trade. Abstract: TA has value "but the profit margins are small". Summary: simple average of top rules about -0.9% on EUR/USD; Bayesian combinations about 2-6% annualised. Footnote: reported results use best in-sample performance. No Gann, Wyckoff or market-profile rules.
 - **Relevance:** None for a new item: daily rule-ensemble / ML family already covered (E051 line), single-rule survivors are near zero after costs, and replicating a 7,846-rule screen would inflate the trial count without a single pre-registrable mechanism. **Status:** VERIFIED (partial read).
+
+### Krauss & Stübinger (2015), "Nonlinear dependence modeling with bivariate copulas: Statistical arbitrage pairs trading on the S&P 100", FAU IWQW Discussion Paper 15/2015 (added 2026-11-25 R429)
+- **Link:** [FAU PDF](https://www.iwf.rw.fau.de/files/2015/12/15-2015.pdf) (opened via web-fetch; partial read, figures beyond the introduction summary-based: UNVERIFIED).
+- **Design/finding:** S&P 100 constituents, daily 1990-2014; copula mispricing signals, 60-month formation / 12-month out-of-sample trading; 0.50% per round trip and one-day wait; intro: net returns "remain above 5 percent per annum".
+- **Relevance:** None (US equities pairs, no FX). **Status:** VERIFIED (partial read).
+
+### Cerrato, Li & Zhang (2021), "Factor Investing and Currency Portfolio Management", University of Glasgow working paper (added 2026-11-25 R429)
+- **Link:** [Glasgow PDF](https://www.gla.ac.uk/media/Media_734975_smxx.pdf) (opened via web-fetch; partial read, numbers summary-based: UNVERIFIED).
+- **Design/finding:** weekly allocation across four currency factors (DOL, carry, momentum, value) from 31 USD crosses, DCC skewed-t copula, real-time OOS 1994-2020 with forward bid/ask costs.
+- **Relevance:** None for a single-pair EUR/USD rule (multi-currency factor allocation, weekly). **Status:** VERIFIED (partial read).
+
+### Anatolyev, Gospodinov, Jamali & Liu (2017), "Foreign exchange predictability and the carry trade: A decomposition approach", Journal of Empirical Finance 42, 199-211 (added 2026-11-25 R429)
+- **Link:** [AUB repository PDF](https://scholarworks.aub.edu.lb/server/api/core/bitstreams/3126a2e8-780e-4115-8741-1cf0f5015db8/content) (opened via web-fetch; partial read, all numbers summary-based: UNVERIFIED).
+- **Design/finding:** nine USD crosses incl. EUR (DEM-spliced), monthly 1976-2016, OOS 2004-2016; sign/magnitude decomposition model sets carry positions, bid/ask used; summary: significance for GBP, CHF, EUR only.
+- **Relevance:** None for a new item: monthly horizon gives ~60-100 decisions in dev/val, below the power floor; needs monthly forward/interest-rate data not in the pipeline. **Status:** VERIFIED (partial read).
+
+### Landgraf (2016), "High-Frequency copula-based pairs trading on U.S. Goldmine Stocks", Erasmus University Rotterdam MSc thesis (added 2026-11-25 R429)
+- **Link:** [thesis.eur.nl PDF](https://thesis.eur.nl/pub/34694/Landgraf.pdf) (opened via web-fetch; partial read: UNVERIFIED beyond abstract/intro).
+- **Design/finding:** 11 US gold-mining stocks, minute bars 1998-2016, intraday formation/trading windows; abstract: no variant remains profitable after costs (intro states up to 26 bp/day for distance/cointegration: conflicting).
+- **Relevance:** None (equities, no FX). **Status:** VERIFIED (partial read).
