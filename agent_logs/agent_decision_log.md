@@ -3258,3 +3258,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; DN Monetary Review Q4 2016 (Spange-Sørensen) opened (EUR/DKK only, no daily intervention dates, no OOS/costs); MAS search returned calendar pages only; no item added (see R460 refill note).
 - **Housekeeping note:** local `main` was stale (R395, shallow clone); confirmed it is an ancestor of origin/main and fast-forwarded (no work lost).
 - **Observation for the human (not a notification):** same as R349-R459: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R461 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: BoE MPC announcements -> later EUR/USD drift (new-source check; topic already logged) and SARB MPC decisions -> EUR/USD ("SARB" 0 hits).
+- **Action:** two standard searches; Melvin et al. IJCB 2010 opened (GBP/USD only, no OOS/costs); SARB search returned rand-only records and statements; no item added (see R461 refill note).
+- **Housekeeping note:** local `main` had diverged from origin/main (50 stale local commits R347-R395 not on origin, a different lineage from origin's R347+). Origin treated as authoritative; local lineage kept on local branch `stale-local-main-backup` (not pushed), main reset to origin/main.
+- **Observation for the human (not a notification):** same as R349-R460: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed.
