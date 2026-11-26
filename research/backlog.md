@@ -5873,3 +5873,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   information bars; walk-forward OOS direction AUC 0.498-0.596, authors conclude no exploitable directional edge; most fee-inclusive
   backtests negative. No FX data. Gargano-Riddiough-Sarno "Value of Volume" already logged (R377).
 - No item added. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R465 (not an item; no item added)
+- 2026-11-26 R465 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Italian spread" 1 file, "Korean won" 1 file (passing mentions). Angles: (a)
+  BTP-Bund spread changes -> intraday EUR/USD direction; (b) Korea NPS FX hedging flows -> Asian-session EUR/USD. One standard search each.
+  (a) Opened Cagliesi-Della Bina-Tivegna, "Market Response to News: Rationality and Conformism in an Euro-Dollar Exchange Rate Model",
+  Univ. of Greenwich CEPGR2 WP (2014) (https://gala.gre.ac.uk/11195/1/CEPGR2_Cagliesi_Bina_Tivegna.PDF; first part read verbatim,
+  remainder via fetch summary, UNVERIFIED beyond the design): EUR/USD 8-hour returns 2003-2011, EGARCH(3,1) news-type in-sample model
+  with macro surprises and 10y yields as controls; no BTP-Bund spread variable, no OOS, no costs. Other hits (ING Think notes, FXStreet,
+  Uniroma3, investireoggi) are commentary, not opened, not cited.
+  (b) Opened Im-Kang-Jun, "The Effect of NPS's FX Trading on Exchange Rate", J. Derivatives and Quantitative Studies 24(3) 2016,
+  doi:10.1108/JDQS-03-2016-B0002 (abstract only; full text paywalled): Korean spot FX volatility vs NPS volume 2010-2014, GARCH-X;
+  pair not named in abstract, no direction/EUR/USD/OOS/costs. Other hits are news pages, not opened, not cited.
+- No item added: no verified EUR/USD directional mechanism in either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.
