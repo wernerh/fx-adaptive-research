@@ -3270,3 +3270,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; the only two study hits could not be fetched (UNVERIFIED); no item added (see R463 refill note).
 - **Housekeeping note:** local `main` again diverged from origin/main (stale local R346-R395 lineage). Origin treated as authoritative; work done on local branch `run-work` from origin/main and pushed to main; local `main` left untouched.
 - **Observation for the human (not a notification):** same as R349-R462: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed.
+
+## 2026-11-26 R464 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Riksbank FX operations/policy -> EUR/USD ("Riksbank" 1 passing hit) and volume-clock / tick information bars -> EUR/USD direction ("volume clock" 0 hits).
+- **Action:** two standard searches; two papers opened, neither gives an EUR/USD direction test with OOS and costs; no item added (see R464 refill note).
+- **Housekeeping note:** local `main` still diverged (stale R346-R395 lineage); worked detached from origin/main and pushed HEAD to main; local `main` left untouched.
+- **Observation for the human (not a notification):** same as R349-R463: refill passes are not producing admissible items; a human decision is needed.

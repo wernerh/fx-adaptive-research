@@ -5859,3 +5859,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Only one study hit: University of Reading CentAUR 90003 "NG_paper_final_round.pdf" (bot-blocked, UNVERIFIED, not cited); remaining
   hits are FXStreet/calendar news pages. No verified EUR/USD mechanism.
 - No item added. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R464 (not an item; no item added)
+- 2026-11-26 R464 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/: "Riksbank" 1 (passing mention), "volume clock" 0. Angles: (a) Riksbank policy / FX
+  operations -> later EUR/USD drift; (b) volume-clock / tick-activity (information) bars as an EUR/USD direction predictor. One standard
+  search each.
+  (a) Opened Artta-Nessén-Savoia-Vredin, "Financial Flows and Exchange Rate Dynamics: Evidence from Sweden", Sveriges Riksbank WP 456
+  (Nov 2025) (https://www.riksbank.se/globalassets/media/rapporter/working-papers/2025/no.-456-financial-flows-and-exchange-rate-dynamics-evidence-from-sweden.pdf):
+  daily EURSEK/USDSEK, Riksbank FX operations 2021-2024, in-sample local projections of SEK response to operation shocks; EUR/USD only
+  a control; no OOS, no costs. Other hits (Riksbank event-study database page, WP 445, Norges Bank staff memo, news) not opened, not cited.
+  (b) Opened Fayyaz et al., arXiv 2608.26158 (2026) (https://arxiv.org/pdf/2608.26158): BTCUSDT perpetuals only; tick vs minute
+  information bars; walk-forward OOS direction AUC 0.498-0.596, authors conclude no exploitable directional edge; most fee-inclusive
+  backtests negative. No FX data. Gargano-Riddiough-Sarno "Value of Volume" already logged (R377).
+- No item added. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
