@@ -3252,3 +3252,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; RBA Bulletin Apr 2008 (Clifton-Plumb) and BoC SAN 2018-39 opened (contemporaneous volatility only, no EUR/USD drift, no OOS/costs); rest already logged or news pages; no item added (see R458 refill note).
 - **Housekeeping note:** local `main` was reset to origin/main (clean tree, no work lost) via `git checkout -B main origin/main`.
 - **Observation for the human (not a notification):** same as R349-R457: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R460 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("Danmarks" 0, "Singapore" 0): DN EUR/DKK peg interventions -> EUR/USD; MAS policy statements -> Asian-session EUR/USD drift.
+- **Action:** two standard searches; DN Monetary Review Q4 2016 (Spange-Sørensen) opened (EUR/DKK only, no daily intervention dates, no OOS/costs); MAS search returned calendar pages only; no item added (see R460 refill note).
+- **Housekeeping note:** local `main` was stale (R395, shallow clone); confirmed it is an ancestor of origin/main and fast-forwarded (no work lost).
+- **Observation for the human (not a notification):** same as R349-R459: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
