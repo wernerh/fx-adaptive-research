@@ -5583,3 +5583,20 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Window posts, FEDS 2025-052, NY Fed SR997, CEPR DP17233, BIS WP405, ECB WP3017, IMF WP 2026/186 not opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
   from public/pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R444 (not an item; no item added)
+- 2026-11-26 R444 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "French CPI", "Spanish CPI", "MSCI rebalance", "volatility smile" had no
+  entry; "Michigan" one file; ~60 other candidates (Vortex/Aroon/Ichimoku/Donchian, Kalman, LSTM, sentiment, TTF/natural gas, index
+  rebalancing, risk reversals, auctions/refunding, ISM, NFP, PMI, Ifo, Philly/Empire) already have entries. Angles: (a) University of
+  Michigan sentiment release (10:00 NY) -> later EUR/USD drift; (b) French/Spanish flash CPI releases -> later EUR/USD drift.
+  Three standard searches.
+  (a) Hits were FXStreet/XTB commentary and already-logged papers (Fed IFDP 823, Norges Bank Staff Memo 5/2026, ECB WP 1901,
+  FMG DP 258, Cardiff a2006_4/A2007_4, FMG DP 54); not re-cited. Opened CORE DP 2003/29 (Bauwens-Ben Omrane-Giot, "News
+  announcements, market activity and volatility in the Euro/Dollar foreign exchange market",
+  https://research.dial.uclouvain.be/bitstreams/e51e85d3-6efe-4245-8e21-fe6d78758884/download; text truncated mid section 4.2):
+  EUR/USD 5-min quotes May-Nov 2001, news dummies in the variance equation only; volatility, not later-return predictability; no
+  Michigan series, no OOS, no trading returns or costs. Pre-dev sample, not evidence for an item.
+  (b) XTB broker commentary only (single-day reactions); no study found.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
+  from pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
