@@ -5719,3 +5719,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   dev (~72 months) and needs a new non-vendor data source. If a later run reads the EUR row of SR361's OOS table verbatim and it is
   positive, a monthly item could be reconsidered (power note required). pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R454 (not an item; no item added)
+- 2026-11-26 R454 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Destatis"/"German CPI"/"German inflation" 0, "Tokyo CPI" 0. Angles: (a) German
+  preliminary CPI release (Destatis, state CPIs earlier in the morning) -> later EUR/USD drift; (b) Tokyo CPI release (08:30 Tokyo) ->
+  Asian-session EUR/USD. Three standard searches.
+  (a) Hits were FXStreet/XTB/investingLive release-day news only; one new academic source opened: Caruso, ECARES WP 2016-32 (abstract):
+  daily contemporaneous surprise effects, no drift/OOS/costs. Already-logged hits (CEQURA WP 8 UNVERIFIED, Norges Bank staff memo, FMG
+  DP 258, Bundesbank DPs) not re-opened; CESifo 2013 "micro dynamics of macro announcements" not opened, not cited. (b) Hits were
+  FXStreet/MUFG daily notes on USD/JPY and EUR/JPY reactions only; no study.
+- No item added: no verified EUR/USD post-release drift result, OOS or cost-aware; consensus/surprise data not in pipeline, and an
+  unconditional German-CPI-day window would be a calendar scan of the release-time family already covered (E009/E010-area hour cells).
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

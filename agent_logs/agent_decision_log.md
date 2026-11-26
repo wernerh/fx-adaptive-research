@@ -3222,3 +3222,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; Auerbach-Gorodnichenko 2016 and Adrian-Etula-Shin SR361 opened (partial reads); EUR row of SR361 OOS table not read (UNVERIFIED); no item added (see R453 refill note).
 - **Housekeeping note:** local clone's `main` had 50 unpushed commits (old R346-R395 line) diverged from origin/main; left untouched, this run worked on a detached checkout of origin/main and pushed from it.
 - **Observation for the human (not a notification):** same as R349-R452: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R454 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("Destatis"/"German CPI" 0, "Tokyo CPI" 0): German preliminary CPI release -> later EUR/USD drift; Tokyo CPI release -> Asian-session EUR/USD.
+- **Action:** three standard searches; Caruso ECARES WP 2016-32 abstract opened (contemporaneous daily surprise effects); rest news pages; no item added (see R454 refill note).
+- **Housekeeping note:** local clone's `main` still diverged (old shallow R346-R395 line); left untouched, this run worked on branch `run-r454` checked out from origin/main and pushed to main from it.
+- **Observation for the human (not a notification):** same as R349-R453: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
