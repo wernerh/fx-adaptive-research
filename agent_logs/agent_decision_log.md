@@ -3240,3 +3240,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** three standard searches; Kearns-Manners RBA RDP 2005-02 opened (contemporaneous, no EUR/USD); rest news pages; no item added (see R456 refill note).
 - **Housekeeping note:** local `main` still diverged (old R346-R395 line); a reset was refused by the sandbox, so this run again worked on a detached HEAD from origin/main and pushed to main from it.
 - **Observation for the human (not a notification):** same as R349-R455: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R457 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("EM FX" 0, "ruble" 0): EM-currency lead-lag on EUR/USD; ruble shocks -> EUR/USD spillover.
+- **Action:** two standard searches; Gupta-Chatterjee arXiv 2004.10560 and Lyocsa-Plihal arXiv 2205.09179 opened (no EUR/USD result, no OOS/costs); rest already logged; no item added (see R457 refill note).
+- **Housekeeping note:** local `main` still diverged (old R346-R395 line); a reset was refused by the sandbox, so this run worked on a local branch `work` from origin/main and pushed to main from it.
+- **Observation for the human (not a notification):** same as R349-R456: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

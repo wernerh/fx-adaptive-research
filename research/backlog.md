@@ -5757,3 +5757,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD drift result, OOS or cost-aware; both bodies meet ~7-8 times a year (below the R090 power floor
   on dev) and surprise data are not in the pipeline. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline
   failure.
+
+### Refill note R457 (not an item; no item added)
+- 2026-11-26 R457 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "EM FX" 0, "ruble" 0 (most other candidates checked had prior entries:
+  Riksbank, ZEW, JOLTS, IMM, CLS, EUR/CHF, emerging market). Angles: (a) emerging-market currency returns -> lead-lag on EUR/USD
+  intraday; (b) Russian ruble shocks -> EUR/USD spillover. Two standard searches.
+  (a) Hits were mostly sources already logged (Basnarkov et al. arXiv 1906.10388; Phylaktis-Yamani WP-EMG-03-2022 / WP-EMG-02-2025).
+  One new source opened: Gupta-Chatterjee, arXiv 2004.10560 (https://arxiv.org/pdf/2004.10560): 29 currencies vs NZD at 10-min,
+  17 Dec 2019 - 16 Mar 2020, dynamic-time-warping lead-lag measure; most major pairs show zero lead-lag; forecastability test on
+  synthetic series only; no EUR/USD pair result, no OOS on FX data, no costs. (b) One new source opened: Lyocsa-Plihal, arXiv
+  2205.09179 (https://arxiv.org/abs/2205.09179v1, FRL): USD/RUB and EUR/RUB intraday, Dec 2021 - Mar 2022, implied vol and Google
+  attention help predict RUB fluctuations; no EUR/USD, abstract only (OOS status UNVERIFIED), no costs.
+- No item added: no verified EUR/USD lead-lag or drift result, OOS or cost-aware; EM FX intraday bars are not in the pipeline and
+  the ruble sample is a 3-month crisis window outside dev. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a
+  pipeline failure.
