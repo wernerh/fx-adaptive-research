@@ -5669,3 +5669,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   news pages, not cited. No page opened this run (nothing new to verify).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R450 (not an item; no item added)
+- 2026-11-26 R450 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "NFIB"/"small business" 0, "Survey of Consumer Expectations"/"NY Fed consumer
+  expectations" 0. Angles: (a) US NFIB small-business optimism release (06:00 NY) -> later EUR/USD drift; (b) NY Fed Survey of
+  Consumer Expectations release -> later EUR/USD drift. Two standard searches.
+  (a) Hits were economic-calendar pages (MetaTrader, MQL5, Myfxbook, FXBlue, CME/Econoday) and FXStreet/Axios news only; not
+  evidence, not cited. (b) Opened Binder-Campbell-Ryngaert, "Consumer Inflation Expectations: Daily Dynamics", MPRA 117628 (2022,
+  https://mpra.ub.uni-muenchen.de/117628/1/Binder_Campbell_Ryngaert%20SCE%20R1b.pdf; first ~40k of 76k chars read verbatim, rest via
+  summary): uses daily SCE responses 2013-2022 as the outcome in event studies of FOMC/CPI/NFP news; no financial-market or FX
+  reaction to SCE releases, no OOS, no costs. Other hits were NY Fed press releases and an FXStreet page, not evidence.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
