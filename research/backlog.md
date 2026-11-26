@@ -5744,3 +5744,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD post-release drift result, OOS or cost-aware; LPR is ~12 events/year (below the R090 power floor
   on dev) and an unconditional flash-HICP-day window would be a calendar scan in the release-time family (E009/E010-area hour cells).
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R456 (not an item; no item added)
+- 2026-11-26 R456 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "RBNZ" 0, "Bank of Korea" 0 ("money market fund" angle dropped: already
+  covered R376). Angles: (a) RBNZ policy announcements (14:00 NZ, Asian session) -> later EUR/USD drift; (b) Bank of Korea rate
+  decisions -> Asian-session EUR/USD. Three standard searches.
+  (a) One new academic source opened: Kearns-Manners, RBA RDP 2005-02 (https://www.rba.gov.au/publications/rdp/2005/2005-02.html):
+  AUD, CAD, NZD, GBP vs USD, -10/+60 min contemporaneous reactions to own-bank surprises, coefficients stable over six hours (no
+  drift), no EUR/USD, no OOS/costs. RBNZ 2024 news page and Otago/IJCB PDFs not opened, not cited. (b) Hits were USD/KRW news
+  (FXStreet, ING, Asiae) only; no study.
+- No item added: no verified EUR/USD drift result, OOS or cost-aware; both bodies meet ~7-8 times a year (below the R090 power floor
+  on dev) and surprise data are not in the pipeline. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline
+  failure.
