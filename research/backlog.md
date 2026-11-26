@@ -5772,3 +5772,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD lead-lag or drift result, OOS or cost-aware; EM FX intraday bars are not in the pipeline and
   the ruble sample is a 3-month crisis window outside dev. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a
   pipeline failure.
+
+### Refill note R458 (not an item; no item added)
+- 2026-11-26 R458 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Australian employment" 0, "Canadian employment" 0 (checked with prior
+  entries: KOF, Philly Fed, Norges, Empire State, Sentix, INSEE). Angles: (a) Australian labour force release -> later EUR/USD
+  drift; (b) Canadian Labour Force Survey release -> later EUR/USD drift. Two standard searches.
+  (a) One new source opened: Clifton-Plumb, RBA Bulletin Apr 2008 (https://www.rba.gov.au/publications/bulletin/2008/apr/1.html):
+  AUD/USD (AUD/EUR, AUD/JPY comparisons), Mar 1998 - Aug 2007, one-hour window around releases; contemporaneous surprise effects
+  and volatility only (labour force volatility coefficient 0.15); no post-release drift test, no EUR/USD, no OOS, no costs. Rest
+  were FXStreet/BabyPips/XTB/forex.com news pages.
+  (b) Hits already logged (BoC SAN 2025-10, Ghazei UVic essay). One new source opened: Albogatchiev-Fontaine-Sandhu-Xie, BoC SAN
+  2018-39 (https://www.bankofcanada.ca/2018/12/staff-analytical-note-2018-39/, DOI 10.34989/san-2018-39): USD/CAD 5-min, BoC
+  announcement surprises Apr 2006 - Nov 2017; excess volatility 45 bps in first hour, dissipating by hour five; volatility and
+  spreads only, no return drift, no EUR/USD, no OOS/costs.
+- No item added: no verified EUR/USD drift result, OOS or cost-aware; both studies are contemporaneous volatility/jump evidence
+  on other pairs. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

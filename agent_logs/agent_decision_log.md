@@ -3246,3 +3246,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; Gupta-Chatterjee arXiv 2004.10560 and Lyocsa-Plihal arXiv 2205.09179 opened (no EUR/USD result, no OOS/costs); rest already logged; no item added (see R457 refill note).
 - **Housekeeping note:** local `main` still diverged (old R346-R395 line); a reset was refused by the sandbox, so this run worked on a local branch `work` from origin/main and pushed to main from it.
 - **Observation for the human (not a notification):** same as R349-R456: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R458 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("Australian employment" 0, "Canadian employment" 0): Australian labour force release -> later EUR/USD drift; Canadian LFS release -> later EUR/USD drift.
+- **Action:** two standard searches; RBA Bulletin Apr 2008 (Clifton-Plumb) and BoC SAN 2018-39 opened (contemporaneous volatility only, no EUR/USD drift, no OOS/costs); rest already logged or news pages; no item added (see R458 refill note).
+- **Housekeeping note:** local `main` was reset to origin/main (clean tree, no work lost) via `git checkout -B main origin/main`.
+- **Observation for the human (not a notification):** same as R349-R457: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
