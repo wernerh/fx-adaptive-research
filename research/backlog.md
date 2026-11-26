@@ -5600,3 +5600,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) XTB broker commentary only (single-day reactions); no study found.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
   from pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R445 (not an item; no item added)
+- 2026-11-26 R445 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Swiss National Bank" one file, "0DTE"/"options gamma"/"FOMC speakers"/
+  "trimmed mean" no entry; ~45 other candidates (SNB, Riksbank, BoC, BoE/MPC, Tankan, ZEW, Sentix, JOLTS, claims, Beige Book, VWAP,
+  weekend gap, intraday momentum, overnight return, Kalshi/Polymarket, dealer gamma) already have entries. Angles: (a) SNB policy
+  announcements -> later EUR/USD drift; (b) S&P 500 0DTE options gamma -> intraday EUR/USD. Two standard searches.
+  (a) Opened SNB WP 2025-01 landing page (Borner, "Central bank information and pure monetary policy surprises in Switzerland",
+  https://www.snb.ch/en/publications/research/working-papers/2025/working_paper_2025_01) and SUERF Policy Brief 1100 (same author,
+  https://www.suerf.org/wp-content/uploads/2025/02/SUERF-Policy-Brief-1100-_Borner.pdf): 114 SNB announcements 2000-Mar 2024,
+  30-minute contemporaneous windows, motive classification only; CHF not EUR/USD; no later-return test, no OOS, no costs.
+  (b) Opened ECB FSR Nov 2023 box (Sowiński, 0DTE hidden leverage): EURO STOXX 50 volatility mechanics, no FX, no return test.
+  Opened Quantpedia summary (2026-02-02) of Adams et al. SSRN 5641974: S&P 500 net gamma predicts lower 10-min volatility and
+  E-mini order-flow reversal; no FX, no cost numbers; gamma data not in pipeline. SSRN paper itself not opened, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
+  from pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
