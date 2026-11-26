@@ -5567,3 +5567,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   quanto sovereign CDS (IHS Markit), not in the pipeline. No commercial-paper-spread source found.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
   from pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R443 (not an item; no item added)
+- 2026-11-26 R443 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "corporate hedging", "standing repo", "discount window" had no entry; ~60 other
+  candidates (GDELT/news, EPU/GPR, triple witching, high-volume return premium, Crabel, volume shock, Thanksgiving, holidays,
+  lead-lag, DXY, sovereign spreads) already have entries. Angles: (a) currency-hedging / FX derivative position flows -> EUR/USD
+  direction; (b) Fed liquidity facilities (standing repo, discount window, swap lines) -> EUR/USD direction. Two standard searches
+  plus one (GDELT news volume) and one (hour-of-day seasonality) whose hits were all already logged.
+  (a) Opened VoxEU column "How currency hedging moves exchange rates" (Bräuer-Hau, JIE forthcoming 2026): daily CLS hedging pressure
+  incl. EUR/USD, contemporaneous/in-sample association only (corr -0.70 annual; ~9% of monthly moves), no forecast, no trading
+  returns or costs; predictor is proprietary CLS data. Opened NBER conf paper f224015 (Hacioglu-Hoke-Ostry-Rey-Rousset Planat-
+  Stavrakeva-Tang 2025, "Topography of the FX Derivatives Market"): confidential EMIR positions, weekly in-sample fit, no OOS or costs.
+  (b) Opened NBER w29982 abstract (Goldberg-Ravazzolo 2022): facilities narrow FX swap basis; not a direction predictor. Teller
+  Window posts, FEDS 2025-052, NY Fed SR997, CEPR DP17233, BIS WP405, ECB WP3017, IMF WP 2026/186 not opened, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
+  from public/pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
