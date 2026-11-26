@@ -5692,3 +5692,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   not evidence, not cited. MoF weekly flow data are also not in the pipeline.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-26 R452 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/backlog.md: "Kansas City"/"Richmond Fed" 0, "Belgian"/"NBB" business-confidence 0. Angles: (a) Richmond /
+  Kansas City Fed manufacturing survey releases (10:00/11:00 NY) -> later EUR/USD drift; (b) National Bank of Belgium business confidence
+  release -> later EUR/USD drift. Two standard searches.
+  (a) Opened: Kosakow-Scavette, Richmond Fed Regional Matters, 4 Apr 2024
+  (https://www.richmondfed.org/region_communities/regional_data_analysis/regional_matters/2024/rm_04_04_24_regional_surveys_national_conditions):
+  regional indexes as forecasters of ISM PMI / industrial production only; no FX, bond or stock data. Kansas City Fed PDF
+  (kansascityfed.org/pdf/article/articlepage/11761) opened: a release-date schedule, not a study. Rest were MNI/Newsquawk/FXBlue
+  headline and calendar pages; not evidence, not cited. (b) Hits were NBB home/statistics pages, Trading Economics and FXBlue calendar
+  pages; no reaction or predictability study; not evidence, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

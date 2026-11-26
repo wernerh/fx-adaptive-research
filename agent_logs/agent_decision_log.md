@@ -3211,3 +3211,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("US trade balance" 0, "Ministry of Finance"/"portfolio flows" 0): US trade balance release -> later EUR/USD drift; Japan MoF weekly securities flows -> EUR/USD.
 - **Action:** two standard searches; academic hits already in research/; rest news/data pages; no item added (see R451 refill note).
 - **Observation for the human (not a notification):** same as R349-R450: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R452 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("Kansas City"/"Richmond Fed" 0, "Belgian"/"NBB" confidence 0): Richmond/Kansas City Fed manufacturing survey releases -> later EUR/USD drift; NBB business confidence release -> later EUR/USD drift.
+- **Action:** two standard searches; one Richmond Fed note opened (forecasts ISM/IP, no market data); rest schedules/data/calendar pages; no item added (see R452 refill note).
+- **Observation for the human (not a notification):** same as R349-R451: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
