@@ -5641,3 +5641,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   redirected and was not completed, contents not read -> UNVERIFIED, not cited. Other hits were FXStreet/XTB news pages (not evidence).
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result after IP releases (rule 3).
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R448 (not an item; no item added)
+- 2026-11-26 R448 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "import price", "employment cost", "negotiated wage", "unit labor" no entry;
+  ~80 other candidates (ECB fix, TIC, PPI, trade balance, current account, reverse repo/TGA, triple witching, NR7, technical
+  indicators, EIA/OPEC) already have entries. Angles: (a) US BLS import price index release (08:30 NY) -> later EUR/USD drift;
+  (b) US Employment Cost Index release -> later EUR/USD drift. Two standard searches.
+  (a) Hits already in research/academic_studies.md (not re-cited): Norges Bank Staff Memo 5/2026, Cagliesi-Della Bina-Tivegna
+  (CEPGR2), Fed IFDP 823, Cardiff a2006_4, Bundesbank Monthly Report Jan 2026, icmaif paper. New hit opened: Frömmel-Kiss M.-
+  Pintér, MNB WP 2009/3 (https://www.mnb.hu/letoltes/wp-2009-3.pdf; first ~40k of 87k chars read verbatim, rest via summary):
+  EUR/HUF 2003-04, Hungarian CPI/GDP/budget/C-A/rate news only, contemporaneous 1-minute reactions, "few significant coefficients
+  and no clear pattern" at 60 minutes; no import prices, no EUR/USD, no OOS or costs seen. (b) Hits were FXStreet/news pages only
+  (single-release reactions), not evidence, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle
+  (ECI is quarterly, ~36 dev events, below the power floor of lesson R090 even if a basis existed). pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
