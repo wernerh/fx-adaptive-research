@@ -5616,3 +5616,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   E-mini order-flow reversal; no FX, no cost numbers; gamma data not in pipeline. SSRN paper itself not opened, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result buildable
   from pipeline data for either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R446 (not an item; no item added)
+- 2026-11-26 R446 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/backlog.md: "Professional Forecasters"/"SPF" no entry; "Treasury FX report"/"manipulator" 2 incidental
+  mentions; ~40 other candidates (Ifo, PMI, ZEW, Sentix, ESI, COT, NY cut, ISM, PCE, GDP flash, Eurogroup, OAT, Jackson Hole, Sintra,
+  ECB minutes, TARGET holidays, BoJ, CNY fixing) already have entries. Angles: (a) ECB Survey of Professional Forecasters release ->
+  later EUR/USD drift; (b) US Treasury semiannual FX report / manipulator designations -> EUR/USD. Two standard searches.
+  (a) Hits were ECB/NCB SPF release pages and press releases only (survey results, not studies of market reaction); not opened, not
+  evidence, not cited. (b) Hits were Treasury press releases/reports, CFR/CSIS commentary, a CRS brief and a news page; no event study
+  of exchange-rate effects, none on EUR/USD; not opened, not cited.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
+  angle (SPF: quarterly, ~36 dev events, below the power floor of lesson R090 even if a basis existed). pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
