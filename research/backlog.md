@@ -5657,3 +5657,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle
   (ECI is quarterly, ~36 dev events, below the power floor of lesson R090 even if a basis existed). pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R449 (not an item; no item added)
+- 2026-11-26 R449 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "pending home", "construction spending", "unemployment rate", "Eurostat
+  unemployment" no entry; JOLTS, durable goods, retail sales, housing starts, Chicago PMI, GfK, Sentix, M3, PCE, Conference Board,
+  ADP, factory orders, TLTRO already have entries. Angles: (a) US pending home sales / construction spending releases (10:00 NY) ->
+  later EUR/USD drift; (b) Eurostat euro-area unemployment rate release (11:00 CET) -> later EUR/USD drift. Two standard searches.
+  (a) Hits were XTB/FXStreet single-release news pages only, not evidence, not cited. (b) Academic hits already in research/
+  (Jandejsek thesis, J. Int. Money Finance v90 2019 US employment report paper, Fed IFDP 823), not re-cited; other hits XTB/Dukascopy
+  news pages, not cited. No page opened this run (nothing new to verify).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
