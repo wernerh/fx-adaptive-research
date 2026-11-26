@@ -5832,3 +5832,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Only ERSA records on rand/USD (not opened, not cited) and SARB statement PDFs; no EUR/USD mechanism.
 - No item added: no verified EUR/USD drift mechanism in either angle. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R462 (not an item; no item added)
+- 2026-11-26 R462 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Banxico"/"Mexico" 1 file, "Poland"/"NBP" 1 file (academic_studies.md:
+  Jansen-de Haan PDF host and an EM-QE study; neither on NBP rate decisions -> EUR/USD). Angles: (a) Banxico policy announcements
+  -> EUR/USD spillover; (b) National Bank of Poland rate decisions -> EUR/USD. One standard search each.
+  (a) Opened Jurado Pedroza, "Around-the-Clock USD/MXN Volatility: Macroeconomic Announcement Spillovers and FX Market Intervention
+  Mechanisms", Banco de Mexico WP 2021-05 (https://econpapers.repec.org/RePEc:bdm:wpaper:2021-05; abstract page only, PDF not opened):
+  5-minute USD/MXN 2008-2017, volatility only; no EUR/USD, no drift, no OOS/costs. Other hits (Solis FX-puzzle PDF, MDPI JRFM 19(6) 410,
+  centralbanking.com) not opened, not cited.
+  (b) Opened Brzeszczynski-Gajdka-Kutan, NBP WP 303 (2019) (https://static.nbp.pl/publikacje/materialy-i-studia/303_en.pdf; first part
+  read verbatim, remainder via fetch summary, UNVERIFIED beyond the design): daily PLN vs USD/EUR/GBP/CHF/JPY 2000-2017, GARCH announcement-
+  day effects, 60 rate changes; no EUR/USD, no post-announcement drift, no OOS/costs. Other hits (BIS Papers 73, AGH, CEEOL) not opened.
+- No item added: no verified EUR/USD mechanism in either angle; both event sets are small (8 or ~11 decisions per year) relative to
+  the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
