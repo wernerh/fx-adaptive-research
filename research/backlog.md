@@ -5704,3 +5704,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   pages; no reaction or predictability study; not evidence, not cited.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R453 (not an item; no item added)
+- 2026-11-26 R453 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Monthly Treasury Statement"/"budget deficit"/"fiscal deficit" 0, "bank credit" 0,
+  "H.8" 2 incidental; "Adrian"/"Etula"/"Auerbach"/"Gorodnichenko" 0. Angles: (a) US fiscal releases (Monthly Treasury Statement) -> later
+  EUR/USD drift; (b) weekly Fed bank-credit / dealer-funding aggregates -> later EUR/USD. Two standard searches.
+  (a) Opened Auerbach-Gorodnichenko IMF ER 2016 (eScholarship): daily DoD contract news -> USD index impulse responses; no OOS, not
+  MTS, not EUR/USD. (b) Opened Adrian-Etula-Shin NY Fed SR361: monthly dealer repo / financial CP -> USD rates, OOS for "6 out of 9
+  advanced countries", but the EUR row was not read (full PDF fetch not permitted in time): UNVERIFIED. Entries in academic_studies.md.
+  Other hits (WEF, NBER w21100, Treasury ESF statements, Princeton thesis, IMF spillover note, AFA abstract, FRED graphs, Fed DDP page,
+  IFDP 1262) not opened, not cited.
+- No item added: no verified EUR-specific, out-of-sample, cost-aware result. An AES-style monthly item would also be underpowered on
+  dev (~72 months) and needs a new non-vendor data source. If a later run reads the EUR row of SR361's OOS table verbatim and it is
+  positive, a monthly item could be reconsidered (power note required). pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.

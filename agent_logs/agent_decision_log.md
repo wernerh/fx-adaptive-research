@@ -3216,3 +3216,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("Kansas City"/"Richmond Fed" 0, "Belgian"/"NBB" confidence 0): Richmond/Kansas City Fed manufacturing survey releases -> later EUR/USD drift; NBB business confidence release -> later EUR/USD drift.
 - **Action:** two standard searches; one Richmond Fed note opened (forecasts ISM/IP, no market data); rest schedules/data/calendar pages; no item added (see R452 refill note).
 - **Observation for the human (not a notification):** same as R349-R451: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R453 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("Monthly Treasury Statement"/"budget deficit" 0, "bank credit" 0): US fiscal releases -> later EUR/USD drift; weekly Fed dealer-funding / bank-credit aggregates -> later EUR/USD.
+- **Action:** two standard searches; Auerbach-Gorodnichenko 2016 and Adrian-Etula-Shin SR361 opened (partial reads); EUR row of SR361 OOS table not read (UNVERIFIED); no item added (see R453 refill note).
+- **Housekeeping note:** local clone's `main` had 50 unpushed commits (old R346-R395 line) diverged from origin/main; left untouched, this run worked on a detached checkout of origin/main and pushed from it.
+- **Observation for the human (not a notification):** same as R349-R452: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
