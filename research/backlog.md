@@ -5629,3 +5629,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware intraday/daily EUR/USD direction result for either
   angle (SPF: quarterly, ~36 dev events, below the power floor of lesson R090 even if a basis existed). pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R447 (not an item; no item added)
+- 2026-11-26 R447 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/backlog.md: "euro-area industrial"/"Eurostat industrial"/"IP release" no entry (US IP only incidental in
+  a release list, ~line 2144). Angles: (a) Eurostat euro-area industrial production release (11:00 CET) -> later EUR/USD drift;
+  (b) US Fed G.17 industrial production release (09:15 NY) -> later EUR/USD drift. Two standard searches.
+  Hits already in research/academic_studies.md (not re-cited): Cagliesi-Della Bina-Tivegna (Greenwich CEPGR2), Norges Bank Staff
+  Memo 5/2026, Fed IFDP 823, Dallas Fed GMPI WP 287, Andersen-Bollerslev-Diebold-Vega. New hits CEQURA WP 8
+  (https://www.cequra.lmu.de/download/cequra_wp8.pdf) and CESifo WP 7239 (https://www.cesifo.org/DocDL/cesifo1_wp7239.pdf): fetch
+  redirected and was not completed, contents not read -> UNVERIFIED, not cited. Other hits were FXStreet/XTB news pages (not evidence).
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result after IP releases (rule 3).
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

@@ -3191,3 +3191,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). Angles chosen because keyword checks found no prior entry ("signed jump" 0, "commercial paper" 0): signed jump variation / realized semivariance -> next-day EUR/USD; USD commercial-paper / funding spreads -> EUR/USD.
 - **Action:** two standard searches; HAL signed-jumps paper bot-blocked (UNVERIFIED); AEA 2020/2021 drafts of Della Corte et al. opened (already-logged JFE 2023 paper, CDS data not in pipeline); no item added (see R442 refill note).
 - **Observation for the human (not a notification):** same as R349-R441: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R447 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("euro-area industrial" 0, "IP release" 0): Eurostat and US G.17 industrial production releases -> later EUR/USD drift.
+- **Action:** two standard searches; relevant hits already in academic_studies.md; two new working papers not readable (UNVERIFIED); no item added (see R447 refill note).
+- **Observation for the human (not a notification):** same as R349-R446: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
