@@ -3228,3 +3228,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** three standard searches; Caruso ECARES WP 2016-32 abstract opened (contemporaneous daily surprise effects); rest news pages; no item added (see R454 refill note).
 - **Housekeeping note:** local clone's `main` still diverged (old shallow R346-R395 line); left untouched, this run worked on branch `run-r454` checked out from origin/main and pushed to main from it.
 - **Observation for the human (not a notification):** same as R349-R453: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R455 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("loan prime"/"LPR" 0, "Eurostat flash"/"HCOB" 0): PBoC LPR fixing -> Asian-session EUR/USD; euro-area flash HICP release -> later EUR/USD drift.
+- **Action:** three standard searches; Garcia-Werner IMF WP/18/167 opened (IL-swap contemporaneous reactions, no FX); rest news/data pages; no item added (see R455 refill note).
+- **Housekeeping note:** local clone's `main` still diverged (old R346-R395 line); left untouched, this run worked on a detached HEAD from origin/main and pushed to main from it.
+- **Observation for the human (not a notification):** same as R349-R454: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

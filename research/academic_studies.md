@@ -2638,3 +2638,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [IDEAS/RePEc page](https://ideas.repec.org/p/eca/wpaper/2013-235612.html) (abstract page opened via web-fetch; full PDF not fetched).
 - **Design/finding (abstract only):** daily USD/EUR, 1999-2012; "news" = Bloomberg-consensus surprises for US and euro-zone releases, incl. country-level announcements for Germany, France, Italy and Spain; both US and euro-zone news significantly affect USD/EUR, and "the effect of the euro-zone "news" has become larger since the 2008 crisis" (verbatim). Abstract does not mention German CPI specifically, post-release drift, OOS tests or costs (absence UNVERIFIED for the full paper).
 - **Relevance:** None for an item: contemporaneous daily reaction to surprises; Bloomberg consensus not in pipeline. **Status:** VERIFIED (abstract only).
+
+### Garcia & Werner (2018), "Inflation News and Euro Area Inflation Expectations", IMF Working Paper WP/18/167 (added 2026-11-26 R455)
+- **Link:** [IMF PDF](https://www.imf.org/-/media/Files/Publications/WP/2018/wp18167.ashx) (opened via web-fetch; text truncated, first part read).
+- **Design/finding:** reaction of euro-area 5y5y inflation-linked swap rates to inflation news incl. HICP flash estimates (Germany, Spain, Italy, euro area); daily regressions 2005-2017, intraday IL-swap windows of 15 and 120 minutes after release; surprises vs Bloomberg consensus. "statistically significant reactions mainly refer to the release of flash estimates at country level".
+- **Relevance:** None for an item: no EUR/USD, contemporaneous windows only, no drift/OOS/costs; consensus data not in pipeline. **Status:** VERIFIED (partial read).
