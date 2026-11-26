@@ -3206,3 +3206,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("NFIB" 0, "Survey of Consumer Expectations" 0): NFIB optimism release and NY Fed SCE release -> later EUR/USD drift.
 - **Action:** two standard searches; one paper opened (Binder-Campbell-Ryngaert MPRA 117628: survey-expectations outcome, no FX); rest calendar/news pages; no item added (see R450 refill note).
 - **Observation for the human (not a notification):** same as R349-R449: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.
+
+## 2026-11-26 R451 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles chosen because keyword checks found no prior entry ("US trade balance" 0, "Ministry of Finance"/"portfolio flows" 0): US trade balance release -> later EUR/USD drift; Japan MoF weekly securities flows -> EUR/USD.
+- **Action:** two standard searches; academic hits already in research/; rest news/data pages; no item added (see R451 refill note).
+- **Observation for the human (not a notification):** same as R349-R450: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed to make progress.

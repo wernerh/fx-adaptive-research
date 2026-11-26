@@ -5682,3 +5682,13 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   reaction to SCE releases, no OOS, no costs. Other hits were NY Fed press releases and an FXStreet page, not evidence.
 - No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-26 R451 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "US trade balance"/"trade balance release" 0, "Ministry of Finance"/"portfolio
+  flows"/"weekly securities" 0. Angles: (a) US Census/BEA international trade balance release (08:30 NY) -> later EUR/USD drift;
+  (b) Japan MoF weekly international transactions in securities (Thu 08:50 Tokyo) -> Asian/European-session EUR/USD. Two standard searches.
+  (a) Academic hits already in research/academic_studies.md (not re-cited): Fed IFDP 823, ECB WP 1901, Bundesbank Monthly Report Jan 2026
+  (R312). Rest were XTB/FXStreet single-release news pages; not evidence, not cited. (b) Hits were MoF data PDFs, BoJ BoP statistics
+  page, Trading Economics/Newsquawk data pages and Investing.com/MNI commentary; no study of predictive power for any exchange rate,
+  not evidence, not cited. MoF weekly flow data are also not in the pipeline.
+- No item added: no verified source gives a predictive, out-of-sample, cost-aware EUR/USD direction result for either angle.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
