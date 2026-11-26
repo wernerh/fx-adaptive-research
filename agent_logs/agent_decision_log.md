@@ -3264,3 +3264,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; Melvin et al. IJCB 2010 opened (GBP/USD only, no OOS/costs); SARB search returned rand-only records and statements; no item added (see R461 refill note).
 - **Housekeeping note:** local `main` had diverged from origin/main (50 stale local commits R347-R395 not on origin, a different lineage from origin's R347+). Origin treated as authoritative; local lineage kept on local branch `stale-local-main-backup` (not pushed), main reset to origin/main.
 - **Observation for the human (not a notification):** same as R349-R460: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed.
+
+## 2026-11-26 R463 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: BoJ Rinban operations -> Asian-session EUR/USD ("Rinban" 0 hits) and EIA weekly natural-gas storage -> EUR/USD (0 hits).
+- **Action:** two standard searches; the only two study hits could not be fetched (UNVERIFIED); no item added (see R463 refill note).
+- **Housekeeping note:** local `main` again diverged from origin/main (stale local R346-R395 lineage). Origin treated as authoritative; work done on local branch `run-work` from origin/main and pushed to main; local `main` left untouched.
+- **Observation for the human (not a notification):** same as R349-R462: refill passes are not producing admissible items; a human decision (new data source, relaxed refill criteria via SPEC section 11, or pausing the schedule) is needed.

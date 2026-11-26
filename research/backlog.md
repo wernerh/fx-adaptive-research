@@ -5847,3 +5847,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   day effects, 60 rate changes; no EUR/USD, no post-announcement drift, no OOS/costs. Other hits (BIS Papers 73, AGH, CEEOL) not opened.
 - No item added: no verified EUR/USD mechanism in either angle; both event sets are small (8 or ~11 decisions per year) relative to
   the R090 power floor. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R463 (not an item; no item added)
+- 2026-11-26 R463 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Rinban" 0, "natural gas storage"/"EIA storage" 0. Angles: (a) Bank of Japan
+  Rinban (JGB purchase operation) announcements -> Asian-session EUR/USD; (b) EIA weekly natural-gas storage report -> later EUR/USD
+  drift (euro-area gas-import channel). One standard search each.
+  (a) Tried Shino, Waseda DP 2022-001 (https://waseda.repo.nii.ac.jp/record/69315/files/DiscussionPaper_2022_001_Shino.pdf): redirect
+  target not fetchable (URL too long), UNVERIFIED, not cited. Other hits (AEA 2020 session paper, IMF WP 2025/227, BoJ Review 26-E-10,
+  CARF F-502, Keio DP 2025-015, MNI/MarketPulse news) not opened, not cited. Any Rinban channel runs through JGB yields/USD-JPY, not EUR/USD.
+  (b) Only one study hit: University of Reading CentAUR 90003 "NG_paper_final_round.pdf" (bot-blocked, UNVERIFIED, not cited); remaining
+  hits are FXStreet/calendar news pages. No verified EUR/USD mechanism.
+- No item added. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
