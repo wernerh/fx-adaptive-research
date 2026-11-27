@@ -3377,3 +3377,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: EUR-specific (dollar-factor residual) move -> next-day reversal, and survey exchange-rate forecast dispersion -> EUR/USD.
 - **Action:** two standard searches; opened Hertrich (Bayreuth dissertation 2025, G10 portfolios) and the IDEAS record of Cavusoglu-Neveu (JoF 2015, metadata only); no item added (see R485 refill note).
 - **Housekeeping note:** local `main` again diverged from origin/main (stale history, 50 commits); left it untouched and worked on a branch from origin/main, pushed to origin main.
+
+## 2026-11-27 R486 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: recent (2026) arXiv intraday-predictability studies with OOS and costs, and limit-order-book queue/depth imbalance -> EUR/USD direction.
+- **Action:** two standard searches; opened arXiv 2605.04004 (MNQ futures only, no FX); no item added (see R486 refill note).
+- **Housekeeping note:** local `main` again diverged from origin/main (stale history, 50 commits); saved it as branch `backup-stale-main` and reset local main to origin/main.

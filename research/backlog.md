@@ -6220,3 +6220,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle, and (b) lacks a downloadable data source.
   pytest 464 passed (after installing missing statsmodels via pip install -e ".[dev]"). 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R486 (not an item; no item added)
+- 2026-11-27 R486 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "2605.04004" 0 hits, "queue imbalance" 0 hits, "1512.03492" 0 hits (EXFormer
+  2512.12727, 2602.00776 and ~60 other candidates such as GDELT, COT, HICP, weekend gap, swap line, cointegration already have entries).
+  Angles: (a) recent (2026) intraday-predictability studies with walk-forward OOS and costs; (b) limit-order-book queue/depth imbalance
+  -> EUR/USD direction. One standard search each.
+  (a) Opened Mesfin, "Structural Limits of OHLCV-Based Intraday Momentum Signals in MNQ Futures: A Systematic Falsification Study",
+  arXiv 2605.04004 v3 (abstract page, fetch-agent summary): Micro E-mini Nasdaq-100 futures only, 5-minute OHLCV 2021-2025,
+  walk-forward OOS with friction; 0 of 14 intraday momentum families passed all criteria. No FX, no EUR/USD; consistent with this
+  repo's null intraday-momentum results but not a new testable mechanism.
+  (b) Hits (Gould-Bonart "Queue Imbalance as a One-Tick-Ahead Price Predictor", arXiv 1512.03492; arXiv 2507.22712, 2506.05764) need
+  limit-order-book depth; Dukascopy runner data has top-of-book quotes only, so not testable here. Not opened, not cited.
+- No item added: no verified EUR/USD directional mechanism testable with runner data. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
