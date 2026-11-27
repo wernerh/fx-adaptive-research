@@ -2658,3 +2658,11 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [arXiv abstract](https://arxiv.org/abs/1507.01610), [v1 PDF](https://arxiv.org/pdf/1507.01610v1) (opened via web-fetch).
 - **Design/finding:** weekly EUR/USD strategy (entry after a set move from a weekly zero-level; exit on trailing stop, profit call or week end), 2011-mid 2015; four parameters re-optimised on the prior 1-3 years and applied to the next year; mean weekly P&L ~107-127 EUR per 1000 EUR position at 1:200 leverage, unstable by year (2014 weak); overnight commission 0.14% only, no spread; no significance test; abstract calls results "hypothetical".
 - **Relevance:** Low: no fixed parameter set to pre-register, no spread cost, unstable. **Status:** VERIFIED.
+
+### Tuzun (2013), FEDS WP 2013-48: Are Leveraged and Inverse ETFs the New Portfolio Insurers? (R483)
+- https://www.federalreserve.gov/pubs/feds/2013/201348/201348pap.pdf (~50% verbatim). US equity-index LETFs 2006-2011; late-day
+  (3-4 pm ET) rebalancing price impact on constituents, partial next-day reversal. Equities only, no FX, in-sample, no costs.
+
+### Zhao (2026 draft), arXiv 2608.03703: Preying on Leveraged ETFs (R483)
+- https://arxiv.org/pdf/2608.03703 (~14% verbatim). Korean single-stock LETFs (Samsung, SK Hynix) 2026; predictable closing
+  rebalance, close overshoot and ~60% next-close reversal. Equities only, no FX, no OOS; cost treatment UNVERIFIED.

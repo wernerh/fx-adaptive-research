@@ -6170,3 +6170,20 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   EUR/USD figures, OOS and cost treatment from unread part -> UNVERIFIED. MACD/RSI already covered in backlog.
 - No item added: neither source tests point-and-figure or Dow-Theory rules on EUR/USD, and nothing new is significant net of
   costs. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+- 2026-11-27 R483 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/backlog.md: "leveraged ETF", "inverse ETF", "EUO" 0 hits; "sight deposit" 6 (Kugler 2020 already
+  opened, R-entry near line 3503); ~120 other indicator/calendar/macro keywords already covered. Angles: (a) leveraged/inverse
+  ETF end-of-day rebalancing flows -> late-NY EUR/USD drift and next-day reversal; (b) SNB weekly sight-deposit changes ->
+  EUR/USD. One standard search each.
+  (a) Opened Tuzun, "Are Leveraged and Inverse ETFs the New Portfolio Insurers?", FEDS WP 2013-48
+  (https://www.federalreserve.gov/pubs/feds/2013/201348/201348pap.pdf; ~50% verbatim, rest fetch-agent summary): US equity-index
+  LETFs 2006-2011, 3:00-4:00 pm ET price impact (S&P +1% -> "6.9 basis-point increase in price" in an average large-cap stock),
+  negative next-day reversal coefficients; equities only, no FX, no OOS, no costs. Opened Zhao, "Preying on Leveraged ETFs",
+  arXiv 2608.03703, Aug 2026 draft (~14% verbatim): Korean single-stock LETFs 2026, close overshoot and ~60% reversal; equities
+  only, no FX, no OOS, costs unclear. Other hits (CME month-end FX flows article, BIS WP 952, NSF PAR 10519312, TradingView idea)
+  not opened, not cited.
+  (b) Hits: Kugler (2020) CORE/EconBiz record and BoI kugler.pdf (already logged) plus FX news pages (not evidence, not opened).
+- No item added: no source shows currency-LETF rebalancing moving EUR/USD (currency LETF assets are not in the pipeline and no
+  EUR/USD evidence exists); sight deposits already covered. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.
