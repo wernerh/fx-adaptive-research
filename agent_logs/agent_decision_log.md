@@ -3352,3 +3352,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Tokyo 15:00 option cut and option-expiry pinning -> EUR/USD.
 - **Action:** two standard searches; only already-logged papers (Ito-Yamada NBER w21518) and broker/news expiry lists; no item added (see R479 refill note).
 - **Housekeeping note:** local `main` again diverged from origin/main (stale history); worked on branch `run-r479` from origin/main and pushed it to origin/main; local main untouched.
+
+## 2026-11-27 R480 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Dukascopy SWFX sentiment index and outside-day/key-reversal/overreaction patterns -> EUR/USD.
+- **Action:** two standard searches; opened NTU weekend-overreaction paper (EUR/USD alpha n.s., same mechanism as rejected E020) and Essex directional-changes paper (10-min, one year of EUR/USD, numbers UNVERIFIED); no item added (see R480 refill note).
+- **Housekeeping note:** local `main` still diverged from origin/main (stale history); worked on branch `run-r480` from origin/main and pushed it to origin/main; local main untouched.
