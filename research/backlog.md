@@ -5938,3 +5938,14 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Power indicator; EUR/USD results not read (UNVERIFIED). Other hits are TradingView/MQL5/broker pages, not cited.
 - No item added: no verified EUR/USD evidence for Fisher-transform or Balance-of-Power rules; both are oscillator/bar-shape variants of
   families already tested (E042-E049) and closed. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-27 R469 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Michigan" 1 hit, "Garman" 0 hits. Angles: (a) University of Michigan
+  consumer-sentiment release -> EUR/USD; (b) Garman-Klass / range-based volatility -> next-day EUR/USD direction. One standard search each.
+  (a) All hits are broker/news pages (XTB, FXStreet), no study; not cited. Release-time tests also need the economic calendar (B6 blocked).
+  (b) Opened Kearney, Shang & Zhao, "Intraday FX Volatility-Curve Forecasting with Functional GARCH Approaches", arXiv 2311.18477v3
+  (https://arxiv.org/html/2311.18477v3): USD/EUR, USD/GBP, USD/JPY 5-minute bid/ask, 2014-01-07..2020-09-30; forecasts intraday
+  volatility curves (FGARCH/FGARCH-X), not return direction; no Garman-Klass/range estimator. A VaR-adjusted intraday strategy with
+  costs is reported, but details were read only via model summary (UNVERIFIED). Other hits (core.ac.uk, unipd, muni, stir, JBS) not
+  opened, not cited.
+- No item added: no verified EUR/USD direction evidence for either angle; volatility-as-predictor already tested (E008 NOT_USEFUL) and
+  release tests are blocked on calendar data (B6). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

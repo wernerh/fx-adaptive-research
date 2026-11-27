@@ -3294,3 +3294,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; two documents opened, neither tests these indicators on EUR/USD with OOS and costs; no item added (see R468 refill note).
 - **Housekeeping note:** local `main` still diverged (stale R346-R395 lineage); worked on a branch from origin/main and pushed it to main; local `main` left untouched.
 - **Observation for the human (not a notification):** same as R349-R467: refill passes are not producing admissible items; a human decision is needed.
+
+## 2026-11-27 R469 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Michigan consumer-sentiment release and Garman-Klass range volatility -> EUR/USD (lowest keyword hit counts).
+- **Action:** two standard searches; one document opened, it forecasts volatility rather than direction; no item added (see R469 refill note).
+- **Housekeeping note:** local `main` still diverged (stale lineage); worked on a branch from origin/main and pushed it to main; local `main` left untouched.
+- **Observation for the human (not a notification):** same as R349-R468: refill passes are not producing admissible items; a human decision is needed.
