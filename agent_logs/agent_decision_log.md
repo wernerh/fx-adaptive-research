@@ -3372,3 +3372,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: FX last-look rejection asymmetry and big-figure round-number barriers -> EUR/USD.
 - **Action:** two standard searches; opened Cartea-Jaimungal-Walton arXiv 1806.04460 (theory only, no data) and CORE 459166611 (Caporale-Plastun-Oliinyk, already logged); no item added (see R484 refill note).
 - **Housekeeping note:** local `main` had diverged from origin/main (stale history); saved it as branch `stale-local-main` and reset local main to origin/main before working.
+
+## 2026-11-27 R485 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: EUR-specific (dollar-factor residual) move -> next-day reversal, and survey exchange-rate forecast dispersion -> EUR/USD.
+- **Action:** two standard searches; opened Hertrich (Bayreuth dissertation 2025, G10 portfolios) and the IDEAS record of Cavusoglu-Neveu (JoF 2015, metadata only); no item added (see R485 refill note).
+- **Housekeeping note:** local `main` again diverged from origin/main (stale history, 50 commits); left it untouched and worked on a branch from origin/main, pushed to origin main.
