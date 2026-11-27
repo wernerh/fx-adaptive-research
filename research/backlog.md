@@ -6084,3 +6084,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   fact). Flag for the human: if the author's EA grid (N, Z ranges, steps) were obtained, B-item "VGRSI walk-forward replication on
   dev, M1/M5/M30 bid/ask" becomes pre-registrable. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline
   failure.
+
+- 2026-11-27 R478 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Uridashi" 0 hits, "sample entropy" 0, "quote stuffing" 0, "Xetra" 0;
+  ~60 other flow/calendar/entropy keywords (Toshin, GPIF, PBoC, roll week, IMM, VPIN, permutation entropy, Lempel, Hurst, HAR,
+  volatility-managed, Italian spread, Frankfurt open, ...) already covered. Angles: (a) Uridashi (Japanese retail foreign-currency
+  bond) issuance -> EUR/USD; (b) entropy-regime (sample/Shannon entropy) predictability filters -> EUR/USD. One standard search each.
+  (a) Hits were Wikipedia/glossary pages and working papers (BIS WP 753, ESM WP 26, FRBSF WP 10-04, Kano-Wada JIMF 2016 conf.
+  draft, UW thesis); none opened (no EUR/USD intraday or daily-direction claim visible; Uridashi flows are mostly AUD/NZD/TRY/BRL
+  vs JPY and issuance data is monthly, not in repo). Not cited.
+  (b) Opened Shternshis & Mazzarisi, "Variance of entropy for testing time-varying regimes with an application to meme stocks",
+  Decisions in Economics and Finance 47(1), 2024, https://doi.org/10.1007/s10203-023-00427-9 (~25% verbatim, rest fetch-agent
+  summary, last ~13% not read): GME/BBBY/AMC/AAPL/CRM/MSFT 1-minute 2019-2021, low-entropy-interval pattern rule, "excluding
+  transaction costs"; no FX. Opened Shternshis & Marmi, "Price predictability at ultra-high frequency: Entropy-based randomness
+  test", arXiv 2312.16637v3 (https://arxiv.org/html/2312.16637v3; ~55% verbatim): LOBSTER US equities Aug-Nov 2022, in-sample
+  daily randomness tests, no trading rule, no costs, no FX. Other hits (arXiv 2308.04181 INR regularity, Zapart 2010, Charles
+  Univ. thesis) not opened.
+- No item added: no opened source gives a EUR/USD (or any FX) directional or trading result; entropy evidence is equities-only,
+  in-sample or gross of costs (rule 3). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
