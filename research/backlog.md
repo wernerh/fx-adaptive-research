@@ -6045,3 +6045,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no study of either rule on EUR/USD (or any FX pair) surfaced; spot-FX "volume" in the pipeline is tick count,
   so a Klinger replication would also rest on no published grounds. pytest 464 passed. 0 trials used (dev 262, val 9, total
   271). Not a pipeline failure.
+
+- 2026-11-27 R476 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Relative Vigor" 0 hits, "Vertical horizontal" 0, "Random walk index" 0;
+  ~45 other indicator/calendar keywords (Thanksgiving, Parabolic SAR, Williams %R, Chaikin, DeMark, Renko, Choppiness, Supertrend,
+  VWAP, KAMA, ...) already covered. Angles: (a) Relative Vigor Index rules -> EUR/USD; (b) Vertical Horizontal Filter / Random
+  Walk Index trend-state filters -> EUR/USD. One standard search each.
+  (a) All hits were broker/vendor/tutorial pages (eodhd, brokerxplorer, broker-forex.fr, bybit, avatrade, capital.com,
+  TradingView) and a GitHub-pages vendor backtest; not evidence, not cited, none opened.
+  (b) Hits mostly already logged (jdhf.2011.31, Klein Tank Erasmus 12232, Sokolovski UCT, Glasgow 246954, Exeter 10036/3463) or
+  platform help pages. Opened Idone, "Validation of trading strategies in the foreign exchange", UCL PhD thesis, Feb 2019
+  (https://discovery.ucl.ac.uk/10133586/1/PhD%20Thesis%20Idone.pdf; ~17% verbatim, rest fetch-agent summary): daily trend-following
+  (MA crossover, ROC, ADX, Bollinger, RSI), carry, value, option premia and intraday RNN forecasts on G10 incl. EUR/USD, costs
+  included in most tables; no VHF/RWI/RVI rule in the text read; EUR/USD result numbers UNVERIFIED (table bodies not read).
+- No item added: no study tests RVI, VHF or RWI on EUR/USD or any FX pair; the one academic hit covers rule families already
+  tested here (MA/ADX trend filters). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
