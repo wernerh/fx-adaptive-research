@@ -6264,3 +6264,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   the event-count power floor for the dev block.
 - No item added: no new verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R489 (not an item; no item added)
+- 2026-11-27 R489 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "earthquake" 0 hits, "Atlantic hurricane" 0 hits, "natural disaster" 1 hit
+  (R-note line ~3538, IMF hits not opened), "Macroeconomic and Foreign Exchange Policies" 0 hits ("manipulat"/"FX report" entries
+  exist). Angles: (a) natural disasters (earthquakes, hurricanes) -> EUR/USD; (b) US Treasury semiannual FX report releases ->
+  EUR/USD. One standard search each.
+  (a) Opened Nguyen & Nguyen IMF WP/24/186 (monthly effective rates, 177 countries, no EUR/USD, no OOS/costs) and van Donk Erasmus
+  BSc 2020 (JPY/NZD/THB/PHP vs USD, 4 events, only Japan 2011 significant, no EUR/USD/OOS/costs); both logged in
+  research/academic_studies.md. Large disasters affecting the euro area or US are a handful of events in dev, below the R090 power floor.
+  (b) Hits were treasury.gov press releases and a CFR explainer (not opened, not cited); no market-reaction study. The report is ~2
+  releases per year (~12 dev events), below the power floor.
+- No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.

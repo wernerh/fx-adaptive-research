@@ -2666,3 +2666,15 @@ US session. That is unproven, which is exactly why E001 comes first.
 ### Zhao (2026 draft), arXiv 2608.03703: Preying on Leveraged ETFs (R483)
 - https://arxiv.org/pdf/2608.03703 (~14% verbatim). Korean single-stock LETFs (Samsung, SK Hynix) 2026; predictable closing
   rebalance, close overshoot and ~60% next-close reversal. Equities only, no FX, no OOS; cost treatment UNVERIFIED.
+
+### Nguyen & Nguyen (2024), IMF WP/24/186: Currencies in Turbulence: Exploring the Impact of Natural Disasters on Exchange Rates (R489)
+- https://www.imf.org/en/Publications/WP/Issues/2024/08/30/Currencies-in-Turbulence-Exploring-the-Impact-of-Natural-Disasters-on-Exchange-Rates-553991
+  (landing page and text extraction opened via web-fetch; DOI 10.5089/9798400289385.001). Monthly NEER/REER, 177 countries 1970-2019,
+  EM-DAT disasters >= 0.1% of GDP, local projections. Large NEER effects in non-pegged EMDEs, mostly insignificant for advanced
+  economies. No bilateral EUR/USD, no trading rule, no OOS, no costs. **Relevance:** none for an item. **Status:** VERIFIED (partial read).
+
+### van Donk (2020), Erasmus BSc thesis: Natural disaster effects on exchange rates, a preliminary study (R489)
+- https://thesis.eur.nl/pub/53079/thesis_final.pdf (full text opened via web-fetch; tables partly garbled). JPY, NZD, THB, PHP vs USD,
+  four Asia-Pacific disasters (2004-2013), daily GARCH / event study, minute data for JPY/NZD. Only Japan 2011 significant (yen up);
+  author calls longer-term results exploratory and not robust. No EUR/USD, no OOS, no trading rule, no costs. **Relevance:** none.
+  **Status:** VERIFIED.

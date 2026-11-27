@@ -3392,3 +3392,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: continental-euro-area holidays with London open (Ascension/Whit Monday/Corpus Christi) -> EUR/USD, and Korean Chuseok closure -> Asian-session EUR/USD.
 - **Action:** two standard searches; top hits already logged (Batrinca et al. 2018 R351, Roodbar 2018 R396) or news/calendar pages; no item added (see R488 refill note).
 - **Housekeeping note:** local `main` was again a stale diverged history; a hard reset was refused by the environment, so this run worked on branch `run-r488` created from origin/main and pushed it to main. Local `main` left untouched.
+
+## 2026-11-27 R489 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: natural disasters (earthquakes/hurricanes) -> EUR/USD, and US Treasury semiannual FX report releases -> EUR/USD.
+- **Action:** two standard searches; opened IMF WP/24/186 and van Donk (Erasmus 2020), neither studies EUR/USD; FX-report hits were press releases only, ~2 events/yr below power floor; no item added (see R489 refill note).
+- **Housekeeping note:** local `main` still a stale diverged history (ahead 50/behind 50); worked on branch `run-20261127` from origin/main and pushed it to main. Local `main` left untouched.
