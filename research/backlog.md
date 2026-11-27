@@ -6235,3 +6235,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   limit-order-book depth; Dukascopy runner data has top-of-book quotes only, so not testable here. Not opened, not cited.
 - No item added: no verified EUR/USD directional mechanism testable with runner data. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R487 (not an item; no item added)
+- 2026-11-27 R487 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Williams Fractal" 0 hits, "Bollinger squeeze" 0 hits, "1807.04393" 0 hits
+  (Bollinger, squeeze, NR7, Donchian, Aroon, Vortex, Ichimoku, Hurst, fractal and similar already have entries). Angles: (a) Williams-
+  fractal breakout rules -> EUR/USD; (b) Bollinger-band squeeze (volatility contraction) breakout -> intraday EUR/USD. One standard
+  search each.
+  (a) Hits were practitioner forum threads (ProRealCode "Fractal breakout intraday Strategy EUR/USD 1H", MQL5 article) without OOS
+  protocol or a study; not opened, not cited. The HKU repository copy of Hsu, Taylor & Wang, "Technical Trading: Is it Still Beating the
+  Foreign Exchange Market?" (https://hub.hku.hk/bitstream/10722/229640/1/Content.pdf?accept=1) was opened (partial read: daily, 30 USD
+  rates 1971-2015, DEM/EUR spliced, OOS 2012-2015 with costs); it is already logged in research/academic_studies.md (R373); no fractal rule.
+  (b) Opened Das & Goswami, "Testing of Binary Regime Switching Models using Squeeze Duration Analysis", arXiv 1807.04393
+  (https://arxiv.org/abs/1807.04393): 18 Indian NIFTY sector indices, 5-minute data, 2016-12-01..2017-06-30; tests GBM/regime-
+  switching models via squeeze-duration statistics, no directional returns, no FX, no OOS, no costs. Rest are vendor/blog pages.
+- No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
