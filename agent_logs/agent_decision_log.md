@@ -3324,3 +3324,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; two documents opened (Bugaenko arXiv 2004.08290: equity price impact; Temnov arXiv 1507.01610: weekly EUR/USD OU/trailing-stop, re-optimised parameters, no spread cost); no item added (see R473 refill note).
 - **Housekeeping note:** local `main` was diverged (stale lineage); saved as local branch `stale-local-main-backup`, reset local `main` to origin/main before working.
 - **Observation for the human (not a notification):** same as R349-R472: refill passes are not producing admissible items; a human decision is needed.
+
+## 2026-11-27 R474 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Ehlers Laguerre RSI and Guppy multiple moving averages -> EUR/USD (no prior keyword hits).
+- **Action:** two standard searches; two documents opened (Onorieru NOVA IMS 2025: GA-tuned RSI+ADX, EUR/USD OOS -20.42%; Leung Erasmus 2009: emerging-market currencies only); no item added (see R474 refill note).
+- **Housekeeping note:** local `main` was a shallow-clone ancestor of origin/main; fast-forwarded.
+- **Observation for the human (not a notification):** same as R349-R473: refill passes are not producing admissible items; a human decision is needed.
