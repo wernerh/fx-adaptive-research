@@ -3397,3 +3397,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: natural disasters (earthquakes/hurricanes) -> EUR/USD, and US Treasury semiannual FX report releases -> EUR/USD.
 - **Action:** two standard searches; opened IMF WP/24/186 and van Donk (Erasmus 2020), neither studies EUR/USD; FX-report hits were press releases only, ~2 events/yr below power floor; no item added (see R489 refill note).
 - **Housekeeping note:** local `main` still a stale diverged history (ahead 50/behind 50); worked on branch `run-20261127` from origin/main and pushed it to main. Local `main` left untouched.
+
+## 2026-11-27 R490 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: quote inter-arrival durations (ACD) -> EUR/USD direction, and NAHB housing index release -> EUR/USD.
+- **Action:** two standard searches; ACD hit was Cai-Zhang (already logged R140; venue/year EFM 2016 now verified, appended entry), tick horizon below cost hurdle; NAHB hits were calendar/news pages only; no item added (see R490 refill note).
+- **Housekeeping note:** local `main` was a stale shallow clone history; fetched deeper and fast-forwarded to origin/main.

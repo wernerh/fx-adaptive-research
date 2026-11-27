@@ -6278,3 +6278,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   releases per year (~12 dev events), below the power floor.
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R490 (not an item; no item added)
+- 2026-11-27 R490 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "inter-arrival" 0 hits, "price duration" 0 hits, "NAHB" 0 hits (~60 other
+  candidate keywords incl. TA indicators, US/euro-area releases, volume-return, bid/ask volume imbalance, semivariance already have
+  entries). Angles: (a) quote inter-arrival durations (ACD) -> subsequent EUR/USD direction; (b) NAHB housing index release ->
+  EUR/USD. One standard search each.
+  (a) Top hit was Cai-Zhang, already logged R140 (research/academic_studies.md); venue/year now verified as EFM 22(1) 2016 (appended
+  entry). ACM-ACD predicts the next tick quote-change direction (54-70% correct), a seconds horizon below the SPEC 4 cost hurdle;
+  other hits (Wikipedia, quantile-ACD arXiv 2109.03844, MPRA 103250, Konstanz) not opened, not cited.
+  (b) Hits were economic-calendar and news pages only (fxblue, xtb, rttnews, MNI; not opened, not cited); no study. Release-time
+  tests are also calendar-blocked (B6).
+- No item added: no verified EUR/USD directional mechanism at a tradable horizon with OOS evidence. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.

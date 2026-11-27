@@ -2678,3 +2678,11 @@ US session. That is unproven, which is exactly why E001 comes first.
   four Asia-Pacific disasters (2004-2013), daily GARCH / event study, minute data for JPY/NZD. Only Japan 2011 significant (yen up);
   author calls longer-term results exploratory and not robust. No EUR/USD, no OOS, no trading rule, no costs. **Relevance:** none.
   **Status:** VERIFIED.
+
+### Cai & Zhang (2016) venue/year update (R490; supersedes only the "year UNVERIFIED" note of the R140 entry above)
+- https://econpapers.repec.org/RePEc:bla:eufman:v:22:y:2016:i:1:p:120-141 and https://durham-repository.worktribe.com/output/1394658
+  (abstract pages opened via web-fetch 2026-11-27) and https://eu.vlex.com/vid/highfrequency-exchange-rate-forecasting-855644276
+  (introduction only, rest paywalled). European Financial Management 22(1), 120-141, 2016, DOI 10.1111/eufm.12052. ACM-ACD
+  (Russell-Engle) model of tick-by-tick quote-change direction, out-of-sample evaluation per the introduction; abstract (verbatim):
+  "with the rate of correct predictions varying from 54 to 70%". Transaction costs not seen. **Relevance:** unchanged (tick-horizon
+  next-quote-change direction, below tradable horizon after SPEC 4 costs). **Status:** VERIFIED (abstract + partial text).
