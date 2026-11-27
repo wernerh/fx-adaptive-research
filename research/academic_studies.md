@@ -2648,3 +2648,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Link:** [DN page](https://nationalbanken.dk/en/news-and-knowledge/publications-and-speeches/archive-publications/2017/effects-of-danmarks-nationalbank-s-interventions-in-the-foreign-exchange-market), [PDF](https://www.nationalbanken.dk/media/ts2h0rfe/effects-of-dns-interventions-in-the-foreign-exchange-markets-mon4q-2016.pdf) (both opened via web-fetch; PDF read in full).
 - **Design/finding:** daily EUR/DKK (17:00 Danish close), 2002 to 2016-10-24; regression of daily krone change on DN interventions with IV (prior five days' interventions) and sub-periods; "interventions constitute an effective instrument to stabilise the exchange rate". No EUR/USD, no OOS, no costs; DN "does not publish data on its interventions on a daily basis".
 - **Relevance:** None for an item: EUR/DKK peg only, intervention dates not public at daily frequency. **Status:** VERIFIED.
+
+### Bugaenko (2019), "Empirical Study of Market Impact Conditional on Order-Flow Imbalance", MSc dissertation (arXiv 2004.08290) (added 2026-11-27 R473)
+- **Link:** [arXiv PDF](https://arxiv.org/pdf/2004.08290) (opened via web-fetch; last ~7% not read).
+- **Design/finding:** NASDAQ LOBSTER event-level order-book data for a few stocks, 2015; price impact vs order-flow imbalance; "for small signed order-flows, the price impact grows linearly with increase in the order-flow imbalance". No FX, no directional/profit test, no costs.
+- **Relevance:** None for an item: equities, impact not direction. **Status:** VERIFIED (partial read).
+
+### Temnov (2015), "Analysis of Ornstein-Uhlenbeck process stopped at maximum drawdown and application to trading strategies with trailing stops", arXiv 1507.01610 (added 2026-11-27 R473)
+- **Link:** [arXiv abstract](https://arxiv.org/abs/1507.01610), [v1 PDF](https://arxiv.org/pdf/1507.01610v1) (opened via web-fetch).
+- **Design/finding:** weekly EUR/USD strategy (entry after a set move from a weekly zero-level; exit on trailing stop, profit call or week end), 2011-mid 2015; four parameters re-optimised on the prior 1-3 years and applied to the next year; mean weekly P&L ~107-127 EUR per 1000 EUR position at 1:200 leverage, unstable by year (2014 weak); overnight commission 0.14% only, no spread; no significance test; abstract calls results "hypothetical".
+- **Relevance:** Low: no fixed parameter set to pre-register, no spread cost, unstable. **Status:** VERIFIED.

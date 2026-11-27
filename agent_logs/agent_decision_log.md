@@ -3318,3 +3318,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; one document opened (Dunis-Kellard-Snaith JBF 2013 abstract: implied-volatility forecasting, not direction); no item added (see R472 refill note).
 - **Housekeeping note:** local `main` still diverged (stale lineage); worked on a branch from origin/main and pushed it to main; local `main` left untouched.
 - **Observation for the human (not a notification):** same as R349-R471: refill passes are not producing admissible items; a human decision is needed.
+
+## 2026-11-27 R473 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Kyle-lambda / price-impact state and OU mean reversion with trailing stops -> EUR/USD (low keyword hit counts among remaining candidates).
+- **Action:** two standard searches; two documents opened (Bugaenko arXiv 2004.08290: equity price impact; Temnov arXiv 1507.01610: weekly EUR/USD OU/trailing-stop, re-optimised parameters, no spread cost); no item added (see R473 refill note).
+- **Housekeeping note:** local `main` was diverged (stale lineage); saved as local branch `stale-local-main-backup`, reset local `main` to origin/main before working.
+- **Observation for the human (not a notification):** same as R349-R472: refill passes are not producing admissible items; a human decision is needed.

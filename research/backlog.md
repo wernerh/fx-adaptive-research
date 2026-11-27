@@ -6000,3 +6000,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD direction evidence for either angle; volatility-state predictors already tested and closed
   (E008 NOT_USEFUL, vol-state conditioning lines), and a second data source (SX7E / VSTOXX intraday) would be a new pipeline on no
   published grounds. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-27 R473 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Kyle" 1 hit, "half-life" 1 hit, arXiv 2004.08290 and 1507.01610 0 hits.
+  Angles: (a) Kyle-lambda / price-impact state -> later EUR/USD direction; (b) Ornstein-Uhlenbeck mean reversion with trailing
+  stops -> EUR/USD. One standard search each.
+  (a) Opened Bugaenko, "Empirical Study of Market Impact Conditional on Order-Flow Imbalance", MSc dissertation, 2019
+  (https://arxiv.org/pdf/2004.08290): NASDAQ LOBSTER equity order-book data, 2015; price-impact regression (MSE/R^2), no FX, no
+  direction, OOS-profit or cost test. Read via fetch-agent (last ~7% of PDF not read). Other hits not opened, not cited.
+  (b) Opened Temnov, "Analysis of Ornstein-Uhlenbeck process stopped at maximum drawdown and application to trading strategies
+  with trailing stops", arXiv 1507.01610 (2015) (https://arxiv.org/abs/1507.01610; v1 PDF read): weekly EUR/USD entries from a
+  weekly zero-level with trailing stop / profit call, 2011-mid 2015; four parameters re-optimised on prior 1-3 years each year;
+  mean weekly P&L in euros, no significance test, overnight commission only (no spread model); author calls results
+  "hypothetical" and notes 2014 breaks the model. Read via fetch-agent summary.
+- No item added: (a) equity-only, impact not direction, and EUR/USD order-flow data are not in the pipeline; (b) no fixed
+  pre-registrable parameter set (yearly re-optimisation of four parameters), unstable year-by-year results, no spread cost and
+  no significance test; a faithful replication would be a parameter search, against SPEC trial discipline. pytest 464 passed.
+  0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
