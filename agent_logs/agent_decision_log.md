@@ -3387,3 +3387,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Williams-fractal breakout rules -> EUR/USD, and Bollinger-band squeeze (volatility contraction) breakouts -> intraday EUR/USD.
 - **Action:** two standard searches; opened arXiv 1807.04393 (Indian sector indices, no FX/direction) and the HKU copy of Hsu-Taylor-Wang (already logged R373); no item added (see R487 refill note).
 - **Housekeeping note:** local `main` had diverged from origin/main again (stale history, 50 commits); saved it as branch `stale-local-main-backup` and reset local main to origin/main.
+
+## 2026-11-27 R488 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: continental-euro-area holidays with London open (Ascension/Whit Monday/Corpus Christi) -> EUR/USD, and Korean Chuseok closure -> Asian-session EUR/USD.
+- **Action:** two standard searches; top hits already logged (Batrinca et al. 2018 R351, Roodbar 2018 R396) or news/calendar pages; no item added (see R488 refill note).
+- **Housekeeping note:** local `main` was again a stale diverged history; a hard reset was refused by the environment, so this run worked on branch `run-r488` created from origin/main and pushed it to main. Local `main` left untouched.

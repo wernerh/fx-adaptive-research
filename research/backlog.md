@@ -6251,3 +6251,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   switching models via squeeze-duration statistics, no directional returns, no FX, no OOS, no costs. Rest are vendor/blog pages.
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R488 (not an item; no item added)
+- 2026-11-27 R488 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Chuseok" 0 hits, "Pentecost" 0 hits, "Ascension" 1 hit, "Corpus Christi" 1 hit
+  (Easter, Assumption, Golden Week, Obon, Chinese New Year, Diwali and similar already have entries). Angles: (a) continental-euro-area
+  holidays with London open (Ascension, Whit Monday, Corpus Christi) -> EUR/USD; (b) Korean Chuseok closure -> Asian-session EUR/USD.
+  One standard search each.
+  (a) Top hits were Batrinca-Hesse-Treleaven IJFE 2018 (UCL Discovery 10059527) and Roodbar Newcastle PhD 2018, both already logged in
+  research/academic_studies.md (R351, R396); rest were EURES holiday calendars and a CFA digest on US holidays (not opened, not cited).
+  (b) Hits were Korean news articles on KOSPI after Chuseok (no FX study; not opened, not cited). Chuseok is ~1 event per year, below
+  the event-count power floor for the dev block.
+- No item added: no new verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.
