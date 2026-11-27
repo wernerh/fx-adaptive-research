@@ -3282,3 +3282,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; two papers opened, neither gives an EUR/USD direction test with OOS and costs; no item added (see R466 refill note).
 - **Housekeeping note:** local `main` still diverged (stale R346-R395 lineage); worked on local branch `work-r466` from origin/main and pushed to main; local `main` left untouched.
 - **Observation for the human (not a notification):** same as R349-R465: refill passes are not producing admissible items; a human decision is needed.
+
+## 2026-11-27 R467 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Know Sure Thing (KST) and Ultimate Oscillator rules -> EUR/USD (low keyword hit counts, not yet a refill angle).
+- **Action:** three standard searches; two documents opened, neither tests KST/Ultimate Oscillator on EUR/USD with OOS and costs; no item added (see R467 refill note).
+- **Housekeeping note:** local `main` still diverged (stale R346-R395 lineage); worked detached from origin/main and pushed HEAD to main; local `main` left untouched.
+- **Observation for the human (not a notification):** same as R349-R466: refill passes are not producing admissible items; a human decision is needed.
