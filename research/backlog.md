@@ -6060,3 +6060,27 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   included in most tables; no VHF/RWI/RVI rule in the text read; EUR/USD result numbers UNVERIFIED (table bodies not read).
 - No item added: no study tests RVI, VHF or RWI on EUR/USD or any FX pair; the one academic hit covers rule families already
   tested here (MA/ADX trend filters). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+- 2026-11-27 R477 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "meta-label" 0 hits, "triple barrier" 0, "fractional diff" 0, "visibility
+  graph" 0, "Hidden Markov" 0; ~50 other indicator/calendar/ML keywords (Elder, Force index, Pivot, Camarilla, NR7, Opening range,
+  Commitments of Traders, option expiry, Kalman, wavelet, LSTM, ...) already covered. Angles: (a) triple-barrier labels /
+  meta-labeling -> EUR/USD direction; (b) visibility-graph features -> EUR/USD direction. One standard search each.
+  (a) Opened Bieganowski & Slepaczuk, "Supervised Autoencoder MLP for Financial Time Series Forecasting", arXiv 2404.01866v2
+  (https://arxiv.org/html/2404.01866v2; ~19% verbatim, ~47% fetch-agent summary, last ~34% incl. results NOT read): SPX, EUR/USD,
+  BTC/USD, minute data aggregated, triple-barrier labelling, train before 2020 / test after; cost 0.005% for EUR/USD per summary
+  (UNVERIFIED); EUR/USD results UNVERIFIED (not read). Other hits (WNE WP439, arXiv 2311.09148, mql5 articles) not opened.
+  (b) Opened Rak, "Visibility graphs can make money in financial markets", arXiv 2605.01300v1, 2 May 2026
+  (https://arxiv.org/html/2605.01300; read verbatim in two passes): VGRSI = 100 - 100/(1 + rA) from backward-visibility up/down
+  sums and counts over W_S/W_V windows (10-200 candles) on M1, M5 and M30 together; long on crossing 20-35 band, short 70-95
+  band; symmetric SL/TP = Z x median candle height over N candles (N, Z ranges NOT given); walk-forward 30-day profit-maximising
+  selection, 7-day trading window (both "chosen arbitrarily"); MT5 demo account 2024-2025, "All transaction costs were included"
+  (not quantified); EUR/USD Table 1: Sharpe mean 2.55 (7-day windows), max DD 12%, 1677 trades, 3.3/day, profit USD 69 000 on
+  USD 10 000 at ~1 lot. No benchmark, no data/code release, single-author v1 preprint.
+- No item added: (a) results unread (UNVERIFIED). (b) is the first verified EUR/USD intraday claim with costs in many passes, but
+  a faithful pre-registration is not possible: the N/Z grid and step sizes are not published, the selection searches a very large
+  grid by in-window profit (multiple-testing inside every window), costs are not quantified, and its sample (2024-2025) lies
+  outside the repo's data (2015-2023). Any replication would need parameter ranges invented here (rule 3 / no tuning after the
+  fact). Flag for the human: if the author's EA grid (N, Z ranges, steps) were obtained, B-item "VGRSI walk-forward replication on
+  dev, M1/M5/M30 bid/ask" becomes pre-registrable. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline
+  failure.

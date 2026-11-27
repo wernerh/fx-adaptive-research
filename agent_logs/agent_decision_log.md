@@ -3336,3 +3336,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; no new document opened (only vendor pages or already-logged sources); no item added (see R475 refill note).
 - **Housekeeping note:** local `main` was a shallow clone with unrelated truncated history; worked on detached HEAD at origin/main and pushed HEAD:main.
 - **Observation for the human (not a notification):** same as R349-R474: refill passes are not producing admissible items; keyword checks show the indicator/calendar search space is essentially exhausted. A human decision is needed (e.g. approve a new data source, a val confirmation, or pause the hourly schedule).
+
+## 2026-11-27 R477 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: triple-barrier/meta-labeling and visibility-graph features -> EUR/USD (0 keyword hits each).
+- **Action:** two standard searches; opened arXiv 2404.01866 (partial, results unread) and arXiv 2605.01300 (verbatim); no item added (see R477 refill note).
+- **Housekeeping note:** local `main` had stale diverged commits (R386-R395); reset local main to origin/main before working.
+- **Observation for the human (not a notification):** Rak (2026) VGRSI is a verified EUR/USD intraday claim with costs, but not pre-registrable without the unpublished SL/TP grid; a human could decide whether to approve a replication with a stated grid (would be a new trial with parameters set here).
