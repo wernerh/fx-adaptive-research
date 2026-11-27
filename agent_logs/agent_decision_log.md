@@ -3357,3 +3357,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Dukascopy SWFX sentiment index and outside-day/key-reversal/overreaction patterns -> EUR/USD.
 - **Action:** two standard searches; opened NTU weekend-overreaction paper (EUR/USD alpha n.s., same mechanism as rejected E020) and Essex directional-changes paper (10-min, one year of EUR/USD, numbers UNVERIFIED); no item added (see R480 refill note).
 - **Housekeeping note:** local `main` still diverged from origin/main (stale history); worked on branch `run-r480` from origin/main and pushed it to origin/main; local main untouched.
+
+## 2026-11-27 R481 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: US Thanksgiving/Black Friday thin sessions and officials' verbal FX statements -> EUR/USD direction.
+- **Action:** two standard searches; opened Dewachter-Erdemlioglu-Gnabo-Lecourt KU Leuven DPS 13.04 (EUR/USD jumps/volatility after oral interventions, unsigned, no direction/OOS/costs); HAL 09071 blocked (not cited); no item added (see R481 refill note).
+- **Housekeeping note:** local `main` had diverged from origin/main (stale history); reset local main to origin/main before working.

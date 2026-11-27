@@ -6135,3 +6135,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no opened source gives a new, significant EUR/USD result net of costs; the weekend-gap reversal is already rejected
   on dev (E020) and SWFX history is not in the pipeline (rule 3). pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+- 2026-11-27 R481 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Black Friday" 1 hit (R-note keyword list only), "Thanksgiving" 3 hits
+  (R300/R-note already covered), "Fed speak" 1, "hal-00647391" 0, "DPS1304" 0; ~60 other indicator/flow/calendar keywords already
+  covered. Angles: (a) US Thanksgiving / Black Friday thin-liquidity sessions -> EUR/USD (re-check for new evidence since R300);
+  (b) central-bank officials' verbal FX statements -> later intraday EUR/USD direction. One standard search each.
+  (a) Hits: only broker/news seasonality pages (forex.com/StoneX Thanksgiving, investing.com, FXStreet; not evidence, not opened)
+  and a Dataquest notebook. No study. Same conclusion as R300 (one event per year, no published test).
+  (b) Opened Dewachter, Erdemlioglu, Gnabo & Lecourt, "The intra-day impact of communication on euro-dollar volatility and jumps",
+  KU Leuven DPS 13.04, March 2013 (https://feb.kuleuven.be/research/economics/ces/documents/DPS/2013/DPS1304.pdf; ~54% verbatim,
+  rest fetch-agent summary): EUR/USD 5-minute Olsen quotes 1995-2009, 323 US and 320 euro-area oral FX interventions (Factiva,
+  Fratzscher classification); jumps and volatility rise for up to ~1-4 hours after statements; jumps are unsigned and "the
+  proportions of positive and negative jumps are almost identical"; no direction test, no OOS, no trading rule, no costs.
+  Tried hal-00647391 (https://hal.archives-ouvertes.fr/hal-00647391/file/09071.pdf): bot-protection page, 0% read, not cited.
+  Other hits (BdE DT 2431, NY Fed EPR 0913 Rosa, IFDP 823, BoC SWP 2025-33, Jansen-de Haan) already referenced in the repo.
+- No item added: the one new source is volatility/jumps only (no direction), and per-statement timestamps for officials' FX
+  comments are not in the pipeline (rule 3); Thanksgiving angle has no new evidence. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
