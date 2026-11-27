@@ -3330,3 +3330,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; two documents opened (Onorieru NOVA IMS 2025: GA-tuned RSI+ADX, EUR/USD OOS -20.42%; Leung Erasmus 2009: emerging-market currencies only); no item added (see R474 refill note).
 - **Housekeeping note:** local `main` was a shallow-clone ancestor of origin/main; fast-forwarded.
 - **Observation for the human (not a notification):** same as R349-R473: refill passes are not producing admissible items; a human decision is needed.
+
+## 2026-11-27 R475 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Ulcer index / drawdown-state rules and Klinger volume oscillator -> EUR/USD (lowest keyword hit counts among ~35 candidates checked).
+- **Action:** two standard searches; no new document opened (only vendor pages or already-logged sources); no item added (see R475 refill note).
+- **Housekeeping note:** local `main` was a shallow clone with unrelated truncated history; worked on detached HEAD at origin/main and pushed HEAD:main.
+- **Observation for the human (not a notification):** same as R349-R474: refill passes are not producing admissible items; keyword checks show the indicator/calendar search space is essentially exhausted. A human decision is needed (e.g. approve a new data source, a val confirmation, or pause the hourly schedule).
