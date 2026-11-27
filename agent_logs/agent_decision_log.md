@@ -3362,3 +3362,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: US Thanksgiving/Black Friday thin sessions and officials' verbal FX statements -> EUR/USD direction.
 - **Action:** two standard searches; opened Dewachter-Erdemlioglu-Gnabo-Lecourt KU Leuven DPS 13.04 (EUR/USD jumps/volatility after oral interventions, unsigned, no direction/OOS/costs); HAL 09071 blocked (not cited); no item added (see R481 refill note).
 - **Housekeeping note:** local `main` had diverged from origin/main (stale history); reset local main to origin/main before working.
+
+## 2026-11-27 R482 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: point-and-figure rules and Dow-Theory-style trend rules -> EUR/USD.
+- **Action:** two standard searches; opened Rubio EconWPA 0405033 (daily USD crosses 1975-2004, no euro, no P&F, no OOS; efficient after costs) and Cardoso ISCTE MSc 2019 (MACD/RSI, EUR/USD figures UNVERIFIED); no item added (see R482 refill note).
+- **Housekeeping note:** local `main` again stale/diverged from origin/main; worked on branch `run-r482` created from origin/main and pushed to main (local main left untouched).

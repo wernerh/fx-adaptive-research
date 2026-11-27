@@ -6153,3 +6153,20 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: the one new source is volatility/jumps only (no direction), and per-statement timestamps for officials' FX
   comments are not in the pipeline (rule 3); Thanksgiving angle has no new evidence. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+- 2026-11-27 R482 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/backlog.md: "Dow Theory" 0 hits, "point and figure" 1, "ZigZag" 1, "0405033" 0, "lancinha" 0; ~60 other
+  indicator/calendar keywords already covered. Angles: (a) point-and-figure chart rules -> EUR/USD; (b) Dow-Theory-style
+  higher-high/higher-low trend rules -> EUR/USD. One standard search each.
+  (a) Opened Rubio, "Technical Analysis on Foreign Exchange: 1975-2004", EconWPA fin/0405033, 2004
+  (https://econwpa.ub.uni-muenchen.de/econ-wp/fin/papers/0405/0405033.pdf; ~100% read via fetch agent): daily Bank of England
+  USD vs AUD/CAD/JPY/CHF/GBP 1975-2004, eight rules (MA, range, filter, RSI, %K, %R), long only; euro pair excluded; no
+  point-and-figure rule, no OOS; after commissions best excess over indexation 2.75%/yr (one trade), author concludes "in favor
+  of market efficiency". Other P&F hits (HKU 10722/229640, Essex 18805, Warwick roman.pdf) already referenced in the repo;
+  S&P 50 P&F paper (mql5 mirror) is equity-only, not opened, not cited.
+  (b) Opened Cardoso, "Technical Analysis on Foreign Exchange Markets: MACD and RSI", ISCTE MSc thesis, Oct 2019
+  (https://repositorio-iul.iscte.pt/bitstream/10071/19549/1/master_joao_lancinha_cardoso.pdf; ~45% verbatim): daily 2009-2018,
+  USD/EUR and four other pairs, MACD(12,26,9) and RSI(14); Dow Theory only as background; abstract: results "are ambiguous";
+  EUR/USD figures, OOS and cost treatment from unread part -> UNVERIFIED. MACD/RSI already covered in backlog.
+- No item added: neither source tests point-and-figure or Dow-Theory rules on EUR/USD, and nothing new is significant net of
+  costs. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
