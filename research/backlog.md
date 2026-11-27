@@ -5923,3 +5923,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD evidence for KST or Ultimate Oscillator rules; both are smoothed multi-horizon momentum/oscillator
   variants of families already tested (E019, E042-E049) and closed. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+- 2026-11-27 R468 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Fisher transform" 2 hits (only as an unchecked candidate), "Balance of Power"
+  0 hits. Angles: (a) Ehlers Fisher transform rules -> EUR/USD; (b) Balance of Power ((close-open)/(high-low)) indicator -> EUR/USD.
+  One standard search each.
+  (a) Opened Klein Tank, "Forecasting the US Dollar/Euro Exchange Rate: The Economic Value of Combining Fundamentals, Technical Analysis,
+  and Order Flow", Erasmus MSc thesis 2012 (https://thesis.eur.nl/pub/12232/12232-KleinTank.pdf; already referenced in backlog.md):
+  daily USD/EUR, OOS 2005-2010 per abstract; Taylor-rule composite 5.38%/yr Sharpe 0.74 t 1.68, channel rules 3.52% t 0.98 (not
+  significant), order flow -2.82%; no Fisher transform. Cost details read only via model summary (UNVERIFIED). Other hits are
+  TradingView scripts and a futures forum page, not cited.
+  (b) Opened Behjoee, "Forex Trend Prediction: Can Machine Learning Algorithms Forecast Short Timeframe Movements?", Groningen BA thesis
+  2025 (https://campus-fryslan.studenttheses.ub.rug.nl/751/1/Thesis---Alireza-Behjoee.pdf; already referenced in backlog.md): EUR/USD and
+  XAU/USD 5M-4H, ~1-month short-timeframe samples, best-of-400 models, no multiple-testing correction, commission only; no Balance of
+  Power indicator; EUR/USD results not read (UNVERIFIED). Other hits are TradingView/MQL5/broker pages, not cited.
+- No item added: no verified EUR/USD evidence for Fisher-transform or Balance-of-Power rules; both are oscillator/bar-shape variants of
+  families already tested (E042-E049) and closed. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
