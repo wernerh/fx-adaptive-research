@@ -5967,3 +5967,21 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) is an ML-on-filtered-price variant of a family already tested and closed (E051 random forest, E042-E049
   technical rules) with no clean evidence; a causal EMD test would be a new trial on weak grounds; (b) has no FX evidence. pytest 464
   passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+- 2026-11-27 R471 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Ecofin" 2 hits (a Banque de France WP 859 hit not opened in R177, an
+  IDEAS URL), "World Economic Outlook" 1 hit, "Article IV" 0 hits. Angles: (a) Ecofin / Eurogroup meetings -> EUR/USD; (b) IMF
+  World Economic Outlook releases -> later EUR/USD drift. One standard search each.
+  (a) Opened Istrefi, Odendahl & Sestieri, "ECB Communication and its Impact on Financial Markets", Banque de France WP #859,
+  Dec 2021 (https://www.banque-france.fr/system/files/2023-01/wp-859.pdf): 1999-2019 daily regressions of ABSOLUTE changes in
+  OIS forwards, inflation swaps, sovereign yields, EUR/USD and EUR NEER on ECB speech / Governing Council dummies; Ecofin and
+  Eurogroup meetings are not studied; no signed-return, drift, OOS or cost test. Other hits (FXEmpire, fxblue, consilium, tresor
+  pages) are calendars/commentary, not evidence, not opened.
+  (b) Opened Gerdrup, Hallerud & Maffei-Faccioli, "Macroeconomic News and Exchange Rate Dynamics", Norges Bank Staff Memo 5/2026
+  (https://www.norges-bank.no/contentassets/1da9f16a950d4dba9e5b1f32865cacd5/staff-memo-5-2026-macroeconomic-news.pdf): EURNOK and
+  USDEUR ticks from 2002, CPI and policy-announcement surprises, monthly proxy SVAR; "Positive U.S. CPI surprises are associated
+  with a decline in EURUSD" (contemporaneous); IMF WEO not studied; no drift, OOS or cost test (readable portion; rest read via
+  fetch-agent summary). IMF transcript/WP hits are about monetary-policy shock datasets, not WEO; not opened.
+- No item added: no verified EUR/USD direction or drift evidence for either angle; (a) published related evidence measures absolute
+  moves only and the EU-summit relative (Smeets, R177) is a published null; (b) WEO is ~2 events/year, far below the lesson R090
+  power floor, and US-CPI release tests are blocked on calendar data (B6). pytest 464 passed. 0 trials used (dev 262, val 9, total
+  271). Not a pipeline failure.

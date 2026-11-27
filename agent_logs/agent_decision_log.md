@@ -3306,3 +3306,9 @@ Why each run chose what it did, and any judgement calls.
 - **Action:** two standard searches; two documents opened (Mouton-Hoffman NCTA 2014: EUR/USD 30-min 2013 only, multiple horizons, causality of EMD not established; Realized Illiquidity, Mgmt Sci: US equities only); no item added (see R470 refill note).
 - **Housekeeping note:** local `main` was diverged (stale lineage); saved it as local branch `stale-local-main` and reset local `main` to origin/main before working.
 - **Observation for the human (not a notification):** same as R349-R469: refill passes are not producing admissible items; a human decision is needed.
+
+## 2026-11-27 R471 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Ecofin/Eurogroup meetings and IMF WEO releases -> EUR/USD (lowest keyword hit counts among remaining candidates).
+- **Action:** two standard searches; two documents opened (BdF WP 859: ECB communication, absolute changes only; Norges Bank Staff Memo 5/2026: CPI/policy surprises, contemporaneous only); no item added (see R471 refill note).
+- **Housekeeping note:** local `main` still diverged (stale lineage); worked on a branch from origin/main and pushed it to main; local `main` left untouched.
+- **Observation for the human (not a notification):** same as R349-R470: refill passes are not producing admissible items; a human decision is needed.
