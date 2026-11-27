@@ -6102,3 +6102,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Univ. thesis) not opened.
 - No item added: no opened source gives a EUR/USD (or any FX) directional or trading result; entropy evidence is equities-only,
   in-sample or gross of costs (rule 3). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+- 2026-11-27 R479 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Tokyo cut" 0 hits, "Euro-Bund" 0; ~45 other indicator/flow keywords
+  (Parabolic SAR, Aroon, Ichimoku, Supertrend, pivot point, sight deposit, tom-next, swap point, refunding, NY cut, ...) already
+  covered. Angles: (a) 15:00 Tokyo option-cut expiry -> Asian-session EUR/USD; (b) option-expiry strike pinning (re-check for new
+  evidence since R108/R136). One standard search each.
+  (a) Hits: Ito & Yamada "Was the forex fixing fixed?" (NBER w21518 / Columbia WP 344; already in research/academic_studies.md,
+  Tokyo-fix family already tested), and broker/news expiry lists (investingLive, Newsquawk, mql5 blogs, City Index glossary;
+  not evidence, not opened). (b) Hits: only daily expiry listings and an FXStreet education Q&A (not evidence, not opened).
+- No item added: no new study; the pinning mechanism still needs per-date strike/notional expiry data the repo lacks (R108 note),
+  and the Tokyo-cut angle reduces to the already-tested Tokyo-fix window (rule 3). pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.

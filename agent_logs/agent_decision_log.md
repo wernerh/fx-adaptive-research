@@ -3347,3 +3347,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Uridashi issuance and entropy-regime filters -> EUR/USD (0 keyword hits each).
 - **Action:** two standard searches; opened DOI 10.1007/s10203-023-00427-9 (partial) and arXiv 2312.16637v3 (partial); no item added (see R478 refill note).
 - **Housekeeping note:** local clone was shallow with a stale `main` (R346-R395); reset local main to origin/main (stale tip kept as local branch backup-stale-main, not pushed).
+
+## 2026-11-27 R479 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Tokyo 15:00 option cut and option-expiry pinning -> EUR/USD.
+- **Action:** two standard searches; only already-logged papers (Ito-Yamada NBER w21518) and broker/news expiry lists; no item added (see R479 refill note).
+- **Housekeeping note:** local `main` again diverged from origin/main (stale history); worked on branch `run-r479` from origin/main and pushed it to origin/main; local main untouched.
