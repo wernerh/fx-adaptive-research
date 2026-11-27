@@ -3367,3 +3367,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: point-and-figure rules and Dow-Theory-style trend rules -> EUR/USD.
 - **Action:** two standard searches; opened Rubio EconWPA 0405033 (daily USD crosses 1975-2004, no euro, no P&F, no OOS; efficient after costs) and Cardoso ISCTE MSc 2019 (MACD/RSI, EUR/USD figures UNVERIFIED); no item added (see R482 refill note).
 - **Housekeeping note:** local `main` again stale/diverged from origin/main; worked on branch `run-r482` created from origin/main and pushed to main (local main left untouched).
+
+## 2026-11-27 R484 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: FX last-look rejection asymmetry and big-figure round-number barriers -> EUR/USD.
+- **Action:** two standard searches; opened Cartea-Jaimungal-Walton arXiv 1806.04460 (theory only, no data) and CORE 459166611 (Caporale-Plastun-Oliinyk, already logged); no item added (see R484 refill note).
+- **Housekeeping note:** local `main` had diverged from origin/main (stale history); saved it as branch `stale-local-main` and reset local main to origin/main before working.

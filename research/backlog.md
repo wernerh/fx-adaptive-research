@@ -6187,3 +6187,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no source shows currency-LETF rebalancing moving EUR/USD (currency LETF assets are not in the pipeline and no
   EUR/USD evidence exists); sight deposits already covered. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+- 2026-11-27 R484 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/backlog.md: "last look", "big figure", "00 level" 0 hits; "round number" 15, "price clustering" 4,
+  "semivariance", "tug of war", "intraday momentum" and ~70 other indicator/calendar/macro keywords already covered. Angles: (a) FX
+  last-look rejection asymmetry -> EUR/USD direction; (b) big-figure (x.x000) round-number barriers -> intraday EUR/USD returns. One
+  standard search each.
+  (a) Opened Cartea, Jaimungal & Walton, "Foreign Exchange Markets with Last Look", arXiv 1806.04460 (Math. Fin. Econ.,
+  doi:10.1007/s11579-018-0218-3; ~49% verbatim, rest fetch-agent summary): purely theoretical model of quoted spreads with/without
+  last look ("the Last Look option reduces quoted spreads"); no market data, no EUR/USD, no trading rule, no OOS, no empirical costs.
+  (b) Opened Caporale, Plastun & Oliinyk, CORE 459166611 (Brunel WP, rev. June 2021; ~44% verbatim): already logged in
+  research/academic_studies.md (abnormal-return frequency, Yahoo daily 1994-2019); no round-number barriers, no OOS/cost test. Other
+  hits (Cagliesi-Bina-Tivegna, Roodbar Mohammadi thesis, Durham 1394665, BoC SWP 2021-48, Krohn fixes) already logged; rest not opened.
+- No item added: no source gives a testable directional EUR/USD mechanism (last-look data are not observable in Dukascopy quotes;
+  round-number levels already covered). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
