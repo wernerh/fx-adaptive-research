@@ -3464,3 +3464,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: ECB Consumer Expectations Survey releases -> EUR/USD, and NY Fed Survey of Consumer Expectations releases -> EUR/USD.
 - **Action:** two standard searches; opened MPRA 117628 (Binder-Campbell-Ryngaert); no item added (see R503 refill note).
 - **Housekeeping note:** reused clone's local `main` still stale/divergent (50/50); left it at a692e48 (also saved as branch `stale-main-a692e48`) and worked on branch `run-r503` tracking origin/main.
+
+## 2026-11-28 R504 (unattended)
+- **Open questions:** none ready in research/backlog.md; all `Next experiment` fields closed (E052 closed NONE, B65 unearned).
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Euribor fixing (11:00 CET) -> intraday EUR/USD, and variance-ratio / return-autocorrelation predictability of intraday EUR/USD.
+- **Action:** two standard searches; no new study opened (hits were EMMI/wiki pages or papers already logged); no item added (see R504 refill note).
+- **Housekeeping note:** reused clone's local `main` still stale/divergent; left it untouched and worked on branch `run-r504` tracking origin/main.

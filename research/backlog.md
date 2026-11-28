@@ -6472,3 +6472,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   are the survey itself (not opened, not cited).
 - No item added: no verified EUR/USD evidence in either angle; (a) too few dev events, (b) monthly releases without a UTC-stamped
   release history in repo (calendar-blocked as B6). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R504 (not an item; no item added)
+- 2026-11-28 R504 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "Euribor fixing", "Hajj", "Passover", "Orthodox Easter", "spread regime" had no entry;
+  ~35 other candidates (TLTRO, futures roll, Bund futures, IMM, CLS, refunding, Ifo, ZEW, Sentix, Tankan, Golden Week, Lunar New
+  Year, Obon, Diwali, ESTR, realized skew, jumps, Amihud, semivariance, bipower, spread widening R116 ...) already have entries.
+  Angles: (a) Euribor fixing (11:00 CET) -> intraday EUR/USD; (b) variance-ratio / autocorrelation predictability of intraday
+  EUR/USD. One standard search each.
+  (a) Hits were Wikipedia/Wikiwand, EMMI benchmark pages and code of conduct, Wise explainer (not evidence, not opened, not cited);
+  Krohn et al. FX-fixings paper and Bank of Canada SWP 2021-48 are already logged. No study of an EUR/USD reaction to the Euribor fix.
+  (b) Hits already logged (Levich-Poti, hrcak 486449, UCT, UCP repository) or NBER/Warwick/NYU/HKU PDFs of generic FX
+  predictability (not opened, not cited, UNVERIFIED); intraday autocorrelation lines already covered (E009 hour cells, momentum/
+  reversal experiments).
+- No item added: no verified EUR/USD directional evidence in either angle. pytest 464 passed. 0 trials used (dev 262, val 9,
+  total 271). Not a pipeline failure.
