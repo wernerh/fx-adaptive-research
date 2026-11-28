@@ -6458,3 +6458,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Daiwa (dir.co.jp) report (not opened, not cited). All USD/JPY-focused; flow data monthly, not in the repo.
 - No item added: no verified EUR/USD directional evidence in either angle; (a) too few events, (b) JPY flow without a UTC-stamped
   series. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R503 (not an item; no item added)
+- 2026-11-28 R503 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "Consumer Expectations Survey", "10-year auction", "Super Bowl", "night effect" had no entry;
+  ~50 other candidates (Thanksgiving, Black Friday, SNB sight deposits, Riksbank, NY cut, Hurst, wavelet, Kalman, EIA, jobless
+  claims, Beige Book, SLOOS, JOLTS, ADP, Michigan, Empire State ...) already have entries. Angles: (a) ECB Consumer Expectations
+  Survey (CES) releases -> EUR/USD; (b) New York Fed Survey of Consumer Expectations (SCE) releases -> EUR/USD. One standard search each.
+  (a) Hits were FXStreet/TMGM/FXEmpire news pages only (not evidence, not opened, not cited); CES monthly releases start 2020
+  (pilot), so dev has almost no events; no study.
+  (b) Opened (entry in research/academic_studies.md): Binder-Campbell-Ryngaert MPRA 117628 (2022), daily SCE expectations
+  responding to FOMC/CPI/NFP news; no market reaction to SCE releases studied, no FX. NY Fed press releases/staff report SR800
+  are the survey itself (not opened, not cited).
+- No item added: no verified EUR/USD evidence in either angle; (a) too few dev events, (b) monthly releases without a UTC-stamped
+  release history in repo (calendar-blocked as B6). pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
