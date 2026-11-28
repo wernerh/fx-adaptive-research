@@ -3427,3 +3427,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: DeMarker oscillator rules -> EUR/USD, and zero-lag / Tillson T3 moving averages -> EUR/USD.
 - **Action:** two standard searches; one paper opened (arXiv 2407.08036 tube oscillator: 1-second data, in-sample only); no item added (see R496 refill note).
 - **Housekeeping note:** reused clone's local `main` was again stale/divergent; worked on detached origin/main and pushed HEAD:main; local `main` left untouched.
+
+## 2026-11-28 R497 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Woodie pivot points -> intraday EUR/USD, and Raschke Turtle Soup / Holy Grail failed-breakout rules -> EUR/USD.
+- **Action:** two standard searches; only vendor/education/script pages, no study; no item added (see R497 refill note).
+- **Housekeeping note:** reused clone's local `main` was again stale/divergent; worked on new branch `run-r497` from origin/main and pushed HEAD:main; local `main` left untouched.

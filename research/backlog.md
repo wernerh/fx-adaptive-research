@@ -6378,3 +6378,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   (b) Hits were TradingView scripts only; no study.
 - No item added: (a) needs sub-minute data the repo does not hold (SPEC: 1-minute bars), has no OOS evidence and its sample overlaps
   dev/val; (b) no evidence. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R497 (not an item; no item added)
+- 2026-11-28 R497 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "Woodie" 0 hits, "Raschke" 0 hits ("Turtle" 1, "Camarilla" 2, pivot keywords already have
+  entries). Angles: (a) Woodie pivot-point rules -> intraday EUR/USD; (b) Raschke "Turtle Soup" / "Holy Grail" failed-breakout rules
+  -> EUR/USD. One standard search each.
+  (a) Hits were QuantInsti/DailyFX/prof-fx education pages, Investing.com live pivot tables and TradingView scripts (not opened, not
+  cited); Springer s11408-023-00433-2 already logged. No study.
+  (b) Hits were backtrex/WH SelfInvest/Blueberry vendor pages, a personal GitHub notes page and TradingView scripts/charts (not opened,
+  not cited); Essex 18805 already logged. No study. The failed-breakout mechanism overlaps the repo's existing false-break work.
+- No item added: no verified EUR/USD directional evidence with OOS testing in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
