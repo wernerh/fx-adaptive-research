@@ -2730,3 +2730,8 @@ US session. That is unproven, which is exactly why E001 comes first.
 
 ### CESifo Working Paper 5357 (hit for Italian BTP auctions -> euro) (added 2026-11-28 R499)
 - **Link:** https://www.cesifo.org/DocDL/cesifo1_wp5357.pdf (redirects to ifo.de; fetch failed). Title, authors and content **UNVERIFIED**. Not used.
+
+### Aquilina, Garavito, Gelos, Lewrick, Packer, Pinter, Sushko & Todorov (2025), "The transformation of the life insurance industry: systemic risks and policy challenges" (added 2026-11-28 R500)
+- **Venue:** BIS Papers No 161, 27 Oct 2025; [link](https://www.bis.org/publ/bppdf/bispap161.pdf) (landing page opened 2026-11-28 R500 via web-fetch; PDF body not readable).
+- **Content (abstract only):** private equity, riskier/opaque assets, derivatives, offshore reinsurance; rising systemic importance in the Americas and Asia. No FX-hedging or EUR/USD return evidence in the abstract.
+- **Relevance:** **None** for EUR/USD. **Status:** VERIFIED (abstract only; body UNVERIFIED).

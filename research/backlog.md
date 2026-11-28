@@ -6418,3 +6418,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   negative, no costs. Norges Bank Staff Memo 5/2026 already logged (R471).
 - No item added: no verified EUR/USD directional evidence in either angle; (b) is a NOK flow with a null OOS result. pytest 464
   passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R500 (not an item; no item added)
+- 2026-11-28 R500 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "life insurer" 1 hit, "Taiwan" 1 hit, "GPIF"/"Japanese investor" 3 hits (no study entry
+  for either flow). Angles: (a) Asian (Taiwan) life-insurer FX hedging flows -> EUR/USD; (b) Japan MoF weekly international
+  portfolio-flow releases -> EUR/USD. One standard search each.
+  (a) Hits were Risk.net, CFR blogs, trade-press articles (not opened, not cited) and BIS Paper 161 (landing page opened; PDF
+  fetch refused; abstract does not mention FX hedging or EUR/USD; entry in research/academic_studies.md). All USD/TWD-focused.
+  (b) Hits were the MoF weekly statistics PDF (a data table, not a study) and commentary blogs (not opened, not cited). No study.
+- No item added: no verified EUR/USD directional evidence in either angle, and neither flow series is in the repo or obtainable
+  with UTC-stamped history on the runner without a new data rule. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
+  Not a pipeline failure.
