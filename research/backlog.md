@@ -6350,3 +6350,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   give ~15 dev events, below the power floor; release-time tests are also calendar-blocked (B6).
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R495 (not an item; no item added)
+- 2026-11-28 R495 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "excessive deficit" 0 hits, "EDP notification" 0 hits, "Stability and Growth" 0 hits ("sovereign
+  rating" R169/R235, "TIC" ~line 2784, "stress test" R260, NGEU/SURE bonds, Bund/BTP/OAT and ~40 other release, fiscal and calendar
+  keywords already have entries). Angles: (a) EU excessive deficit procedure (EDP) / Stability and Growth Pact decisions -> later
+  EUR/USD drift; (b) Eurostat EDP government deficit/debt notification releases (April/October) -> EUR/USD. One standard search each.
+  (a) Opened Hurlin-Laprat-Sapata-Segard, European Economy Discussion Paper 235 (2025),
+  https://economy-finance.ec.europa.eu/publications/market-reactions-european-commission-policy-announcements-model-intervention-analysis_en
+  (abstract verbatim; rest of PDF partly read): daily 10-year sovereign spreads over the Bund, 2003-2023; adjustment-programme
+  announcements "substantially reduce the yields", EDP effects small or negligible; no exchange rates, no OOS test, no costs.
+  Other hits (ECB WP 303, ISEG/ifo/BdE/Konstanz/IMF PDFs) not opened, not cited.
+  (b) Hits were Eurostat press releases (KSH mirrors) and ECB statistical-calendar pages (not opened, not cited); no market-reaction
+  study. Two releases per year give ~10 dev events, far below the power floor; release-time tests are also calendar-blocked (B6).
+- No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
