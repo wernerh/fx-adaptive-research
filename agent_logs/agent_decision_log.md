@@ -3402,3 +3402,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: quote inter-arrival durations (ACD) -> EUR/USD direction, and NAHB housing index release -> EUR/USD.
 - **Action:** two standard searches; ACD hit was Cai-Zhang (already logged R140; venue/year EFM 2016 now verified, appended entry), tick horizon below cost hurdle; NAHB hits were calendar/news pages only; no item added (see R490 refill note).
 - **Housekeeping note:** local `main` was a stale shallow clone history; fetched deeper and fast-forwarded to origin/main.
+
+## 2026-11-28 R491 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: euro-area monthly balance of payments release -> EUR/USD, and US month-/quarter-end repo (SOFR) spikes -> EUR/USD.
+- **Action:** two standard searches; BoP hits were ECB press releases only; repo hits were funding/CIP-basis material on a line already closed (R138); no item added (see R491 refill note).
+- **Housekeeping note:** local `main` had diverged (50/50) from origin/main; saved it as a local backup branch and reset `main` to origin/main.

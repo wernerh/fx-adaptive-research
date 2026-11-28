@@ -6292,3 +6292,17 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   tests are also calendar-blocked (B6).
 - No item added: no verified EUR/USD directional mechanism at a tradable horizon with OOS evidence. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R491 (not an item; no item added)
+- 2026-11-28 R491 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "balance of payments" 0 hits, "euro area current account" 0 hits, "Treasury-Bund"
+  0 hits, "Value Area" 0 hits (market profile already covered R-note ~5369); ~70 other TA, release, mood and money-market keywords
+  already have entries. Angles: (a) ECB euro-area monthly balance of payments / current account release -> later EUR/USD drift;
+  (b) US month-/quarter-end repo-rate (SOFR) spikes -> EUR/USD. One standard search each.
+  (a) Hits were ECB monthly BoP press releases mirrored by Banque de France / Banco de España and ecb.europa.eu (not opened, not
+  cited); no market-reaction study. Release-time tests are also calendar-blocked (B6).
+  (b) Hits were a Fed FEDS Note on quarter-end repo (2025-06-06), Du-Strasser-Verdelhan (Wharton 2025, CIP/basis), risk.net and
+  fx-markets.com news (not opened, not cited). The quarter-end funding line maps to FX swaps / cross-currency basis, not spot direction,
+  and is already closed (refill note R138; research/academic_studies.md BIS WP 836, Boston Fed WP 18-6 entries).
+- No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
