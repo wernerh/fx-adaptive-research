@@ -6430,3 +6430,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: no verified EUR/USD directional evidence in either angle, and neither flow series is in the repo or obtainable
   with UTC-stamped history on the runner without a new data rule. pytest 464 passed. 0 trials used (dev 262, val 9, total 271).
   Not a pipeline failure.
+
+### Refill note R501 (not an item; no item added)
+- 2026-11-28 R501 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "NFP revision", "benchmark revision", "Fed independence", "Powell"(1, unrelated), "Bessent",
+  "Warsh" had no study entry; ~70 other candidates (quad/triple witching, SOFR spikes, forecast dispersion, ECB/Fed speeches,
+  Sintra, elections, tariffs ...) already have entries. Angles: (a) BLS annual payroll benchmark revision releases -> EUR/USD;
+  (b) political pressure on the Fed (presidential criticism) -> EUR/USD. One standard search each.
+  (a) Hits were FXStreet/TMGM/Convera news pages only (not evidence, not opened, not cited); ~1 event per year, no study.
+  (b) Opened (entries in research/academic_studies.md): Bianchi-Kind-Kung NBER WP 26308 (Trump tweets -> fed funds futures,
+  -0.26 bp per tweet in 5-minute windows; no FX) and Baretti-Collodel-Zacché arXiv:2610.32300 (daily 1988-2025, dovish pressure
+  -> same-day EUR/USD +4.5 bp at 10% significance; contemporaneous, no OOS, no costs; event dates from Reuters/Factiva + LLM
+  labels, not reproducible here). NBER w33193 and Risk.net/Bocconi/press hits already logged or not cited.
+- No item added: (a) no evidence and too few events; (b) only a contemporaneous same-day effect of a few bp with a non-reproducible
+  event series; no post-event drift claim to test. A trial would only inflate the count. pytest 464 passed. 0 trials used
+  (dev 262, val 9, total 271). Not a pipeline failure.

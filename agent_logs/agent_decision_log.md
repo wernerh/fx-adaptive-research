@@ -3447,3 +3447,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Asian life-insurer FX hedging flows -> EUR/USD, and Japan MoF weekly portfolio flows -> EUR/USD.
 - **Action:** two standard searches; opened BIS Paper 161 landing page (PDF not readable); no item added (see R500 refill note).
 - **Housekeeping note:** reused clone's local `main` was again stale/divergent (50/50); saved it as local branch `backup/stale-local-main` and reset `main` to origin/main.
+
+## 2026-11-28 R501 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: BLS payroll benchmark revisions -> EUR/USD, and political pressure on the Fed -> EUR/USD.
+- **Action:** two standard searches; opened NBER WP 26308 and arXiv:2610.32300; no item added (see R501 refill note).
+- **Housekeeping note:** reused clone's local `main` was again stale/divergent (50/50); left it untouched and worked on branch `run-r501` tracking origin/main.

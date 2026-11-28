@@ -2735,3 +2735,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Venue:** BIS Papers No 161, 27 Oct 2025; [link](https://www.bis.org/publ/bppdf/bispap161.pdf) (landing page opened 2026-11-28 R500 via web-fetch; PDF body not readable).
 - **Content (abstract only):** private equity, riskier/opaque assets, derivatives, offshore reinsurance; rising systemic importance in the Americas and Asia. No FX-hedging or EUR/USD return evidence in the abstract.
 - **Relevance:** **None** for EUR/USD. **Status:** VERIFIED (abstract only; body UNVERIFIED).
+
+### Bianchi, Kind & Kung, "Threats to Central Bank Independence: High-Frequency Identification with Twitter" (added 2026-11-28 R501)
+- **Venue:** NBER WP 26308 (Sep 2019, rev. Sep 2022); [link](https://nber.org/system/files/working_papers/w26308/w26308.pdf) (opened 2026-11-28 R501 via web-fetch; first ~25% read verbatim, rest from fetch summary). Author list on the title page read as Bianchi, Kind, Kung (fetch summary also named Gómez-Cram; unresolved).
+- **Design/finding:** Trump tweets criticising the Fed (Jun 2015 - Jan 2021), tick data on fed funds / eurodollar / Treasury futures and SPY; 5-minute windows. Quoted: "The average effect of the tweets across all contracts is around -0.26 bps per tweet." EUR/USD not a studied asset (at most a CIP robustness check, UNVERIFIED).
+- **Relevance:** **None** for a new item: rate-futures only, contemporaneous 5-minute effect, no FX return, no OOS, no costs. **Status:** VERIFIED (partial text).
+
+### Baretti, Collodel & Zacché (2026), "Jawboning the Fed: Do Markets Listen When Administrations Talk?" (added 2026-11-28 R501)
+- **Venue:** arXiv:2610.32300 (working draft, Oct 2026); [link](https://arxiv.org/pdf/2610.32300) (opened 2026-11-28 R501 via web-fetch; ~80% read verbatim, rest from fetch summary).
+- **Design/finding:** daily, 1988-2025; LLM-classified Reuters reports of administration pressure on the Fed (~9,000 daily obs). Dovish pressure lowers FFc1 ~0.9 bp per event; same-day EUR/USD +4.5 bp (10% level) full sample, +10.9 bp ex-Trump; DXY n.s. Quoted: "The response is accompanied by dollar depreciation, with stable inflation compensation and market volatility." Local projections show persistence of rate expectations, not a tested post-event FX drift.
+- **Relevance:** **Low.** Same-day contemporaneous EUR/USD response of a few bp (below SPEC 4 round-trip cost scale for a 1-day hold signal), event dates from a proprietary newswire + LLM pipeline not reproducible in repo, no OOS, no costs. **Status:** VERIFIED (opened).
