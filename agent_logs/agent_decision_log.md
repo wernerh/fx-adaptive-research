@@ -3407,3 +3407,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: euro-area monthly balance of payments release -> EUR/USD, and US month-/quarter-end repo (SOFR) spikes -> EUR/USD.
 - **Action:** two standard searches; BoP hits were ECB press releases only; repo hits were funding/CIP-basis material on a line already closed (R138); no item added (see R491 refill note).
 - **Housekeeping note:** local `main` had diverged (50/50) from origin/main; saved it as a local backup branch and reset `main` to origin/main.
+
+## 2026-11-28 R493 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: ECB euro-area bank lending survey release -> EUR/USD, and Philadelphia Fed manufacturing survey release -> EUR/USD.
+- **Action:** two standard searches; hits were press releases, news and calendar pages only; no item added (see R493 refill note).
+- **Housekeeping note:** local `main` was again stale vs origin/main (shallow clone); worked on a detached checkout of origin/main and pushed HEAD to main.

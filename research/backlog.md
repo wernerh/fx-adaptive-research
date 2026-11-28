@@ -6321,3 +6321,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   power floor).
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R493 (not an item; no item added)
+- 2026-11-28 R493 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  sensitive) over research/, knowledge/, agent_logs/: "ECB bank lending survey" 0 hits, "Philadelphia Fed" 1 file (no study);
+  ~30 other release, holiday and calendar keywords (Ifo, ZEW, Sentix, flash PMI, Empire State, JOLTS, ADP, jobless claims, ex-dividend,
+  tax day, Lunar New Year, Golden Week) already have entries. Angles: (a) ECB euro-area bank lending survey (quarterly) release ->
+  later EUR/USD drift; (b) Philadelphia Fed manufacturing survey release -> EUR/USD. One standard search each.
+  (a) Hits were ECB BLS press releases (ecb.europa.eu, mirrored by Banque de France, Banco de España, Banca d'Italia) and the ECB
+  release-list page (not opened, not cited); no market-reaction study. Quarterly release gives ~24 dev events, below the power floor.
+  (b) Hits were FXStreet/XTB news and a "how to trade" FXStreet article and an FXBlue calendar page (not opened, not cited); no study.
+  Release-time tests are also calendar-blocked (B6).
+- No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
