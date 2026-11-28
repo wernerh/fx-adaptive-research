@@ -2698,3 +2698,25 @@ US session. That is unproven, which is exactly why E001 comes first.
   86,774 trades, win rate ~35-43%. **Relevance:** low; sub-minute strategy (repo data are 1-minute bars, SPEC section 2), in-sample
   only, sample overlaps our dev/val years, implausibly high Sharpe for a spread-paying ~70 trades/day rule. **Status:** VERIFIED
   (text opened; authors UNVERIFIED).
+
+### Neely & Weller, "Lessons from the Evolution of Foreign Exchange Trading Strategies" (added 2026-11-28 R498)
+- **Venue:** Federal Reserve Bank of St. Louis WP 2011-021D (Sept 2011, revised Apr 2013), [PDF](https://files.stlouisfed.org/files/htdocs/wp/2011/2011-021.pdf)
+  (opened 2026-11-28 R498 via web-fetch; full text read, second pass verbatim). Published version not checked.
+- **Data / design:** 21 USD rates + 19 crosses, daily, 1975-2012; 17 bilateral rules per currency (7 filter, vma(1,5), vma(5,20),
+  vma(1,200), momentum 5/20/60, channel 5/10/20, carry); ex ante ranking on past Sharpe, monthly rebalance; costs = 1/3 of quoted
+  forward bid-ask. EUR series is DEM spliced with EUR after 1999-01-01.
+- **Finding (verbatim numbers):** Table 2 EUR row, full sample, average of the 17 rules: "EUR 4.21 3.73 4.12 0.64 0.15 16.53 9716"
+  (gross AR, net AR, t, Sharpe, s.e., trades/yr/rule, obs). Table 7: "EUR ch(10)" is a top-5 rule in 1973-82 (15.3) and 1983-92
+  (24.8) but not in 1993-2002 or 2003-2012. Developed-currency-only re-run: "about half of the 10-strategy and 50-strategy portfolios
+  earn negative excess returns in the final sample (2000-2012)" and "none of the portfolios earn statistically significant positive
+  Sharpe ratios". Post-1998 rebound "coincides with a strong shift ... away from major currencies to emerging markets".
+- **Relevance:** **Low for EUR/USD now.** Full-sample EUR profit is dominated by 1973-1992; for advanced currencies in 2000-2012 the
+  paper itself finds no significant profit. Consistent with Neely-Weller-Ulrich (2009) decay and E019 (TSMOM NONE on dev).
+  **Status:** VERIFIED (full text opened).
+
+### Kuang, Schröder & Wang (2014), "Illusory Profitability of Technical Analysis in Emerging Foreign Exchange Markets" (added 2026-11-28 R498)
+- **Venue:** International Journal of Forecasting 30(2), 192-205, doi:10.1016/j.ijforecast.2013.07.015;
+  [author accepted version](https://orca.cardiff.ac.uk/66242/1/WangQ%20-%20IllusoryProfitability.pdf) (opened 2026-11-28 R498 via web-fetch, partly verbatim).
+- **Finding:** 25,988 rules on 10 emerging-market currencies vs GBP, daily 1994-2007, OOS 08/2002-07/2007, Reality Check/SPA/StepM;
+  abstract (verbatim): "Almost all these profits vanish once the data snooping bias is taken into account." No EUR or DEM.
+- **Relevance:** **None** for EUR/USD directly; background on data-snooping in rule searches. **Status:** VERIFIED (partial full text).

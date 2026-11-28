@@ -6390,3 +6390,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   not cited); Essex 18805 already logged. No study. The failed-breakout mechanism overlaps the repo's existing false-break work.
 - No item added: no verified EUR/USD directional evidence with OOS testing in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R498 (not an item; no item added)
+- 2026-11-28 R498 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "Eurosystem balance" 0 hits ("weekly financial statement" 3, "Coppock" already a R-note angle,
+  ~20 other indicator/calendar keywords already have entries). Angles: (a) Eurosystem weekly consolidated financial statement
+  releases -> EUR/USD; (b) Coppock-curve / classic daily rule families on currencies with OOS and costs. One standard search each.
+  (a) Hits were only the ECB/NCB statement PDFs themselves (not opened, not cited); no market-reaction study.
+  (b) New hits opened (entries in research/academic_studies.md): Neely & Weller St. Louis Fed WP 2011-021 (17 daily rules, EUR
+  full-sample average net AR 3.73%, Sharpe 0.64, but EUR ch(10) drops out of the top rules after 1992 and developed-currency
+  portfolios show no significant profit in 2000-2012) and Kuang-Schröder-Wang IJF 2014 (emerging currencies only; profits vanish
+  after data-snooping control). Other hits (HKU 10722/229640, Essex 18805, City 13700) already logged; Essex 18630 and vendor pages
+  not opened, not cited.
+- No item added: (a) no evidence; (b) the only EUR-specific evidence is full-sample and the paper's own recent-period result for
+  advanced currencies is null, overlapping the already-NONE daily momentum line (E019). A trial would only inflate the count.
+  pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

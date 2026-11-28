@@ -3432,3 +3432,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Woodie pivot points -> intraday EUR/USD, and Raschke Turtle Soup / Holy Grail failed-breakout rules -> EUR/USD.
 - **Action:** two standard searches; only vendor/education/script pages, no study; no item added (see R497 refill note).
 - **Housekeeping note:** reused clone's local `main` was again stale/divergent; worked on new branch `run-r497` from origin/main and pushed HEAD:main; local `main` left untouched.
+
+## 2026-11-28 R498 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: Eurosystem weekly financial statement releases -> EUR/USD, and Coppock / classic daily rule families on currencies with OOS and costs.
+- **Action:** two standard searches; opened Neely-Weller WP 2011-021 and Kuang-Schröder-Wang IJF 2014; no item added (see R498 refill note).
+- **Housekeeping note:** reused clone's local `main` was stale/divergent (50/50); saved it as local branch `backup-stale-local-main` and reset `main` to origin/main.
