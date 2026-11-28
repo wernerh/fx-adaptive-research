@@ -3452,3 +3452,9 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: BLS payroll benchmark revisions -> EUR/USD, and political pressure on the Fed -> EUR/USD.
 - **Action:** two standard searches; opened NBER WP 26308 and arXiv:2610.32300; no item added (see R501 refill note).
 - **Housekeeping note:** reused clone's local `main` was again stale/divergent (50/50); left it untouched and worked on branch `run-r501` tracking origin/main.
+
+## 2026-11-28 R502 (unattended)
+- **Open questions:** none ready in research/backlog.md; all `Next experiment` fields closed (E052 closed NONE, B65 unearned).
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: solar eclipses -> EUR/USD, and Japanese NISA / investment-trust outbound flows -> EUR/USD.
+- **Action:** two standard searches; no study opened (hits were vendor/news pages); no item added (see R502 refill note).
+- **Housekeeping note:** reused clone's local `main` still stale/divergent; left it untouched and worked on branch `run-r502` tracking origin/main.

@@ -6445,3 +6445,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no evidence and too few events; (b) only a contemporaneous same-day effect of a few bp with a non-reproducible
   event series; no post-event drift claim to test. A trial would only inflate the count. pytest 464 passed. 0 trials used
   (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R502 (not an item; no item added)
+- 2026-11-28 R502 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "eclipse", "NISA", "investment trust", "Bund-OAT", "risk parity", "Kangaroo" had no entry;
+  ~80 other candidates (lunar, Ramadan, weather, Google Trends, COT, CTA, TGA/RRP, EPU, LLM, FSR, stress tests, shutdown, debt
+  ceiling, OAT, dividends, volatility-managed, toshin ...) already have entries. Angles: (a) solar eclipses -> EUR/USD;
+  (b) Japanese NISA / investment-trust (toshin) outbound flows -> EUR/USD. One standard search each.
+  (a) Hits were an MQL5 article, FXStreet column, Substack post, Schulich/CBS news pages (not evidence, not opened, not cited) and a
+  core.ac.uk PDF of unknown content (not opened, UNVERIFIED). A few eclipses per year: far below the R090 power floor on dev.
+  (b) Hits were MUFG/BofA notes relayed via FXStreet/TMGM/Mitrade/PrimeXBT, Japan Times and Business Insider Japan news, and a
+  Daiwa (dir.co.jp) report (not opened, not cited). All USD/JPY-focused; flow data monthly, not in the repo.
+- No item added: no verified EUR/USD directional evidence in either angle; (a) too few events, (b) JPY flow without a UTC-stamped
+  series. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
