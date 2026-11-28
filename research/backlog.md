@@ -6405,3 +6405,16 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
 - No item added: (a) no evidence; (b) the only EUR-specific evidence is full-sample and the paper's own recent-period result for
   advanced currencies is null, overlapping the already-NONE daily momentum line (E019). A trial would only inflate the count.
   pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.
+
+### Refill note R499 (not an item; no item added)
+- 2026-11-28 R499 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "BTP auction" 0 hits ("Italian auction" 1, only a keyword-check mention), "Norges Bank FX
+  purchase" 0 hits ("Norges Bank" 4, "reverse repo"/RRP already R196). Angles: (a) Italian BTP auction results -> EUR/USD;
+  (b) Norges Bank announced daily FX purchases -> EUR/USD. One standard search each.
+  (a) Hits were Newsquawk headlines, Investing.com calendar, Saxo/sigmanomics commentary (not opened, not cited), DNB WP 674 (already
+  logged), a Padova thesis, Tinbergen 13150 and an ICMAIF paper (not opened, not cited); CESifo WP 5357 fetch failed (UNVERIFIED).
+  No verified EUR/USD study.
+  (b) BSIC 2026 article opened (entry in research/academic_studies.md): EUR/NOK only, day-0 effect leaning on few events, OOS R²
+  negative, no costs. Norges Bank Staff Memo 5/2026 already logged (R471).
+- No item added: no verified EUR/USD directional evidence in either angle; (b) is a NOK flow with a null OOS result. pytest 464
+  passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

@@ -2720,3 +2720,13 @@ US session. That is unproven, which is exactly why E001 comes first.
 - **Finding:** 25,988 rules on 10 emerging-market currencies vs GBP, daily 1994-2007, OOS 08/2002-07/2007, Reality Check/SPA/StepM;
   abstract (verbatim): "Almost all these profits vanish once the data snooping bias is taken into account." No EUR or DEM.
 - **Relevance:** **None** for EUR/USD directly; background on data-snooping in rule searches. **Status:** VERIFIED (partial full text).
+
+### BSIC (2026), "Do Norges Bank's Announced FX Transactions Contain Information About NOK Exchange Rate Dynamics?" (added 2026-11-28 R499)
+- **Venue:** Bocconi Students Investment Club article, 18 Oct 2026, authors not named;
+  [link](https://bsic.it/do-norges-banks-announced-fx-transactions-contain-incremental-information-about-nok-exchange-rate-dynamics/) (opened 2026-11-28 R499 via web-fetch; short quotes only).
+- **Data/design:** daily EUR/NOK 14:15 CET fixing, 5 Jan 2015 - 30 Sep 2026, 143 monthly announcements; announcement-day, execution-day and next-month tests; expanding-window OOS from Feb 2020 (OOS R² and Clark-West). No costs.
+- **Finding (quoted):** a NOK1bn increase in the announced daily purchase "weakens the krone by about 0.41% against the euro on the day of the release (p = 0.004)"; execution flow "has no measurable effect"; monthly OOS R² negative ("adding the flow makes the forecasts worse"). Day-0 result rests on a few 2020/2022 events.
+- **Relevance:** **None** for EUR/USD: EUR/NOK only, non-peer-reviewed, OOS null. **Status:** VERIFIED (opened).
+
+### CESifo Working Paper 5357 (hit for Italian BTP auctions -> euro) (added 2026-11-28 R499)
+- **Link:** https://www.cesifo.org/DocDL/cesifo1_wp5357.pdf (redirects to ifo.de; fetch failed). Title, authors and content **UNVERIFIED**. Not used.
