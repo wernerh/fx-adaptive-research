@@ -3412,3 +3412,8 @@ Why each run chose what it did, and any judgement calls.
 - **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: ECB euro-area bank lending survey release -> EUR/USD, and Philadelphia Fed manufacturing survey release -> EUR/USD.
 - **Action:** two standard searches; hits were press releases, news and calendar pages only; no item added (see R493 refill note).
 - **Housekeeping note:** local `main` was again stale vs origin/main (shallow clone); worked on a detached checkout of origin/main and pushed HEAD to main.
+
+## 2026-11-28 R494 (unattended)
+- **Decision:** protocol step 4 (refill). No ready item; last batch run 44712462069 completed and recorded (E052); nothing queued. Angles: German state (Landtag) election weekends -> Monday EUR/USD, and European Commission economic forecast releases -> EUR/USD.
+- **Action:** two standard searches; hits were news, opinion and unrelated institutional pages only; no item added (see R494 refill note).
+- **Housekeeping note:** local `main` in the reused clone holds stale unpushed commits (R386-R395) that diverge from origin/main; left untouched (backup branch `stale-local-main-backup`), worked on branch `run-r494` from origin/main and pushed HEAD to main.

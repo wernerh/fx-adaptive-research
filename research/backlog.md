@@ -6334,3 +6334,19 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   Release-time tests are also calendar-blocked (B6).
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R494 (not an item; no item added)
+- 2026-11-28 R494 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "Landtag"/"German state elections" 0 hits, "Bundestag" 0 hits, "Commission
+  forecast"/"economic forecast" 0 hits ("French election" covered, ~70 other release, calendar, indicator and cross-asset keywords
+  already have entries). Angles: (a) German state (Landtag) election weekends -> Monday EUR/USD; (b) European Commission seasonal
+  economic forecast releases -> later EUR/USD drift. One standard search each.
+  (a) Hits were Yahoo/Corpay/Polskie Radio/forex.com news on the 2025 federal election, an FXStreet item relaying a Commerzbank note
+  titled "why the currency market couldn't care less about German state elections" (2024-09-02), a Boersen-Zeitung opinion piece, a
+  Paderborn PDF and an MZES voter-behaviour record (not opened, not cited); no market-reaction study. Landtag elections are a few
+  per year (well below the power floor) and have no clear signed channel.
+  (b) Hits were an EC technical box on exchange-rate pass-through, a JRC record, FXCM/FXStreet/XTB/FXLeaders news, CESifo WP 7239 and
+  an IDEAS record on macro news and EUR/USD (not opened, not cited); no study of EC forecast releases. Two to three releases per year
+  give ~15 dev events, below the power floor; release-time tests are also calendar-blocked (B6).
+- No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
