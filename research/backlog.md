@@ -6366,3 +6366,15 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   study. Two releases per year give ~10 dev events, far below the power floor; release-time tests are also calendar-blocked (B6).
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R496 (not an item; no item added)
+- 2026-11-28 R496 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first over
+  research/, knowledge/, agent_logs/: "DeMarker" 0 hits, "Tillson"/"zero-lag"/"ZLEMA" 0 hits (~50 other indicator keywords,
+  incl. Williams %R, Chande, Connors, KAMA, Hull, ALMA, T3 in passing, already have entries). Angles: (a) DeMarker oscillator rules
+  -> EUR/USD; (b) zero-lag / Tillson T3 moving-average rules -> EUR/USD. One standard search each.
+  (a) New hit opened: arXiv 2407.08036v1 "tube oscillator" (entry in research/academic_studies.md): EUR/USD 1-second Dukascopy data
+  2019-2024, parameters set visually on 3 days, full-sample (in-sample) results only, spread charged; no DeMarker. Other hits
+  (Springer s11408-023-00433-2, HKU 10722/229640, Essex 18805, WIFO WP 263, CORE 55846873, UCP) already logged.
+  (b) Hits were TradingView scripts only; no study.
+- No item added: (a) needs sub-minute data the repo does not hold (SPEC: 1-minute bars), has no OOS evidence and its sample overlaps
+  dev/val; (b) no evidence. pytest 464 passed. 0 trials used (dev 262, val 9, total 271). Not a pipeline failure.

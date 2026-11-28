@@ -2686,3 +2686,15 @@ US session. That is unproven, which is exactly why E001 comes first.
   (Russell-Engle) model of tick-by-tick quote-change direction, out-of-sample evaluation per the introduction; abstract (verbatim):
   "with the rate of correct predictions varying from 54 to 70%". Transaction costs not seen. **Relevance:** unchanged (tick-horizon
   next-quote-change direction, below tradable horizon after SPEC 4 costs). **Status:** VERIFIED (abstract + partial text).
+
+### "Financial market geometry: The tube oscillator", arXiv 2407.08036v1 (2024; added 2026-11-28 R496)
+- https://arxiv.org/html/2407.08036v1 (full text opened via web-fetch 2026-11-28). Author names not shown in the fetched text
+  (affiliations Blacklace Finance, Vienna, and Universität Heidelberg): **authors UNVERIFIED**. Abstract (verbatim, in parts): "a
+  simple trading strategy" "based on this oscillator and fixed threshold leads to consistent positive monthly returns" "of average
+  magnitude of 2% or more." Data: DAX 40 and EUR/USD, Dukascopy bid/ask ticks resampled to 1 second, 2019-01 to 2024-05, intraday
+  positions closed at end of day. Parameters calibrated "visually along 3 trading days" and reported for four configurations over
+  the full sample: **no out-of-sample test**. Bid/ask spread charged per trade; no commissions, slippage beyond a 1-second delay,
+  or financing. EUR/USD best configuration (bandwidth 300 s, thresholds 0.4/0.1): average monthly return 4.659% (sd 3.334),
+  86,774 trades, win rate ~35-43%. **Relevance:** low; sub-minute strategy (repo data are 1-minute bars, SPEC section 2), in-sample
+  only, sample overlaps our dev/val years, implausibly high Sharpe for a spread-paying ~70 trades/day rule. **Status:** VERIFIED
+  (text opened; authors UNVERIFIED).
