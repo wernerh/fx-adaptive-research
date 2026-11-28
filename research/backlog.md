@@ -6306,3 +6306,18 @@ Trial count so far on dev: **262** (E001: 7, E006: 14, E004: 1, E007: 4, E008: 4
   and is already closed (refill note R138; research/academic_studies.md BIS WP 836, Boston Fed WP 18-6 entries).
 - No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
   val 9, total 271). Not a pipeline failure.
+
+### Refill note R492 (not an item; no item added)
+- 2026-11-28 R492 refill pass (no ready item, no run queued; last run 44712462069 recorded as E052). Keyword checks first (case-
+  insensitive) over research/, knowledge/, agent_logs/: "EURC" 0 hits, "euro stablecoin" 0 hits, "Dutch" 0 hits, "credit default swap"
+  0 hits ("pension"/hedge ratios covered R269, "stablecoin"/"Tether" covered, CDS/iTraxx, SX7E/bank stocks, ~50 other release, flow
+  and cross-asset keywords already have entries). Angles: (a) euro-denominated stablecoin (EURC) supply/flows -> EUR/USD;
+  (b) Dutch pension-system (WTP) transition dates -> EUR/USD via hedge/swap unwinds. One standard search each.
+  (a) Hits were TradingView ideas, Cointelegraph/Axios news, Circle/KuCoin circulation blog posts and a NY Fed 2026 event deck on
+  stablecoins (not opened, not cited); no market-reaction study. EURC circulation (~EUR 0.4bn per Circle's blog headline) is tiny
+  relative to EUR/USD turnover, so no plausible spot-direction channel.
+  (b) Hits were ING THINK and PIMCO practitioner notes on a steeper euro swap curve and an MSCI 2012 note (not opened, not cited).
+  The mechanism maps to the EUR swap curve, not spot direction, and transition dates are a handful of discrete events (below the
+  power floor).
+- No item added: no verified EUR/USD directional mechanism with OOS evidence in either angle. pytest 464 passed. 0 trials used (dev 262,
+  val 9, total 271). Not a pipeline failure.
